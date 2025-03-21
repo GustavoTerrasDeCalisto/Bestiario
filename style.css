@@ -16,6 +16,29 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+/* Estilo para os botões */
+button {
+  background-color: #2c2c2c; /* Cor de fundo preta escura */
+  color: #f1c40f; /* Cor do texto amarelo claro */
+  font-size: 1rem; /* Tamanho de fonte */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove a borda padrão */
+  border-radius: 8px; /* Borda arredondada */
+  cursor: pointer; /* Cursor de pointer para indicar que é clicável */
+  transition: background-color 0.3s, transform 0.3s; /* Animação de transição */
+}
+
+/* Efeito de hover para quando o mouse passar sobre o botão */
+button:hover {
+  background-color: #444; /* Cor de fundo ligeiramente mais clara ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+/* Efeito de focus para quando o botão for clicado */
+button:focus {
+  outline: none; /* Remove o contorno padrão do foco */
+  box-shadow: 0 0 10px rgba(241, 196, 15, 0.7); /* Sombras ao focar */
+}
 
 h1, h2, h3 {
   text-align: center;
@@ -49,14 +72,54 @@ img {
 span {
   color: #ffd700;
 }
-
-#bonus, #bonus2, #bonus3 {
-  background-color: #333;
-  padding: 10px;
-  border-radius: 5px;
-  color: #00e676;
-  text-align: center;
+/* Container flexível para os bônus */
+.bonus-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a linha de baixo */
+  gap: 3px; /* Espaço entre os elementos */
+  justify-content: flex-start; /* Alinhamento à esquerda */
+  align-items: flex-start; /* Alinha os elementos ao topo */
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
+/* Estilização dos bônus */
+.bonus1-paragraph {
+  border-left: 3px solid #ffcc00; /* Destaque dourado */
+  background-color: rgba(90, 73, 51, 0.1);
+  color: #ff5100 !important; /* Mantém o amarelo ouro */
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 5px 6px;
+  margin: 5px 0;
+  border-radius: 3px;
+  width: calc(33.33% - 10px); /* Ocupa um terço do espaço disponível, ajustando com o gap */
+  min-width: 150px; /* Garante que caixas pequenas não quebrem */
+  word-wrap: break-word;
+  flex-grow: 1; /* Faz com que os elementos cresçam para ocupar o espaço disponível */
+}
+
+
+/* Estilo especial para bonus 2 */
+.bonus2-paragraph {
+  border-left: 3px solid #b2f7d5; /* Verde neon */
+  background-color: rgba(19, 20, 20, 0.1);
+  color: #0ab663 !important; /* Mantém o verde neon */
+  box-sizing: border-box; /* Garante que padding não ultrapasse a largura */
+  padding: 5px 6px;
+
+}
+
+/* Estilo especial para bonus 3 */
+.bonus3-paragraph {
+  border-left: 3px solid #ff5733; /* Vermelho alaranjado */
+  background-color: rgba(255, 87, 51, 0.1);
+  color: #ff5733 !important; /* Mantém o vermelho */
+  box-sizing: border-box; /* Garante que padding não ultrapasse a largura */
+
+}
+
 
 #left-section, #right-section {
   width: 50%;
@@ -79,29 +142,109 @@ span {
   font-size: 16px;
 }
 
-/* Responsividade para telas pequenas */
+/* Versão para dispositivos móveis */
 @media (max-width: 768px) {
+  #app {
+    margin: auto;
+    padding: 15px;
+    max-width: 100%;
+    display: block; /* Certificando-se que o conteúdo é exibido em bloco */
+  }
+/* Estilo para os botões */
+button {
+  background-color: #2c2c2c; /* Cor de fundo preta escura */
+  color: #f1c40f; /* Cor do texto amarelo claro */
+  font-size: 1rem; /* Tamanho de fonte */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove a borda padrão */
+  border-radius: 8px; /* Borda arredondada */
+  cursor: pointer; /* Cursor de pointer para indicar que é clicável */
+  transition: background-color 0.3s, transform 0.3s; /* Animação de transição */
+}
+
+/* Efeito de hover para quando o mouse passar sobre o botão */
+button:hover {
+  background-color: #444; /* Cor de fundo ligeiramente mais clara ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+/* Efeito de focus para quando o botão for clicado */
+button:focus {
+  outline: none; /* Remove o contorno padrão do foco */
+  box-shadow: 0 0 10px rgba(241, 196, 15, 0.7); /* Sombras ao focar */
+}
+
   .left-panel, .right-panel {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 80%; /* Garantindo que os painéis ocupem 100% da largura */
+    margin-bottom: 5px; /* Adicionando espaçamento entre os painéis */
+    padding: 15px;
   }
 
   .stat-container {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
   }
+  
 
   #left-section, #right-section {
-    width: 100%;
+    width: 100%; /* Garantindo que as seções ocupem toda a largura */
     padding: 10px;
   }
 
   h1, h2, h3 {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Ajustando o tamanho da fonte para telas pequenas */
+    text-align: center;
+    
   }
 
   select, p {
     font-size: 14px;
     padding: 8px;
   }
+
+  img {
+    margin: 10px 0; /* Ajustando a margem das imagens */
+    width: 100%; /* Garantindo que as imagens não ultrapassem a largura da tela */
+  }
+  #bonus {
+    background-color: #222; /* Cor diferente para o bônus 1 */
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffcc00; /* Amarelo ouro para destaque */
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  #bonus2, #bonus3 {
+    background-color: #333; /* Cor escura padrão */
+    padding: 10px;
+    border-radius: 5px;
+    color: #00e676; /* Verde neon */
+    text-align: left;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  .bonus-paragraph {
+    border-left: 3px solid #555;
+    padding: 6px 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: left;
+    color: #ccc;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  
 }
