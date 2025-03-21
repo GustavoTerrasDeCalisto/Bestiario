@@ -16,12 +16,43 @@ const creatures = {
     bonus2: `Ataque com calda - teste de Brutalidade: Quando ataca causa 2d8 de dano esmagante.
 Ataque com garras - teste de Agilidade: Ao acertar causa 3d6 de dano cortante.
 Ataque com arma coletada: sua arma supersticiosa causa dano ácido extra de 2d4, e pode envenenar.
-cuuuuuuuuuuuuuuuuuuuuuuu.
 `,
+    bonus3:`Os Protetores da floresta
+Elemento - Caos`,
     Magias: `Nível 5 - Cuspe ácido, nível 7 - Fogo vivo.`,
     Passivas:` Nível 1 - Raiva.`,
     Talentos: `Foices, Espadas, Machados.`,
+    Descricao:`Os Glink's são criaturas humanoides com características de lagartos, encontrados principalmente em florestas densas e selvagens. Possuem escamas que variam de tons esverdeados a marrons, facilitando a camuflagem em seu habitat natural. Suas feições mesclam traços humanos e reptilianos, com olhos penetrantes e pupilas fendidas que demonstram sua conexão primitiva e instintiva com o ambiente ao seu redor.
+Embora sua origem seja desconhecida, os Glink's possuem uma ligação profunda com o elemento Caos. Esse vínculo é refletido tanto em suas ações quanto em sua natureza imprevisível. São criaturas extremamente territoriais, protegendo com fervor as áreas que consideram suas, utilizando armas como espadas, foices ou machados para amedrontar e afastar invasores. Seus territórios são sagrados para eles, e qualquer intruso é rapidamente eliminado ou expulso com brutalidade.
+Apesar de sua conexão com a natureza, os Glink's não têm afeto pela ideia de proteger toda a floresta ou preservar o equilíbrio natural em uma escala maior. Eles veem a natureza fora de seus domínios como algo a ser corrompido ou destruído. Quando se aventuram fora de seus territórios, esses seres muitas vezes queimam, destroem e envenenam a terra e as plantas que encontram. Essa dualidade reflete sua essência caótica, onde a proteção e a destruição da natureza coexistem de maneira imprevisível.
+Os Glink's desprezam sociedades evoluídas e a vida em grandes grupos. Vivem em pequenos bandos ou até mesmo sozinhos, preferindo a solidão ou o contato limitado com outros de sua espécie. Eles evitam qualquer forma de civilização avançada, considerando-a uma ameaça para suas formas primitivas de vida e para a floresta que habitam. Por essa razão, são frequentemente vistos como inimigos das civilizações humanas, druidas e outros protetores da natureza.
+Seus comportamentos e motivações são muitas vezes incompreendidos, mas uma coisa é certa: os Glink's são forças imprevisíveis e perigosas da natureza, que devem ser tratados com extrema cautela.`,
     img: "imagens/Glink's.png"
+  },"Musplum": {
+    vida: 30,
+    sanidade: 15,
+    especial: 15,
+    armadura: 1,
+    vidaPorNivel: 8,
+    sanidadePorNivel: 5,
+    especialPorNivel: 2,
+    armaduraPorNivel: 4,
+    bru: 13, agi: 17, det: 12, pre: 9, lib: 9, cnx: 11,
+    bruDano: 1, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 1,
+    bruTest: 1, agiTest: 3, detTest: 1, preTest: -1, libTest: -1, cnxTest: 1,
+    bonus:`Resistente:Escuridão
+    Vulnerável: Gelo`,
+    bonus2: `Ataque com bico - teste de Agilidade : Prioriza as pernas e causa 1d12 de dano perfurante.
+Ataque com garras - teste de Brutalidade: Ao acertar causa 3d6 de dano cortante.
+Olhar no escuro: pode enxergar no escuro.`,
+bonus3:`Rastejadores obscuros
+Elemento - Caos`,
+    Magias: `Nível 3 - Força gélida , nível 10 - Tempestade da natureza.`,
+    Passivas:` Nível 1 - Furtividade sombria.`,
+    Talentos: `-`,
+    Descricao:`O Musplum é uma criatura peculiar e misteriosa, com uma forma bípede coberta por penas e pelugem, que a faz parecer um híbrido entre uma ave e um mamífero. Embora possua orelhas grandes, semelhantes às de um rato, seu rosto e comportamento se assemelham mais ao de uma ave de rapina. O bico preto e curvado do Musplum é uma de suas principais características, usado para caçar e se alimentar de carcaças, reforçando sua natureza necrófaga. Essas criaturas são rápidas e evasivas, preferindo habitar os ambientes mais sombrios e inóspitos, como florestas densas, cavernas profundas e os subterrâneos abandonados. Os Musplums são criaturas noturnas, sendo praticamente impossíveis de serem avistadas durante o dia. Eles evitam a luz e qualquer tipo de exposição, preferindo se manter escondidos até o anoitecer, quando se tornam mais ativos. Quando jovens, os Musplums são minúsculos, medindo entre 3 cm e 10 cm de altura. Durante essa fase, podem facilmente se abrigar em pequenos buracos ou até dentro das casas das pessoas, onde passam despercebidos devido ao seu tamanho. No entanto, à medida que amadurecem, sofrem uma série de protometamorfoses que mudam drasticamente sua aparência. As penas começam a crescer em maior quantidade, seu bico aumenta consideravelmente e suas garras se tornam mais afiadas, transformando-os em predadores noturnos muito mais perigosos. Nessa fase adulta, a convivência próxima com humanos se torna inviável, pois seus instintos caçadores e sua agressividade se intensificam. Os Musplums são conhecidos por serem extremamente furtivos e sorrateiros durante a noite, movendo-se com precisão quase sobrenatural. Embora prefiram evitar o confronto, quando forçados a se revelar, eles se tornam inimigos metódicos e agressivos. Ataques de Musplums são rápidos e inesperados, com movimentos calculados para atingir pontos vitais de suas presas. São criaturas territoriais e cautelosas, mas quando se sentem ameaçadas, sua natureza predatória se manifesta com força total. Sua presença em florestas e cavernas torna esses locais ainda mais perigosos para aventureiros desavisados, e muitos caçadores de mitos afirmam que os Musplums são responsáveis por desaparecimentos misteriosos em regiões remotas. Essas criaturas sombrias e enigmáticas permanecem envoltas em lendas e superstições, sempre espreitando nas sombras, à espera do momento certo para atacar..
+Seus comportamentos e motivações são muitas vezes incompreendidos, mas uma coisa é certa: os Glink's são forças imprevisíveis e perigosas da natureza, que devem ser tratados com extrema cautela.`,
+    img: "imagens/Musplum.png"
   }
 };
 
@@ -141,10 +172,50 @@ select.addEventListener('change', () => {
     document.getElementById('bonus3').innerHTML = formatBonusText(selected.bonus3, "bonus3");
 
     // Outras configurações de stats...
-  } else {
-    document.getElementById('creatureStats').style.display = 'none';
-  }
+ // Atualiza a descrição
+ descricao.innerHTML = formatDescriptionText(selected.Descricao); // Preenche a descrição com base na criatura selecionada
+} else {
+  document.getElementById('creatureStats').style.display = 'none'; // Se não houver criatura, oculta as stats
+}
 });
 
 
+// Preenche o conteúdo da descrição com base no objeto "creatures"
 
+
+
+
+// Preenche o conteúdo da descrição com base no objeto "creatures"
+// Usamos innerHTML para permitir a renderização de tags HTML como <br> para quebras de linha.
+
+
+
+
+// Função para formatar o texto da descrição com parágrafos
+function formatDescriptionText(text) {
+  // Divide o texto com base nas quebras de linha
+  return text.split(/\n+/).map(paragraph => 
+    paragraph.trim() ? `<p>${paragraph}</p>` : ''  // Cria parágrafos para cada linha não vazia
+  ).join(''); // Junta os parágrafos
+}
+
+ 
+
+
+// Preenche o conteúdo da descrição com base no objeto "creatures"
+// Preenche a descrição ao carregar a página pela primeira vez
+window.addEventListener('load', () => {
+  const selected = creatures[select.value]; // Obtém a criatura selecionada inicialmente
+  if (selected) {
+    descricao.innerHTML = formatDescriptionText(selected.Descricao); // Preenche a descrição com a criatura inicial
+  }
+});
+
+// Seleciona o botão e o conteúdo da seção de descrição
+const toggleButton = document.querySelector('.toggle-button');
+const toggleContent = document.querySelector('.toggle-content');
+
+// Adiciona um evento de clique ao botão para alternar a visibilidade da descrição
+toggleButton.addEventListener('click', () => {
+  toggleContent.classList.toggle('show'); // Alterna a classe 'show' para mostrar ou esconder a descrição
+});
