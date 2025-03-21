@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #f4f4f4;
+  padding: 20px;
+}
+
+#app {
+  background: #1e1e1e;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #ffd700;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+select, p {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+span {
+  color: #ffd700;
+}
+
+#bonus, #bonus2, #bonus3 {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  color: #00e676;
+  text-align: center;
+}
+
+#left-section, #right-section {
+  width: 50%;
+  padding: 20px;
+}
+
+/* Estilo para manter os atributos lado a lado */
+.stat-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.stat-container p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  #app {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #left-section, #right-section {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.secondary {
+  font-size: 14px;
+  color: #bbb;
+  margin-top: 5px;
+}
