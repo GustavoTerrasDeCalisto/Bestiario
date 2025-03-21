@@ -1,4 +1,3 @@
-
 const creatures = {
   "Glink's": {
     vida: 50,
@@ -8,18 +7,20 @@ const creatures = {
     vidaPorNivel: 10,
     sanidadePorNivel: 3,
     especialPorNivel: 1,
-    armaduraPorNivel:3,
+    armaduraPorNivel: 3,
     bru: 14, agi: 16, det: 12, pre: 13, lib: 8, cnx: 9,
     bruDano: 1, agiDano: 2, detDano: 1, preDano: 1, libDano: 0, cnxDano: 0,
     bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: -2, cnxTest: -1,
-    bonus: "Resistente:Ácido, Vulnerável: Aura",
-    bonus2: `
-Ataque com calda - teste de Brutalidade: Quando ataca causa 2d8 de dano esmagante.
-
+    bonus:`Resistente:Ácido
+    Vulnerável: Aura`,
+    bonus2: `Ataque com calda - teste de Brutalidade: Quando ataca causa 2d8 de dano esmagante.
 Ataque com garras - teste de Agilidade: Ao acertar causa 3d6 de dano cortante.
-
-Ataque com arma coletada: sua arma supersticiosa causa dano ácido extra de 2d4, e pode envenenar.`,
-    bonus3: "Vsndadnasndandado.",
+Ataque com arma coletada: sua arma supersticiosa causa dano ácido extra de 2d4, e pode envenenar.
+cuuuuuuuuuuuuuuuuuuuuuuu.
+`,
+    Magias: `Nível 5 - Cuspe ácido, nível 7 - Fogo vivo.`,
+    Passivas:` Nível 1 - Raiva.`,
+    Talentos: `Foices, Espadas, Machados.`,
     img: "imagens/Glink's.png"
   }
 };
@@ -28,6 +29,7 @@ const select = document.getElementById('creatureSelect');
 const nameEl = document.getElementById('creatureName');
 const imageEl = document.getElementById('creatureImage');
 
+// Popula o menu de seleção
 Object.keys(creatures).forEach(creature => {
   const option = document.createElement('option');
   option.value = creature;
@@ -35,6 +37,7 @@ Object.keys(creatures).forEach(creature => {
   select.appendChild(option);
 });
 
+// Quando um item for selecionado
 select.addEventListener('change', () => {
   const selected = creatures[select.value];
   if (selected) {
@@ -62,33 +65,86 @@ select.addEventListener('change', () => {
     document.getElementById('cnxTest').textContent = selected.cnxTest;
     document.getElementById('bonus').textContent = selected.bonus;
     document.getElementById('bonus2').textContent = selected.bonus2;
-    document.getElementById('bonus3').textContent = selected.bonus3;
+    document.getElementById('Magias').textContent = selected.Magias;
+    document.getElementById('Passivas').textContent = selected.Passivas;
+    document.getElementById('Talentos').textContent = selected.Talentos;
 
-    document.getElementById('vida').textContent = selected.vida;
-    document.getElementById('sanidade').textContent = selected.sanidade;
-    document.getElementById('especial').textContent = selected.especial;
-    document.getElementById('armadura').textContent = selected.armadura;
-
-    document.getElementById('creatureLevel').textContent = 1; // nível inicial
+    // Definindo o nível inicial
+    document.getElementById('creatureLevel').textContent = 1; 
+    updateStats(selected, 1); // Atualiza as estatísticas no início
   } else {
     document.getElementById('creatureStats').style.display = 'none';
   }
 });
 
+// Botão para aumentar o nível
 document.getElementById('levelUpButton').addEventListener('click', () => {
-  const level = parseInt(document.getElementById('creatureLevel').textContent);
+  const levelElement = document.getElementById('creatureLevel');
+  let level = parseInt(levelElement.textContent);
   const selected = creatures[select.value];
 
   if (selected) {
-    document.getElementById('creatureLevel').textContent = level + 1;
-    updateStats(selected, level + 1);
+    level += 1; // Aumenta o nível
+    levelElement.textContent = level;
+    updateStats(selected, level); // Atualiza as estatísticas com o novo nível
   }
 });
 
-function updateStats(creature, level) {
-  document.getElementById('vida').textContent = creature.vida + (creature.vidaPorNivel * level);
-  document.getElementById('sanidade').textContent = creature.sanidade + (creature.sanidadePorNivel * level);
-  document.getElementById('especial').textContent = creature.especial + (creature.especialPorNivel * level);
-  document.getElementById('armadura').textContent = creature.armadura + Math.floor(level / creature.armaduraPorNivel);
+// Botão para diminuir o nível
+document.getElementById('levelDownButton').addEventListener('click', () => {
+  const levelElement = document.getElementById('creatureLevel');
+  let level = parseInt(levelElement.textContent);
+  const selected = creatures[select.value];
 
+  if (selected && level > 1) { // Impede que o nível seja menor que 1
+    level -= 1; // Diminui o nível
+    levelElement.textContent = level;
+    updateStats(selected, level); // Atualiza as estatísticas com o novo nível
+  }
+});
+
+// Função para atualizar as estatísticas
+function updateStats(creature, level) {
+  const vida = creature.vida + (creature.vidaPorNivel * (level - 1)); // Vida base + (vida por nível * (nível atual - 1))
+  const sanidade = creature.sanidade + (creature.sanidadePorNivel * (level - 1));
+  const especial = creature.especial + (creature.especialPorNivel * (level - 1));
+  const armadura = creature.armadura + Math.floor((level - 1) / creature.armaduraPorNivel);
+
+  // Atualiza a interface com as novas estatísticas
+  document.getElementById('vida').textContent = vida;
+  document.getElementById('sanidade').textContent = sanidade;
+  document.getElementById('especial').textContent = especial;
+  document.getElementById('armadura').textContent = armadura;
 }
+
+function formatBonusText(text, type = "default") {
+  let className;
+  if (type === "bonus1") className = "bonus1-paragraph";
+  else if (type === "bonus2") className = "bonus2-paragraph";
+  else if (type === "bonus3") className = "bonus3-paragraph";
+  else className = "bonus-paragraph";
+
+  return text.split(/\n+/).map(sentence =>
+    sentence.trim() ? `<p class="${className}">${sentence}</p>` : ''
+  ).join('');
+}
+
+select.addEventListener('change', () => {
+  const selected = creatures[select.value];
+  if (selected) {
+    document.getElementById('creatureStats').style.display = 'block';
+    nameEl.textContent = select.value;
+    imageEl.src = selected.img;
+
+    document.getElementById('bonus').innerHTML = formatBonusText(selected.bonus, "bonus1"); // Estilo exclusivo
+    document.getElementById('bonus2').innerHTML = formatBonusText(selected.bonus2, "bonus2");
+    document.getElementById('bonus3').innerHTML = formatBonusText(selected.bonus3, "bonus3");
+
+    // Outras configurações de stats...
+  } else {
+    document.getElementById('creatureStats').style.display = 'none';
+  }
+});
+
+
+
