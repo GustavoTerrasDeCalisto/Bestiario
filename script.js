@@ -9,7 +9,7 @@ const creatures = {
     sanidadePorNivel: 3,
     especialPorNivel: 1,
     armaduraPorNivel:3,
-    bru: 6, agi: 5, det: 3, pre: 2, lib: 1, cnx: 2,
+    bru: 14, agi: 16, det: 12, pre: 13, lib: 8, cnx: 9,
     bruDano: 1, agiDano: 2, detDano: 1, preDano: 1, libDano: 0, cnxDano: 0,
     bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: -2, cnxTest: -1,
     bonus: "Resistente:Ácido, Vulnerável: Aura",
