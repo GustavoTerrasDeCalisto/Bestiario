@@ -18,6 +18,17 @@
       <div id="creatureStats" style="display:none;">
         <h2 id="creatureName"></h2>
         <img id="creatureImage" src="" alt="Imagem da criatura">
+
+
+
+        <section class="toggle-section">
+          <button class="toggle-button">Mostrar/Esconder Descrição</button>
+          <div class="toggle-content">
+            <p id="bonus3"></p>
+
+            <div id="descricao"></div> <!-- Onde a descrição formatada será exibida -->
+          </div>
+        </section>
         
       </div>
     </div>
@@ -25,7 +36,7 @@
       <select id="creatureSelect">
         <option value="">Selecione uma Criatura</option>
       </select>
-      <div class="stat-container">
+      <div class="stat-summary">
       <h3>Atributos</h3>
       <p><strong>Nível:</strong> <span id="creatureLevel">1</span></p>
 <button id="levelUpButton">Aumentar o nível</button>
@@ -33,54 +44,59 @@
       
 
       </div>
-      <div class="stat-container">
-        <p><strong>Vida:</strong> <span id="vida"></span></p>
-        <p><strong>Sanidade:</strong> <span id="sanidade"></span></p>
-        <p><strong>Especial:</strong> <span id="especial"></span></p>
-        <p><strong>Armadura:</strong> <span id="armadura"></span></p>
-        </div>
-        <div class="stat-container">
-          <p><strong>BRU:</strong> <span id="bru"></span> 
-              <span class="secondary">Dano: <span id="bruDano"></span> | Teste: <span id="bruTest"></span></span>
-          </p>
-          <p><strong>AGI:</strong> <span id="agi"></span> 
-              <span class="secondary">Dano: <span id="agiDano"></span> | Teste: <span id="agiTest"></span></span>
-          </p>
-      </div>
-      <div class="stat-container">
-          <p><strong>DET:</strong> <span id="det"></span> 
-              <span class="secondary">Dano: <span id="detDano"></span> | Teste: <span id="detTest"></span></span>
-          </p>
-          <p><strong>PRE:</strong> <span id="pre"></span> 
-              <span class="secondary">Dano: <span id="preDano"></span> | Teste: <span id="preTest"></span></span>
-          </p>
-      </div>
-      <div class="stat-container">
-          <p><strong>LIB:</strong> <span id="lib"></span> 
-              <span class="secondary">Dano: <span id="libDano"></span> | Teste: <span id="libTest"></span></span>
-          </p>
-          <p><strong>CNX:</strong> <span id="cnx"></span> 
-              <span class="secondary">Dano: <span id="cnxDano"></span> | Teste: <span id="cnxTest"></span></span>
-          </p>
-      </div>
-        <h3>Bônus</h3>
+     <!-- Seção de Vida, Sanidade e Especial -->
+     <div class="stat-summary">
+      <p><strong>Vida:</strong> <span id="vida" class="vida"></span></p>
+      <p><strong>Sanidade:</strong> <span id="sanidade" class="sanidade"></span></p>
+      <p><strong>Especial:</strong> <span id="especial" class="especial"></span></p>
+      <p><strong>Armadura:</strong> <span id="armadura" class="armadura"></span></p>
+    </div>
+    
+
+<!-- Seção de BRU, AGI, DET, PRE, LIB, CNX, etc. -->
+<div class="stat-details">
+  <div class="stat-container">
+      <p><strong>BRU:</strong> <span id="bru"></span> 
+          <span class="secondary">Dano: <span id="bruDano"></span>Teste: <span id="bruTest"></span></span>
+      </p>
+      <p><strong>AGI:</strong> <span id="agi"></span> 
+          <span class="secondary">Dano: <span id="agiDano"></span>Teste: <span id="agiTest"></span></span>
+      </p>
+  </div>
+  <div class="stat-container">
+      <p><strong>DET:</strong> <span id="det"></span> 
+          <span class="secondary">Dano: <span id="detDano"></span>Teste: <span id="detTest"></span></span>
+      </p>
+      <p><strong>PRE:</strong> <span id="pre"></span> 
+          <span class="secondary">Dano: <span id="preDano"></span>Teste: <span id="preTest"></span></span>
+      </p>
+  </div>
+  <div class="stat-container">
+      <p><strong>LIB:</strong> <span id="lib"></span> 
+          <span class="secondary">Dano: <span id="libDano"></span>Teste: <span id="libTest"></span></span>
+      </p>
+      <p><strong>CNX:</strong> <span id="cnx"></span> 
+          <span class="secondary">Dano: <span id="cnxDano"></span>Teste: <span id="cnxTest"></span></span>
+      </p>
+  </div>
+</div>
+        
+        
+        
+        
         <div id="bonus" class="bonus-container"></div>
 
         <p id="bonus2"></p>
-        <div class="stat-container">
-
+        <div class="stat-summary2">
           <h4>Magias</h4>
           <p id="Magias"></p>
         </div>
-        <div class="stat-container">
+        <div class="stat-summary2">
           <h4>Passivas</h4>
-
           <p id="Passivas"></p>
-
         </div>
-        <div class="stat-container">
+        <div class="stat-summary2">          
           <h4>Talentos</h4>
-
           <p id="Talentos"></p>
         </div>
      
