@@ -79,10 +79,11 @@ span {
   font-size: 16px;
 }
 
+/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
   .left-panel, .right-panel {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .stat-container {
@@ -95,12 +96,12 @@ span {
     padding: 10px;
   }
 
-  .stat-container p {
-    font-size: 14px;
+  h1, h2, h3 {
+    font-size: 1.2rem;
   }
 
-  /* Ajustes no layout principal */
-  .stat-container {
-    gap: 10px;
+  select, p {
+    font-size: 14px;
+    padding: 8px;
   }
 }
