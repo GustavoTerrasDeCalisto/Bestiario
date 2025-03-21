@@ -79,19 +79,28 @@ span {
   font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
-  #app {
+@media (max-width: 768px) {
+  .left-panel, .right-panel {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .stat-container {
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   #left-section, #right-section {
     width: 100%;
     padding: 10px;
   }
-}
-.secondary {
-  font-size: 14px;
-  color: #bbb;
-  margin-top: 5px;
+
+  .stat-container p {
+    font-size: 14px;
+  }
+
+  /* Ajustes no layout principal */
+  .stat-container {
+    gap: 10px;
+  }
 }
