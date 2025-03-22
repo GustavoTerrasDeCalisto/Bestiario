@@ -313,8 +313,8 @@ span {
 .image-container {
   position: relative;
   width: 100%;
-  max-width: 300px; /* Ajuste conforme necessário */
-  height: 500px; /* Defina uma altura fixa para o container */
+  max-width: 400px; /* Ajuste conforme necessário */
+  height: 600px; /* Defina uma altura fixa para o container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -661,8 +661,8 @@ button {
 .image-container {
   position: relative;
   width: 100%;
-  max-width: 300px; /* Ajuste conforme necessário */
-  height: 500px; /* Defina uma altura fixa para o container */
+  max-width: 400px; /* Ajuste conforme necessário */
+  height: 600px; /* Defina uma altura fixa para o container */
   display: flex;
   justify-content: center;
   align-items: center;
