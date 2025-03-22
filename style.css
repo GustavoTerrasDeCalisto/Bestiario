@@ -314,7 +314,7 @@ span {
   position: relative;
   width: 100%;
   max-width: 300px; /* Ajuste conforme necessário */
-  height: 300px; /* Defina uma altura fixa para o container */
+  height: 500px; /* Defina uma altura fixa para o container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -662,7 +662,7 @@ button {
   position: relative;
   width: 100%;
   max-width: 300px; /* Ajuste conforme necessário */
-  height: 300px; /* Defina uma altura fixa para o container */
+  height: 500px; /* Defina uma altura fixa para o container */
   display: flex;
   justify-content: center;
   align-items: center;
