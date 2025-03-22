@@ -74,23 +74,24 @@ Sua presença em florestas e cavernas torna esses locais ainda mais perigosos pa
     Vulnerável:Eclipe
     Vulnerável: Cinzas`,
     bonus2: `Alvos que acertarem diretamente o coração causam dano dobrado na rolagem. Ao ser ferido no coração, Paralios marca imediatamente o atacante como sua obsessão até o fim do combate. Enquanto estiver focado nesse inimigo, Paralios recebe +1d20 de dano de Sangue contra ele, além de priorizá-lo em suas ações.
-Invocar Almas Sombrias: Paralios invoca 2 almas flutuantes que orbitam acima dele. Caso receba um golpe fatal, pode consumir as almas para curar 4d12. (Teste de Conexão para invocar – sem custo).
+Invocar Almas Sombrias: Paralios invoca 2 almas flutuantes que orbitam acima dele. Caso receba um golpe fatal, pode consumir as almas para curar 4d12. (Teste de Conexão para invocar - sem custo).
 Intangibilidade Inesperada: Como reação por turno, torna-se intocável e esquiva automaticamente de um acerto.
 Sussurros do Sono: Como ação livre, tenta colocar um inimigo em sono profundo (teste de Conexão vs Libertação).
 Braço Etéreo Dourado: Um ataque com braço dourado fantasmagórico, causando 2d20 de dano Alma. Pode carregar o ataque usando a ação completa ou movimento para causar 4d20.
-Névoa do Pesadelo: Passiva Ativável – Paralios ativa uma maldição no ambiente: ninguém no raio de 1000 km consegue dormir direito ou se recuperar, gerando insônia, medo e pesadelos contínuos.`,
+Névoa do Pesadelo: Passiva Ativável - Paralios ativa uma maldição no ambiente: ninguém no raio de 1000 km consegue dormir direito ou se recuperar, gerando insônia, medo e pesadelos contínuos.`,
 bonus3:`O Anunciador dos Sonhos
-Elemento – Desconhecido`,
-    Magias: `Nível 1 – Sonho Frágil, Nível 3 – Sonhos Forçados, Nível 4 – Labirinto Mental, Nível 5 – Dimensão dos Sonhos`,
-    Passivas:` Nível 1 – Teleporte repentino, Nível 4 – Furtividade Sombria.`,
-    Talentos: `Furtividade – Requisito: Agilidade,
-Intimidação – Requisito: Conexão,
+Elemento - Desconhecido`,
+    Magias: `Nível 1 - Sonho Frágil, Nível 3 - Sonhos Forçados, Nível 4 - Labirinto Mental, Nível 5 - Dimensão dos Sonhos`,
+    Passivas:` Nível 1 - Teleporte repentino, Nível 4 - Furtividade Sombria.`,
+    Talentos: `Furtividade - Requisito: Agilidade,
+Intimidação - Requisito: Conexão,
 Liderança -Requisito: Conexão.`,
     Descricao:`Uma entidade sombria e semi-transparente, de aparência esguia e perturbadora. Seu rosto é um contraste marcante: pele branca como porcelana rachada, envolta por manchas e traços negros que escorrem como tinta. No vazio de sua face, os olhos vermelhos brilham intensamente, parecendo atravessar a alma de quem ousa encará-lo.
 Paralios não caminha — paira silenciosamente pelo ar, como se a gravidade não o alcançasse. Sua presença é sempre envolta por névoas escuras e sussurros indecifráveis, carregando consigo o frio da noite e o peso dos sonhos malditos.
 Nas Terras de Calisto, Paralios é conhecido como o Anunciador dos Sonhos, o Arauto de Morpheus, o guardião dos pesadelos que anuncia a chegada da entidade maior. Onde Paralios passa, pragas de insônia surgem, e os pesadelos tomam forma, se arrastando para fora da mente dos aflitos.
 Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a paralisia do sono, enquanto seus olhos vermelhos são a última coisa que os vivos veem antes de acordar sem alma… ou nunca mais acordar.`,
-    img: "imagens/Paralios.png"
+    img: "imagens/Paralios.png",
+    img2: "imagens/Token-Paralios.png"
   }
 };
 
@@ -256,4 +257,41 @@ const toggleContent = document.querySelector('.toggle-content');
 // Adiciona um evento de clique ao botão para alternar a visibilidade da descrição
 toggleButton.addEventListener('click', () => {
   toggleContent.classList.toggle('show'); // Alterna a classe 'show' para mostrar ou esconder a descrição
+});
+
+
+select.addEventListener('change', () => {
+  const selected = creatures[select.value];
+  if (selected) {
+      document.getElementById('creatureStats').style.display = 'block';
+      document.getElementById('creatureName').textContent = select.value;
+      
+      const image1 = document.getElementById('creatureImage');
+      const image2 = document.getElementById('creatureImage2');
+      
+      image1.src = selected.img;
+      image2.src = selected.img2;
+      
+      // Lógica para alternar entre as imagens
+      let currentImage = 0;
+      const images = [image1, image2];
+
+      function showImage(index) {
+          images.forEach((img, i) => {
+              img.style.opacity = i === index ? "1" : "0";
+          });
+      }
+
+      document.getElementById('prevImage').addEventListener('click', () => {
+          currentImage = (currentImage === 0) ? 1 : 0;
+          showImage(currentImage);
+      });
+
+      document.getElementById('nextImage').addEventListener('click', () => {
+          currentImage = (currentImage === 0) ? 1 : 0;
+          showImage(currentImage);
+      });
+
+      showImage(currentImage); // Inicia mostrando a primeira imagem
+  }
 });
