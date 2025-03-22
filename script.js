@@ -50,9 +50,47 @@ Elemento - Caos`,
     Magias: `Nível 3 - Força gélida , nível 10 - Tempestade da natureza.`,
     Passivas:` Nível 1 - Furtividade sombria.`,
     Talentos: `-`,
-    Descricao:`O Musplum é uma criatura peculiar e misteriosa, com uma forma bípede coberta por penas e pelugem, que a faz parecer um híbrido entre uma ave e um mamífero. Embora possua orelhas grandes, semelhantes às de um rato, seu rosto e comportamento se assemelham mais ao de uma ave de rapina. O bico preto e curvado do Musplum é uma de suas principais características, usado para caçar e se alimentar de carcaças, reforçando sua natureza necrófaga. Essas criaturas são rápidas e evasivas, preferindo habitar os ambientes mais sombrios e inóspitos, como florestas densas, cavernas profundas e os subterrâneos abandonados. Os Musplums são criaturas noturnas, sendo praticamente impossíveis de serem avistadas durante o dia. Eles evitam a luz e qualquer tipo de exposição, preferindo se manter escondidos até o anoitecer, quando se tornam mais ativos. Quando jovens, os Musplums são minúsculos, medindo entre 3 cm e 10 cm de altura. Durante essa fase, podem facilmente se abrigar em pequenos buracos ou até dentro das casas das pessoas, onde passam despercebidos devido ao seu tamanho. No entanto, à medida que amadurecem, sofrem uma série de protometamorfoses que mudam drasticamente sua aparência. As penas começam a crescer em maior quantidade, seu bico aumenta consideravelmente e suas garras se tornam mais afiadas, transformando-os em predadores noturnos muito mais perigosos. Nessa fase adulta, a convivência próxima com humanos se torna inviável, pois seus instintos caçadores e sua agressividade se intensificam. Os Musplums são conhecidos por serem extremamente furtivos e sorrateiros durante a noite, movendo-se com precisão quase sobrenatural. Embora prefiram evitar o confronto, quando forçados a se revelar, eles se tornam inimigos metódicos e agressivos. Ataques de Musplums são rápidos e inesperados, com movimentos calculados para atingir pontos vitais de suas presas. São criaturas territoriais e cautelosas, mas quando se sentem ameaçadas, sua natureza predatória se manifesta com força total. Sua presença em florestas e cavernas torna esses locais ainda mais perigosos para aventureiros desavisados, e muitos caçadores de mitos afirmam que os Musplums são responsáveis por desaparecimentos misteriosos em regiões remotas. Essas criaturas sombrias e enigmáticas permanecem envoltas em lendas e superstições, sempre espreitando nas sombras, à espera do momento certo para atacar..
-Seus comportamentos e motivações são muitas vezes incompreendidos, mas uma coisa é certa: os Glink's são forças imprevisíveis e perigosas da natureza, que devem ser tratados com extrema cautela.`,
+    Descricao:`O Musplum é uma criatura peculiar e misteriosa, com uma forma bípede coberta por penas e pelugem, que a faz parecer um híbrido entre uma ave e um mamífero. Embora possua orelhas grandes, semelhantes às de um rato, seu rosto e comportamento se assemelham mais ao de uma ave de rapina. O bico preto e curvado do Musplum é uma de suas principais características, usado para caçar e se alimentar de carcaças, reforçando sua natureza necrófaga.
+Essas criaturas são rápidas e evasivas, preferindo habitar os ambientes mais sombrios e inóspitos, como florestas densas, cavernas profundas e os subterrâneos abandonados. Os Musplums são criaturas noturnas, sendo praticamente impossíveis de serem avistadas durante o dia. Eles evitam a luz e qualquer tipo de exposição, preferindo se manter escondidos até o anoitecer, quando se tornam mais ativos.
+Quando jovens, os Musplums são minúsculos, medindo entre 3 cm e 10 cm de altura. Durante essa fase, podem facilmente se abrigar em pequenos buracos ou até dentro das casas das pessoas, onde passam despercebidos devido ao seu tamanho. No entanto, à medida que amadurecem, sofrem uma série de protometamorfoses que mudam drasticamente sua aparência. As penas começam a crescer em maior quantidade, seu bico aumenta consideravelmente e suas garras se tornam mais afiadas, transformando-os em predadores noturnos muito mais perigosos. Nessa fase adulta, a convivência próxima com humanos se torna inviável, pois seus instintos caçadores e sua agressividade se intensificam.
+Os Musplums são conhecidos por serem extremamente furtivos e sorrateiros durante a noite, movendo-se com precisão quase sobrenatural. Embora prefiram evitar o confronto, quando forçados a se revelar, eles se tornam inimigos metódicos e agressivos. Ataques de Musplums são rápidos e inesperados, com movimentos calculados para atingir pontos vitais de suas presas. São criaturas territoriais e cautelosas, mas quando se sentem ameaçadas, sua natureza predatória se manifesta com força total.
+Sua presença em florestas e cavernas torna esses locais ainda mais perigosos para aventureiros desavisados, e muitos caçadores de mitos afirmam que os Musplums são responsáveis por desaparecimentos misteriosos em regiões remotas. Essas criaturas sombrias e enigmáticas permanecem envoltas em lendas e superstições, sempre espreitando nas sombras, à espera do momento certo para atacar.`,
     img: "imagens/Musplum.png"
+  },"Paralios": {
+    vida: 110,
+    sanidade: 70,
+    especial: 25,
+    armadura: 2,
+    vidaPorNivel: 15,
+    sanidadePorNivel: 8,
+    especialPorNivel: 4,
+    armaduraPorNivel: 2,
+    bru: 12, agi: 14, det: 11, pre: 8, lib: 25, cnx: 28,
+    bruDano: 0, agiDano: 1, detDano: 0, preDano: 0, libDano: 3, cnxDano: 4,
+    bruTest: 1, agiTest: 2, detTest: 1, preTest: -2, libTest: 5, cnxTest: 6,
+    bonus:`Imune a dano de:Morte
+    Imune a dano de:Sono
+    Resistente:Alma
+    Vulnerável:Eclipe
+    Vulnerável: Cinzas`,
+    bonus2: `Alvos que acertarem diretamente o coração causam dano dobrado na rolagem. Ao ser ferido no coração, Paralios marca imediatamente o atacante como sua obsessão até o fim do combate. Enquanto estiver focado nesse inimigo, Paralios recebe +1d20 de dano de Sangue contra ele, além de priorizá-lo em suas ações.
+Invocar Almas Sombrias: Paralios invoca 2 almas flutuantes que orbitam acima dele. Caso receba um golpe fatal, pode consumir as almas para curar 4d12. (Teste de Conexão para invocar – sem custo).
+Intangibilidade Inesperada: Como reação por turno, torna-se intocável e esquiva automaticamente de um acerto.
+Sussurros do Sono: Como ação livre, tenta colocar um inimigo em sono profundo (teste de Conexão vs Libertação).
+Braço Etéreo Dourado: Um ataque com braço dourado fantasmagórico, causando 2d20 de dano Alma. Pode carregar o ataque usando a ação completa ou movimento para causar 4d20.
+Névoa do Pesadelo: Passiva Ativável – Paralios ativa uma maldição no ambiente: ninguém no raio de 1000 km consegue dormir direito ou se recuperar, gerando insônia, medo e pesadelos contínuos.`,
+bonus3:`O Anunciador dos Sonhos
+Elemento – Desconhecido`,
+    Magias: `Nível 1 – Sonho Frágil, Nível 3 – Sonhos Forçados, Nível 4 – Labirinto Mental, Nível 5 – Dimensão dos Sonhos`,
+    Passivas:` Nível 1 – Teleporte repentino, Nível 4 – Furtividade Sombria.`,
+    Talentos: `Furtividade – Requisito: Agilidade,
+Intimidação – Requisito: Conexão,
+Liderança -Requisito: Conexão.`,
+    Descricao:`Uma entidade sombria e semi-transparente, de aparência esguia e perturbadora. Seu rosto é um contraste marcante: pele branca como porcelana rachada, envolta por manchas e traços negros que escorrem como tinta. No vazio de sua face, os olhos vermelhos brilham intensamente, parecendo atravessar a alma de quem ousa encará-lo.
+Paralios não caminha — paira silenciosamente pelo ar, como se a gravidade não o alcançasse. Sua presença é sempre envolta por névoas escuras e sussurros indecifráveis, carregando consigo o frio da noite e o peso dos sonhos malditos.
+Nas Terras de Calisto, Paralios é conhecido como o Anunciador dos Sonhos, o Arauto de Morpheus, o guardião dos pesadelos que anuncia a chegada da entidade maior. Onde Paralios passa, pragas de insônia surgem, e os pesadelos tomam forma, se arrastando para fora da mente dos aflitos.
+Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a paralisia do sono, enquanto seus olhos vermelhos são a última coisa que os vivos veem antes de acordar sem alma… ou nunca mais acordar.`,
+    img: "imagens/Paralios.png"
   }
 };
 
