@@ -265,14 +265,13 @@ select.addEventListener('change', () => {
   if (selected) {
       document.getElementById('creatureStats').style.display = 'block';
       document.getElementById('creatureName').textContent = select.value;
-      
+
       const image1 = document.getElementById('creatureImage');
       const image2 = document.getElementById('creatureImage2');
-      
+
       image1.src = selected.img;
       image2.src = selected.img2;
-      
-      // Lógica para alternar entre as imagens
+
       let currentImage = 0;
       const images = [image1, image2];
 
@@ -282,16 +281,18 @@ select.addEventListener('change', () => {
           });
       }
 
-      document.getElementById('prevImage').addEventListener('click', () => {
+      // Garante que a primeira imagem esteja visível ao trocar de criatura
+      showImage(0);
+
+      document.getElementById('prevImage').onclick = () => {
           currentImage = (currentImage === 0) ? 1 : 0;
           showImage(currentImage);
-      });
+      };
 
-      document.getElementById('nextImage').addEventListener('click', () => {
+      document.getElementById('nextImage').onclick = () => {
           currentImage = (currentImage === 0) ? 1 : 0;
           showImage(currentImage);
-      });
-
-      showImage(currentImage); // Inicia mostrando a primeira imagem
+      };
   }
 });
+
