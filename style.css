@@ -313,28 +313,28 @@ span {
 
 .image-container {
   position: relative;
-  width: auto;  /* Adapte ao tamanho da imagem */
+  width: 100%; /* Ou defina um tamanho fixo, tipo 300px */
+  max-width: 300px; /* Ajuste conforme necessário */
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .image-container img {
   position: absolute;
-  object-fit: contain; /* Garante que a imagem inteira apareça */
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Garante que a imagem apareça inteira */
   transition: opacity 0.5s ease-in-out;
 }
 
-/* Segunda imagem começa sobreposta, mas invisível */
 #creatureImage2 {
-  position: absolute; /* Mantém na mesma posição da primeira */
-  top: 0;
-  left: 0;
-  opacity: 0;
+  opacity: 0; /* Começa invisível */
 }
 
 
@@ -661,31 +661,30 @@ button {
 
 
 
-
 .image-container {
   position: relative;
-  width: auto;  /* Adapte ao tamanho da imagem */
+  width: 100%; /* Ou defina um tamanho fixo, tipo 300px */
+  max-width: 300px; /* Ajuste conforme necessário */
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .image-container img {
   position: absolute;
-  object-fit: contain; /* Garante que a imagem inteira apareça */
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Garante que a imagem apareça inteira */
   transition: opacity 0.5s ease-in-out;
 }
 
-/* Segunda imagem começa sobreposta, mas invisível */
 #creatureImage2 {
-  position: absolute; /* Mantém na mesma posição da primeira */
-  top: 0;
-  left: 0;
-  opacity: 0;
+  opacity: 0; /* Começa invisível */
 }
 
 
