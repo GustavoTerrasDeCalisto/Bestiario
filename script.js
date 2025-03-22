@@ -260,39 +260,47 @@ toggleButton.addEventListener('click', () => {
 });
 
 
+// Configuração inicial dos botões fora do evento para evitar múltiplos event listeners
+let currentImage = 0;
+const images = [];
+
+function showImage(index) {
+    images.forEach((img, i) => {
+        img.style.opacity = i === index ? "1" : "0";
+    });
+}
+
+// Evento de mudança de criatura
 select.addEventListener('change', () => {
-  const selected = creatures[select.value];
-  if (selected) {
-      document.getElementById('creatureStats').style.display = 'block';
-      document.getElementById('creatureName').textContent = select.value;
+    const selected = creatures[select.value];
+    
+    if (selected) {
+        document.getElementById('creatureStats').style.display = 'block';
+        document.getElementById('creatureName').textContent = select.value;
 
-      const image1 = document.getElementById('creatureImage');
-      const image2 = document.getElementById('creatureImage2');
+        const image1 = document.getElementById('creatureImage');
+        const image2 = document.getElementById('creatureImage2');
 
-      image1.src = selected.img;
-      image2.src = selected.img2;
+        image1.src = selected.img;
+        image2.src = selected.img2;
 
-      let currentImage = 0;
-      const images = [image1, image2];
-
-      function showImage(index) {
-          images.forEach((img, i) => {
-              img.style.opacity = i === index ? "1" : "0";
-          });
-      }
-
-      // Garante que a primeira imagem esteja visível ao trocar de criatura
-      showImage(0);
-
-      document.getElementById('prevImage').onclick = () => {
-          currentImage = (currentImage === 0) ? 1 : 0;
-          showImage(currentImage);
-      };
-
-      document.getElementById('nextImage').onclick = () => {
-          currentImage = (currentImage === 0) ? 1 : 0;
-          showImage(currentImage);
-      };
-  }
+        images[0] = image1;
+        images[1] = image2;
+        
+        currentImage = 0; // Reinicia para a primeira imagem
+        showImage(currentImage);
+    }
 });
+
+// Configuração dos botões
+document.getElementById('prevImage').onclick = () => {
+    currentImage = (currentImage === 0) ? 1 : 0;
+    showImage(currentImage);
+};
+
+document.getElementById('nextImage').onclick = () => {
+    currentImage = (currentImage === 0) ? 1 : 0;
+    showImage(currentImage);
+};
+
 
