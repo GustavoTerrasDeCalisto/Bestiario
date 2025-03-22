@@ -27,7 +27,8 @@ Embora sua origem seja desconhecida, os Glink's possuem uma ligação profunda c
 Apesar de sua conexão com a natureza, os Glink's não têm afeto pela ideia de proteger toda a floresta ou preservar o equilíbrio natural em uma escala maior. Eles veem a natureza fora de seus domínios como algo a ser corrompido ou destruído. Quando se aventuram fora de seus territórios, esses seres muitas vezes queimam, destroem e envenenam a terra e as plantas que encontram. Essa dualidade reflete sua essência caótica, onde a proteção e a destruição da natureza coexistem de maneira imprevisível.
 Os Glink's desprezam sociedades evoluídas e a vida em grandes grupos. Vivem em pequenos bandos ou até mesmo sozinhos, preferindo a solidão ou o contato limitado com outros de sua espécie. Eles evitam qualquer forma de civilização avançada, considerando-a uma ameaça para suas formas primitivas de vida e para a floresta que habitam. Por essa razão, são frequentemente vistos como inimigos das civilizações humanas, druidas e outros protetores da natureza.
 Seus comportamentos e motivações são muitas vezes incompreendidos, mas uma coisa é certa: os Glink's são forças imprevisíveis e perigosas da natureza, que devem ser tratados com extrema cautela.`,
-    img: "imagens/Glink's.png"
+    img: "imagens/Glink's.png",
+    img2: "imagens/Token-Glink's.png"
   },"Musplum": {
     vida: 30,
     sanidade: 15,
@@ -55,7 +56,8 @@ Essas criaturas são rápidas e evasivas, preferindo habitar os ambientes mais s
 Quando jovens, os Musplums são minúsculos, medindo entre 3 cm e 10 cm de altura. Durante essa fase, podem facilmente se abrigar em pequenos buracos ou até dentro das casas das pessoas, onde passam despercebidos devido ao seu tamanho. No entanto, à medida que amadurecem, sofrem uma série de protometamorfoses que mudam drasticamente sua aparência. As penas começam a crescer em maior quantidade, seu bico aumenta consideravelmente e suas garras se tornam mais afiadas, transformando-os em predadores noturnos muito mais perigosos. Nessa fase adulta, a convivência próxima com humanos se torna inviável, pois seus instintos caçadores e sua agressividade se intensificam.
 Os Musplums são conhecidos por serem extremamente furtivos e sorrateiros durante a noite, movendo-se com precisão quase sobrenatural. Embora prefiram evitar o confronto, quando forçados a se revelar, eles se tornam inimigos metódicos e agressivos. Ataques de Musplums são rápidos e inesperados, com movimentos calculados para atingir pontos vitais de suas presas. São criaturas territoriais e cautelosas, mas quando se sentem ameaçadas, sua natureza predatória se manifesta com força total.
 Sua presença em florestas e cavernas torna esses locais ainda mais perigosos para aventureiros desavisados, e muitos caçadores de mitos afirmam que os Musplums são responsáveis por desaparecimentos misteriosos em regiões remotas. Essas criaturas sombrias e enigmáticas permanecem envoltas em lendas e superstições, sempre espreitando nas sombras, à espera do momento certo para atacar.`,
-    img: "imagens/Musplum.png"
+    img: "imagens/Musplum.png",
+    img2: "imagens/Token-Musplum.png"
   },"Paralios": {
     vida: 110,
     sanidade: 70,
