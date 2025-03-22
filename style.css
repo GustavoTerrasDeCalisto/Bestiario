@@ -313,9 +313,9 @@ span {
 
 .image-container {
   position: relative;
-  width: 100%; /* Ou defina um tamanho fixo, tipo 300px */
+  width: 100%;
   max-width: 300px; /* Ajuste conforme necessário */
-  height: auto;
+  height: 300px; /* Defina uma altura fixa para o container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,14 +329,13 @@ span {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Garante que a imagem apareça inteira */
+  object-fit: cover; /* Garante que a imagem cubra o container sem distorção */
   transition: opacity 0.5s ease-in-out;
 }
 
 #creatureImage2 {
   opacity: 0; /* Começa invisível */
 }
-
 
 
 
@@ -660,12 +659,11 @@ button {
 }
 
 
-
 .image-container {
   position: relative;
-  width: 100%; /* Ou defina um tamanho fixo, tipo 300px */
+  width: 100%;
   max-width: 300px; /* Ajuste conforme necessário */
-  height: auto;
+  height: 300px; /* Defina uma altura fixa para o container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -679,7 +677,7 @@ button {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Garante que a imagem apareça inteira */
+  object-fit: cover; /* Garante que a imagem cubra o container sem distorção */
   transition: opacity 0.5s ease-in-out;
 }
 
