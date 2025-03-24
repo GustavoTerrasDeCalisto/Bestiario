@@ -82,7 +82,7 @@ Sussurros do Sono: Como ação livre, tenta colocar um inimigo em sono profundo 
 Braço Etéreo Dourado: Um ataque com braço dourado fantasmagórico, causando 2d20 de dano Alma. Pode carregar o ataque usando a ação completa ou movimento para causar 4d20.
 Névoa do Pesadelo: Passiva Ativável - Paralios ativa uma maldição no ambiente: ninguém no raio de 1000 km consegue dormir direito ou se recuperar, gerando insônia, medo e pesadelos contínuos.`,
 bonus3:`O Anunciador dos Sonhos
-Elemento - Desconhecido`,
+Elemento - Desconhecido e Poder`,
     Magias: `Nível 1 - Sonho Frágil, Nível 3 - Sonhos Forçados, Nível 4 - Labirinto Mental, Nível 5 - Dimensão dos Sonhos`,
     Passivas:` Nível 1 - Teleporte repentino, Nível 4 - Furtividade Sombria.`,
     Talentos: `Furtividade - Requisito: Agilidade,
@@ -94,6 +94,38 @@ Nas Terras de Calisto, Paralios é conhecido como o Anunciador dos Sonhos, o Ara
 Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a paralisia do sono, enquanto seus olhos vermelhos são a última coisa que os vivos veem antes de acordar sem alma… ou nunca mais acordar.`,
     img: "imagens/Paralios.png",
     img2: "imagens/Token-Paralios.png"
+  },"Deinonychus": {
+    vida: 72,
+    sanidade: 33,
+    especial: 8,
+    armadura: 2,
+    vidaPorNivel: 15,
+    sanidadePorNivel: 4,
+    especialPorNivel: 3,
+    armaduraPorNivel: 2,
+    bru: 22, agi: 12, det: 11, pre: 10, lib: 13, cnx: 10,
+    bruDano: 2, agiDano: 1, detDano: 1, preDano: 0, libDano: 1, cnxDano: 0,
+    bruTest: 5, agiTest: 1, detTest: 1, preTest: 0, libTest: 1, cnxTest: 0,
+    bonus:`Resistente: dano Perfurante
+    Vulnerável: Dano de Sono
+    Imune: Dano de Mental`,
+    bonus2: `Caçada Feroz: Quando estão com pouca vida eles podem ecoar um som que chama a atenção de outros Deinonychus próximos, que surgem para auxiliar no combate. Essas criaturas patrulham em grupos de 5 a 7, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
+Ferocidade ancestral – teste de Agilidade : Todo turno pode atacar duas vezes podendo escolher os seguintes golpes – Depois que acertar dois golpes seguidos em uma alvo tem chance debilitar o alvo (o alvo quando for atingido deve rodar 1d20 Determinação, a DT é 12:
+Garras laminares – golpeia em área 3m de distancia até 3 alvos 2d12 de dano Cortante.
+Mordida assombrosa – Pula até 5m em um alvo e morde causando 3d10 de dano Cortante.
+Cauda chicote – Faz um giro que causa 3d8 de dano Esmagante em área em quem estiver próximo de 2m.`,
+bonus3:`Deinonychus antirrhopus
+Elemento – Desconhecido`,
+    Magias: `Nenhuma.`,
+    Passivas:` Nível 1 – Consumir, nível 3 – Vingança.`,
+    Talentos: `Intimidação - Requisito: Conexão, Percepção - Requisito: Libertação e Sobrevivência - Requisito: Determinação.`,
+    Descricao:`O Deinonychus antirrhopus é uma criatura ancestral que parece ter sido arrancada das profundezas do tempo, trazida de volta ao mundo atual por forças sobrenaturais. Este dinossauro terópode, que viveu originalmente no período Cretáceo, agora caminha novamente pelo continente, causando um desequilíbrio ecológico devastador. Com uma estranha aura negra que parece envolver seu corpo, o Deinonychus se destaca como uma aberração, um sobrevivente de uma era extinta que não pertence à fauna moderna.
+Embora aparentem ser animais comuns à primeira vista, o comportamento e a presença perturbadora desses predadores revelam sua verdadeira natureza. Eles surgiram no continente de Eldoria há mais de 850 anos, antes da grande separação do território, trazidos de volta por algum evento misterioso e não natural. Desde então, adaptaram-se de forma assustadoramente eficiente ao novo mundo, dominando as áreas em que se estabeleceram. Suas aparições causam terror nas populações locais, pois não se sabe ao certo se essa é a única espécie ancestral ressuscitada ou se outras criaturas antigas podem também estar à espreita.
+Os Deinonychus são caçadores territoriais e implacáveis, conhecidos por sua crueldade e comportamento predatório. Muitas vezes, eles caçam não pela necessidade de sobrevivência, mas por puro instinto, quase como se estivessem brincando com suas presas em um jogo macabro. Eles caçam em bandos, normalmente compostos de 5 a 7 indivíduos, e suas emboscadas são organizadas e letais. Curiosamente, apesar de sua tendência a caçar em grupo, os Deinonychus são egoístas e cabeças-duras, preferindo muitas vezes caçar sozinhos. Eles só chamam seus companheiros de bando quando estão gravemente feridos ou em perigo iminente.
+A aparência imponente desses predadores é complementada por sua pele dura e resistente, que lhes proporciona uma defesa natural contra ataques. Suas garras afiadas são comparáveis a lâminas, capazes de cortar profundamente seus alvos, enquanto sua mordida poderosa é o suficiente para desmembrar presas com facilidade. O comportamento de caça, sua territorialidade agressiva, e a forma como perturbam o equilíbrio ecológico tornam o Deinonychus antirrhopus uma ameaça assustadora para o mundo moderno.
+Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um som agudo e estridente que convoca rapidamente seus companheiros. Essas criaturas representam não apenas uma ameaça física, mas também um enigma sobre a origem de seu retorno, sugerindo que forças muito maiores e desconhecidas podem estar em jogo, manipulando o tempo e a vida.`,
+    img: "imagens/Deinonychus.png",
+    img2: "imagens/Token-Deinonychus.png"
   }
 };
 
