@@ -13,8 +13,8 @@ const creatures = {
     bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: -2, cnxTest: -1,
     bonus:`Resistente:Ácido
     Vulnerável: Aura`,
-    bonus2: `*Ataque com calda - teste de Brutalidade:* Quando ataca causa _2d8 de dano esmagante_.
-*Ataque com garras - teste de Agilidade:* Ao acertar causa _3d6 de dano cortante_.
+    bonus2: `{pigmento}*Ataque com calda - teste de Brutalidade:*{/pigmento} Quando ataca causa _2d8 de dano esmagante_.
+{pigmento}*Ataque com garras - teste de Agilidade:*{/pigmento} Ao acertar causa _3d6 de dano cortante_.
 {pigmento}*Ataque com arma coletada:*{/pigmento} sua arma supersticiosa causa dano _ácido extra de 2d4_, e pode envenenar.
 `,
     bonus3:`Os Protetores da floresta
@@ -43,9 +43,9 @@ Seus comportamentos e motivações são muitas vezes incompreendidos, mas uma co
     bruTest: 1, agiTest: 3, detTest: 1, preTest: -1, libTest: -1, cnxTest: 1,
     bonus:`Resistente:Escuridão
     Vulnerável: Gelo`,
-    bonus2: `Ataque com bico - teste de Agilidade : Prioriza as pernas e causa 1d12 de dano perfurante.
-Ataque com garras - teste de Brutalidade: Ao acertar causa 3d6 de dano cortante.
-Olhar no escuro: pode enxergar no escuro.`,
+    bonus2: `{pigmento}*Ataque com bico - teste de Agilidade :*{/pigmento} Prioriza as pernas e causa _1d12 de dano perfurante_.
+{pigmento}*Ataque com garras - teste de Brutalidade:*{/pigmento} Ao acertar causa _3d6 de dano cortante_.
+{pigmento}*Olhar no escuro:*{/pigmento} pode enxergar no escuro.`,
 bonus3:`Rastejadores obscuros
 Elemento - Caos`,
     Magias: `Nível 3 - Força gélida , nível 10 - Tempestade da natureza.`,
@@ -75,12 +75,12 @@ Sua presença em florestas e cavernas torna esses locais ainda mais perigosos pa
     Resistente:Alma
     Vulnerável:Eclipe
     Vulnerável: Cinzas`,
-    bonus2: `Alvos que acertarem diretamente o coração causam dano dobrado na rolagem. Ao ser ferido no coração, Paralios marca imediatamente o atacante como sua obsessão até o fim do combate. Enquanto estiver focado nesse inimigo, Paralios recebe +1d20 de dano de Sangue contra ele, além de priorizá-lo em suas ações.
-Invocar Almas Sombrias: Paralios invoca 2 almas flutuantes que orbitam acima dele. Caso receba um golpe fatal, pode consumir as almas para curar 4d12. (Teste de Conexão para invocar - sem custo).
-Intangibilidade Inesperada: Como reação por turno, torna-se intocável e esquiva automaticamente de um acerto.
-Sussurros do Sono: Como ação livre, tenta colocar um inimigo em sono profundo (teste de Conexão vs Libertação).
-Braço Etéreo Dourado: Um ataque com braço dourado fantasmagórico, causando 2d20 de dano Alma. Pode carregar o ataque usando a ação completa ou movimento para causar 4d20.
-Névoa do Pesadelo: Passiva Ativável - Paralios ativa uma maldição no ambiente: ninguém no raio de 1000 km consegue dormir direito ou se recuperar, gerando insônia, medo e pesadelos contínuos.`,
+    bonus2: `{pigmento}*Alvos que acertarem diretamente o coração causam dano dobrado na rolagem. Ao ser ferido no coração, Paralios marca imediatamente o atacante como sua obsessão até o fim do combate. Enquanto estiver focado nesse inimigo, Paralios recebe _+1d20 de dano de Sangue_ contra ele, além de priorizá-lo em suas ações.
+{pigmento}*Invocar Almas Sombrias:*{/pigmento} Paralios invoca _2 almas flutuantes_ que orbitam acima dele. Caso receba um _golpe fatal_, pode consumir as almas para _curar 4d12_. (Teste de Conexão para invocar - sem custo).
+{pigmento}*Intangibilidade Inesperada:*{/pigmento} Como reação por turno, torna-se intocável e esquiva automaticamente de um acerto.
+{pigmento}*Sussurros do Sono:*{/pigmento} Como ação livre, tenta colocar um inimigo em sono profundo (teste de Conexão vs Libertação).
+{pigmento}*Braço Etéreo Dourado:*{/pigmento} Um ataque com braço dourado fantasmagórico, causando _2d20 de dano Alma_. Pode carregar o ataque usando a ação completa ou movimento para causar _4d20_.
+{pigmento}*Névoa do Pesadelo:*{/pigmento} Passiva Ativável - Paralios ativa uma maldição no ambiente: ninguém no raio de 1000 km consegue dormir direito ou se recuperar, gerando insônia, medo e pesadelos contínuos.`,
 bonus3:`O Anunciador dos Sonhos
 Elemento - Desconhecido e Poder`,
     Magias: `Nível 1 - Sonho Frágil, Nível 3 - Sonhos Forçados, Nível 4 - Labirinto Mental, Nível 5 - Dimensão dos Sonhos`,
@@ -109,11 +109,11 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
     bonus:`Resistente: dano Perfurante
     Vulnerável: Dano de Sono
     Imune: Dano de Mental`,
-     bonus2: `Caçada Feroz: Quando estão com pouca vida eles podem ecoar um som que chama a atenção de outros Deinonychus próximos, que surgem para auxiliar no combate. Essas criaturas patrulham em grupos de 5 a 7, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
-Ferocidade ancestral – teste de Agilidade : Todo turno pode atacar duas vezes podendo escolher os seguintes golpes – Depois que acertar dois golpes seguidos em uma alvo tem chance debilitar o alvo (o alvo quando for atingido deve rodar 1d20 Determinação, a DT é 12:
-Garras laminares – golpeia em área 3m de distancia até 3 alvos 2d12 de dano Cortante.
-Mordida assombrosa – Pula até 5m em um alvo e morde causando 3d10 de dano Cortante.
-Cauda chicote – Faz um giro que causa 3d8 de dano Esmagante em área em quem estiver próximo de 2m.`,
+     bonus2: `{pigmento}*Caçada Feroz:{/pigmento} Quando estão com pouca vida eles podem ecoar um som que chama a atenção de outros Deinonychus próximos, que surgem para auxiliar no combate. Essas criaturas patrulham em grupos de 5 a 7, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
+{pigmento}*Ferocidade ancestral – teste de Agilidade :{/pigmento} Todo turno pode atacar duas vezes podendo escolher os seguintes golpes – Depois que acertar dois golpes seguidos em uma alvo tem chance debilitar o alvo (o alvo quando for atingido deve rodar 1d20 Determinação, a DT é 12:
+{pigmento}*Garras laminares{/pigmento} – golpeia em área 3m de distancia até 3 alvos _2d12 de dano Cortante_.
+{pigmento}*Mordida assombrosa{/pigmento} – Pula até 5m em um alvo e morde causando _3d10 de dano Cortante_.
+{pigmento}*Cauda chicote{/pigmento} – Faz um giro que causa _3d8 de dano Esmagante_ em área em quem estiver próximo de 2m.`,
     bonus3:`Deinonychus antirrhopus
 Elemento – Desconhecido`,
     Magias: `Nenhuma.`,
