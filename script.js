@@ -13,9 +13,9 @@ const creatures = {
     bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: -2, cnxTest: -1,
     bonus:`Resistente:Ácido
     Vulnerável: Aura`,
-    bonus2: `Ataque com calda - teste de Brutalidade: Quando ataca causa 2d8 de dano esmagante.
-Ataque com garras - teste de Agilidade: Ao acertar causa 3d6 de dano cortante.
-Ataque com arma coletada: sua arma supersticiosa causa dano ácido extra de 2d4, e pode envenenar.
+    bonus2: `*Ataque com calda - teste de Brutalidade:* Quando ataca causa *2d8 de dano esmagante*.
+*Ataque com garras - teste de Agilidade:* Ao acertar causa 3d6 de dano cortante.
+*Ataque com arma coletada:* sua arma supersticiosa causa dano *ácido extra de 2d4*, e pode envenenar.
 `,
     bonus3:`Os Protetores da floresta
 Elemento - Caos`,
