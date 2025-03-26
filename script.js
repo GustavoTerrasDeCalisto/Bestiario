@@ -403,36 +403,52 @@ function updateStats(creature, level) {
   document.getElementById('armadura').textContent = armadura;
 }
 
-function formatBonusText(text, type = "default") {
+function formatBonusText(text, type = "default") { 
+  // Define a classe CSS que será usada dependendo do tipo
   let className;
   if (type === "bonus1") className = "bonus1-paragraph";
   else if (type === "bonus2") className = "bonus2-paragraph";
   else if (type === "bonus3") className = "bonus3-paragraph";
   else className = "bonus-paragraph";
 
-  return text.split(/\n+/).map(sentence =>
-    sentence.trim() ? `<p class="${className}">${sentence}</p>` : ''
-  ).join('');
+  // Aqui acontece o processamento do texto:
+  return text
+    .split(/\n+/) // 1. Quebra o texto sempre que encontrar uma ou mais quebras de linha (\n)
+    .map(sentence => {
+      if (sentence.trim()) {
+        // Aqui adicionamos o replace para converter *texto* em <strong>texto</strong>
+        const formattedSentence = sentence.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
+        return `<p class="${className}">${formattedSentence}</p>`;
+      } else {
+        return '';
+      }
+    })
+    .join(''); // 5. Junta tudo numa única string (sem separador)
 }
 
 select.addEventListener('change', () => {
-  const selected = creatures[select.value];
+  const selected = creatures[select.value]; // Pega a criatura selecionada
   if (selected) {
+    // Exibe a área de stats
     document.getElementById('creatureStats').style.display = 'block';
+    // Atualiza o nome e a imagem
     nameEl.textContent = select.value;
     imageEl.src = selected.img;
 
-    document.getElementById('bonus').innerHTML = formatBonusText(selected.bonus, "bonus1"); // Estilo exclusivo
+    // Formata e insere os bônus, cada um com um estilo diferente
+    document.getElementById('bonus').innerHTML = formatBonusText(selected.bonus, "bonus1"); 
     document.getElementById('bonus2').innerHTML = formatBonusText(selected.bonus2, "bonus2");
     document.getElementById('bonus3').innerHTML = formatBonusText(selected.bonus3, "bonus3");
 
     // Outras configurações de stats...
- // Atualiza a descrição
- descricao.innerHTML = formatDescriptionText(selected.Descricao); // Preenche a descrição com base na criatura selecionada
-} else {
-  document.getElementById('creatureStats').style.display = 'none'; // Se não houver criatura, oculta as stats
-}
+    // Atualiza a descrição da criatura
+    descricao.innerHTML = formatDescriptionText(selected.Descricao); 
+  } else {
+    // Se não tiver criatura selecionada, esconde a área de stats
+    document.getElementById('creatureStats').style.display = 'none'; 
+  }
 });
+
 
 
 // Preenche o conteúdo da descrição com base no objeto "creatures"
