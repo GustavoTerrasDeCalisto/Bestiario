@@ -126,7 +126,34 @@ A aparência imponente desses predadores é complementada por sua pele dura e re
 Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um som agudo e estridente que convoca rapidamente seus companheiros. Essas criaturas representam não apenas uma ameaça física, mas também um enigma sobre a origem de seu retorno, sugerindo que forças muito maiores e desconhecidas podem estar em jogo, manipulando o tempo e a vida.`,
     img: "imagens/Deinonychus.png",
     img2: "imagens/Token-Deinonychus.png"
-  }
+  },"Raposa Selvagem": {
+    vida: 24,
+    sanidade: 14,
+    especial: 0,
+    armadura: 2,
+    vidaPorNivel: 5,
+    sanidadePorNivel: 3,
+    especialPorNivel: 0,
+    armaduraPorNivel: 1,
+    bru: 10, agi: 16, det: 12, pre: 14, lib: 12, cnx: 10,
+    bruDano: 0, agiDano: 1, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
+    bruTest: -1, agiTest: 3, detTest: 1, preTest: 2, libTest: 1, cnxTest: 0,
+    bonus:`Resistente: dano de Caos
+    Vulnerável: dano de Fogo`,
+    bonus2: `Evasão Instintiva: Sempre que for alvo de um ataque, ganha +1d8 no teste.
+Furtividade Natural: Em ambientes como florestas, campos e montanhas, a Raposa recebe um bônus de furtividade de 8+teste de Preservação.
+Faro Aguçado: Capaz de rastrear presas e inimigos a até 50 metros. DT para rastrear ou localizar inimigos escondidos: 8.`,
+    bonus3:`Animal Comum
+Elemento – Caos`,
+    Magias: `Nenhuma.`,
+    Passivas:`Nenhuma.`,
+    Talentos: `Furtividade – Requisito: Agilidade, Percepção – Requisito: Libertação.`,
+    Descricao:`A Raposa Selvagem é uma criatura ágil, inteligente e desconfiada, predominante nas florestas e campos das Terras de Calisto. Com pelagem avermelhada e olhos atentos, sobrevive caçando pequenos roedores e aves, usando a furtividade como sua principal arma.
+Apesar de ser encontrada em quase todos os continentes, as raposas originárias de Elfnoria se destacam por sua pelagem mais densa e coloração branca, adaptadas ao frio das florestas élficas. Essas raposas possuem uma destreza superior e um faro apurado, tornando-se caçadoras ainda mais letais e difíceis de capturar.
+Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos para reagir com ataques precisos ou simplesmente desaparecer na mata.`,
+    img: "imagens/RaposaSelvagem.png",
+    img2: "imagens/Token-RaposaSelvagem.png"
+}
 };
 
 const select = document.getElementById('creatureSelect');
