@@ -109,11 +109,11 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
     bonus:`Resistente: dano Perfurante
     Vulnerável: Dano de Sono
     Imune: Dano de Mental`,
-    bonus2: `Mordida Ágil: A Raposa Selvagem avança rapidamente contra o alvo, desferindo uma mordida precisa e veloz. Ela pode realizar este ataque natural em combate corpo a corpo com grande facilidade, Dano esmagante: 1d8 +Nível atual, Dificuldade de teste (DT):15.
-Garras Cortantes: Com um salto rápido, a Raposa desfere um golpe com suas garras dianteiras, mirando pontos frágeis do inimigo, Dano: 1d6 +Nível atual, Dificuldade de teste (DT):12.
-Evasão Instintiva: Acostumada a sobreviver, a Raposa pode usar sua agilidade para se esquivar de ataques e armadilhas. Sempre que for alvo de um ataque, ganha +1d8 no teste.
-Furtividade Natural: Em ambientes como florestas, campos e montanhas, a Raposa recebe um bônus de furtividade de 8+teste de Preservação.
-Faro Aguçado: Capaz de rastrear presas e inimigos a até 50 metros. DT para rastrear ou localizar inimigos escondidos: 8.`,
+     bonus2: `Caçada Feroz: Quando estão com pouca vida eles podem ecoar um som que chama a atenção de outros Deinonychus próximos, que surgem para auxiliar no combate. Essas criaturas patrulham em grupos de 5 a 7, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
+Ferocidade ancestral – teste de Agilidade : Todo turno pode atacar duas vezes podendo escolher os seguintes golpes – Depois que acertar dois golpes seguidos em uma alvo tem chance debilitar o alvo (o alvo quando for atingido deve rodar 1d20 Determinação, a DT é 12:
+Garras laminares – golpeia em área 3m de distancia até 3 alvos 2d12 de dano Cortante.
+Mordida assombrosa – Pula até 5m em um alvo e morde causando 3d10 de dano Cortante.
+Cauda chicote – Faz um giro que causa 3d8 de dano Esmagante em área em quem estiver próximo de 2m.`,
     bonus3:`Deinonychus antirrhopus
 Elemento – Desconhecido`,
     Magias: `Nenhuma.`,
@@ -140,7 +140,9 @@ Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um s
     bruTest: -1, agiTest: 3, detTest: 1, preTest: 2, libTest: 1, cnxTest: 0,
     bonus:`Resistente: dano de Caos
     Vulnerável: dano de Fogo`,
-    bonus2: `Evasão Instintiva: Sempre que for alvo de um ataque, ganha +1d8 no teste.
+ bonus2: `Mordida Ágil: A Raposa Selvagem avança rapidamente contra o alvo, desferindo uma mordida precisa e veloz. Ela pode realizar este ataque natural em combate corpo a corpo com grande facilidade, Dano esmagante: 1d8 +Nível atual, Dificuldade de teste (DT):15.
+Garras Cortantes: Com um salto rápido, a Raposa desfere um golpe com suas garras dianteiras, mirando pontos frágeis do inimigo, Dano: 1d6 +Nível atual, Dificuldade de teste (DT):12.
+Evasão Instintiva: Acostumada a sobreviver, a Raposa pode usar sua agilidade para se esquivar de ataques e armadilhas. Sempre que for alvo de um ataque, ganha +1d8 no teste.
 Furtividade Natural: Em ambientes como florestas, campos e montanhas, a Raposa recebe um bônus de furtividade de 8+teste de Preservação.
 Faro Aguçado: Capaz de rastrear presas e inimigos a até 50 metros. DT para rastrear ou localizar inimigos escondidos: 8.`,
     bonus3:`Animal Comum
