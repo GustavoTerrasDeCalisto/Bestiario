@@ -259,7 +259,7 @@ Os Yonkis adultos, especialmente os que estão em busca de alimento para seus fi
     bonus:`Resistente: Fogo
     Imune a dano de: Água
     Vulnerável: Eletricidade`,
-    bonus2:`{pigmento}*Coleção Sagrada*{/pigmento} - Splendianos podem manter até 2 itens coletados brilhando com uma aura rosa e levitá-los no próprio turno. Esses itens ganham vantagem em testes de Agilidade e causam +4 de dano de Aura se usados para atacar.
+    bonus2:`{pigmento}*Coleção Sagrada*{/pigmento} Splendianos podem manter até 2 itens coletados brilhando com uma aura rosa e levitá-los no próprio turno. Esses itens ganham vantagem em testes de Agilidade e causam +4 de dano de Aura se usados para atacar.
     Splendianos podem roubar um item na casa de seus chefes e torna-los um item de sua {pigmento}*coleção sagrada.*{/pigmento}`,
     bonus3:`Ilusionistas de Pratas
     Elemento - Poder`,
