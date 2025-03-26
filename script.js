@@ -257,15 +257,15 @@ Os Yonkis adultos, especialmente os que estão em busca de alimento para seus fi
     bruDano: 0, agiDano: 1, detDano: 1, preDano: 2, libDano: 1, cnxDano: 0,
     bruTest: -2, agiTest: 1, detTest: 1, preTest: 3, libTest: 2, cnxTest: 0,
     bonus:`Resistente: Fogo
-    Imune: Água
+    Imune a dano de: Água
     Vulnerável: Eletricidade`,
     bonus2:`Coleção Sagrada - Splendianos podem manter até 2 itens coletados brilhando com uma aura rosa e levitá-los no próprio turno. Esses itens ganham vantagem em testes de Agilidade e causam +4 de dano de Aura se usados para atacar.
-Escolha Única - Uma vez por ciclo, pode roubar um item valioso do chefe ou patrão e torná-lo parte da sua coleção sagrada.`,
+Splendianos podem roubar um item na casa de seus chefes e torna-los um item de sua coleção sagrada.`,
     bonus3:`Ilusionistas de Pratas
     Elemento - Poder`,
     Magias: `Nível 6 - Poltergeist.`,
     Passivas: `Nível 1 - Afogar - Pode usar uma vez por combate sem custo e com vantagem.`,
-    Talentos: `Intimidação.`,
+    Talentos: `Intimidação - Requisito: Conexão.`,
     Descricao:`Os Splendianos são uma raça humanoide inspirada no Betta Splendens, com características que lembram peixes de cores vibrantes e formas elegantes. Com escamas brilhantes e barbatanas que se assemelham a mantos ondulantes, são seres orgulhosos e profundamente territoriais, mas com uma natureza paradoxalmente amável e servil quando em sociedade.
 Originários das profundezas de lagos cristalinos e rios profundos, os Splendianos costumam deixar seu habitat aquático para habitar temporariamente em lares humanos. Apesar de sua natureza reclusa e levemente enigmática, eles se oferecem para servir voluntariamente, sem discriminar ou julgar os humanos com quem interagem. Essa característica os faz aparecer em momentos inesperados, onde cozinham, limpam, lavam e arrumam com uma dedicação impressionante.
 Uma curiosidade sobre os Splendianos é seu hábito peculiar de furtar discretamente pratarias e pequenos objetos da casa onde estão servindo, os quais consideram “objetos sagrados”. Mesmo que suas ações possam parecer maliciosas, eles não fazem isso por maldade, mas por um profundo senso de reverência. Para eles, esses itens são sinais de suas relações e do ambiente que habitam, mantendo uma conexão com o mundo dos humanos ao qual se dedicaram por breves momentos.
