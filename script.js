@@ -214,7 +214,36 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
     Para aqueles que os enfrentam, os Antigos Esquecidos são um lembrete cruel de que até os mortos podem se tornar uma ameaça. Sua forma macabra e sua persistência sobrenatural os tornam o terror de lugares onde a morte se acumulou, e qualquer tentativa de ignorar ou minimizar sua presença pode ter consequências fatais.`,
     img: "imagens/AntigosEsquecidos.png",
     img2: "imagens/Token-AntigosEsquecidos.png"
+},,"Yonkis": {
+    vida: 33,
+    sanidade: 11,
+    especial: 5,
+    armadura: 4,
+    vidaPorNivel: 11,
+    sanidadePorNivel: 3,
+    especialPorNivel: 1,
+    armaduraPorNivel: 3,
+    bru: 17, agi: 8, det: 13, pre: 10, lib: 8, cnx: 15,
+    bruDano: 2, agiDano: 0, detDano: 1, preDano: 0, libDano: 0, cnxDano: 1,
+    bruTest: 3, agiTest: -2, detTest: 1, preTest: 0, libTest: -2, cnxTest: 2,
+    bonus:`Resistente: Tempestade
+    Resistente: Cortante
+    Vulnerável: Balístico`,
+    bonus2: `Pele Dura: Quando ameaçados, os Yonkis usam suas crostas de sujeira para se proteger, enrijecendo sua pele. Possuem 4 de armadura base.
+Respiração Tortuosa: Pode sentir a presença de inimigos mesmo invisíveis ou escondidos, +4 em Percepção.
+Cabeçada - teste de Agilidade: Uma cabeçada extremamente forte que causa 2d12 de dano esmagante.`,
+    bonus3:`Caçadores de Plantios
+Elemento - Caos`,
+    Magias: `Nível 4 - Dominação da Água.`,
+    Passivas:`Nível 1 - Preguiça Ativa (sempre sem custo).`,
+    Talentos: `Obter Informação - Requisito: Conexão, Percepção - Requisito: Libertação.`,
+    Descricao:`Os Yonkis são criaturas que se assemelham a porcos, variando entre indivíduos bípedes e quadrúpedes. Vivem principalmente em regiões aquosas e lamacentas, onde manipulam a água para cultivar plantas e cuidar dos pântanos ao redor.
+Apesar da aparência robusta e pele dura, são habilidosos no manejo da vegetação e mantêm uma dieta vegana. Durante a criação dos filhotes, tornam-se agressivos e predatórios, caçando carcaças e animais vivos para alimentar a prole. Neste período são extremamente perigosos, dispostos a qualquer coisa para proteger os filhos.
+Os adultos retornam aos grupos maiores após o crescimento dos filhotes, passando por um rito de aceitação tribal. Quando ameaçados, os Yonkis usam porretes improvisados, cabeçadas poderosas e controle da água para atacar. Sua pele grossa os torna difíceis de derrubar, e armas de fogo são uma das poucas formas efetivas de abatê-los.`,
+    img: "imagens/Yonkis.png",
+    img2: "imagens/Token-Yonkis.png"
 }
+
 };
 
 const select = document.getElementById('creatureSelect');
