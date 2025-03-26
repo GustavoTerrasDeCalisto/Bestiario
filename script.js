@@ -290,7 +290,7 @@ Vulnerável: Distorção
 Imune: Maldição`,
     bonus2: `Aura Dourada: As armas dos Griffinhalf brilham com uma luz dourada sempre que estão em combate, adicionando +3 de dano de Luz. Enquanto estiver a até 10 metros de um aliado, ganha vantagem em testes de ataque.
 Sentinela dos Céus: Pode voar 12 metros em linha reta como ação bônus uma vez por turno, sem provocar ataques de oportunidade.
-Espírito Guardião: Como ação, escolhe um aliado visível até 15 metros e o protege, concedendo resistência a dano físico (corte, perfuração e esmagamento) por 1 minuto. Só pode proteger um por vez e usar uma vez por combate.
+Espírito Guardião: Como ação, escolhe um aliado visível até 15 metros e o protege, concedendo resistência a dano físico (corte, perfuração e esmagamento) por combate, enquanto visível. Só pode proteger um por vez e usar uma vez por combate.
 Golpe Dourado: Como ação bônus, realiza um ataque com armas encantadas e adiciona 1d10 de dano sagrado. Precisa descansar 1 rodada para usar novamente.`,
     bonus3: `Guardiões de Skypia
 Elemento - Fé`,
