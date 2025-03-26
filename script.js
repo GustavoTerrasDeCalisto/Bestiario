@@ -214,7 +214,7 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
     Para aqueles que os enfrentam, os Antigos Esquecidos são um lembrete cruel de que até os mortos podem se tornar uma ameaça. Sua forma macabra e sua persistência sobrenatural os tornam o terror de lugares onde a morte se acumulou, e qualquer tentativa de ignorar ou minimizar sua presença pode ter consequências fatais.`,
     img: "imagens/AntigosEsquecidos.png",
     img2: "imagens/Token-AntigosEsquecidos.png"
-},,"Yonkis": {
+},"Yonkis": {
     vida: 33,
     sanidade: 11,
     especial: 5,
