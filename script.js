@@ -417,7 +417,12 @@ function formatBonusText(text, type = "default") {
     .map(sentence => {
       if (sentence.trim()) {
         // Aqui adicionamos o replace para converter *texto* em <strong>texto</strong>
-        const formattedSentence = sentence.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
+        const formattedSentence = sentence
+  .replace(/\*(.*?)\*/g, '<strong>$1</strong>')   // Negrito
+  .replace(/_(.*?)_/g, '<em>$1</em>')            // Itálico
+  .replace(/~(.*?)~/g, '<u>$1</u>')              // Sublinhado
+  .replace(/-(.*?)-/g, '<s>$1</s>')              // Tachado
+  .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>'); // Cor customizada
         return `<p class="${className}">${formattedSentence}</p>`;
       } else {
         return '';
