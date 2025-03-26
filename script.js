@@ -82,7 +82,7 @@ Sua presença em florestas e cavernas torna esses locais ainda mais perigosos pa
 {pigmento}*Braço Etéreo Dourado:*{/pigmento} Um ataque com braço dourado fantasmagórico, causando _2d20 de dano Alma_. Pode carregar o ataque usando a ação completa ou movimento para causar _4d20_.
 {pigmento}*Névoa do Pesadelo:*{/pigmento} Passiva Ativável - Paralios ativa uma maldição no ambiente: ninguém no raio de 1000 km consegue dormir direito ou se recuperar, gerando insônia, medo e pesadelos contínuos.`,
 bonus3:`O Anunciador dos Sonhos
-Elemento - Desconhecido e Poder`,
+Elemento - Desconhecido`,
     Magias: `Nível 1 - Sonho Frágil, Nível 3 - Sonhos Forçados, Nível 4 - Labirinto Mental, Nível 5 - Dimensão dos Sonhos`,
     Passivas:` Nível 1 - Teleporte repentino, Nível 4 - Furtividade Sombria.`,
     Talentos: `Furtividade - Requisito: Agilidade,
