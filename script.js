@@ -297,8 +297,8 @@ Elemento - Fé`,
     Magias: `Nível 3 - Consagrar Divino
 Nível 5 - Benção Antiga`,
     Passivas: `Nível 2 - Salvaguarda`,
-    Talentos: `Cavalgar - Requisito: Conexão
-Conhecimento - Requisito: Libertação`,
+    Talentos: `Cavalgar - Requisito: Agilidade,
+Conhecimento - Requisito: Preservação.`,
     Descricao: `Nas florestas que cercam as ilhas flutuantes de Terras de Calisto, encontram-se os enigmáticos Griffinhalf, guardiões das lendárias Cidades Douradas de Skypia. Embora a existência dessas cidades continue sendo um mistério, os Griffinhalf acreditam com uma fé inabalável que elas são reais e que seu dever é proteger esse antigo legado, herança de um mítico Rei Dourado. Suas ações são dedicadas a manter as entradas das cidades escondidas e a proteger as florestas que as cercam.
 É amplamente conhecido que existem ilhas flutuantes nos céus dessas terras, mas até mesmo os habitantes das ilhas raramente exploram seus mistérios mais profundos. Os Griffinhalf atuam como guardiões invisíveis, rondando as florestas e agindo de maneira quase espectral, cobrindo as ilhas com uma aura de mistério. Muitos acreditam que suas ações não passam de memórias ecoantes de um tempo perdido, mas para os Griffinhalf, sua missão é sagrada e vital.
 Essas criaturas têm a habilidade de voar e utilizam armas que brilham em dourado quando entram em combate, uma manifestação de seu vínculo espiritual com as Cidades Douradas. Apesar de serem calmos e falarem com pompa e lentidão, qualquer um que tente descobrir a entrada para Skypia será recebido com hostilidade e agressividade. Seus ataques são rápidos e precisos, e sua fé serve como uma força motriz, guiando seus corações e suas armas.
