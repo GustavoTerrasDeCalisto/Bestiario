@@ -273,7 +273,40 @@ Apesar dessa natureza amável e servil, os Splendianos podem se tornar ferozment
 Embora existam raças tritônicas no mundo, os Splendianos se diferenciam por sua comunicação limitada. Conversam apenas entre si e, mesmo assim, de forma raríssima, preferindo o silêncio e as ações ao diálogo. Sua passagem pelos lares humanos é vista como um presságio de proteção temporária, um fenômeno curioso e quase ritualístico que intriga e, por vezes, assusta aqueles que têm o privilégio de testemunhá-los em ação.`,
     img: "imagens/Splendianos.png",
     img2: "imagens/Token-Splendianos.png"
+},"Griffinhalf": {
+    vida: 68,
+    sanidade: 24,
+    especial: 15,
+    armadura: 3,
+    vidaPorNivel: 15,
+    sanidadePorNivel: 4,
+    especialPorNivel: 3,
+    armaduraPorNivel: 2,
+    bru: 14, agi: 13, det: 25, pre: 14, lib: 11, cnx: 8,
+    bruDano: 1, agiDano: 1, detDano: 2, preDano: 1, libDano: 1, cnxDano: 0,
+    bruTest: 2, agiTest: 1, detTest: 6, preTest: 2, libTest: 1, cnxTest: -2,
+    bonus: `Resistente: Alma
+Vulnerável: Distorção
+Imune: Maldição`,
+    bonus2: `Aura Dourada: As armas dos Griffinhalf brilham com uma luz dourada sempre que estão em combate, adicionando +3 de dano de Luz. Enquanto estiver a até 10 metros de um aliado, ganha vantagem em testes de ataque.
+Sentinela dos Céus: Pode voar 12 metros em linha reta como ação bônus uma vez por turno, sem provocar ataques de oportunidade.
+Espírito Guardião: Como ação, escolhe um aliado visível até 15 metros e o protege, concedendo resistência a dano físico (corte, perfuração e esmagamento) por 1 minuto. Só pode proteger um por vez e usar uma vez por combate.
+Golpe Dourado: Como ação bônus, realiza um ataque com armas encantadas e adiciona 1d10 de dano sagrado. Precisa descansar 1 rodada para usar novamente.`,
+    bonus3: `Guardiões de Skypia
+Elemento - Fé`,
+    Magias: `Nível 3 - Consagrar Divino
+Nível 5 - Benção Antiga`,
+    Passivas: `Nível 2 - Salvaguarda`,
+    Talentos: `Cavalgar - Requisito: Conexão
+Conhecimento - Requisito: Libertação`,
+    Descricao: `Nas florestas que cercam as ilhas flutuantes de Terras de Calisto, encontram-se os enigmáticos Griffinhalf, guardiões das lendárias Cidades Douradas de Skypia. Embora a existência dessas cidades continue sendo um mistério, os Griffinhalf acreditam com uma fé inabalável que elas são reais e que seu dever é proteger esse antigo legado, herança de um mítico Rei Dourado. Suas ações são dedicadas a manter as entradas das cidades escondidas e a proteger as florestas que as cercam.
+É amplamente conhecido que existem ilhas flutuantes nos céus dessas terras, mas até mesmo os habitantes das ilhas raramente exploram seus mistérios mais profundos. Os Griffinhalf atuam como guardiões invisíveis, rondando as florestas e agindo de maneira quase espectral, cobrindo as ilhas com uma aura de mistério. Muitos acreditam que suas ações não passam de memórias ecoantes de um tempo perdido, mas para os Griffinhalf, sua missão é sagrada e vital.
+Essas criaturas têm a habilidade de voar e utilizam armas que brilham em dourado quando entram em combate, uma manifestação de seu vínculo espiritual com as Cidades Douradas. Apesar de serem calmos e falarem com pompa e lentidão, qualquer um que tente descobrir a entrada para Skypia será recebido com hostilidade e agressividade. Seus ataques são rápidos e precisos, e sua fé serve como uma força motriz, guiando seus corações e suas armas.
+Estudiosos especulam que os Griffinhalf possam ser descendentes dos lendários Grifos, criaturas antigas que viveram antes da separação dos continentes. Embora sua aparência e papel tenham mudado ao longo dos milênios, sua função como guardiões permanece inalterada. Hoje, os Griffinhalf vivem como protetores das lendas e do legado de Skypia, zelando para que seus segredos continuem ocultos aos olhos do mundo.`,
+    img: "imagens/Griffinhalf.png",
+    img2: "imagens/Token-Griffinhalf.png"
 }
+
 
 
 };
