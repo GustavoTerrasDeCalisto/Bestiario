@@ -75,7 +75,7 @@ Sua presença em florestas e cavernas torna esses locais ainda mais perigosos pa
     Resistente:Alma
     Vulnerável:Eclipe
     Vulnerável: Cinzas`,
-    bonus2: `_Alvos que acertarem diretamente o {pigmento}*coração*{/pigmento} causam dano dobrado na rolagem. Ao ser ferido no coração, Paralios marca imediatamente o atacante como sua obsessão até o fim do combate. Enquanto estiver focado nesse inimigo, Paralios recebe *+1d20 de dano de Sangue* contra ele, além de priorizá-lo em suas ações._
+    bonus2: `_Alvos que acertarem diretamente o {pigmento}*coração*{/pigmento} causam dano dobrado na rolagem. Ao ser ferido no coração, Paralios marca imediatamente o atacante como sua obsessão até o fim do combate. Enquanto estiver focado nesse inimigo, Paralios recebe {pigmento}*+1d20 de dano de Sangue*{/pigmento} contra ele, além de priorizá-lo em suas ações._
 {pigmento}*Invocar Almas Sombrias:*{/pigmento} Paralios invoca _2 almas flutuantes_ que orbitam acima dele. Caso receba um _golpe fatal_, pode consumir as almas para _curar 4d12_. (Teste de Conexão para invocar - sem custo).
 {pigmento}*Intangibilidade Inesperada:*{/pigmento} Como reação por turno, torna-se intocável e esquiva automaticamente de um acerto.
 {pigmento}*Sussurros do Sono:*{/pigmento} Como ação livre, tenta colocar um inimigo em sono profundo (teste de Conexão vs Libertação).
