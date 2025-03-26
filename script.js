@@ -140,11 +140,11 @@ Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um s
     bruTest: -1, agiTest: 3, detTest: 1, preTest: 2, libTest: 1, cnxTest: 0,
     bonus:`Resistente: dano de Caos
     Vulnerável: dano de Fogo`,
- bonus2: `Mordida Ágil: A Raposa Selvagem avança rapidamente contra o alvo, desferindo uma mordida precisa e veloz. Ela pode realizar este ataque natural em combate corpo a corpo com grande facilidade, Dano esmagante: 1d8 +Nível atual, Dificuldade de teste (DT):15.
-Garras Cortantes: Com um salto rápido, a Raposa desfere um golpe com suas garras dianteiras, mirando pontos frágeis do inimigo, Dano: 1d6 +Nível atual, Dificuldade de teste (DT):12.
-Evasão Instintiva: Acostumada a sobreviver, a Raposa pode usar sua agilidade para se esquivar de ataques e armadilhas. Sempre que for alvo de um ataque, ganha +1d8 no teste.
-Furtividade Natural: Em ambientes como florestas, campos e montanhas, a Raposa recebe um bônus de furtividade de 8+teste de Preservação.
-Faro Aguçado: Capaz de rastrear presas e inimigos a até 50 metros. DT para rastrear ou localizar inimigos escondidos: 8.`,
+ bonus2: `{pigmento}*Mordida Ágil:*{/pigmento} A Raposa Selvagem avança rapidamente contra o alvo, desferindo uma mordida precisa e veloz. Ela pode realizar este ataque natural em combate corpo a corpo com grande facilidade, Dano esmagante: 1d8 +Nível atual, Dificuldade de teste (DT):15.
+{pigmento}*Garras Cortantes:*{/pigmento} Com um salto rápido, a Raposa desfere um golpe com suas garras dianteiras, mirando pontos frágeis do inimigo, Dano: 1d6 +Nível atual, Dificuldade de teste (DT):12.
+{pigmento}*Evasão Instintiva:*{/pigmento} Acostumada a sobreviver, a Raposa pode usar sua agilidade para se esquivar de ataques e armadilhas. Sempre que for alvo de um ataque, ganha +1d8 no teste.
+{pigmento}*Furtividade Natural:*{/pigmento} Em ambientes como florestas, campos e montanhas, a Raposa recebe um bônus de furtividade de 8+teste de Preservação.
+{pigmento}*Faro Aguçado:*{/pigmento} Capaz de rastrear presas e inimigos a até 50 metros. DT para rastrear ou localizar inimigos escondidos: 8.`,
     bonus3:`Animal Comum
 Elemento – Caos`,
     Magias: `Nenhuma.`,
@@ -169,9 +169,9 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
     bruTest: 2, agiTest: 0, detTest: -2, preTest: 1, libTest: -1, cnxTest: 3,
     bonus: `Resistente: dano de Mental
     Vulnerável: dano de Escuridão`,
-    bonus2: `Latido amistoso: Eles podem ecoar um som que chama a atenção de outros doggers próximos, que surgem para auxiliar no combate. Essas criaturinhas patrulham em grupos de 3 a 5, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
-    Ataque conjunto: se houver 2 ou mais próximos de um alvo eles podem atrasar sua ação para atacar ao mesmo tempo com vantagem – teste de Agilidade.
-    Postura animal: pode entrar em uma postura bípede, dobrando sua movimentação, não é possível usar armas enquanto nessa postura.`,
+    bonus2: `{pigmento}*Latido amistoso:*{/pigmento} Eles podem ecoar um som que chama a atenção de outros doggers próximos, que surgem para auxiliar no combate. Essas criaturinhas patrulham em grupos de 3 a 5, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
+    {pigmento}*Ataque conjunto:*{/pigmento} se houver 2 ou mais próximos de um alvo eles podem atrasar sua ação para atacar ao mesmo tempo com vantagem – teste de Agilidade.
+    {pigmento}*Postura animal:*{/pigmento} pode entrar em uma postura bípede, dobrando sua movimentação, não é possível usar armas enquanto nessa postura.`,
     bonus3: `Doggers
     Elemento – Caos`,
     Magias: `Nível 4 – Sombra animal, nível 5 – Sacrifício de vida`,
@@ -199,9 +199,9 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
     bruTest: 2, agiTest: 2, detTest: 2, preTest: -1, libTest: 1, cnxTest: -2,
     bonus: `Imune: dano de Sangue
     Vulnerável: dano de Sagrado, dano de Fogo`,
-    bonus2: `Inoportuno: Após ser derrotado, fica morto por 5 turnos. Se não tiver seus ossos queimados ou for exorcizado, volta à vida com 5 de vida. Seus ossos se remontam e um brilho os faz ficar em pé.
-    Almas protetoras: Cada turno em combate tenta remontar sua alma original, ganhando uma parte dela todo turno. Recebe 1d10 de vida temporária (máximo de 50 de vida temporária proveniente dessa passiva).
-    Memória muscular: As memórias da vida passada ainda não retornaram completamente. Ao atacar com um soco torto, os ossos quebrados rasgam o alvo, causando 1d12 de dano cortante (Teste de Agilidade).`,
+    bonus2: `{pigmento}*Inoportuno:*{/pigmento} Após ser derrotado, fica morto por 5 turnos. Se não tiver seus ossos queimados ou for exorcizado, volta à vida com 5 de vida. Seus ossos se remontam e um brilho os faz ficar em pé.
+    {pigmento}*Almas protetoras:*{/pigmento} Cada turno em combate tenta remontar sua alma original, ganhando uma parte dela todo turno. Recebe 1d10 de vida temporária (máximo de 50 de vida temporária proveniente dessa passiva).
+    {pigmento}*Memória muscular:*{/pigmento} As memórias da vida passada ainda não retornaram completamente. Ao atacar com um soco torto, os ossos quebrados rasgam o alvo, causando 1d12 de dano cortante (Teste de Agilidade).`,
     bonus3: `Antigos Esquecidos
     Elemento – Poder`,
     Magias: `Nível 7 – Almas perturbadas`,
@@ -229,9 +229,9 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
     bonus:`Resistente: Tempestade
     Resistente: Cortante
     Vulnerável: Balístico`,
-    bonus2: `Pele Dura: Quando ameaçados, os Yonkis usam suas crostas de sujeira para se proteger, enrijecendo sua pele. Possuem 4 de armadura base.
-Respiração Tortuosa: Pode sentir a presença de inimigos mesmo invisíveis ou escondidos, +4 em Percepção.
-Cabeçada - teste de Agilidade: Uma cabeçada extremamente forte que causa 2d12 de dano esmagante.`,
+    bonus2: `{pigmento}*Pele Dura:*{/pigmento} Quando ameaçados, os Yonkis usam suas crostas de sujeira para se proteger, enrijecendo sua pele. Possuem 4 de armadura base.
+{pigmento}*Respiração Tortuosa:*{/pigmento} Pode sentir a presença de inimigos mesmo invisíveis ou escondidos, +4 em Percepção.
+{pigmento}*Cabeçada - teste de Agilidade:*{/pigmento} Uma cabeçada extremamente forte que causa 2d12 de dano esmagante.`,
     bonus3:`Caçadores de Plantios
 Elemento - Caos`,
     Magias: `Nível 4 - Dominação da Água.`,
@@ -259,8 +259,8 @@ Os Yonkis adultos, especialmente os que estão em busca de alimento para seus fi
     bonus:`Resistente: Fogo
     Imune a dano de: Água
     Vulnerável: Eletricidade`,
-    bonus2:`Coleção Sagrada - Splendianos podem manter até 2 itens coletados brilhando com uma aura rosa e levitá-los no próprio turno. Esses itens ganham vantagem em testes de Agilidade e causam +4 de dano de Aura se usados para atacar.
-Splendianos podem roubar um item na casa de seus chefes e torna-los um item de sua coleção sagrada.`,
+    bonus2:`{pigmento}*Coleção Sagrada*{/pigmento} - Splendianos podem manter até 2 itens coletados brilhando com uma aura rosa e levitá-los no próprio turno. Esses itens ganham vantagem em testes de Agilidade e causam +4 de dano de Aura se usados para atacar.
+    Splendianos podem roubar um item na casa de seus chefes e torna-los um item de sua {pigmento}*coleção sagrada.*{/pigmento}`,
     bonus3:`Ilusionistas de Pratas
     Elemento - Poder`,
     Magias: `Nível 6 - Poltergeist.`,
@@ -288,10 +288,10 @@ Embora existam raças tritônicas no mundo, os Splendianos se diferenciam por su
     bonus: `Resistente: Alma
 Vulnerável: Distorção
 Imune: Maldição`,
-    bonus2: `Aura Dourada: As armas dos Griffinhalf brilham com uma luz dourada sempre que estão em combate, adicionando +3 de dano de Luz. Enquanto estiver a até 10 metros de um aliado, ganha vantagem em testes de ataque.
-Sentinela dos Céus: Pode voar 12 metros em linha reta como ação bônus uma vez por turno, sem provocar ataques de oportunidade.
-Espírito Guardião: Como ação, escolhe um aliado visível até 15 metros e o protege, concedendo resistência a dano físico (corte, perfuração e esmagamento) por combate, enquanto visível. Só pode proteger um por vez e usar uma vez por combate.
-Golpe Dourado: Como ação bônus, realiza um ataque com armas encantadas e adiciona 1d10 de dano sagrado. Precisa descansar 1 rodada para usar novamente.`,
+    bonus2: `{pigmento}*Aura Dourada:*{/pigmento} As armas dos Griffinhalf brilham com uma luz dourada sempre que estão em combate, adicionando +3 de dano de Luz. Enquanto estiver a até 10 metros de um aliado, ganha vantagem em testes de ataque.
+{pigmento}*Sentinela dos Céus:*{/pigmento} Pode {pigmento}*voar*{/pigmento} 12 metros em linha reta como ação bônus uma vez por turno, sem provocar ataques de oportunidade.
+{pigmento}*Espírito Guardião:*{/pigmento} Como ação, escolhe um aliado visível até 15 metros e o protege, concedendo resistência a dano físico (corte, perfuração e esmagamento) por combate, enquanto visível. Só pode proteger um por vez e usar uma vez por combate.
+{pigmento}*Golpe Dourado: Como ação bônus, realiza um ataque com armas encantadas e adiciona 1d10 de dano sagrado. Precisa descansar 1 rodada para usar novamente.`,
     bonus3: `Guardiões de Skypia
 Elemento - Fé`,
     Magias: `Nível 3 - Consagrar Divino
