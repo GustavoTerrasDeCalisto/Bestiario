@@ -237,12 +237,44 @@ Elemento - Caos`,
     Magias: `Nível 4 - Dominação da Água.`,
     Passivas:`Nível 1 - Preguiça Ativa (sempre sem custo).`,
     Talentos: `Obter Informação - Requisito: Conexão, Percepção - Requisito: Libertação.`,
-    Descricao:`Os Yonkis são criaturas que se assemelham a porcos, variando entre indivíduos bípedes e quadrúpedes. Vivem principalmente em regiões aquosas e lamacentas, onde manipulam a água para cultivar plantas e cuidar dos pântanos ao redor.
-Apesar da aparência robusta e pele dura, são habilidosos no manejo da vegetação e mantêm uma dieta vegana. Durante a criação dos filhotes, tornam-se agressivos e predatórios, caçando carcaças e animais vivos para alimentar a prole. Neste período são extremamente perigosos, dispostos a qualquer coisa para proteger os filhos.
-Os adultos retornam aos grupos maiores após o crescimento dos filhotes, passando por um rito de aceitação tribal. Quando ameaçados, os Yonkis usam porretes improvisados, cabeçadas poderosas e controle da água para atacar. Sua pele grossa os torna difíceis de derrubar, e armas de fogo são uma das poucas formas efetivas de abatê-los.`,
+    Descricao:`Os Yonkis são criaturas que se assemelham a porcos, com uma variedade que inclui tanto indivíduos bípedes quanto quadrúpedes. Muitos estudiosos acreditam que os Yonkis compartilham uma ancestralidade com os “Gronklech – Durock“, devido à semelhança física entre as duas raças. No entanto, os Yonkis possuem diferenças significativas em seus hábitos e ambiente, vivendo principalmente em regiões aquosas e lamacentas.
+Eles possuem uma relação única com a água, manipulando-a para cultivar plantas e cuidar de pântanos ou terrenos férteis que encontram em seus arredores. Esses seres, apesar de sua aparência robusta e sua pele dura, são surpreendentemente habilidosos no manejo da vegetação e na criação de pequenos jardins que sustentam sua dieta estritamente vegana. Os Yonkis adultos, após atingirem a maturidade, tendem a migrar para áreas afastadas da civilização, onde formam famílias e criam seus filhotes em relativo isolamento.
+O ciclo de vida dos Yonkis é marcado por uma transição importante: durante o período de crescimento de seus filhotes, os pais, que normalmente se alimentam apenas de plantas, adotam um comportamento muito mais agressivo e predatório. Nesse estágio, caçam carcaças ou animais vivos para garantir que seus filhos cresçam saudáveis e fortes. Este é um período perigoso para qualquer criatura que cruzar o caminho de um Yonki em busca de alimento, pois eles se tornam ferozmente protetores e violentos, dispostos a usar qualquer meio necessário para garantir a sobrevivência de sua prole.
+Quando os filhotes atingem a maturidade, retornam com seus pais aos grupos maiores de Yonkis, onde o líder da tribo julga se o jovem será aceito ou banido. Esse rito de passagem é crucial para a integração dos jovens Yonkis na sociedade.
+Os Yonkis adultos, especialmente os que estão em busca de alimento para seus filhotes, são conhecidos por sua agressividade e suas habilidades de combate. Lutam utilizando porretes improvisados, suas cabeças para aplicar poderosas cabeçadas, ou dominando a água para criar ataques que confundem e afogam seus inimigos. Sua pele grossa e resistente os torna alvos difíceis, mas alguns caçadores ousados os caçam com armas de fogo, utilizando-os como alimento em algumas culturas. Portanto, ao encontrar um Yonki, é essencial observar em que fase de sua vida ele se encontra – se for um Yonki adulto em busca de alimento, o melhor é evitar o confronto.`,
     img: "imagens/Yonkis.png",
     img2: "imagens/Token-Yonkis.png"
+},"Splendianos": {
+    vida: 65,
+    sanidade: 20,
+    especial: 15,
+    armadura: 1,
+    vidaPorNivel: 10,
+    sanidadePorNivel: 4,
+    especialPorNivel: 2,
+    armaduraPorNivel: 2,
+    bru: 8, agi: 12, det: 11, pre: 16, lib: 14, cnx: 10,
+    bruDano: 0, agiDano: 1, detDano: 1, preDano: 2, libDano: 1, cnxDano: 0,
+    bruTest: -2, agiTest: 1, detTest: 1, preTest: 3, libTest: 2, cnxTest: 0,
+    bonus:`Resistente: Fogo
+    Imune: Água
+    Vulnerável: Eletricidade`,
+    bonus2:`Coleção Sagrada - Splendianos podem manter até 2 itens coletados brilhando com uma aura rosa e levitá-los no próprio turno. Esses itens ganham vantagem em testes de Agilidade e causam +4 de dano de Aura se usados para atacar.
+Escolha Única - Uma vez por ciclo, pode roubar um item valioso do chefe ou patrão e torná-lo parte da sua coleção sagrada.`,
+    bonus3:`Ilusionistas de Pratas
+    Elemento - Poder`,
+    Magias: `Nível 6 - Poltergeist.`,
+    Passivas: `Nível 1 - Afogar - Pode usar uma vez por combate sem custo e com vantagem.`,
+    Talentos: `Intimidação.`,
+    Descricao:`Os Splendianos são uma raça humanoide inspirada no Betta Splendens, com características que lembram peixes de cores vibrantes e formas elegantes. Com escamas brilhantes e barbatanas que se assemelham a mantos ondulantes, são seres orgulhosos e profundamente territoriais, mas com uma natureza paradoxalmente amável e servil quando em sociedade.
+Originários das profundezas de lagos cristalinos e rios profundos, os Splendianos costumam deixar seu habitat aquático para habitar temporariamente em lares humanos. Apesar de sua natureza reclusa e levemente enigmática, eles se oferecem para servir voluntariamente, sem discriminar ou julgar os humanos com quem interagem. Essa característica os faz aparecer em momentos inesperados, onde cozinham, limpam, lavam e arrumam com uma dedicação impressionante.
+Uma curiosidade sobre os Splendianos é seu hábito peculiar de furtar discretamente pratarias e pequenos objetos da casa onde estão servindo, os quais consideram “objetos sagrados”. Mesmo que suas ações possam parecer maliciosas, eles não fazem isso por maldade, mas por um profundo senso de reverência. Para eles, esses itens são sinais de suas relações e do ambiente que habitam, mantendo uma conexão com o mundo dos humanos ao qual se dedicaram por breves momentos.
+Apesar dessa natureza amável e servil, os Splendianos podem se tornar ferozmente hostis quando afrontados ou quando alguém tenta tomar seus “objetos sagrados”. Nessas situações, eles defendem a propriedade de seus anfitriões contra qualquer invasor com a mesma intensidade que dedicam ao serviço. A presença deles é sempre temporária, pois nunca permanecem mais de 24 horas em uma propriedade antes de retornar ao mar ou ao rio de onde vieram. Raramente voltam ao mesmo local, e quando o fazem, é improvável que sejam os mesmos Splendianos de antes, mantendo um ar de mistério sobre seu povo e suas intenções.
+Embora existam raças tritônicas no mundo, os Splendianos se diferenciam por sua comunicação limitada. Conversam apenas entre si e, mesmo assim, de forma raríssima, preferindo o silêncio e as ações ao diálogo. Sua passagem pelos lares humanos é vista como um presságio de proteção temporária, um fenômeno curioso e quase ritualístico que intriga e, por vezes, assusta aqueles que têm o privilégio de testemunhá-los em ação.`,
+    img: "imagens/Splendianos.png",
+    img2: "imagens/Token-Splendianos.png"
 }
+
 
 };
 
