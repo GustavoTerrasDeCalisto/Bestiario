@@ -155,6 +155,36 @@ Apesar de ser encontrada em quase todos os continentes, as raposas originárias 
 Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos para reagir com ataques precisos ou simplesmente desaparecer na mata.`,
     img: "imagens/RaposaSelvagem.png",
     img2: "imagens/Token-RaposaSelvagem.png"
+},"Doggers": {
+    vida: 25,
+    sanidade: 10,
+    especial: 8,
+    armadura: 1,
+    vidaPorNivel: 12,
+    sanidadePorNivel: 4,
+    especialPorNivel: 2,
+    armaduraPorNivel: 3,
+    bru: 14, agi: 10, det: 8, pre: 13, lib: 9, cnx: 17,
+    bruDano: 1, agiDano: 0, detDano: 0, preDano: 1, libDano: 0, cnxDano: 2,
+    bruTest: 2, agiTest: 0, detTest: -2, preTest: 1, libTest: -1, cnxTest: 3,
+    bonus: `Resistente: dano de Mental
+    Vulnerável: dano de Escuridão`,
+    bonus2: `Latido amistoso: Eles podem ecoar um som que chama a atenção de outros doggers próximos, que surgem para auxiliar no combate. Essas criaturinhas patrulham em grupos de 3 a 5, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
+    Ataque conjunto: se houver 2 ou mais próximos de um alvo eles podem atrasar sua ação para atacar ao mesmo tempo com vantagem – teste de Agilidade.
+    Postura animal: pode entrar em uma postura bípede, dobrando sua movimentação, não é possível usar armas enquanto nessa postura.`,
+    bonus3: `Doggers
+    Elemento – Caos`,
+    Magias: `Nível 4 – Sombra animal, nível 5 – Sacrifício de vida`,
+    Passivas: `Nível 1 – Selvageria`,
+    Talentos: `Escudos`,
+    Descricao: `Os Doggers são pequenos humanoides, com altura máxima de 1,30 metros, que habitam campos amplos e verdes, pastagens e, ocasionalmente, se aventuram nas fronteiras de sociedades mais desenvolvidas. Embora não falem nenhuma língua conhecida, se comunicam por meio de latidos, rosnados e gestos, o que dá a impressão de um comportamento canino. Apesar dessa comunicação peculiar, os Doggers possuem um forte espírito de comunidade e sociedade, vivendo em grupos coesos e demonstrando grande lealdade uns aos outros.
+    Essas criaturas constroem pequenas vilas improvisadas, geralmente feitas de palha e materiais simples encontrados na natureza. Suas habitações são modestas, refletindo seu estilo de vida mais isolado e primitivo. Eles preferem viver distantes de raças mais inteligentes e tecnológicas, preferindo o conforto de suas pequenas vilas em campos abertos. No entanto, alguns Doggers mais curiosos e aventureiros podem ser encontrados explorando os limites de cidades e vilarejos, sempre mantendo um ar de curiosidade e cautela.
+    Os Doggers adoram perseguir pequenos animais peludos, não por instinto predatório, mas por pura diversão. Eles brincam de correr atrás de coelhos, esquilos e outras criaturas menores, e muitas vezes fazem disso um passatempo comunitário. Essa tendência a perseguir animais peludos é uma das características mais notáveis de sua personalidade lúdica e despreocupada.
+    Existe um ditado popular entre os habitantes das áreas rurais: “Onde há um Dogger, há muitos outros.” Isso se deve ao fato de que essas criaturas raramente são vistas sozinhas. Eles se movem em grupos, sempre acompanhados de seus companheiros, e exibem um senso de unidade que os torna difíceis de lidar em situações de perigo.
+    Embora não pareçam agressivos à primeira vista, os Doggers podem se tornar caçadores implacáveis quando ameaçados ou quando alguém interfere em suas brincadeiras ou caças. Quando enfurecidos, eles coordenam ataques rápidos e precisos, utilizando sua velocidade e agilidade para cercar e derrubar suas presas. Apesar de seu tamanho diminuto, sua ferocidade em grupo e determinação podem surpreender qualquer adversário desavisado.
+    Os Doggers são uma raça enigmática, ao mesmo tempo amigável e feroz, que prefere a simplicidade da vida em grupo nos campos abertos, mas que não hesitará em defender seu território e sua comunidade com uma força que contrasta com sua aparência dócil.`,
+    img: "imagens/Doggers.png",
+    img2: "imagens/Token-Doggers.png"
 }
 };
 
