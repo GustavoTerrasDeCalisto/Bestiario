@@ -291,7 +291,7 @@ Imune: Maldição`,
     bonus2: `{pigmento}*Aura Dourada:*{/pigmento} As armas dos Griffinhalf brilham com uma luz dourada sempre que estão em combate, adicionando +3 de dano de Luz. Enquanto estiver a até 10 metros de um aliado, ganha vantagem em testes de ataque.
 {pigmento}*Sentinela dos Céus:*{/pigmento} Pode {pigmento}*voar*{/pigmento} 12 metros em linha reta como ação bônus uma vez por turno, sem provocar ataques de oportunidade.
 {pigmento}*Espírito Guardião:*{/pigmento} Como ação, escolhe um aliado visível até 15 metros e o protege, concedendo resistência a dano físico (corte, perfuração e esmagamento) por combate, enquanto visível. Só pode proteger um por vez e usar uma vez por combate.
-{pigmento}*Golpe Dourado: Como ação bônus, realiza um ataque com armas encantadas e adiciona 1d10 de dano sagrado. Precisa descansar 1 rodada para usar novamente.`,
+{pigmento}*Golpe Dourado:*{/pigmento} Como ação bônus, realiza um ataque com armas encantadas e adiciona 1d10 de dano sagrado. Precisa descansar 1 rodada para usar novamente.`,
     bonus3: `Guardiões de Skypia
 Elemento - Fé`,
     Magias: `Nível 3 - Consagrar Divino
