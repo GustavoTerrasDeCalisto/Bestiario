@@ -89,7 +89,6 @@ span {
   border-left: 3px solid #ffcc00; /* Destaque dourado */
   background-color: rgba(90, 73, 51, 0.1);
   color: #ff5100 !important; /* Mantém o amarelo ouro */
-  font-weight: bold;
   box-sizing: border-box;
   padding: 5px 6px;
   margin: 5px 0;
