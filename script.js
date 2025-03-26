@@ -185,6 +185,35 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
     Os Doggers são uma raça enigmática, ao mesmo tempo amigável e feroz, que prefere a simplicidade da vida em grupo nos campos abertos, mas que não hesitará em defender seu território e sua comunidade com uma força que contrasta com sua aparência dócil.`,
     img: "imagens/Doggers.png",
     img2: "imagens/Token-Doggers.png"
+},"Antigos Esquecidos": {
+    vida: 5,
+    sanidade: 7,
+    especial: 2,
+    armadura: 1,
+    vidaPorNivel: 5,
+    sanidadePorNivel: 3,
+    especialPorNivel: 2,
+    armaduraPorNivel: 3,
+    bru: 14, agi: 14, det: 15, pre: 9, lib: 11, cnx: 8,
+    bruDano: 1, agiDano: 1, detDano: 1, preDano: 0, libDano: 1, cnxDano: 0,
+    bruTest: 2, agiTest: 2, detTest: 2, preTest: -1, libTest: 1, cnxTest: -2,
+    bonus: `Imune: dano de Sangue
+    Vulnerável: dano de Sagrado, dano de Fogo`,
+    bonus2: `Inoportuno: Após ser derrotado, fica morto por 5 turnos. Se não tiver seus ossos queimados ou for exorcizado, volta à vida com 5 de vida. Seus ossos se remontam e um brilho os faz ficar em pé.
+    Almas protetoras: Cada turno em combate tenta remontar sua alma original, ganhando uma parte dela todo turno. Recebe 1d10 de vida temporária (máximo de 50 de vida temporária proveniente dessa passiva).
+    Memória muscular: As memórias da vida passada ainda não retornaram completamente. Ao atacar com um soco torto, os ossos quebrados rasgam o alvo, causando 1d12 de dano cortante (Teste de Agilidade).`,
+    bonus3: `Antigos Esquecidos
+    Elemento – Poder`,
+    Magias: `Nível 7 – Almas perturbadas`,
+    Passivas: `Nível 1 – Consumir`,
+    Talentos: `Intimidação - Requisito: Conexão`,
+    Descricao: `Os Antigos Esquecidos são criaturas reanimadas por almas sem corpo, que vagam sem descanso até encontrar um aglomerado de ossos para habitar. Essas almas misteriosas surgem de antigos falecidos e mimetizam uma forma humanoide ao reorganizar os ossos que encontram em seu caminho. Nascidos do elemento Poder, esses seres não possuem um nome exato, pois ninguém sabe ao certo a identidade ou a origem das almas que os movem. Sua presença é sempre hostil e ameaçadora, e a forma esquelética que assumem esconde um poder crescente e sombrio.
+    Esses esqueletos surgem quando há um amontoado de ossos, especialmente em lugares esquecidos como cemitérios antigos ou ruínas abandonadas. Inicialmente, sua Determinação é frágil, e seus ossos são facilmente despedaçados, mas conforme o tempo passa, a ligação levitacional que sustenta seu corpo se fortalece, tornando os esqueletos mais resistentes e difíceis de destruir. Esse processo gradual faz dos Antigos Esquecidos uma ameaça crescente com o passar do tempo, especialmente se não forem eliminados rapidamente.
+    Essas criaturas são particularmente vulneráveis a ataques de fogo e magia sagrada, que podem exorcizar ou destruir seus corpos. Quando um Esquecido é derrotado, uma aura brilhosa permanece onde ele caiu, um indício de que sua alma ainda está presa ao mundo material. Se não for atingido por fogo ou magia sagrada para selar seu destino, o Esquecido renascerá, tornando-se um pesadelo constante para aqueles que cruzam seu caminho.
+    A presença dos Antigos Esquecidos é aterrorizante, especialmente em cemitérios, onde são conhecidos por assombrar os vivos. Sua capacidade de se regenerar torna a luta contra eles exaustiva e desesperadora. Por essa razão, muitos povos preferem cremar os corpos de seus entes queridos ou realizar rituais especiais de proteção, na esperança de impedir o surgimento dessas criaturas amaldiçoadas.
+    Para aqueles que os enfrentam, os Antigos Esquecidos são um lembrete cruel de que até os mortos podem se tornar uma ameaça. Sua forma macabra e sua persistência sobrenatural os tornam o terror de lugares onde a morte se acumulou, e qualquer tentativa de ignorar ou minimizar sua presença pode ter consequências fatais.`,
+    img: "imagens/AntigosEsquecidos.png",
+    img2: "imagens/Token-AntigosEsquecidos.png"
 }
 };
 
