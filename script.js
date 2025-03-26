@@ -134,7 +134,7 @@ Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um s
     vidaPorNivel: 5,
     sanidadePorNivel: 3,
     especialPorNivel: 0,
-    armaduraPorNivel: 1,
+    armaduraPorNivel: 5,
     bru: 10, agi: 16, det: 12, pre: 14, lib: 12, cnx: 10,
     bruDano: 0, agiDano: 1, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
     bruTest: -1, agiTest: 3, detTest: 1, preTest: 2, libTest: 1, cnxTest: 0,
