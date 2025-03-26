@@ -109,11 +109,11 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
     bonus:`Resistente: dano Perfurante
     Vulnerável: Dano de Sono
     Imune: Dano de Mental`,
-     bonus2: `{pigmento}*Caçada Feroz:{/pigmento} Quando estão com pouca vida eles podem ecoar um som que chama a atenção de outros Deinonychus próximos, que surgem para auxiliar no combate. Essas criaturas patrulham em grupos de 5 a 7, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
-{pigmento}*Ferocidade ancestral – teste de Agilidade :{/pigmento} Todo turno pode atacar duas vezes podendo escolher os seguintes golpes – Depois que acertar dois golpes seguidos em uma alvo tem chance debilitar o alvo (o alvo quando for atingido deve rodar 1d20 Determinação, a DT é 12:
-{pigmento}*Garras laminares{/pigmento} – golpeia em área 3m de distancia até 3 alvos _2d12 de dano Cortante_.
-{pigmento}*Mordida assombrosa{/pigmento} – Pula até 5m em um alvo e morde causando _3d10 de dano Cortante_.
-{pigmento}*Cauda chicote{/pigmento} – Faz um giro que causa _3d8 de dano Esmagante_ em área em quem estiver próximo de 2m.`,
+     bonus2: `{pigmento}*Caçada Feroz:*{/pigmento} Quando estão com pouca vida eles podem ecoar um som que chama a atenção de outros Deinonychus próximos, que surgem para auxiliar no combate. Essas criaturas patrulham em grupos de 5 a 7, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
+{pigmento}*Ferocidade ancestral – teste de Agilidade :*{/pigmento} Todo turno pode atacar duas vezes podendo escolher os seguintes golpes – Depois que acertar dois golpes seguidos em uma alvo tem chance debilitar o alvo (o alvo quando for atingido deve rodar 1d20 Determinação, a DT é 12:
+{pigmento}*Garras laminares*{/pigmento} – golpeia em área 3m de distancia até 3 alvos _2d12 de dano Cortante_.
+{pigmento}*Mordida assombrosa*{/pigmento} – Pula até 5m em um alvo e morde causando _3d10 de dano Cortante_.
+{pigmento}*Cauda chicote*{/pigmento} – Faz um giro que causa _3d8 de dano Esmagante_ em área em quem estiver próximo de 2m.`,
     bonus3:`Deinonychus antirrhopus
 Elemento – Desconhecido`,
     Magias: `Nenhuma.`,
