@@ -344,13 +344,30 @@ span {
 @media (max-width: 768px) {
   #app {
     margin-right: 15px; /* Adiciona uma margem à direita no modo mobile */
-    margin: auto;
+  margin: 0 auto; /* Centraliza */
     padding: 15px;
-    width: 100%; /* Garantir que ocupe 100% da largura disponível */
+  width: 95%; /* Evita ultrapassar a tela */
     max-width: 100%; /* Limita a largura para a largura da tela */
     display: block; /* Conteúdo em bloco */
     font-size: 1rem; /* Ajuste de fonte */
   }
+.left-panel, .right-panel {
+  width: 100%; /* Faz os painéis ocuparem toda a largura */
+  margin-bottom: 10px; /* Espaçamento entre eles */
+}
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+  body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Evita rolagem lateral indesejada */
+}
+
 /* Estilo para os botões */
 button {
   background-color: #2c2c2c; /* Cor de fundo preta escura */
