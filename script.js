@@ -319,7 +319,7 @@ Estudiosos especulam que os Griffinhalf possam ser descendentes dos lendários G
     bruTest: 0, agiTest: 4, detTest: 1, preTest: 1, libTest: 0, cnxTest: 2,
     bonus: `Resistente: Ácido
     Vulnerável: Luz
-    Imune: Psicológico`,
+    Vulnerável: Psicológico`,
     bonus2: `{pigmento}*Brincadeira Mortal:*{/pigmento} O Goblin Caótico é mestre em ludibriar seus inimigos. Como uma ação bônus, ele pode criar uma ilusão momentânea para confundir um alvo em até 6 metros. O alvo deve passar em um teste de Determinação (DT 12) ou ficará Confuso até o final do próximo turno.
 {pigmento}*Explosão Improvisada:*{/pigmento} Utilizando tudo ao seu redor como arma, o Goblin Caótico pode arremessar objetos aleatórios que explodem ao impacto. Ele faz um ataque à distância causando 2d6 de dano de Fogo ou de Ácido. Qualquer criatura a até 1 metro do alvo sofre metade desse dano.
 {pigmento}*Especialização Goblinoide:*{/pigmento} Desde a infância, os Goblins Caóticos escolhem um caminho para aprimorar suas habilidades. Cada Goblin recebe um bônus diferente baseado em sua escolha:
