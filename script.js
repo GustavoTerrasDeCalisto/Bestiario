@@ -352,21 +352,21 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
       bonus: `Resistente: Escuridão
       Vulnerável: Distorção
       Imune: Tempestade`,
-      bonus2: `{pigmento}*Invocar Almas Perdidas - teste de Determinação:*{/pigmento} O Goblin Corrompido conjura almas escuras que atormentam um inimigo em um raio de 12m. Se falhar no teste (DT 15), sofre _3d10 de dano de Energia_ por turno. O Goblin pode manter até _3 alvos_ sob esse efeito.
+      bonus2: `{pigmento}*Invocar Almas Perdidas - teste de Determinação:*{/pigmento} O Goblin Corrompido conjura almas escuras que atormentam um inimigo em um raio de 12m. Se falhar no teste (DT 15), sofre _3d10 de dano de Energia_ por turno (3 turnos por alvo). O Goblin pode manter até _3 alvos_ sob esse efeito.
 
   {pigmento}*Fortificação Sombria:*{/pigmento} Como ação bônus, aumenta sua _Armadura em +2_ e ganha _resistência a dano Físico_ (Corte, Perfurante, Esmagamento) por _2 turnos_.
 
-  {pigmento}*Golpe Fantasmal:*{/pigmento} Ao atacar, reduz a _Armadura do inimigo em 3_ e causa _+1d10 de dano de Energia_.
+  {pigmento}*Golpe Fantasmal:*{/pigmento} Ao atacar, reduz a _Armadura do inimigo em 3_ e causa _+1d10 de dano de Plasma_.
 
   {pigmento}*Absorção Sombria:*{/pigmento} Se um inimigo morrer enquanto sofre de *Almas Perdidas*, o Goblin recupera _10 de Vida_ e _5 de Sanidade_. Além disso, seu próximo ataque causa _+1d10 de dano de Energia_.`,
   bonus3: `Goblin Corrompido - Mestre das Almas Perdidas
   Elemento – Poder`,
-  Magias: `Nível 1 – Aura de Proteção, Mão Fantasma
-  Nível 3 – Abalo Sutil
+  Magias: `Nível 1 – Aura de Proteção e Mão Fantasma,
+  Nível 3 – Abalo Sutil,
   Nível 5 – Pulso de Plasma`,
-  Passivas: `Nível 1 – Vingança
+  Passivas: `Nível 1 – Vingança,
   Nível 5 – Separar a Alma`,
-  Talentos: `Liderança`,
+  Talentos: `Liderança - Requisito: Conexão`,
   Requisitos: `Conexão e Tática
   Preservação`,
   Descricao: "Os Goblins Corrompidos são o resultado de gerações de experimentos com forças espirituais e sombrias. Diferente de seus primos caóticos e trapaceiros, esses goblins evoluíram em meio a energias poderosas, transformando-se em conjuradores temidos e guerreiros sombrios. Sua pele esverdeada adquiriu tons escuros, emana uma energia azulada escura e seus olhos brilham em azul, um reflexo do poder que os acompanha.\n\nEles vivem em clãs ocultos, sempre liderados pelo mais forte entre eles. São estrategistas natos e prezam pela eficiência em batalha, utilizando tanto suas habilidades físicas aprimoradas quanto seu domínio sobre as almas perdidas. Quando atacam um inimigo, pequenas entidades espectrais surgem ao redor, corroendo sua energia vital até que nada reste.\n\nDiferente da maioria dos goblins, os Corrompidos não vivem pelo caos, mas sim pelo poder. Eles enxergam a vida como uma batalha constante e acreditam que apenas os mais fortes podem prosperar. Os aventureiros que ousam enfrentá-los devem estar preparados para lutar não apenas contra seus corpos aprimorados, mas também contra as almas atormentadas que os acompanham.\n\nSe você encontrar um Goblin Corrompido em combate, lembre-se: cada golpe que você der pode apenas fortalecer seu inimigo.",
