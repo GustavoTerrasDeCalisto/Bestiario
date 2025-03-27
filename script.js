@@ -305,6 +305,39 @@ Essas criaturas têm a habilidade de voar e utilizam armas que brilham em dourad
 Estudiosos especulam que os Griffinhalf possam ser descendentes dos lendários Grifos, criaturas antigas que viveram antes da separação dos continentes. Embora sua aparência e papel tenham mudado ao longo dos milênios, sua função como guardiões permanece inalterada. Hoje, os Griffinhalf vivem como protetores das lendas e do legado de Skypia, zelando para que seus segredos continuem ocultos aos olhos do mundo.`,
     img: "imagens/Griffinhalf.png",
     img2: "imagens/Token-Griffinhalf.png"
+},"Goblin Caotico": {
+    vida: 42,
+    sanidade: 26,
+    especial: 10,
+    armadura: 1,
+    vidaPorNivel: 8,
+    sanidadePorNivel: 3,
+    especialPorNivel: 2,
+    armaduraPorNivel: 1,
+    armaduraPorNivel: 4,
+    bru: 8, agi: 18, det: 11, pre: 12, lib: 10, cnx: 14,
+    bruDano: 0, agiDano: 2, detDano: 0, preDano: 1, libDano: 0, cnxDano: 0,
+    bruTest: 0, agiTest: 4, detTest: 1, preTest: 1, libTest: 0, cnxTest: 2,
+    bonus: `Resistente: Ácido
+    Vulnerável: Luz
+    Imune: Psicológico`,
+    bonus2: `{pigmento}*Brincadeira Mortal:*{/pigmento} O Goblin Caótico é mestre em ludibriar seus inimigos. Como uma ação bônus, ele pode criar uma ilusão momentânea para confundir um alvo em até 6 metros. O alvo deve passar em um teste de Determinação (DT 12) ou ficará Confuso até o final do próximo turno.
+{pigmento}*Explosão Improvisada:*{/pigmento} Utilizando tudo ao seu redor como arma, o Goblin Caótico pode arremessar objetos aleatórios que explodem ao impacto. Ele faz um ataque à distância causando 2d6 de dano de Fogo ou de Ácido. Qualquer criatura a até 1 metro do alvo sofre metade desse dano.
+{pigmento}*Especialização Goblinoide:*{/pigmento} Desde a infância, os Goblins Caóticos escolhem um caminho para aprimorar suas habilidades. Cada Goblin recebe um bônus diferente baseado em sua escolha:
+    - Arqueiro: +4 em teste com armas de longo alcance, +6 em dano à distância.
+    - Conjurador: +4 em danos com magias e +2 em testes.
+    - Guerreiro: +3 em testes de Brutalidade e +4 em dano corpo a corpo.`,
+    bonus3:`Elemento: Caos`,
+    Magias: `Nível 3 - Sombra Animal, Nível 5 - Cogumelos Tóxicos`,
+    Passivas: `Nível 1 - Bêbado, Nível 4 - Preguiça`,
+    Talentos: `Armadilhas - Requisito: Agilidade, Enganação - Requisito: Conexão, Escavação - Requisito: Determinação.`,
+    Descricao: `Os Goblins Caóticos são pequenas criaturas traiçoeiras que vivem para causar o máximo de confusão e destruição possível. Diferente de outros goblins, eles não possuem uma hierarquia definida ou uma sociedade organizada. Preferem viver no meio do caos, montando armadilhas elaboradas e realizando ataques-surpresa cheios de imprevisibilidade.
+Sempre sorridentes e falantes, esses goblins não demonstram medo de absolutamente nada. Pelo contrário, adoram zombar de seus inimigos e se divertem com a própria destruição. Seus esconderijos são um verdadeiro campo minado, repletos de engenhocas instáveis e explosivos improvisados.
+Apesar de sua aparência diminuta e frágil, subestimá-los é um erro fatal. Sua velocidade é impressionante, permitindo-lhes escapar de quase qualquer situação. Além disso, sua sorte parece ser sobrenatural, já que conseguem sair ilesos das situações mais absurdas, deixando para trás apenas o rastro do caos que criaram.
+A presença de um Goblin Caótico em uma região costuma ser acompanhada por eventos estranhos, como incêndios misteriosos, quedas de estruturas e até mesmo surtos de loucura entre os habitantes locais. Muitos acreditam que eles são a personificação do azar e evitam cruzar seu caminho a qualquer custo.
+Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Goblin Caótico pode estar por perto, pronto para transformar seu dia em um pesadelo imprevisível.`,
+    img: "imagens/Goblin-BaixoEscalão.png",
+    img2: "imagens/Token-Goblin-BaixoEscalão.png"
 }
 
 
