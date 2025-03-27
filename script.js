@@ -313,7 +313,6 @@ Estudiosos especulam que os Griffinhalf possam ser descendentes dos lendários G
     vidaPorNivel: 8,
     sanidadePorNivel: 3,
     especialPorNivel: 2,
-    armaduraPorNivel: 1,
     armaduraPorNivel: 4,
     bru: 8, agi: 18, det: 11, pre: 12, lib: 10, cnx: 14,
     bruDano: 0, agiDano: 2, detDano: 0, preDano: 1, libDano: 0, cnxDano: 0,
