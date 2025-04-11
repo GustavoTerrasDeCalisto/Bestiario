@@ -372,7 +372,40 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
   Descricao: "Os Goblins Corrompidos são o resultado de gerações de experimentos com forças espirituais e sombrias. Diferente de seus primos caóticos e trapaceiros, esses goblins evoluíram em meio a energias poderosas, transformando-se em conjuradores temidos e guerreiros sombrios. Sua pele esverdeada adquiriu tons escuros, emana uma energia azulada escura e seus olhos brilham em azul, um reflexo do poder que os acompanha.\n\nEles vivem em clãs ocultos, sempre liderados pelo mais forte entre eles. São estrategistas natos e prezam pela eficiência em batalha, utilizando tanto suas habilidades físicas aprimoradas quanto seu domínio sobre as almas perdidas. Quando atacam um inimigo, pequenas entidades espectrais surgem ao redor, corroendo sua energia vital até que nada reste.\n\nDiferente da maioria dos goblins, os Corrompidos não vivem pelo caos, mas sim pelo poder. Eles enxergam a vida como uma batalha constante e acreditam que apenas os mais fortes podem prosperar. Os aventureiros que ousam enfrentá-los devem estar preparados para lutar não apenas contra seus corpos aprimorados, mas também contra as almas atormentadas que os acompanham.\n\nSe você encontrar um Goblin Corrompido em combate, lembre-se: cada golpe que você der pode apenas fortalecer seu inimigo.",
     "img": "imagens/Goblin_Corrompido.png",
     "img2": "imagens/Token-Goblin_Corrompido.png"
-  }
+  },"Manifestação do Poder": {
+  vida: 409,
+  sanidade: 81,
+  especial: 13,
+  armadura: 15,
+  vidaPorNivel: 9,
+  sanidadePorNivel: 9,
+  especialPorNivel: 9,
+  armaduraPorNivel: 3,
+  bru: 12, agi: 10, det: 22, pre: 16, lib: 99, cnx: 13,
+  bruDano: 2, agiDano: 0, detDano: 2, preDano: 2, libDano: 18, cnxDano: 1,
+  bruTest: 1, agiTest: 0, detTest: 4, preTest: 3, libTest: 30, cnxTest: 2,
+  bonus: `Resistente: Caos
+Vulnerável: Desconhecido, Fé
+Imune: Poder`,
+  bonus2: `{pigmento}*Corpo Ascendido:*{/pigmento} Transforma-se em energia pura por 2 turnos. Ataques físicos viram dano de Plasma, ignoram resistências. +4 dano, +2 testes de Brutalidade, +4 testes de Libertação. Sofre 1d10 de dano ao final do efeito.
+{pigmento}*Almas Irradiantes:*{/pigmento} Invoca almas que disparam 3d10 de dano de Alma em até 2 inimigos por 3 turnos. Teste de Libertação (DT 16) ou ficam Atordoados. Se o inimigo morrer, recupera 20 Vida e 5 Sanidade.
+{pigmento}*Pulso de Autoridade:*{/pigmento} A cada 3 turnos, explode aura de Plasma em 8m. Teste de Determinação (DT 17) ou sofre 4d10 de dano e é empurrado 6m. Metade do dano em sucesso.
+{pigmento}*Domínio da Força Viva:*{/pigmento} Inimigo que sofre dano recebe **Marcado pela Força**. No 3º acúmulo, faz teste de Libertação (DT 18). Se falhar, explode em 6d10 de dano de Alma e não pode se curar por 2 turnos. Se passar, sofre metade.
+{pigmento}*Reflexo do Vazio Silencioso:*{/pigmento} Uma vez por dia, ao atingir 0 de vida, teleporta para um receptáculo a até 18m. Ressurge com vida cheia, mas nível 0. Pode ser impedido com folhas secas e galhos ao redor da área.`,
+  bonus3: `Entidade do Poder
+Elemento - Poder`,
+  Magias: `Nível 1 – Todas as Magias de Poder.`,
+  Passivas: `Nível 2 – Todas as Passivas de Poder.`,
+  Talentos: `Diplomacia - Requisito: Conexão
+Percepção - Requisito: Libertação
+Vigilância - Requisito: Libertação`,
+  Descricao: `A Entidade do Poder é a manifestação suprema da força viva, oscilando entre carne e energia pura. Sua presença distorce o mundo, seus passos marcam o chão e sua voz não tem som — apenas uma invasão psíquica.
+Ela não negocia, não cede e não esquece. Constrói estátuas, armaduras e objetos como reflexos de sua essência, irradiando energia azul. Esses receptáculos, como gárgulas e brinquedos antigos, se tornam seus corpos temporários.
+É a guardiã do Reino dos Mortos, regendo o fluxo das almas e decidindo seu destino final. Sua presença é tão intensa que, se assumisse sua forma verdadeira, destruiria o mundo. Por isso, age por avatares poderosos, capazes de devastar cidades.
+Foi soberana antes da era das Terras de Calisto, quando reinava durante a era de Eldoria. Seu propósito é claro: testar a força de tudo que vive — e destruir o que é fraco.`,
+  img: "imagens/EntidadePoder.png",
+  img2: "imagens/Token-EntidadePoder.png"
+}
 
 
 
