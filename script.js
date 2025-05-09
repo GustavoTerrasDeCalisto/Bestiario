@@ -134,7 +134,28 @@ Nas Terras de Calisto, Paralios é conhecido como o Anunciador dos Sonhos, o Ara
 Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a paralisia do sono, enquanto seus olhos vermelhos são a última coisa que os vivos veem antes de acordar sem alma… ou nunca mais acordar.`,
     img: "imagens/Paralios.png",
     img2: "imagens/Token-Paralios.png"
-  },"Deinonychus": {
+  },"A Bolha": {
+  "vida": 50,
+  "sanidade": 4,
+  "especial": 12,
+  "armadura": 8,
+  "vidaPorNivel": 10,
+  "sanidadePorNivel": 2,
+  "especialPorNivel": 5,
+  "armaduraPorNivel": 2,
+
+  "bru": 16, "agi": 8, "det": 10, "pre": 8, "lib": 8, "cnx": 12,
+  "bruDano": 1, "agiDano": 0, "detDano": 0, "preDano": 0, "libDano": 0, "cnxDano": 0,
+  "bruTest": 2, "agiTest": -2, "detTest": 0, "preTest": -2, "libTest": -2, "cnxTest": 1,
+
+  "bonus": "Imune: Ácido, Veneno, Sono\nResistente: Físico não-mágico\nVulnerável: Eletricidade, Luz",
+  "bonus2": "{pigmento}*Absorção Corrosiva:*{/pigmento} Sempre que elimina uma criatura, recupera 1d10+1d8 de vida e aumenta sua vida máxima em +20.\n{pigmento}*Diluição Instintiva:*{/pigmento} Pode atravessar grades, frestas e espaços minúsculos sem custo, mas não pode passar por barreiras mágicas.\n{pigmento}*Grito Gelatinoso:*{/pigmento} Uma vez por combate, solta um grito que afeta todas as criaturas em 10m. Cada inimigo deve passar em um teste de Conexão (DT 13) ou fica Apavorado por 1 turno.\n{pigmento}*Corrosão Viva:*{/pigmento} Causa 5d12 de dano ácido a cada turno a quem estiver em contato direto com seu corpo. Objetos não mágicos tocados se desfazem em 2 turnos.",
+  
+  "bonus3": "Criatura Amórfica\nElemento - Caos / Ácido",
+  "Descricao": "Uma massa colossal de matéria corrosiva viva, nascida de um experimento alquímico proibido. A Bolha rasteja absorvendo tudo em seu caminho. Seus gritos não têm som, mas ecoam na mente dos que a veem. Com o tempo, cresce, engole estruturas e digere seres vivos, revelando fragmentos derretidos de ossos em sua transparência pulsante.",
+  "img": "imagens/A-Bolha.png",
+  "img2": "imagens/Token-A-Bolha.png"
+},"Deinonychus": {
     vida: 72,
     sanidade: 33,
     especial: 8,
