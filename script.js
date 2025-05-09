@@ -372,6 +372,27 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
   Descricao: "Os Goblins Corrompidos são o resultado de gerações de experimentos com forças espirituais e sombrias. Diferente de seus primos caóticos e trapaceiros, esses goblins evoluíram em meio a energias poderosas, transformando-se em conjuradores temidos e guerreiros sombrios. Sua pele esverdeada adquiriu tons escuros, emana uma energia azulada escura e seus olhos brilham em azul, um reflexo do poder que os acompanha.\n\nEles vivem em clãs ocultos, sempre liderados pelo mais forte entre eles. São estrategistas natos e prezam pela eficiência em batalha, utilizando tanto suas habilidades físicas aprimoradas quanto seu domínio sobre as almas perdidas. Quando atacam um inimigo, pequenas entidades espectrais surgem ao redor, corroendo sua energia vital até que nada reste.\n\nDiferente da maioria dos goblins, os Corrompidos não vivem pelo caos, mas sim pelo poder. Eles enxergam a vida como uma batalha constante e acreditam que apenas os mais fortes podem prosperar. Os aventureiros que ousam enfrentá-los devem estar preparados para lutar não apenas contra seus corpos aprimorados, mas também contra as almas atormentadas que os acompanham.\n\nSe você encontrar um Goblin Corrompido em combate, lembre-se: cada golpe que você der pode apenas fortalecer seu inimigo.",
     "img": "imagens/Goblin_Corrompido.png",
     "img2": "imagens/Token-Goblin_Corrompido.png"
+  },"Vespa-Cogumelo": {
+    "vida": 25,
+    "sanidade": 1,
+    "especial": 7,
+    "armadura": 8,
+    "vidaPorNivel": 3,
+    "sanidadePorNivel": 0,
+    "especialPorNivel": 3,
+    "armaduraPorNivel": 1,
+    "bru": 8, "agi": 14, "det": 10, "pre": 11, "lib": 6, "cnx": 4,
+    "bruDano": 1, "agiDano": 2, "detDano": 0, "preDano": 1, "libDano": 0, "cnxDano": 0,
+    "bruTest": 0, "agiTest": 3, "detTest": 1, "preTest": 1, "libTest": 0, "cnxTest": 0,
+    "bonus": "Resistente: Veneno\nVulnerável: Fogo, Escuridão\nImune: Sono",
+    "bonus2": "{pigmento}*Esporos Tóxicos:*{/pigmento} Inimigos em até 1,5m devem fazer um teste de Determinação (DT 12) ou sofrem 1d4 de dano de Veneno.\n{pigmento}*Chamado do Enxame:*{/pigmento} Se não sofrer dano por 3 turnos, emite um grito que chama 2 Vespas-Cogumelo (iguais a ela) no próximo turno.\n{pigmento}*Picada de Nectar:*{/pigmento} Causa 1d6 de dano perfurante. Se o alvo falhar em um teste de Determinação (DT 13), fica Confuso por 2 turnos.",
+    "bonus3": "Criatura Corrompida\nElemento - Natureza / Veneno",
+    "Magias": "Nível 3 – Cogumelos Tóxicos",
+    "Passivas": "Nível 2 – Ódio",
+    "Talentos": "Armadilhas - Requisito: Agilidade",
+    "Descricao": "Criada por um desequilíbrio fúngico mágico, a Vespa-Cogumelo é frágil individualmente, mas perigosa em grupo. Vive nas sombras de florestas e ruínas úmidas, crescendo em número quando ignorada. Seu corpo é leve e repleto de fungos venenosos, com asas barulhentas e um ferrão infeccioso. O ódio fúngico se manifesta quando vê outras criaturas, atacando sem hesitar mesmo que isso leve à sua morte. Se não for eliminada rapidamente, atrai outras, transformando um pequeno combate em um pesadelo de esporos.",
+    "img": "imagens/VespaCogumelo.png",
+    "img2": "imagens/Token-VespaCogumelo.png"
   },"Manifestação do Poder": {
   vida: 409,
   sanidade: 81,
