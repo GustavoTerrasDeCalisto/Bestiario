@@ -139,7 +139,7 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
   "sanidade": 4,
   "especial": 12,
   "armadura": 8,
-  "vidaPorNivel": 10,
+  "vidaPorNivel": 20,
   "sanidadePorNivel": 2,
   "especialPorNivel": 5,
   "armaduraPorNivel": 2,
@@ -149,7 +149,7 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
   "bruTest": 2, "agiTest": -2, "detTest": 0, "preTest": -2, "libTest": -2, "cnxTest": 1,
 
   "bonus": "Imune: Ácido, Veneno, Sono\nResistente: Físico não-mágico\nVulnerável: Eletricidade, Luz",
-  "bonus2": "{pigmento}*Absorção Corrosiva:*{/pigmento} Sempre que elimina uma criatura, recupera 1d10+1d8 de vida e aumenta sua vida máxima em +20.\n{pigmento}*Diluição Instintiva:*{/pigmento} Pode atravessar grades, frestas e espaços minúsculos sem custo, mas não pode passar por barreiras mágicas.\n{pigmento}*Grito Gelatinoso:*{/pigmento} Uma vez por combate, solta um grito que afeta todas as criaturas em 10m. Cada inimigo deve passar em um teste de Conexão (DT 13) ou fica Apavorado por 1 turno.\n{pigmento}*Corrosão Viva:*{/pigmento} Causa 5d12 de dano ácido a cada turno a quem estiver em contato direto com seu corpo. Objetos não mágicos tocados se desfazem em 2 turnos.",
+  "bonus2": "{pigmento}*Absorção Corrosiva:*{/pigmento} Sempre que elimina uma criatura, recupera 1d10+1d8 de vida e aumenta sua vida máxima em +20, aumente 1 Nível.\n{pigmento}*Diluição Instintiva:*{/pigmento} Pode atravessar grades, frestas e espaços minúsculos sem custo, mas não pode passar por barreiras mágicas.\n{pigmento}*Grito Gelatinoso:*{/pigmento} Uma vez por combate, solta um grito que afeta todas as criaturas em 10m. Cada inimigo deve passar em um teste de Conexão (DT 13) ou fica Apavorado por 1 turno.\n{pigmento}*Corrosão Viva:*{/pigmento} Causa 5d12 de dano ácido a cada turno a quem estiver em contato direto com seu corpo. Objetos não mágicos tocados se desfazem em 2 turnos.",
   
   "bonus3": "Criatura Amórfica\nElemento - Caos / Ácido",
   "Descricao": "Uma massa colossal de matéria corrosiva viva, nascida de um experimento alquímico proibido. A Bolha rasteja absorvendo tudo em seu caminho. Seus gritos não têm som, mas ecoam na mente dos que a veem. Com o tempo, cresce, engole estruturas e digere seres vivos, revelando fragmentos derretidos de ossos em sua transparência pulsante.",
