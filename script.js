@@ -508,7 +508,7 @@ bonus:`Resistente:Luz, Cinzas
 Vulnerável: Sagrado, Tremor
 Imune: Aura`,
 bonus2: `
-{pigmento}Heushsin.
+{pigmento}*Heushsin.
 Sisisiidjd.
 
 
@@ -524,9 +524,8 @@ Jsjdjdjdjdjdjd.
 Jsjdjdusus.
 Ususudu`,
 img: "imagens/Msugo.png",
-img2: "imagens/Token-Msugo.png"}	
-
-
+img2: "imagens/Token-Msugo.jpg"}	
+	
 
 };
 
