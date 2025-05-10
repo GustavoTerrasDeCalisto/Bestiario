@@ -492,7 +492,7 @@ Essa entidade é extremamente antiga, tendo reinado muito antes do mundo se cham
 Seu propósito é um só: testar a força de tudo que vive — e destruir o que for fraco.`,
   img: "imagens/EntidadePoder.png",
   img2: "imagens/Token-EntidadePoder.png"
-},{"Msugo": {
+},"Msugo": {
 vida: 34,
 sanidade: 34,
 especial: 37,
