@@ -492,39 +492,67 @@ Essa entidade é extremamente antiga, tendo reinado muito antes do mundo se cham
 Seu propósito é um só: testar a força de tudo que vive — e destruir o que for fraco.`,
   img: "imagens/EntidadePoder.png",
   img2: "imagens/Token-EntidadePoder.png"
-},"Msugo": {
-vida: 34,
-sanidade: 34,
-especial: 37,
-armadura: 7,
-vidaPorNivel: 6,
-sanidadePorNivel: 3,
-especialPorNivel: 2,
-armaduraPorNivel: 2,
-bru: 15, agi: 13, det: 14, pre: 8, lib: 9, cnx: 34,
-bruTest: 2, agiTest: 1, detTest: 2, preTest: -2, libTest: -1, cnxTest: 8,
-bruDano: 1, agiDano: 1, detDano: 1, preDano: 0, libDano: 0, cnxDano: 5,
-bonus:`Resistente:Luz, Cinzas
-Vulnerável: Sagrado, Tremor
-Imune: Aura`,
-bonus2: `
-{pigmento}*Heushsin.
-Sisisiidjd.
+},"Carniceiras Noturnas": {
+  vida: 67,
+  sanidade: 56,
+  especial: 34,
+  armadura: 3,
+  vidaPorNivel: 8,
+  sanidadePorNivel: 4,
+  especialPorNivel: 2,
+  armaduraPorNivel: 3,
 
+  bru: 12,
+  agi: 20,
+  det: 8,
+  pre: 9,
+  lib: 9,
+  cnx: 15,
 
-Sjsjsjs.*{/pigmento}
+  bruTest: 1,
+  agiTest: 4,
+  detTest: -2,
+  preTest: -1,
+  libTest: -1,
+  cnxTest: 2,
+
+  bruDano: 0,
+  agiDano: 2,
+  detDano: 0,
+  preDano: 0,
+  libDano: 0,
+  cnxDano: 1,
+
+  bonus: `Resistente: Escuridão, Eclipse  
+Vulnerável: Cinzas, Alma  
+Imune: Tempestade`,
+
+  bonus2: `
+{pigmento}Cuspe Corrosivo{/pigmento} – Cospe um líquido azul que queima ao contato, atingindo até 5m de distância.  
+Dano: 3d12 ácido | DT 13 Agilidade  
+Se o alvo falhar, sofre 1d6 de dano contínuo por 2 turnos.
+
+{pigmento}Fagulha de Alma{/pigmento} – Seu corpo se incendeia em chamas azuladas espirituais, queimando quem se aproxima.  
+Dano de contato: 2d12 fogo  
+Efeitos adicionais: -1 em testes de Sanidade e provoca a passiva *Pavor* se o alvo falhar em teste de Presença.
+
+{pigmento}Golpes Desesperados{/pigmento} – Ataca em fúria com garras, pernas e mordidas.  
+Dano: 3d10 físico cortante | DT Agilidade  
+Se atingir mais de um alvo, recupera 1d8 de vida e ativa *Pavor* por 1 turno.
 `,
-bonus3:`Lamacento
-Elemento – o elemento Caos`,
-Magias: ` Teste`,
-Passivas:` Testio`,
-Talentos: `Uioo`,
-Descricao:` Heususjdjjs.
-Jsjdjdjdjdjdjd.
-Jsjdjdusus.
-Ususudu`,
-img: "imagens/Msugo.png",
-img2: "imagens/Token-Msugo.jpg"}	
+
+  bonus3: `Espreitadora da Noite  
+Elemento – Desconhecido`,
+
+  Magias: `-`,
+  Passivas: `-`,
+  Talentos: `-`,
+
+  Descricao: `Carniceiras Noturnas são criaturas sombrias e deformadas que habitam os becos esquecidos das grandes cidades de Rohan. Atuam nas sombras, devorando aqueles que se perdem ou se aproximam demais do perigo. Apesar de sua aparência aterradora e comportamento errático, alguns moradores ousam alimentá-las, criando laços frágeis e imprevisíveis. Com o tempo, podem se tornar serviçais fiéis — mas jamais confiáveis. Envoltas por um estranho fogo azul e uma fome desesperada, essas entidades representam o desespero personificado.`,
+
+  img: "imagens/Carniceiras Noturnas.png",
+  img2: "imagens/Token-Carniceiras Noturnas.png"
+}	
 	
 
 };
