@@ -524,7 +524,7 @@ Jsjdjdjdjdjdjd.
 Jsjdjdusus.
 Ususudu`,
 img: "imagens/Msugo.png",
-img2: "imagens/Token-Msugo.png",}	
+img2: "imagens/Token-Msugo.png"}	
 
 
 
