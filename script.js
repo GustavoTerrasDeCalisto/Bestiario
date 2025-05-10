@@ -492,7 +492,39 @@ Essa entidade é extremamente antiga, tendo reinado muito antes do mundo se cham
 Seu propósito é um só: testar a força de tudo que vive — e destruir o que for fraco.`,
   img: "imagens/EntidadePoder.png",
   img2: "imagens/Token-EntidadePoder.png"
-}
+},{"Msugo": {
+vida: 34,
+sanidade: 34,
+especial: 37,
+armadura: 7,
+vidaPorNivel: 6,
+sanidadePorNivel: 3,
+especialPorNivel: 2,
+armaduraPorNivel: 2,
+bru: 15, agi: 13, det: 14, pre: 8, lib: 9, cnx: 34,
+bruTest: 2, agiTest: 1, detTest: 2, preTest: -2, libTest: -1, cnxTest: 8,
+bruDano: 1, agiDano: 1, detDano: 1, preDano: 0, libDano: 0, cnxDano: 5,
+bonus:`Resistente:Luz, Cinzas
+Vulnerável: Sagrado, Tremor
+Imune: Aura`,
+bonus2: `
+{pigmento}Heushsin.
+Sisisiidjd.
+
+
+Sjsjsjs.*{/pigmento}
+`,
+bonus3:`Lamacento
+Elemento – o elemento Caos`,
+Magias: ` Teste`,
+Passivas:` Testio`,
+Talentos: `Uioo`,
+Descricao:` Heususjdjjs.
+Jsjdjdjdjdjdjd.
+Jsjdjdusus.
+Ususudu`,
+img: "imagens/Msugo.png",
+img2: "imagens/Token-Msugo.png",}	
 
 
 
