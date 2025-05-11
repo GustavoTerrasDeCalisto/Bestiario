@@ -551,9 +551,68 @@ Elemento – Desconhecido`,
   Descricao: `Carniceiras Noturnas são criaturas sombrias e deformadas que habitam os becos esquecidos das grandes cidades de Rohan. Atuam nas sombras, devorando aqueles que se perdem ou se aproximam demais do perigo. Apesar de sua aparência aterradora e comportamento errático, alguns moradores ousam alimentá-las, criando laços frágeis e imprevisíveis. Com o tempo, podem se tornar serviçais fiéis — mas jamais confiáveis. Envoltas por um estranho fogo azul e uma fome desesperada, essas entidades representam o desespero personificado.`,
 
   img: "imagens/Carniceiras Noturnas.png",
-  img2: "imagens/Token-Carniceiras Noturnas.png"
-}	
-	
+  img2: "imagens/Token-Carniceiras Noturnas.png"}
+,	
+"Verme Fúngico": {
+  vida: 10,
+  sanidade: 10,
+  especial: 15,
+  armadura: 0,
+  vidaPorNivel: 2,
+  sanidadePorNivel: 5,
+  especialPorNivel: 5,
+  armaduraPorNivel: 3,
+
+  bru: 10,
+  agi: 10,
+  det: 20,
+  pre: 25,
+  lib: 10,
+  cnx: 10,
+
+  bruTest: 0,
+  agiTest: 0,
+  detTest: 4,
+  preTest: 5,
+  libTest: 0,
+  cnxTest: 0,
+
+  bruDano: 0,
+  agiDano: 0,
+  detDano: 2,
+  preDano: 3,
+  libDano: 0,
+  cnxDano: 0,
+
+  bonus: `Resistente: Distorção, Água  
+Vulnerável: Sangue, Fogo  
+Imune: Mental, Ácido`,
+
+  bonus2: `
+{pigmento}Devorador{/pigmento} – Pode usar a passiva *Consumir* sem custo e sem sofrer penalidades negativas.
+
+{pigmento}Sobrevivente{/pigmento} – Possui vantagem em todos os lançamentos de dados feitos durante o combate.
+
+{pigmento}Praga Prolifera{/pigmento} – Sempre que for morto por qualquer tipo de dano que **não seja** Cinzas, Sangue, Laser, Plasma, Fogo ou Eletricidade, o Verme Fúngico ressuscita automaticamente e se divide em dois, cada um com metade da vida original.
+`,
+
+  bonus3: `A Praga  
+Elemento – Caos`,
+
+  Magias: `Nível 1 – Vinhas Mágicas  
+Nível 3 – Cogumelos Tóxicos`,
+
+  Passivas: `Nível 2 – Consumir`,
+
+  Talentos: `Sobrevivência - Requisito:Determinação`,
+
+  Descricao: `O Verme Fúngico é uma aberração nascida da fusão entre energia caótica e a flora corrompida por forças desconhecidas. Originário de uma floresta em colapso, ele é uma das principais causas de proliferação de infecções mágicas e crescimento fúngico descontrolado. Ao ser morto, pode se multiplicar, tornando-se uma ameaça crescente e difícil de erradicar. Sua mente é vazia, mas seu instinto é de propagação e destruição.`,
+
+  img: "imagens/Verme fungico.png",
+  img2: "imagens/Token-Verme fungico.png"
+}
+
+
 
 };
 
