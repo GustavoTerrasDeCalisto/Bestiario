@@ -167,7 +167,6 @@ span {
 
 /* Título do stat (ex: Vida:) */
 .stat-summary p strong {
-  margin-bottom: 5px;
   font-size: 1.2rem;
 }
 
