@@ -717,7 +717,7 @@ Imune: Água, Ácido`,
 {pigmento}*Arena Incandescente:*{/pigmento} uma vez por dia, cria uma arena de madeira em chamas com 15m² ao redor de si. A arena dura _1d12 turnos_ e pode ser encolhida a cada turno. Criaturas dentro da arena sofrem 2d8 de dano de fogo por turno.
 {pigmento}*Avanço Rápido:*{/pigmento} pode saltar em direção a um alvo, causando um impacto em área de 6m² (em círculo). Causa _4d20 de dano físico_ aos afetados no impacto.
 {pigmento}*Golpes Flamejantes:*{/pigmento} seus ataques comuns causam _1d20 de dano de fogo_ e _1d20 de dano de esmagamento físico_.
-{/pigmento}`,
+`,
 
   bonus3: `O Silêncio Flamejante
 Elemento – o elemento Caos`,
