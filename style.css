@@ -486,7 +486,7 @@ button:focus {
   padding: 5px;
   background-color: #333;
   border-radius: 5px;
-  width: 90%; /* Ocupa toda a largura disponível */
+  width: 100%; /* Ocupa toda a largura disponível */
   border: 1px solid #444; /* Adicionando borda */
 }
 
