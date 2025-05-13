@@ -30,7 +30,11 @@ Os Glink's desprezam sociedades evoluídas e a vida em grandes grupos. Vivem em 
 Seus comportamentos e motivações são muitas vezes incompreendidos, mas uma coisa é certa: os Glink's são forças imprevisíveis e perigosas da natureza, que devem ser tratados com extrema cautela.`,
     img: "imagens/Glink's.png",
     img2: "imagens/Token-Glink's.png"
-  },"Musplum": {
+  }
+  
+  
+  
+  ,"Musplum": {
     vida: 30,
     sanidade: 15,
     especial: 15,
@@ -60,7 +64,11 @@ Os Musplums são conhecidos por serem extremamente furtivos e sorrateiros durant
 Sua presença em florestas e cavernas torna esses locais ainda mais perigosos para aventureiros desavisados, e muitos caçadores de mitos afirmam que os Musplums são responsáveis por desaparecimentos misteriosos em regiões remotas. Essas criaturas sombrias e enigmáticas permanecem envoltas em lendas e superstições, sempre espreitando nas sombras, à espera do momento certo para atacar.`,
     img: "imagens/Musplum.png",
     img2: "imagens/Token-Musplum.png"
-  },"Peões Desordeiros": {
+  }
+  
+  
+  
+  ,"Peões Desordeiros": {
     "vida": 35,
     "sanidade": 45,
     "especial": 20,
@@ -101,7 +109,11 @@ Sua presença em florestas e cavernas torna esses locais ainda mais perigosos pa
     "img": "imagens/PeaoDesordeiro.png",
     "img2": "imagens/Token-PeaoDesordeiro.png"
 }
-,"Paralios": {
+
+  
+  
+  
+  ,"Paralios": {
     vida: 110,
     sanidade: 70,
     especial: 25,
@@ -138,7 +150,14 @@ Nas Terras de Calisto, Paralios é conhecido como o Anunciador dos Sonhos, o Ara
 Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a paralisia do sono, enquanto seus olhos vermelhos são a última coisa que os vivos veem antes de acordar sem alma… ou nunca mais acordar.`,
     img: "imagens/Paralios.png",
     img2: "imagens/Token-Paralios.png"
-  },"A Bolha": {
+  }
+  
+  
+  
+  
+  
+  
+  ,"A Bolha": {
   "vida": 50,
   "sanidade": 4,
   "especial": 12,
@@ -160,7 +179,13 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
   "Descricao": "Uma massa colossal de matéria corrosiva viva, nascida de um experimento alquímico proibido. A Bolha rasteja absorvendo tudo em seu caminho. Seus gritos não têm som, mas ecoam na mente dos que a veem. Com o tempo, cresce, engole estruturas e digere seres vivos, revelando fragmentos derretidos de ossos em sua transparência pulsante.",
   "img": "imagens/A-Bolha.png",
   "img2": "imagens/Token-A-Bolha.png"
-},"Deinonychus": {
+}
+  
+  
+  
+  
+  
+  ,"Deinonychus": {
     vida: 72,
     sanidade: 33,
     especial: 8,
@@ -193,7 +218,13 @@ A aparência imponente desses predadores é complementada por sua pele dura e re
 Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um som agudo e estridente que convoca rapidamente seus companheiros. Essas criaturas representam não apenas uma ameaça física, mas também um enigma sobre a origem de seu retorno, sugerindo que forças muito maiores e desconhecidas podem estar em jogo, manipulando o tempo e a vida.`,
     img: "imagens/Deinonychus.png",
     img2: "imagens/Token-Deinonychus.png"
-  },"Raposa Selvagem": {
+  }
+  
+  
+  
+  
+  
+  ,"Raposa Selvagem": {
     vida: 24,
     sanidade: 14,
     especial: 0,
@@ -223,7 +254,12 @@ Apesar de ser encontrada em quase todos os continentes, as raposas originárias 
 Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos para reagir com ataques precisos ou simplesmente desaparecer na mata.`,
     img: "imagens/RaposaSelvagem.png",
     img2: "imagens/Token-RaposaSelvagem.png"
-},"Alce Florenar": {
+}
+  
+  
+  
+  
+  ,"Alce Florenar": {
   vida: 12,
   sanidade: 8,
   especial: 0,
@@ -238,13 +274,13 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
   bruTest: 2, agiTest: 0, detTest: 1, preTest: 3, libTest: 2, cnxTest: 1,
   bonus: `Resistente: dano Mental
 Vulnerável: dano Sombrio`,
-  bonus2: `{pigmento}*Chifre Florido:*{/pigmento} Um ataque cerimonial raro realizado apenas quando o Alce se sente ameaçado. Dano esmagador: 10 + 1d12.
+  bonus2: `{pigmento}*Chifre Florido:*{/pigmento} Um ataque cerimonial raro realizado apenas quando o Alce se sente ameaçado. Dano esmagante: 10+1d12.
 
-{pigmento}*Despertar Floral:*{/pigmento} Uma vez por ano, durante o florescer das árvores em Elfinória, o Alce Florenar manifesta sua habilidade ancestral de montaria sagrada, permitindo que qualquer criatura montada nele viaje a 3x sua velocidade normal. 
+{pigmento}*Despertar Floral:*{/pigmento} Uma vez por ano, durante o florescer das árvores em Elfinória, o Alce Florenar manifesta sua habilidade ancestral de montaria sagrada, permitindo que qualquer criatura montada nele viaje a 3x seu movimento. 
 
 {pigmento}*Montaria Sagrada:*{/pigmento} Criatura naturalmente domável para montaria em cerimônias, tarefas de arado e rituais élficos. Confere bônus narrativo de respeito e conexão espiritual com as forças da natureza.`,
   bonus3: `Animal Raro
-Elemento – Natureza`,
+Elemento – Caos`,
   Magias: `Nenhuma.`,
   Passivas: `Nenhuma.`,
   Talentos: `Montaria – Requisito: Libertação.`,
@@ -254,7 +290,12 @@ Originários da região ocidental de Calisto, em Elfinória — a Terra dos Lyri
   img: "imagens/AlceFlorenar.png",
   img2: "imagens/Token-AlceFlorenar.png"
 }
-,"Doggers": {
+
+  
+  
+  
+  
+  ,"Doggers": {
     vida: 25,
     sanidade: 10,
     especial: 8,
@@ -285,7 +326,11 @@ Originários da região ocidental de Calisto, em Elfinória — a Terra dos Lyri
     Os Doggers são uma raça enigmática, ao mesmo tempo amigável e feroz, que prefere a simplicidade da vida em grupo nos campos abertos, mas que não hesitará em defender seu território e sua comunidade com uma força que contrasta com sua aparência dócil.`,
     img: "imagens/Doggers.png",
     img2: "imagens/Token-Doggers.png"
-},"Antigos Esquecidos": {
+}
+  
+  
+  
+  ,"Antigos Esquecidos": {
     vida: 5,
     sanidade: 7,
     especial: 2,
@@ -315,7 +360,11 @@ Originários da região ocidental de Calisto, em Elfinória — a Terra dos Lyri
     Para aqueles que os enfrentam, os Antigos Esquecidos são um lembrete cruel de que até os mortos podem se tornar uma ameaça. Sua forma macabra e sua persistência sobrenatural os tornam o terror de lugares onde a morte se acumulou, e qualquer tentativa de ignorar ou minimizar sua presença pode ter consequências fatais.`,
     img: "imagens/AntigosEsquecidos.png",
     img2: "imagens/Token-AntigosEsquecidos.png"
-},"Yonkis": {
+}
+  
+  
+  
+  ,"Yonkis": {
     vida: 33,
     sanidade: 11,
     especial: 5,
@@ -346,7 +395,12 @@ Quando os filhotes atingem a maturidade, retornam com seus pais aos grupos maior
 Os Yonkis adultos, especialmente os que estão em busca de alimento para seus filhotes, são conhecidos por sua agressividade e suas habilidades de combate. Lutam utilizando porretes improvisados, suas cabeças para aplicar poderosas cabeçadas, ou dominando a água para criar ataques que confundem e afogam seus inimigos. Sua pele grossa e resistente os torna alvos difíceis, mas alguns caçadores ousados os caçam com armas de fogo, utilizando-os como alimento em algumas culturas. Portanto, ao encontrar um Yonki, é essencial observar em que fase de sua vida ele se encontra – se for um Yonki adulto em busca de alimento, o melhor é evitar o confronto.`,
     img: "imagens/Yonkis.png",
     img2: "imagens/Token-Yonkis.png"
-},"Splendianos": {
+}
+  
+  
+  
+  
+  ,"Splendianos": {
     vida: 65,
     sanidade: 20,
     especial: 15,
@@ -376,7 +430,13 @@ Apesar dessa natureza amável e servil, os Splendianos podem se tornar ferozment
 Embora existam raças tritônicas no mundo, os Splendianos se diferenciam por sua comunicação limitada. Conversam apenas entre si e, mesmo assim, de forma raríssima, preferindo o silêncio e as ações ao diálogo. Sua passagem pelos lares humanos é vista como um presságio de proteção temporária, um fenômeno curioso e quase ritualístico que intriga e, por vezes, assusta aqueles que têm o privilégio de testemunhá-los em ação.`,
     img: "imagens/Splendianos.png",
     img2: "imagens/Token-Splendianos.png"
-},"Griffinhalf": {
+}
+  
+  
+  
+  
+  
+  ,"Griffinhalf": {
     vida: 68,
     sanidade: 24,
     especial: 15,
@@ -409,7 +469,12 @@ Essas criaturas têm a habilidade de voar e utilizam armas que brilham em dourad
 Estudiosos especulam que os Griffinhalf possam ser descendentes dos lendários Grifos, criaturas antigas que viveram antes da separação dos continentes. Embora sua aparência e papel tenham mudado ao longo dos milênios, sua função como guardiões permanece inalterada. Hoje, os Griffinhalf vivem como protetores das lendas e do legado de Skypia, zelando para que seus segredos continuem ocultos aos olhos do mundo.`,
     img: "imagens/Griffinhalf.png",
     img2: "imagens/Token-Griffinhalf.png"
-},"Goblin Caotico": {
+}
+  
+  
+  
+  
+  ,"Goblin Caotico": {
     vida: 42,
     sanidade: 26,
     especial: 10,
@@ -442,7 +507,11 @@ A presença de um Goblin Caótico em uma região costuma ser acompanhada por eve
 Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Goblin Caótico pode estar por perto, pronto para transformar seu dia em um pesadelo imprevisível.`,
     img: "imagens/Goblin-BaixoEscalão.png",
     img2: "imagens/Token-Goblin-BaixoEscalão.png"
-},"Goblin Corrompido": {
+}
+  
+  
+  
+  ,"Goblin Corrompido": {
       vida: 58,
       sanidade: 40,
       especial: 18,
@@ -478,7 +547,10 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
   Descricao: "Os Goblins Corrompidos são o resultado de gerações de experimentos com forças espirituais e sombrias. Diferente de seus primos caóticos e trapaceiros, esses goblins evoluíram em meio a energias poderosas, transformando-se em conjuradores temidos e guerreiros sombrios. Sua pele esverdeada adquiriu tons escuros, emana uma energia azulada escura e seus olhos brilham em azul, um reflexo do poder que os acompanha.\n\nEles vivem em clãs ocultos, sempre liderados pelo mais forte entre eles. São estrategistas natos e prezam pela eficiência em batalha, utilizando tanto suas habilidades físicas aprimoradas quanto seu domínio sobre as almas perdidas. Quando atacam um inimigo, pequenas entidades espectrais surgem ao redor, corroendo sua energia vital até que nada reste.\n\nDiferente da maioria dos goblins, os Corrompidos não vivem pelo caos, mas sim pelo poder. Eles enxergam a vida como uma batalha constante e acreditam que apenas os mais fortes podem prosperar. Os aventureiros que ousam enfrentá-los devem estar preparados para lutar não apenas contra seus corpos aprimorados, mas também contra as almas atormentadas que os acompanham.\n\nSe você encontrar um Goblin Corrompido em combate, lembre-se: cada golpe que você der pode apenas fortalecer seu inimigo.",
     "img": "imagens/Goblin_Corrompido.png",
     "img2": "imagens/Token-Goblin_Corrompido.png"
-  },"Vespa-Cogumelo": {
+  }
+  
+  
+  ,"Vespa-Cogumelo": {
     "vida": 25,
     "sanidade": 1,
     "especial": 7,
@@ -539,7 +611,13 @@ Essa entidade é extremamente antiga, tendo reinado muito antes do mundo se cham
 Seu propósito é um só: testar a força de tudo que vive — e destruir o que for fraco.`,
   img: "imagens/EntidadePoder.png",
   img2: "imagens/Token-EntidadePoder.png"
-},"Carniceiras Noturnas": {
+}
+  
+  
+  
+  
+  
+  ,"Carniceiras Noturnas": {
   vida: 67,
   sanidade: 56,
   especial: 34,
@@ -599,8 +677,14 @@ Elemento – Desconhecido`,
   Descricao: `Carniceiras Noturnas são criaturas sombrias e deformadas que habitam os becos esquecidos das grandes cidades de Rohan. Atuam nas sombras, devorando aqueles que se perdem ou se aproximam demais do perigo. Apesar de sua aparência aterradora e comportamento errático, alguns moradores ousam alimentá-las, criando laços frágeis e imprevisíveis. Com o tempo, podem se tornar serviçais fiéis — mas jamais confiáveis. Envoltas por um estranho fogo azul e uma fome desesperada, essas entidades representam o desespero personificado.`,
 
   img: "imagens/Carniceiras Noturnas.png",
-  img2: "imagens/Token-Carniceiras Noturnas.png"}
-,	
+  img2: "imagens/Token-Carniceiras Noturnas.png"
+  }
+
+  
+  
+  
+  
+  ,	
 "Verme Fúngico": {
   vida: 10,
   sanidade: 10,
@@ -659,7 +743,14 @@ Nível 3 – Cogumelos Tóxicos`,
 
   img: "imagens/Verme fungico.png",
   img2: "imagens/Token-Verme fungico.png"
-},"Inferis": {
+}
+  
+  
+  
+  
+  
+  
+  ,"Inferis": {
     vida: 20,
     sanidade: 1,
     especial: 10,
@@ -689,7 +780,16 @@ Elemento – o elemento Fé`,
 Uma criatura rastejante e grotesca, emergindo das profundezas sombrias da terra. Seu corpo é longo e esguio, coberto por uma pele translúcida e esverdeada, com texturas orgânicas que lembram um cadáver em decomposição. Seus olhos pequenos e vermelhos brilham com uma fome insaciável. Não se sabe ao certo se essas crituras realmente existem.`,
     img: "imagens/Inferis.png",
     img2: "imagens/Token-Inferis.png"
-  },
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  ,
   "Donzela branca": {
     vida: 100,
     sanidade: 50,
