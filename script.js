@@ -636,7 +636,7 @@ Elemento – o elemento Fé`,
     Passivas: `Nível 3 - Medo oculto`,
     Talentos: `Intimidação - requisito: Conexão`,
     Descricao: `Os rastejadores são criaturas sombrias, acreditasse que foram invocados acidentalmente pelo culto da morte.
-Uma criatura rastejante e grotesca, emergindo das profundezas sombrias do submundo. Seu corpo é longo e esguio, coberto por uma pele translúcida e esverdeada, com texturas orgânicas que lembram um cadáver em decomposição. Seus olhos pequenos e vermelhos brilham com uma fome insaciável. Não se sabe ao certo se essas crituras realmente existem.`,
+Uma criatura rastejante e grotesca, emergindo das profundezas sombrias da terra. Seu corpo é longo e esguio, coberto por uma pele translúcida e esverdeada, com texturas orgânicas que lembram um cadáver em decomposição. Seus olhos pequenos e vermelhos brilham com uma fome insaciável. Não se sabe ao certo se essas crituras realmente existem.`,
     img: "imagens/Inferis.png",
     img2: "imagens/Token-Inferis.png"
   },
