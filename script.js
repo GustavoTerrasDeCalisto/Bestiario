@@ -635,8 +635,8 @@ Elemento – o elemento Fé`,
     Magias: `Nível 1 - Toque do cadáver, nível 2 - Sussurros da sepultura`,
     Passivas: `Nível 3 - Medo oculto`,
     Talentos: `Intimidação - requisito: Conexão`,
-    Descricao: `Os rastejadores são criaturas inferiores do submundo, acreditasse que foram invocados acidentalmente pelo culto da morte.
-Uma criatura rastejante e grotesca, emergindo das profundezas sombrias do submundo. Seu corpo é longo e esguio, coberto por uma pele translúcida e esverdeada, com texturas orgânicas que lembram um cadáver em decomposição. Seus olhos pequenos e vermelhos brilham com uma fome insaciável.`,
+    Descricao: `Os rastejadores são criaturas sombrias, acreditasse que foram invocados acidentalmente pelo culto da morte.
+Uma criatura rastejante e grotesca, emergindo das profundezas sombrias do submundo. Seu corpo é longo e esguio, coberto por uma pele translúcida e esverdeada, com texturas orgânicas que lembram um cadáver em decomposição. Seus olhos pequenos e vermelhos brilham com uma fome insaciável. Não se sabe ao certo se essas crituras realmente existem.`,
     img: "imagens/Inferis.png",
     img2: "imagens/Token-Inferis.png"
   },
@@ -655,24 +655,24 @@ Uma criatura rastejante e grotesca, emergindo das profundezas sombrias do submun
     bonus: `Resistente: Escuridão, Eclipse ,Luz, Sagrado
 Vulnerável: Alma, Tremor
 Imune: Maldição, Sono`,
- bonus2: `{pigmento}*Táticas divinas:*{/pigmento} recebe +5 em testes de rolagem enquanto estiver em um templo ou igreja.
-{pigmento}*Salva vidas:*{/pigmento} aliados da Igreja ou templo recebem +4 em testes de cura quando estão a até 6 metros da sentinela.
-{pigmento}*Campo de Táticas divinas:*{/pigmento} uma vez por semana, a sentinela pode teletransportar um único aliado a partir do templo para outro local sagrado conhecido.
-{pigmento}*Detecção do mal:*{/pigmento} as sentinelas percebem a presença de criaturas malignas num raio de até 10 metros.
-{pigmento}*Corpo de mármore:*{/pigmento} seu corpo é resistente, sofrendo -2 de dano de ataques físicos.
-{pigmento}*Revelar:*{/pigmento} uma vez por dia, as sentinelas podem ver criaturas invisíveis por 1 minuto.*{pigmento}*Juramento em pedra:* dentro de igrejas ou templos, as sentinelas não atacam criaturas neutras ou bondosas, protegendo-as de conflitos.
-{pigmento}*Cláusula no juramento:*{/pigmento} essa proteção é suspensa se a criatura representar ameaça direta à igreja ou aos fiéis.
-{/pigmento}*Purificação:*{/pigmento} uma vez por dia, a sentinela pode remover uma maldição de intensidade baixa ou moderada.
-{pigmento}*Reconstrução:*{/pigmento} se destruída, pode se reconstruir no templo após 7 dias, mas apenas se houver um ritual de restauração realizado por um sacerdote.
-{pigmento}*Espada justa:*{/pigmento} ataques contra criaturas malignas ou das sombras causam 15+3d8+Dano da Arma de dano, caso seja um ataque normal, causa 12+Dano da Arma.
-{pigmento}*Auto destruição:*{/pigmento} em caso extremo, a sentinela pode se autodestruir, causando _20d10 de dano Sagrado + cegueira_ em um raio de 6 metros. Este efeito remove a possibilidade de Reconstrução. *{/pigmento}`
-,
+ bonus2: `{pigmento}*Táticas divinas:*{/pigmento} +5 em testes de rolagem em templos ou igrejas.
+{pigmento}*Salva vidas:*{/pigmento} aliados a até 6m recebem +4 em testes de cura.
+{pigmento}*Teleporte sagrado:*{/pigmento} 1x por semana, transporta um aliado do templo para outro local sagrado.
+{pigmento}*Sentir o mal:*{/pigmento} detecta criaturas malignas num raio de 10m.
+{pigmento}*Corpo de mármore:*{/pigmento} reduz em 2 o dano físico recebido.
+{pigmento}*Revelar:*{/pigmento} 1x por dia, vê criaturas invisíveis por 1 min.
+{pigmento}*Juramento:*{/pigmento} protege criaturas neutras ou bondosas em templos.
+{pigmento}*Cláusula:*{/pigmento} o juramento se anula se houver ameaça ao templo.
+{pigmento}*Purificação:*{/pigmento} 1x por dia remove maldição leve ou moderada.
+{pigmento}*Reconstrução:*{/pigmento} retorna após 7 dias com ritual de sacerdote.
+{pigmento}*Espada justa:*{/pigmento} 15+3d8+Dano da Arma contra malignos; 12+Dano da Arma no normal.
+{pigmento}*Auto destruição:*{/pigmento} causa _20d10 Sagrado + cegueira_ em 6m, sem chance de reconstrução.`,
     bonus3: `Sanctae Sentinellae
 Elemento – o elemento Fé`,
     Magias: `Nível 2 - Proteção divina, nível 4 - Céu santo`,
     Passivas: `Nível 6 - Escudo elemental`,
     Talentos: `Tática - requisito: Preservação`,
-    Descricao: `As Sanctae Sentinellae são estátuas de mármore branco preenchidas com energia sagrada. São as sentinelas que desceram do céu para proteger a igreja ou templo divino.`,
+    Descricao: `As Sanctae Sentinellae são estátuas de mármore branco preenchidas com energia sagrada. São as sentinelas que desceram do céu para proteger a igreja ou templo divino. Não se sabe ao certo se essas crituras realmente existem`,
     img: "imagens/Donzela branca.png",
     img2: "imagens/Token-Donzela branca.png"
   }
