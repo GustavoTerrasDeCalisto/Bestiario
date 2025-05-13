@@ -610,7 +610,74 @@ Nível 3 – Cogumelos Tóxicos`,
 
   img: "imagens/Verme fungico.png",
   img2: "imagens/Token-Verme fungico.png"
-}
+},"Inferis": {
+    vida: 20,
+    sanidade: 1,
+    especial: 10,
+    armadura: 0,
+    vidaPorNivel: 12,
+    sanidadePorNivel: 8,
+    especialPorNivel: 5,
+    armaduraPorNivel: 1,
+    bru: 10, agi: 10, det: 10, pre: 10, lib: 20, cnx: 20,
+    bruDano: 0, agiDano: 0, detDano: 0, preDano: 0, libDano: 2, cnxDano: 2,
+    bruTest: 0, agiTest: 0, detTest: 0, preTest: 0, libTest: 4, cnxTest: 4,
+    bonus: `Resistente:Alma, Aura
+Vulnerável: Luz, Sagrado
+Imune: Mental, Sono`,
+    bonus2: `{pigmento}*Silêncio.*{/pigmento} - _rastejadores não fazem barulho algum ganhando +4 em Furtividade._
+    {pigmento}*Fúria Rastejate*{/pigmento} - Quando em combate ataca desesperadamente alvos proximos causando 15+2d12 corpo a corpo.
+{pigmento}*Captação de alma*{/pigmento} - o rastejador sente a essência de vida ao redor podendo localizar qualquer presa a quilômetros de distância mesmo que esteja em Furtividade.
+{pigmento}*Absorção de vida*{/pigmento} - o rastejador se alimenta da vida, cada ataque bem sucedido recupera vida igual ao dano.
+`,
+    bonus3: `Rastejantes
+Elemento – o elemento Fé`,
+    Magias: `Nível 1 - Toque do cadáver, nível 2 - Sussurros da sepultura`,
+    Passivas: `Nível 3 - Medo oculto`,
+    Talentos: `Intimidação - requisito: Conexão`,
+    Descricao: `Os rastejadores são criaturas inferiores do submundo, acreditasse que foram invocados acidentalmente pelo culto da morte.
+Uma criatura rastejante e grotesca, emergindo das profundezas sombrias do submundo. Seu corpo é longo e esguio, coberto por uma pele translúcida e esverdeada, com texturas orgânicas que lembram um cadáver em decomposição. Seus olhos pequenos e vermelhos brilham com uma fome insaciável.`,
+    img: "imagens/Inferis.png",
+    img2: "imagens/Token-Inferis.png"
+  },
+  "Donzela branca": {
+    vida: 100,
+    sanidade: 50,
+    especial: 20,
+    armadura: 6,
+    vidaPorNivel: 15,
+    sanidadePorNivel: 5,
+    especialPorNivel: 5,
+    armaduraPorNivel: 3,
+    bru: 20, agi: 20, det: 10, pre: 15, lib: 10, cnx: 10,
+    bruDano: 2, agiDano: 2, detDano: 0, preDano: 1, libDano: 0, cnxDano: 0,
+    bruTest: 4, agiTest: 4, detTest: 0, preTest: 2, libTest: 0, cnxTest: 0,
+    bonus: `Resistente: Escuridão, Eclipse ,Luz, Sagrado
+Vulnerável: Alma, Tremor
+Imune: Maldição, Sono`,
+ bonus2: `{pigmento}*Táticas divinas:*{/pigmento} recebe +5 em testes de rolagem enquanto estiver em um templo ou igreja.
+{pigmento}*Salva vidas:*{/pigmento} aliados da Igreja ou templo recebem +4 em testes de cura quando estão a até 6 metros da sentinela.
+{pigmento}*Campo de Táticas divinas:*{/pigmento} uma vez por semana, a sentinela pode teletransportar um único aliado a partir do templo para outro local sagrado conhecido.
+{pigmento}*Detecção do mal:*{/pigmento} as sentinelas percebem a presença de criaturas malignas num raio de até 10 metros.
+{pigmento}*Corpo de mármore:*{/pigmento} seu corpo é resistente, sofrendo -2 de dano de ataques físicos.
+{pigmento}*Revelar:*{/pigmento} uma vez por dia, as sentinelas podem ver criaturas invisíveis por 1 minuto.*{pigmento}*Juramento em pedra:* dentro de igrejas ou templos, as sentinelas não atacam criaturas neutras ou bondosas, protegendo-as de conflitos.
+{pigmento}*Cláusula no juramento:*{/pigmento} essa proteção é suspensa se a criatura representar ameaça direta à igreja ou aos fiéis.
+{/pigmento}*Purificação:*{/pigmento} uma vez por dia, a sentinela pode remover uma maldição de intensidade baixa ou moderada.
+{pigmento}*Reconstrução:*{/pigmento} se destruída, pode se reconstruir no templo após 7 dias, mas apenas se houver um ritual de restauração realizado por um sacerdote.
+{pigmento}*Espada justa:*{/pigmento} ataques contra criaturas malignas ou das sombras causam 15+3d8+Dano da Arma de dano, caso seja um ataque normal, causa 12+Dano da Arma.
+{pigmento}*Auto destruição:*{/pigmento} em caso extremo, a sentinela pode se autodestruir, causando _20d10 de dano Sagrado + cegueira_ em um raio de 6 metros. Este efeito remove a possibilidade de Reconstrução. *{/pigmento}`
+,
+    bonus3: `Sanctae Sentinellae
+Elemento – o elemento Fé`,
+    Magias: `Nível 2 - Proteção divina, nível 4 - Céu santo`,
+    Passivas: `Nível 6 - Escudo elemental`,
+    Talentos: `Tática - requisito: Preservação`,
+    Descricao: `As Sanctae Sentinellae são estátuas de mármore branco preenchidas com energia sagrada. São as sentinelas que desceram do céu para proteger a igreja ou templo divino.`,
+    img: "imagens/Donzela branca.png",
+    img2: "imagens/Token-Donzela branca.png"
+  }
+
+
 
 
 
