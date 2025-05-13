@@ -163,59 +163,88 @@ span {
 
 
 /* Estilo para os parágrafos dentro da stat-summary */
-.stat-summary p {
-  margin: 0;
-  color: #f4f4f4;
-  font-size: 1.1rem;
-  text-align: center; /* Garante que o texto dentro de cada parágrafo seja centralizado */
-}
-
-.stat-summary2 {
+.stat-summary {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 0px; /* Ajustei para garantir que não fique sem espaçamento entre seções */
-  padding: 5px; /* Leve padding para tornar mais compacto */
-}
-
-.stat-summary2 h4 {
-  font-size: 1rem; /* Tamanho de fonte pequeno */
-  color: #f4f4f4;
-  margin-bottom: 5px; /* Ajuste no espaçamento abaixo do título */
-  text-align: left; /* Alinha o título à esquerda */
-}
-
-.stat-summary2 p {
-  font-size: 0.9rem; /* Tamanho de texto pequeno */
-  color: #ccc;
-  margin: 0;
-  text-align: left; /* Alinha o texto à esquerda */
-}
-
-.stat-summary, .stat-summary2 {
-  width: 100%; /* Garante que as seções ocupem toda a largura disponível */
-  margin: 0px 0; /* Adiciona espaçamento entre as seções */
-  font-size: 1rem; /* Ajuste para um tamanho de fonte legível */
+  flex-wrap: wrap;             /* Permite que os blocos quebrem de linha */
+  justify-content: center;     /* Centraliza os blocos na linha */
+  gap: 10px 20px;              /* Espaçamento entre colunas e linhas */
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #444;
+  box-sizing: border-box;
 }
 
 .stat-summary p {
+  flex: 1 1 150px;             /* Blocos flexíveis com largura mínima */
   margin: 0;
   color: #f4f4f4;
   font-size: 1.1rem;
   text-align: center;
   display: flex;
-  flex-direction: column;  /* Alinha o conteúdo em coluna */
+  flex-direction: column;     /* Alinha conteúdo em coluna */
   justify-content: center;
+  background-color: #444;     /* Caixinha de fundo */
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: 1px solid #555;
+  white-space: nowrap;        /* Impede quebra de palavras */
 }
 
 .stat-summary p strong {
-  margin-bottom: 5px; /* Espaço entre o título e o número */
+  margin-bottom: 5px;          /* Espaço entre o título e o valor */
   font-size: 1.2rem;
 }
 
 .stat-summary p span {
-  font-size: 1rem; /* Tamanho do número */
+  font-size: 1rem;
   color: #ccc;
 }
+
+/* Cores específicas para cada stat */
+.stat-summary span.vida {
+  color: #e74c3c; /* Vermelho */
+}
+.stat-summary span.sanidade {
+  color: #9b59b6; /* Roxo */
+}
+.stat-summary span.especial {
+  color: #f39c12; /* Laranja amarelado */
+}
+.stat-summary span.armadura {
+  color: #bdc3c7; /* Cinza claro */
+}
+
+/* Estilos para a seção stat-summary2 */
+.stat-summary2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+.stat-summary2 h4 {
+  font-size: 1rem;
+  color: #f4f4f4;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.stat-summary2 p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0;
+  text-align: left;
+}
+
+.stat-summary, .stat-summary2 {
+  width: 100%;
+  margin: 0 0;
+  font-size: 1rem;
+}
+
 
 
 
