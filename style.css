@@ -138,7 +138,7 @@ span {
   display: flex;
   flex-wrap: wrap;              /* Permite quebra de linha */
   justify-content: center;      /* Centraliza os blocos na linha */
-  gap: 10px 20px;               /* Espaçamento entre colunas e linhas */
+  gap: 3px 1px;               /* Espaçamento entre colunas e linhas */
   margin-bottom: 5px;
   padding: 10px;
   background-color: #333;
@@ -225,7 +225,6 @@ span {
 .level-buttons {
   display: flex;                  /* Alinha os botões na mesma linha */
   gap: 10px;                       /* Espaçamento entre os botões */
-  margin-top: 10px;                /* Distância do texto anterior */
 }
 
 /* Botões de aumentar e diminuir o nível */
@@ -588,7 +587,6 @@ button:focus {
 }
 
 .stat-summary p strong {
-  margin-bottom: 5px; /* Espaço entre o título e o número */
   font-size: 1.2rem;
 }
 
