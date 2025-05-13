@@ -53,9 +53,9 @@ h1, h2, h3 {
 }
 
 select, p {
-  margin: 5px 5px;
+  margin: 0px 5px;
   width: 100%;
-  padding: 11px;
+  padding: 10px;
   border-radius: 5px;
   border: none;
   background-color: #2a2a2a;
