@@ -1,3 +1,14 @@
+.center-all {
+  display: flex;
+  flex-direction: column;     /* Coloca os elementos um abaixo do outro */
+  justify-content: center;    /* Centraliza verticalmente */
+  align-items: center;        /* Centraliza horizontalmente */
+  text-align: center;         /* Centraliza textos */
+  height: 100%;               /* Altura total do pai (use 100vh se for a tela toda) */
+  width: 100%;                /* Largura total */
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #121212;
@@ -145,7 +156,6 @@ span {
   border-radius: 5px;
   width: 102%;
   border: 1px solid #444;
-  box-sizing: border-box;
 }
 
 /* Cada item de stat como bloco */
