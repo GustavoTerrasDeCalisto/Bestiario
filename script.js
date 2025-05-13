@@ -291,7 +291,176 @@ Originários da região ocidental de Calisto, em Elfinória — a Terra dos Lyri
 }
 
   
+,"Andaluz": {
+  vida: 30,
+  sanidade: 12,
+  especial: 8,
+  armadura: 1,
+  movimento: 10,
+  vidaPorNivel: 10,
+  sanidadePorNivel: 6,
+  especialPorNivel: 2,
+  armaduraPorNivel: 1,
+  bru: 14, agi: 17, det: 12, pre: 9, lib: 8, cnx: 11,
+  bruDano: 2, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 1,
+  bruTest: 2, agiTest: 3, detTest: 1, preTest: -1, libTest: -2, cnxTest: 1,
+  bonus: `Resistente: dano de Tremor\nVulnerável: dano de Tempestade`,
+  bonus2: `{pigmento}*Montaria:*{/pigmento} Permite ser montado, caso passe em um teste de Cavalgar - Requisito: Agilidade DT 12.
+{pigmento}*Passo Gracioso:*{/pigmento} Ignora penalidades de terreno acidentado e recebe +2 em testes de Equilíbrio.
+{pigmento}*Instinto de Proteção:*{/pigmento} Uma vez por turno, pode interceptar um ataque contra o cavaleiro, reduzindo o dano em 50% e ganhando +2 de Defesa por 1 turno.`,
+bonus3: `Montaria
+Elemento – Fé`,
+  Magias: `Nível 5 – Sacrifício de Vida\nCavalo branco (Nível 11) – Levitação da Serenidade\nCavalo preto (Nível 11) – Tentáculos Sombrios.`,
+  Passivas: `Nível 3 – Força Gélida`,
+  Talentos: `Percepção, Sobrevivência`,
+  Descricao: `Os cavalos Andaluz são uma das raças mais antigas e comuns a galopar pelos vastos campos verdes do continente. [...]
+  Sua amizade pode durar toda a vida, sendo uma fonte constante de força e proteção.`,
+  img: "imagens/Andaluz.png",
+  img2: "imagens/Token-Andaluz.png"
+},  
+"Vannir": {
+  vida: 25,
+  sanidade: 10,
+  especial: 6,
+  armadura: 1,
+  movimento: 12,
+  vidaPorNivel: 6,
+  sanidadePorNivel: 4,
+  especialPorNivel: 2,
+  armaduraPorNivel: 1,
+  bru: 13, agi: 15, det: 12, pre: 11, lib: 10, cnx: 14,
+  bruDano: 1, agiDano: 1, detDano: 0, preDano: 0, libDano: 0, cnxDano: 2,
+  bruTest: 1, agiTest: 2, detTest: 1, preTest: 0, libTest: 0, cnxTest: 2,
+  bonus: `Resistente: dano de Caos\nVulnerável: dano de Eletricidade`,
+  bonus2: `{pigmento}*Montaria:*{/pigmento} Permite ser montado, caso passe em um teste de Cavalgar - Requisito: Agilidade DT 14.
+{pigmento}*Bolha Protetora:*{/pigmento} Cria uma bolha de ar ao redor do cavaleiro, permitindo respiração e conjuração submersa por até 10 minutos.
+{pigmento}*Movimento Aquático:*{/pigmento} Anda 12m em terra, 20m em água rasa e 30m submerso. Recebe +2 em testes de movimentação aquática.`,
+bonus3: `Montaria
+Elemento – Caos`,
+  Magias: `Nenhuma.`,
+  Passivas: `{pigmento}AFOGAR:{/pigmento} Teste do Conjurador: Preservação | Teste do Alvo: Determinação.`,
+  Talentos: `Percepção, Sobrevivência`,
+  Descricao: `Originário das regiões costeiras de Marstrøm, Fiskehavn e Saonasjørand — lares ancestrais dos elfos das profundezas e dos tritões —, o Vannir é uma criatura singular, muitas vezes confundida com o lendário hipocampo. No entanto, ao contrário destes, o Vannir possui pernas de cavalo perfeitamente desenvolvidas, capazes de galopar firme em solo firme, enquanto seu corpo é coberto por escamas azul-esverdeadas que brilham sob a luz do sol ou das algas luminescentes do fundo do mar. Algumas dessas escamas são marcadas por antigas runas, testemunhos de batalhas e pactos selados com as forças abissais.
+Comum entre os Glublorps e elfos submersos, os Vannir são domesticados desde jovens, sendo presença constante nos portos de AskVillGlubrust’s e nas profundezas de Havlýrien. Quando imersos até a cintura, movem-se com mais liberdade que em terra, atingindo velocidades impressionantes ao mergulharem, tornando-se ideais para patrulhas aquáticas e missões de exploração.
+O Vannir protege seu cavaleiro com uma bolha de ar criada por sua glândula branquial lateral, permitindo respiração e conjuração subaquática. Por essa razão, é considerado uma montaria vital em qualquer travessia profunda. Embora silenciosos e serenos, são capazes de se defender ferozmente quando ameaçados, e há registros de um Vannir afogando invasores que tentaram aprisioná-lo.
+Raros fora de seus habitats nativos, esses seres são respeitados como símbolos de equilíbrio entre terra e mar — um elo vivo entre o mundo seco e o abissal.`,
+  img: "imagens/Vannir.png",
+  img2: "imagens/Token-Vannir.png"
+}
+,
+
+
+
+"Zafhir-Thandral": {
+  vida: 28,
+  sanidade: 10,
+  especial: 5,
+  armadura: 2,
+  movimento: 30,
+  vidaPorNivel: 7,
+  sanidadePorNivel: 4,
+  especialPorNivel: 1,
+  armaduraPorNivel: 1,
+  bru: 15, agi: 18, det: 13, pre: 12, lib: 11, cnx: 13,
+  bruDano: 2, agiDano: 2, detDano: 1, preDano: 1, libDano: 0, cnxDano: 1,
+  bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: 0, cnxTest: 1,
+  bonus: `Resistente: dano de Tremor\nVulnerável: dano de Caos`,
+  bonus2: `{pigmento}*Montaria:*{/pigmento} Permite ser montado, caso passe em um teste de Cavalgar - Requisito: Agilidade DT 16.
+{pigmento}*Avanço Esmagador:*{/pigmento} Avança em linha reta com força total, causando 20 + 1d20 de dano esmagante.
+{pigmento}*Surto Relâmpago:*{/pigmento} Magia de eletricidade (Elemento do Poder, possível influência do Caos). Teste do conjurador: Conexão. Teste do alvo: Agilidade.`,
+bonus3: `Montaria
+Elemento – Poder`,
+
+  Magias: `Surto Relâmpago (Elemento: Eletricidade | Teste do Conjurador: Conexão | Teste do Alvo: Agilidade)`,
+  Passivas: `{pigmento}Ódio:{/pigmento} Ganha +1d6 contra inimigos que já causaram dano a ele.
+{pigmento}Teleporte Repentino:{/pigmento} Teleporta-se com seu cavaleiro aleatoriamente a até 10 metros. Não pode ser controlado.`,
+  Talentos: `Atletismo, Percepção`,
+  Descricao: `Nativo das planícies escaldantes e savanas abertas de Sultan LesteGronklech’sDurock’s, Zafhir-Thandral é uma raríssima criatura de linhagem selvagem e nobre. Possui pelagem laranja intensa coberta por pintas negras, frequentemente confundido com grandes felinos, o que causa engano fatal em predadores e caçadores desavisados. Seu pescoço grosso e musculoso, unido ao corpo esguio e firme, permite-lhe manobras de alta velocidade e resistência em terrenos áridos.
+Embora poucos o montem fora de suas terras natais, Thandral é altamente valorizado entre caçadores, líderes tribais e, ocasionalmente, até por gigantes das montanhas de DrønnjernThudrok’s — embora apenas os maiores exemplares possam suportar tais cavaleiros. Nos portos de Grã Teach, sua imagem aparece em brasões e tapeçarias como símbolo de força incontrolável.
+Durante o combate, Zafhir-Thandral pode realizar investidas relâmpago devastadoras, usando seus pequenos chifres e cascos fortalecidos para causar dano esmagador. Alguns estudiosos afirmam que sua ligação com os elementos é instável, o que explicaria sua afinidade com a magia do Surto Relâmpago, apesar de seu corpo ser pura expressão do Poder. Há indícios de que essa anomalia venha de uma ancestralidade esquecida relacionada ao Caos.
+Rápido, feroz e livre, Thandral representa a selvageria incontrolável da savana — um espírito que só se curva diante da verdadeira conexão.`,
+  img: "imagens/Zafhir.png",
+  img2: "imagens/Token-Zafhir.png"
+}
+,
+
+
+
   
+"Skýfurr": {
+  vida: 35,
+  sanidade: 15,
+  especial: 10,
+  armadura: 2,
+  movimento: 15,
+  movimentoVoo: 20,
+  vidaPorNivel: 9,
+  sanidadePorNivel: 6,
+  especialPorNivel: 3,
+  armaduraPorNivel: 1,
+  bru: 16, agi: 19, det: 14, pre: 13, lib: 11, cnx: 12,
+  bruDano: 2, agiDano: 3, detDano: 1, preDano: 1, libDano: 0, cnxDano: 1,
+  bruTest: 2, agiTest: 4, detTest: 2, preTest: 1, libTest: 0, cnxTest: 1,
+  bonus: `Resistente: dano de Tempestade\nVulnerável: dano de Caos`,
+  bonus2: `{pigmento}*Montaria:*{/pigmento} Permite ser montado, caso passe em um teste de Cavalgar - Requisito: Agilidade DT 20.
+{pigmento}*Investida Aérea:*{/pigmento} Voo em linha reta causando 25 + 1d8 de dano esmagante.
+{pigmento}*Garras e Coices:*{/pigmento} Ataques corpo a corpo com 14 + 1d12 de dano.
+{pigmento}*Voo:*{/pigmento} Pode voar 20m por turno. Ataques e reações durante o voo têm desvantagem. Alterar altitude consome metade do movimento.`,
+bonus3: `Montaria
+Elemento – Desconhecido`,
+
+  Magias: `Nenhuma.`,
+  Passivas: `Nenhuma.`,
+  Talentos: `Sobrevivência, Atletismo`,
+  Descricao: `Originário da lendária Ilha do Céu e das regiões elevadas acima do King Vórtex, Skýfurr é uma criatura ancestral que evoluiu junto aos antigos habitantes dos continentes flutuantes, como os Krahzhik – IgnisAlatus e os Skywalkers – Flumplux. Sua aparência é a de um imponente mamífero alado, com asas que brotam das costas de maneira natural ou, como alguns creem, por meio de magia antiga e esquecida.
+Possui pelagem leve e sedosa que ajuda na aerodinâmica, além de patas traseiras poderosas para decolagens abruptas. Seu voo é estável, mas requer do cavaleiro concentração e domínio da arte de montar em movimento aéreo. Por isso, qualquer ação ofensiva ou reação em pleno voo é feita com desvantagem, e controlar sua altitude consome parte do deslocamento.
+Skýfurr é usado com frequência para vigiar as passagens aéreas de Eldoria fragmentada e transportes urgentes entre as ilhas do céu. Quando em combate, utiliza investidas aéreas e ataques coordenados com suas garras e coices, tornando-se um predador letal mesmo sem cavaleiro.
+Seu temperamento é reservado, e aceitar ser montado exige uma conexão emocional profunda, além de preparo físico do cavaleiro. Alguns Skýfurr desenvolveram raciocínio quase racional, sendo capazes de entender ordens complexas e tomar decisões autônomas em batalha.
+Essas criaturas são as sentinelas do céu — livres, solenes e praticamente inalcançáveis para quem vive preso ao chão.`,
+  img: "imagens/Skýfurr.png",
+  img2: "imagens/Token-Skýfurr.png"
+}
+,
+
+
+  
+
+"Albitaur": {
+  vida: 55,
+  sanidade: 17,
+  especial: 12,
+  armadura: 2,
+  movimento: 15,
+  vidaPorNivel: 13,
+  sanidadePorNivel: 5,
+  especialPorNivel: 3,
+  armaduraPorNivel: 0.33,
+  bru: 22, agi: 16, det: 15, pre: 13, lib: 14, cnx: 10,
+  bruDano: 2, agiDano: 2, detDano: 1, preDano: 1, libDano: 1, cnxDano: 0,
+  bruTest: 5, agiTest: 3, detTest: 2, preTest: 1, libTest: 2, cnxTest: 0,
+  bonus: `Resistente: Tremor
+Vulnerável: Maldição
+Imune: Luz`,
+  bonus2: `{pigmento}*Montaria:*{/pigmento} Permite ser montado, caso passe em um teste de Conexão - DT 25.
+{pigmento}*Garras do Tigre:*{/pigmento} Causa dano crítico em 18+. Golpe brutal e letal.
+{pigmento}*Olhar Intimidante:*{/pigmento} Ataque psicológico: falha crítica = fuga; <5 = hesitação. Uso único por combate.`,
+
+  bonus3:`Descendente dos centauros
+
+Elemento – Desconhecido`,
+  Magias: `Nível 1 – Fogo Vivo
+Nível 4 – Sombra Animal
+Nível 7 – Órgãos Sombrios`,
+  Passivas:`Nível 2 – Controle Adestrado
+Nível 3 – Selvageria`,
+  Talentos: `Arcos e Bestas, Percepção, Atletismo.`,
+  Descricao:`Os Albitaur são criaturas imponentes com o tronco de um tigre branco e uma cabeça que remete a um tigre, dando-lhes uma aparência majestosa e única. Esses seres velozes e ferozes vivem nas vastas planícies, onde erguem aldeias em tocas e desenvolvem civilizações sofisticadas. Cada tribo é liderada por um rei distinto, refletindo uma estrutura hierárquica bem organizada e uma sociedade rica em funções e responsabilidades.
+Extremamente hábeis em combate, os Albitaur são conhecidos por sua Agilidade com arcos e flechas, que utilizam para proteger seus territórios. Eles são cuidadosos e reservados, evitando contato com espécies que não conhecem. Este comportamento cauteloso é um resquício dos dias em que piratas invadiam o continente leste para caçá-los, buscando vender seus cascos valiosos. Embora a demanda por esses cascos tenha diminuído com a descoberta de um minério mais precioso, os cascos dos Albitaur ainda possuem propriedades mágicas cujas características foram esquecidas ao longo do tempo.
+Os Albitaur combinam brutalidade e inteligência com um profundo sentido de preservação. Eles defendem suas terras com fervor e mantêm sua cultura intacta frente a ameaças externas, garantindo a continuidade de sua sociedade e tradições.`,
+  img: "imagens/Albitaur.png",
+  img2: "imagens/Token-Albitaur.png"
+}
+
   
   
   ,"Doggers": {
