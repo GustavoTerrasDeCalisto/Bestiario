@@ -133,41 +133,12 @@ span {
 /* Estilo para a seção de Vida, Sanidade e Especial */
 /* Estilo para a seção de Vida, Sanidade e Especial */
 /* Estilos para os valores de cada atributo */
-.stat-summary span.vida {
-  color: #e74c3c; /* Vermelho para Vida */
-}
-
-.stat-summary span.sanidade {
-  color: #9b59b6; /* Roxo para Sanidade */
-}
-
-.stat-summary span.especial {
-  color: #f39c12; /* Laranja amarelado para Especial */
-}
-
-.stat-summary span.armadura {
-  color: #bdc3c7; /* Cinza claro para Armadura */
-}
-
+/* Contêiner dos atributos */
 .stat-summary {
   display: flex;
-  justify-content: flex-start; /* Alinha os itens à esquerda */
-  gap: 10px; /* Definindo um pequeno espaço entre os itens */
-  margin-bottom: 5px;
-  padding: 5px;
-  background-color: #333;
-  border-radius: 5px;
-  width: 100%; /* Ocupa toda a largura disponível */
-  border: 1px solid #444; /* Adicionando borda */
-}
-
-
-/* Estilo para os parágrafos dentro da stat-summary */
-.stat-summary {
-  display: flex;
-  flex-wrap: wrap;             /* Permite que os blocos quebrem de linha */
-  justify-content: center;     /* Centraliza os blocos na linha */
-  gap: 10px 20px;              /* Espaçamento entre colunas e linhas */
+  flex-wrap: wrap;              /* Permite quebra de linha */
+  justify-content: center;      /* Centraliza os blocos na linha */
+  gap: 10px 20px;               /* Espaçamento entre colunas e linhas */
   margin-bottom: 5px;
   padding: 10px;
   background-color: #333;
@@ -177,45 +148,49 @@ span {
   box-sizing: border-box;
 }
 
+/* Cada item de stat como bloco */
 .stat-summary p {
-  flex: 1 1 150px;             /* Blocos flexíveis com largura mínima */
+  flex: 1 1 100px;              /* Tamanho mínimo e responsivo */
   margin: 0;
   color: #f4f4f4;
   font-size: 1.1rem;
   text-align: center;
   display: flex;
-  flex-direction: column;     /* Alinha conteúdo em coluna */
+  flex-direction: column;       /* Coluna: Título em cima, valor embaixo */
   justify-content: center;
-  background-color: #444;     /* Caixinha de fundo */
+  background-color: #444;
   border-radius: 5px;
-  padding: 8px 12px;
+  padding: 2px 8px;
   border: 1px solid #555;
-  white-space: nowrap;        /* Impede quebra de palavras */
+  white-space: nowrap;          /* Evita quebra de texto dentro do bloco */
 }
 
+/* Título do stat (ex: Vida:) */
 .stat-summary p strong {
-  margin-bottom: 5px;          /* Espaço entre o título e o valor */
+  margin-bottom: 5px;
   font-size: 1.2rem;
 }
 
+/* Valor do stat (ex: 20) */
 .stat-summary p span {
   font-size: 1rem;
   color: #ccc;
 }
 
-/* Cores específicas para cada stat */
+/* Cores específicas */
 .stat-summary span.vida {
-  color: #e74c3c; /* Vermelho */
+  color: #e74c3c;
 }
 .stat-summary span.sanidade {
-  color: #9b59b6; /* Roxo */
+  color: #9b59b6;
 }
 .stat-summary span.especial {
-  color: #f39c12; /* Laranja amarelado */
+  color: #f39c12;
 }
 .stat-summary span.armadura {
-  color: #bdc3c7; /* Cinza claro */
+  color: #bdc3c7;
 }
+
 
 /* Estilos para a seção stat-summary2 */
 .stat-summary2 {
