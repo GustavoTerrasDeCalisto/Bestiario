@@ -221,7 +221,26 @@ span {
 }
 
 
+/* Contêiner para os botões de nível */
+.level-buttons {
+  display: flex;                  /* Alinha os botões na mesma linha */
+  gap: 10px;                       /* Espaçamento entre os botões */
+  margin-top: 10px;                /* Distância do texto anterior */
+}
 
+/* Botões de aumentar e diminuir o nível */
+#levelUpButton, #levelDownButton {
+  padding: 5px 15px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#levelUpButton:hover, #levelDownButton:hover {
+  background-color: #e67e22; /* Cor do botão ao passar o mouse */
+}
 
 
 
