@@ -780,7 +780,7 @@ select.addEventListener('change', () => {
     document.getElementById('Magias').textContent = selected.Magias;
     document.getElementById('Passivas').textContent = selected.Passivas;
     document.getElementById('Talentos').textContent = selected.Talentos;
-    document.getElementById('movimento').textContent = selected.movimento;
+    document.getElementById('movimento').textContent = selected.movimento + "m";
 
 
     // Definindo o nível inicial
