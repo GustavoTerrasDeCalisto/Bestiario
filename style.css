@@ -497,8 +497,7 @@ button:focus {
 
 .stat-summary {
   display: flex;
-  justify-content: flex-start; /* Alinha os itens à esquerda */
-  gap: 10px; /* Definindo um pequeno espaço entre os itens */
+  justify-content: center; /* Alinha os itens no centro */
   margin-bottom: 5px;
   padding: 5px;
   background-color: #333;
