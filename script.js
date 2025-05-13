@@ -710,8 +710,8 @@ Elemento – o elemento Fé`,
   bruTest: 5, agiTest: 3, detTest: 1, preTest: 0, libTest: 0, cnxTest: 3,
 
   bonus: `Resistente: Fogo, Caos
-Vulnerável: Gelo, Sagrado
-Imune: Sono, Medo`,
+Vulnerável: Gelo, Sagrado, Cortante
+Imune: Água, Ácido`,
 
   bonus2: `{pigmento}*Dilaceramento regenerativo:*{/pigmento} pode usar *Dilacerar* com seus próprios galhos. Após o combate ou durante o descanso, esses galhos se regeneram completamente.
 {pigmento}*Arena Incandescente:*{/pigmento} uma vez por dia, cria uma arena de madeira em chamas com 15m² ao redor de si. A arena dura _1d12 turnos_ e pode ser encolhida a cada turno. Criaturas dentro da arena sofrem 2d8 de dano de fogo por turno.
