@@ -154,15 +154,15 @@ span {
   margin: 0;
   color: #f4f4f4;
   font-size: 1.1rem;
-  text-align: center;
+  text-align: center;           /* Alinha o conteúdo ao centro */
   display: flex;
-  flex-direction: column;       /* Coluna: Título em cima, valor embaixo */
-  justify-content: center;
+  justify-content: center;      /* Centraliza o conteúdo dentro do parágrafo */
+  align-items: center;          /* Garante que o conteúdo fique verticalmente centralizado */
   background-color: #444;
   border-radius: 5px;
   padding: 2px 8px;
   border: 1px solid #555;
-  white-space: nowrap;          /* Evita quebra de texto dentro do bloco */
+  white-space: nowrap;          /* Impede quebra de texto dentro do bloco */
 }
 
 /* Título do stat (ex: Vida:) */
