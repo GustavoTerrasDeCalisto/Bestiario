@@ -274,16 +274,15 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
   bruTest: 2, agiTest: 0, detTest: 1, preTest: 3, libTest: 2, cnxTest: 1,
   bonus: `Resistente: dano Mental
 Vulnerável: dano Sombrio`,
-  bonus2: `{pigmento}*Chifre Florido:*{/pigmento} Um ataque cerimonial raro realizado apenas quando o Alce se sente ameaçado. Dano esmagante: 10+1d12.
-
-{pigmento}*Despertar Floral:*{/pigmento} Uma vez por ano, durante o florescer das árvores em Elfinória, o Alce Florenar manifesta sua habilidade ancestral de montaria sagrada, permitindo que qualquer criatura montada nele viaje a 3x seu movimento. 
-
+  bonus2: `{pigmento}*Montaria:*{/pigmento} Permite ser montado, caso passe em um teste de Cavalgar - Requisito: Agilidade DT 13.
+  {pigmento}*Chifre Florido:*{/pigmento} Um ataque cerimonial raro realizado apenas quando o Alce se sente ameaçado. Dano esmagante: 10+1d12.
+{pigmento}*Despertar Floral:*{/pigmento} Uma vez por ano, durante o florescer das árvores em Elfinória, o Alce Florenar manifesta sua habilidade ancestral de montaria sagrada, permitindo que qualquer criatura montada nele viaje a 3x seu movimento, Requisito: Conexão DT 15 
 {pigmento}*Montaria Sagrada:*{/pigmento} Criatura naturalmente domável para montaria em cerimônias, tarefas de arado e rituais élficos. Confere bônus narrativo de respeito e conexão espiritual com as forças da natureza.`,
   bonus3: `Animal Raro
 Elemento – Caos`,
   Magias: `Nenhuma.`,
   Passivas: `Nenhuma.`,
-  Talentos: `Montaria – Requisito: Libertação.`,
+  Talentos: `Nenhuma.`,
   Descricao: `Os Alces Florenares caminham com majestade silenciosa, ostentando chifres que se ramificam como galhos floridos de árvores encantadas. Pequenas flores brotam de suas pontas, caindo suavemente pelo caminho e exalando um perfume adormecedor. São considerados presságios de sonhos ou de revelações futuras.
 
 Originários da região ocidental de Calisto, em Elfinória — a Terra dos Lyrithil —, esses alces já foram usados como mascotes espirituais, montarias sagradas e até para o arado em rituais de fertilidade. Apesar de sua aparência frágil, sua conexão com a terra lhes concede uma resistência notável, e poucos são dignos de montar um Alce Florenar.`,
