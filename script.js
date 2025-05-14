@@ -918,7 +918,7 @@ Nível 3 – Cogumelos Tóxicos`,
   
   
   
-  ,"Inferis": {
+  ,"Rastejantes": {
     vida: 20,
     sanidade: 1,
     especial: 10,
