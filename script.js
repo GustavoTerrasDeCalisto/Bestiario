@@ -28,18 +28,26 @@ Embora sua origem seja desconhecida, os Glink's possuem uma ligação profunda c
 Apesar de sua conexão com a natureza, os Glink's não têm afeto pela ideia de proteger toda a floresta ou preservar o equilíbrio natural em uma escala maior. Eles veem a natureza fora de seus domínios como algo a ser corrompido ou destruído. Quando se aventuram fora de seus territórios, esses seres muitas vezes queimam, destroem e envenenam a terra e as plantas que encontram. Essa dualidade reflete sua essência caótica, onde a proteção e a destruição da natureza coexistem de maneira imprevisível.
 Os Glink's desprezam sociedades evoluídas e a vida em grandes grupos. Vivem em pequenos bandos ou até mesmo sozinhos, preferindo a solidão ou o contato limitado com outros de sua espécie. Eles evitam qualquer forma de civilização avançada, considerando-a uma ameaça para suas formas primitivas de vida e para a floresta que habitam. Por essa razão, são frequentemente vistos como inimigos das civilizações humanas, druidas e outros protetores da natureza.
 Seus comportamentos e motivações são muitas vezes incompreendidos, mas uma coisa é certa: os Glink's são forças imprevisíveis e perigosas da natureza, que devem ser tratados com extrema cautela.`,
-    _imgs: [
-      "imagens/Glink's.png",
-      "imagens/Goblin-BaixoEscalão.png",
-      "imagens/Musplum.png",
-      "imagens/Glink4.png",
-      "imagens/Glink5.png"
-    ],
-    get img() {
-      return this._imgs[Math.floor(Math.random() * this._imgs.length)];
-    },
+  _imgs: [
+    "imagens/Glink's.png",
+    "imagens/Glink's.png",
+    "imagens/Glink's.png",
+    "imagens/Glink's.png",
+    "imagens/Glink's.png"
+  ],
+  
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
 
-    img2: "imagens/Token-Glink's.png"
+  _imgs2: [
+    "imagens/Token-Glink's.png",
+    "imagens/Token-Glink's.png",
+    "imagens/Token-Glink's.png"
+  ],
+
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
   }
   
   
@@ -683,8 +691,21 @@ Sempre sorridentes e falantes, esses goblins não demonstram medo de absolutamen
 Apesar de sua aparência diminuta e frágil, subestimá-los é um erro fatal. Sua velocidade é impressionante, permitindo-lhes escapar de quase qualquer situação. Além disso, sua sorte parece ser sobrenatural, já que conseguem sair ilesos das situações mais absurdas, deixando para trás apenas o rastro do caos que criaram.
 A presença de um Goblin Caótico em uma região costuma ser acompanhada por eventos estranhos, como incêndios misteriosos, quedas de estruturas e até mesmo surtos de loucura entre os habitantes locais. Muitos acreditam que eles são a personificação do azar e evitam cruzar seu caminho a qualquer custo.
 Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Goblin Caótico pode estar por perto, pronto para transformar seu dia em um pesadelo imprevisível.`,
-    img: "imagens/Goblin-BaixoEscalão.png",
-    img2: "imagens/Token-Goblin-BaixoEscalão.png"
+      _imgs: [
+    "imagens/Goblin-BaixoEscalão.png",
+    "imagens/Goblin-BaixoEscalão2.png",
+    "imagens/Goblin-BaixoEscalão3.png"
+  ],
+  
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-Goblin-BaixoEscalão.png",
+    "imagens/Token-Goblin-BaixoEscalão2.png",
+    "imagens/Token-Goblin-BaixoEscalão3.png"
+  ],
 }
   
   
