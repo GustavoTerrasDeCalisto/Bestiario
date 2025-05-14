@@ -1014,19 +1014,16 @@ Se são reais ou não, pouco importa. Seu nome já basta para silenciar conversa
     bonus: `Resistente: Escuridão, Eclipse ,Luz, Sagrado
 Vulnerável: Alma, Tremor
 Imune: Maldição, Sono`,
- bonus2: `{pigmento}*Táticas divinas:*{/pigmento} +5 em testes de rolagem em templos ou igrejas.
-{pigmento}*Salva vidas:*{/pigmento} aliados a até 6m recebem +4 em testes de cura.
-{pigmento}*Teleporte sagrado:*{/pigmento} 1x por semana, transporta um aliado do templo para outro local sagrado.
-{pigmento}*Sentir o mal:*{/pigmento} detecta criaturas malignas num raio de 10m.
-{pigmento}*Corpo de mármore:*{/pigmento} reduz em 2 o dano físico recebido.
-{pigmento}*Revelar:*{/pigmento} 1x por dia, vê criaturas invisíveis por 1 min.
-{pigmento}*Juramento:*{/pigmento} protege criaturas neutras ou bondosas em templos.
-{pigmento}*Cláusula:*{/pigmento} o juramento se anula se houver ameaça ao templo.
-{pigmento}*Purificação:*{/pigmento} 1x por dia remove maldição leve ou moderada.
-{pigmento}*Reconstrução:*{/pigmento} retorna após 7 dias com ritual de sacerdote.
-{pigmento}*Espada justa:*{/pigmento} 15+3d8+Dano da Arma contra malignos; 12+Dano da Arma no normal.
-{pigmento}*Auto destruição:*{/pigmento} causa _20d10 Sagrado + cegueira_ em 6m, sem chance de reconstrução.`,
-    bonus3: `Sanctae Sentinellae
+ bonus2: `
+{pigmento}*Presença Divina:*{/pigmento} Em templos ou igrejas, recebe +5 em testes. Aliados a até 6m ganham +4 em testes de cura. Detecta criaturas malignas em 10m e, 1x por dia, pode ver o invisível por 1 minuto.  
+{pigmento}*Voto Sagrado:*{/pigmento} Enquanto estiver em local sagrado, protege criaturas neutras ou bondosas. O voto se rompe se o templo for ameaçado.  
+{pigmento}*Corpo de Fé:*{/pigmento} Reduz em 2 o dano físico recebido. 1x por dia pode remover uma maldição leve ou moderada.  
+{pigmento}*Caminho dos Justos:*{/pigmento} 1x por semana pode teleportar um aliado entre locais sagrados. Se for destruído, retorna após 7 dias com um ritual de sacerdote.  
+{pigmento}*Espada da Retidão:*{/pigmento} Causa 15 + 3d8 + dano da arma contra malignos; 12 + dano da arma contra demais inimigos.  
+{pigmento}*Sacrifício Final:*{/pigmento} Pode se autodestruir para causar _20d10 de dano Sagrado_ e cegueira em 6m. Não pode ser reconstruído após isso.
+`
+
+ ,   bonus3: `Sanctae Sentinellae
 Elemento – o elemento Fé`,
     Magias: `Nível 2 - Proteção divina, nível 4 - Céu santo`,
     Passivas: `Nível 6 - Escudo elemental`,
@@ -1091,19 +1088,16 @@ Elemento – o elemento Caos`,
 Vulnerável: Tempestade  
 Imune: Névoa`,
 
-  bonus2: `
-{pigmento}*Criatura da Névoa:*{/pigmento} Dentro da névoa recebe +5 em todos os lançamentos. Fora da névoa, sofre -5.  
-{pigmento}*Mestre da Névoa:*{/pigmento} Dentro da névoa pode usar magias de névoa sem custo. Ataques causam +1d6 de dano de névoa. Fora dela, o custo das magias dobra.  
-{pigmento}*Emanar Névoa:*{/pigmento} Cria uma névoa com raio de 1km por *1d10+5 turnos*. A névoa acompanha o conjurador.  
-{pigmento}*Corpo de Névoa:*{/pigmento} Torna-se névoa, ignorando o próximo ataque. Pode se mover instantaneamente ou infiltrar-se em espaços, desde que dentro da névoa. (É desfeito se atacar).  
-{pigmento}*Mestre da Velocidade:*{/pigmento} Todos os testes físicos e danos usam *Agilidade*. Não pode defender nem erguer aliados.  
-{pigmento}*Névoa Espessa:*{/pigmento} Em um raio de 10m, os alvos enxergam apenas 1m por *1d6 turnos* ou enquanto durar a névoa.  
-{pigmento}*Garras Silenciosas:*{/pigmento} Causa *1d12 de dano furtivo*. O alvo faz teste de percepção com desvantagem para escapar.  
-{pigmento}*Névoa Bloqueadora:*{/pigmento} Todos os alvos na névoa devem passar em teste de percepção contra *Agilidade* do conjurador para poder atacá-lo.  
-{pigmento}*Triste e Preguiçoso:*{/pigmento} Pode usar as passivas *Tristeza Oculta* e *Preguiça* sem custos e *2x por combate* sem negativas.  
-{pigmento}*Ecos e Sombras:*{/pigmento} Cria ou silencia vozes na névoa, desorientando vítimas. Pode criar *sombras ilusórias* para amedrontar.  
-{pigmento}*Clone de Névoa:*{/pigmento} Cria um clone ilusório por *1d6 turnos*. O clone não causa dano.
-`,
+bonus2: `
+{pigmento}*Soberano da Névoa:*{/pigmento} Dentro da névoa, recebe +5 em todos os testes e magias de névoa não têm custo. Ataques ganham +1d6 de dano de névoa. Fora dela, sofre -5 e o custo das magias dobra.  
+{pigmento}*Campo Enevoado:*{/pigmento} Conjura névoa com raio de 1km por *1d10+5 turnos*. Ela acompanha o conjurador. Dentro dela, alvos em até 10m enxergam apenas 1m (*1d6 turnos*).  
+{pigmento}*Corpo Vaporoso:*{/pigmento} Ignora o próximo ataque tornando-se névoa. Pode mover-se instantaneamente ou atravessar espaços estreitos, desde que dentro da névoa. (É desfeito ao atacar).  
+{pigmento}*Predador Nebuloso:*{/pigmento} Todos os testes físicos e danos usam *Agilidade*. Pode causar *1d12 de dano furtivo* com garras silenciosas — o alvo faz teste de percepção com desvantagem.  
+{pigmento}*Ilusões da Névoa:*{/pigmento} Cria vozes e sombras ilusórias para desorientar ou amedrontar. Pode gerar um clone de névoa por *1d6 turnos* (sem dano).  
+{pigmento}*Bloqueio Sensorial:*{/pigmento} Dentro da névoa, inimigos devem passar teste de percepção contra sua *Agilidade* para conseguir atacá-lo.  
+{pigmento}*Apatia Sombria:*{/pigmento} Usa *Tristeza Oculta* e *Preguiça* sem custos e 2x por combate sem penalidades.
+`
+,
 
   bonus3: `Açoite da Névoa  
 Elemento – o elemento Desconhecido`,
