@@ -1068,6 +1068,59 @@ Elemento – o elemento Caos`,
   img: "imagens/Ildtreets Hevn.png",
   img2: "imagens/Token-Ildtreets Hevn.png"
 }
+  
+  
+  
+  
+  
+  ,"Naegh": {
+  vida: 60,
+  sanidade: 50,
+  especial: 40,
+  armadura: 0,
+  vidaPorNivel: 15,
+  sanidadePorNivel: 10,
+  especialPorNivel: 10,
+  armaduraPorNivel: 4,
+
+  bru: 10, agi: 35, det: 10, pre: 10, lib: 10, cnx: 10,
+  bruTest: 0, agiTest: 9, detTest: 0, preTest: 0, libTest: 0, cnxTest: 0,
+  bruDano: 0, agiDano: 5, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
+
+  bonus: `Resistente: Distorção, Sono  
+Vulnerável: Tempestade  
+Imune: Névoa`,
+
+  bonus2: `
+{pigmento}*Criatura da Névoa:*{/pigmento} Dentro da névoa recebe +5 em todos os lançamentos. Fora da névoa, sofre -5.  
+{pigmento}*Mestre da Névoa:*{/pigmento} Dentro da névoa pode usar magias de névoa sem custo. Ataques causam +1d6 de dano de névoa. Fora dela, o custo das magias dobra.  
+{pigmento}*Emanar Névoa:*{/pigmento} Cria uma névoa com raio de 1km por *1d10+5 turnos*. A névoa acompanha o conjurador.  
+{pigmento}*Corpo de Névoa:*{/pigmento} Torna-se névoa, ignorando o próximo ataque. Pode se mover instantaneamente ou infiltrar-se em espaços, desde que dentro da névoa. (É desfeito se atacar).  
+{pigmento}*Mestre da Velocidade:*{/pigmento} Todos os testes físicos e danos usam *Agilidade*. Não pode defender nem erguer aliados.  
+{pigmento}*Névoa Espessa:*{/pigmento} Em um raio de 10m, os alvos enxergam apenas 1m por *1d6 turnos* ou enquanto durar a névoa.  
+{pigmento}*Garras Silenciosas:*{/pigmento} Causa *1d12 de dano furtivo*. O alvo faz teste de percepção com desvantagem para escapar.  
+{pigmento}*Névoa Bloqueadora:*{/pigmento} Todos os alvos na névoa devem passar em teste de percepção contra *Agilidade* do conjurador para poder atacá-lo.  
+{pigmento}*Triste e Preguiçoso:*{/pigmento} Pode usar as passivas *Tristeza Oculta* e *Preguiça* sem custos e *2x por combate* sem negativas.  
+{pigmento}*Ecos e Sombras:*{/pigmento} Cria ou silencia vozes na névoa, desorientando vítimas. Pode criar *sombras ilusórias* para amedrontar.  
+{pigmento}*Clone de Névoa:*{/pigmento} Cria um clone ilusório por *1d6 turnos*. O clone não causa dano.
+`,
+
+  bonus3: `Açoite da Névoa  
+Elemento – o elemento Desconhecido`,
+
+  Magias: `Nível 1 – Névoa Sussurrante, Nível 2 – Corrente das Brumas, Nível 4 – Neblina Aprisionadora, Nível 5 – Falsa Criatura, Nível 6 – Véu de Ilusão.`,
+
+  Passivas: `Nível 3 – Tristeza Oculta, Nível 3 – Furtividade Sombria, Nível 3 – Preguiça.`,
+
+  Talentos: `Armadilhas – Requisito: Agilidade`,
+
+  Descricao: `Uma criatura de aparência felina com olhos assassinos brilhantes.  
+Junto à névoa espessa espreita um demônio do desconhecido. Quase não houve sobreviventes, e os poucos que escaparam relatam delírios: parentes chamando por socorro, monstros gritando, sombras se movendo.  
+No entanto, todos afirmam o mesmo: a paz só veio... quando deixaram a névoa.`,
+
+  img: "imagens/Naegh.png",
+  img2: "imagens/Token-Naegh.png"
+}
 
 
 
