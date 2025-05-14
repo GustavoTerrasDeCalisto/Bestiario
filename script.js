@@ -1268,3 +1268,14 @@ document.getElementById('nextImage').onclick = () => {
 };
 
 
+let creatures = 0; // Número de criaturas registradas (adicione logicamente em seu código)
+
+function updateCounter() {
+    creatures++; // Aumente o contador conforme necessário
+    document.getElementById("contador").textContent = creatures;
+}
+
+// Atualiza o contador a cada segundo (ou de acordo com a lógica do seu código)
+setInterval(updateCounter, 1000);
+
+
