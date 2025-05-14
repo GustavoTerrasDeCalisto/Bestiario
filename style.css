@@ -836,9 +836,12 @@ button {
 }
 
 .card-criatura img {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: contain; /* Mostra a imagem inteira sem cortes */
     border-radius: 6px;
     margin-bottom: 8px;
+    display: block;
 }
 
 #creatureSelect {
