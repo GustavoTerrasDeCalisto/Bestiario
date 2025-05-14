@@ -441,9 +441,9 @@ Essas criaturas são as sentinelas do céu — livres, solenes e praticamente in
   bonus: `Resistente: Tremor
 Vulnerável: Maldição
 Imune: Luz`,
-  bonus2: `{pigmento}*Montaria:*{/pigmento} Permite ser montado, caso passe em um teste de Conexão - DT 25.
-{pigmento}*Garras do Tigre:*{/pigmento} Causa dano crítico em 18+. Golpe brutal e letal.
-{pigmento}*Olhar Intimidante:*{/pigmento} Ataque psicológico: falha crítica = fuga; <5 = hesitação. Uso único por combate.`,
+ bonus2: `{pigmento}*Montaria:*{/pigmento} Permite ser montado, caso passe em um teste de Conexão (DT 25).
+{pigmento}*Garras do Tigre:*{/pigmento} Ataques físicos causam crítico com 18+2d8.
+{pigmento}*Olhar Intimidante:*{/pigmento} Encarada penetrante que abala o emocional do inimigo (uso único por combate): em falha crítica, o alvo foge em pânico; com resultado abaixo de 5, hesita e perde seus bônus naquele turno.`,
 
   bonus3:`Descendente dos centauros
 
