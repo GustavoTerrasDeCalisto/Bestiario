@@ -1089,6 +1089,7 @@ Vulnerável: Tempestade
 Imune: Névoa`,
 
 bonus2: `
+{pigmento}*Forma Nébulosa:*{/pigmento} Pode alterar seu tamanho.  
 {pigmento}*Soberano da Névoa:*{/pigmento} Dentro da névoa, recebe +5 em todos os testes e magias de névoa não têm custo. Ataques ganham +1d6 de dano de névoa. Fora dela, sofre -5 e o custo das magias dobra.  
 {pigmento}*Campo Enevoado:*{/pigmento} Conjura névoa com raio de 1km por *1d10+5 turnos*. Ela acompanha o conjurador. Dentro dela, alvos em até 10m enxergam apenas 1m (*1d6 turnos*).  
 {pigmento}*Corpo Vaporoso:*{/pigmento} Ignora o próximo ataque tornando-se névoa. Pode se mover instantaneamente ou atravessar espaços estreitos, desde que dentro da névoa. (É desfeito ao atacar).  
