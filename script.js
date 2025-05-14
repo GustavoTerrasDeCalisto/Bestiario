@@ -918,7 +918,7 @@ Nível 3 – Cogumelos Tóxicos`,
   
   
   
-  ,"Rastejantes": {
+  ,"Rastejadores": {
     vida: 20,
     sanidade: 1,
     especial: 10,
@@ -944,8 +944,10 @@ Elemento – o elemento Fé`,
     Magias: `Nível 1 - Toque do cadáver, nível 2 - Sussurros da sepultura`,
     Passivas: `Nível 3 - Medo oculto`,
     Talentos: `Intimidação - requisito: Conexão`,
-    Descricao: `Os rastejadores são criaturas sombrias, acreditasse que foram invocados acidentalmente pelo culto da morte.
-Uma criatura rastejante e grotesca, emergindo das profundezas sombrias da terra. Seu corpo é longo e esguio, coberto por uma pele translúcida e esverdeada, com texturas orgânicas que lembram um cadáver em decomposição. Seus olhos pequenos e vermelhos brilham com uma fome insaciável. Não se sabe ao certo se essas crituras realmente existem.`,
+    Descricao: `Pouco se sabe sobre a verdadeira origem dos Rastejadores — seres que rastejam nas sombras e evocam o terror primordial do desconhecido. Acredita-se que tenham surgido como um erro ritualístico, invocados por aprendizes do Culto da Morte que não compreendiam plenamente os limites da necromancia.
+Essas criaturas emergem das entranhas da terra, com corpos longos e deformados, cobertos por uma pele translúcida de coloração esverdeada, semelhante à carne de um cadáver em decomposição. Seus olhos pequenos e vermelhos brilham com uma fome ancestral, como se buscassem algo que foi perdido entre a vida e a morte.
+Alguns profetas da fé sombria afirmam que os Rastejadores são ecos da própria Morte, encarnações da consequência que aguarda os imprudentes. Outros dizem que nunca existiram de fato — que são apenas ilusões alimentadas pelo medo e pelas falhas da alma durante magias como Chamados do Túmulo ou Apocalipse das Sombras.
+Se são reais ou não, pouco importa. Seu nome já basta para silenciar conversas em corredores escuros.`,
     img: "imagens/Inferis.png",
     img2: "imagens/Token-Inferis.png"
   }
