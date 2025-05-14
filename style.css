@@ -733,3 +733,29 @@ button {
 
 
 }
+
+
+
+
+.contador-container {
+    text-align: center;
+    color: white;
+}
+
+.contador {
+    font-size: 5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ffcc00, #ff9900, #ffcc00);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: degrade 2s infinite alternate;
+}
+
+@keyframes degrade {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
