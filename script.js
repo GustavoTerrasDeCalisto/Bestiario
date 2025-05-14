@@ -28,7 +28,17 @@ Embora sua origem seja desconhecida, os Glink's possuem uma ligação profunda c
 Apesar de sua conexão com a natureza, os Glink's não têm afeto pela ideia de proteger toda a floresta ou preservar o equilíbrio natural em uma escala maior. Eles veem a natureza fora de seus domínios como algo a ser corrompido ou destruído. Quando se aventuram fora de seus territórios, esses seres muitas vezes queimam, destroem e envenenam a terra e as plantas que encontram. Essa dualidade reflete sua essência caótica, onde a proteção e a destruição da natureza coexistem de maneira imprevisível.
 Os Glink's desprezam sociedades evoluídas e a vida em grandes grupos. Vivem em pequenos bandos ou até mesmo sozinhos, preferindo a solidão ou o contato limitado com outros de sua espécie. Eles evitam qualquer forma de civilização avançada, considerando-a uma ameaça para suas formas primitivas de vida e para a floresta que habitam. Por essa razão, são frequentemente vistos como inimigos das civilizações humanas, druidas e outros protetores da natureza.
 Seus comportamentos e motivações são muitas vezes incompreendidos, mas uma coisa é certa: os Glink's são forças imprevisíveis e perigosas da natureza, que devem ser tratados com extrema cautela.`,
-    img: "imagens/Glink's.png",
+    _imgs: [
+      "imagens/Glink's.png",
+      "imagens/Goblin-BaixoEscalão.png",
+      "imagens/Musplum.png",
+      "imagens/Glink4.png",
+      "imagens/Glink5.png"
+    ],
+    get img() {
+      return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+    },
+
     img2: "imagens/Token-Glink's.png"
   }
   
