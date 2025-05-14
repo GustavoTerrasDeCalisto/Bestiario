@@ -1104,9 +1104,7 @@ bonus2: `
 Elemento – o elemento Desconhecido`,
 
   Magias: `Nível 1 – Névoa Sussurrante, Nível 2 – Corrente das Brumas, Nível 4 – Neblina Aprisionadora, Nível 5 – Falsa Criatura, Nível 6 – Véu de Ilusão.`,
-
   Passivas: `Nível 3 – Tristeza Oculta, Nível 3 – Furtividade Sombria, Nível 3 – Preguiça.`,
-
   Talentos: `Armadilhas – Requisito: Agilidade`,
 
   Descricao: `Uma criatura de aparência felina com olhos assassinos brilhantes.  
@@ -1248,6 +1246,9 @@ function exibirCriatura(nome) {
   document.getElementById('libTest').textContent = selected.libTest;
   document.getElementById('cnxTest').textContent = selected.cnxTest;
   document.getElementById('movimento').textContent = selected.movimento + "m";
+  document.getElementById('Magias').textContent = selected.Magias;
+  document.getElementById('Passivas').textContent = selected.Passivas;
+  document.getElementById('Talentos').textContent = selected.Talentos;
   document.getElementById('bonus').innerHTML = formatBonusText(selected.bonus, "bonus1");
   document.getElementById('bonus2').innerHTML = formatBonusText(selected.bonus2, "bonus2");
   document.getElementById('bonus3').innerHTML = formatBonusText(selected.bonus3, "bonus3");
