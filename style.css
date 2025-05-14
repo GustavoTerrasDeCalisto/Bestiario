@@ -22,6 +22,7 @@ body {
   max-width: 900px;
   margin: auto;
   border-radius: 10px;
+  margin-top: 70px; /* Adiciona espaço abaixo do header para o conteúdo */
   box-shadow: 0 0 15px #000;
   display: flex;
   flex-direction: row;
@@ -375,7 +376,7 @@ span {
 @media (max-width: 768px) {
   #app {
     margin-right: 15px; /* Adiciona uma margem à direita no modo mobile */
-  margin: 0 auto; /* Centraliza */
+  margin: 70px auto; /* Centraliza */
     padding: 15px;
   width: 95%; /* Evita ultrapassar a tela */
     max-width: 100%; /* Limita a largura para a largura da tela */
@@ -735,27 +736,248 @@ button {
 }
 
 
-
-
-.contador-container {
+.titulo-com-contador {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens no eixo horizontal */
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
     text-align: center;
-    color: white;
+}
+
+.titulo-com-contador h2 {
+    margin: 0;
+    font-size: 1.0rem;
+    align-items: center;
 }
 
 .contador {
-    font-size: 5rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, #ffcc00, #ff9900, #ffcc00);
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: degrade 2s infinite alternate;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ffcc00, #ff9900, #ffcc00);
+  background-size: 200% 200%;
+  -webkit-background-clip: text; /* Prefixo para navegadores antigos */
+  background-clip: text; /* Padrão sem prefixo */
+  -webkit-text-fill-color: transparent; /* Necessário para que o efeito funcione no Chrome/Safari */
+  animation: degrade 4s infinite alternate;
+  white-space: nowrap;
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Adicionando sombra para suavizar o contraste */
 }
 
 @keyframes degrade {
-    0% {
-        background-position: 0% 0%;
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+
+
+
+
+
+/* Botão */
+#abrirPopup {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Overlay do popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo central do popup */
+.popup-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+/* Card de criatura */
+.card-criatura {
+    background: #2b2b2b;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    width: 160px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card-criatura:hover {
+    transform: scale(1.05);
+    background: #3a3a3a;
+}
+
+.card-criatura img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+#creatureSelect {
+  display: none;
+}
+/* Versão Mobile - Layout com 2 cards lado a lado */
+@media screen and (max-width: 768px) {
+    .popup-content {
+        gap: 10px;
+        justify-content: space-between; /* Garante que os itens fiquem lado a lado */
     }
-    100% {
-        background-position: 100% 100%;
+    
+    .card-criatura {
+        width: 30%; /* Aproximadamente 3 itens por linha */
+        margin-bottom: 20px; /* Espaçamento entre as linhas */
     }
+    
+}
+
+
+
+
+/* HEADER FIXO E ESTILO BASE */
+header {
+  background-color: #24252a;
+  box-shadow: 0px 3px 10px #464646;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  max-width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.nav-item:hover .nav-link {
+  color: #ca0808;
+}
+
+/* BOTÃO DE MENU (MOBILE) */
+.button-menu {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+
+/* MENU MOBILE (OCULTO POR PADRÃO) */
+.mobile-menu {
+  display: none;
+  background-color: #24252a;
+  padding-bottom: 1rem;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+
+.mobile-menu .nav-item {
+  display: block;
+  padding-top: 1.2rem;
+}
+
+/* CLASSE QUE ABRE O MENU */
+.mobile-menu.open {
+  display: block;
+}
+
+/* MEDIA QUERIES PARA MOBILE */
+@media screen and (max-width: 730px) {
+  .nav-list ul {
+    display: none;
+  }
+
+  .button-menu {
+    display: block;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .nav-item {
+    display: block;
+  }
+}
+
+/* RESPONSIVO EM TELAS MAIORES */
+@media screen and (min-width: 731px) {
+  .mobile-menu {
+    display: none !important;
+  }
 }

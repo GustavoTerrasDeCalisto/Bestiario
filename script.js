@@ -1035,12 +1035,21 @@ Elemento – o elemento Caos`,
 
 
 };
-
+// Assuma que creatures está definido em outro arquivo ou é importado
 const select = document.getElementById('creatureSelect');
 const nameEl = document.getElementById('creatureName');
 const imageEl = document.getElementById('creatureImage');
+const descricao = document.getElementById("descricao");
+const abrirPopup = document.getElementById("abrirPopup");
+const popup = document.getElementById("popup");
+const listaCriaturas = document.getElementById("listaCriaturas");
+const creatureStats = document.getElementById("creatureStats");
+const imageContainer = document.getElementById("imageContainer");
+const imageControls = document.getElementById("imageControls");
+let currentImage = 0;
+let images = [];
+let selected = null;
 
-// Popula o menu de seleção
 Object.keys(creatures).forEach(creature => {
   const option = document.createElement('option');
   option.value = creature;
@@ -1048,234 +1057,190 @@ Object.keys(creatures).forEach(creature => {
   select.appendChild(option);
 });
 
-// Quando um item for selecionado
 select.addEventListener('change', () => {
-  const selected = creatures[select.value];
-  if (selected) {
-    document.getElementById('creatureStats').style.display = 'block';
-    nameEl.textContent = select.value;
-    imageEl.src = selected.img;
-
-    document.getElementById('bru').textContent = selected.bru;
-    document.getElementById('agi').textContent = selected.agi;
-    document.getElementById('det').textContent = selected.det;
-    document.getElementById('pre').textContent = selected.pre;
-    document.getElementById('lib').textContent = selected.lib;
-    document.getElementById('cnx').textContent = selected.cnx;
-    document.getElementById('bruDano').textContent = selected.bruDano;
-    document.getElementById('agiDano').textContent = selected.agiDano;
-    document.getElementById('detDano').textContent = selected.detDano;
-    document.getElementById('preDano').textContent = selected.preDano;
-    document.getElementById('libDano').textContent = selected.libDano;
-    document.getElementById('cnxDano').textContent = selected.cnxDano;
-    document.getElementById('bruTest').textContent = selected.bruTest;
-    document.getElementById('agiTest').textContent = selected.agiTest;
-    document.getElementById('detTest').textContent = selected.detTest;
-    document.getElementById('preTest').textContent = selected.preTest;
-    document.getElementById('libTest').textContent = selected.libTest;
-    document.getElementById('cnxTest').textContent = selected.cnxTest;
-    document.getElementById('bonus').textContent = selected.bonus;
-    document.getElementById('bonus2').textContent = selected.bonus2;
-    document.getElementById('Magias').textContent = selected.Magias;
-    document.getElementById('Passivas').textContent = selected.Passivas;
-    document.getElementById('Talentos').textContent = selected.Talentos;
-    document.getElementById('movimento').textContent = selected.movimento + "m";
-
-
-    // Definindo o nível inicial
-    document.getElementById('creatureLevel').textContent = 1; 
-    updateStats(selected, 1); // Atualiza as estatísticas no início
-  } else {
-    document.getElementById('creatureStats').style.display = 'none';
-  }
+  const nome = select.value;
+  if (!creatures[nome]) return;
+  selected = creatures[nome];
+  exibirCriatura(nome);
 });
 
-// Botão para aumentar o nível
 document.getElementById('levelUpButton').addEventListener('click', () => {
   const levelElement = document.getElementById('creatureLevel');
   let level = parseInt(levelElement.textContent);
-  const selected = creatures[select.value];
-
   if (selected) {
-    level += 1; // Aumenta o nível
+    level += 1;
     levelElement.textContent = level;
-    updateStats(selected, level); // Atualiza as estatísticas com o novo nível
+    updateStats(selected, level);
   }
 });
 
-// Botão para diminuir o nível
 document.getElementById('levelDownButton').addEventListener('click', () => {
   const levelElement = document.getElementById('creatureLevel');
   let level = parseInt(levelElement.textContent);
-  const selected = creatures[select.value];
-
-  if (selected && level > 1) { // Impede que o nível seja menor que 1
-    level -= 1; // Diminui o nível
+  if (selected && level > 1) {
+    level -= 1;
     levelElement.textContent = level;
-    updateStats(selected, level); // Atualiza as estatísticas com o novo nível
+    updateStats(selected, level);
   }
 });
 
-// Função para atualizar as estatísticas
 function updateStats(creature, level) {
-  const vida = creature.vida + (creature.vidaPorNivel * (level - 1)); // Vida base + (vida por nível * (nível atual - 1))
+  const vida = creature.vida + (creature.vidaPorNivel * (level - 1));
   const sanidade = creature.sanidade + (creature.sanidadePorNivel * (level - 1));
   const especial = creature.especial + (creature.especialPorNivel * (level - 1));
   const armadura = creature.armadura + Math.floor((level - 1) / creature.armaduraPorNivel);
 
-  // Atualiza a interface com as novas estatísticas
   document.getElementById('vida').textContent = vida;
   document.getElementById('sanidade').textContent = sanidade;
   document.getElementById('especial').textContent = especial;
   document.getElementById('armadura').textContent = armadura;
 }
 
-function formatBonusText(text, type = "default") { 
-  // Define a classe CSS que será usada dependendo do tipo
+function formatBonusText(text, type = "default") {
   let className;
   if (type === "bonus1") className = "bonus1-paragraph";
   else if (type === "bonus2") className = "bonus2-paragraph";
   else if (type === "bonus3") className = "bonus3-paragraph";
   else className = "bonus-paragraph";
 
-  // Aqui acontece o processamento do texto:
   return text
-    .split(/\n+/) // 1. Quebra o texto sempre que encontrar uma ou mais quebras de linha (\n)
+    .split(/\n+/)
     .map(sentence => {
       if (sentence.trim()) {
-        // Aqui adicionamos o replace para converter *texto* em <strong>texto</strong>
         const formattedSentence = sentence
-  .replace(/\*(.*?)\*/g, '<strong>$1</strong>')   // Negrito
-  .replace(/_(.*?)_/g, '<em>$1</em>')            // Itálico
-  .replace(/~(.*?)~/g, '<u>$1</u>')              // Sublinhado
-  .replace(/-(.*?)-/g, '<s>$1</s>')              // Tachado
-  .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>'); // Cor customizada
+          .replace(/\*(.*?)\*/g, '<strong>$1</strong>')
+          .replace(/_(.*?)_/g, '<em>$1</em>')
+          .replace(/~(.*?)~/g, '<u>$1</u>')
+          .replace(/-(.*?)-/g, '<s>$1</s>')
+          .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>');
         return `<p class="${className}">${formattedSentence}</p>`;
       } else {
         return '';
       }
     })
-    .join(''); // 5. Junta tudo numa única string (sem separador)
+    .join('');
 }
 
-select.addEventListener('change', () => {
-  const selected = creatures[select.value]; // Pega a criatura selecionada
-  if (selected) {
-    // Exibe a área de stats
-    document.getElementById('creatureStats').style.display = 'block';
-    // Atualiza o nome e a imagem
-    nameEl.textContent = select.value;
-    imageEl.src = selected.img;
-
-    // Formata e insere os bônus, cada um com um estilo diferente
-    document.getElementById('bonus').innerHTML = formatBonusText(selected.bonus, "bonus1"); 
-    document.getElementById('bonus2').innerHTML = formatBonusText(selected.bonus2, "bonus2");
-    document.getElementById('bonus3').innerHTML = formatBonusText(selected.bonus3, "bonus3");
-
-    // Outras configurações de stats...
-    // Atualiza a descrição da criatura
-    descricao.innerHTML = formatDescriptionText(selected.Descricao); 
-  } else {
-    // Se não tiver criatura selecionada, esconde a área de stats
-    document.getElementById('creatureStats').style.display = 'none'; 
-  }
-});
-
-
-
-// Preenche o conteúdo da descrição com base no objeto "creatures"
-
-
-
-
-// Preenche o conteúdo da descrição com base no objeto "creatures"
-// Usamos innerHTML para permitir a renderização de tags HTML como <br> para quebras de linha.
-
-
-
-
-// Função para formatar o texto da descrição com parágrafos
 function formatDescriptionText(text) {
-  // Divide o texto com base nas quebras de linha
-  return text.split(/\n+/).map(paragraph => 
-    paragraph.trim() ? `<p>${paragraph}</p>` : ''  // Cria parágrafos para cada linha não vazia
-  ).join(''); // Junta os parágrafos
+  return text.split(/\n+/).map(paragraph =>
+    paragraph.trim() ? `<p>${paragraph}</p>` : ''
+  ).join('');
 }
-
- 
-
-
-// Preenche o conteúdo da descrição com base no objeto "creatures"
-// Preenche a descrição ao carregar a página pela primeira vez
-window.addEventListener('load', () => {
-  const selected = creatures[select.value]; // Obtém a criatura selecionada inicialmente
-  if (selected) {
-    descricao.innerHTML = formatDescriptionText(selected.Descricao); // Preenche a descrição com a criatura inicial
-  }
-});
-
-// Seleciona o botão e o conteúdo da seção de descrição
-const toggleButton = document.querySelector('.toggle-button');
-const toggleContent = document.querySelector('.toggle-content');
-
-// Adiciona um evento de clique ao botão para alternar a visibilidade da descrição
-toggleButton.addEventListener('click', () => {
-  toggleContent.classList.toggle('show'); // Alterna a classe 'show' para mostrar ou esconder a descrição
-});
-
-
-// Configuração inicial dos botões fora do evento para evitar múltiplos event listeners
-let currentImage = 0;
-const images = [];
 
 function showImage(index) {
-    images.forEach((img, i) => {
-        img.style.opacity = i === index ? "1" : "0";
-    });
+  images.forEach((img, i) => {
+    img.style.display = i === index ? 'block' : 'none';
+  });
 }
 
-// Evento de mudança de criatura
-select.addEventListener('change', () => {
-    const selected = creatures[select.value];
-    
-    if (selected) {
-        document.getElementById('creatureStats').style.display = 'block';
-        document.getElementById('creatureName').textContent = select.value;
+function exibirCriatura(nome) {
+  selected = creatures[nome];
+  if (!selected) return;
 
-        const image1 = document.getElementById('creatureImage');
-        const image2 = document.getElementById('creatureImage2');
+  creatureStats.style.display = 'block';
+  nameEl.textContent = nome;
+  descricao.innerHTML = formatDescriptionText(selected.Descricao);
 
-        image1.src = selected.img;
-        image2.src = selected.img2;
+  document.getElementById('bru').textContent = selected.bru;
+  document.getElementById('agi').textContent = selected.agi;
+  document.getElementById('det').textContent = selected.det;
+  document.getElementById('pre').textContent = selected.pre;
+  document.getElementById('lib').textContent = selected.lib;
+  document.getElementById('cnx').textContent = selected.cnx;
+  document.getElementById('bruDano').textContent = selected.bruDano;
+  document.getElementById('agiDano').textContent = selected.agiDano;
+  document.getElementById('detDano').textContent = selected.detDano;
+  document.getElementById('preDano').textContent = selected.preDano;
+  document.getElementById('libDano').textContent = selected.libDano;
+  document.getElementById('cnxDano').textContent = selected.cnxDano;
+  document.getElementById('bruTest').textContent = selected.bruTest;
+  document.getElementById('agiTest').textContent = selected.agiTest;
+  document.getElementById('detTest').textContent = selected.detTest;
+  document.getElementById('preTest').textContent = selected.preTest;
+  document.getElementById('libTest').textContent = selected.libTest;
+  document.getElementById('cnxTest').textContent = selected.cnxTest;
+  document.getElementById('movimento').textContent = selected.movimento + "m";
+  document.getElementById('bonus').innerHTML = formatBonusText(selected.bonus, "bonus1");
+  document.getElementById('bonus2').innerHTML = formatBonusText(selected.bonus2, "bonus2");
+  document.getElementById('bonus3').innerHTML = formatBonusText(selected.bonus3, "bonus3");
 
-        images[0] = image1;
-        images[1] = image2;
-        
-        currentImage = 0; // Reinicia para a primeira imagem
-        showImage(currentImage);
+  images = [];
+  let index = 1;
+  while (selected[`img${index}`] || (index === 1 && selected.img)) {
+    const imgSrc = selected[`img${index}`] || selected.img;
+    const imgElement = document.createElement("img");
+    imgElement.src = imgSrc;
+    imgElement.style.display = "none";
+    images.push(imgElement);
+    index++;
+  }
+
+  imageContainer.innerHTML = "";
+  images.forEach(img => imageContainer.appendChild(img));
+
+  currentImage = 0;
+  showImage(currentImage);
+  imageControls.style.display = images.length > 1 ? "block" : "none";
+
+  document.getElementById('creatureLevel').textContent = 1;
+  updateStats(selected, 1);
+}
+
+abrirPopup.addEventListener("click", () => {
+  listaCriaturas.innerHTML = "";
+  Object.entries(creatures).forEach(([nome, dados]) => {
+    const card = document.createElement("div");
+    card.className = "card-criatura";
+
+    if (dados.img2) {
+      const img = document.createElement("img");
+      img.src = dados.img2;
+      img.alt = nome;
+      card.appendChild(img);
     }
+
+    const titulo = document.createElement("div");
+    titulo.textContent = nome;
+    card.appendChild(titulo);
+
+   card.addEventListener("click", () => {
+    document.getElementById("abrirPopup").textContent = `Selecionado: ${nome}`;
+    popup.style.display = "none";
+    exibirCriatura(nome);
+    
+    // Rolar até o topo da tela
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Rolagem suave
+    });
 });
 
-// Configuração dos botões
+    listaCriaturas.appendChild(card);
+  });
+
+  popup.style.display = "flex";
+});
+
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) popup.style.display = "none";
+});
+
 document.getElementById('prevImage').onclick = () => {
-    currentImage = (currentImage === 0) ? 1 : 0;
-    showImage(currentImage);
+  currentImage = (currentImage - 1 + images.length) % images.length;
+  showImage(currentImage);
 };
 
 document.getElementById('nextImage').onclick = () => {
-    currentImage = (currentImage === 0) ? 1 : 0;
-    showImage(currentImage);
+  currentImage = (currentImage + 1) % images.length;
+  showImage(currentImage);
 };
 
+document.querySelector('.toggle-button').addEventListener('click', () => {
+  document.querySelector('.toggle-content').classList.toggle('show');
+});
 
-let creatures = 0; // Número de criaturas registradas (adicione logicamente em seu código)
-
-function updateCounter() {
-    creatures++; // Aumente o contador conforme necessário
-    document.getElementById("contador").textContent = creatures;
+document.getElementById("contador").textContent = Object.keys(creatures).length;
+function menuShow() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.classList.toggle('open');
 }
-
-// Atualiza o contador a cada segundo (ou de acordo com a lógica do seu código)
-setInterval(updateCounter, 1000);
-
-
