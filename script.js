@@ -704,7 +704,8 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
   _imgs2: [
     "imagens/Token-Goblin-BaixoEscalão.png",
     "imagens/Token-Goblin-BaixoEscalão2.png",
-    "imagens/Token-Goblin-BaixoEscalão3.png"
+    "imagens/Token-Goblin-BaixoEscalão3.png",
+    "imagens/Token-Goblin-BaixoEscalão4.png"
   ],
 }
   
