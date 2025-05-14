@@ -1091,7 +1091,7 @@ Imune: Névoa`,
 bonus2: `
 {pigmento}*Soberano da Névoa:*{/pigmento} Dentro da névoa, recebe +5 em todos os testes e magias de névoa não têm custo. Ataques ganham +1d6 de dano de névoa. Fora dela, sofre -5 e o custo das magias dobra.  
 {pigmento}*Campo Enevoado:*{/pigmento} Conjura névoa com raio de 1km por *1d10+5 turnos*. Ela acompanha o conjurador. Dentro dela, alvos em até 10m enxergam apenas 1m (*1d6 turnos*).  
-{pigmento}*Corpo Vaporoso:*{/pigmento} Ignora o próximo ataque tornando-se névoa. Pode mover-se instantaneamente ou atravessar espaços estreitos, desde que dentro da névoa. (É desfeito ao atacar).  
+{pigmento}*Corpo Vaporoso:*{/pigmento} Ignora o próximo ataque tornando-se névoa. Pode se mover instantaneamente ou atravessar espaços estreitos, desde que dentro da névoa. (É desfeito ao atacar).  
 {pigmento}*Predador Nebuloso:*{/pigmento} Todos os testes físicos e danos usam *Agilidade*. Pode causar *1d12 de dano furtivo* com garras silenciosas — o alvo faz teste de percepção com desvantagem.  
 {pigmento}*Ilusões da Névoa:*{/pigmento} Cria vozes e sombras ilusórias para desorientar ou amedrontar. Pode gerar um clone de névoa por *1d6 turnos* (sem dano).  
 {pigmento}*Bloqueio Sensorial:*{/pigmento} Dentro da névoa, inimigos devem passar teste de percepção contra sua *Agilidade* para conseguir atacá-lo.  
