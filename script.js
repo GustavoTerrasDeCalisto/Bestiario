@@ -543,10 +543,28 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     Essas criaturas são particularmente vulneráveis a ataques de fogo e magia sagrada, que podem exorcizar ou destruir seus corpos. Quando um Esquecido é derrotado, uma aura brilhosa permanece onde ele caiu, um indício de que sua alma ainda está presa ao mundo material. Se não for atingido por fogo ou magia sagrada para selar seu destino, o Esquecido renascerá, tornando-se um pesadelo constante para aqueles que cruzam seu caminho.
     A presença dos Antigos Esquecidos é aterrorizante, especialmente em cemitérios, onde são conhecidos por assombrar os vivos. Sua capacidade de se regenerar torna a luta contra eles exaustiva e desesperadora. Por essa razão, muitos povos preferem cremar os corpos de seus entes queridos ou realizar rituais especiais de proteção, na esperança de impedir o surgimento dessas criaturas amaldiçoadas.
     Para aqueles que os enfrentam, os Antigos Esquecidos são um lembrete cruel de que até os mortos podem se tornar uma ameaça. Sua forma macabra e sua persistência sobrenatural os tornam o terror de lugares onde a morte se acumulou, e qualquer tentativa de ignorar ou minimizar sua presença pode ter consequências fatais.`,
-    img: "imagens/AntigosEsquecidos.png",
-    img2: "imagens/Token-AntigosEsquecidos.png"
-}
+
   
+   _imgs: [
+      "imagens/AntigosEsquecidos.png"
+    ],
+    
+    get img() {
+      return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+    },
+
+    _imgs2: [
+      "imagens/Token-AntigosEsquecidos.png",
+      "imagens/Token-AntigosEsquecidos2.png",
+      "imagens/Token-AntigosEsquecidos3.png"
+    ],
+
+    get img2() {
+      return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+    },
+
+    // outros dados aqui também...
+  }
   
   
   ,"Yonkis": {
