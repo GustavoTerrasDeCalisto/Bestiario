@@ -1029,9 +1029,26 @@ Elemento – o elemento Fé`,
     Passivas: `Nível 6 - Escudo elemental`,
     Talentos: `Tática - requisito: Preservação`,
     Descricao: `As Sanctae Sentinellae são estátuas de mármore branco preenchidas com energia sagrada. São as sentinelas que desceram do céu para proteger a igreja ou templo divino. Não se sabe ao certo se essas crituras realmente existem`,
-    img: "imagens/Donzela branca.png",
-    img2: "imagens/Token-Donzela branca.png"
-  },"Ildtreets Hevn": {
+ _imgs: [
+      "Donzela branca.png",
+      "Donzela branca2.png"
+    ],
+    
+    get img() {
+      return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+    },
+
+    _imgs2: [
+      "imagens/Token-Donzela branca.png"
+    ],
+
+    get img2() {
+      return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+    },
+
+  
+  
+  ,"Ildtreets Hevn": {
   vida: 122,
   sanidade: 78,
   especial: 24,
