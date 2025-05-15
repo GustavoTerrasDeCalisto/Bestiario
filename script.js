@@ -1030,8 +1030,8 @@ Elemento – o elemento Fé`,
     Talentos: `Tática - requisito: Preservação`,
     Descricao: `As Sanctae Sentinellae são estátuas de mármore branco preenchidas com energia sagrada. São as sentinelas que desceram do céu para proteger a igreja ou templo divino. Não se sabe ao certo se essas crituras realmente existem`,
  _imgs: [
-      "Donzela branca.png",
-      "Donzela branca2.png"
+      "imagens/Donzela branca.png",
+      "imagens/Donzela branca2.png"
     ],
     
     get img() {
