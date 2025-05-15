@@ -1047,7 +1047,7 @@ Elemento – o elemento Fé`,
     },
 
   
-  
+  }
   ,"Ildtreets Hevn": {
   vida: 122,
   sanidade: 78,
