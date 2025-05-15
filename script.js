@@ -9,6 +9,8 @@ const creatures = {
     sanidadePorNivel: 3,
     especialPorNivel: 1,
     armaduraPorNivel: 3,
+    TagsCriatura: "AskVill,Floresta,Animal,",
+ TipoElementoCriatura: "Caos",
     bru: 14, agi: 16, det: 12, pre: 13, lib: 8, cnx: 9,
     bruDano: 1, agiDano: 2, detDano: 1, preDano: 1, libDano: 0, cnxDano: 0,
     bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: -2, cnxTest: -1,
@@ -61,6 +63,8 @@ Seus comportamentos e motivações são muitas vezes incompreendidos, mas uma co
     sanidadePorNivel: 5,
     especialPorNivel: 2,
     armaduraPorNivel: 4,
+    TagsCriatura: "Gormandia,Racional,Animal,",
+ TipoElementoCriatura: "Caos",
     bru: 13, agi: 17, det: 12, pre: 9, lib: 9, cnx: 11,
     bruDano: 1, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 1,
     bruTest: 1, agiTest: 3, detTest: 1, preTest: -1, libTest: -1, cnxTest: 1,
@@ -95,6 +99,8 @@ Sua presença em florestas e cavernas torna esses locais ainda mais perigosos pa
     "sanidadePorNivel": 3,
     "especialPorNivel": 4,
     "armaduraPorNivel": 2,
+    TagsCriatura: "Agressivo,Raro,Maldição",
+ TipoElementoCriatura: "Desconhecido",
     "bru": 25,
     "agi": 8,
     "det": 10,
@@ -140,6 +146,8 @@ Sua presença em florestas e cavernas torna esses locais ainda mais perigosos pa
     sanidadePorNivel: 8,
     especialPorNivel: 4,
     armaduraPorNivel: 2,
+        TagsCriatura: "Agressivo,Raro,Sono",
+ TipoElementoCriatura: "Desconhecido,Poder",
     bru: 12, agi: 14, det: 11, pre: 8, lib: 25, cnx: 28,
     bruDano: 0, agiDano: 1, detDano: 0, preDano: 0, libDano: 3, cnxDano: 4,
     bruTest: 1, agiTest: 2, detTest: 1, preTest: -2, libTest: 5, cnxTest: 6,
@@ -1115,6 +1123,8 @@ Elemento – o elemento Caos`,
   especialPorNivel: 10,
   armaduraPorNivel: 4,
 movimento: 7,
+    TagsCriatura: "Criatura,Aberração,",
+ TipoElementoCriatura: "Desconhecido",
   bru: 10, agi: 35, det: 10, pre: 10, lib: 10, cnx: 10,
   bruTest: 0, agiTest: 9, detTest: 0, preTest: 0, libTest: 0, cnxTest: 0,
   bruDano: 0, agiDano: 5, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
@@ -1156,6 +1166,226 @@ No entanto, todos afirmam o mesmo: a paz só veio... quando deixaram a névoa.`,
 
 
 };
+
+
+
+
+
+
+const tagColors = {
+  // Tipos de Elementos (usar gradient para os 4)
+    // Tipos de Elementos (usar gradient para os 4)
+  "Fé": { background: "linear-gradient(135deg, #FFF59D, #DCE775)", color: "#37474F" },
+  "Caos": { background: "linear-gradient(135deg, #FF7043, #FF8A65)", color: "#BF360C" },
+  "Poder": { background: "linear-gradient(135deg, #00E5FF, #00B8D4)", color: "#004D40" },
+  "Desconhecido": { background: "linear-gradient(135deg, #B0BEC5, #78909C)", color: "#263238" },
+  "Fé": {
+    gradient: "linear-gradient(270deg, #FFF59D, #F0F4C3, #DCE775, #FFF59D)"
+  },
+  "Caos": {
+    gradient: "linear-gradient(270deg, #FF7043, #FF8A65, #FF7043)"
+  },
+  "Poder": {
+    gradient: "linear-gradient(270deg, #00E5FF, #00B8D4, #00E5FF)"
+  },
+  "Desconhecido": {
+    gradient: "linear-gradient(270deg, #B0BEC5, #90A4AE, #78909C, #B0BEC5)"
+  },
+// Habitats Naturais
+"Floresta":        { background: "#A5D6A7", color: "#2E7D32" },   // verde folhagem
+"Selva":           { background: "#66BB6A", color: "#1B5E20" },   // mais denso
+"Montanha":        { background: "#BCAAA4", color: "#3E2723" },   // pedregoso
+"Caverna":         { background: "#8D6E63", color: "#212121" },   // escuro e rochoso
+"Deserto":         { background: "#FFF59D", color: "#F57F17" },   // areia e sol
+"Vulcão":          { background: "#FF7043", color: "#BF360C" },   // fogo e magma
+"Pântano":         { background: "#AED581", color: "#33691E" },   // úmido e tóxico
+"Campo Aberto":    { background: "#FFF9C4", color: "#827717" },   // planícies
+"Lago":            { background: "#81D4FA", color: "#01579B" },   // água calma
+"Rio":             { background: "#4FC3F7", color: "#0277BD" },   // fluxo constante
+"Oceano":          { background: "#0288D1", color: "#E1F5FE" },   // azul profundo
+"Glacial":         { background: "#E0F7FA", color: "#006064" },   // frio e gelado
+"Céu":             { background: "#E3F2FD", color: "#0288D1" },   // aéreo
+"Dimensão Onírica":{ background: "#D1C4E9", color: "#4A148C" },   // plano alternativo
+"Plano Infernal":  { background: "#D32F2F", color: "#FFF" },      // demoníaco
+"Plano Celestial": { background: "#FFEB3B", color: "#5D4037" },   // divino
+
+// Habitats Urbanos
+"Vila":            { background: "#FFECB3", color: "#4E342E" },   // simples e pacata
+"Cidade":          { background: "#90A4AE", color: "#212121" },   // comum urbano
+"Metrópole":       { background: "#B0BEC5", color: "#263238" },   // urbana densa
+"Castelo":         { background: "#D7CCC8", color: "#5D4037" },   // nobreza
+"Fortaleza":       { background: "#A1887F", color: "#3E2723" },   // militar
+"Porto":           { background: "#81D4FA", color: "#01579B" },   // marinho/comércio
+"Ruínas":          { background: "#757575", color: "#FAFAFA" },   // abandonado
+"Submundo":        { background: "#263238", color: "#B0BEC5" },   // clandestino/esgoto
+"Templo":          { background: "#FFF176", color: "#5D4037" },   // espiritual
+
+// Ambientes Exóticos ou Fantásticos
+"Éter":            { background: "#CE93D8", color: "#4A148C" },   // plano mágico
+"Sombras":         { background: "#37474F", color: "#ECEFF1" },   // escuridão viva
+"Campo de Batalha":{ background: "#EF9A9A", color: "#B71C1C" },   // violento
+"Arena":           { background: "#FFE082", color: "#5D4037" },   // domado
+"Ruínas Antigas":  { background: "#BCAAA4", color: "#212121" },   // esquecidas
+
+
+  // Inteligência e Comportamento
+  "Racional": { background: "#AED581", color: "#1B5E20" },
+  "Irracional": { background: "#E57373", color: "#B71C1C" },
+  "Agressivo": { background: "#EF5350", color: "#B71C1C" },
+  "Pacífico": { background: "#A5D6A7", color: "#33691E" },
+  "Caça em Grupo": { background: "#FFB74D", color: "#4E342E" },
+  "Solitário": { background: "#90A4AE", color: "#212121" },
+  "Montaria": { background: "#FFE082", color: "#5D4037" },
+
+  // Tamanho
+  "Pequeno": { background: "#FFCDD2", color: "#C62828" },
+  "Médio": { background: "#FFF9C4", color: "#F57F17" },
+  "Grande": { background: "#C5CAE9", color: "#1A237E" },
+  "Gigante": { background: "#BCAAA4", color: "#3E2723" },
+
+  // Forma
+  "Humanoide": { background: "#B0BEC5", color: "#263238" },
+  "Quadrúpede": { background: "#A1887F", color: "#3E2723" },
+  "Voador": { background: "#81D4FA", color: "#01579B" },
+
+  // Tipos de Criatura
+  "Animal": { background: "#A5D6A7", color: "#1B5E20" },
+  "Monstro": { background: "#E57373", color: "#B71C1C" },
+  "Corrompido": { background: "#6A1B9A", color: "#F3E5F5" },
+  "Aberração": { background: "#CE93D8", color: "#4A148C" },
+  "Humano": { background: "#90A4AE", color: "#212121" },
+  "Elfo": { background: "#C5E1A5", color: "#33691E" },
+  "Anão": { background: "#FFCC80", color: "#4E342E" },
+  "Gigante": { background: "#BCAAA4", color: "#3E2723" },
+  "Tritão": { background: "#81D4FA", color: "#01579B" },
+  "Shlurp": { background: "#9FA8DA", color: "#1A237E" },
+  "Pele Pálida": { background: "#D7CCC8", color: "#4E342E" },
+  "Flumplux": { background: "#AED581", color: "#33691E" },
+  "IgnisAlatus": { background: "#FF8A65", color: "#BF360C" },
+
+  // Temas e Alinhamentos
+  "Sagrado": { background: "#FFEB3B", color: "#5D4037" },
+  "Maldição": { background: "#512DA8", color: "#CE93D8" },
+  "Natural": { background: "#A5D6A7", color: "#2E7D32" },
+  "Tecnológico": { background: "#B0BEC5", color: "#212121" },
+  "Onírico": { background: "#D1C4E9", color: "#4A148C" },
+  "Apocalíptico": { background: "#D32F2F", color: "#FAFAFA" },
+
+  // Tipos de Dano
+  "Gelo": { background: "#B3E5FC", color: "#004D40" },
+  "Ácido": { background: "#A5D6A7", color: "#1B5E20" },
+  "Fogo": { background: "#FF7043", color: "#BF360C" },
+  "Água": { background: "#81D4FA", color: "#01579B" },
+  "Eletricidade": { background: "#FFD600", color: "#F57F17" },
+  "Tempestade": { background: "#7E57C2", color: "#311B92" },
+  "Sangue": { background: "#D50000", color: "#FFFFFF" },
+  "Luz": { background: "#FFF59D", color: "#37474F" },
+  "Laser": { background: "#00E5FF", color: "#004D40" },
+  "Alma": { background: "#CE93D8", color: "#4A148C" },
+  "Escuridão": { background: "#263238", color: "#B0BEC5" },
+  "Plasma": { background: "#E1F5FE", color: "#0277BD" },
+  "Tremor": { background: "#8D6E63", color: "#3E2723" },
+  "Aura": { background: "#FFF8E1", color: "#4E342E" },
+  "Psicológico": { background: "#F48FB1", color: "#880E4F" },
+  "Mental": { background: "#B0BEC5", color: "#263238" },
+  "Distorção": { background: "#A1887F", color: "#D7CCC8" },
+  "Névoa": { background: "#CFD8DC", color: "#455A64" },
+  "Sono": { background: "#D1C4E9", color: "#4A148C" },
+  "Balístico": { background: "#BDBDBD", color: "#424242" },
+  "Perfurante": { background: "#90A4AE", color: "#263238" },
+  "Cortante": { background: "#37474F", color: "#FFFFFF" },
+  "Esmagante": { background: "#ECEFF1", color: "#78909C" },
+  "Cinzas": { background: "#B0BEC5", color: "#455A64" },
+  "Morte": { background: "#424242", color: "#D32F2F" },
+  "Eclipse": { background: "#212121", color: "#FFA000" },
+
+  // Localizações (simplificadas)
+  "Drønnjern": { background: "#8D6E63", color: "#3E2723" },
+  "Skjarrgrom": { background: "#4E342E", color: "#FFF" },
+  "Umbro": { background: "#263238", color: "#ECEFF1" },
+  "AskVill": { background: "#4DB6AC", color: "#004D40" },
+  "Sultan Leste": { background: "#FFCCBC", color: "#BF360C" },
+  "Sultan Oeste": { background: "#FFAB91", color: "#3E2723" },
+  "Teach Docas": { background: "#90CAF9", color: "#0D47A1" },
+  "Karminia": { background: "#F8BBD0", color: "#880E4F" },
+  "Saonasjørand": { background: "#B2EBF2", color: "#004D40" },
+  "Rohan": { background: "#D7CCC8", color: "#3E2723" },
+  "Gormandia": { background: "#FFE082", color: "#5D4037" },
+  "Fiskehavn": { background: "#B3E5FC", color: "#01579B" },
+  "Marstrøm": { background: "#81D4FA", color: "#004D40" },
+  "Elfinoria": { background: "#C5E1A5", color: "#33691E" },
+  "Luar Perdido": { background: "#E1BEE7", color: "#4A148C" },
+  "Ilha do Céu": { background: "#E3F2FD", color: "#0288D1" },
+  "King Vortex": { background: "#B2EBF2", color: "#00796B" },
+
+  // Extras
+  "Bestiário": { background: "#A1887F", color: "#3E2723" },
+  "Raro": { background: "#FFD54F", color: "#F57F17" },
+  "Lendário": { background: "#FBC02D", color: "#212121" },
+  "Comum": { background: "#CFD8DC", color: "#263238" },
+  "Hostil": { background: "#EF5350", color: "#B71C1C" },
+  "Pacífico": { background: "#A5D6A7", color: "#33691E" },
+
+  // Adicione mais conforme necessário...
+};
+
+
+
+const criatureGrid = document.getElementById('criatureGrid');
+const elementoFilter = document.getElementById('elementoFilter');
+const tagFilter = document.getElementById('tagFilter');
+
+function renderCriatures() {
+  criatureGrid.innerHTML = '';
+
+  const filtroElemento = elementoFilter.value;
+  const filtroTag = tagFilter.value;
+
+  criaturas.forEach(criatura => {
+    const elementos = (criatura.TipoElementoCriatura || "Nenhum").split(',').map(e => e.trim());
+    const tags = (criatura.TagCriatura || "Nenhuma").split(',').map(t => t.trim());
+
+    const passaFiltroElemento = filtroElemento === "Todos" || elementos.includes(filtroElemento);
+    const passaFiltroTag = filtroTag === "Todos" || tags.includes(filtroTag);
+
+    if (passaFiltroElemento && passaFiltroTag) {
+      criatureGrid.appendChild(createCriatureCard(criatura));
+    }
+  });
+}
+
+function preencherFiltrosCriatura() {
+  const elementosSet = new Set();
+  const tagsSet = new Set();
+
+  criaturas.forEach(c => {
+    (c.TipoElementoCriatura || "Nenhum").split(',').forEach(e => elementosSet.add(e.trim()));
+    (c.TagCriatura || "Nenhuma").split(',').forEach(t => tagsSet.add(t.trim()));
+  });
+
+  // Popula filtro de elementos
+  elementosSet.forEach(e => {
+    const opt = document.createElement('option');
+    opt.value = e;
+    opt.textContent = e;
+    elementoFilter.appendChild(opt);
+  });
+
+  // Popula filtro de tags
+  tagsSet.forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t;
+    opt.textContent = t;
+    tagFilter.appendChild(opt);
+  });
+}
+
+
+
+
+
+
+
 // Assuma que creatures está definido em outro arquivo ou é importado
 const select = document.getElementById('creatureSelect');
 const nameEl = document.getElementById('creatureName');
@@ -1312,10 +1542,42 @@ function exibirCriatura(nome) {
 
 abrirPopup.addEventListener("click", () => {
   listaCriaturas.innerHTML = "";
+  
   Object.entries(creatures).forEach(([nome, dados]) => {
     const card = document.createElement("div");
     card.className = "card-criatura";
 
+    // Container só para tags de tipo elemento
+    const elementoTagsContainer = document.createElement("div");
+    elementoTagsContainer.className = "tags-container elemento-tags";
+
+    // Pega só as tags do tipo elemento
+    let tagsElemento = [];
+    if (dados.TipoElementoCriatura) {
+      tagsElemento = dados.TipoElementoCriatura.split(',').map(e => e.trim()).filter(e => e);
+    }
+
+    // Cria as tags de tipo elemento e adiciona no container específico
+    tagsElemento.forEach(tag => {
+      const span = document.createElement("span");
+      span.className = `tag ${tag} elemento`;
+
+      const cor = tagColors[tag];
+      if (cor?.gradient) {
+        span.style.background = cor.gradient;
+      } else if (cor?.background) {
+        span.style.backgroundColor = cor.background;
+        span.style.color = cor.color;
+      }
+
+      span.textContent = tag;
+      elementoTagsContainer.appendChild(span);
+    });
+
+    // Adiciona as tags de elemento antes da imagem no card
+    card.appendChild(elementoTagsContainer);
+
+    // Agora cria e adiciona a imagem (se existir)
     if (dados.img2) {
       const img = document.createElement("img");
       img.src = dados.img2;
@@ -1323,26 +1585,57 @@ abrirPopup.addEventListener("click", () => {
       card.appendChild(img);
     }
 
+    // Título da criatura
     const titulo = document.createElement("div");
     titulo.textContent = nome;
     card.appendChild(titulo);
 
-   card.addEventListener("click", () => {
-    document.getElementById("abrirPopup").textContent = `Selecionado: ${nome}`;
-    popup.style.display = "none";
-    exibirCriatura(nome);
-    
-    // Rolar até o topo da tela
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Rolagem suave
-    });
-});
+    // --- Agora as tags normais (não elemento) ---
+    const tagsContainer = document.createElement("div");
+    tagsContainer.className = "tags-container";
 
+    let tagsNormais = [];
+    if (dados.TagsCriatura) {
+      tagsNormais = dados.TagsCriatura.split(',').map(t => t.trim()).filter(t => t);
+    }
+
+    // Cria as tags normais
+    tagsNormais.forEach(tag => {
+      const span = document.createElement("span");
+      span.className = `tag ${tag}`;
+
+      const cor = tagColors[tag];
+      if (cor?.gradient) {
+        span.classList.add("elemento");
+        span.style.background = cor.gradient;
+      } else if (cor?.background) {
+        span.style.backgroundColor = cor.background;
+        span.style.color = cor.color;
+      }
+
+      span.textContent = tag;
+      tagsContainer.appendChild(span);
+    });
+
+    card.appendChild(tagsContainer);
+
+    // Adiciona o card à lista
     listaCriaturas.appendChild(card);
+
+
+
+  card.appendChild(tagsContainer);
+  // ----------------------------
+
+  card.addEventListener("click", () => {
+    exibirCriatura(nome);
+    popup.style.display = "none";
   });
 
-  popup.style.display = "flex";
+  listaCriaturas.appendChild(card);
+});
+
+popup.style.display = "flex";
 });
 
 popup.addEventListener("click", (e) => {
@@ -1368,3 +1661,4 @@ function menuShow() {
   const mobileMenu = document.querySelector('.mobile-menu');
   mobileMenu.classList.toggle('open');
 }
+
