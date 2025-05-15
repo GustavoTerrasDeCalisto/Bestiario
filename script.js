@@ -1159,7 +1159,59 @@ No entanto, todos afirmam o mesmo: a paz só veio... quando deixaram a névoa.`,
   img: "imagens/Naegh.png",
   img2: "imagens/Token-Naegh.png"
 }
+,
 
+"The book": {
+  vida: 50,
+  sanidade: 1,
+  especial: 20,
+  armadura: 3,
+  vidaPorNivel: 20,
+  sanidadePorNivel: 15,
+  especialPorNivel: 10,
+  armaduraPorNivel: 2,
+    TagsCriatura: "Sanidade,Raro,Item,", 
+ TipoElementoCriatura: "Poder", 
+  bru: 8, agi: 8, det: 15, pre: 10, lib: 22, cnx: 22,
+  bruTest: -2, agiTest: -2, detTest: 2, preTest: 0, libTest: 4, cnxTest: 4,
+  bruDano: 0, agiDano: 0, detDano: 1, preDano: 0, libDano: 2, cnxDano: 2,
+  bonus: `Resistente: Alma
+Vulnerável: Luz, Sagrado
+Imune: Maldição`,
+  bonus2: `
+{pigmento}*Aparência discreta mas sombria:*{/pigmento} The book consegue manter a aparência de um livro comum que não pode ser detectado por magia. The book não pode entrar em locais sagrados.  
+{pigmento}*Guia do conhecimento:*{/pigmento} The book pode responder qualquer pergunta por meio de suas páginas ao custo de 2d20 de sanidade por pergunta, cobrado ao final do uso. O alvo pode resistir com um teste de Libertação com DT igual à metade do custo total.  
+{pigmento}*Agiota:*{/pigmento} Quando o alvo resiste à cobrança da sanidade, uma energia desperta em The book que inicia uma perseguição implacável. Ele persegue apenas o devedor até que a dívida seja paga ou seja aplicada a magia *Limpar*.  
+{pigmento}*Ataque sugador insano:*{/pigmento} The book pode atacar fisicamente, causando 1d6 de dano e de sanidade. Recupera vida e sanidade iguais ao dano causado.  
+{pigmento}*Voltando preparado e com juros:*{/pigmento} Quando morto, The book pode ressuscitar em um livro comum próximo. A nova cobrança de sanidade aumenta em +10, e a causa da morte anterior não surte mais efeito.  
+{pigmento}*Possessão:*{/pigmento} Se zerar a sanidade de um alvo, pode possuí-lo por 1d4 dias.  
+{pigmento}*Vamos conversar:*{/pigmento} The book pode aceitar outras formas de pagamento além da sanidade (a critério do mestre).
+`,
+  bonus3: `Guia do conhecimento  
+Elemento – o elemento Poder`,
+  Magias: ` `,
+  Passivas: `Nível 2 - Ódio`,
+  Talentos: `Enganação - requisito: Conexão`,
+  Descricao: `O guia do conhecimento, o livro capaz de responder a todas as perguntas... mas a que custo?  
+O guia do conhecimento aparece para qualquer um que busca conhecimento e respostas. Ninguém sabe como ele chega a uma biblioteca ou ruína, mas sempre é encontrado por alguém.  
+Alguns declaram que o livro trouxe fortuna e alegria; outros dizem que o azar caminha ao seu lado.  
+(Realidade:)  
+The book é uma criatura vil e dissimulada que busca apenas corromper. Nunca mente em suas respostas, mas raramente entrega a verdade completa. Costuma forçar os usuários a fazerem mais perguntas, respondendo de forma incompleta.  
+É um enganador exímio, quase sempre conseguindo o que quer... ou mais.`,
+  _imgs: [
+    "imagens/The book.png"
+  ],
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-The book.png"
+  ],
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+  }
+}
 
 
 
@@ -1327,6 +1379,9 @@ const tagColors = {
   "Pacífico": { background: "#A5D6A7", color: "#33691E" },
 
   // Adicione mais conforme necessário...
+  "Item": { background: "#FFF8E1",color: "#5D4037"},
+  "Sanidade": { background: "linear-gradient(135deg, #B39DDB, #F48FB1)",color: "#4A148C"},
+  "Líquido": { background: "#4FC3F7", color: "#01579B" },
 };
 
 
