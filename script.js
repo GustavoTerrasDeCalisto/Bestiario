@@ -1106,14 +1106,14 @@ Vulnerável: Tempestade
 Imune: Névoa`,
 
 bonus2: `
-{pigmento}*Forma Nébulosa:*{/pigmento} Pode alterar seu tamanho.  
-{pigmento}*Soberano da Névoa:*{/pigmento} Dentro da névoa, recebe +5 em todos os testes e magias de névoa não têm custo. Ataques ganham +1d6 de dano de névoa. Fora dela, sofre -5 e o custo das magias dobra.  
-{pigmento}*Campo Enevoado:*{/pigmento} Conjura névoa com raio de 1km por *1d10+5 turnos*. Ela acompanha o conjurador. Dentro dela, alvos em até 10m enxergam apenas 1m (*1d6 turnos*).  
-{pigmento}*Corpo Vaporoso:*{/pigmento} Ignora o próximo ataque tornando-se névoa. Pode se mover instantaneamente ou atravessar espaços estreitos, desde que dentro da névoa. (É desfeito ao atacar).  
-{pigmento}*Predador Nebuloso:*{/pigmento} Todos os testes físicos e danos usam *Agilidade*. Pode causar *1d12 de dano furtivo* com garras silenciosas — o alvo faz teste de percepção com desvantagem.  
-{pigmento}*Ilusões da Névoa:*{/pigmento} Cria vozes e sombras ilusórias para desorientar ou amedrontar. Pode gerar um clone de névoa por *1d6 turnos* (sem dano).  
-{pigmento}*Bloqueio Sensorial:*{/pigmento} Dentro da névoa, inimigos devem passar teste de percepção contra sua *Agilidade* para conseguir atacá-lo.  
-{pigmento}*Apatia Sombria:*{/pigmento} Usa *Tristeza Oculta* e *Preguiça* sem custos e 2x por combate sem penalidades.
+{pigmento}*Forma Nébulosa:*{/pigmento} Pode alterar seu tamanho à vontade, assumindo formas disformes de névoa.
+{pigmento}*Campo Enevoado:*{/pigmento} Conjura uma névoa com raio de 1km por *1d10+5 turnos*. A névoa acompanha o conjurador, mantendo-o no centro. Dentro dela, é possível escolher um ponto em até 10m onde a visão é reduzida para 1m por *1d6 turnos* ou enquanto durar a névoa.
+{pigmento}*Soberano da Névoa:*{/pigmento} Dentro da névoa, recebe *+5 em todos os testes*. Magias de névoa não têm custo e ataques causam *+1d6 de dano de névoa*. Fora da névoa, sofre *-5* nos testes e o custo das magias de névoa é dobrado.
+{pigmento}*Corpo Vaporoso:*{/pigmento} Torna-se névoa, ignorando o próximo ataque. Pode mover-se instantaneamente para qualquer ponto ou atravessar locais estreitos, desde que dentro da névoa. (Se atacar, o efeito é desfeito).
+{pigmento}*Predador Nebuloso:*{/pigmento} Todos os testes físicos e danos usam *Agilidade*. Pode atacar com *garras silenciosas*, causando *1d12 de dano furtivo*. O alvo faz um teste de percepção com desvantagem para perceber ou reagir.
+{pigmento}*Bloqueio Sensorial:*{/pigmento} Enquanto estiver dentro da névoa, inimigos devem passar em um teste de percepção contra sua *Agilidade* para conseguir atacá-lo.
+{pigmento}*Ilusões da Névoa:*{/pigmento} Pode criar ou silenciar vozes e sombras dentro da névoa, desorientando ou amedrontando os inimigos. Pode gerar um *clone de névoa* por *1d6 turnos*. O clone não causa dano.
+{pigmento}*Apatia Sombria:*{/pigmento} Pode usar as habilidades passivas *Tristeza Oculta* e *Preguiçoso* sem custos até 2 vezes por combate e sem penalidades.
 `
 ,
 
