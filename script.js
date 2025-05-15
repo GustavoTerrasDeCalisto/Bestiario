@@ -1096,7 +1096,7 @@ Elemento – o elemento Caos`,
   sanidadePorNivel: 10,
   especialPorNivel: 10,
   armaduraPorNivel: 4,
-
+movimento: 7,
   bru: 10, agi: 35, det: 10, pre: 10, lib: 10, cnx: 10,
   bruTest: 0, agiTest: 9, detTest: 0, preTest: 0, libTest: 0, cnxTest: 0,
   bruDano: 0, agiDano: 5, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
