@@ -1034,9 +1034,9 @@ Nível 3 – Cogumelos Tóxicos`,
     armaduraPorNivel: 1,
     TagsCriatura: "Agressivo,Morte,Humanoide",
     TipoElementoCriatura: "Fé",
-    bru: 10, agi: 10, det: 10, pre: 10, lib: 20, cnx: 20,
-    bruDano: 0, agiDano: 0, detDano: 0, preDano: 0, libDano: 2, cnxDano: 2,
-    bruTest: 0, agiTest: 0, detTest: 0, preTest: 0, libTest: 4, cnxTest: 4,
+    bru: 8, agi: 10, det: 9, pre: 10, lib: 20, cnx: 20,
+    bruDano: -2, agiDano: 0, detDano: 0, preDano: 0, libDano: 2, cnxDano: 2,
+    bruTest: 0, agiTest: -1, detTest: 0, preTest: 0, libTest: 4, cnxTest: 4,
     bonus: `Resistente:Alma, Aura
 Vulnerável: Luz, Sagrado
 Imune: Mental, Sono`,
@@ -1236,7 +1236,7 @@ Imune: Maldição`,
 `,
   bonus3: `Guia do conhecimento  
 Elemento – o elemento Poder`,
-  Magias: ` `,
+  Magias: `-`,
   Passivas: `Nível 2 - Ódio`,
   Talentos: `Enganação - requisito: Conexão`,
   Descricao: `Dizem que há um livro que caminha entre os mundos, um tomo sem origem conhecida, sem autor, sem título em sua capa, e, no entanto, com todas as respostas escritas em suas páginas. Um livro que sussurra em silêncio, atrai curiosos, seduz sábios e devora tolos. Ele é conhecido apenas como The book – O Guia do Conhecimento –, um artefato lendário cujas histórias ecoam nas mais remotas tradições orais e nos grimórios mais esquecidos.
