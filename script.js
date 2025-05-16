@@ -1460,7 +1460,7 @@ const tagColors = {
 
   // Adicione mais conforme necessário...
   "Item": { background: "#FFF8E1",color: "#5D4037"},
-  "Sanidade": { background: "#FF00FF",color: "#5D4037"},
+  "Sanidade": { background: "#FF00FF",color: "#ffffff"},
   "Líquido": { background: "#4FC3F7", color: "#01579B" },
 };
 
