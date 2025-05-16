@@ -1311,12 +1311,14 @@ Magias: ` Nivel 3 - lança de luz, nivel 4 - luz sagrada.`,
 Passivas:` Nivel 3 - afogar.`,
 Talentos: `Enganação - requesito:Conexão `,
 Descricao: `
-O OctoRedsel Abissal é um polvo aterrorizante que vive próximo a regiões costeiras e nas profundezas de Fiskehavn. 
+O OctoRedsel Abissal é um polvo aterrorizante que vive próximo a regiões costeiras e nas profundezas de Fiskehavn.
 Costuma criar bolsões de água com areia no fundo do oceano para capturar suas presas.
-Essa criatura atrai banhistas e outras formas de vida com sua luz, guiando-os até as profundezas para se alimentar. 
+Essa criatura atrai banhistas e outras formas de vida com sua luz, guiando-os até as profundezas para se alimentar.
 Apesar de sua aparência luminosa, sua natureza é puramente predatória e enganosa.
-Com os rumores se espalhando, o poder da fé nas criaturas abissais cresceu, fortalecendo sua ligação com a luz. 
-O OctoRedsel é considerado um verdadeiro terror das profundezas — traiçoeiro, manipulador e implacável com suas vítimas.`
+No entanto, com o passar do tempo e os rumores se espalhando, o poder da fé nas criaturas abissais cresceu — e o OctoRedsel não permaneceu indiferente.
+Mesmo sendo uma besta, desenvolveu uma forma rudimentar de adoração à luz, vendo nela não apenas um meio de atrair presas, mas como uma força sagrada, digna de devoção.
+Assim como os humanos podem ter fé, ele também tem: idolatra a luz como fonte de vida e sustento, pois é graças a ela que se alimenta.
+O OctoRedsel é considerado um verdadeiro terror das profundezas — traiçoeiro, manipulador e implacável com suas vítimas, guiado por uma fé distorcida na luz que o torna ainda mais perigoso.`
 ,
 img: "imagens/OctoRedsel Abissal.png",
 img2: "imagens/Token-OctoRedsel Abissal.png"}
