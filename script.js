@@ -1299,7 +1299,7 @@ Imune: Escuridão, Fogo`,
 bonus2: `
 {pigmento}*Atração luminosa:*{/pigmento} A luz do OctoRedsel Abissal atrai criaturas à distância. Pode causar cegueira ou confusão em quem a encara por muito tempo.
 {pigmento}*Tentáculos assassinos:*{/pigmento} Com seus tentáculos, o OctoRedsel agarra suas vítimas e as esmaga, causando 3d4 de dano + 4 de *Ácido*. Alvos atingidos devem testar Constituição ou ficam paralisados por 1 turno.
-{pigmento}*Afogamento:*{/pigmento} Pode usar a Passiva *Afogamento* sem penalidades. Pode ativar essa passiva duas vezes por combate sem custo.
+{pigmento}*Afogamento:*{/pigmento} Pode usar a Passiva *Afogar* sem penalidades. Pode ativar essa passiva duas vezes por combate sem custo.
 {pigmento}*Dissolver:*{/pigmento} O OctoRedsel se transforma em água por 2 turnos. Nesse estado, não pode atacar nem ser atacado, e pode se mover furtivamente enquanto dissolvido.
 {pigmento}*Jato de água:*{/pigmento} Dispara um forte jato de água em linha reta até 7 metros, causando 1d12 de dano de *Água* e deixando o alvo com a condição *Molhado*.
 {pigmento}*Regeneração:*{/pigmento} O OctoRedsel Abissal regenera partes do corpo perdidas sempre que está fora de combate, restaurando sua integridade física ao longo do tempo.
