@@ -192,7 +192,8 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
   "sanidadePorNivel": 2,
   "especialPorNivel": 5,
   "armaduraPorNivel": 2,
-
+        TagsCriatura: "Líquido,Irracional,Ácido",
+ TipoElementoCriatura: "Caos",
   "bru": 16, "agi": 8, "det": 10, "pre": 8, "lib": 8, "cnx": 12,
   "bruDano": 1, "agiDano": 0, "detDano": 0, "preDano": 0, "libDano": 0, "cnxDano": 0,
   "bruTest": 2, "agiTest": -2, "detTest": 0, "preTest": -2, "libTest": -2, "cnxTest": 1,
@@ -220,6 +221,8 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
     sanidadePorNivel: 4,
     especialPorNivel: 3,
     armaduraPorNivel: 2,
+            TagsCriatura: "Caça em Grupo,Irracional,Cortante",
+ TipoElementoCriatura: "Desconhecido",
     bru: 22, agi: 12, det: 11, pre: 10, lib: 13, cnx: 10,
     bruDano: 2, agiDano: 1, detDano: 1, preDano: 0, libDano: 1, cnxDano: 0,
     bruTest: 5, agiTest: 1, detTest: 1, preTest: 0, libTest: 1, cnxTest: 0,
@@ -259,6 +262,8 @@ Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um s
     sanidadePorNivel: 3,
     especialPorNivel: 0,
     armaduraPorNivel: 5,
+ TagsCriatura: "Comum,Solitário,Pequeno",
+ TipoElementoCriatura: "Caos",
     bru: 10, agi: 16, det: 12, pre: 14, lib: 12, cnx: 10,
     bruDano: 0, agiDano: 1, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
     bruTest: -1, agiTest: 3, detTest: 1, preTest: 2, libTest: 1, cnxTest: 0,
@@ -294,6 +299,8 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
   sanidadePorNivel: 1,
   especialPorNivel: 0,
   armaduraPorNivel: 3,
+  TagsCriatura: "Montaria,Elfinoria,Raro",
+   TipoElementoCriatura: "Caos",
   bru: 14, agi: 10, det: 12, pre: 16, lib: 14, cnx: 12,
   bruDano: 0, agiDano: 0, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
   bruTest: 2, agiTest: 0, detTest: 1, preTest: 3, libTest: 2, cnxTest: 1,
@@ -303,7 +310,7 @@ Vulnerável: dano Sombrio`,
   {pigmento}*Chifre Florido:*{/pigmento} Um ataque cerimonial raro realizado apenas quando o Alce se sente ameaçado. Dano esmagante: 10+1d12.
 {pigmento}*Despertar Floral:*{/pigmento} Uma vez por ano, durante o florescer das árvores em Elfinória, o Alce Florenar manifesta sua habilidade ancestral de montaria sagrada, permitindo que qualquer criatura montada nele viaje a 3x seu movimento, Requisito: Conexão DT 15 
 {pigmento}*Montaria Sagrada:*{/pigmento} Criatura naturalmente domável para montaria em cerimônias, tarefas de arado e rituais élficos. Confere bônus narrativo de respeito e conexão espiritual com as forças da natureza.`,
-  bonus3: `Animal Raro
+  bonus3: `Animal Sagrados
 Elemento – Caos`,
   Magias: `Nenhuma.`,
   Passivas: `Nenhuma.`,
@@ -326,6 +333,8 @@ Originários da região ocidental de Calisto, em Elfinória — a Terra dos Lyri
   sanidadePorNivel: 6,
   especialPorNivel: 2,
   armaduraPorNivel: 1,
+  TagsCriatura: "Montaria,Campo Aberto,Cidade",
+  TipoElementoCriatura: "Fé",
   bru: 14, agi: 17, det: 12, pre: 9, lib: 8, cnx: 11,
   bruDano: 2, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 1,
   bruTest: 2, agiTest: 3, detTest: 1, preTest: -1, libTest: -2, cnxTest: 1,
@@ -353,6 +362,8 @@ Elemento – Fé`,
   sanidadePorNivel: 4,
   especialPorNivel: 2,
   armaduraPorNivel: 1,
+  TagsCriatura: "Montaria,Oceano,Lago",
+  TipoElementoCriatura: "Caos",
   bru: 13, agi: 15, det: 12, pre: 11, lib: 10, cnx: 14,
   bruDano: 1, agiDano: 1, detDano: 0, preDano: 0, libDano: 0, cnxDano: 2,
   bruTest: 1, agiTest: 2, detTest: 1, preTest: 0, libTest: 0, cnxTest: 2,
@@ -386,6 +397,8 @@ Raros fora de seus habitats nativos, esses seres são respeitados como símbolos
   sanidadePorNivel: 4,
   especialPorNivel: 1,
   armaduraPorNivel: 1,
+  TagsCriatura: "Montaria,Savana,Raro",
+  TipoElementoCriatura: "Caos",
   bru: 15, agi: 18, det: 13, pre: 12, lib: 11, cnx: 13,
   bruDano: 2, agiDano: 2, detDano: 1, preDano: 1, libDano: 0, cnxDano: 1,
   bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: 0, cnxTest: 1,
@@ -1263,6 +1276,18 @@ const tagColors = {
     gradient: "linear-gradient(270deg, #B0BEC5, #90A4AE, #78909C, #B0BEC5)"
   },
 // Habitats Naturais
+
+"Savana":          { background: "#FDD835", color: "#6D4C41" },   // seca, dourada e terrosa  
+"Chapada":         { background: "#FBC02D", color: "#4E342E" },   // clima árido e altitudes elevadas  
+"Floresta Morta":  { background: "#A1887F", color: "#3E2723" },   // tons secos e sombrios  
+"Tundra":          { background: "#CFD8DC", color: "#37474F" },   // gélido e árido  
+"Taiga":           { background: "#90A4AE", color: "#1B5E20" },   // floresta boreal  
+"Pantanal":        { background: "#C5E1A5", color: "#33691E" },   // tropical e alagado  
+"Ilha Tropical":   { background: "#FFECB3", color: "#00695C" },   // calor, mar e verde  
+"Ruínas Antigas":  { background: "#D7CCC8", color: "#5D4037" },   // pedras antigas, tom místico  
+"Campos de Gelo":  { background: "#E1F5FE", color: "#01579B" },   // congelado e brilhante  
+"Desfiladeiro":    { background: "#FFCC80", color: "#BF360C" },   // árido e rochoso  
+"Planície Nevada": { background: "#F5F5F5", color: "#607D8B" },   // vasta e branca  
 "Floresta":        { background: "#A5D6A7", color: "#2E7D32" },   // verde folhagem
 "Selva":           { background: "#66BB6A", color: "#1B5E20" },   // mais denso
 "Montanha":        { background: "#BCAAA4", color: "#3E2723" },   // pedregoso
