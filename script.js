@@ -397,8 +397,8 @@ Raros fora de seus habitats nativos, esses seres são respeitados como símbolos
   sanidadePorNivel: 4,
   especialPorNivel: 1,
   armaduraPorNivel: 1,
-  TagsCriatura: "Montaria,Savana,Raro",
-  TipoElementoCriatura: "Caos",
+  TagsCriatura: "Montaria,Savana,Eletricidade",
+  TipoElementoCriatura: "Poder",
   bru: 15, agi: 18, det: 13, pre: 12, lib: 11, cnx: 13,
   bruDano: 2, agiDano: 2, detDano: 1, preDano: 1, libDano: 0, cnxDano: 1,
   bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: 0, cnxTest: 1,
@@ -436,6 +436,8 @@ Rápido, feroz e livre, Thandral representa a selvageria incontrolável da savan
   sanidadePorNivel: 6,
   especialPorNivel: 3,
   armaduraPorNivel: 1,
+  TagsCriatura: "Montaria,Céu,Voador",
+   TipoElementoCriatura: "Desconhecido",
   bru: 16, agi: 19, det: 14, pre: 13, lib: 11, cnx: 12,
   bruDano: 2, agiDano: 3, detDano: 1, preDano: 1, libDano: 0, cnxDano: 1,
   bruTest: 2, agiTest: 4, detTest: 2, preTest: 1, libTest: 0, cnxTest: 1,
@@ -472,7 +474,9 @@ Essas criaturas são as sentinelas do céu — livres, solenes e praticamente in
   vidaPorNivel: 13,
   sanidadePorNivel: 5,
   especialPorNivel: 3,
-  armaduraPorNivel: 0.33,
+  armaduraPorNivel: 1,
+  TagsCriatura: "Montaria,Floresta,Templo",
+  TipoElementoCriatura: "Desconhecido",
   bru: 22, agi: 16, det: 15, pre: 13, lib: 14, cnx: 10,
   bruDano: 2, agiDano: 2, detDano: 1, preDano: 1, libDano: 1, cnxDano: 0,
   bruTest: 5, agiTest: 3, detTest: 2, preTest: 1, libTest: 2, cnxTest: 0,
@@ -506,11 +510,13 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     sanidade: 10,
     especial: 8,
     armadura: 1,
-  movimento:9,
+    movimento:9,
     vidaPorNivel: 12,
     sanidadePorNivel: 4,
     especialPorNivel: 2,
     armaduraPorNivel: 3,
+    TagsCriatura: "Caça em Grupo,Gormandia,Pacífico",
+    TipoElementoCriatura: "Caos",
     bru: 14, agi: 10, det: 8, pre: 13, lib: 9, cnx: 17,
     bruDano: 1, agiDano: 0, detDano: 0, preDano: 1, libDano: 0, cnxDano: 2,
     bruTest: 2, agiTest: 0, detTest: -2, preTest: 1, libTest: -1, cnxTest: 3,
@@ -541,11 +547,13 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     sanidade: 7,
     especial: 2,
     armadura: 1,
-  movimento:6,
+    movimento:6,
     vidaPorNivel: 5,
     sanidadePorNivel: 3,
     especialPorNivel: 2,
     armaduraPorNivel: 3,
+    TagsCriatura: "Agressivo,Maldição,Ruínas Antigas",
+    TipoElementoCriatura: "Poder",
     bru: 14, agi: 14, det: 15, pre: 9, lib: 11, cnx: 8,
     bruDano: 1, agiDano: 1, detDano: 1, preDano: 0, libDano: 1, cnxDano: 0,
     bruTest: 2, agiTest: 2, detTest: 2, preTest: -1, libTest: 1, cnxTest: -2,
@@ -564,8 +572,7 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     Essas criaturas são particularmente vulneráveis a ataques de fogo e magia sagrada, que podem exorcizar ou destruir seus corpos. Quando um Esquecido é derrotado, uma aura brilhosa permanece onde ele caiu, um indício de que sua alma ainda está presa ao mundo material. Se não for atingido por fogo ou magia sagrada para selar seu destino, o Esquecido renascerá, tornando-se um pesadelo constante para aqueles que cruzam seu caminho.
     A presença dos Antigos Esquecidos é aterrorizante, especialmente em cemitérios, onde são conhecidos por assombrar os vivos. Sua capacidade de se regenerar torna a luta contra eles exaustiva e desesperadora. Por essa razão, muitos povos preferem cremar os corpos de seus entes queridos ou realizar rituais especiais de proteção, na esperança de impedir o surgimento dessas criaturas amaldiçoadas.
     Para aqueles que os enfrentam, os Antigos Esquecidos são um lembrete cruel de que até os mortos podem se tornar uma ameaça. Sua forma macabra e sua persistência sobrenatural os tornam o terror de lugares onde a morte se acumulou, e qualquer tentativa de ignorar ou minimizar sua presença pode ter consequências fatais.`,
-
-  
+    
    _imgs: [
       "imagens/AntigosEsquecidos.png"
     ],
@@ -598,6 +605,8 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     sanidadePorNivel: 3,
     especialPorNivel: 1,
     armaduraPorNivel: 3,
+    TagsCriatura: "Sultan Leste,Pântano,Pacífico",
+    TipoElementoCriatura: "Caos",
     bru: 17, agi: 8, det: 13, pre: 10, lib: 8, cnx: 15,
     bruDano: 2, agiDano: 0, detDano: 1, preDano: 0, libDano: 0, cnxDano: 1,
     bruTest: 3, agiTest: -2, detTest: 1, preTest: 0, libTest: -2, cnxTest: 2,
@@ -629,11 +638,13 @@ Os Yonkis adultos, especialmente os que estão em busca de alimento para seus fi
     sanidade: 20,
     especial: 15,
     armadura: 1,
-  movimento:6,
+    movimento:6,
     vidaPorNivel: 10,
     sanidadePorNivel: 4,
     especialPorNivel: 2,
     armaduraPorNivel: 2,
+    TagsCriatura: "Pacífico,Item,Solitário",
+    TipoElementoCriatura: "Poder",
     bru: 8, agi: 12, det: 11, pre: 16, lib: 14, cnx: 10,
     bruDano: 0, agiDano: 1, detDano: 1, preDano: 2, libDano: 1, cnxDano: 0,
     bruTest: -2, agiTest: 1, detTest: 1, preTest: 3, libTest: 2, cnxTest: 0,
@@ -670,6 +681,8 @@ Embora existam raças tritônicas no mundo, os Splendianos se diferenciam por su
     sanidadePorNivel: 4,
     especialPorNivel: 3,
     armaduraPorNivel: 2,
+    TagsCriatura: "Lendário,Templo,Ilha do Céu",
+    TipoElementoCriatura: "Fé",
     bru: 14, agi: 13, det: 25, pre: 14, lib: 11, cnx: 8,
     bruDano: 1, agiDano: 1, detDano: 2, preDano: 1, libDano: 1, cnxDano: 0,
     bruTest: 2, agiTest: 1, detTest: 6, preTest: 2, libTest: 1, cnxTest: -2,
@@ -708,6 +721,8 @@ Estudiosos especulam que os Griffinhalf possam ser descendentes dos lendários G
     sanidadePorNivel: 3,
     especialPorNivel: 2,
     armaduraPorNivel: 4,
+    TagsCriatura: "Agressivo,Caça em Grupo,Humanoide",
+    TipoElementoCriatura: "Caos",
     bru: 8, agi: 18, det: 11, pre: 12, lib: 10, cnx: 14,
     bruDano: 0, agiDano: 2, detDano: 0, preDano: 1, libDano: 0, cnxDano: 0,
     bruTest: 0, agiTest: 4, detTest: 1, preTest: 1, libTest: 0, cnxTest: 2,
@@ -766,6 +781,8 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
       sanidadePorNivel: 4,
       especialPorNivel: 4,
       armaduraPorNivel: 3,
+      TagsCriatura: "Agressivo,Caça em Grupo,Corrompido",
+      TipoElementoCriatura: "Poder",
       bru: 14, agi: 11, det: 18, pre: 12, lib: 16, cnx: 10,
       bruDano: 1, agiDano: 1, detDano: 2, preDano: 1, libDano: 2, cnxDano: 0,
       bruTest: 2, agiTest: 1, detTest: 4, preTest: 1, libTest: 3, cnxTest: 0,
@@ -805,6 +822,8 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
     "sanidadePorNivel": 1,
     "especialPorNivel": 3,
     "armaduraPorNivel": 3,
+    TagsCriatura: "Ácido,Caça em Grupo,Agressivo,Voador",
+    TipoElementoCriatura: "Caos",
 "bru": 8, "agi": 14, "det": 10, "pre": 11, "lib": 8, "cnx": 8,
   "bruDano": 0, "agiDano": 2, "detDano": 0, "preDano": 1, "libDano": 0, "cnxDano": 0,
   "bruTest": -1, "agiTest": 3, "detTest": 1, "preTest": 1, "libTest": -1, "cnxTest": -1,
@@ -817,7 +836,11 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
     "Descricao": "Criada por um desequilíbrio fúngico mágico, a Vespa-Cogumelo é frágil individualmente, mas perigosa em grupo. Vive nas sombras de florestas e ruínas úmidas, crescendo em número quando ignorada. Seu corpo é leve e repleto de fungos venenosos, com asas barulhentas e um ferrão infeccioso. O ódio fúngico se manifesta quando vê outras criaturas, atacando sem hesitar mesmo que isso leve à sua morte. Se não for eliminada rapidamente, atrai outras, transformando um pequeno combate em um pesadelo de esporos.",
     "img": "imagens/VespaCogumelo.png",
     "img2": "imagens/Token-VespaCogumelo.png"
-  },"Manifestação do Poder": {
+  }
+
+
+
+,"Manifestação do Poder": {
   vida: 409,
   sanidade: 81,
   especial: 13,
@@ -827,6 +850,8 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
   sanidadePorNivel: 9,
   especialPorNivel: 9,
   armaduraPorNivel: 3,
+  TagsCriatura: "Manifestação,Entidade,Lendário",
+  TipoElementoCriatura: "Poder",
   bru: 12, agi: 10, det: 22, pre: 16, lib: 99, cnx: 13,
   bruDano: 2, agiDano: 0, detDano: 2, preDano: 2, libDano: 18, cnxDano: 1,
   bruTest: 1, agiTest: 0, detTest: 4, preTest: 3, libTest: 30, cnxTest: 2,
@@ -872,7 +897,8 @@ Seu propósito é um só: testar a força de tudo que vive — e destruir o que 
   sanidadePorNivel: 4,
   especialPorNivel: 2,
   armaduraPorNivel: 3,
-
+    TagsCriatura: "Agressivo,Rohan,Humanoide",
+    TipoElementoCriatura: "Desconhecido",
   bru: 12,
   agi: 20,
   det: 8,
@@ -940,7 +966,8 @@ Elemento – Desconhecido`,
   sanidadePorNivel: 5,
   especialPorNivel: 5,
   armaduraPorNivel: 3,
-
+    TagsCriatura: "Agressivo,Floresta,Ácido",
+    TipoElementoCriatura: "Caos",
   bru: 10,
   agi: 10,
   det: 20,
@@ -1005,6 +1032,8 @@ Nível 3 – Cogumelos Tóxicos`,
     sanidadePorNivel: 8,
     especialPorNivel: 5,
     armaduraPorNivel: 1,
+    TagsCriatura: "Agressivo,Morte,Humanoide",
+    TipoElementoCriatura: "Fé",
     bru: 10, agi: 10, det: 10, pre: 10, lib: 20, cnx: 20,
     bruDano: 0, agiDano: 0, detDano: 0, preDano: 0, libDano: 2, cnxDano: 2,
     bruTest: 0, agiTest: 0, detTest: 0, preTest: 0, libTest: 4, cnxTest: 4,
@@ -1047,6 +1076,8 @@ Se são reais ou não, pouco importa. Seu nome já basta para silenciar conversa
     sanidadePorNivel: 5,
     especialPorNivel: 5,
     armaduraPorNivel: 3,
+    TagsCriatura: "Pacífico,Sagrado,Ilha do Céu",
+    TipoElementoCriatura: "Fé",
     bru: 20, agi: 20, det: 10, pre: 15, lib: 10, cnx: 10,
     bruDano: 2, agiDano: 2, detDano: 0, preDano: 1, libDano: 0, cnxDano: 0,
     bruTest: 4, agiTest: 4, detTest: 0, preTest: 2, libTest: 0, cnxTest: 0,
@@ -1055,9 +1086,9 @@ Vulnerável: Alma, Tremor
 Imune: Maldição, Sono`,
  bonus2: `
 {pigmento}*Presença Divina:*{/pigmento} Em templos ou igrejas, recebe +5 em testes. Aliados a até 6m ganham +4 em testes de cura. Detecta criaturas malignas em 10m e, 1x por dia, pode ver o invisível por 1 minuto.  
-{pigmento}*Voto Sagrado:*{/pigmento} Enquanto estiver em local sagrado, protege criaturas neutras ou bondosas. O voto se rompe se o templo for ameaçado.  
+{pigmento}*Voto :*{/pigmento} Enquanto estiver em local , protege criaturas neutras ou bondosas. O voto se rompe se o templo for ameaçado.  
 {pigmento}*Corpo de Fé:*{/pigmento} Reduz em 2 o dano físico recebido. 1x por dia pode remover uma maldição leve ou moderada.  
-{pigmento}*Caminho dos Justos:*{/pigmento} 1x por semana pode teleportar um aliado entre locais sagrados. Se for destruído, retorna após 7 dias com um ritual de sacerdote.  
+{pigmento}*Caminho dos Justos:*{/pigmento} 1x por semana pode teleportar um aliado entre locais s. Se for destruído, retorna após 7 dias com um ritual de sacerdote.  
 {pigmento}*Espada da Retidão:*{/pigmento} Causa 15 + 3d8 + dano da arma contra malignos; 12 + dano da arma contra demais inimigos.  
 {pigmento}*Sacrifício Final:*{/pigmento} Pode se autodestruir para causar _20d10 de dano Sagrado_ e cegueira em 6m. Não pode ser reconstruído após isso.
 `
@@ -1097,6 +1128,8 @@ Elemento – o elemento Fé`,
   sanidadePorNivel: 6,
   especialPorNivel: 4,
   armaduraPorNivel: 2,
+    TagsCriatura: "Pacífico,Fogo,Floresta",
+    TipoElementoCriatura: "Caos",
   bru: 25, agi: 15, det: 10, pre: 8, lib: 9, cnx: 16,
   bruDano: 3, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 2,
   bruTest: 5, agiTest: 3, detTest: 1, preTest: 0, libTest: 0, cnxTest: 3,
@@ -1360,14 +1393,15 @@ const tagColors = {
   "IgnisAlatus": { background: "#FF8A65", color: "#BF360C" },
 
   // Temas e Alinhamentos
-  "Sagrado": { background: "#FFEB3B", color: "#5D4037" },
-  "Maldição": { background: "#512DA8", color: "#CE93D8" },
+
   "Natural": { background: "#A5D6A7", color: "#2E7D32" },
   "Tecnológico": { background: "#B0BEC5", color: "#212121" },
   "Onírico": { background: "#D1C4E9", color: "#4A148C" },
   "Apocalíptico": { background: "#D32F2F", color: "#FAFAFA" },
 
   // Tipos de Dano
+  "Sagrado": { background: "#FFEB3B", color: "#5D4037" },
+  "Maldição": { background: "#512DA8", color: "#CE93D8" },
   "Gelo": { background: "#B3E5FC", color: "#004D40" },
   "Ácido": { background: "#A5D6A7", color: "#1B5E20" },
   "Fogo": { background: "#FF7043", color: "#BF360C" },
@@ -1418,13 +1452,15 @@ const tagColors = {
   "Bestiário": { background: "#A1887F", color: "#3E2723" },
   "Raro": { background: "#FFD54F", color: "#F57F17" },
   "Lendário": { background: "#FBC02D", color: "#212121" },
+  "Entidade": { background: "#6A1B9A", color: "#FFFFFF" },       // Roxo intenso com texto branco
+  "Manifestação": { background: "#0288D1", color: "#FFFFFF" },   // Azul vibrante com texto branco
   "Comum": { background: "#CFD8DC", color: "#263238" },
   "Hostil": { background: "#EF5350", color: "#B71C1C" },
   "Pacífico": { background: "#A5D6A7", color: "#33691E" },
 
   // Adicione mais conforme necessário...
   "Item": { background: "#FFF8E1",color: "#5D4037"},
-  "Sanidade": { background: "linear-gradient(135deg, #B39DDB, #F48FB1)",color: "#4A148C"},
+  "Sanidade": { background: "#FF00FF",color: "#5D4037"},
   "Líquido": { background: "#4FC3F7", color: "#01579B" },
 };
 
