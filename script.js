@@ -1171,9 +1171,9 @@ Elemento – o elemento Caos`,
 movimento: 7,
     TagsCriatura: "Névoa,Rohan,Aberração,Raro",
  TipoElementoCriatura: "Desconhecido",
-  bru: 10, agi: 35, det: 10, pre: 10, lib: 10, cnx: 10,
-  bruTest: 0, agiTest: 9, detTest: 0, preTest: 0, libTest: 0, cnxTest: 0,
-  bruDano: 0, agiDano: 5, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
+  bru: 10, agi: 35, det: 10, pre: 8, lib: 15, cnx: 8,
+  bruTest: 0, agiTest: 9, detTest: 0, preTest: -2, libTest: 2, cnxTest: -2,
+  bruDano: 0, agiDano: 5, detDano: 0, preDano: 0, libDano: 1, cnxDano: 0,
 
   bonus: `Resistente: Distorção, Sono  
 Vulnerável: Tempestade  
@@ -1183,7 +1183,7 @@ bonus2: `
 {pigmento}*Forma Nébulosa:*{/pigmento} Pode alterar seu tamanho à vontade, assumindo formas disformes de névoa.
 {pigmento}*Campo Enevoado:*{/pigmento} Conjura uma névoa com raio de 1km por *1d10+5 turnos*. A névoa acompanha o conjurador, mantendo-o no centro. Dentro dela, é possível escolher um ponto em até 10m onde a visão é reduzida para 1m por *1d6 turnos* ou enquanto durar a névoa.
 {pigmento}*Soberano da Névoa:*{/pigmento} Dentro da névoa, recebe *+5 em todos os testes*. Magias de névoa não têm custo e ataques causam *+1d6 de dano de névoa*. Fora da névoa, sofre *-5* nos testes e o custo das magias de névoa é dobrado.
-{pigmento}*Corpo Vaporoso:*{/pigmento} Torna-se névoa, ignorando o próximo ataque. Pode mover-se instantaneamente para qualquer ponto ou atravessar locais estreitos, desde que dentro da névoa. (Se atacar, o efeito é desfeito).
+{pigmento}*Corpo Vaporoso:*{/pigmento} Torna-se névoa, ignorando o próximo ataque. Pode se mover instantaneamente para qualquer ponto ou atravessar locais estreitos, desde que dentro da névoa. (Se atacar, o efeito é desfeito).
 {pigmento}*Predador Nebuloso:*{/pigmento} Todos os testes físicos e danos usam *Agilidade*. Pode atacar com *garras silenciosas*, causando *1d12 de dano furtivo*. O alvo faz um teste de percepção com desvantagem para perceber ou reagir.
 {pigmento}*Bloqueio Sensorial:*{/pigmento} Enquanto estiver dentro da névoa, inimigos devem passar em um teste de percepção contra sua *Agilidade* para conseguir atacá-lo.
 {pigmento}*Ilusões da Névoa:*{/pigmento} Pode criar ou silenciar vozes e sombras dentro da névoa, desorientando ou amedrontando os inimigos. Pode gerar um *clone de névoa* por *1d6 turnos*. O clone não causa dano.
@@ -1276,10 +1276,51 @@ Existe uma lenda final, rara e quase sempre suprimida: de que The book pode, em 
   get img2() {
     return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
   }
-}
+},
 
+"OctoRedsel abissal": {
+vida: 45,
+sanidade: 5,
+especial: 25,
+armadura: 0,
+vidaPorNivel: 8,
+sanidadePorNivel: 6,
+especialPorNivel: 3,
+armaduraPorNivel: 5,
+movimento: 8,
+TagsCriatura: "Fiskehavn,Oceano,Luz",
+TipoElementoCriatura: "Fé",
+bru: 20, agi: 12, det: 13, pre: 25, lib: 14, cnx: 20,
+bruTest: 4, agiTest: 1, detTest: 1, preTest: 5, libTest: 2, cnxTest: 4,
+bruDano: 2, agiDano: 0, detDano: 1, preDano: 3, libDano: 1, cnxDano: 2,
+bonus:`Resistente:Morte
+Vulnerável: Eletricidade
+Imune: Escuridão, Fogo`,
+bonus2: `
+{pigmento}*Atração luminosa:*{/pigmento} A luz do OctoRedsel Abissal atrai criaturas à distância. Pode causar cegueira ou confusão em quem a encara por muito tempo.
+{pigmento}*Tentáculos assassinos:*{/pigmento} Com seus tentáculos, o OctoRedsel agarra suas vítimas e as esmaga, causando 3d4 de dano + 4 de *Ácido*. Alvos atingidos devem testar Constituição ou ficam paralisados por 1 turno.
+{pigmento}*Afogamento:*{/pigmento} Pode usar a Passiva *Afogamento* sem penalidades. Pode ativar essa passiva duas vezes por combate sem custo.
+{pigmento}*Dissolver:*{/pigmento} O OctoRedsel se transforma em água por 2 turnos. Nesse estado, não pode atacar nem ser atacado, e pode se mover furtivamente enquanto dissolvido.
+{pigmento}*Jato de água:*{/pigmento} Dispara um forte jato de água em linha reta até 7 metros, causando 1d12 de dano de *Água* e deixando o alvo com a condição *Molhado*.
+{pigmento}*Regeneração:*{/pigmento} O OctoRedsel Abissal regenera partes do corpo perdidas sempre que está fora de combate, restaurando sua integridade física ao longo do tempo.
 
-
+`,
+bonus3:`Terror das Profundezas
+Elemento – o elemento Fé`,
+Magias: ` Nivel 3 - lança de luz, nivel 4 - luz sagrada.`,
+Passivas:` Nivel 3 - afogar.`,
+Talentos: `Enganação - requesito:Conexão `,
+Descricao: `
+O OctoRedsel Abissal é um polvo aterrorizante que vive próximo a regiões costeiras e nas profundezas de Fiskehavn. 
+Costuma criar bolsões de água com areia no fundo do oceano para capturar suas presas.
+Essa criatura atrai banhistas e outras formas de vida com sua luz, guiando-os até as profundezas para se alimentar. 
+Apesar de sua aparência luminosa, sua natureza é puramente predatória e enganosa.
+Com os rumores se espalhando, o poder da fé nas criaturas abissais cresceu, fortalecendo sua ligação com a luz. 
+O OctoRedsel é considerado um verdadeiro terror das profundezas — traiçoeiro, manipulador e implacável com suas vítimas.`
+,
+img: "imagens/OctoRedsel Abissal.png",
+img2: "imagens/Token-OctoRedsel Abissal.png"}
+	
 
 
 };
