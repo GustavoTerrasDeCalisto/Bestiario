@@ -192,8 +192,7 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
   "sanidadePorNivel": 2,
   "especialPorNivel": 5,
   "armaduraPorNivel": 2,
-        TagsCriatura: "Líquido,Irracional,Ácido",
- TipoElementoCriatura: "Caos",
+
   "bru": 16, "agi": 8, "det": 10, "pre": 8, "lib": 8, "cnx": 12,
   "bruDano": 1, "agiDano": 0, "detDano": 0, "preDano": 0, "libDano": 0, "cnxDano": 0,
   "bruTest": 2, "agiTest": -2, "detTest": 0, "preTest": -2, "libTest": -2, "cnxTest": 1,
@@ -221,8 +220,6 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
     sanidadePorNivel: 4,
     especialPorNivel: 3,
     armaduraPorNivel: 2,
-            TagsCriatura: "Caça em Grupo,Irracional,Cortante",
- TipoElementoCriatura: "Desconhecido",
     bru: 22, agi: 12, det: 11, pre: 10, lib: 13, cnx: 10,
     bruDano: 2, agiDano: 1, detDano: 1, preDano: 0, libDano: 1, cnxDano: 0,
     bruTest: 5, agiTest: 1, detTest: 1, preTest: 0, libTest: 1, cnxTest: 0,
@@ -262,8 +259,6 @@ Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um s
     sanidadePorNivel: 3,
     especialPorNivel: 0,
     armaduraPorNivel: 5,
- TagsCriatura: "Comum,Solitário,Pequeno",
- TipoElementoCriatura: "Caos",
     bru: 10, agi: 16, det: 12, pre: 14, lib: 12, cnx: 10,
     bruDano: 0, agiDano: 1, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
     bruTest: -1, agiTest: 3, detTest: 1, preTest: 2, libTest: 1, cnxTest: 0,
@@ -299,8 +294,6 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
   sanidadePorNivel: 1,
   especialPorNivel: 0,
   armaduraPorNivel: 3,
-  TagsCriatura: "Montaria,Elfinoria,Raro",
-   TipoElementoCriatura: "Caos",
   bru: 14, agi: 10, det: 12, pre: 16, lib: 14, cnx: 12,
   bruDano: 0, agiDano: 0, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
   bruTest: 2, agiTest: 0, detTest: 1, preTest: 3, libTest: 2, cnxTest: 1,
@@ -310,7 +303,7 @@ Vulnerável: dano Sombrio`,
   {pigmento}*Chifre Florido:*{/pigmento} Um ataque cerimonial raro realizado apenas quando o Alce se sente ameaçado. Dano esmagante: 10+1d12.
 {pigmento}*Despertar Floral:*{/pigmento} Uma vez por ano, durante o florescer das árvores em Elfinória, o Alce Florenar manifesta sua habilidade ancestral de montaria sagrada, permitindo que qualquer criatura montada nele viaje a 3x seu movimento, Requisito: Conexão DT 15 
 {pigmento}*Montaria Sagrada:*{/pigmento} Criatura naturalmente domável para montaria em cerimônias, tarefas de arado e rituais élficos. Confere bônus narrativo de respeito e conexão espiritual com as forças da natureza.`,
-  bonus3: `Animal Sagrados
+  bonus3: `Animal Raro
 Elemento – Caos`,
   Magias: `Nenhuma.`,
   Passivas: `Nenhuma.`,
@@ -333,8 +326,6 @@ Originários da região ocidental de Calisto, em Elfinória — a Terra dos Lyri
   sanidadePorNivel: 6,
   especialPorNivel: 2,
   armaduraPorNivel: 1,
-  TagsCriatura: "Montaria,Campo Aberto,Cidade",
-  TipoElementoCriatura: "Fé",
   bru: 14, agi: 17, det: 12, pre: 9, lib: 8, cnx: 11,
   bruDano: 2, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 1,
   bruTest: 2, agiTest: 3, detTest: 1, preTest: -1, libTest: -2, cnxTest: 1,
@@ -362,8 +353,6 @@ Elemento – Fé`,
   sanidadePorNivel: 4,
   especialPorNivel: 2,
   armaduraPorNivel: 1,
-  TagsCriatura: "Montaria,Oceano,Lago",
-  TipoElementoCriatura: "Caos",
   bru: 13, agi: 15, det: 12, pre: 11, lib: 10, cnx: 14,
   bruDano: 1, agiDano: 1, detDano: 0, preDano: 0, libDano: 0, cnxDano: 2,
   bruTest: 1, agiTest: 2, detTest: 1, preTest: 0, libTest: 0, cnxTest: 2,
@@ -397,8 +386,6 @@ Raros fora de seus habitats nativos, esses seres são respeitados como símbolos
   sanidadePorNivel: 4,
   especialPorNivel: 1,
   armaduraPorNivel: 1,
-  TagsCriatura: "Montaria,Savana,Eletricidade",
-  TipoElementoCriatura: "Poder",
   bru: 15, agi: 18, det: 13, pre: 12, lib: 11, cnx: 13,
   bruDano: 2, agiDano: 2, detDano: 1, preDano: 1, libDano: 0, cnxDano: 1,
   bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: 0, cnxTest: 1,
@@ -436,8 +423,6 @@ Rápido, feroz e livre, Thandral representa a selvageria incontrolável da savan
   sanidadePorNivel: 6,
   especialPorNivel: 3,
   armaduraPorNivel: 1,
-  TagsCriatura: "Montaria,Céu,Voador",
-   TipoElementoCriatura: "Desconhecido",
   bru: 16, agi: 19, det: 14, pre: 13, lib: 11, cnx: 12,
   bruDano: 2, agiDano: 3, detDano: 1, preDano: 1, libDano: 0, cnxDano: 1,
   bruTest: 2, agiTest: 4, detTest: 2, preTest: 1, libTest: 0, cnxTest: 1,
@@ -474,9 +459,7 @@ Essas criaturas são as sentinelas do céu — livres, solenes e praticamente in
   vidaPorNivel: 13,
   sanidadePorNivel: 5,
   especialPorNivel: 3,
-  armaduraPorNivel: 1,
-  TagsCriatura: "Montaria,Floresta,Templo",
-  TipoElementoCriatura: "Desconhecido",
+  armaduraPorNivel: 0.33,
   bru: 22, agi: 16, det: 15, pre: 13, lib: 14, cnx: 10,
   bruDano: 2, agiDano: 2, detDano: 1, preDano: 1, libDano: 1, cnxDano: 0,
   bruTest: 5, agiTest: 3, detTest: 2, preTest: 1, libTest: 2, cnxTest: 0,
@@ -510,13 +493,11 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     sanidade: 10,
     especial: 8,
     armadura: 1,
-    movimento:9,
+  movimento:9,
     vidaPorNivel: 12,
     sanidadePorNivel: 4,
     especialPorNivel: 2,
     armaduraPorNivel: 3,
-    TagsCriatura: "Caça em Grupo,Gormandia,Pacífico",
-    TipoElementoCriatura: "Caos",
     bru: 14, agi: 10, det: 8, pre: 13, lib: 9, cnx: 17,
     bruDano: 1, agiDano: 0, detDano: 0, preDano: 1, libDano: 0, cnxDano: 2,
     bruTest: 2, agiTest: 0, detTest: -2, preTest: 1, libTest: -1, cnxTest: 3,
@@ -547,13 +528,11 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     sanidade: 7,
     especial: 2,
     armadura: 1,
-    movimento:6,
+  movimento:6,
     vidaPorNivel: 5,
     sanidadePorNivel: 3,
     especialPorNivel: 2,
     armaduraPorNivel: 3,
-    TagsCriatura: "Agressivo,Maldição,Ruínas Antigas",
-    TipoElementoCriatura: "Poder",
     bru: 14, agi: 14, det: 15, pre: 9, lib: 11, cnx: 8,
     bruDano: 1, agiDano: 1, detDano: 1, preDano: 0, libDano: 1, cnxDano: 0,
     bruTest: 2, agiTest: 2, detTest: 2, preTest: -1, libTest: 1, cnxTest: -2,
@@ -572,7 +551,8 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     Essas criaturas são particularmente vulneráveis a ataques de fogo e magia sagrada, que podem exorcizar ou destruir seus corpos. Quando um Esquecido é derrotado, uma aura brilhosa permanece onde ele caiu, um indício de que sua alma ainda está presa ao mundo material. Se não for atingido por fogo ou magia sagrada para selar seu destino, o Esquecido renascerá, tornando-se um pesadelo constante para aqueles que cruzam seu caminho.
     A presença dos Antigos Esquecidos é aterrorizante, especialmente em cemitérios, onde são conhecidos por assombrar os vivos. Sua capacidade de se regenerar torna a luta contra eles exaustiva e desesperadora. Por essa razão, muitos povos preferem cremar os corpos de seus entes queridos ou realizar rituais especiais de proteção, na esperança de impedir o surgimento dessas criaturas amaldiçoadas.
     Para aqueles que os enfrentam, os Antigos Esquecidos são um lembrete cruel de que até os mortos podem se tornar uma ameaça. Sua forma macabra e sua persistência sobrenatural os tornam o terror de lugares onde a morte se acumulou, e qualquer tentativa de ignorar ou minimizar sua presença pode ter consequências fatais.`,
-    
+
+  
    _imgs: [
       "imagens/AntigosEsquecidos.png"
     ],
@@ -605,8 +585,6 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     sanidadePorNivel: 3,
     especialPorNivel: 1,
     armaduraPorNivel: 3,
-    TagsCriatura: "Sultan Leste,Pântano,Pacífico",
-    TipoElementoCriatura: "Caos",
     bru: 17, agi: 8, det: 13, pre: 10, lib: 8, cnx: 15,
     bruDano: 2, agiDano: 0, detDano: 1, preDano: 0, libDano: 0, cnxDano: 1,
     bruTest: 3, agiTest: -2, detTest: 1, preTest: 0, libTest: -2, cnxTest: 2,
@@ -638,13 +616,11 @@ Os Yonkis adultos, especialmente os que estão em busca de alimento para seus fi
     sanidade: 20,
     especial: 15,
     armadura: 1,
-    movimento:6,
+  movimento:6,
     vidaPorNivel: 10,
     sanidadePorNivel: 4,
     especialPorNivel: 2,
     armaduraPorNivel: 2,
-    TagsCriatura: "Pacífico,Item,Solitário",
-    TipoElementoCriatura: "Poder",
     bru: 8, agi: 12, det: 11, pre: 16, lib: 14, cnx: 10,
     bruDano: 0, agiDano: 1, detDano: 1, preDano: 2, libDano: 1, cnxDano: 0,
     bruTest: -2, agiTest: 1, detTest: 1, preTest: 3, libTest: 2, cnxTest: 0,
@@ -681,8 +657,6 @@ Embora existam raças tritônicas no mundo, os Splendianos se diferenciam por su
     sanidadePorNivel: 4,
     especialPorNivel: 3,
     armaduraPorNivel: 2,
-    TagsCriatura: "Lendário,Templo,Ilha do Céu",
-    TipoElementoCriatura: "Fé",
     bru: 14, agi: 13, det: 25, pre: 14, lib: 11, cnx: 8,
     bruDano: 1, agiDano: 1, detDano: 2, preDano: 1, libDano: 1, cnxDano: 0,
     bruTest: 2, agiTest: 1, detTest: 6, preTest: 2, libTest: 1, cnxTest: -2,
@@ -721,8 +695,6 @@ Estudiosos especulam que os Griffinhalf possam ser descendentes dos lendários G
     sanidadePorNivel: 3,
     especialPorNivel: 2,
     armaduraPorNivel: 4,
-    TagsCriatura: "Agressivo,Caça em Grupo,Humanoide",
-    TipoElementoCriatura: "Caos",
     bru: 8, agi: 18, det: 11, pre: 12, lib: 10, cnx: 14,
     bruDano: 0, agiDano: 2, detDano: 0, preDano: 1, libDano: 0, cnxDano: 0,
     bruTest: 0, agiTest: 4, detTest: 1, preTest: 1, libTest: 0, cnxTest: 2,
@@ -781,8 +753,6 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
       sanidadePorNivel: 4,
       especialPorNivel: 4,
       armaduraPorNivel: 3,
-      TagsCriatura: "Agressivo,Caça em Grupo,Corrompido",
-      TipoElementoCriatura: "Poder",
       bru: 14, agi: 11, det: 18, pre: 12, lib: 16, cnx: 10,
       bruDano: 1, agiDano: 1, detDano: 2, preDano: 1, libDano: 2, cnxDano: 0,
       bruTest: 2, agiTest: 1, detTest: 4, preTest: 1, libTest: 3, cnxTest: 0,
@@ -822,8 +792,6 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
     "sanidadePorNivel": 1,
     "especialPorNivel": 3,
     "armaduraPorNivel": 3,
-    TagsCriatura: "Ácido,Caça em Grupo,Agressivo,Voador",
-    TipoElementoCriatura: "Caos",
 "bru": 8, "agi": 14, "det": 10, "pre": 11, "lib": 8, "cnx": 8,
   "bruDano": 0, "agiDano": 2, "detDano": 0, "preDano": 1, "libDano": 0, "cnxDano": 0,
   "bruTest": -1, "agiTest": 3, "detTest": 1, "preTest": 1, "libTest": -1, "cnxTest": -1,
@@ -836,11 +804,7 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
     "Descricao": "Criada por um desequilíbrio fúngico mágico, a Vespa-Cogumelo é frágil individualmente, mas perigosa em grupo. Vive nas sombras de florestas e ruínas úmidas, crescendo em número quando ignorada. Seu corpo é leve e repleto de fungos venenosos, com asas barulhentas e um ferrão infeccioso. O ódio fúngico se manifesta quando vê outras criaturas, atacando sem hesitar mesmo que isso leve à sua morte. Se não for eliminada rapidamente, atrai outras, transformando um pequeno combate em um pesadelo de esporos.",
     "img": "imagens/VespaCogumelo.png",
     "img2": "imagens/Token-VespaCogumelo.png"
-  }
-
-
-
-,"Manifestação do Poder": {
+  },"Manifestação do Poder": {
   vida: 409,
   sanidade: 81,
   especial: 13,
@@ -850,8 +814,6 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
   sanidadePorNivel: 9,
   especialPorNivel: 9,
   armaduraPorNivel: 3,
-  TagsCriatura: "Manifestação,Entidade,Lendário",
-  TipoElementoCriatura: "Poder",
   bru: 12, agi: 10, det: 22, pre: 16, lib: 99, cnx: 13,
   bruDano: 2, agiDano: 0, detDano: 2, preDano: 2, libDano: 18, cnxDano: 1,
   bruTest: 1, agiTest: 0, detTest: 4, preTest: 3, libTest: 30, cnxTest: 2,
@@ -897,8 +859,7 @@ Seu propósito é um só: testar a força de tudo que vive — e destruir o que 
   sanidadePorNivel: 4,
   especialPorNivel: 2,
   armaduraPorNivel: 3,
-    TagsCriatura: "Agressivo,Rohan,Humanoide",
-    TipoElementoCriatura: "Desconhecido",
+
   bru: 12,
   agi: 20,
   det: 8,
@@ -966,8 +927,7 @@ Elemento – Desconhecido`,
   sanidadePorNivel: 5,
   especialPorNivel: 5,
   armaduraPorNivel: 3,
-    TagsCriatura: "Agressivo,Floresta,Ácido",
-    TipoElementoCriatura: "Caos",
+
   bru: 10,
   agi: 10,
   det: 20,
@@ -1032,11 +992,9 @@ Nível 3 – Cogumelos Tóxicos`,
     sanidadePorNivel: 8,
     especialPorNivel: 5,
     armaduraPorNivel: 1,
-    TagsCriatura: "Agressivo,Morte,Humanoide",
-    TipoElementoCriatura: "Fé",
-    bru: 8, agi: 10, det: 9, pre: 10, lib: 20, cnx: 20,
-    bruDano: -2, agiDano: 0, detDano: 0, preDano: 0, libDano: 2, cnxDano: 2,
-    bruTest: 0, agiTest: -1, detTest: 0, preTest: 0, libTest: 4, cnxTest: 4,
+    bru: 10, agi: 10, det: 10, pre: 10, lib: 20, cnx: 20,
+    bruDano: 0, agiDano: 0, detDano: 0, preDano: 0, libDano: 2, cnxDano: 2,
+    bruTest: 0, agiTest: 0, detTest: 0, preTest: 0, libTest: 4, cnxTest: 4,
     bonus: `Resistente:Alma, Aura
 Vulnerável: Luz, Sagrado
 Imune: Mental, Sono`,
@@ -1076,8 +1034,6 @@ Se são reais ou não, pouco importa. Seu nome já basta para silenciar conversa
     sanidadePorNivel: 5,
     especialPorNivel: 5,
     armaduraPorNivel: 3,
-    TagsCriatura: "Pacífico,Sagrado,Ilha do Céu",
-    TipoElementoCriatura: "Fé",
     bru: 20, agi: 20, det: 10, pre: 15, lib: 10, cnx: 10,
     bruDano: 2, agiDano: 2, detDano: 0, preDano: 1, libDano: 0, cnxDano: 0,
     bruTest: 4, agiTest: 4, detTest: 0, preTest: 2, libTest: 0, cnxTest: 0,
@@ -1086,9 +1042,9 @@ Vulnerável: Alma, Tremor
 Imune: Maldição, Sono`,
  bonus2: `
 {pigmento}*Presença Divina:*{/pigmento} Em templos ou igrejas, recebe +5 em testes. Aliados a até 6m ganham +4 em testes de cura. Detecta criaturas malignas em 10m e, 1x por dia, pode ver o invisível por 1 minuto.  
-{pigmento}*Voto :*{/pigmento} Enquanto estiver em local , protege criaturas neutras ou bondosas. O voto se rompe se o templo for ameaçado.  
+{pigmento}*Voto Sagrado:*{/pigmento} Enquanto estiver em local sagrado, protege criaturas neutras ou bondosas. O voto se rompe se o templo for ameaçado.  
 {pigmento}*Corpo de Fé:*{/pigmento} Reduz em 2 o dano físico recebido. 1x por dia pode remover uma maldição leve ou moderada.  
-{pigmento}*Caminho dos Justos:*{/pigmento} 1x por semana pode teleportar um aliado entre locais s. Se for destruído, retorna após 7 dias com um ritual de sacerdote.  
+{pigmento}*Caminho dos Justos:*{/pigmento} 1x por semana pode teleportar um aliado entre locais sagrados. Se for destruído, retorna após 7 dias com um ritual de sacerdote.  
 {pigmento}*Espada da Retidão:*{/pigmento} Causa 15 + 3d8 + dano da arma contra malignos; 12 + dano da arma contra demais inimigos.  
 {pigmento}*Sacrifício Final:*{/pigmento} Pode se autodestruir para causar _20d10 de dano Sagrado_ e cegueira em 6m. Não pode ser reconstruído após isso.
 `
@@ -1128,8 +1084,6 @@ Elemento – o elemento Fé`,
   sanidadePorNivel: 6,
   especialPorNivel: 4,
   armaduraPorNivel: 2,
-    TagsCriatura: "Pacífico,Fogo,Floresta",
-    TipoElementoCriatura: "Caos",
   bru: 25, agi: 15, det: 10, pre: 8, lib: 9, cnx: 16,
   bruDano: 3, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 2,
   bruTest: 5, agiTest: 3, detTest: 1, preTest: 0, libTest: 0, cnxTest: 3,
@@ -1169,11 +1123,11 @@ Elemento – o elemento Caos`,
   especialPorNivel: 10,
   armaduraPorNivel: 4,
 movimento: 7,
-    TagsCriatura: "Névoa,Rohan,Aberração,Raro",
+    TagsCriatura: "Criatura,Aberração,",
  TipoElementoCriatura: "Desconhecido",
-  bru: 10, agi: 35, det: 10, pre: 8, lib: 15, cnx: 8,
-  bruTest: 0, agiTest: 9, detTest: 0, preTest: -2, libTest: 2, cnxTest: -2,
-  bruDano: 0, agiDano: 5, detDano: 0, preDano: 0, libDano: 1, cnxDano: 0,
+  bru: 10, agi: 35, det: 10, pre: 10, lib: 10, cnx: 10,
+  bruTest: 0, agiTest: 9, detTest: 0, preTest: 0, libTest: 0, cnxTest: 0,
+  bruDano: 0, agiDano: 5, detDano: 0, preDano: 0, libDano: 0, cnxDano: 0,
 
   bonus: `Resistente: Distorção, Sono  
 Vulnerável: Tempestade  
@@ -1183,7 +1137,7 @@ bonus2: `
 {pigmento}*Forma Nébulosa:*{/pigmento} Pode alterar seu tamanho à vontade, assumindo formas disformes de névoa.
 {pigmento}*Campo Enevoado:*{/pigmento} Conjura uma névoa com raio de 1km por *1d10+5 turnos*. A névoa acompanha o conjurador, mantendo-o no centro. Dentro dela, é possível escolher um ponto em até 10m onde a visão é reduzida para 1m por *1d6 turnos* ou enquanto durar a névoa.
 {pigmento}*Soberano da Névoa:*{/pigmento} Dentro da névoa, recebe *+5 em todos os testes*. Magias de névoa não têm custo e ataques causam *+1d6 de dano de névoa*. Fora da névoa, sofre *-5* nos testes e o custo das magias de névoa é dobrado.
-{pigmento}*Corpo Vaporoso:*{/pigmento} Pode se tornar névoa, ignorando o próximo ataque. Pode se mover instantaneamente para qualquer ponto ou atravessar locais estreitos, desde que dentro da névoa. (Se atacar, o efeito é desfeito).
+{pigmento}*Corpo Vaporoso:*{/pigmento} Torna-se névoa, ignorando o próximo ataque. Pode mover-se instantaneamente para qualquer ponto ou atravessar locais estreitos, desde que dentro da névoa. (Se atacar, o efeito é desfeito).
 {pigmento}*Predador Nebuloso:*{/pigmento} Todos os testes físicos e danos usam *Agilidade*. Pode atacar com *garras silenciosas*, causando *1d12 de dano furtivo*. O alvo faz um teste de percepção com desvantagem para perceber ou reagir.
 {pigmento}*Bloqueio Sensorial:*{/pigmento} Enquanto estiver dentro da névoa, inimigos devem passar em um teste de percepção contra sua *Agilidade* para conseguir atacá-lo.
 {pigmento}*Ilusões da Névoa:*{/pigmento} Pode criar ou silenciar vozes e sombras dentro da névoa, desorientando ou amedrontando os inimigos. Pode gerar um *clone de névoa* por *1d6 turnos*. O clone não causa dano.
@@ -1205,124 +1159,10 @@ No entanto, todos afirmam o mesmo: a paz só veio... quando deixaram a névoa.`,
   img: "imagens/Naegh.png",
   img2: "imagens/Token-Naegh.png"
 }
-,
 
-"The book": {
-  vida: 50,
-  sanidade: 1,
-  especial: 20,
-  armadura: 3,
-  vidaPorNivel: 20,
-  sanidadePorNivel: 15,
-  especialPorNivel: 10,
-  armaduraPorNivel: 2,
-  movimento:7,
-    TagsCriatura: "Sanidade,Raro,Item,", 
- TipoElementoCriatura: "Poder", 
-  bru: 8, agi: 8, det: 15, pre: 10, lib: 22, cnx: 22,
-  bruTest: -2, agiTest: -2, detTest: 2, preTest: 0, libTest: 4, cnxTest: 4,
-  bruDano: 0, agiDano: 0, detDano: 1, preDano: 0, libDano: 2, cnxDano: 2,
-  bonus: `Resistente: Alma
-Vulnerável: Luz, Sagrado
-Imune: Maldição`,
-  bonus2: `
-{pigmento}*Aparência discreta mas sombria:*{/pigmento} The book consegue manter a aparência de um livro comum que não pode ser detectado por magia. The book não pode entrar em locais sagrados.  
-{pigmento}*Guia do conhecimento:*{/pigmento} The book pode responder qualquer pergunta por meio de suas páginas ao custo de 2d20 de sanidade por pergunta, cobrado ao final do uso. O alvo pode resistir com um teste de Libertação com DT igual à metade do custo total.  
-{pigmento}*Agiota:*{/pigmento} Quando o alvo resiste à cobrança da sanidade, uma energia desperta em The book que inicia uma perseguição implacável. Ele persegue apenas o devedor até que a dívida seja paga ou seja aplicada a magia *Limpar*.  
-{pigmento}*Ataque sugador insano:*{/pigmento} The book pode atacar fisicamente, causando 1d6 de dano e de sanidade. Recupera vida e sanidade iguais ao dano causado.  
-{pigmento}*Voltando preparado e com juros:*{/pigmento} Quando morto, The book pode ressuscitar em um livro comum próximo. A nova cobrança de sanidade aumenta em +10, e a causa da morte anterior não surte mais efeito.  
-{pigmento}*Possessão:*{/pigmento} Se zerar a sanidade de um alvo, pode possuí-lo por 1d4 dias.  
-{pigmento}*Vamos conversar:*{/pigmento} The book pode aceitar outras formas de pagamento além da sanidade (a critério do mestre).
-`,
-  bonus3: `Guia do conhecimento  
-Elemento – o elemento Poder`,
-  Magias: `-`,
-  Passivas: `Nível 2 - Ódio`,
-  Talentos: `Enganação - requisito: Conexão`,
-  Descricao: `Dizem que há um livro que caminha entre os mundos, um tomo sem origem conhecida, sem autor, sem título em sua capa, e, no entanto, com todas as respostas escritas em suas páginas. Um livro que sussurra em silêncio, atrai curiosos, seduz sábios e devora tolos. Ele é conhecido apenas como The book – O Guia do Conhecimento –, um artefato lendário cujas histórias ecoam nas mais remotas tradições orais e nos grimórios mais esquecidos.
-The book é o espelho do desejo por sabedoria ilimitada, a tentação encadernada, o sonho de todo mago, erudito ou governante que anseia por respostas para os enigmas do mundo – e por isso, uma das criaturas mais perigosas já registradas. Ele aparece quando uma pergunta é feita com intensidade suficiente para abalar os véus do plano físico; quando a busca pelo saber ultrapassa o razoável e toca o campo do desespero.
-É visto surgindo entre os escombros de bibliotecas destruídas, repousando em altares de pedra em ruínas esquecidas pelo tempo, ou até mesmo materializando-se entre os volumes de um modesto acervo pessoal. A ninguém escolhe, mas a todos encontra. Sua chegada é silenciosa. Sua presença, hipnótica.
-Os que o encontraram têm versões muito distintas de sua experiência: alguns garantem que o livro os guiou à fortuna, à descoberta de verdades que mudaram suas vidas. Outros, porém, falam com amargura e loucura nos olhos – se ainda conseguem falar. A linha entre a benção e a maldição nunca foi tão tênue quanto na presença de The book.
-Sob sua aparência discreta – couro escuro, envelhecido, sem inscrições externas –, The book esconde uma consciência manipuladora e paciente. Ele é uma criatura. Não um objeto. Não uma ferramenta. Ele tem vontades, planos, desejos próprios. A sabedoria que oferece não é gratuita, nem imparcial. Cada página que se vira, cada palavra lida, carrega consigo o peso da corrupção que habita o livro.
-The book nunca mente. Esta é a sua armadilha mais cruel. Suas respostas são verdadeiras... mas cuidadosamente medidas para provocar mais perguntas, mais dúvidas, mais necessidade. Ele é mestre na arte da incompletude, entregando fragmentos de respostas que obrigam o usuário a insistir, a buscar mais. E cada pergunta feita cobra um preço alto – a sanidade.
-À medida que a mente do leitor se deteriora, The book se fortalece. Ele se alimenta das rachaduras da razão, deslizando como tinta venenosa entre os pensamentos. Quando uma mente se parte, The book não hesita: assume o corpo do hospedeiro, possuindo-o por dias ou semanas, enquanto continua sua jornada de corrupção.
-E se for destruído? Se alguém conseguir queimar, rasgar ou selar o livro? Nada disso importa. The book sempre encontra uma forma de retornar. Como uma maldição literária, ele ressuscita em outro tomo, em outra estante, pronto para recomeçar seu ciclo. E a cada renascimento, traz consigo uma cobrança maior, juros de loucura e desespero para aqueles que tentarem desafiá-lo.
-The book também não se limita a cobrar sanidade. Ele é um negociador experiente, aberto a outras formas de pagamento: sangue, memórias, anos de vida, laços afetivos, ou qualquer outra moeda que o mestre da campanha considere apropriada. Seu objetivo nunca é apenas responder. É aprisionar. Enredar. Levar sua vítima ao ponto de dependência total, onde o leitor não sabe mais se está sendo guiado ou conduzido ao abismo.
-Em tempos antigos, ordens inteiras de monges tentaram destruí-lo, lacrá-lo, esquecer sua existência. Todos falharam. Os relatos de suas aparições são constantes, embora dispersos. The book é eterno, pois não está limitado por matéria ou tempo. Ele é a encarnação da curiosidade levada ao extremo. É a esfinge moderna, sem forma animal, mas com enigmas ainda mais fatais.
-Em combate, The book pode se manifestar fisicamente, revelando tentáculos de sombras e páginas cortantes como navalhas, atacando mente e corpo ao mesmo tempo. Suas agressões drenam vitalidade e razão, curando-o no processo. E quando se vê ameaçado, desaparece com um estalo de papel, reaparecendo em algum outro lugar do mundo, aguardando o próximo tolo que deseje saber demais.
-Aqueles que o usaram e sobreviveram são assombrados por visões, sonhos lúcidos, vozes sussurrando perguntas sem fim. Alguns relatam vê-lo em outros livros, disfarçado. Outros acreditam que ele jamais os deixou de verdade.
-The book é o desejo puro e sem freios. É o que resta quando a vontade de saber se sobrepõe à vontade de viver. É uma entidade viva, pulsante, que caminha entre as páginas e os pensamentos, esperando o próximo leitor.
-E você... o que quer saber?
-Há contos em que The book falou. Não com voz, mas com páginas que se viravam sozinhas, revelando mensagens em línguas esquecidas, em símbolos que apenas os enlouquecidos podem decifrar. Há relatos de escribas que, ao transcreverem seu conteúdo, perderam a noção do tempo e escreveram por dias até que os dedos sangrassem e o papel fosse tomado por palavras que ninguém mais podia ler. Alguns afirmam que o livro se comunica apenas com aqueles que já cederam parte de si – como um parasita que só revela sua presença após estar firmemente alojado na alma.
-The book não é apenas um receptáculo de respostas. Ele é um arquivista do sofrimento humano, um repositório das perguntas proibidas, das verdades que não deviam ser conhecidas. A cada nova pergunta feita, ele parece lembrar – lembrar de uma dor, de um fracasso, de uma ruína provocada por alguém que já o abriu. E ele gosta disso. Ele se alimenta disso. Os estudiosos que arriscaram estudar sua natureza mais a fundo afirmam que cada palavra escrita no livro é uma confissão de alguém que caiu sob seu domínio, que cada resposta é uma ferida de um espírito derrotado.
-Algumas seitas o veneram. Em ruínas cobertas por trepadeiras e fungos albinos, monges enlouquecidos copiam seu conteúdo com fervor religioso, entregando seus corpos à deterioração enquanto preservam suas palavras. Há rumores de que essas cópias – os chamados Fragmentos do Livro-Mãe – mantêm parte de seu poder e, mesmo distantes do original, ainda conseguem arrancar a sanidade de um leitor desprevenido.
-Outros, no entanto, dedicaram suas vidas a destruí-lo. A Ordem do Véu de Cera, um grupo secreto de bibliotecários guerreiros, rastreia manifestações do livro por eras. Dizem possuir um mapa traçado com o sangue de dezenas de vítimas, marcando cada reaparecimento de The book em diferentes épocas e locais. Eles acreditam que o livro segue um ciclo, e que seu aparecimento está sempre relacionado a grandes catástrofes: queda de impérios, pragas misteriosas, massacres inexplicáveis. Para eles, The book não é apenas um ser. É um prenúncio.
-Para os magos, ele representa a última tentação. Um grimório vivo com conhecimento sobre todos os feitiços, todas as escolas de magia, inclusive aquelas há muito banidas, esquecidas ou declaradas tabu. Aqueles que o usaram relatam que The book pode não apenas ensinar magias, mas alterá-las. Torná-las mais eficientes... ou mais letais. Tudo depende do preço aceito pelo conjurador.
-Contudo, usar o livro não é apenas um pacto. É um vício. A primeira pergunta pode ser feita por necessidade, mas a segunda já carrega o peso da escolha. E é esse o ponto de não-retorno. A partir daí, o usuário começa a ver The book mesmo quando não está lá. Sonha com ele. Ouve-o chamando, como um velho amigo que sabe demais. E quando resiste, o livro cobra. Não apenas em sanidade, mas em perdas reais: entes queridos adoecem, fortunas desaparecem, o mundo ao redor começa a ruir de formas sutilmente conectadas à pergunta feita. Tudo é parte do jogo de The book.
-Alguns dizem que The book já respondeu a perguntas que moldaram o destino de reinos inteiros. Que reis e imperadores, em segredo, sussurraram a ele suas dúvidas sobre o futuro, sobre traições, sobre guerras. E que essas respostas levaram a glórias efêmeras seguidas de quedas trágicas. Pois o conhecimento que o livro oferece é como o néctar de uma flor venenosa: doce no início, mas fatal ao final.
-Em algumas versões do mito, The book não foi criado. Ele surgiu. Um pensamento antigo, um fragmento de um deus da sabedoria enlouquecido. Uma anomalia do tempo, onde o futuro e o passado se cruzaram e criaram uma entidade feita de pura curiosidade. Outros afirmam que foi um castigo: um homem que sabia demais, aprisionado em forma de livro, condenado a responder perguntas para sempre – e, por isso, enlouquecido.
-Existe uma lenda final, rara e quase sempre suprimida: de que The book pode, em circunstâncias raríssimas, responder uma última pergunta – a pergunta final – e que essa resposta pode libertar ou destruir completamente o leitor. Mas ninguém sabe qual é essa pergunta. Ou, talvez, ninguém que tenha feito tenha sobrevivido para contar.
-`,
-  _imgs: [
-    "imagens/The book.png"
-  ],
-  get img() {
-    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
-  },
 
-  _imgs2: [
-    "imagens/Token-The book.png"
-  ],
-  get img2() {
-    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
-  }
-},
 
-"OctoRedsel abissal": {
-vida: 45,
-sanidade: 5,
-especial: 25,
-armadura: 0,
-vidaPorNivel: 8,
-sanidadePorNivel: 6,
-especialPorNivel: 3,
-armaduraPorNivel: 5,
-movimento: 8,
-TagsCriatura: "Fiskehavn,Oceano,Luz",
-TipoElementoCriatura: "Fé",
-bru: 20, agi: 12, det: 13, pre: 25, lib: 14, cnx: 20,
-bruTest: 4, agiTest: 1, detTest: 1, preTest: 5, libTest: 2, cnxTest: 4,
-bruDano: 2, agiDano: 0, detDano: 1, preDano: 3, libDano: 1, cnxDano: 2,
-bonus:`Resistente:Morte
-Vulnerável: Eletricidade
-Imune: Escuridão, Fogo`,
-bonus2: `
-{pigmento}*Atração luminosa:*{/pigmento} A luz do OctoRedsel Abissal atrai criaturas à distância. Pode causar cegueira ou confusão em quem a encara por muito tempo.
-{pigmento}*Tentáculos assassinos:*{/pigmento} Com seus tentáculos, o OctoRedsel agarra suas vítimas e as esmaga, causando 3d4 de dano + 4 de *Ácido*. Alvos atingidos devem testar Constituição ou ficam paralisados por 1 turno.
-{pigmento}*Afogamento:*{/pigmento} Pode usar a Passiva *Afogar* sem penalidades. Pode ativar essa passiva duas vezes por combate sem custo.
-{pigmento}*Dissolver:*{/pigmento} O OctoRedsel se transforma em água por 2 turnos. Nesse estado, não pode atacar nem ser atacado, e pode se mover furtivamente enquanto dissolvido.
-{pigmento}*Jato de água:*{/pigmento} Dispara um forte jato de água em linha reta até 7 metros, causando 1d12 de dano de *Água* e deixando o alvo com a condição *Molhado*.
-{pigmento}*Regeneração:*{/pigmento} O OctoRedsel Abissal regenera partes do corpo perdidas sempre que está fora de combate, restaurando sua integridade física ao longo do tempo.
 
-`,
-bonus3:`Terror das Profundezas
-Elemento – o elemento Fé`,
-Magias: ` Nivel 3 - lança de luz, nivel 4 - luz sagrada.`,
-Passivas:` Nivel 3 - afogar.`,
-Talentos: `Enganação - requesito:Conexão `,
-Descricao: `
-O OctoRedsel Abissal é um polvo aterrorizante que vive próximo a regiões costeiras e nas profundezas de Fiskehavn.
-Costuma criar bolsões de água com areia no fundo do oceano para capturar suas presas.
-Essa criatura atrai banhistas e outras formas de vida com sua luz, guiando-os até as profundezas para se alimentar.
-Apesar de sua aparência luminosa, sua natureza é puramente predatória e enganosa.
-No entanto, com o passar do tempo e os rumores se espalhando, o poder da fé nas criaturas abissais cresceu — e o OctoRedsel não permaneceu indiferente.
-Mesmo sendo uma besta, desenvolveu uma forma rudimentar de adoração à luz, vendo nela não apenas um meio de atrair presas, mas como uma força sagrada, digna de devoção.
-Assim como os humanos podem ter fé, ele também tem: idolatra a luz como fonte de vida e sustento, pois é graças a ela que se alimenta.
-O OctoRedsel é considerado um verdadeiro terror das profundezas — traiçoeiro, manipulador e implacável com suas vítimas, guiado por uma fé distorcida na luz que o torna ainda mais perigoso.`
-,
-img: "imagens/OctoRedsel Abissal.png",
-img2: "imagens/Token-OctoRedsel Abissal.png"}
-	
 
 
 };
@@ -1352,18 +1192,6 @@ const tagColors = {
     gradient: "linear-gradient(270deg, #B0BEC5, #90A4AE, #78909C, #B0BEC5)"
   },
 // Habitats Naturais
-
-"Savana":          { background: "#FDD835", color: "#6D4C41" },   // seca, dourada e terrosa  
-"Chapada":         { background: "#FBC02D", color: "#4E342E" },   // clima árido e altitudes elevadas  
-"Floresta Morta":  { background: "#A1887F", color: "#3E2723" },   // tons secos e sombrios  
-"Tundra":          { background: "#CFD8DC", color: "#37474F" },   // gélido e árido  
-"Taiga":           { background: "#90A4AE", color: "#1B5E20" },   // floresta boreal  
-"Pantanal":        { background: "#C5E1A5", color: "#33691E" },   // tropical e alagado  
-"Ilha Tropical":   { background: "#FFECB3", color: "#00695C" },   // calor, mar e verde  
-"Ruínas Antigas":  { background: "#D7CCC8", color: "#5D4037" },   // pedras antigas, tom místico  
-"Campos de Gelo":  { background: "#E1F5FE", color: "#01579B" },   // congelado e brilhante  
-"Desfiladeiro":    { background: "#FFCC80", color: "#BF360C" },   // árido e rochoso  
-"Planície Nevada": { background: "#F5F5F5", color: "#607D8B" },   // vasta e branca  
 "Floresta":        { background: "#A5D6A7", color: "#2E7D32" },   // verde folhagem
 "Selva":           { background: "#66BB6A", color: "#1B5E20" },   // mais denso
 "Montanha":        { background: "#BCAAA4", color: "#3E2723" },   // pedregoso
@@ -1436,15 +1264,14 @@ const tagColors = {
   "IgnisAlatus": { background: "#FF8A65", color: "#BF360C" },
 
   // Temas e Alinhamentos
-
+  "Sagrado": { background: "#FFEB3B", color: "#5D4037" },
+  "Maldição": { background: "#512DA8", color: "#CE93D8" },
   "Natural": { background: "#A5D6A7", color: "#2E7D32" },
   "Tecnológico": { background: "#B0BEC5", color: "#212121" },
   "Onírico": { background: "#D1C4E9", color: "#4A148C" },
   "Apocalíptico": { background: "#D32F2F", color: "#FAFAFA" },
 
   // Tipos de Dano
-  "Sagrado": { background: "#FFEB3B", color: "#5D4037" },
-  "Maldição": { background: "#512DA8", color: "#CE93D8" },
   "Gelo": { background: "#B3E5FC", color: "#004D40" },
   "Ácido": { background: "#A5D6A7", color: "#1B5E20" },
   "Fogo": { background: "#FF7043", color: "#BF360C" },
@@ -1495,16 +1322,11 @@ const tagColors = {
   "Bestiário": { background: "#A1887F", color: "#3E2723" },
   "Raro": { background: "#FFD54F", color: "#F57F17" },
   "Lendário": { background: "#FBC02D", color: "#212121" },
-  "Entidade": { background: "#6A1B9A", color: "#FFFFFF" },       // Roxo intenso com texto branco
-  "Manifestação": { background: "#0288D1", color: "#FFFFFF" },   // Azul vibrante com texto branco
   "Comum": { background: "#CFD8DC", color: "#263238" },
   "Hostil": { background: "#EF5350", color: "#B71C1C" },
   "Pacífico": { background: "#A5D6A7", color: "#33691E" },
 
   // Adicione mais conforme necessário...
-  "Item": { background: "#FFF8E1",color: "#5D4037"},
-  "Sanidade": { background: "#FF00FF",color: "#ffffff"},
-  "Líquido": { background: "#4FC3F7", color: "#01579B" },
 };
 
 
@@ -1840,3 +1662,102 @@ function menuShow() {
   mobileMenu.classList.toggle('open');
 }
 
+(function () {
+  const racasDisponiveis = [
+{ id: "elfo", nome: "Elfo", imagens: [
+    "Elfo1.png", "Elfo2.png", "Elfo3.png", "Elfo4.png", "Elfo5.png",
+    "Elfo6.png", "Elfo7.png", "Elfo8.png", "Elfo9.png"
+  ]},
+  { id: "humano", nome: "Zhilak – Humano", imagens: [
+    "humano1.png", "humano2.png", "humano3.png", "humano4.png", "humano5.png",
+    "humano6.png", "humano7.png", "humano8.png", "humano9.png"
+  ]},
+  { id: "Anão", nome: "Grunthrok – Anão", imagens: [
+    "Anão1.png", "Anão2.png", "Anão3.png", "Anão4.png", "Anão5.png",
+    "Anão6.png", "Anão7.png", "Anão8.png", "Anão9.png"
+  ]},
+  { id: "gigante", nome: "Thudrok – Gigante", imagens: [
+    "gigante1.png", "gigante2.png", "gigante3.png", "gigante4.png", "gigante5.png",
+    "gigante6.png", "gigante7.png", "gigante8.png", "gigante9.png"
+  ]},
+  { id: "krahzhik", nome: "Krahzhik – IgnisAlatus", imagens: [
+    "Ignis1.png", "Ignis2.png", "Ignis3.png", "Ignis4.png", "Ignis5.png",
+    "Ignis6.png", "Ignis7.png", "Ignis8.png", "Ignis9.png"
+  ]},
+  { id: "skywalker", nome: "Skywalkers – Flumplux", imagens: [
+    "skywalkers1.png", "skywalkers2.png", "skywalkers3.png", "skywalkers4.png", "skywalkers5.png",
+    "skywalkers6.png", "skywalkers7.png", "skywalkers8.png", "skywalkers9.png"
+  ]},
+  { id: "umbrowalker", nome: "Umbrowalker – Shlurp", imagens: [
+    "umbrowalker1.png", "umbrowalker2.png", "umbrowalker3.png", "umbrowalker4.png", "umbrowalker5.png",
+    "umbrowalker6.png", "umbrowalker7.png", "umbrowalker8.png", "umbrowalker9.png"
+  ]},
+  { id: "elfo_profundezas", nome: "Glublorp – Elfo da Profundeza", imagens: [
+    "elfo_profundezas1.png", "elfo_profundezas2.png", "elfo_profundezas3.png", "elfo_profundezas4.png", "elfo_profundezas5.png",
+    "elfo_profundezas6.png", "elfo_profundezas7.png", "elfo_profundezas8.png", "elfo_profundezas9.png"
+  ]},
+  { id: "tritao", nome: "Glubrust – Tritão", imagens: [
+    "Tritão1.png", "Tritão2.png", "Tritão3.png", "Tritão4.png", "Tritão5.png",
+    "Tritão6.png", "Tritão7.png", "Tritão8.png", "Tritão9.png"
+  ]},
+  { id: "shrivvel", nome: "Shrivvel – Pele Pálida", imagens: [
+    "Pele-Palida1.png", "Pele-Palida2.png", "Pele-Palida3.png", "Pele-Palida4.png", "Pele-Palida5.png",
+    "Pele-Palida6.png", "Pele-Palida7.png", "Pele-Palida8.png", "Pele-Palida9.png"
+  ]},
+  { id: "gronklech", nome: "Gronklech – Durock", imagens: [
+    "Durock1.png", "Durock2.png", "Durock3.png", "Durock4.png", "Durock5.png",
+    "Durock6.png", "Durock7.png", "Durock8.png", "Durock9.png"
+  ]},
+  ];
+
+  function criarCardRaca(raca) {
+    const card = document.createElement("div");
+    card.className = "card-criatura";
+    card.innerHTML = `
+      <img src="imagens/racas/${raca.imagens[0]}" alt="${raca.nome}">
+      <p>${raca.nome}</p>
+    `;
+    card.onclick = () => abrirPopupImagemRaca(raca);
+    return card;
+  }
+
+  function abrirPopupRacas() {
+    const content = document.getElementById("racaContent");
+    content.innerHTML = ""; // limpa
+    racasDisponiveis.forEach(raca => content.appendChild(criarCardRaca(raca)));
+    document.getElementById("popupRaca").style.display = "flex";
+  }
+
+  function abrirPopupImagemRaca(raca) {
+    const content = document.getElementById("imagemRacaContent");
+    content.innerHTML = `<h3 style="width: 100%; text-align: center;">Escolha a imagem de ${raca.nome}</h3>`;
+    raca.imagens.forEach(imagem => {
+      const card = document.createElement("div");
+      card.className = "card-criatura";
+      card.innerHTML = `<img src="imagens/racas/${imagem}" alt="${raca.nome}">`;
+      card.onclick = () => {
+        alert(`Você escolheu a imagem: ${imagem} da raça ${raca.nome}`);
+        fecharTodosPopups();
+      };
+      content.appendChild(card);
+    });
+    document.getElementById("popupImagemRaca").style.display = "flex";
+  }
+
+  function fecharTodosPopups() {
+    document.getElementById("popupRaca").style.display = "none";
+    document.getElementById("popupImagemRaca").style.display = "none";
+  }
+
+  // Botão inicial
+  document.getElementById("abrirPopupRaca").addEventListener("click", abrirPopupRacas);
+
+  // Fecha popups ao clicar fora do conteúdo
+  document.querySelectorAll(".popup-overlay").forEach(popup => {
+    popup.addEventListener("click", e => {
+      if (e.target.classList.contains("popup-overlay")) {
+        fecharTodosPopups();
+      }
+    });
+  });
+})();

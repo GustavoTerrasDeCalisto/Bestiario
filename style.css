@@ -799,7 +799,7 @@ button {
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0.6);
-    z-index: 1000;
+    z-index: 99999;
     justify-content: center;
     align-items: center;
 }
@@ -1070,5 +1070,16 @@ header {
   animation: wave-gradient 6s ease-in-out infinite !important;
   border: 1px solid #fff !important;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.6) !important;
+}
+
+#popupRaca p {
+  margin: 0;               /* Remove margens extras que podem “empurrar” */
+  padding: 0;              /* Remove preenchimento interno */
+  box-sizing: border-box;  /* Garante que padding/margin não quebrem layout */
+  width: 100%;             /* Faz o p ocupar toda a largura do container */
+  text-align: center;      /* Centraliza o texto, opcional */
+  overflow-wrap: break-word; /* Quebra palavras grandes para não sair do container */
+  color: white;            /* cor do texto */
+  font-size: 1.2rem;
 }
 
