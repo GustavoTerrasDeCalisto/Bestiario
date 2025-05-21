@@ -592,8 +592,66 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     },
 
     // outros dados aqui também...
+  },
+  "Ossarion Fúngico": {
+  vida: 25,
+  sanidade: 5,
+  especial: 10,
+  armadura: 8,
+  movimento: 6,
+  vidaPorNivel: 10,
+  sanidadePorNivel: 2,
+  especialPorNivel: 1,
+  armaduraPorNivel: 4,
+  TagsCriatura: "Ácido,Pântano,Agressivo,",
+  TipoElementoCriatura: "Caos",
+
+  bru: 14, agi: 8, det: 15, pre: 24, lib: 10, cnx: 8,
+  bruTest: 2, agiTest: -2, detTest: 2, preTest: 5, libTest: 0, cnxTest: -2,
+  bruDano: 1, agiDano: 0, detDano: 1, preDano: 3, libDano: 0, cnxDano: 0,
+
+  bonus: `Resistente: Ácido, Gelo
+Vulnerável: Fogo, Eletricidade
+Imune: Sangue`,
+
+  bonus2: `{pigmento}*Habilidade de Descanso Longo Fúngico:*{/pigmento} Pode adormecer fora de combate, curando _3d20 de vida_. Se sobreviveu a um combate anterior, os fungos crescem e eleva 1 nível.
+
+{pigmento}*Golpe Desesperado:*{/pigmento} Sempre ataca fisicamente. Causa _2d12 de dano ácido_ e _10 + 1d10 de dano físico_ com socos ou garradas. Usa magias raramente.
+
+{pigmento}*Cogumelos Vivos:*{/pigmento} Quando acertado, pode causar _1d12 de dano ácido_ no atacante. Se o inimigo errar, o Ossarion cura _10 + 1d10_, pois os esporos reagem com toxinas.
+
+{pigmento}*Fraqueza Extra:*{/pigmento} Quando queimado ou eletrocutado, os fungos podem ser expurgados. Ao ser derrotado, ele só permanece morto se receber dano de Fogo ou Eletricidade; caso contrário, retorna com _10 de vida_.`,
+
+  bonus3: `Aspercordys Ossuum
+Elemento – o elemento Caos`,
+
+  Magias: `Nível 3 - Cogumelos Tóxicos`,
+  Passivas: `-`,
+  Talentos: `Cura - Requisito: Libertação`,
+
+  Descricao: `As forças da natureza nunca estiveram tão coléricas. O Ossarion Fúngico surge quando colônias de fungos parasitas se espalham por flores e cadáveres, crescendo de forma descontrolada. Essas entidades se originam nos cemitérios, onde corpos são colonizados por esporos que canalizam o poder do caos natural. Não são apenas cadáveres reanimados, mas estruturas ósseas dominadas por uma consciência coletiva fúngica que busca retaliar a destruição da natureza. 
+
+Seu andar trêmulo e seus movimentos irregulares escondem uma força brutal e uma fúria silenciosa. Quando atacado, seus fungos reagem como organismos vivos, liberando toxinas para ferir e curar. Mesmo após ser vencido, sua essência caótica permite que volte à vida, desde que os fungos não sejam incinerados ou eletrocutados. 
+
+É uma representação viva da revolta da natureza diante das ações destrutivas da civilização — um aviso de que até os mortos podem se erguer se a floresta assim desejar.`,
+
+  _imgs: [
+    "imagens/Ossarion Fúngico.png",
+    "imagens/Ossarion Fúngico.png"
+  ],
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-Ossarion Fúngico.png",
+    "imagens/Token-Ossarion Fúngico.png"
+  ],
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
   }
-  
+}
+
   
   ,"Yonkis": {
     vida: 33,
