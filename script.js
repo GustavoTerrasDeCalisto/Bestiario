@@ -645,7 +645,7 @@ Seu andar trêmulo e seus movimentos irregulares escondem uma força brutal e um
 
   _imgs2: [
     "imagens/Token-Ossarion Fúngico.png",
-    "imagens/Token-Ossarion Fúngico.png"
+    "imagens/Token-Ossarion Fúngico2.png"
   ],
   get img2() {
     return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
