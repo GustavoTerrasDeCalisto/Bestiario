@@ -1082,3 +1082,28 @@ header {
   color: white;            /* cor do texto */
   font-size: 1.2rem;
 }
+
+
+#Ataquebásico {
+  color: #ffffff;          /* Cor vermelha */
+  font-weight: bold;       /* Negrito */
+  font-size: 1.1em;        /* Tamanho de fonte um pouco maior */
+  font-family: 'Arial', sans-serif; /* Fonte legível */
+  margin: 5px 0;           /* Espaçamento vertical */
+  line-height: 1.4;        /* Espaçamento entre linhas */
+  white-space: pre-wrap;   /* Para respeitar quebras de linha do texto */
+}
+
+
+.tituloAAAU {
+  font-family: 'Montserrat', 'Arial', sans-serif; /* Fonte moderna e limpa */
+  font-size: 1rem;                      /* Tamanho grande para destaque */
+  font-weight: 700;                     /* Negrito */
+  color: #f5e50b;                      /* Cor cinza escuro */
+  text-transform: uppercase;            /* Letras maiúsculas */
+  letter-spacing: 2px;                  /* Espaçamento entre letras */
+  margin: 5px 0 2px 0;                /* Margem em cima e embaixo */
+  border-bottom: 3px solid #ff6600;    /* Linha decorativa embaixo */
+  padding-bottom: 1px;                  /* Espaço entre texto e linha */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Sombra sutil para dar profundidade */
+}

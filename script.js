@@ -9,6 +9,7 @@ const creatures = {
     sanidadePorNivel: 3,
     especialPorNivel: 1,
     armaduraPorNivel: 3,
+    Ataquebásico: `2d6 de dano Cortante - Agilidade`,
     TagsCriatura: "AskVill,Floresta,Animal,",
  TipoElementoCriatura: "Caos",
     bru: 14, agi: 16, det: 12, pre: 13, lib: 8, cnx: 9,
@@ -1736,6 +1737,7 @@ function updateStats(creature, level) {
   document.getElementById('sanidade').textContent = sanidade;
   document.getElementById('especial').textContent = especial;
   document.getElementById('armadura').textContent = armadura;
+  
 }
 
 function formatBonusText(text, type = "default") {
@@ -1743,6 +1745,7 @@ function formatBonusText(text, type = "default") {
   if (type === "bonus1") className = "bonus1-paragraph";
   else if (type === "bonus2") className = "bonus2-paragraph";
   else if (type === "bonus3") className = "bonus3-paragraph";
+  else if (type === "Ataquebásico") className = "ataque-paragraph";
   else className = "bonus-paragraph";
 
   return text
@@ -1808,6 +1811,7 @@ function exibirCriatura(nome) {
   document.getElementById('bonus').innerHTML = formatBonusText(selected.bonus, "bonus1");
   document.getElementById('bonus2').innerHTML = formatBonusText(selected.bonus2, "bonus2");
   document.getElementById('bonus3').innerHTML = formatBonusText(selected.bonus3, "bonus3");
+document.getElementById('Ataquebásico').textContent = selected.Ataquebásico;
 
   images = [];
   let index = 1;
