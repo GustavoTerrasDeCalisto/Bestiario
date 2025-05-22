@@ -908,7 +908,7 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
   sanidadePorNivel: 9,
   especialPorNivel: 9,
   armaduraPorNivel: 3,
-  TagsCriatura: "Manifestação,Domínio do Poder,Entidade,Lendário",
+  TagsCriatura: "Manifestação,Domínio dos Mortos,Entidade,Lendário",
   TipoElementoCriatura: "Poder",
   bru: 12, agi: 10, det: 22, pre: 16, lib: 99, cnx: 13,
   bruDano: 2, agiDano: 0, detDano: 2, preDano: 2, libDano: 18, cnxDano: 1,
@@ -951,7 +951,7 @@ Seu propósito é um só: testar a força de tudo que vive — e destruir o que 
   sanidadePorNivel: 24,
   especialPorNivel: 12,
   armaduraPorNivel: 3,
-  TagsCriatura: "Manifestação,Sangue,Entidade,Lendário",
+  TagsCriatura: "Sangue,Domínio da Vivos,Entidade,Lendário",
   TipoElementoCriatura: "Fé",
   bru: 10, agi: 12, det: 99, pre: 18, lib: 16, cnx: 15,
   bruDano: 2, agiDano: 0, detDano: 18, preDano: 3, libDano: 2, cnxDano: 1,
@@ -1488,10 +1488,10 @@ const tagColors = {
 "Oceano":          { background: "#0288D1", color: "#E1F5FE" },   // azul profundo
 "Glacial":         { background: "#E0F7FA", color: "#006064" },   // frio e gelado
 "Céu":             { background: "#E3F2FD", color: "#0288D1" },   // aéreo
-"Domínio da Fé": { background: "#FFC107", color: "#6D4C41" }, // Energia divina e sagrada
-"Domínio do Poder": { background: "#4A148C", color: "#D1C4E9" }, // Forças energéticas e sobrenaturais
-"Domínio do Desconhecido": { background: "#CE93D8", color: "#4A148C" }, // Forças misteriosas e psíquicas
-"Domínio do Caos": { background: "#8BC34A", color: "#33691E" }, // Elementos naturais e caóticos
+"Domínio da Vivos": { background: "#FFC107", color: "#6D4C41" }, // Energia divina e sagrada
+"Domínio do Mortos": { background: "#4A148C", color: "#D1C4E9" }, // Forças energéticas e sobrenaturais
+"Domínio do Sobrenatural": { background: "#CE93D8", color: "#4A148C" }, // Forças misteriosas e psíquicas
+"Domínio da Natureza": { background: "#8BC34A", color: "#33691E" }, // Elementos naturais e caóticos
 
 	
 // Habitats Urbanos
