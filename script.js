@@ -908,13 +908,13 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
   sanidadePorNivel: 9,
   especialPorNivel: 9,
   armaduraPorNivel: 3,
-  TagsCriatura: "Manifestação,Entidade,Lendário",
+  TagsCriatura: "Manifestação,Domínio do Poder,Entidade,Lendário",
   TipoElementoCriatura: "Poder",
   bru: 12, agi: 10, det: 22, pre: 16, lib: 99, cnx: 13,
   bruDano: 2, agiDano: 0, detDano: 2, preDano: 2, libDano: 18, cnxDano: 1,
   bruTest: 1, agiTest: 0, detTest: 4, preTest: 3, libTest: 30, cnxTest: 2,
-  bonus: `Resistente: Caos
-Vulnerável: Desconhecido, Fé
+bonus: `Resistente: Desconhecido  
+Vulnerável: Caos, Fé  
 Imune: Poder`,
   bonus2: `{pigmento}*Corpo Ascendido:*{/pigmento} Transforma-se em energia pura por 2 turnos. Ataques físicos viram dano de Plasma, ignoram resistências. +4 dano, +2 testes de Brutalidade, +4 testes de Libertação. Sofre 1d10 de dano ao final do efeito.
 {pigmento}*Almas Irradiantes:*{/pigmento} Invoca almas que disparam 3d10 de dano de Alma em até 2 inimigos por 3 turnos. Teste de Libertação (DT 16) ou ficam Atordoados. Se o inimigo morrer, recupera 20 Vida e 5 Sanidade.
@@ -941,8 +941,60 @@ Seu propósito é um só: testar a força de tudo que vive — e destruir o que 
   img2: "imagens/Token-EntidadePoder.png"
 }
   
-  
-  
+  ,"A Morte de Calisto": {
+  vida: 365,
+  sanidade: 2,
+  especial: 12,
+  armadura: 11,
+  movimento: 10,
+  vidaPorNivel: 24,
+  sanidadePorNivel: 24,
+  especialPorNivel: 12,
+  armaduraPorNivel: 3,
+  TagsCriatura: "Manifestação,Sangue,Entidade,Lendário",
+  TipoElementoCriatura: "Fé",
+  bru: 10, agi: 12, det: 99, pre: 18, lib: 16, cnx: 15,
+  bruDano: 2, agiDano: 0, detDano: 18, preDano: 3, libDano: 2, cnxDano: 1,
+  bruTest: 1, agiTest: 0, detTest: 30, preTest: 4, libTest: 2, cnxTest: 1,
+bonus: `Resistente: Poder  
+Vulnerável: Desconhecido, Caos  
+Imune: Fé`,
+  bonus2: `{pigmento}*Invasão Corpórea:*{/pigmento} Quando estiver em estado de morte, pode tentar invadir o corpo de um inimigo a até 6 metros. O inimigo faz um teste de Determinação com vantagem (DT 30); a entidade rola com desvantagem. Se falhar, o corpo explode em sangue (3d10 em área de 3m) e sobra apenas um crânio marcado, de onde a Entidade renasce com vida total. Se falhar, é banida.
+{pigmento}*Foice de Sangue:*{/pigmento} Ataque normal causa 20 + 3d12 de dano de Sangue. Ao atingir, pode explodir o golpe causando 2d10 de Sangue em área de 3m.
+{pigmento}*Reanimar com Sangue:*{/pigmento} Faz o sangue dos mortos pulsar e se levantar. Reanima 1 a 12 cadáveres por vez, cada um com 50 de vida e ataque de 10 + 2d12 de Sangue. Agem em turno próprio como cópias menores da entidade.
+{pigmento}*Forma Inalvejável:*{/pigmento} Uma vez a cada 3 turnos, transforma-se em sangue líquido até o início do próximo turno. Inalvejável por ataques à distância. Pode atravessar aberturas e superfícies líquidas durante esse estado.
+{pigmento}*Explosão Corpórea:*{/pigmento} Similar à Invasão Corpórea, mas usada como ataque. Entra no corpo de um inimigo (sem testes) e o explode de dentro para fora, causando 50 + 2d12 de Sangue. O alvo faz um teste de Determinação (DT 20); se passar, sofre metade.
+{pigmento}*Maré de Calisto:*{/pigmento} A cada 4 turnos, todos os inimigos com menos de metade da vida fazem um teste de Determinação (DT 35). Quem falhar sofre 6d10 de dano de Sangue e fica Caído.
+{pigmento}*Olhar do Crânio Vivo:*{/pigmento} Os que olham diretamente para seu símbolo marcado em crânios fazem teste de Libertação (DT 25) ou ficam Atordoados por 1 turno.`,
+  bonus3: `Entidade da Fé  
+Subtipo - Sangue`,
+  Magias: `Nível 1 – Todas as Magias de Fé (usa prioritariamente Sangue).`,
+  Passivas: `Nível 2 – Todas as Passivas de Fé (usa prioritariamente Sangue).`,
+  Talentos: `Enganação - Requisito: Conexão, Diplomacia  
+Cura - Requisito: Conexão  
+Libertação - Requisito: Determinação  
+`,
+  Descricao: `A Morte de Calisto é a manifestação viva do aspecto mais sombrio e sacrificial da fé: o Sangue. Invocada por cultistas devotos que reverenciam Calisto como entidade superior, sua aparição é sempre precedida por rituais sangrentos e oferendas macabras. Os seguidores esculpem símbolos antigos em crânios de animais ou até de seres vivos, selando ali o pacto.
+Em ocasiões raríssimas, um desses crânios pulsa com vida própria. Do sangue derramado no ritual, uma forma começa a se erguer. Primeiro o crânio, depois o sangue toma forma, criando um corpo translúcido e fluido, envolto em uma longa capa negra feita com os mantos dos cultistas que se sacrificaram para chamá-la. Das veias expostas e das memórias do derramamento, brota sua arma: uma foice feita inteiramente de sangue coagulado que vibra com o peso de mil mortes.
+Ela não fala. Seu silêncio é a própria presença da sentença. Seu olhar escoa como tinta carmesim, e seu corpo pulsa como se ainda estivesse no útero de algo cósmico. Cada passo que dá é uma condenação, cada movimento é uma lembrança de que toda fé tem um preço.
+Ela é brincalhona à sua maneira. Às vezes, finge estar enfraquecida apenas para lançar-se no corpo de um inimigo, fazendo-o explodir num gesto quase teatral. Os crânios deixados para trás tornam-se portais, e sua capa negra sempre encontra o caminho de volta, regenerando sua presença.
+A Morte de Calisto é mais que uma entidade. Ela é um lembrete de que o sangue nunca seca completamente. Que o ciclo da fé, do sacrifício e do renascimento está sempre em movimento. Os reanimados que a seguem são reflexos dela mesma — sombras vermelhas que espalham seu domínio.
+Seu verdadeiro corpo, como o da Entidade do Poder, não está presente. Esta é apenas uma manifestação — um receptáculo temporário. A forma real seria devastadora demais para o mundo. Mesmo assim, sua presença temporária já é o suficiente para gerar catástrofes religiosas, desequilíbrios espirituais e surtos de loucura entre os vivos.
+Se derrotada e banida, seus seguidores choram sangue. Mas sabem que um novo crânio surgirá, e do sangue derramado, ela retornará.  
+Pois enquanto houver fé... haverá sacrifício.`,
+  img: "imagens/EntidadeSangue.png",
+  img2: "imagens/Token-EntidadeSangue.png"
+}
+
+//🌌 Desconhecido – Conhecimento  
+//bonus: `Resistente: Caos  
+//Vulnerável: Fé, Poder  
+//Imune: Desconhecido`
+
+//🌀 Caos – Loucura – Natureza  
+//bonus: `Resistente: Fé  
+//Vulnerável: Desconhecido, Poder  
+//Imune: Caos`
   
   
   ,"Carniceiras Noturnas": {
@@ -1435,10 +1487,12 @@ const tagColors = {
 "Oceano":          { background: "#0288D1", color: "#E1F5FE" },   // azul profundo
 "Glacial":         { background: "#E0F7FA", color: "#006064" },   // frio e gelado
 "Céu":             { background: "#E3F2FD", color: "#0288D1" },   // aéreo
-"Dimensão Onírica":{ background: "#D1C4E9", color: "#4A148C" },   // plano alternativo
-"Plano Infernal":  { background: "#D32F2F", color: "#FFF" },      // demoníaco
-"Plano Celestial": { background: "#FFEB3B", color: "#5D4037" },   // divino
+"Domínio da Fé": { background: "#FFC107", color: "#6D4C41" }, // Energia divina e sagrada
+"Domínio do Poder": { background: "#4A148C", color: "#D1C4E9" }, // Forças energéticas e sobrenaturais
+"Domínio do Desconhecido": { background: "#CE93D8", color: "#4A148C" }, // Forças misteriosas e psíquicas
+"Domínio do Caos": { background: "#8BC34A", color: "#33691E" }, // Elementos naturais e caóticos
 
+	
 // Habitats Urbanos
 "Vila":            { background: "#FFECB3", color: "#4E342E" },   // simples e pacata
 "Cidade":          { background: "#90A4AE", color: "#212121" },   // comum urbano
@@ -1497,7 +1551,6 @@ const tagColors = {
 
   "Natural": { background: "#A5D6A7", color: "#2E7D32" },
   "Tecnológico": { background: "#B0BEC5", color: "#212121" },
-  "Onírico": { background: "#D1C4E9", color: "#4A148C" },
   "Apocalíptico": { background: "#D32F2F", color: "#FAFAFA" },
 
   // Tipos de Dano
