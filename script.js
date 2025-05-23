@@ -653,7 +653,7 @@ Seu andar trêmulo e seus movimentos irregulares escondem uma força brutal e um
   }
 },
 
-"Califálido": {
+"Cadavérico Rubro": {
   vida: 19,
   sanidade: 2,
   especial: 2,
@@ -674,7 +674,12 @@ Vulnerável: Luz, Sagrado`,
 
   bonus2: `{pigmento}*Cuspe de Sangue:*{/pigmento} Uma vez por combate, cospe um jato de sangue fervente em cone de 3 metros. Causa _3d6 de dano de sangue_ e impõe condição 'Queimando' (dano contínuo por 2 turnos).
 {pigmento}*Sangue Fervido:*{/pigmento} Quando é atingido por um ataque corpo a corpo, o atacante sofre _1d6 de dano de sangue_ por espirro fervente, uma vez por turno.
-{pigmento}*Banimento Caótico:*{/pigmento} Se for atingido por um **crítico** de uma magia de **Luz** ou **Sagrado**, pode ser imediatamente banido (morto novamente), **mesmo que ainda tenha pontos de vida**.`,
+{pigmento}*Banimento Caótico:*{/pigmento} Se for atingido por um **crítico** de uma magia de **Luz** ou **Sagrado**, pode ser imediatamente banido (morto novamente), **mesmo que ainda tenha pontos de vida**.
+{pigmento}*Forma Variável:*{/pigmento} A aparência e os poderes do Cadavérico Rubro variam conforme o tempo entre a morte e a reanimação:
+
+- _Reanimado Rápido_ (até 6h da morte): Corpo ainda cheio de carne e sangue pulsante. Ganha **+2 em testes de Força (bruTest)** e, ao causar dano com um ataque corpo a corpo, **recupera 15 pontos de vida**, absorvendo o sangue do inimigo.
+
+- _Reanimado Tardio_ (após 24h): Corpo parcialmente esquelético, desidratado e ágil. Ganha **+2 em Agilidade (agiTest)** e **Movimento**, e seus ataques críticos causam dano **x3 ao invés de x2**. Se a arma ou habilidade já causaria mais de x2, **soma +1 ao multiplicador de crítico**.`,
 
   bonus3:`Criatura Falha da Ressurreição
 Elemento - Fé`,
@@ -683,11 +688,15 @@ Elemento - Fé`,
   Passivas: ``,
   Talentos: ``,
 
-Descricao:`Os Califálidos são o resultado de tentativas imperfeitas de reviver almas durante rituais relacionados à Calisto. Ao contrário de uma verdadeira reencarnação, são apenas ecos malformados — uma falha no tecido espiritual. Quando sangue toca um túmulo imaculado ou um corpo recém-falecido sob um rito distorcido, a alma não retorna completamente: apenas fome e instinto.
+  Descricao:`Os Cadavéricos Rubros são o resultado de tentativas imperfeitas de reviver almas durante rituais relacionados à Calisto. Ao contrário de uma verdadeira reencarnação, são apenas ecos malformados — uma falha no tecido espiritual. Quando sangue toca um túmulo imaculado ou um corpo recém-falecido sob um rito distorcido, a alma não retorna completamente: apenas fome e instinto.
 Esses seres voltam à vida com fragmentos de memória, olhos vazios e uma ânsia incessante por sangue. Eles perambulam por velórios, cemitérios e ruínas sagradas, buscando a presença dos vivos como mariposas à luz, mas apenas para consumir.
-Sua presença é marcada por um odor de ferro queimado e pelo som nauseante de sangue fervendo por dentro. Sem intelecto, sem paz, e sem propósito, os Califálidos são uma consequência viva de um mundo que tenta brincar com forças maiores do que pode controlar.
+Sua presença é marcada por um odor de ferro queimado e pelo som nauseante de sangue fervendo por dentro. Sem intelecto, sem paz, e sem propósito, os Cadavéricos Rubros são uma consequência viva de um mundo que tenta brincar com forças maiores do que pode controlar.
+
+Sua forma física varia conforme o tempo decorrido entre a morte e o ritual de reanimação: quanto mais cedo o corpo for revivido, mais carne e força ele retém — quanto mais tarde, mais seco, ágil e mortal ele se torna. Ambas as formas compartilham uma sede insaciável por sangue e uma tendência a reagir violentamente à energia sagrada.
+
 Embora possam surgir em qualquer continente, são **mais comuns no Continente do Luar** e nas **regiões sombrias de Sultan Leste**, onde rituais proibidos e o culto à morte ainda persistem em segredo.`,
- _imgs: [
+
+  _imgs: [
     "imagens/Califálido1.png",
     "imagens/Califálido1.png",
     "imagens/Califálido1.png",
@@ -701,13 +710,17 @@ Embora possam surgir em qualquer continente, são **mais comuns no Continente do
   _imgs2: [
     "imagens/Token-Califálido1.png",
     "imagens/Token-Califálido2.png",
-    "imagens/Token-Califálido3.png"
+    "imagens/Token-Califálido3.png",
+    "imagens/Token-Califálido4.png",
+    "imagens/Token-Califálido5.png",
+    "imagens/Token-Califálido6.png"
   ],
 
   get img2() {
     return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
   },
-},"Observador Sombrio": {
+}
+,"Observador Sombrio": {
   vida: 45,
   sanidade: 5,
   especial: 3,
