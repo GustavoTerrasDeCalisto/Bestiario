@@ -701,7 +701,11 @@ Embora possam surgir em qualquer continente, são **mais comuns no Continente do
     "imagens/Califálido1.png",
     "imagens/Califálido1.png",
     "imagens/Califálido1.png",
-    "imagens/Califálido1.png"
+    "imagens/Califálido1.png",
+    "imagens/Califálido1.png",
+    "imagens/Califálido1.png",
+    "imagens/Califálido2.png",
+    "imagens/Califálido3.png"
   ],
 
   get img() {
@@ -709,6 +713,9 @@ Embora possam surgir em qualquer continente, são **mais comuns no Continente do
   },
 
   _imgs2: [
+    "imagens/Token-Califálido1.png",
+    "imagens/Token-Califálido2.png",
+    "imagens/Token-Califálido3.png",
     "imagens/Token-Califálido1.png",
     "imagens/Token-Califálido2.png",
     "imagens/Token-Califálido3.png",
