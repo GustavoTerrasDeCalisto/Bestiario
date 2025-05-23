@@ -718,7 +718,7 @@ Embora possam surgir em qualquer continente, são **mais comuns no Continente do
   especialPorNivel: 2,
   armaduraPorNivel: 2,
   Ataquebásico: `3 + 1d12 de dano Cortante - Agilidade`,
-  TagsCriatura: "Rara,Agressivo,Escuridão,Undead,Poder",
+  TagsCriatura: "Escuridão,Agressivo,Raro",
   TipoElementoCriatura: "Poder",
   bru: 15, agi: 20, det: 12, pre: 8, lib: 24, cnx: 9,
   bruDano: 2, agiDano: 4, detDano: 1, preDano: 0, libDano: 5, cnxDano: 0,
