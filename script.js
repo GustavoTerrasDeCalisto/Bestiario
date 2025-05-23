@@ -553,7 +553,7 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     sanidadePorNivel: 3,
     especialPorNivel: 2,
     armaduraPorNivel: 3,
-    TagsCriatura: "Agressivo,Maldição,Ruínas Antigas",
+    TagsCriatura: "Maldição,Agressivo,Ruínas Antigas",
     TipoElementoCriatura: "Poder",
     bru: 14, agi: 14, det: 15, pre: 9, lib: 11, cnx: 8,
     bruDano: 1, agiDano: 1, detDano: 1, preDano: 0, libDano: 1, cnxDano: 0,
