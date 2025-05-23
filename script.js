@@ -651,6 +651,117 @@ Seu andar trêmulo e seus movimentos irregulares escondem uma força brutal e um
   get img2() {
     return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
   }
+},
+
+"Califálido": {
+  vida: 19,
+  sanidade: 2,
+  especial: 2,
+  armadura: 5,
+  movimento: 6,
+  vidaPorNivel: 15,
+  sanidadePorNivel: 7,
+  especialPorNivel: 2,
+  armaduraPorNivel: 3,
+  Ataquebásico: `5 + 1d10 de dano Esmagante - Brutalidade`,
+  TagsCriatura: "Sangue,Agressivo,Cidade",
+  TipoElementoCriatura: "Fé",
+  bru: 14, agi: 8, det: 18, pre: 9, lib: 11, cnx: 12,
+  bruDano: 1, agiDano: 0, detDano: 2, preDano: 0, libDano: 0, cnxDano: 0,
+  bruTest: 2, agiTest: -2, detTest: 3, preTest: -1, libTest: 1, cnxTest: 1,
+  bonus:`Resistente: Sangue, Esmagamento
+Vulnerável: Luz, Sagrado`,
+
+  bonus2: `{pigmento}*Cuspe de Sangue:*{/pigmento} Uma vez por combate, cospe um jato de sangue fervente em cone de 3 metros. Causa _3d6 de dano de sangue_ e impõe condição 'Queimando' (dano contínuo por 2 turnos).
+{pigmento}*Sangue Fervido:*{/pigmento} Quando é atingido por um ataque corpo a corpo, o atacante sofre _1d6 de dano de sangue_ por espirro fervente, uma vez por turno.
+{pigmento}*Banimento Caótico:*{/pigmento} Se for atingido por um **crítico** de uma magia de **Luz** ou **Sagrado**, pode ser imediatamente banido (morto novamente), **mesmo que ainda tenha pontos de vida**.`,
+
+  bonus3:`Criatura Falha da Ressurreição
+Elemento - Fé`,
+
+  Magias: ``,
+  Passivas: ``,
+  Talentos: ``,
+
+Descricao:`Os Califálidos são o resultado de tentativas imperfeitas de reviver almas durante rituais relacionados à Calisto. Ao contrário de uma verdadeira reencarnação, são apenas ecos malformados — uma falha no tecido espiritual. Quando sangue toca um túmulo imaculado ou um corpo recém-falecido sob um rito distorcido, a alma não retorna completamente: apenas fome e instinto.
+Esses seres voltam à vida com fragmentos de memória, olhos vazios e uma ânsia incessante por sangue. Eles perambulam por velórios, cemitérios e ruínas sagradas, buscando a presença dos vivos como mariposas à luz, mas apenas para consumir.
+Sua presença é marcada por um odor de ferro queimado e pelo som nauseante de sangue fervendo por dentro. Sem intelecto, sem paz, e sem propósito, os Califálidos são uma consequência viva de um mundo que tenta brincar com forças maiores do que pode controlar.
+Embora possam surgir em qualquer continente, são **mais comuns no Continente do Luar** e nas **regiões sombrias de Sultan Leste**, onde rituais proibidos e o culto à morte ainda persistem em segredo.`,
+ _imgs: [
+    "imagens/Califálido1.png",
+    "imagens/Califálido1.png",
+    "imagens/Califálido1.png",
+    "imagens/Califálido1.png"
+  ],
+
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-Califálido1.png",
+    "imagens/Token-Califálido2.png",
+    "imagens/Token-Califálido3.png"
+  ],
+
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+  },
+},"ObservadorSombrio": {
+  vida: 45,
+  sanidade: 5,
+  especial: 3,
+  armadura: 4,
+  movimento: 11,
+  vidaPorNivel: 18,
+  sanidadePorNivel: 4,
+  especialPorNivel: 2,
+  armaduraPorNivel: 2,
+  Ataquebásico: `3 + 1d12 de dano Cortante - Agilidade`,
+  TagsCriatura: "Rara,Agressivo,Escuridão,Undead,Poder",
+  TipoElementoCriatura: "Poder",
+  bru: 15, agi: 20, det: 12, pre: 8, lib: 24, cnx: 9,
+  bruDano: 2, agiDano: 4, detDano: 1, preDano: 0, libDano: 5, cnxDano: 0,
+  bruTest: 3, agiTest: 5, detTest: 2, preTest: 1, libTest: 6, cnxTest: 1,
+  bonus:`Resistente: Escuridão, Cortante
+Vulnerável: Luz, Sagrado`,
+
+  bonus2: `{pigmento}*Zona da Sombra:*{/pigmento} O Observador Sombrio gera uma escuridão densa de **8 metros** ao seu redor. Criaturas dentro da área **não podem causar acertos críticos** devido à exaustão visual. Para cada inimigo dentro dessa área, ele ganha **+15 de Vida Temporária**. Essa vida extra é perdida se o inimigo sair da área.
+{pigmento}*Olho Abissal:*{/pigmento} Em sua barriga se esconde um olho grotesco. Aqueles que o olham perdem **10 de Sanidade** imediatamente. Se ele conseguir **agarrar** um alvo (Teste de Agilidade para esquivar do pulo e de Brutalidade para se soltar), força a vítima a olhar diretamente para o olho, causando **perda automática de +10 de Sanidade** e **ficar Confuso por 1 turno**.
+{pigmento}*Pulo das Trevas:*{/pigmento} Uma vez por combate, pode **pular diretamente no rosto** de um alvo a até 6 metros de distância. Teste de Agilidade (CD 15) para evitar.
+{pigmento}*Sombra da Distopia (Passiva):*{/pigmento} Sempre que estiver em ambiente escuro ou sombras, recebe **+2 de movimento** e **+1 dado bônus em testes de Esquiva**.`,
+
+  bonus3:`Esqueleto corrompido pelo Elemento de Poder
+Elemento - Poder / Escuridão`,
+
+  Magias: `Sombras Ofuscantes (Nível 1)`,
+  Passivas: `Sombra da Distopia (Nível 5)`,
+  Talentos: ``,
+
+  Descricao:`Diferente dos antigos esquecidos — manifestações clássicas do Elemento Poder — o Observador Sombrio representa um caminho obscuro, corrompido pela ambição e pela rendição total ao desconhecido. Esse esqueleto, outrora um ser profundamente conectado ao Poder, ofereceu seu próprio corpo como receptáculo a uma entidade sombria de intenções desconhecidas.
+Coberto por um manto de escuridão viva, o Observador se move com leveza e letalidade. A criatura pode surgir em qualquer continente de Terras de Calisto, mas é **mais comum nas ruínas amaldiçoadas da Antiga Gormandia**, onde segredos antigos ainda sussurram entre as sombras.
+A origem desse poder não é totalmente compreendida. Alguns dizem que há algo por trás da escuridão — algo que observa e manipula através do olho abissal em sua barriga, um portal de loucura e controle. Independentemente da raça ou cultura, qualquer ser vivo que caia sob o olhar dessa aberração sente que está sendo avaliado... e condenado.`,
+
+  _imgs: [
+    "imagens/ObservadorSombrio1.png",
+    "imagens/ObservadorSombrio1.png",
+    "imagens/ObservadorSombrio1.png",
+    "imagens/ObservadorSombrio1.png"
+  ],
+
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-ObservadorSombrio1.png",
+    "imagens/Token-ObservadorSombrio2.png",
+    "imagens/Token-ObservadorSombrio2.png"
+  ],
+
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+  },
 }
 
   
