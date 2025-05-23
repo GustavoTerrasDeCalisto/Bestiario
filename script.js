@@ -677,9 +677,9 @@ Vulnerável: Luz, Sagrado`,
 {pigmento}*Banimento Caótico:*{/pigmento} Se for atingido por um **crítico** de uma magia de **Luz** ou **Sagrado**, pode ser imediatamente banido (morto novamente), **mesmo que ainda tenha pontos de vida**.
 {pigmento}*Forma Variável:*{/pigmento} A aparência e os poderes do Cadavérico Rubro variam conforme o tempo entre a morte e a reanimação:
 
-- _Reanimado Rápido_ (até 6h da morte): Corpo ainda cheio de carne e sangue pulsante. Ganha **+2 em testes de Força (bruTest)** e, ao causar dano com um ataque corpo a corpo, **recupera 15 pontos de vida**, absorvendo o sangue do inimigo.
+- _{pigmento}Reanimado Rápido{/pigmento}_ (até 6h da morte): Corpo ainda cheio de carne e sangue pulsante. Ganha **+2 em testes de Brutalidade** e, ao causar dano com um ataque corpo a corpo, **recupera 15 pontos de vida**, absorvendo o sangue do inimigo.
 
-- _Reanimado Tardio_ (após 24h): Corpo parcialmente esquelético, desidratado e ágil. Ganha **+2 em Agilidade (agiTest)** e **Movimento**, e seus ataques críticos causam dano **x3 ao invés de x2**. Se a arma ou habilidade já causaria mais de x2, **soma +1 ao multiplicador de crítico**.`,
+- _{pigmento}Reanimado Tardio{/pigmento}_ (após 24h): Corpo parcialmente esquelético, desidratado e ágil. Ganha **+2 em testes de Agilidade** e **Movimento**, e seus ataques críticos causam dano **x3 ao invés de x2**. Se a arma ou habilidade já causaria mais de x2, **soma +1 ao multiplicador de crítico**.`,
 
   bonus3:`Criatura Falha da Ressurreição
 Elemento - Fé`,
