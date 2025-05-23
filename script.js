@@ -707,7 +707,7 @@ Embora possam surgir em qualquer continente, são **mais comuns no Continente do
   get img2() {
     return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
   },
-},"ObservadorSombrio": {
+},"Observador Sombrio": {
   vida: 45,
   sanidade: 5,
   especial: 3,
