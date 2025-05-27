@@ -1595,10 +1595,9 @@ Mesmo sendo apenas uma manifestação, sua presença já causa surtos psíquicos
 E se ela for destruída, nada acontece. Pois ela jamais esteve ali, apenas em nossas mentes. Mas, inevitavelmente... voltará.`,
   img: "imagens/EntidadeDesconhecido.png",
   img2: "imagens/Token-EntidadeDesconhecido.png"
-},
+}
 	
-	
-	"Torrent - Manifestação do Caos": {
+	,"Torrent - Manifestação do Caos": {
   vida: 340,
   sanidade: 130,
   especial: 45,
@@ -1609,7 +1608,7 @@ E se ela for destruída, nada acontece. Pois ela jamais esteve ali, apenas em no
   especialPorNivel: 14,
   armaduraPorNivel: 2,
   Ataquebásico: `2d20 de dano Caos DT 12 – teste Preservação`,
-  TagsCriatura: "Manifestação,Domínio da Natureza,Entidade,Lendário",
+  TagsCriatura: "Pacífico,Domínio da Natureza,Entidade,Lendário",
   TipoElementoCriatura: "Caos",
   bru: 28, agi: 50, det: 15, pre: 99, lib: 20, cnx: 11,
   bruDano: 6, agiDano: 5, detDano: 2, preDano: 12, libDano: 2, cnxDano: 1,
