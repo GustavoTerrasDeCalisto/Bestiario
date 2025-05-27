@@ -1622,7 +1622,7 @@ bonus2: `{pigmento}*Raiva dos Ciclos:*{/pigmento} Quando o ambiente ao redor est
 {pigmento}*Sussurros das Raízes:*{/pigmento} Ao ser atacada por qualquer criatura, a entidade sussurra diretamente na mente do agressor. O alvo deve realizar um teste de Preservação (DT 15) ou ficará Confuso até o fim do próximo turno.
 {pigmento}*Ritual da Reconciliação:*{/pigmento} A entidade pode ser banida de forma pacífica se um personagem realizar uma ação sincera em benefício da natureza (plantar algo, curar um animal, limpar um rio, etc). Se feito com o coração limpo, ela se distancia, desaparecendo calmamente. Ela nunca morre: se zerar a vida, transforma-se em uma árvore com marcas espirais e se esconde na floresta.
 {pigmento}*Companheira Silvestre:*{/pigmento} Ao entrar em combate, invoca uma criatura da floresta para lutar ao seu lado. Essa criatura varia conforme o ambiente (lobo, cervo, urso, coruja, etc), com 30 de vida e 1d12 de dano físico. Ela desaparece se morta ou se o combate terminar.
-{pigmento}*Presença Inquebrável:*{/pigmento} Aqueles com forte ligação ao Caos não conseguem enfrentá-la e nem ela os ataca. Ambos se reconhecem como parte do mesmo fluxo e ignoram-se mutuamente, a menos que a natureza esteja sob risco imediato.`
+{pigmento}*Presença Inquebrável:*{/pigmento} Aqueles com forte ligação ao Caos não conseguem se enfrentar e nem ela os ataca. Ambos se reconhecem como parte do mesmo fluxo e ignoram-se mutuamente, a menos que a natureza esteja sob risco imediato.`
 ,  bonus3: `Manifestação do Caos  
 Subtipo – Entidade Primordial  
 Torrent não representa apenas o caos – ela **é** o caos.  
@@ -1630,9 +1630,7 @@ Tudo o que é mutável, imprevisível, selvagem ou impossível encontra sua orig
 
   Magias: `Nível 1 – Todas as Magias do elemento Caos.`,
   Passivas: `Nível 2 – Todas as Passivas do elemento Caos.`,
-  Talentos: `Fúria Primal - Requisito: Brutalidade  
-Caos Elemental - Requisito: Agilidade  
-Explosão Caótica - Requisito: Preservação`,
+  Talentos: `-`,
   Descricao: `Conhecida apenas como *Torrent*, essa entidade é a encarnação viva do próprio Caos. Suas formas variam: já foi vista como um cão de olhos ternos com um cachecol colorido; em outros relatos, surge como uma criatura fluida de olhos múltiplos, sussurrando verdades de outros planos.  
 Torrent não tem propósito linear. É a semente da dúvida, a mudança repentina, a correnteza que quebra a represa. Onde há ordem, ela instiga a quebra. Onde há rigidez, ela traz transformação.  
 Sua ligação com a natureza a torna tanto guardiã quanto destruidora. Atua de forma instintiva, e raramente fala — mas quando o faz, sua voz ecoa dentro da mente como um pensamento que nunca foi seu.  
