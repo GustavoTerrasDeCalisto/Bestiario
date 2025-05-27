@@ -1463,8 +1463,7 @@ Assim como os humanos podem ter fé, ele também tem: idolatra a luz como fonte 
 O OctoRedsel é considerado um verdadeiro terror das profundezas — traiçoeiro, manipulador e implacável com suas vítimas, guiado por uma fé distorcida na luz que o torna ainda mais perigoso.`
 ,
 img: "imagens/OctoRedsel Abissal.png",
-img2: "imagens/Token-OctoRedsel Abissal.png"},
-
+img2: "imagens/Token-OctoRedsel Abissal.png"}
 
 ,"Emporium - Manifestação do Poder": {
   vida: 409,
