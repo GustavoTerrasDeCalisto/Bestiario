@@ -1639,6 +1639,52 @@ Mas há quem diga que Torrent não pode ser destruída. Que mesmo morta, ela pai
 
   img: "imagens/EntidadeCaos.png",
   img2: "imagens/Token-EntidadeCaos.png"
+},"Yarúma - A Mão Pacífica da Natureza": {
+  vida: 253,
+  sanidade: 130,
+  especial: 45,
+  armadura: 16,
+  movimento: 10,
+  vidaPorNivel: 12,
+  sanidadePorNivel: 9,
+  especialPorNivel: 14,
+  armaduraPorNivel: 2,
+  Ataquebásico: `3d12 de dano Água DT 12 – teste Preservação`,
+  TagsCriatura: "Pacífico,Domínio da Natureza,Entidade,Lendário",
+  TipoElementoCriatura: "Caos",
+  bru: 45, agi: 20, det: 18, pre: 70, lib: 33, cnx: 11,
+  bruDano: 10, agiDano: 2, detDano: 2, preDano: 9, libDano: 3, cnxDano: 1,
+  bruTest: 9, agiTest: 4, detTest: 2, preTest: 14, libTest: 5, cnxTest: 1,
+  bonus: `Resistente: Fé  
+Vulnerável: Poder, Desconhecido  
+Imune: Caos`,
+  
+  bonus2: `{pigmento}*Oferta da Mão da Natureza:*{/pigmento} Ao surgir diante de mortais, Yarúma oferece uma troca justa: quem abdicar dos poderes concedidos por outras entidades poderá refazer completamente suas habilidades, alinhando-se ao elemento Caos. Este é um pacto profundo e transformador, só permitido com aprovação do mestre.  
+{pigmento}*Levitando a Essência:*{/pigmento} Yarúma domina a água ao seu redor, erguendo-a com facilidade. Pode atacar à distância, moldando correntes líquidas que atingem com força devastadora: 3d12 de dano Água, com DT 12 para resistência.  
+{pigmento}*Braço da Tempestade:*{/pigmento} Seu braço direito foi amputado por Eldoria, a antiga Entidade do Poder, durante as Guerras dos 800 Anos. No local, cresceu uma estrutura de energia pura que conduz eletricidade. Quando desejado, Yarúma desfere um golpe corpo a corpo que causa 2d12 de dano Elétrico, podendo atordoar o alvo (teste de Determinação DT 14 ou perde a próxima ação).  
+{pigmento}*Serena e Imponente:*{/pigmento} Raramente entra em combate. Sua presença é suficiente para intimidar e acalmar criaturas hostis. Qualquer criatura que iniciar combate contra Yarúma deve realizar um teste de Preservação (DT 16) ou hesita, perdendo sua primeira ação.  
+{pigmento}*Vínculo com a Floresta:*{/pigmento} Sempre acompanhada por criaturas em versões feitas de Madeira, como cervos, aves ou grandes felinos, que a protegem e vigiam os arredores. Se atacada, até 2 dessas criaturas intervêm automaticamente, cada uma com 25 de vida e ataque de 1d10 de dano físico.  
+{pigmento}*Retiro Silencioso:*{/pigmento} Ao sofrer dano crítico, Yarúma pode optar por se dissolver em névoa aquática, desaparecendo completamente da cena e retornando ao seu templo ou floresta mais próxima. Esta habilidade só pode ser usada uma vez por dia.  
+{pigmento}*Guardião dos Ciclos:*{/pigmento} Quando presencia uma ação de destruição gratuita à natureza, Yarúma assume uma postura mais firme, elevando sua armadura temporariamente em +4 e aumentando seu dano de água em +1d6 pelos próximos 2 turnos.`,
+
+  bonus3: `Manifestação do Caos  
+Subtipo – Entidade Ancestral  
+Yarúma não é apenas uma entidade: é a própria mão da natureza em sua forma mais pura e equilibrada.  
+Embora represente o Caos, sua presença não é destrutiva, mas sim transformadora e regeneradora.  
+Onde passa, a natureza se renova, mas também se impõe, lembrando aos mortais que não há poder maior que o ciclo interminável da vida, morte e renascimento.`,
+
+  Magias: `Nível 1 – Todas as Magias do elemento Caos.`,
+  Passivas: `Nível 2 – Todas as Passivas do elemento Caos.`,
+  Talentos: `-`,
+  Descricao: `Conhecida pelos povos antigos como *Yarúma*, a Mão Pacífica da Natureza, esta entidade é a manifestação viva do Caos em sua forma mais serena e sábia.  
+Diferente das representações violentas e destrutivas do Caos, Yarúma é o fluxo silencioso do rio, o brotar inesperado de uma semente, a tempestade necessária para renovar a floresta.  
+Habita florestas densas, templos esquecidos e ruínas cobertas por musgo, raramente se mostrando aos mortais, a não ser quando um desequilíbrio ameaça o ciclo natural.  
+Seus seguidores são poucos, mas devotados: druídas, xamãs e eremitas que compreendem que o Caos não é inimigo da ordem, mas sua eterna companheira.  
+Diz-se que, ao aceitar o pacto com Yarúma, um mortal renasce: troca os poderes de entidades anteriores e se une ao fluxo caótico, remodelando suas habilidades sob novos princípios.  
+Apesar de sua tranquilidade, poucos ousam enfrentá-la. Sua força é assombrosa, e sua ligação com a água e a tempestade lembram a todos que, quando necessário, a natureza não hesita em se defender.`,
+
+  img: "imagens/Yaruma-Natureza.png",
+  img2: "imagens/Token-Yaruma-Natureza.png"
 }
 
 
