@@ -1297,8 +1297,70 @@ Elemento – o elemento Caos`,
   img2: "imagens/Token-Ildtreets Hevn.png"
 }
   
-  
-  
+ , 
+  "Var'gnir": {
+  vida: 10,
+  sanidade: 3,
+  especial: 6,
+  armadura: 5,
+  movimento: 7,
+  vidaPorNivel: 5,
+  sanidadePorNivel: 3,
+  especialPorNivel: 2,
+  armaduraPorNivel: 1,
+  bru: 12, agi: 14, det: 9, pre: 18, lib: 12, cnx: 13,
+  bruTest: 1, agiTest: 2, detTest: -1, preTest: 3, libTest: 1, cnxTest: 1,
+  bruDano: 0, agiDano: 1, detDano: 0, preDano: 2, libDano: 0, cnxDano: 1,
+  Ataquebásico: `1d6 de dano Cortante - Agilidade`,
+  TagsCriatura: "Cidade,Racional,Animal,",
+  TipoElementoCriatura: "Caos",
+  bonus: `Resistente: Caos  
+Vulnerável: Sono, Água  
+Imune: Maldição`,
+  bonus2: `
+{pigmento}*Conexão de mestre e familiar:*{/pigmento}  
+Essa criatura sempre prefere ter um mestre (de preferência com atributo de Conexão 20 ou Preservação alta). Pode ser domesticada com um teste de *Adestrar Animais DT 22*.  
+<b>Efeitos:</b> bônus de +2 para testes de Percepção e Conexão quando próximo ao mestre.
+
+{pigmento}*Garra - DT15 Agilidade:*{/pigmento}  
+Causa _1d6 de dano cortante_.
+
+{pigmento}*Mordida - DT12 Agilidade:*{/pigmento}  
+Causa _1d8 de dano perfurante_.
+
+{pigmento}*Forma do Caos:*{/pigmento}  
+Assume sua verdadeira forma em combate:  
++50 de Vida, +7 de Armadura, e vantagem em testes de Agarrar.
+`,
+  bonus3: `Olho de Urd - Lealdade Felina  
+Elemento – Caos`,
+  Magias: `Nível 3 - Sombra Animal`,
+  Passivas: `--`,
+  Talentos: `Furtividade — Requisito: Agilidade`,
+  Descricao: `Esses seres preferem se estabelecer em regiões com abundância de magos ou seres altamente sensíveis à magia. Embora sejam afetuosos com usuários mágicos, raramente interagem com indivíduos sem afinidade mágica. Podem ser encontrados em qualquer parte do mundo, com variações de aparência e comportamento.
+
+Em algumas culturas, os Magikatt são temidos como presságios, enquanto em outras são cultuados como espíritos guardiões. São extremamente leais aos seus mestres, raramente desobedecendo ordens — ainda que sempre priorizem a segurança e bem-estar de seu dono.
+
+Sua inteligência vai além da de um felino comum, sendo capazes de compreender ordens complexas e até usar pequenas magias instintivamente. Quando ameaçados, revelam uma forma caótica e aterradora, que muitos acreditam ser sua verdadeira natureza mágica.`,
+  _imgs: [
+    "imagens/felino fastunfary1.png",
+    "imagens/felino fastunfary2.png"
+  ],
+
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-felino fastunfary1.png",
+    "imagens/Token-felino fastunfary2.png"
+  ],
+
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+  }
+}
+
   
   
   ,"Naegh": {
