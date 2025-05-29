@@ -1317,10 +1317,10 @@ Elemento – o elemento Caos`,
   bonus: `Resistente: Caos  
 Vulnerável: Sono, Água  
 Imune: Maldição`,
-  bonus2: `
-{pigmento}*Conexão de mestre e familiar:*{/pigmento}  
-Essa criatura sempre prefere ter um mestre (de preferência com atributo de Conexão 20 ou Preservação alta). Pode ser domesticada com um teste de *Adestrar Animais DT 22*.  
-<b>Efeitos:</b> bônus de +2 para testes de Percepção e Conexão quando próximo ao mestre.
+bonus2: `
+{pigmento}*Conexão de Mestre e Familiar:*{/pigmento}  
+Essa criatura prefere estabelecer um laço com um mestre — especialmente conjuradores com *Conexão 20+* ou alto atributo de *Preservação*. Pode ser domesticada com um teste de *Adestrar Animais DT 22*.  
+<b>Efeitos:</b> Enquanto próximo ao mestre, concede +2 em testes de Percepção e Conexão.
 
 {pigmento}*Garra - DT15 Agilidade:*{/pigmento}  
 Causa _1d6 de dano cortante_.
@@ -1329,9 +1329,18 @@ Causa _1d6 de dano cortante_.
 Causa _1d8 de dano perfurante_.
 
 {pigmento}*Forma do Caos:*{/pigmento}  
-Assume sua verdadeira forma em combate:  
-+50 de Vida, +7 de Armadura, e vantagem em testes de Agarrar.
+Em situação de combate intenso ou ao absorver magia instável, revela sua forma verdadeira:  
++50 de Vida, +7 de Armadura, e vantagem em testes de Agarrar.  
+Olhos se tornam fendas luminosas e seu corpo ganha marcas rúnicas instáveis.  
+Ganha +1 dado em magias de Dano do tipo Desconhecido.
+
+{pigmento}*Forma Pálida:*{/pigmento}  
+Quando seu mestre sofre dano mental ou a criatura é exposta a grandes concentrações de energia espiritual, assume uma forma ancestral:  
+cura 6 de de Sanidade do mestre cada turno em combate, pode atravessar objetos não mágicos, e seus ataques causam _1d12 de dano psíquico_ adicional.  
+Durante essa forma, a criatura emite sussurros incompreensíveis e torna-se difícil de mirar (desvantagem em ataques contra ela à distância).  
+Pode comunicar-se telepaticamente com qualquer ser a até 10 metros.
 `,
+
   bonus3: `Olho de Urd - Lealdade Felina  
 Elemento – Caos`,
   Magias: `Nível 3 - Sombra Animal`,
