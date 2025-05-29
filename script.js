@@ -1322,7 +1322,7 @@ bonus2: `
 Essa criatura prefere estabelecer um laço com um mestre — especialmente conjuradores com *Conexão 20+* ou alto atributo de *Preservação*. Pode ser domesticada com um teste de *Adestrar Animais DT 22*.  
 <b>Efeitos:</b> Enquanto próximo ao mestre, concede +2 em testes de Percepção e Conexão.
 
-{pigmento}*Mordida - DT15 Agilidade:*{/pigmento} - Causa _3d8 de dano perfurante_.
+{pigmento}*Mordida - DT15 Agilidade:*{/pigmento} Causa _3d8 de dano perfurante_.
 
 {pigmento}*Forma do Caos:*{/pigmento}  
 Em situação de combate intenso ou ao absorver magia instável, revela sua forma verdadeira:  
