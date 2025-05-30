@@ -1115,8 +1115,8 @@ header {
   justify-content: center;
   gap: 12px;
   margin: 20px auto; /* centralizado horizontalmente */
-  width: 80%;        /* ocupa 80% da tela */
-  max-width: auto;  /* mas nunca maior que 300px */
+width: 100vw;     /* 100% da largura da viewport (tela) */
+max-width: none;  /* Sem limite máximo */
   font-weight: bold;
   color: #999;
   font-size: 14px;
