@@ -1107,3 +1107,37 @@ header {
   padding-bottom: 1px;                  /* Espaço entre texto e linha */
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Sombra sutil para dar profundidade */
 }
+
+
+.separador-comunidade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px auto; /* centralizado horizontalmente */
+  width: 80%;        /* ocupa 80% da tela */
+  max-width: auto;  /* mas nunca maior que 300px */
+  font-weight: bold;
+  color: #999;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+
+.separador-comunidade::before,
+.separador-comunidade::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #555;
+}
+
+/* desktop */
+@media screen and (min-width: 731px) {
+  .separador-comunidade {
+    margin: 20px 50px; /* margem maior nas laterais para telas maiores */
+      max-width: auto;  /* mas nunca maior que 300px */
+
+  }
+}
