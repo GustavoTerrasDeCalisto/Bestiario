@@ -2268,7 +2268,7 @@ document.querySelector('.toggle-button').addEventListener('click', () => {
   document.querySelector('.toggle-content').classList.toggle('show');
 });
 
-document.getElementById("contador").textContent = Object.keys(creatures).length;
+document.getElementById("contador").textContent = Object.keys(creatures).length - 1;
 function menuShow() {
   const mobileMenu = document.querySelector('.mobile-menu');
   mobileMenu.classList.toggle('open');
