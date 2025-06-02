@@ -1589,11 +1589,11 @@ Sua inteligência vai além da de um felino comum, sendo capazes de compreender 
   vida: 60,
   sanidade: 50,
   especial: 40,
-  armadura: 0,
-  vidaPorNivel: 15,
-  sanidadePorNivel: 10,
-  especialPorNivel: 10,
-  armaduraPorNivel: 4,
+  armadura: 1,
+  vidaPorNivel: 5,
+  sanidadePorNivel: 3,
+  especialPorNivel: 2,
+  armaduraPorNivel: 5,
 movimento: 7,
     TagsCriatura: "Névoa,Rohan,Aberração,Raro,Comunidade",
  TipoElementoCriatura: "Desconhecido",
@@ -1601,19 +1601,19 @@ movimento: 7,
   bruTest: 0, agiTest: 9, detTest: 0, preTest: -2, libTest: 2, cnxTest: -2,
   bruDano: 0, agiDano: 5, detDano: 0, preDano: 0, libDano: 1, cnxDano: 0,
 
-  bonus: `Resistente: Distorção, Sono  
+  bonus: `Resistente: Distorção  
 Vulnerável: Tempestade  
 Imune: Névoa`,
 
 bonus2: `
-{pigmento}*Forma Nébulosa:*{/pigmento} Pode alterar seu tamanho à vontade, assumindo formas disformes de névoa.
-{pigmento}*Campo Enevoado:*{/pigmento} Conjura uma névoa com raio de 1km por *1d10+5 turnos*. A névoa acompanha o conjurador, mantendo-o no centro. Dentro dela, é possível escolher um ponto em até 10m onde a visão é reduzida para 1m por *1d6 turnos* ou enquanto durar a névoa.
-{pigmento}*Soberano da Névoa:*{/pigmento} Dentro da névoa, recebe *+5 em todos os testes*. Magias de névoa não têm custo e ataques causam *+1d6 de dano de névoa*. Fora da névoa, sofre *-5* nos testes e o custo das magias de névoa é dobrado.
-{pigmento}*Corpo Vaporoso:*{/pigmento} Pode se tornar névoa, ignorando o próximo ataque. Pode se mover instantaneamente para qualquer ponto ou atravessar locais estreitos, desde que dentro da névoa. (Se atacar, o efeito é desfeito).
-{pigmento}*Predador Nebuloso:*{/pigmento} Todos os testes físicos e danos usam *Agilidade*. Pode atacar com *garras silenciosas*, causando *1d12 de dano furtivo*. O alvo faz um teste de percepção com desvantagem para perceber ou reagir.
-{pigmento}*Bloqueio Sensorial:*{/pigmento} Enquanto estiver dentro da névoa, inimigos devem passar em um teste de percepção contra sua *Agilidade* para conseguir atacá-lo.
-{pigmento}*Ilusões da Névoa:*{/pigmento} Pode criar ou silenciar vozes e sombras dentro da névoa, desorientando ou amedrontando os inimigos. Pode gerar um *clone de névoa* por *1d6 turnos*. O clone não causa dano.
-{pigmento}*Apatia Sombria:*{/pigmento} Pode usar as habilidades passivas *Tristeza Oculta* e *Preguiçoso* sem custos até 2 vezes por combate e sem penalidades.
+{pigmento}*Forma Nébulosa:*{/pigmento} Pode alterar seu tamanho à vontade, assumindo formas disformes de névoa, mas mantém um núcleo físico perceptível que pode ser atingido com DT 20.
+{pigmento}*Campo Enevoado:*{/pigmento} Conjura uma névoa com raio de até *100 metros* por *1d6+3 turnos*. A névoa acompanha o conjurador, mantendo-o no centro. Uma vez por turno, pode escolher um ponto em até 10m onde a visão é reduzida para 1m por *1d4 turnos*.
+{pigmento}*Soberano da Névoa:*{/pigmento} Enquanto estiver dentro da névoa, recebe *+2 em testes de névoa* (mágicas ou relacionados ao ambiente). Magias de névoa têm *metade do custo*. Fora da névoa, sofre *-2* em testes mágicos e magias de névoa têm custo dobrado.
+{pigmento}*Corpo Vaporoso:*{/pigmento} Pode se tornar névoa por *1 turno*, ignorando o próximo ataque simples (não mágicos nem em área). Não pode atacar ou usar habilidades ofensivas nesse estado. Só pode ser usado 1 vez a cada 3 turnos.
+{pigmento}*Predador Nebuloso:*{/pigmento} Pode usar *Agilidade* no lugar de *Brutalidade* apenas para testes de ataque corpo a corpo com as garras silenciosas. Causa *1d10 de dano furtivo*. Alvo faz teste de percepção (DT 15) para reagir.
+{pigmento}*Bloqueio Sensorial:*{/pigmento} Enquanto estiver dentro da névoa, inimigos devem passar em um teste de percepção (DT 18) para localizá-lo com precisão. Se falharem, atacam com desvantagem.
+{pigmento}*Ilusões da Névoa:*{/pigmento} Pode criar vozes e sombras ilusórias na névoa para confundir inimigos. Pode gerar um *clone de névoa* (sem dano) por *1d4 turnos*. Clone é destruído ao primeiro impacto e não pode interagir com o ambiente.
+{pigmento}*Apatia Sombria:*{/pigmento} Pode ativar uma vez por combate a habilidade *Tristeza Oculta* ou *Preguiçoso* sem custo e sem penalidades. Caso use novamente, sofre *-2 em todos os testes* por 2 turnos.
 `
 ,
 
