@@ -1067,9 +1067,9 @@ Elemento – o elemento Caos`,
   Ataquebásico: `2d12 de dano Cortante - Agilidade`,
   TagsCriatura: "Maldição,Metrópole,Raro",
   TipoElementoCriatura: "Desconhecido",
-  bru: 14, agi: 13, det: 16, pre: 11, lib: 8, cnx: 6,
-  bruDano: 1, agiDano: 1, detDano: 2, preDano: 1, libDano: 0, cnxDano: -1,
-  bruTest: 2, agiTest: 1, detTest: 3, preTest: 0, libTest: -1, cnxTest: -2,
+  bru: 12, agi: 14, det: 20, pre: 13, lib: 9, cnx: 15,
+  bruDano: 0, agiDano: 2, detDano: 3, preDano: 1, libDano: 0, cnxDano: 2,
+  bruTest: 1, agiTest: 2, detTest: 4, preTest: 1, libTest: -1, cnxTest: 3,
   bonus: `Resistente: Maldição  
 Vulnerável: Luz
 Vulnerável: Cortante
