@@ -1054,7 +1054,60 @@ Elemento – o elemento Caos`,
 }
 
   
-  
+  ,"Loira do Banheiro": {
+  vida: 110,
+  sanidade: 1,
+  especial: 0,
+  armadura: 5,
+  movimento: 7,
+  vidaPorNivel: 6,
+  sanidadePorNivel: 2,
+  especialPorNivel: 0,
+  armaduraPorNivel: 4,
+  Ataquebásico: `2d12 de dano Cortante - Agilidade`,
+  TagsCriatura: "Maldição,Metrópole,Raro",
+  TipoElementoCriatura: "Desconhecido",
+  bru: 14, agi: 13, det: 16, pre: 11, lib: 8, cnx: 6,
+  bruDano: 1, agiDano: 1, detDano: 2, preDano: 1, libDano: 0, cnxDano: -1,
+  bruTest: 2, agiTest: 1, detTest: 3, preTest: 0, libTest: -1, cnxTest: -2,
+  bonus: `Resistente: Maldição  
+Vulnerável: Luz
+Vulnerável: Cortante
+Vulnerável: Distorção`,
+  bonus2: `{pigmento}*Gritos de Dor - dano de maldição em área (5m):*{/pigmento} _3d20+8 de dano de Maldição_. Teste de **Determinação** reduz pela metade.  
+{pigmento}*Possessão - até 9m:*{/pigmento} alvo realiza teste de **Determinação**. Se falhar, será controlado no próximo turno.  
+{pigmento}*Invadir a Boca - brutalidade:*{/pigmento} enfia a mão dentro da boca do alvo causando _4d10 de dano de Sangue_. Alvo faz teste de **Agilidade** para evitar ser agarrado. Para se soltar: **Brutalidade**.  
+{pigmento}*Manifestação por Invocação:*{/pigmento} só pode surgir por meio de um ritual com intenção (como brincadeiras escolares, cultos infantis ou desafios de coragem).`,
+  bonus3: `A Lenda Urbana Encarnada  
+Elemento - Maldição`,
+  Magias: `Nível 6 - <a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=lan%C3%A7ar%20a%20magia.-,Olho%20do%20Desespero">Olho do Desespero</a>,  
+Nível 6 - <a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,Eco%20da%20Dor">Eco da Dor</a>`,
+  Passivas: `Nível 1 - Invocação Ritualística: só aparece por meio de rituais específicos, geralmente realizados por crianças ou adolescentes.`,
+  Talentos: `Possessão, Grito Espiritual, Aterrorizante`,
+  Descricao: `Conhecida entre as crianças e adolescentes das escolas de Calisto como a "jovem loira que aparece nos banheiros", esta entidade nasceu da lenda repetida e temida por tantos. Sempre vestida de branco, com algodões nos ouvidos, nariz ou boca, ela surge como fruto de brincadeiras que escaparam do controle.  
+Originada de rituais infantojuvenis — como bater na porta do banheiro, repetir palavras amaldiçoadas ou falar palavrões —, a Loira do Banheiro é hoje mais do que um mito.  
+O medo coletivo, aliado a cultos obscuros, deu-lhe forma em Calisto. Apesar de sua natureza brincalhona em sua origem, o culto acabou invocando algo muito mais perigoso. Agora, a Loira do Banheiro não apenas assombra, mas **grita, possui e invade** com brutalidade os corpos daqueles que a desafiam.  
+Ela representa o limite entre a inocência da imaginação e a manifestação cruel da fé irracional e da superstição.`,
+  _imgs: [
+    "imagens/LoiraBanheiro1.png",
+    "imagens/LoiraBanheiro1.png",
+    "imagens/LoiraBanheiro1.png"
+  ],
+
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-LoiraBanheiro1.png",
+    "imagens/Token-LoiraBanheiro1.png"
+  ],
+
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+  }
+}
+
   
   ,"Paralios": {
     vida: 110,
