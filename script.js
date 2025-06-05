@@ -1084,9 +1084,12 @@ Elemento - Maldição`,
 Nível 3 - Eco da Dor`,
   Passivas: `-`,
   Talentos: `-`,
- Descricao:`Conhecida entre as crianças como "a jovem loira que aparece nos banheiros dos salões de aprendizado", a Loira do Banheiro é uma lenda urbana que ganhou forma em Terras de Calisto através da força do medo coletivo. Usando vestido branco e com algodões cobrindo narinas, ouvidos ou boca, sua aparência é perturbadora e simbólica.  
+ Descricao:`Conhecida entre as crianças como "a jovem loira que aparece nos banheiros dos salões de aprendizado", a Loira do Banheiro é uma lenda urbana que ganhou forma em Terras de Calisto através da força do medo coletivo e do culto obsessivo de alguns loucos que passaram a venerá-la.  
+Usando vestido branco e com algodões cobrindo narinas, ouvidos ou boca, sua aparência é perturbadora e simbólica.  
+
 Seu surgimento está condicionado a rituais e brincadeiras específicas que invocam sua presença, causando medo e confusão nas vítimas.  
-Apesar de não ser uma criatura poderosa em força física, sua capacidade de possuir e causar dano maldito a torna um adversário perigoso em ambientes fechados e sagrados para o aprendizado dos jovens.`
+Apesar de não ser uma criatura poderosa em força física, sua capacidade de possuir e causar dano maldito a torna um adversário perigoso em ambientes fechados e sagrados para o aprendizado dos jovens.  
+O culto e a obsessão desses fanáticos ajudaram a dar forma à criatura, tornando-a uma entidade que só pode ser manifestada por invocação, alimentando o medo e a superstição entre os mais jovens.`
 ,
   _imgs: [
     "imagens/LoiraBanheiro1.png",
