@@ -1080,10 +1080,10 @@ Vulnerável: Distorção`,
 {pigmento}*Manifestação por Invocação:*{/pigmento} só pode surgir por meio de um ritual com intenção (como brincadeiras escolares, cultos infantis ou desafios de coragem).`,
   bonus3: `A Lenda Urbana Encarnada  
 Elemento - Maldição`,
-  Magias: `Nível 6 - <a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=lan%C3%A7ar%20a%20magia.-,Olho%20do%20Desespero">Olho do Desespero</a>,  
-Nível 6 - <a href="https://terrasdecalistoficha.wordpress.com/magias/#:~:text=do%20Alvo%3A%20Determina%C3%A7%C3%A3o-,Eco%20da%20Dor">Eco da Dor</a>`,
-  Passivas: `Nível 1 - Invocação Ritualística: só aparece por meio de rituais específicos, geralmente realizados por crianças ou adolescentes.`,
-  Talentos: `Possessão, Grito Espiritual, Aterrorizante`,
+  Magias: `Nível 1 -Olho do Desespero,  
+Nível 3 - Eco da Dor`,
+  Passivas: `-`,
+  Talentos: `-`,
   Descricao: `Conhecida entre as crianças e adolescentes das escolas de Calisto como a "jovem loira que aparece nos banheiros", esta entidade nasceu da lenda repetida e temida por tantos. Sempre vestida de branco, com algodões nos ouvidos, nariz ou boca, ela surge como fruto de brincadeiras que escaparam do controle.  
 Originada de rituais infantojuvenis — como bater na porta do banheiro, repetir palavras amaldiçoadas ou falar palavrões —, a Loira do Banheiro é hoje mais do que um mito.  
 O medo coletivo, aliado a cultos obscuros, deu-lhe forma em Calisto. Apesar de sua natureza brincalhona em sua origem, o culto acabou invocando algo muito mais perigoso. Agora, a Loira do Banheiro não apenas assombra, mas **grita, possui e invade** com brutalidade os corpos daqueles que a desafiam.  
