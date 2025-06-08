@@ -1386,7 +1386,7 @@ Apesar de sua tranquilidade, poucos ousam enfrentá-la. Sua força é assombrosa
   sanidadePorNivel: 5,
   especialPorNivel: 6,
   armaduraPorNivel: 4,
- Ataquebásico: `2d20 de dano Cortante - Agilidade`,
+ Ataquebásico: `Dois ataques por Turno-2d20 de dano Cortante - Agilidade`,
   TagsCriatura: "Sono,Reino dos Sonhos,Entidade,Lendário",
   TipoElementoCriatura: "Desconhecido",
   bru: 15, agi: 12, det: 20, pre: 14, lib: 24, cnx: 55,
