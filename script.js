@@ -1373,7 +1373,56 @@ Apesar de sua tranquilidade, poucos ousam enfrentá-la. Sua força é assombrosa
 
   img: "imagens/Yaruma-Natureza.png",
   img2: "imagens/Token-Yaruma-Natureza.png"
+},
+	
+	
+	"IncubusDragon - O Horror e o Pesadelo": {
+  vida: 334,
+  sanidade: 45,
+  especial: 14,
+  armadura: 8,
+  movimento: 8,
+  vidaPorNivel: 8,
+  sanidadePorNivel: 5,
+  especialPorNivel: 6,
+  armaduraPorNivel: 4,
+  TagsCriatura: "Sono,Reino dos Sonhos,Entidade,Lendário",
+  TipoElementoCriatura: "Desconhecido",
+  bru: 15, agi: 12, det: 20, pre: 14, lib: 24, cnx: 55,
+  bruDano: 1, agiDano: 0, detDano: 2, preDano: 1, libDano: 3, cnxDano: 10,
+  bruTest: 2, agiTest: 1, detTest: 3, preTest: 2, libTest: 6, cnxTest: 15,
+  bonus: `Resistente: Escuridão, Sono  
+Vulnerável: Fé, Elétrico  
+Imune: Psicológico`,
+  bonus2: `{pigmento}*Puxar Almas:*{/pigmento} Afeta alvos dormindo que já sonharam com ele ao menos 2 vezes. Teste de Libertação (DT 25) ou sofre 4d20+10 de dano de Sono e tem a alma parcialmente aprisionada nos domínios oníricos.
+{pigmento}*Forçar o Sono:*{/pigmento} Em uma área de 6 metros, todos os inimigos devem fazer um teste de Determinação (DT 15) ou adormecem instantaneamente.
+{pigmento}*Sonambulismo Forçado:*{/pigmento} Ativa a condição **Sonambulismo** em um alvo à escolha em até 8 metros. Teste de Determinação (DT 12).
+{pigmento}*Pesadelo Vivo:*{/pigmento} Alvo dormindo a até 3 metros pode ser invadido. O Incubus entra fisicamente no sonho da vítima, que fica em pânico e se debate. Perde 10 de Sanidade ao entrar e mais 2 por turno. Enquanto isso, o corpo do alvo brilha em roxo.
+{pigmento}*Terror Manifesto:*{/pigmento} Todos que veem o IncubusDragon pela primeira vez perdem 1d12 de Sanidade. Em encontros subsequentes, 1d6.
+{pigmento}*Toque do Devaneio:*{/pigmento} Cura instantaneamente o valor total de Sanidade do alvo. A mão do IncubusDragon brilha em rosa e evapora. O alvo não sofre dano e só pode tentar esquivar.
+{pigmento}*Dualidade Onírica:*{/pigmento} Possui duas formas distintas:  
+- {subpigmento}*IncubusDragon:*{/subpigmento} Forma de terror onírico, surgindo em pesadelos e trazendo loucura.  
+- {subpigmento}*Morpheus:*{/subpigmento} Forma de descanso e sabedoria, orientando os que vagueiam no Reino dos Sonhos.`,
+  bonus3: `Entidade dos Sonhos  
+Elemento - Desconhecido`,
+  Magias: `Nível 1 – Todas as Magias de Sono.`,
+  Passivas: `Nível 1 – Todas as Passivas de Sono.`,
+  Talentos: `-`,
+  Descricao: `O IncubusDragon, também conhecido como Morpheus, é uma das entidades mais enigmáticas das Terras de Calisto. Guardião absoluto do Reino dos Sonhos, manifesta-se em formas que oscilam entre o terror mais profundo e a paz mais serena. Aqueles que cruzam seu caminho em pesadelos o conhecem como IncubusDragon – um arauto do pânico onírico que se alimenta do medo e da confusão gerada nas mentes frágeis. Já os sábios e buscadores espirituais que o encontram durante meditações e sonhos lúcidos o chamam de Morpheus – a essência do descanso, o mestre do subconsciente.
+Sua forma física é instável. Às vezes surge como uma criatura dracônica feita de névoa púrpura com olhos brilhando em azul vívido. Outras vezes, é uma figura encapuzada de longas asas sombreadas e um corpo coberto por fragmentos dourados de sonhos antigos. Quando entra nos sonhos de alguém, ele se funde ao cenário, adaptando-se à mente do sonhador. Essa fusão é perigosa e destrutiva – o simples toque do IncubusDragon pode comprometer a alma de seu alvo.
+Há um local sagrado e amaldiçoado no continente do Luar conhecido como *Pico do IncubusDragon*. Dizem que ali sua presença é sentida com mais força, e muitos afirmam vê-lo ao longe durante certas noites do ano. Sonhos que nascem nessa região são sempre mais intensos, caóticos e proféticos.
+Estudiosos e seguidores de sua existência formaram o **Culto dos Apanhadores de Sonhos**, uma ordem secreta que aprende a manipular o mundo onírico. A evolução entre seus membros é gradual e simbólica:
+- Aspirantes dos Sonhos iniciam sua jornada entre véus de devaneios.
+- Tecelões aprendem a moldar sonhos.
+- Guardiões dos Subconscientes vigiam as fronteiras do mundo desperto.
+- Senhores do Sono Eterno caminham ao lado de Morpheus.
+- Profetas das Visões Oníricas decifram os enigmas dos pesadelos.
+- Apanhadores dos Pesadelos são os únicos capazes de tocar a consciência do próprio IncubusDragon.
+Seu propósito é dual: proteger o equilíbrio dos sonhos e testar as mentes dos mortais. Nenhum outro ser possui domínio tão absoluto sobre o sono e seus mistérios quanto essa entidade. Para os fracos de mente, ele é o fim. Para os que ousam entender... um novo começo.`,
+  img: "imagens/IncubusDragon.png",
+  img2: "imagens/Token-IncubusDragon.png"
 }
+
   
   
   
@@ -1869,6 +1918,7 @@ const tagColors = {
 "Domínio dos Mortos": { background: "#7B1FA2", color: "#E1BEE7" }, // Forças energéticas e sobrenaturais  
 "Domínio do Sobrenatural": { background: "#D1C4E9", color: "#311B92" }, // Forças misteriosas e psíquicas  
 "Domínio da Natureza": { background: "#66BB6A", color: "#1B5E20" }, // Elementos naturais e caóticos  
+"Reino dos Sonhos": { background: "#8b9db0", color: "#cb9df2" }, // Elementos naturais e caóticos  
 
 
 	
@@ -2134,7 +2184,8 @@ function formatBonusText(text, type = "default") {
           .replace(/_(.*?)_/g, '<em>$1</em>')
           .replace(/~(.*?)~/g, '<u>$1</u>')
           .replace(/-(.*?)-/g, '<s>$1</s>')
-          .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>');
+          .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>')
+	  .replace(/{subpigmento}(.*?){\/subpigmento}/g, '<span class="subpigmento">$1</span>');
         return `<p class="${className}">${formattedSentence}</p>`;
       } else {
         return '';
