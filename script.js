@@ -1419,13 +1419,26 @@ Estudiosos e seguidores de sua existência formaram o **Culto dos Apanhadores de
 - Profetas das Visões Oníricas decifram os enigmas dos pesadelos.
 - Apanhadores dos Pesadelos são os únicos capazes de tocar a consciência do próprio IncubusDragon.
 Seu propósito é dual: proteger o equilíbrio dos sonhos e testar as mentes dos mortais. Nenhum outro ser possui domínio tão absoluto sobre o sono e seus mistérios quanto essa entidade. Para os fracos de mente, ele é o fim. Para os que ousam entender... um novo começo.`,
-  img: "imagens/IncubusDragon.png",
-  img2: "imagens/Token-IncubusDragon.png"
-}
+ _imgs: [
+      "imagens/IncubusDragon1.png",
+      "imagens/IncubusDragon2.png"
+    ],
+    
+    get img() {
+      return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+    },
 
-  
-  
-  
+    _imgs2: [
+      "imagens/Token-IncubusDragon1.png",
+      "imagens/Token-IncubusDragon2.png"
+    ],
+
+    get img2() {
+      return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+    },
+
+    // outros dados como vida, sanidade, etc. aqui...
+  }
   
   ,"Comunidade":{}
   
