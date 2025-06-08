@@ -134,6 +134,12 @@ span {
 }
 
 .pigmento { color: yellow; font-weight: bold; }
+.subpigmento {
+  color: gold;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: -0.5px; /* reduz o espaçamento entre os caracteres */
+}
 
 
 
