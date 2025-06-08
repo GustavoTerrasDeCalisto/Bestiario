@@ -1932,7 +1932,7 @@ const tagColors = {
 "Domínio dos Mortos": { background: "#7B1FA2", color: "#E1BEE7" }, // Forças energéticas e sobrenaturais  
 "Domínio do Sobrenatural": { background: "#D1C4E9", color: "#311B92" }, // Forças misteriosas e psíquicas  
 "Domínio da Natureza": { background: "#66BB6A", color: "#1B5E20" }, // Elementos naturais e caóticos  
-"Reino dos Sonhos": { background: "#8b9db0", color: "#cb9df2" }, // Elementos naturais e caóticos  
+"Reino dos Sonhos": { background: "#cb9df2", color: "#8b9db0" }, // Elementos naturais e caóticos  
 
 
 	
