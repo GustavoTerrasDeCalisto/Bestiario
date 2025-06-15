@@ -50,7 +50,210 @@
     </ul>
   </div>
 </header>
+<!-- Popup tutorial -->
+<div id="tutorialPopup" class="popup">
+  <style>
+    /* Títulos e subtítulos */
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #D8902D, #DC143C); /* Fé */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.6em;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #DC143C; /* Fé vermelho mais forte */
+      margin-top: 1em;
+      margin-bottom: 0.4em;
+    }
 
+    /* Estilo para listas e parágrafos */
+    li {
+      margin-left: 1.5em;
+      margin-bottom: 0.3em;
+      font-weight: 600;
+    }
+
+    /* Palavras-chave e elementos destacados */
+    .pv { color: #D32F2F; font-weight: 700; } /* vermelho para PV */
+    .san { color: #7B1FA2; font-weight: 700; } /* roxo para SAN */
+    .especial { color: #FBC02D; font-weight: 700; } /* amarelo especial */
+    
+    /* Atributos com fundo e texto */
+    .bru {
+      background-color: #000000;
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+.agi {
+  background-color: #81D4FA; /* Azul claro */
+  color: #01579B; /* Azul escuro */
+  padding: 0 5px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+    .pre {
+      background: linear-gradient(135deg, orange, green);
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    .det {
+      background: linear-gradient(135deg, #D8902D, #DC143C);
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    .lib {
+      background: linear-gradient(135deg, #201d36, #8A2BE2);
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    .cnx {
+      background: linear-gradient(135deg, purple, #8A2BE2);
+      color: white;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+
+    /* Textos com degradê */
+    .grad-text {
+      background: linear-gradient(90deg, #D8902D, #DC143C);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
+    /* Outros ajustes gerais para facilitar leitura */
+    p, li {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 0.5em;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+  </style>
+
+ <div class="popup-content tutorial-content">
+  <div class="chess-button-container">
+    <button id="closeTutorial" class="close" aria-label="Fechar tutorial">&times;</button>
+    <button id="openChessPopup" class="chess-btn">Modo Chess</button>
+  </div>
+
+    <div class="tutorial-flex">
+
+     <div class="tutorial-section">
+  <h2>1. Introdução</h2>
+  <p>
+    Este é um <strong>tutorial rápido exclusivo para Mestres</strong>, focado na manipulação de criaturas, atributos e níveis. 
+    Caso esteja procurando como criar um personagem jogador, acesse o <a href="https://terras-de-calisto-ficha-rpg.netlify.app/" target="_blank" class="link-tutorial">Tutorial Completo de Criação de Personagem</a>.
+  </p>
+  <p>
+    Aqui, basta escolher um monstro ou personagem já pronto, editar seus <strong>atributos (PV, SAN, Especial e Armadura)</strong> e ajustar o <strong>nível</strong> conforme necessário.
+    Você também pode visualizar e ativar as <strong>habilidades</strong> do monstro de forma rápida.
+  </p>
+  <img src="/imagens/mundo_calisto.png" alt="Mapa sombrio de Calisto com ícones dos quatro elementos" style="width:100%; border-radius:10px;">
+</div>
+
+<!-- POPUP MODO CHESS -->
+<div id="chessTutorialPopup" class="chess-popup" style="display: none;">
+  <div class="chess-popup-content" id="chessPopupContent">
+    <span id="closeChessPopup" class="chess-popup-close">&times;</span>
+    <div class="chess-popup-flex">
+
+      <!-- SEÇÃO 1 -->
+      <div class="chess-popup-section">
+        <h2>1. O que é o Modo Chess?</h2>
+        <p>
+          O <strong>Modo Chess</strong> é uma variação de xadrez baseada em <strong>Roleplay Tático</strong>, onde cada peça representa uma <strong>criatura do Bestiário de Terras de Calisto</strong>.
+        </p>
+        <ul>
+          <li>O combate segue as regras clássicas de Terras de Calisto.</li>
+          <li>Magias, habilidades e reações funcionam apenas durante o combate.</li>
+          <li>Cada peça possui <strong>pontos de vida próprios</strong>:</li>
+        </ul>
+          <li><strong>Peão:</strong> 20 de vida</li>
+          <li><strong>Torre:</strong> 35 de vida</li>
+          <li><strong>Bispo:</strong> 30 de vida</li>
+          <li><strong>Cavalo:</strong> 25 de vida</li>
+          <li><strong>Rainha:</strong> 50 de vida</li>
+          <li><strong>Rei:</strong> 1 de vida (se for morto, a partida termina)</li>
+        <p>
+          O jogador pode substituir qualquer peça por seu <strong>personagem jogável</strong>, mantendo a vida padrão da posição. Cada lado pode ser controlado por jogadores ou pelo mestre.
+        </p>
+        <p><a href="https://bestiario-terrasdecalisto.netlify.app/" target="_blank">Acesse o Bestiário</a> para escolher sua criatura.</p>
+        <img src="imagem/exemplo_tabuleiro.jpg" alt="Exemplo de Tabuleiro" class="chess-img">
+      </div>
+
+      <!-- SEÇÃO 2 -->
+      <div class="chess-popup-section">
+        <h2>2. Combate e Check</h2>
+        <p>Quando <strong>duas ou mais peças</strong> se encontram no mesmo quadrado, inicia-se um combate por turnos.</p>
+          <li>O combate utiliza o sistema de Terras de Calisto (turnos, reações, atributos).</li>
+          <li>O jogador pode realizar até 3 reações por turno (ex: esquiva, bloqueio, contra-ataque).</li>
+          <li>Check (xeque) continua funcionando como no xadrez tradicional.</li>
+          <li>Checkmate (xeque-mate) não encerra o jogo: o Rei deve fugir ou outra peça deve intervir no combate.</li>
+          <li>A eliminação do Rei em combate é a única forma de vitória.</li>
+        <img src="imagem/exemplo_combate.jpg" alt="Exemplo de Combate" class="chess-img">
+      </div>
+
+      <!-- SEÇÃO 3 -->
+      <div class="chess-popup-section">
+        <h2>3. Estratégia e Customização</h2>
+        <p>
+          Cada criatura do Bestiário possui <strong>habilidades únicas</strong>, magias e características de combate. Algumas podem se mover por teleporte ou usar efeitos fora do combate, conforme suas passivas.
+        </p>
+          <li>Apenas <strong>teleporte e habilidades passivas</strong> funcionam fora do combate.</li>
+          <li>Você pode montar times com criaturas temáticas, facções ou aliados da história.</li>
+          <li>O jogo pode ser PvP entre jogadores, PvM com mestre ou misto.</li>
+        <img src="imagem/exemplo_criatura.jpg" alt="Exemplo de Criatura" class="chess-img">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- POPUP COMBATE SECUNDÁRIO -->
+<div id="combatPopup" class="chess-popup" style="display: none;">
+  <div class="chess-popup-content">
+    <span id="closeCombatPopup" class="chess-popup-close">&times;</span>
+    <h2>Regras de Combate (Modo Chess)</h2>
+    <p>Durante o combate entre peças ou personagens:</p>
+    <ul>
+      <li><strong>Iniciativa:</strong> Cada peça joga 1d20 para determinar a ordem de ação.</li>
+      <li><strong>Ataques:</strong> Baseados nos atributos da criatura (ex: Brutalidade + 1d20 contra DT).</li>
+      <li><strong>Reações:</strong> Até 3 por turno (esquiva, contra-ataque, defesa).</li>
+      <li><strong>Condições especiais:</strong> queimando, paralisado, amaldiçoado, etc., conforme magias e efeitos do Bestiário.</li>
+      <li><strong>Eliminação:</strong> Ao chegar a 0 de vida, a peça é removida do tabuleiro.</li>
+    </ul>
+    <p>Consulte as <a href="https://terrasdecalistoficha.wordpress.com/como-jogar/" target="_blank">Regras Completas</a> para detalhes sobre reações, atributos e testes.</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Botão fixo para abrir tutorial -->
+<button id="openTutorialButton">Tutorial</button>
+
+    
   <div id="app">
 
     

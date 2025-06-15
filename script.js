@@ -2063,7 +2063,6 @@ const tagColors = {
 };
 
 
-
 const criatureGrid = document.getElementById('criatureGrid');
 const elementoFilter = document.getElementById('elementoFilter');
 const tagFilter = document.getElementById('tagFilter');
@@ -2494,3 +2493,52 @@ function menuShow() {
     });
   });
 })();
+
+    // 📘 Tutorial Popup
+    const tutorialPopup = document.getElementById("tutorialPopup");
+    const closeTutorial = document.getElementById("closeTutorial");
+    const openTutorialButton = document.getElementById("openTutorialButton");
+
+    let timesVisited = localStorage.getItem("calisto_visitas");
+    if (!timesVisited) timesVisited = 0;
+    else timesVisited = parseInt(timesVisited);
+
+    if (timesVisited < 5) {
+      tutorialPopup.style.display = "flex";
+      localStorage.setItem("calisto_visitas", timesVisited + 1);
+    }
+
+    closeTutorial.onclick = () => {
+      tutorialPopup.style.display = "none";
+    };
+
+    openTutorialButton.onclick = () => {
+      tutorialPopup.style.display = "flex";
+    };
+
+    // Fecha popup do tutorial se clicar fora
+    window.addEventListener("click", function (event) {
+      if (event.target === tutorialPopup) {
+        tutorialPopup.style.display = "none";
+      }
+    });
+
+ const chessPopup = document.getElementById("chessTutorialPopup");
+  const openChess = document.getElementById("openChessPopup");
+  const closeChess = document.getElementById("closeChessPopup");
+
+  const combatPopup = document.getElementById("combatPopup");
+  const openCombat = document.getElementById("openCombatPopup");
+  const closeCombat = document.getElementById("closeCombatPopup");
+
+  // Abrir e fechar principal
+  openChess.onclick = () => chessPopup.style.display = "flex";
+  closeChess.onclick = () => chessPopup.style.display = "none";
+  window.onclick = (e) => {
+    if (e.target === chessPopup) chessPopup.style.display = "none";
+    if (e.target === combatPopup) combatPopup.style.display = "none";
+  }
+
+  // Abrir e fechar secundário
+  openCombat.onclick = () => combatPopup.style.display = "flex";
+  closeCombat.onclick = () => combatPopup.style.display = "none";
