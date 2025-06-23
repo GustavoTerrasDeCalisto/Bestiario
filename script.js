@@ -9,7 +9,7 @@ const creatures = {
     sanidadePorNivel: 3,
     especialPorNivel: 1,
     armaduraPorNivel: 3,
-    Ataquebásico: `{nível}+2d6 de dano Cortante - Agilidade`,
+    Ataquebásico: `2d6 de dano Cortante - Agilidade`,
     TagsCriatura: "AskVill,Floresta,Animal,",
  TipoElementoCriatura: "Caos",
     bru: 14, agi: 16, det: 12, pre: 13, lib: 8, cnx: 9,
@@ -2166,10 +2166,7 @@ document.getElementById('levelDownButton').addEventListener('click', () => {
     updateStats(selected, level);
   }
 });
-function aplicarNivelAoTexto(texto) {
-  const nivel = parseInt(document.getElementById('creatureLevel').textContent) || 1;
-  return texto.replace(/{nível}/g, nivel);
-}
+
 function updateStats(creature, level) {
   const vida = creature.vida + (creature.vidaPorNivel * (level - 1));
   const sanidade = creature.sanidade + (creature.sanidadePorNivel * (level - 1));
@@ -2184,7 +2181,6 @@ function updateStats(creature, level) {
 }
 
 function formatBonusText(text, type = "default") {
-text = aplicarNivelAoTexto(text); // Substitui {nível} pelo valor atual
   let className;
   if (type === "bonus1") className = "bonus1-paragraph";
   else if (type === "bonus2") className = "bonus2-paragraph";
