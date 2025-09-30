@@ -382,7 +382,40 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
   img: "imagens/Albitaur.png",
   img2: "imagens/Token-Albitaur.png"
 }
-
+,"DracoGrurafa": {
+    vida: 238,
+    sanidade: 54,
+    especial: 45,
+    armadura: 40,
+    movimento: 8,
+    vidaPorNivel: 30,
+    sanidadePorNivel: 5,
+    especialPorNivel: 6,
+    armaduraPorNivel: 4,
+    TagsCriatura: "Titã,Gigantesco,Desconhecido,Dragão,Raro",
+    TipoElementoCriatura: "Desconhecido",
+    bru: 28, agi: 14, det: 12, pre: 10, lib: 20, cnx: 22,
+    bruDano: 6, agiDano: 2, detDano: 1, preDano: 0, libDano: 3, cnxDano: 4,
+    bruTest: 8, agiTest: 3, detTest: 2, preTest: 0, libTest: 5, cnxTest: 6,
+    bonus:`Imune a dano de:Fogo
+    Resistente:Tempestade
+    Vulnerável:Gelo
+    Vulnerável:Alma`,
+    bonus2: `{pigmento}*Terror Gigantesco:*{/pigmento} Criaturas a até 30m devem realizar um teste de Liberação (CD 18) ou ficam paralisadas de medo por 1 turno.
+{pigmento}*Alma Flamejante:*{/pigmento} O DracoGrurafa emana calor abrasador, causando _1d6 de dano de fogo_ a todos em 3m no início do turno.
+{pigmento}*Grito Rubro:*{/pigmento} Uma vez a cada 3 turnos, solta um urro que atravessa corpos e mentes, forçando todos em um cone de 20m a realizar Liberação (CD 17) ou sofrer _4d10+6 de dano Tempestade_.
+{pigmento}*Pisoteio de Titã:*{/pigmento} Ao se mover, pode esmagar inimigos no caminho causando _3d8 de dano físico_.
+{pigmento}*Voo Membranoso:*{/pigmento} Não possui asas tradicionais, mas pode planar e dar grandes saltos usando membranas como morcegos, percorrendo até _12m_ em um salto de combate.`,
+    bonus3:`O Titã da Garganta Rubra
+Elemento - Desconhecido`,
+    Passivas:`Nível 2 - Vingança`,
+    Descricao:`O DracoGrurafa é um titã ancestral marcado por uma mutação sobrenatural que se manifestou ao longo de incontáveis anos de evolução. Seu corpo carrega ainda a herança das antigas girafas das planícies esquecidas, mas foi corrompido e transformado em algo além da compreensão natural.
+Das suas costas emergiram asas membranosas, resultado da distorção de sua essência, que lhe permitem planar por céus turbulentos e realizar mergulhos brutais contra suas presas. Seu pescoço longo e flexível mantém o traço mais evidente de sua origem, agora aliado a uma musculatura predatória adaptada para o combate aéreo.
+Sua pele exibe padrões manchados reminiscentes das girafas, mas alterados em formas que lembram sombras vivas, camuflando-se entre nuvens e tempestades. Chamado de Titã da Garganta Rubra, seu urro ecoa como trovões e é temido tanto por muralhas quanto por exércitos inteiros.
+Não é apenas uma fera, mas o resultado de uma evolução profana — uma girafa que se ergueu aos céus pela mutação do Desconhecido, tornando-se um predador das alturas e senhor das tempestades.`,
+    img: "imagens/DracoGrurafa.png",
+    img2: "imagens/Token-DracoGrurafa.png"
+}
   
   
   ,"Doggers": {
