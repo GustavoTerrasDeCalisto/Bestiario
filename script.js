@@ -392,7 +392,7 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     sanidadePorNivel: 5,
     especialPorNivel: 6,
     armaduraPorNivel: 4,
-    TagsCriatura: "Titã,Gigantesco,Desconhecido,Dragão,Raro",
+    TagsCriatura: "Sultan Leste,Agressivo,Raro",
     TipoElementoCriatura: "Desconhecido",
     bru: 28, agi: 14, det: 12, pre: 10, lib: 20, cnx: 22,
     bruDano: 6, agiDano: 2, detDano: 1, preDano: 0, libDano: 3, cnxDano: 4,
