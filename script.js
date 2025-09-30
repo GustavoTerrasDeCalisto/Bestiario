@@ -414,7 +414,7 @@ Das suas costas emergiram asas membranosas, resultado da distorção de sua ess�
 Sua pele exibe padrões manchados reminiscentes das girafas, mas alterados em formas que lembram sombras vivas, camuflando-se entre nuvens e tempestades. Chamado de Titã da Garganta Rubra, seu urro ecoa como trovões e é temido tanto por muralhas quanto por exércitos inteiros.
 Não é apenas uma fera, mas o resultado de uma evolução profana — uma girafa que se ergueu aos céus pela mutação do Desconhecido, tornando-se um predador das alturas e senhor das tempestades.`,
     img: "imagens/DracoGrurafa.png",
-    img2: "imagens/Token-DracoGrurafa.png"
+    img2: "imagens/DracoGrurafa.png"
 }
   
   
