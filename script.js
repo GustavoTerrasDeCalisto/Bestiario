@@ -2575,3 +2575,28 @@ function menuShow() {
   // Abrir e fechar secundário
   openCombat.onclick = () => combatPopup.style.display = "flex";
   closeCombat.onclick = () => combatPopup.style.display = "none";
+
+
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const criatura = params.get("criatura");
+
+  if (criatura) {
+    // Seleciona todos os cards das criaturas
+    const cards = document.querySelectorAll("div"); // ajuste se tiver classe específica, tipo ".card"
+
+    cards.forEach(card => {
+      if (card.textContent.includes(criatura)) {
+        // Faz scroll até a criatura
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+
+        // Destaca o card visualmente
+        card.style.outline = "3px solid yellow";
+        card.style.borderRadius = "10px";
+      }
+    });
+  }
+});
+
