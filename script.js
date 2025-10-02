@@ -2584,19 +2584,38 @@ window.addEventListener("DOMContentLoaded", () => {
   const criatura = params.get("criatura");
 
   if (criatura) {
-    // Seleciona todos os cards das criaturas
-    const cards = document.querySelectorAll("div"); // ajuste se tiver classe específica, tipo ".card"
+    // Seleciona todos os cards das criaturas (ajuste a classe se já existir, ex: ".criatura-card")
+    const cards = document.querySelectorAll(".card, .criatura, div"); 
+
+    let encontrado = false;
 
     cards.forEach(card => {
-      if (card.textContent.includes(criatura)) {
-        // Faz scroll até a criatura
+      const nome = card.innerText.trim();
+
+      if (nome.toLowerCase().includes(criatura.toLowerCase())) {
+        encontrado = true;
+
+        // Faz scroll até o card
         card.scrollIntoView({ behavior: "smooth", block: "center" });
 
-        // Destaca o card visualmente
+        // Destaca o card
         card.style.outline = "3px solid yellow";
         card.style.borderRadius = "10px";
+        card.style.boxShadow = "0 0 15px yellow";
+
+        // Garante que só destaque o primeiro encontrado
+        return;
       }
     });
+
+    // Caso não encontre, loga no console (pra depurar)
+    if (!encontrado) {
+      console.warn("Criatura não encontrada:", criatura);
+    }
   }
 });
+
+
+
+
 
