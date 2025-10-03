@@ -1427,7 +1427,7 @@ Apesar de sua tranquilidade, poucos ousam enfrentá-la. Sua força é assombrosa
   bonus: `Resistente: Tempestade  
 Vulnerável: Psíquico, Escuridão  
 Imune: Eletricidade`,
-  bonus2: `{pigmento}*Armadura Sobrenatural:*{/pigmento} Enquanto com a armadura sobrenatural recebe apenas metade todo dano físico recebido.  
+  bonus2: `{pigmento}*<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p4">Armadura Sobrenatural</a>:*{/pigmento} Enquanto com a armadura sobrenatural recebe apenas metade todo dano físico recebido.  
 {pigmento}*Efeito <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p3">Bêbado</a>:*{/pigmento} Sempre ativo durante o combate. Em falha de teste de CNX, pode atacar aliados próximos em 1d4 turnos.  
 {pigmento}*Trovão Ensurdecedor:*{/pigmento} Ao ser invocado, causa 2d10 de dano Elétrico em inimigos num raio de 30m. Criaturas na área devem passar em um teste de Determinação (DT 15) ou ficam **Cegas** por 1d4 turnos (-10 em testes de reação e ação).  
 {pigmento}*Lealdade de Sangue:*{/pigmento} Donar considera o invocador como parte da família. O mestre decide suas ações, mas o invocador pode sugerir ordens.  
@@ -1435,7 +1435,7 @@ Imune: Eletricidade`,
   bonus3: `Entidade Divina de Asgard  
 Elemento - Elétrico`,
   Magias: `Todas as magias de Eletricidade e Tespestade`,
-  Passivas: `Ativas durante todo o combate: <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p4">Armadura Sobrenatural</a>, Efeito <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p3">Bêbado</a>.`,
+  Passivas: `Ativas durante todo o combate: Armadura Sobrenatural, Bêbado.`,
   Talentos: `-`,
   Descricao: `Donar, também chamado de Thorville, é uma entidade divina dos 5 Céus Eternos de Asgard. Invocado pelo poder da magia "Retorno de Thorville", sua chegada é anunciada por trovões e uma luz cegante que aterroriza todos ao redor. Ele luta ao lado do invocador por 1d12 turnos ou até o fim da cena.  
 Embora possua vontade própria, Donar reconhece o invocador como parte de sua família, escutando suas sugestões e protegendo-o como um irmão de guerra. Seu estilo de combate é agressivo e carregado de energia divina, oscilando entre a força de um guerreiro lendário e a imprevisibilidade do efeito Bêbado que sempre o acompanha.  
