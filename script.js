@@ -1419,7 +1419,7 @@ Apesar de sua tranquilidade, poucos ousam enfrentá-la. Sua força é assombrosa
   especialPorNivel: 4,
   armaduraPorNivel: 3,
   Ataquebásico: `Golpe de Martelo – 2d10+3 de dano Elétrico - BRU`,
-  TagsCriatura: "Domínio da Natureza,Lendário,Eletricidade",
+  TagsCriatura: "Eletricidade,Domínio da Natureza,Entidade,Lendário",
   TipoElementoCriatura: "Caos",
   bru: 25, agi: 14, det: 12, pre: 14, lib: 13, cnx: 22,
   bruDano: 3, agiDano: 1, detDano: 1, preDano: 1, libDano: 1, cnxDano: 3,
