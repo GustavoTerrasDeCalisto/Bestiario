@@ -2265,8 +2265,9 @@ function updateStats(creature, level) {
   
 }
 // Função genérica: aplica todas as marcações (*, _, ~, -, pigmento, etc.)
-function formatText(text) {
-  if (!text) return "";
+// Função genérica: aplica todas as marcações (*, _, ~, -, pigmento, etc.)
+function formatText(text = "") {
+  if (typeof text !== "string") return "";
 
   // Protege links temporariamente
   let links = [];
@@ -2290,8 +2291,8 @@ function formatText(text) {
   return formatted;
 }
 
-// Função para formatar campos que exigem classe (bonus, ataque, etc.)
-function formatBonusText(text, type = "default") {
+// Função para formatar campos com classe (bonus, ataque, etc.)
+function formatBonusText(text = "", type = "default") {
   let className;
   if (type === "bonus1") className = "bonus1-paragraph";
   else if (type === "bonus2") className = "bonus2-paragraph";
@@ -2309,8 +2310,9 @@ function formatBonusText(text, type = "default") {
     .join('');
 }
 
-// Função para campos comuns (Descrição, Magias, Passivas, etc.)
-function formatGenericText(text) {
+// Função para campos genéricos (Descrição, Magias, Passivas, etc.)
+function formatGenericText(text = "") {
+  if (typeof text !== "string") return "";
   return text
     .split(/\n+/)
     .map(paragraph =>
