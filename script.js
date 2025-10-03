@@ -1408,6 +1408,58 @@ Apesar de sua tranquilidade, poucos ousam enfrentá-la. Sua força é assombrosa
   img2: "imagens/Token-Yaruma-Natureza.png"
 },
 	
+	"Donar - O Retorno de Thorville": {
+  vida: 267,
+  sanidade: 143,
+  especial: 64,
+  armadura: 6,
+  movimento: 7.5,
+  vidaPorNivel: 10,
+  sanidadePorNivel: 6,
+  especialPorNivel: 4,
+  armaduraPorNivel: 3,
+  Ataquebásico: `Golpe de Martelo – 2d10+3 de dano Elétrico - BRU`,
+  TagsCriatura: "Domínio da Natureza,Lendário,Eletricidade",
+  TipoElementoCriatura: "Caos",
+  bru: 25, agi: 14, det: 12, pre: 14, lib: 13, cnx: 22,
+  bruDano: 3, agiDano: 1, detDano: 1, preDano: 1, libDano: 1, cnxDano: 3,
+  bruTest: 6, agiTest: 2, detTest: 1, preTest: 2, libTest: 1, cnxTest: 5,
+  bonus: `Resistente: Elétrico, Tempestade  
+Vulnerável: Psíquico, Escuridão  
+Imune: Medo`,
+  bonus2: `{pigmento}*Armadura Sobrenatural:*{/pigmento} Enquanto com a armadura sobrenatural recebe apenas metade todo dano físico recebido.  
+{pigmento}*Efeito <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p3">Bêbado</a>:*{/pigmento} Sempre ativo durante o combate. Em falha de teste de CNX, pode atacar aliados próximos em 1d4 turnos.  
+{pigmento}*Trovão Ensurdecedor:*{/pigmento} Ao ser invocado, causa 2d10 de dano Elétrico em inimigos num raio de 30m. Criaturas na área devem passar em um teste de Determinação (DT 15) ou ficam **Cegas** por 1d4 turnos (-10 em testes de reação e ação).  
+{pigmento}*Lealdade de Sangue:*{/pigmento} Donar considera o invocador como parte da família. O mestre decide suas ações, mas o invocador pode sugerir ordens.  
+{pigmento}*Martelo Divino:*{/pigmento} Pode desferir um ataque devastador com 3d12 de dano Elétrico. Teste de BRU (DT 20) do alvo para resistir.`,
+  bonus3: `Entidade Divina de Asgard  
+Elemento - Elétrico`,
+  Magias: `Invocação: Surge do céu acompanhado por trovões audíveis a até 10 km.`,
+  Passivas: `Ativas durante todo o combate: <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p4">Armadura Sobrenatural</a>, Efeito <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p3">Bêbado</a>.`,
+  Talentos: `-`,
+  Descricao: `Donar, também chamado de Thorville, é uma entidade divina dos 5 Céus Eternos de Asgard. Invocado pelo poder da magia "Retorno de Thorville", sua chegada é anunciada por trovões e uma luz cegante que aterroriza todos ao redor. Ele luta ao lado do invocador por 1d12 turnos ou até o fim da cena.  
+Embora possua vontade própria, Donar reconhece o invocador como parte de sua família, escutando suas sugestões e protegendo-o como um irmão de guerra. Seu estilo de combate é agressivo e carregado de energia divina, oscilando entre a força de um guerreiro lendário e a imprevisibilidade do efeito Bêbado que sempre o acompanha.  
+Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar qualquer inimigo, Donar é a personificação da fúria dos céus.`,
+  _imgs: [
+      "imagens/Donar1.png",
+      "imagens/Donar1.png"
+    ],
+    
+    get img() {
+      return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+    },
+
+    _imgs2: [
+      "imagens/Donar1.png",
+      "imagens/Donar1.png"
+    ],
+
+    get img2() {
+      return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+    }
+	}
+,
+	
 	
 	"IncubusDragon - O Horror e o Pesadelo": {
   vida: 334,
