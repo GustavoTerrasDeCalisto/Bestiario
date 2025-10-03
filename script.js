@@ -2266,34 +2266,9 @@ function updateStats(creature, level) {
 }
 // Função genérica: aplica todas as marcações (*, _, ~, -, pigmento, etc.)
 // Função genérica: aplica todas as marcações (*, _, ~, -, pigmento, etc.)
-function formatText(text = "") {
-  if (typeof text !== "string") return "";
-
-  // Protege links temporariamente
-  let links = [];
-  text = text.replace(/<a[^>]*>.*?<\/a>/g, match => {
-    links.push(match);
-    return `%%LINK${links.length - 1}%%`;
-  });
-
-  // Aplica marcações
-  let formatted = text
-    .replace(/\*(.*?)\*/g, '<strong>$1</strong>')             // *negrito*
-    .replace(/_(.*?)_/g, '<em>$1</em>')                       // _itálico_
-    .replace(/~(.*?)~/g, '<u>$1</u>')                         // ~sublinhado~
-    .replace(/-([^-\n]+)-/g, '<s>$1</s>')                     // -tachado-
-    .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>')
-    .replace(/{subpigmento}(.*?){\/subpigmento}/g, '<span class="subpigmento">$1</span>');
-
-  // Restaura links
-  formatted = formatted.replace(/%%LINK(\d+)%%/g, (_, i) => links[i]);
-
-  return formatted;
-}
-
-// Função para formatar campos com classe (bonus, ataque, etc.)
-function formatBonusText(text = "", type = "default") {
+function formatBonusText(text, type = "default") {
   let className;
+
   if (type === "bonus1") className = "bonus1-paragraph";
   else if (type === "bonus2") className = "bonus2-paragraph";
   else if (type === "bonus3") className = "bonus3-paragraph";
@@ -2302,27 +2277,43 @@ function formatBonusText(text = "", type = "default") {
 
   return text
     .split(/\n+/)
-    .map(sentence =>
-      sentence.trim()
-        ? `<p class="${className}">${formatText(sentence)}</p>`
-        : ''
-    )
+    .map(sentence => {
+      if (sentence.trim()) {
+        // 1. Protege os links temporariamente
+        let links = [];
+        sentence = sentence.replace(/<a[^>]*>.*?<\/a>/g, match => {
+          links.push(match);
+          return `%%LINK${links.length - 1}%%`;
+        });
+
+        // 2. Aplica as formatações
+        let formattedSentence = sentence
+          .replace(/\*(.*?)\*/g, '<strong>$1</strong>')       // *negrito*
+          .replace(/_(.*?)_/g, '<em>$1</em>')                // _itálico_
+          .replace(/~(.*?)~/g, '<u>$1</u>')                  // ~sublinhado~
+          .replace(/-([^-\n]+)-/g, '<s>$1</s>')              // -tachado-
+          .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>')
+          .replace(/{subpigmento}(.*?){\/subpigmento}/g, '<span class="subpigmento">$1</span>');
+
+        // 3. Restaura os links no lugar certo
+        formattedSentence = formattedSentence.replace(/%%LINK(\d+)%%/g, (_, i) => links[i]);
+
+        return `<p class="${className}">${formattedSentence}</p>`;
+      } else {
+        return '';
+      }
+    })
     .join('');
 }
 
-// Função para campos genéricos (Descrição, Magias, Passivas, etc.)
-function formatGenericText(text = "") {
-  if (typeof text !== "string") return "";
+function formatDescriptionText(text) {
   return text
     .split(/\n+/)
     .map(paragraph =>
-      paragraph.trim()
-        ? `<p>${formatText(paragraph)}</p>`
-        : ''
+      paragraph.trim() ? `<p>${paragraph}</p>` : ''
     )
     .join('');
 }
-
 
 function showImage(index) {
   images.forEach((img, i) => {
