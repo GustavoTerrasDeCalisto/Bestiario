@@ -2577,43 +2577,42 @@ function menuShow() {
   closeCombat.onclick = () => combatPopup.style.display = "none";
 
 
-
-
+// 🔎 Seleciona a criatura ao abrir via ?criatura=Nome
 window.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const criatura = params.get("criatura");
 
   if (criatura) {
-    // Seleciona todos os cards das criaturas (ajuste a classe se já existir, ex: ".criatura-card")
-    const cards = document.querySelectorAll(".card, .criatura, div"); 
+    // Abre automaticamente o popup de raças
+    abrirPopupRacas();
 
-    let encontrado = false;
+    // Espera um pouquinho para os cards renderizarem
+    setTimeout(() => {
+      const cards = document.querySelectorAll(".card-criatura");
 
-    cards.forEach(card => {
-      const nome = card.innerText.trim();
+      let encontrado = false;
+      cards.forEach(card => {
+        const nome = card.querySelector("p")?.innerText.trim() || "";
+        if (nome.toLowerCase() === criatura.toLowerCase()) {
+          encontrado = true;
 
-      if (nome.toLowerCase().includes(criatura.toLowerCase())) {
-        encontrado = true;
+          // Simula o clique no card → abre o popup da raça direto
+          card.click();
 
-        // Faz scroll até o card
-        card.scrollIntoView({ behavior: "smooth", block: "center" });
+          // Destaca o card no grid principal
+          card.style.outline = "3px solid yellow";
+          card.style.borderRadius = "10px";
+          card.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      });
 
-        // Destaca o card
-        card.style.outline = "3px solid yellow";
-        card.style.borderRadius = "10px";
-        card.style.boxShadow = "0 0 15px yellow";
-
-        // Garante que só destaque o primeiro encontrado
-        return;
+      if (!encontrado) {
+        console.warn("Criatura não encontrada:", criatura);
       }
-    });
-
-    // Caso não encontre, loga no console (pra depurar)
-    if (!encontrado) {
-      console.warn("Criatura não encontrada:", criatura);
-    }
+    }, 300); // dá tempo de renderizar os cards
   }
 });
+
 
 
 
