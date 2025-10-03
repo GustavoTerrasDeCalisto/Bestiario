@@ -1,54 +1,3 @@
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-
-// 🔎 Seleciona a criatura ao abrir via ?criatura=Nome
-window.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
-  const criatura = params.get("criatura");
-
-  if (criatura) {
-    // Abre automaticamente o popup de raças
-    abrirPopupRacas();
-
-    // Espera um pouquinho para os cards renderizarem
-    setTimeout(() => {
-      const cards = document.querySelectorAll(".card-criatura");
-
-      let encontrado = false;
-      cards.forEach(card => {
-        const nome = card.querySelector("p")?.innerText.trim() || "";
-        if (nome.toLowerCase() === criatura.toLowerCase()) {
-          encontrado = true;
-
-          // Simula o clique no card → abre o popup da raça direto
-          card.click();
-
-          // Destaca o card no grid principal
-          card.style.outline = "3px solid yellow";
-          card.style.borderRadius = "10px";
-          card.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-      });
-
-      if (!encontrado) {
-        console.warn("Criatura não encontrada:", criatura);
-      }
-    }, 300); // dá tempo de renderizar os cards
-  }
-});
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
-
-
-
 const creatures = {
   "Glink's": {
     vida: 50,
@@ -2628,6 +2577,54 @@ function menuShow() {
   closeCombat.onclick = () => combatPopup.style.display = "none";
 
 
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+
+// 🔎 Seleciona a criatura ao abrir via ?criatura=Nome
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const criatura = params.get("criatura");
+
+  if (criatura) {
+    // Abre automaticamente o popup de raças
+    abrirPopupRacas();
+
+    // Espera um pouquinho para os cards renderizarem
+    setTimeout(() => {
+      const cards = document.querySelectorAll(".card-criatura");
+
+      let encontrado = false;
+      cards.forEach(card => {
+        const nome = card.querySelector("p")?.innerText.trim() || "";
+        if (nome.toLowerCase() === criatura.toLowerCase()) {
+          encontrado = true;
+
+          // Simula o clique no card → abre o popup da raça direto
+          card.click();
+
+          // Destaca o card no grid principal
+          card.style.outline = "3px solid yellow";
+          card.style.borderRadius = "10px";
+          card.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      });
+
+      if (!encontrado) {
+        console.warn("Criatura não encontrada:", criatura);
+      }
+    }, 300); // dá tempo de renderizar os cards
+  }
+});
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 
 
 
