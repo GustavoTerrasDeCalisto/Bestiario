@@ -2277,13 +2277,25 @@ function formatBonusText(text, type = "default") {
     .split(/\n+/)
     .map(sentence => {
       if (sentence.trim()) {
-        const formattedSentence = sentence
-          .replace(/\*(.*?)\*/g, '<strong>$1</strong>')
-          .replace(/_(.*?)_/g, '<em>$1</em>')
-          .replace(/~(.*?)~/g, '<u>$1</u>')
-          .replace(/-(.*?)-/g, '<s>$1</s>')
+        // 1. Protege os links temporariamente
+        let links = [];
+        sentence = sentence.replace(/<a[^>]*>.*?<\/a>/g, match => {
+          links.push(match);
+          return `%%LINK${links.length - 1}%%`;
+        });
+
+        // 2. Aplica as formatações
+        let formattedSentence = sentence
+          .replace(/\*(.*?)\*/g, '<strong>$1</strong>')          // *negrito*
+          .replace(/_(.*?)_/g, '<em>$1</em>')                   // _itálico_
+          .replace(/~(.*?)~/g, '<u>$1</u>')                     // ~sublinhado~
+          .replace(/-([^-\n]+)-/g, '<s>$1</s>')                 // -tachado-
           .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>')
-	  .replace(/{subpigmento}(.*?){\/subpigmento}/g, '<span class="subpigmento">$1</span>');
+          .replace(/{subpigmento}(.*?){\/subpigmento}/g, '<span class="subpigmento">$1</span>');
+
+        // 3. Restaura os links no lugar certo
+        formattedSentence = formattedSentence.replace(/%%LINK(\d+)%%/g, (_, i) => links[i]);
+
         return `<p class="${className}">${formattedSentence}</p>`;
       } else {
         return '';
@@ -2291,6 +2303,7 @@ function formatBonusText(text, type = "default") {
     })
     .join('');
 }
+
 
 function formatDescriptionText(text) {
   return text.split(/\n+/).map(paragraph =>
