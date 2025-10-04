@@ -391,8 +391,8 @@ Não é apenas uma fera, mas o resultado de uma evolução profana — uma giraf
     bruDano: 5, agiDano: 4, detDano: 3, preDano: 0, libDano: 2, cnxDano: 2,
     bruTest: 7, agiTest: 6, detTest: 4, preTest: 0, libTest: 3, cnxTest: 3,
     bonus:`Imune: dano de Veneno
-Resistente: dano de Caos
-Vulnerável: dano de Gelo
+Resistente: dano de Gelo
+Vulnerável: dano de Fogo
 Vulnerável: dano de Distorção`,
 	  Ataquebásico: `2d12 de dano Cortante - Agilidade`,
     bonus2:`{pigmento}*Cuspe Ácido:*{/pigmento} Uma vez a cada 4 turnos, o Wyvnnoraptor cospe um líquido corrosivo em uma área de 15m. Criaturas atingidas devem realizar um teste de Determinação (DT 17) ou sofrem _3d10 de dano Ácido_. A área permanece coberta por ácido por 4 turnos, causando _1d8 de dano Ácido_ por turno a quem permanecer nela.
