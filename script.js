@@ -91,47 +91,6 @@ Sua presença em florestas e cavernas torna esses locais ainda mais perigosos pa
   
   
   
-  ,"Deinonychus": {
-    vida: 72,
-    sanidade: 33,
-    especial: 8,
-    armadura: 2,
-  movimento:12,
-    vidaPorNivel: 15,
-    sanidadePorNivel: 4,
-    especialPorNivel: 3,
-    armaduraPorNivel: 2,
-            TagsCriatura: "Caça em Grupo,Irracional,Cortante",
- TipoElementoCriatura: "Desconhecido",
-    bru: 22, agi: 12, det: 11, pre: 10, lib: 13, cnx: 10,
-    bruDano: 2, agiDano: 1, detDano: 1, preDano: 0, libDano: 1, cnxDano: 0,
-    bruTest: 5, agiTest: 1, detTest: 1, preTest: 0, libTest: 1, cnxTest: 0,
-    bonus:`Resistente: dano Perfurante
-    Vulnerável: Dano de Sono
-    Imune: Dano de Mental`,
-     bonus2: `{pigmento}*Caçada Feroz:*{/pigmento} Quando estão com pouca vida eles podem ecoar um som que chama a atenção de outros Deinonychus próximos, que surgem para auxiliar no combate. Essas criaturas patrulham em grupos de 5 a 7, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
-{pigmento}*Ferocidade ancestral – teste de Agilidade :*{/pigmento} Todo turno pode atacar duas vezes podendo escolher os seguintes golpes – Depois que acertar dois golpes seguidos em uma alvo tem chance debilitar o alvo (o alvo quando for atingido deve rodar 1d20 Determinação, a DT é 12:
-{pigmento}*Garras laminares*{/pigmento} – golpeia em área 3m de distancia até 3 alvos _2d12 de dano Cortante_.
-{pigmento}*Mordida assombrosa*{/pigmento} – Pula até 5m em um alvo e morde causando _3d10 de dano Cortante_.
-{pigmento}*Cauda chicote*{/pigmento} – Faz um giro que causa _3d8 de dano Esmagante_ em área em quem estiver próximo de 2m.`,
-    bonus3:`Deinonychus antirrhopus
-Elemento – Desconhecido`,
-    Magias: `Nenhuma.`,
-    Passivas:` Nível 1 – Consumir, nível 3 – Vingança.`,
-    Talentos: `Intimidação - Requisito: Conexão, Percepção - Requisito: Libertação e Sobrevivência - Requisito: Determinação.`,
-    Descricao:`O Deinonychus antirrhopus é uma criatura ancestral que parece ter sido arrancada das profundezas do tempo, trazida de volta ao mundo atual por forças sobrenaturais. Este dinossauro terópode, que viveu originalmente no período Cretáceo, agora caminha novamente pelo continente, causando um desequilíbrio ecológico devastador. Com uma estranha aura negra que parece envolver seu corpo, o Deinonychus se destaca como uma aberração, um sobrevivente de uma era extinta que não pertence à fauna moderna.
-Embora aparentem ser animais comuns à primeira vista, o comportamento e a presença perturbadora desses predadores revelam sua verdadeira natureza. Eles surgiram no continente de Eldoria há mais de 850 anos, antes da grande separação do território, trazidos de volta por algum evento misterioso e não natural. Desde então, adaptaram-se de forma assustadoramente eficiente ao novo mundo, dominando as áreas em que se estabeleceram. Suas aparições causam terror nas populações locais, pois não se sabe ao certo se essa é a única espécie ancestral ressuscitada ou se outras criaturas antigas podem também estar à espreita.
-Os Deinonychus são caçadores territoriais e implacáveis, conhecidos por sua crueldade e comportamento predatório. Muitas vezes, eles caçam não pela necessidade de sobrevivência, mas por puro instinto, quase como se estivessem brincando com suas presas em um jogo macabro. Eles caçam em bandos, normalmente compostos de 5 a 7 indivíduos, e suas emboscadas são organizadas e letais. Curiosamente, apesar de sua tendência a caçar em grupo, os Deinonychus são egoístas e cabeças-duras, preferindo muitas vezes caçar sozinhos. Eles só chamam seus companheiros de bando quando estão gravemente feridos ou em perigo iminente.
-A aparência imponente desses predadores é complementada por sua pele dura e resistente, que lhes proporciona uma defesa natural contra ataques. Suas garras afiadas são comparáveis a lâminas, capazes de cortar profundamente seus alvos, enquanto sua mordida poderosa é o suficiente para desmembrar presas com facilidade. O comportamento de caça, sua territorialidade agressiva, e a forma como perturbam o equilíbrio ecológico tornam o Deinonychus antirrhopus uma ameaça assustadora para o mundo moderno.
-Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um som agudo e estridente que convoca rapidamente seus companheiros. Essas criaturas representam não apenas uma ameaça física, mas também um enigma sobre a origem de seu retorno, sugerindo que forças muito maiores e desconhecidas podem estar em jogo, manipulando o tempo e a vida.`,
-    img: "imagens/Deinonychus.png",
-    img2: "imagens/Token-Deinonychus.png"
-  }
-  
-  
-  
-  
-  
   ,"Raposa Selvagem": {
     vida: 24,
     sanidade: 14,
@@ -416,6 +375,84 @@ Não é apenas uma fera, mas o resultado de uma evolução profana — uma giraf
     img: "imagens/DracoGrurafa.png",
     img2: "imagens/DracoGrurafa.png"
 }
+  ,"Wyvnnoraptor": {
+    vida: 210,
+    sanidade: 48,
+    especial: 30,
+    armadura: 35,
+    movimento: 10,
+    vidaPorNivel: 28,
+    sanidadePorNivel: 4,
+    especialPorNivel: 4,
+    armaduraPorNivel: 3,
+    TagsCriatura: "Predador Solitário,Alado,Irracional,Caos",
+    TipoElementoCriatura: "Caos",
+    bru: 24, agi: 20, det: 14, pre: 8, lib: 10, cnx: 12,
+    bruDano: 5, agiDano: 4, detDano: 3, preDano: 0, libDano: 2, cnxDano: 2,
+    bruTest: 7, agiTest: 6, detTest: 4, preTest: 0, libTest: 3, cnxTest: 3,
+    bonus:`Imune: dano de Veneno
+Resistente: dano de Caos
+Vulnerável: dano de Gelo
+Vulnerável: dano de Distorção`,
+    bonus2:`{pigmento}*Cuspe Ácido:*{/pigmento} Uma vez a cada 4 turnos, o Wyvnnoraptor cospe um líquido corrosivo em uma área de 15m. Criaturas atingidas devem realizar um teste de Determinação (DT 17) ou sofrem _3d10 de dano Ácido_. A área permanece coberta por ácido por 4 turnos, causando _1d8 de dano Ácido_ por turno a quem permanecer nela.
+{pigmento}*Ferocidade Instintiva – teste de Agilidade:*{/pigmento} Pode atacar duas vezes por turno com seus membros ou mordidas. Se acertar ambos os ataques em um mesmo alvo, este deve realizar um teste de Determinação (DT 15) ou fica debilitado até o próximo turno, reduzindo em -2 seus testes físicos.
+{pigmento}*Garras Serrilhadas:*{/pigmento} Golpeia em área de até 3m de distância, atingindo até 3 alvos e causando _2d12 de dano Cortante_.
+{pigmento}*Mordida Voraz:*{/pigmento} Avança sobre o alvo e morde causando _3d10 de dano Físico_. Caso reduza a vida do alvo a zero, o Wyvnnoraptor regenera metade do dano como vida temporária.
+{pigmento}*Cauda Dilacerante:*{/pigmento} Realiza um golpe giratório causando _3d8 de dano Esmagante_ em área de 2m. Alvos atingidos devem realizar um teste de Brutalidade (DT 16) ou caem no chão.
+{pigmento}*Voo Predatório:*{/pigmento} Suas asas cobertas por penas e ossos reforçados permitem manobras aéreas em ventos extremos. Quando ataca de mergulho, o ataque causa +1d10 de dano adicional e o alvo deve realizar um teste de Agilidade (DT 16) ou ser derrubado.
+{pigmento}*Passivas: Nível 2*{/pigmento} – <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=p14">Raiva</a>.`,
+    bonus3:`Wyvnnoraptor glacialis
+Elemento – Caos`,
+    Magias:`Nenhuma.`,
+    Passivas:`Nível 2 - Raiva`,
+    Talentos:`-`,
+    Descricao:`O Wyvnnoraptor glacialis é uma das criaturas mais imponentes e perigosas das regiões frias e montanhosas. Considerado por muitos estudiosos um descendente direto dos antigos raptores, esta espécie evoluiu de forma brutal e eficiente para dominar os céus e vales congelados.
+Seu corpo é coberto por densas penas brancas e detalhes avermelhados, asas de penas, que servem tanto como isolamento térmico quanto camuflagem natural entre a neve e as rochas. Com cerca de 6 metros de altura e uma envergadura que pode ultrapassar 30 metros, o Wyvnnoraptor combina força e velocidade de maneira aterrorizante. Suas asas possuem garras afiadas nas articulações, usadas tanto para se firmar em superfícies quanto para golpear oponentes em pleno voo.Dotado de sentidos aguçados e instintos agressivos, o Wyvnnoraptor caça sozinho, preferindo atacar de emboscada ou de mergulho. Seu cuspe ácido é uma arma evolutiva rara, projetada para destruir tanto presas quanto rivais — dissolvendo carne, metal e gelo com facilidade.
+Essas criaturas são extremamente territoriais e reagem a qualquer intruso com fúria instantânea. Quando entram em estado de raiva, tornam-se verdadeiros desastres naturais, atacando sem hesitação até que tudo ao redor esteja destruído. O rugido estridente que emitem antes do ataque é inconfundível, ecoando por quilômetros entre as montanhas geladas — um aviso tardio para aqueles que ousam cruzar seu domínio.`,
+    img: "imagens/Wyvnnoraptor.png",
+    img2: "imagens/Wyvnnoraptor.png"
+}
+
+  
+  ,"Deinonychus": {
+    vida: 72,
+    sanidade: 33,
+    especial: 8,
+    armadura: 2,
+  movimento:12,
+    vidaPorNivel: 15,
+    sanidadePorNivel: 4,
+    especialPorNivel: 3,
+    armaduraPorNivel: 2,
+            TagsCriatura: "Caça em Grupo,Irracional,Cortante",
+ TipoElementoCriatura: "Desconhecido",
+    bru: 22, agi: 12, det: 11, pre: 10, lib: 13, cnx: 10,
+    bruDano: 2, agiDano: 1, detDano: 1, preDano: 0, libDano: 1, cnxDano: 0,
+    bruTest: 5, agiTest: 1, detTest: 1, preTest: 0, libTest: 1, cnxTest: 0,
+    bonus:`Resistente: dano Perfurante
+    Vulnerável: Dano de Sono
+    Imune: Dano de Mental`,
+     bonus2: `{pigmento}*Caçada Feroz:*{/pigmento} Quando estão com pouca vida eles podem ecoar um som que chama a atenção de outros Deinonychus próximos, que surgem para auxiliar no combate. Essas criaturas patrulham em grupos de 5 a 7, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
+{pigmento}*Ferocidade ancestral – teste de Agilidade :*{/pigmento} Todo turno pode atacar duas vezes podendo escolher os seguintes golpes – Depois que acertar dois golpes seguidos em uma alvo tem chance debilitar o alvo (o alvo quando for atingido deve rodar 1d20 Determinação, a DT é 12:
+{pigmento}*Garras laminares*{/pigmento} – golpeia em área 3m de distancia até 3 alvos _2d12 de dano Cortante_.
+{pigmento}*Mordida assombrosa*{/pigmento} – Pula até 5m em um alvo e morde causando _3d10 de dano Cortante_.
+{pigmento}*Cauda chicote*{/pigmento} – Faz um giro que causa _3d8 de dano Esmagante_ em área em quem estiver próximo de 2m.`,
+    bonus3:`Deinonychus antirrhopus
+Elemento – Desconhecido`,
+    Magias: `Nenhuma.`,
+    Passivas:` Nível 1 – Consumir, nível 3 – Vingança.`,
+    Talentos: `Intimidação - Requisito: Conexão, Percepção - Requisito: Libertação e Sobrevivência - Requisito: Determinação.`,
+    Descricao:`O Deinonychus antirrhopus é uma criatura ancestral que parece ter sido arrancada das profundezas do tempo, trazida de volta ao mundo atual por forças sobrenaturais. Este dinossauro terópode, que viveu originalmente no período Cretáceo, agora caminha novamente pelo continente, causando um desequilíbrio ecológico devastador. Com uma estranha aura negra que parece envolver seu corpo, o Deinonychus se destaca como uma aberração, um sobrevivente de uma era extinta que não pertence à fauna moderna.
+Embora aparentem ser animais comuns à primeira vista, o comportamento e a presença perturbadora desses predadores revelam sua verdadeira natureza. Eles surgiram no continente de Eldoria há mais de 850 anos, antes da grande separação do território, trazidos de volta por algum evento misterioso e não natural. Desde então, adaptaram-se de forma assustadoramente eficiente ao novo mundo, dominando as áreas em que se estabeleceram. Suas aparições causam terror nas populações locais, pois não se sabe ao certo se essa é a única espécie ancestral ressuscitada ou se outras criaturas antigas podem também estar à espreita.
+Os Deinonychus são caçadores territoriais e implacáveis, conhecidos por sua crueldade e comportamento predatório. Muitas vezes, eles caçam não pela necessidade de sobrevivência, mas por puro instinto, quase como se estivessem brincando com suas presas em um jogo macabro. Eles caçam em bandos, normalmente compostos de 5 a 7 indivíduos, e suas emboscadas são organizadas e letais. Curiosamente, apesar de sua tendência a caçar em grupo, os Deinonychus são egoístas e cabeças-duras, preferindo muitas vezes caçar sozinhos. Eles só chamam seus companheiros de bando quando estão gravemente feridos ou em perigo iminente.
+A aparência imponente desses predadores é complementada por sua pele dura e resistente, que lhes proporciona uma defesa natural contra ataques. Suas garras afiadas são comparáveis a lâminas, capazes de cortar profundamente seus alvos, enquanto sua mordida poderosa é o suficiente para desmembrar presas com facilidade. O comportamento de caça, sua territorialidade agressiva, e a forma como perturbam o equilíbrio ecológico tornam o Deinonychus antirrhopus uma ameaça assustadora para o mundo moderno.
+Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um som agudo e estridente que convoca rapidamente seus companheiros. Essas criaturas representam não apenas uma ameaça física, mas também um enigma sobre a origem de seu retorno, sugerindo que forças muito maiores e desconhecidas podem estar em jogo, manipulando o tempo e a vida.`,
+    img: "imagens/Deinonychus.png",
+    img2: "imagens/Token-Deinonychus.png"
+  }
+  
+  
+  
   
   
   ,"Doggers": {
