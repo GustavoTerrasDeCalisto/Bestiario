@@ -394,6 +394,7 @@ Não é apenas uma fera, mas o resultado de uma evolução profana — uma giraf
 Resistente: dano de Caos
 Vulnerável: dano de Gelo
 Vulnerável: dano de Distorção`,
+	  Ataquebásico: `2d12 de dano Cortante - Agilidade`,
     bonus2:`{pigmento}*Cuspe Ácido:*{/pigmento} Uma vez a cada 4 turnos, o Wyvnnoraptor cospe um líquido corrosivo em uma área de 15m. Criaturas atingidas devem realizar um teste de Determinação (DT 17) ou sofrem _3d10 de dano Ácido_. A área permanece coberta por ácido por 4 turnos, causando _1d8 de dano Ácido_ por turno a quem permanecer nela.
 {pigmento}*Ferocidade Instintiva – teste de Agilidade:*{/pigmento} Pode atacar duas vezes por turno com seus membros ou mordidas. Se acertar ambos os ataques em um mesmo alvo, este deve realizar um teste de Determinação (DT 15) ou fica debilitado até o próximo turno, reduzindo em -2 seus testes físicos.
 {pigmento}*Garras Serrilhadas:*{/pigmento} Golpeia em área de até 3m de distância, atingindo até 3 alvos e causando _2d12 de dano Cortante_.
@@ -432,6 +433,7 @@ Essas criaturas são extremamente territoriais e reagem a qualquer intruso com f
     bonus:`Resistente: dano Perfurante
     Vulnerável: Dano de Sono
     Imune: Dano de Mental`,
+	  Ataquebásico: `2d8 de dano Cortante - Agilidade`,
      bonus2: `{pigmento}*Caçada Feroz:*{/pigmento} Quando estão com pouca vida eles podem ecoar um som que chama a atenção de outros Deinonychus próximos, que surgem para auxiliar no combate. Essas criaturas patrulham em grupos de 5 a 7, sendo que um deles sempre tem de 2 a 5 níveis a mais que os demais, atuando como o líder. Os que forem atraídos e ainda não estiverem na fila de iniciativa entram no final da fila.
 {pigmento}*Ferocidade ancestral – teste de Agilidade :*{/pigmento} Todo turno pode atacar duas vezes podendo escolher os seguintes golpes – Depois que acertar dois golpes seguidos em uma alvo tem chance debilitar o alvo (o alvo quando for atingido deve rodar 1d20 Determinação, a DT é 12:
 {pigmento}*Garras laminares*{/pigmento} – golpeia em área 3m de distancia até 3 alvos _2d12 de dano Cortante_.
