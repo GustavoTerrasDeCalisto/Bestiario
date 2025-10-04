@@ -448,7 +448,7 @@ Os Deinonychus são caçadores territoriais e implacáveis, conhecidos por sua c
 A aparência imponente desses predadores é complementada por sua pele dura e resistente, que lhes proporciona uma defesa natural contra ataques. Suas garras afiadas são comparáveis a lâminas, capazes de cortar profundamente seus alvos, enquanto sua mordida poderosa é o suficiente para desmembrar presas com facilidade. O comportamento de caça, sua territorialidade agressiva, e a forma como perturbam o equilíbrio ecológico tornam o Deinonychus antirrhopus uma ameaça assustadora para o mundo moderno.
 Em momentos de grande perigo, quando estão sozinhos e encurralados, emitem um som agudo e estridente que convoca rapidamente seus companheiros. Essas criaturas representam não apenas uma ameaça física, mas também um enigma sobre a origem de seu retorno, sugerindo que forças muito maiores e desconhecidas podem estar em jogo, manipulando o tempo e a vida.`,
     img: "imagens/Deinonychus.png",
-    img2: "imagens/Deinonychus.png"
+    img2: "imagens/Token_Deinonychus.png"
   }
   
   
