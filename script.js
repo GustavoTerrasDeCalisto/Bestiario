@@ -360,9 +360,9 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     Resistente:Tempestade
     Vulnerável:Gelo
     Vulnerável:Alma`,
-    bonus2: `{pigmento}*Terror Gigantesco:*{/pigmento} Criaturas a até 30m devem realizar um teste de Liberação (CD 18) ou ficam paralisadas de medo por 1 turno.
+    bonus2: `{pigmento}*Terror Gigantesco:*{/pigmento} Criaturas a até 30m devem realizar um teste de Liberação (DT 18) ou ficam paralisadas de medo por 1 turno.
 {pigmento}*Alma Flamejante:*{/pigmento} O DracoGrurafa emana calor abrasador, causando _1d6 de dano de fogo_ a todos em 3m no início do turno.
-{pigmento}*Grito Rubro:*{/pigmento} Uma vez a cada 3 turnos, solta um urro que atravessa corpos e mentes, forçando todos em um cone de 20m a realizar Liberação (CD 17) ou sofrer _4d10+6 de dano Tempestade_.
+{pigmento}*Grito Rubro:*{/pigmento} Uma vez a cada 3 turnos, solta um urro que atravessa corpos e mentes, forçando todos em um cone de 20m a realizar Liberação (DT 17) ou sofrer _4d10+6 de dano Tempestade_.
 {pigmento}*Pisoteio de Titã:*{/pigmento} Ao se mover, pode esmagar inimigos no caminho causando _3d8 de dano físico_.
 {pigmento}*Voo Membranoso:*{/pigmento} Não possui asas tradicionais, mas pode planar e dar grandes saltos usando membranas como morcegos, percorrendo até _12m_ em um salto de combate.`,
     bonus3:`O Titã da Garganta Rubra
