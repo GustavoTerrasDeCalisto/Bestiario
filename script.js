@@ -2696,31 +2696,67 @@ function menuShow() {
 
 window.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
-  const criaturaNome = params.get("criatura");
-  const criaturaId = params.get("id");
+  const criaturaNomeParam = params.get("criatura");
+  const criaturaIdParam = params.get("id");
 
-  let criatura;
-
-  if (criaturaId) {
-    // Busca por ID dentro de todas as criaturas
-    criatura = Object.values(creatures).find(c => c.id === criaturaId);
-  } else if (criaturaNome && creatures[criaturaNome]) {
-    criatura = creatures[criaturaNome];
+  // procura a entrada e também captura a chave (nome principal usado no objeto creatures)
+  let chaveEncontrada = null;
+  if (criaturaIdParam) {
+    for (const [key, val] of Object.entries(creatures)) {
+      if (val && val.id === criaturaIdParam) {
+        chaveEncontrada = key;
+        break;
+      }
+    }
+  } else if (criaturaNomeParam && creatures[criaturaNomeParam]) {
+    chaveEncontrada = criaturaNomeParam;
   }
 
-  if (criatura) {
-    abrirPopupRacas?.(); // abre popup se a função existir
-
-    document.getElementById("popupCriatura").style.display = "block";
-    document.getElementById("nomeCriatura").innerText =
-      criatura.nome || criaturaNome;
-    document.getElementById("imagemCriatura").src = criatura.img;
-    document.getElementById("descricaoCriatura").innerText =
-      criatura.Descricao;
-  } else {
-    console.warn("Criatura não encontrada.");
+  if (!chaveEncontrada) {
+    console.warn("Criatura por id/nome não encontrada:", criaturaIdParam || criaturaNomeParam);
+    return;
   }
+
+  // abre popup de seleção (recria os cards)
+  if (typeof abrirPopupRacas === "function") abrirPopupRacas();
+  else {
+    // se você usa outro nome pra abrir, adapta aqui; mas tenta abrir o popup padrão
+    const abrirBtn = document.getElementById("abrirPopupRaca") || document.querySelector("#abrirPopupRaca");
+    abrirBtn?.click();
+  }
+
+  // espera os cards renderizarem — ajuste o delay se necessário
+  setTimeout(() => {
+    const cards = Array.from(document.querySelectorAll(".card-criatura"));
+    // tenta achar card comparando texto do <p> ou texto do título
+    const alvo = cards.find(card => {
+      const p = card.querySelector("p") || card.querySelector("div") || card;
+      const texto = (p?.innerText || card.innerText || "").trim().toLowerCase();
+      return texto === chaveEncontrada.toLowerCase() || texto === (creatures[chaveEncontrada].nome || "").toLowerCase();
+    });
+
+    if (alvo) {
+      // simula clique — seu handler já faz exibirCriatura(nome) e fecha o popup
+      alvo.click();
+
+      // destaque visual e scroll
+      alvo.style.outline = "3px solid yellow";
+      alvo.style.borderRadius = "10px";
+      alvo.scrollIntoView({ behavior: "smooth", block: "center" });
+    } else {
+      // Fallback: chama exibirCriatura diretamente se existir
+      if (typeof exibirCriatura === "function") {
+        exibirCriatura(chaveEncontrada);
+        // fecha popup de seleção, se ainda estiver aberto
+        const popupSel = document.getElementById("popupCriatura") || document.querySelector("#popupCriatura");
+        if (popupSel) popupSel.style.display = "none";
+      } else {
+        console.warn("Card da criatura não encontrado e exibirCriatura não existe.");
+      }
+    }
+  }, 300); // 300ms costuma ser suficiente; aumenta se os cards demorarem mais pra renderizar
 });
+
 
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
