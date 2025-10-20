@@ -2187,10 +2187,6 @@ const tagColors = {
   "Líquido": { background: "#4FC3F7", color: "#01579B" },
 };
 
-
-const criatureGrid = document.getElementById('criatureGrid');
-const elementoFilter = document.getElementById('elementoFilter');
-const tagFilter = document.getElementById('tagFilter');
 // --- EXISTENTE ---
 Object.keys(creatures).forEach(creature => {
   const option = document.createElement('option');
@@ -2220,6 +2216,10 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+const criatureGrid = document.getElementById('criatureGrid');
+const elementoFilter = document.getElementById('elementoFilter');
+const tagFilter = document.getElementById('tagFilter');
+
 
 function renderCriatures() {
   criatureGrid.innerHTML = '';
