@@ -2755,6 +2755,35 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }, 600); // aumentei o delay pra 600ms
 });
+// --- EXISTENTE ---
+Object.keys(creatures).forEach(creature => {
+  const option = document.createElement('option');
+  option.value = creature;
+  option.textContent = creature;
+  select.appendChild(option);
+});
+
+// --- NOVO BLOCO: AUTO-SELEÇÃO VIA ?id= ---
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const creatureId = params.get("id"); // pega o parâmetro id
+
+  if (creatureId) {
+    // procura criatura pelo id
+    const criaturaEncontrada = Object.entries(creatures).find(
+      ([, c]) => c.id === creatureId
+    );
+
+    if (criaturaEncontrada) {
+      const [nomeCriatura, dadosCriatura] = criaturaEncontrada;
+      selected = dadosCriatura;
+      select.value = nomeCriatura; // marca no select
+      exibirCriatura(nomeCriatura); // exibe diretamente
+    } else {
+      console.warn("Nenhuma criatura encontrada com o id:", creatureId);
+    }
+  }
+});
 
 
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
