@@ -2246,23 +2246,47 @@ const criatureGrid = document.getElementById('criatureGrid');
 const elementoFilter = document.getElementById('elementoFilter');
 const tagFilter = document.getElementById('tagFilter');
 
-function renderCriatures() {
-  criatureGrid.innerHTML = '';
+function createCriatureCard(criatura) {
+  const card = document.createElement('div');
+  card.classList.add('card-criatura');
 
-  const filtroElemento = elementoFilter.value;
-  const filtroTag = tagFilter.value;
+  // --- 🔑 Identificação direta via dataset ---
+  card.dataset.id = criatura.id || criatura.nome || criatura.Nome || '';
+  card.dataset.nome = criatura.nome || criatura.Nome || criatura.id || '';
 
-  criaturas.forEach(criatura => {
-    const elementos = (criatura.TipoElementoCriatura || "Nenhum").split(',').map(e => e.trim());
-    const tags = (criatura.TagCriatura || "Nenhuma").split(',').map(t => t.trim());
+  // --- 🖼️ Estrutura HTML ---
+  card.innerHTML = `
+    <div class="card-header">
+      <span class="elemento-tag ${criatura.TipoElementoCriatura?.toLowerCase() || ''}">
+        ${criatura.TipoElementoCriatura || 'Desconhecido'}
+      </span>
+    </div>
 
-    const passaFiltroElemento = filtroElemento === "Todos" || elementos.includes(filtroElemento);
-    const passaFiltroTag = filtroTag === "Todos" || tags.includes(filtroTag);
+    <div class="card-image">
+      <img src="${criatura.img}" alt="${criatura.Nome || criatura.nome || criatura.id}" loading="lazy">
+    </div>
 
-    if (passaFiltroElemento && passaFiltroTag) {
-      criatureGrid.appendChild(createCriatureCard(criatura));
+    <div class="card-body">
+      <h3 class="card-nome">${criatura.Nome || criatura.nome || criatura.id}</h3>
+      <div class="tags-container">
+        ${(criatura.TagsCriatura || '')
+          .split(',')
+          .map(tag => `<span class="tag">${tag.trim()}</span>`)
+          .join('')}
+      </div>
+    </div>
+  `;
+
+  // --- 💬 Evento de clique ---
+  card.addEventListener('click', () => {
+    if (typeof exibirCriatura === 'function') {
+      exibirCriatura(criatura);
+    } else {
+      console.warn('Função exibirCriatura() não encontrada.');
     }
   });
+
+  return card;
 }
 
 function preencherFiltrosCriatura() {
