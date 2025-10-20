@@ -2003,6 +2003,61 @@ img2: "imagens/Token-OctoRedsel Abissal.png"}
 };
 
 
+// ===============================
+// SISTEMA DE ID PARA AS CRIATURAS
+// ===============================
+
+// Garante que cada criatura tenha um ID único baseado no nome
+Object.entries(creatures).forEach(([nome, data]) => {
+  if (!data.id) {
+    data.id = nome
+      .toLowerCase()
+      .replace(/[^\w]+/g, '-') // substitui espaços e símbolos por hífen
+      .replace(/^-+|-+$/g, ''); // remove hifens extras
+  }
+});
+
+// Função para buscar criatura por ID ou nome
+function getCreatureById(id) {
+  if (!id) return null;
+  return (
+    Object.values(creatures).find(
+      c => c.id === id || c.id.toLowerCase() === id.toLowerCase()
+    ) ||
+    creatures[id] ||
+    null
+  );
+}
+
+// Função para carregar criatura via URL (?id=...)
+function loadCreatureFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id') || params.get('criatura');
+  const creature = getCreatureById(id);
+  if (creature) {
+    console.log("🧬 Criatura carregada:", creature.id);
+    renderCreature(creature);
+  } else {
+    console.warn("⚠️ Nenhuma criatura encontrada para o ID:", id);
+  }
+}
+
+// Função de renderização básica (substitua conforme seu HTML)
+function renderCreature(c) {
+  const container = document.getElementById('creatureInfo');
+  if (!container) return;
+  container.innerHTML = `
+    <h2>${c.id}</h2>
+    <img src="${c.img}" alt="${c.id}" style="max-width:200px">
+    <p><b>Vida:</b> ${c.vida}</p>
+    <p><b>Sanidade:</b> ${c.sanidade}</p>
+    <p><b>Elemento:</b> ${c.TipoElementoCriatura}</p>
+    <p>${c.Descricao || ''}</p>
+  `;
+}
+
+// Executa automaticamente quando a página carrega
+document.addEventListener('DOMContentLoaded', loadCreatureFromURL);
 
 
 
