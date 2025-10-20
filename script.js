@@ -1,6 +1,7 @@
 const creatures = {
   "Glink's": {
-    vida: 50,
+    id: "B1",
+	vida: 50,
     sanidade: 30,
     especial: 20,
     armadura: 1,
@@ -2693,41 +2694,34 @@ function menuShow() {
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 
-// 🔎 Seleciona a criatura ao abrir via ?criatura=Nome
 window.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
-  const criatura = params.get("criatura");
+  const criaturaNome = params.get("criatura");
+  const criaturaId = params.get("id");
+
+  let criatura;
+
+  if (criaturaId) {
+    // Busca por ID dentro de todas as criaturas
+    criatura = Object.values(creatures).find(c => c.id === criaturaId);
+  } else if (criaturaNome && creatures[criaturaNome]) {
+    criatura = creatures[criaturaNome];
+  }
 
   if (criatura) {
-    // Abre automaticamente o popup de raças
-    abrirPopupRacas();
+    abrirPopupRacas?.(); // abre popup se a função existir
 
-    // Espera um pouquinho para os cards renderizarem
-    setTimeout(() => {
-      const cards = document.querySelectorAll(".card-criatura");
-
-      let encontrado = false;
-      cards.forEach(card => {
-        const nome = card.querySelector("p")?.innerText.trim() || "";
-        if (nome.toLowerCase() === criatura.toLowerCase()) {
-          encontrado = true;
-
-          // Simula o clique no card → abre o popup da raça direto
-          card.click();
-
-          // Destaca o card no grid principal
-          card.style.outline = "3px solid yellow";
-          card.style.borderRadius = "10px";
-          card.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-      });
-
-      if (!encontrado) {
-        console.warn("Criatura não encontrada:", criatura);
-      }
-    }, 300); // dá tempo de renderizar os cards
+    document.getElementById("popupCriatura").style.display = "block";
+    document.getElementById("nomeCriatura").innerText =
+      criatura.nome || criaturaNome;
+    document.getElementById("imagemCriatura").src = criatura.img;
+    document.getElementById("descricaoCriatura").innerText =
+      criatura.Descricao;
+  } else {
+    console.warn("Criatura não encontrada.");
   }
 });
+
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
