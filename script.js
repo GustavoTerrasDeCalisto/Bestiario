@@ -2308,7 +2308,6 @@ function updateStats(creature, level) {
 // Função genérica: aplica todas as marcações (*, _, ~, -, pigmento, etc.)
 function formatBonusText(text, type = "default") {
   let className;
-
   if (type === "bonus1") className = "bonus1-paragraph";
   else if (type === "bonus2") className = "bonus2-paragraph";
   else if (type === "bonus3") className = "bonus3-paragraph";
@@ -2319,29 +2318,33 @@ function formatBonusText(text, type = "default") {
     .split(/\n+/)
     .map(sentence => {
       if (sentence.trim()) {
-        // 1. Protege os links temporariamente
-        let links = [];
-        sentence = sentence.replace(/<a[^>]*>.*?<\/a>/g, match => {
-          links.push(match);
-          return `%%LINK${links.length - 1}%%`;
+        // Preserva os links
+        const links = {};
+        let count = 0;
+        sentence = sentence.replace(/<a\b[^>]*>.*?<\/a>/gi, match => {
+          const key = `%%LINK_${count}%%`;
+          links[key] = match;
+          count++;
+          return key;
         });
 
-        // 2. Aplica as formatações
+        // Aplica marcações
         let formattedSentence = sentence
-          .replace(/\*(.*?)\*/g, '<strong>$1</strong>')       // *negrito*
-          .replace(/_(.*?)_/g, '<em>$1</em>')                // _itálico_
-          .replace(/~(.*?)~/g, '<u>$1</u>')                  // ~sublinhado~
-          .replace(/-([^-\n]+)-/g, '<s>$1</s>')              // -tachado-
+          .replace(/\*(.*?)\*/g, '<strong>$1</strong>')
+          .replace(/_(.*?)_/g, '<em>$1</em>')
+          .replace(/~(.*?)~/g, '<u>$1</u>')
+          .replace(/-([^-\n]+)-/g, '<s>$1</s>')
           .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>')
           .replace(/{subpigmento}(.*?){\/subpigmento}/g, '<span class="subpigmento">$1</span>');
 
-        // 3. Restaura os links no lugar certo
-        formattedSentence = formattedSentence.replace(/%%LINK(\d+)%%/g, (_, i) => links[i]);
+        // Restaura os links preservados
+        Object.entries(links).forEach(([key, link]) => {
+          formattedSentence = formattedSentence.replace(key, link);
+        });
 
         return `<p class="${className}">${formattedSentence}</p>`;
-      } else {
-        return '';
       }
+      return '';
     })
     .join('');
 }
