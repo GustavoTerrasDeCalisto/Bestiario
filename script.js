@@ -2783,6 +2783,141 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 300); // dá tempo de renderizar os cards
   }
 });
+
+// ======== Auto-seleção robusta via ?id= ou ?criatura= ========
+// Cole este bloco NO FINAL do seu script.js, após `creatures` e após o código
+// que monta os cards/popula listaCriaturas (é seguro chamar várias vezes).
+
+(function(){
+  // fallback: cria slug a partir do nome
+  function slugify(name) {
+    return String(name).toLowerCase().trim().replace(/[^\w]+/g, '-').replace(/^-+|-+$/g,'');
+  }
+
+  // 1) Garante que todas as criaturas tenham id (se não tiverem)
+  Object.keys(creatures || {}).forEach(key => {
+    const c = creatures[key];
+    if (!c) c.id = c.id || slugify(key);
+    if (!c.id) c.id = slugify(key);
+  });
+
+  // 2) Função que assegura que cada card na lista tenha dataset.nome e dataset.id
+  function ensureCardsDataAttributes() {
+    const cards = Array.from(document.querySelectorAll('.card-criatura'));
+    if (!cards.length) return 0;
+    cards.forEach(card => {
+      // tenta extrair nome do card (vários templates usam <div>, <p> ou <h*>)
+      let nome = card.dataset.nome || '';
+      if (!nome) {
+        const possible = card.querySelector('p, div, h3, h4, .title, .nome');
+        if (possible) nome = possible.textContent.trim();
+      }
+      // se ainda não achou, pega alt da imagem
+      if (!nome) {
+        const img = card.querySelector('img');
+        if (img && img.alt) nome = img.alt.trim();
+      }
+      // se achou, normaliza e aplica dataset
+      if (nome && creatures[nome]) {
+        card.dataset.nome = nome;
+        const cid = creatures[nome].id || slugify(nome);
+        card.dataset.id = cid;
+      } else {
+        // tenta procurar por chave que tenha id igual ao text (caso o nome exibido não seja a chave)
+        if (nome) {
+          const found = Object.entries(creatures).find(([,v]) => (v.id && v.id.toString().toLowerCase() === nome.toLowerCase()));
+          if (found) {
+            const key = found[0];
+            card.dataset.nome = key;
+            card.dataset.id = creatures[key].id;
+          }
+        }
+      }
+    });
+    return cards.length;
+  }
+
+  // 3) função principal que espera os cards e tenta selecionar
+  function autoSelectFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    const idParam = params.get('id') || params.get('criatura');
+    if (!idParam) return;
+
+    // garante que popup de lista abra (se tiver um botão que abre, tentamos clicar)
+    const abrirPopupBtn = document.getElementById('abrirPopup') || document.querySelector('[data-open="listaCriaturas"], #abrirPopupRaca, .abrir-popup');
+    if (abrirPopupBtn) {
+      try { abrirPopupBtn.click(); } catch(e){ /* ignore */ }
+    }
+
+    // aguarda cards serem populados: tenta por até MAX ms
+    const MAX_WAIT = 3000; // tempo máximo para aguardar (ms)
+    const INTERVAL = 80;
+    let waited = 0;
+
+    const iv = setInterval(() => {
+      waited += INTERVAL;
+      const count = ensureCardsDataAttributes();
+
+      // procura card pelo dataset.id exato (preferencial)
+      const cards = Array.from(document.querySelectorAll('.card-criatura'));
+      const idLower = idParam.toString().toLowerCase();
+
+      let target = cards.find(c => (c.dataset.id && c.dataset.id.toString().toLowerCase() === idLower));
+      if (!target) {
+        // tenta encontrar por nome da chave (dataset.nome)
+        target = cards.find(c => (c.dataset.nome && c.dataset.nome.toString().toLowerCase() === idLower));
+      }
+      if (!target) {
+        // tenta achar por comparar com creatures keys cujo id === idParam
+        const keyFound = Object.entries(creatures).find(([,v]) => (v.id && v.id.toString().toLowerCase() === idLower));
+        if (keyFound) {
+          const keyName = keyFound[0];
+          target = cards.find(c => (c.dataset.nome && c.dataset.nome === keyName) || (c.textContent && c.textContent.toLowerCase().includes(keyName.toLowerCase())));
+        }
+      }
+
+      if (target) {
+        clearInterval(iv);
+        // destaca visualmente
+        target.style.outline = "3px solid #ffd54f";
+        target.style.transition = "outline 160ms ease-in-out";
+        // scrolla para o item
+        try { target.scrollIntoView({behavior:"smooth", block:"center"}); } catch(e){}
+        // clica para abrir a criatura (se o card tiver handler)
+        setTimeout(()=> {
+          target.click();
+          console.info("Auto-selecionado card com id:", idParam);
+        }, 120);
+        return;
+      }
+
+      if (waited >= MAX_WAIT) {
+        clearInterval(iv);
+        // fallback: tenta abrir diretamente pela função exibirCriatura, buscando a chave pela id
+        const found = Object.entries(creatures).find(([,v]) => v.id && v.id.toString().toLowerCase() === idLower);
+        if (found) {
+          const keyName = found[0];
+          if (typeof exibirCriatura === 'function') {
+            exibirCriatura(keyName);
+            console.info("Card não encontrado na lista, exibindo diretamente via exibirCriatura:", keyName);
+          } else {
+            console.warn("exibirCriatura não encontrada para exibir:", keyName);
+          }
+        } else {
+          console.warn("Auto-seleção falhou: nenhum card nem criatura com id:", idParam);
+        }
+      }
+    }, INTERVAL);
+  }
+
+  // roda quando DOM estiver pronto (várias cargas do script são toleradas)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', autoSelectFromURL);
+  } else {
+    setTimeout(autoSelectFromURL, 50);
+  }
+})();
+
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
