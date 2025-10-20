@@ -2210,6 +2210,19 @@ function renderCriatures() {
     }
   });
 }
+function createCriatureCard(criatura) {
+  const card = document.createElement("div");
+  card.classList.add("card-criatura");
+  card.dataset.id = criatura.id; // <<< AQUI
+  card.dataset.nome = criatura.nome; // opcional, útil também
+  card.innerHTML = `
+    <img src="${criatura.Imagem}" alt="${criatura.nome}">
+    <p>${criatura.nome}</p>
+  `;
+  card.addEventListener("click", () => exibirCriatura(criatura.nome));
+  return card;
+}
+
 
 function preencherFiltrosCriatura() {
   const elementosSet = new Set();
@@ -2702,7 +2715,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const criaturaNomeParam = params.get("criatura");
   const criaturaIdParam = params.get("id");
 
-  // procura a entrada e também captura a chave (nome principal usado no objeto creatures)
   let chaveEncontrada = null;
   if (criaturaIdParam) {
     for (const [key, val] of Object.entries(creatures)) {
@@ -2716,48 +2728,32 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   if (!chaveEncontrada) {
-    console.warn("Criatura por id/nome não encontrada:", criaturaIdParam || criaturaNomeParam);
+    console.warn("❌ Criatura por id/nome não encontrada:", criaturaIdParam || criaturaNomeParam);
     return;
   }
 
-  // abre popup de seleção (recria os cards)
+  // abre popup de seleção
   if (typeof abrirPopupRacas === "function") abrirPopupRacas();
-  else {
-    // se você usa outro nome pra abrir, adapta aqui; mas tenta abrir o popup padrão
-    const abrirBtn = document.getElementById("abrirPopupRaca") || document.querySelector("#abrirPopupRaca");
-    abrirBtn?.click();
-  }
+  else document.querySelector("#abrirPopupRaca")?.click();
 
-  // espera os cards renderizarem — ajuste o delay se necessário
+  // aguarda renderização dos cards
   setTimeout(() => {
     const cards = Array.from(document.querySelectorAll(".card-criatura"));
-    // tenta achar card comparando texto do <p> ou texto do título
-    const alvo = cards.find(card => {
-      const p = card.querySelector("p") || card.querySelector("div") || card;
-      const texto = (p?.innerText || card.innerText || "").trim().toLowerCase();
-      return texto === chaveEncontrada.toLowerCase() || texto === (creatures[chaveEncontrada].nome || "").toLowerCase();
-    });
+    const alvo =
+      cards.find(c => c.dataset.id === creatures[chaveEncontrada].id) ||
+      cards.find(c => (c.dataset.nome || "").toLowerCase() === creatures[chaveEncontrada].nome.toLowerCase());
 
     if (alvo) {
-      // simula clique — seu handler já faz exibirCriatura(nome) e fecha o popup
       alvo.click();
-
-      // destaque visual e scroll
       alvo.style.outline = "3px solid yellow";
-      alvo.style.borderRadius = "10px";
       alvo.scrollIntoView({ behavior: "smooth", block: "center" });
-    } else {
-      // Fallback: chama exibirCriatura diretamente se existir
-      if (typeof exibirCriatura === "function") {
-        exibirCriatura(chaveEncontrada);
-        // fecha popup de seleção, se ainda estiver aberto
-        const popupSel = document.getElementById("popupCriatura") || document.querySelector("#popupCriatura");
-        if (popupSel) popupSel.style.display = "none";
-      } else {
-        console.warn("Card da criatura não encontrado e exibirCriatura não existe.");
-      }
+      console.log("✅ Criatura selecionada automaticamente:", creatures[chaveEncontrada].nome);
+    } else if (typeof exibirCriatura === "function") {
+      console.warn("⚠️ Card não encontrado, exibindo direto via função.");
+      exibirCriatura(chaveEncontrada);
+      document.querySelector("#popupCriatura")?.style.setProperty("display", "none");
     }
-  }, 300); // 300ms costuma ser suficiente; aumenta se os cards demorarem mais pra renderizar
+  }, 600); // aumentei o delay pra 600ms
 });
 
 
