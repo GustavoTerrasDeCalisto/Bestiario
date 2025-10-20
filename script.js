@@ -2216,6 +2216,19 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+function createCriatureCard(criatura) {
+  const card = document.createElement("div");
+  card.classList.add("card-criatura");
+  card.dataset.id = criatura.id; // <<< AQUI
+  card.dataset.nome = criatura.nome; // opcional, útil também
+  card.innerHTML = `
+    <img src="${criatura.Imagem}" alt="${criatura.nome}">
+    <p>${criatura.nome}</p>
+  `;
+  card.addEventListener("click", () => exibirCriatura(criatura.nome));
+  return card;
+}
+
 const criatureGrid = document.getElementById('criatureGrid');
 const elementoFilter = document.getElementById('elementoFilter');
 const tagFilter = document.getElementById('tagFilter');
@@ -2238,18 +2251,6 @@ function renderCriatures() {
       criatureGrid.appendChild(createCriatureCard(criatura));
     }
   });
-}
-function createCriatureCard(criatura) {
-  const card = document.createElement("div");
-  card.classList.add("card-criatura");
-  card.dataset.id = criatura.id; // <<< AQUI
-  card.dataset.nome = criatura.nome; // opcional, útil também
-  card.innerHTML = `
-    <img src="${criatura.Imagem}" alt="${criatura.nome}">
-    <p>${criatura.nome}</p>
-  `;
-  card.addEventListener("click", () => exibirCriatura(criatura.nome));
-  return card;
 }
 
 
@@ -2783,6 +2784,75 @@ window.addEventListener("DOMContentLoaded", () => {
       document.querySelector("#popupCriatura")?.style.setProperty("display", "none");
     }
   }, 600); // aumentei o delay pra 600ms
+});
+document.addEventListener("DOMContentLoaded", () => {
+  // --- GARANTIR QUE AS CRIATURAS EXISTEM ---
+  if (typeof creatures === "undefined" || !creatures) {
+    console.error("❌ Erro: lista de criaturas (creatures) não encontrada.");
+    return;
+  }
+
+  const select = document.getElementById("creatureSelect");
+  const criatureGrid = document.getElementById("criatureGrid");
+
+  // Evita duplicar opções
+  select.innerHTML = "";
+
+  // --- Popula o SELECT ---
+  Object.keys(creatures).forEach((nome) => {
+    const opt = document.createElement("option");
+    opt.value = nome;
+    opt.textContent = nome;
+    select.appendChild(opt);
+  });
+
+  // --- Detecta ?id= e abre automaticamente ---
+  const params = new URLSearchParams(window.location.search);
+  const creatureId = params.get("id");
+
+  if (creatureId) {
+    const encontrada = Object.entries(creatures).find(
+      ([, c]) => c.id?.toString() === creatureId
+    );
+    if (encontrada) {
+      const [nomeCriatura, dados] = encontrada;
+      select.value = nomeCriatura;
+      exibirCriatura(nomeCriatura);
+      console.info("✅ Criatura carregada via ID:", nomeCriatura);
+    } else {
+      console.warn("⚠️ Nenhuma criatura com id:", creatureId);
+    }
+  }
+
+  // --- Clique nos cards ---
+  if (criatureGrid) {
+    criatureGrid.addEventListener("click", (e) => {
+      const card = e.target.closest(".card-criatura");
+      if (!card) return;
+      const nome = card.dataset.nome;
+      if (!nome) return;
+
+      // Atualiza o parâmetro da URL sem recarregar
+      const newUrl = `${window.location.pathname}?id=${card.dataset.id}`;
+      window.history.pushState({}, "", newUrl);
+
+      exibirCriatura(nome);
+    });
+  }
+
+  // --- Alteração manual pelo select ---
+  select.addEventListener("change", () => {
+    const nome = select.value;
+    if (!creatures[nome]) return;
+    exibirCriatura(nome);
+
+    // Atualiza a URL ao trocar no select
+    const id = creatures[nome]?.id;
+    if (id) {
+      const newUrl = `${window.location.pathname}?id=${id}`;
+      window.history.pushState({}, "", newUrl);
+    }
+  });
 });
 
 
