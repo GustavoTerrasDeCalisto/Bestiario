@@ -1,7 +1,6 @@
 const creatures = {
   "Glink's": {
-    id: "B1",
-	vida: 50,
+    vida: 50,
     sanidade: 30,
     especial: 20,
     armadura: 1,
@@ -2005,356 +2004,730 @@ img2: "imagens/Token-OctoRedsel Abissal.png"}
 
 
 
-// calisto_creatures_fixed.js
-// Versão corrigida e consolidada do script de criaturas
-// Principais objetivos:
-// - Unificar uso de 'creatures' (antes havia 'criaturas' misturado)
-// - Corrigir chaves duplicadas e conflitos em tagColors
-// - Consolidar listeners DOMContentLoaded em um único bloco
-// - Garantir existência dos elementos do DOM antes de usá-los
-// - Corrigir criação de cards para usar dataset corretamente (id + nome)
-// - Melhor tratamento de fallback para propriedades numéricas (porNivel etc.)
 
-// ---------- CONFIGURAÇÃO (exemplo mínimo) ----------
-// Assuma que a variável `creatures` será definida em outro arquivo
-// (por exemplo um arquivo JSON ou um <script> que declara const creatures = {...}).
 
-// ---------- TAG COLORS (limpo; sem duplicatas) ----------
+
 const tagColors = {
-  // Elementos (gradientes)
-  "Fé": { gradient: "linear-gradient(270deg, #FFF59D, #F0F4C3, #DCE775, #FFF59D)", color: "#37474F" },
-  "Caos": { gradient: "linear-gradient(270deg, #FF7043, #FF8A65, #FF7043)", color: "#BF360C" },
-  "Poder": { gradient: "linear-gradient(270deg, #00E5FF, #00B8D4, #00E5FF)", color: "#004D40" },
-  "Desconhecido": { gradient: "linear-gradient(270deg, #B0BEC5, #90A4AE, #78909C, #B0BEC5)", color: "#263238" },
+  // Tipos de Elementos (usar gradient para os 4)
+    // Tipos de Elementos (usar gradient para os 4)
+  "Fé": { background: "linear-gradient(135deg, #FFF59D, #DCE775)", color: "#37474F" },
+  "Caos": { background: "linear-gradient(135deg, #FF7043, #FF8A65)", color: "#BF360C" },
+  "Poder": { background: "linear-gradient(135deg, #00E5FF, #00B8D4)", color: "#004D40" },
+  "Desconhecido": { background: "linear-gradient(135deg, #B0BEC5, #78909C)", color: "#263238" },
+  "Fé": {
+    gradient: "linear-gradient(270deg, #FFF59D, #F0F4C3, #DCE775, #FFF59D)"
+  },
+  "Caos": {
+    gradient: "linear-gradient(270deg, #FF7043, #FF8A65, #FF7043)"
+  },
+  "Poder": {
+    gradient: "linear-gradient(270deg, #00E5FF, #00B8D4, #00E5FF)"
+  },
+  "Desconhecido": {
+    gradient: "linear-gradient(270deg, #B0BEC5, #90A4AE, #78909C, #B0BEC5)"
+  },
+// Habitats Naturais
 
-  // Habitats (exemplos simplificados)
-  "Floresta": { background: "#A5D6A7", color: "#2E7D32" },
-  "Deserto": { background: "#FFF59D", color: "#F57F17" },
-  "Ilha Tropical": { background: "#FFECB3", color: "#00695C" },
-  "Ruínas Antigas": { background: "#D7CCC8", color: "#5D4037" },
+"Savana":          { background: "#FDD835", color: "#6D4C41" },   // seca, dourada e terrosa  
+"Chapada":         { background: "#FBC02D", color: "#4E342E" },   // clima árido e altitudes elevadas  
+"Floresta Morta":  { background: "#A1887F", color: "#3E2723" },   // tons secos e sombrios  
+"Tundra":          { background: "#CFD8DC", color: "#37474F" },   // gélido e árido  
+"Taiga":           { background: "#90A4AE", color: "#1B5E20" },   // floresta boreal  
+"Pantanal":        { background: "#C5E1A5", color: "#33691E" },   // tropical e alagado  
+"Ilha Tropical":   { background: "#FFECB3", color: "#00695C" },   // calor, mar e verde  
+"Ruínas Antigas":  { background: "#D7CCC8", color: "#5D4037" },   // pedras antigas, tom místico  
+"Campos de Gelo":  { background: "#E1F5FE", color: "#01579B" },   // congelado e brilhante  
+"Desfiladeiro":    { background: "#FFCC80", color: "#BF360C" },   // árido e rochoso  
+"Planície Nevada": { background: "#F5F5F5", color: "#607D8B" },   // vasta e branca  
+"Floresta":        { background: "#A5D6A7", color: "#2E7D32" },   // verde folhagem
+"Selva":           { background: "#66BB6A", color: "#1B5E20" },   // mais denso
+"Montanha":        { background: "#BCAAA4", color: "#3E2723" },   // pedregoso
+"Caverna":         { background: "#8D6E63", color: "#212121" },   // escuro e rochoso
+"Deserto":         { background: "#FFF59D", color: "#F57F17" },   // areia e sol
+"Vulcão":          { background: "#FF7043", color: "#BF360C" },   // fogo e magma
+"Pântano":         { background: "#AED581", color: "#33691E" },   // úmido e tóxico
+"Campo Aberto":    { background: "#FFF9C4", color: "#827717" },   // planícies
+"Lago":            { background: "#81D4FA", color: "#01579B" },   // água calma
+"Rio":             { background: "#4FC3F7", color: "#0277BD" },   // fluxo constante
+"Oceano":          { background: "#0288D1", color: "#E1F5FE" },   // azul profundo
+"Glacial":         { background: "#E0F7FA", color: "#006064" },   // frio e gelado
+"Céu":             { background: "#E3F2FD", color: "#0288D1" },   // aéreo
+"Domínio dos Vivos": { background: "#FFD54F", color: "#5D4037" }, // Energia divina e sagrada  
+"Domínio dos Mortos": { background: "#7B1FA2", color: "#E1BEE7" }, // Forças energéticas e sobrenaturais  
+"Domínio do Sobrenatural": { background: "#D1C4E9", color: "#311B92" }, // Forças misteriosas e psíquicas  
+"Domínio da Natureza": { background: "#66BB6A", color: "#1B5E20" }, // Elementos naturais e caóticos  
+"Reino dos Sonhos": { background: "#cb9df2", color: "#8b9db0" }, // Elementos naturais e caóticos  
 
-  // Comportamento / tamanho / tipos de criatura
+
+	
+// Habitats Urbanos
+"Vila":            { background: "#FFECB3", color: "#4E342E" },   // simples e pacata
+"Cidade":          { background: "#90A4AE", color: "#212121" },   // comum urbano
+"Metrópole":       { background: "#B0BEC5", color: "#263238" },   // urbana densa
+"Castelo":         { background: "#D7CCC8", color: "#5D4037" },   // nobreza
+"Fortaleza":       { background: "#A1887F", color: "#3E2723" },   // militar
+"Porto":           { background: "#81D4FA", color: "#01579B" },   // marinho/comércio
+"Ruínas":          { background: "#757575", color: "#FAFAFA" },   // abandonado
+"Submundo":        { background: "#263238", color: "#B0BEC5" },   // clandestino/esgoto
+"Templo":          { background: "#FFF176", color: "#5D4037" },   // espiritual
+
+// Ambientes Exóticos ou Fantásticos
+"Éter":            { background: "#CE93D8", color: "#4A148C" },   // plano mágico
+"Sombras":         { background: "#37474F", color: "#ECEFF1" },   // escuridão viva
+"Campo de Batalha":{ background: "#EF9A9A", color: "#B71C1C" },   // violento
+"Arena":           { background: "#FFE082", color: "#5D4037" },   // domado
+"Ruínas Antigas":  { background: "#BCAAA4", color: "#212121" },   // esquecidas
+
+
+  // Inteligência e Comportamento
   "Racional": { background: "#AED581", color: "#1B5E20" },
+  "Irracional": { background: "#E57373", color: "#B71C1C" },
   "Agressivo": { background: "#EF5350", color: "#B71C1C" },
+  "Pacífico": { background: "#A5D6A7", color: "#33691E" },
+  "Caça em Grupo": { background: "#FFB74D", color: "#4E342E" },
+  "Solitário": { background: "#90A4AE", color: "#212121" },
+  "Montaria": { background: "#FFE082", color: "#5D4037" },
+
+  // Tamanho
   "Pequeno": { background: "#FFCDD2", color: "#C62828" },
   "Médio": { background: "#FFF9C4", color: "#F57F17" },
   "Grande": { background: "#C5CAE9", color: "#1A237E" },
-  "Montaria": { background: "#FFE082", color: "#5D4037" },
+  "Gigante": { background: "#BCAAA4", color: "#3E2723" },
 
-  // Tipos de dano (exemplos)
-  "Fogo": { background: "#FF7043", color: "#BF360C" },
+  // Forma
+  "Humanoide": { background: "#B0BEC5", color: "#263238" },
+  "Quadrúpede": { background: "#A1887F", color: "#3E2723" },
+  "Voador": { background: "#81D4FA", color: "#01579B" },
+
+  // Tipos de Criatura
+  "Animal": { background: "#A5D6A7", color: "#1B5E20" },
+  "Monstro": { background: "#E57373", color: "#B71C1C" },
+  "Corrompido": { background: "#6A1B9A", color: "#F3E5F5" },
+  "Aberração": { background: "#CE93D8", color: "#4A148C" },
+  "Humano": { background: "#90A4AE", color: "#212121" },
+  "Elfo": { background: "#C5E1A5", color: "#33691E" },
+  "Anão": { background: "#FFCC80", color: "#4E342E" },
+  "Gigante": { background: "#BCAAA4", color: "#3E2723" },
+  "Tritão": { background: "#81D4FA", color: "#01579B" },
+  "Shlurp": { background: "#9FA8DA", color: "#1A237E" },
+  "Pele Pálida": { background: "#D7CCC8", color: "#4E342E" },
+  "Flumplux": { background: "#AED581", color: "#33691E" },
+  "IgnisAlatus": { background: "#FF8A65", color: "#BF360C" },
+
+  // Temas e Alinhamentos
+
+  "Natural": { background: "#A5D6A7", color: "#2E7D32" },
+  "Tecnológico": { background: "#B0BEC5", color: "#212121" },
+  "Apocalíptico": { background: "#D32F2F", color: "#FAFAFA" },
+
+  // Tipos de Dano
+  "Sagrado": { background: "#FFEB3B", color: "#5D4037" },
+  "Maldição": { background: "#512DA8", color: "#CE93D8" },
   "Gelo": { background: "#B3E5FC", color: "#004D40" },
+  "Ácido": { background: "#A5D6A7", color: "#1B5E20" },
+  "Fogo": { background: "#FF7043", color: "#BF360C" },
+  "Água": { background: "#81D4FA", color: "#01579B" },
+  "Eletricidade": { background: "#FFD600", color: "#F57F17" },
+  "Tempestade": { background: "#7E57C2", color: "#311B92" },
+  "Sangue": { background: "#D50000", color: "#FFFFFF" },
+  "Luz": { background: "#FFF59D", color: "#37474F" },
+  "Laser": { background: "#00E5FF", color: "#004D40" },
+  "Alma": { background: "#CE93D8", color: "#4A148C" },
+  "Escuridão": { background: "#263238", color: "#B0BEC5" },
+  "Plasma": { background: "#E1F5FE", color: "#0277BD" },
+  "Tremor": { background: "#8D6E63", color: "#3E2723" },
+  "Aura": { background: "#FFF8E1", color: "#4E342E" },
+  "Psicológico": { background: "#F48FB1", color: "#880E4F" },
+  "Mental": { background: "#B0BEC5", color: "#263238" },
+  "Distorção": { background: "#A1887F", color: "#D7CCC8" },
+  "Névoa": { background: "#CFD8DC", color: "#455A64" },
+  "Sono": { background: "#D1C4E9", color: "#4A148C" },
+  "Balístico": { background: "#BDBDBD", color: "#424242" },
+  "Perfurante": { background: "#90A4AE", color: "#263238" },
+  "Cortante": { background: "#37474F", color: "#FFFFFF" },
+  "Esmagante": { background: "#ECEFF1", color: "#78909C" },
+  "Cinzas": { background: "#B0BEC5", color: "#455A64" },
+  "Morte": { background: "#424242", color: "#D32F2F" },
+  "Eclipse": { background: "#212121", color: "#FFA000" },
+
+  // Localizações (simplificadas)
+  "Drønnjern": { background: "#8D6E63", color: "#3E2723" },
+  "Skjarrgrom": { background: "#4E342E", color: "#FFF" },
+  "Umbro": { background: "#263238", color: "#ECEFF1" },
+  "AskVill": { background: "#4DB6AC", color: "#004D40" },
+  "Sultan Leste": { background: "#FFCCBC", color: "#BF360C" },
+  "Sultan Oeste": { background: "#FFAB91", color: "#3E2723" },
+  "Teach Docas": { background: "#90CAF9", color: "#0D47A1" },
+  "Karminia": { background: "#F8BBD0", color: "#880E4F" },
+  "Saonasjørand": { background: "#B2EBF2", color: "#004D40" },
+  "Rohan": { background: "#D7CCC8", color: "#3E2723" },
+  "Gormandia": { background: "#FFE082", color: "#5D4037" },
+  "Fiskehavn": { background: "#B3E5FC", color: "#01579B" },
+  "Marstrøm": { background: "#81D4FA", color: "#004D40" },
+  "Elfinoria": { background: "#C5E1A5", color: "#33691E" },
+  "Luar Perdido": { background: "#E1BEE7", color: "#4A148C" },
+  "Ilha do Céu": { background: "#E3F2FD", color: "#0288D1" },
+  "King Vortex": { background: "#B2EBF2", color: "#00796B" },
 
   // Extras
-  "Comum": { background: "#CFD8DC", color: "#263238" },
+  "Bestiário": { background: "#A1887F", color: "#3E2723" },
   "Raro": { background: "#FFD54F", color: "#F57F17" },
   "Lendário": { background: "#FBC02D", color: "#212121" },
+  "Entidade": { background: "#6A1B9A", color: "#FFFFFF" },       // Roxo intenso com texto branco
+  "": { background: "#0288D1", color: "#FFFFFF" },   // Azul vibrante com texto branco
+  "Comum": { background: "#CFD8DC", color: "#263238" },
+  "Hostil": { background: "#EF5350", color: "#B71C1C" },
+  "Pacífico": { background: "#A5D6A7", color: "#33691E" },
+
+  // Adicione mais conforme necessário...
+  "Item": { background: "#FFF8E1",color: "#5D4037"},
+  "Comunidade": { background: "#615e56",color: "#9e3f21"},
+  "Sanidade": { background: "#FF00FF",color: "#ffffff"},
+  "Líquido": { background: "#4FC3F7", color: "#01579B" },
 };
 
-// ---------- FUNÇÕES AUXILIARES DE FORMATAÇÃO ----------
-function safeGet(obj, key, fallback = '') {
-  return (obj && obj[key] !== undefined) ? obj[key] : fallback;
+
+const criatureGrid = document.getElementById('criatureGrid');
+const elementoFilter = document.getElementById('elementoFilter');
+const tagFilter = document.getElementById('tagFilter');
+
+function renderCriatures() {
+  criatureGrid.innerHTML = '';
+
+  const filtroElemento = elementoFilter.value;
+  const filtroTag = tagFilter.value;
+
+  criaturas.forEach(criatura => {
+    const elementos = (criatura.TipoElementoCriatura || "Nenhum").split(',').map(e => e.trim());
+    const tags = (criatura.TagCriatura || "Nenhuma").split(',').map(t => t.trim());
+
+    const passaFiltroElemento = filtroElemento === "Todos" || elementos.includes(filtroElemento);
+    const passaFiltroTag = filtroTag === "Todos" || tags.includes(filtroTag);
+
+    if (passaFiltroElemento && passaFiltroTag) {
+      criatureGrid.appendChild(createCriatureCard(criatura));
+    }
+  });
 }
 
-function applyTagStyle(span, tag) {
-  const cor = tagColors[tag];
-  if (!cor) return;
-  if (cor.gradient) span.style.background = cor.gradient;
-  else if (cor.background) span.style.backgroundColor = cor.background;
-  if (cor.color) span.style.color = cor.color;
-}
+function preencherFiltrosCriatura() {
+  const elementosSet = new Set();
+  const tagsSet = new Set();
 
-function formatBonusText(text, type = "default") {
-  if (!text) return '';
-  let className = 'bonus-paragraph';
-  if (type === 'bonus1') className = 'bonus1-paragraph';
-  else if (type === 'bonus2') className = 'bonus2-paragraph';
-  else if (type === 'bonus3') className = 'bonus3-paragraph';
-
-  // preserve links
-  const links = {};
-  let count = 0;
-  let tmp = text.replace(/<a\b[^>]*>.*?<\/a>/gi, (m) => {
-    const k = `__LINK_${count}__`;
-    links[k] = m;
-    count++;
-    return k;
+  criaturas.forEach(c => {
+    (c.TipoElementoCriatura || "Nenhum").split(',').forEach(e => elementosSet.add(e.trim()));
+    (c.TagCriatura || "Nenhuma").split(',').forEach(t => tagsSet.add(t.trim()));
   });
 
-  tmp = tmp
-    .replace(/\*(.*?)\*/g, '<strong>$1</strong>')
-    .replace(/_(.*?)_/g, '<em>$1</em>')
-    .replace(/~(.*?)~/g, '<u>$1</u>')
-    .replace(/-([^-\n]+)-/g, '<s>$1</s>')
-    .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>')
-    .replace(/{subpigmento}(.*?){\/subpigmento}/g, '<span class="subpigmento">$1</span>');
+  // Popula filtro de elementos
+  elementosSet.forEach(e => {
+    const opt = document.createElement('option');
+    opt.value = e;
+    opt.textContent = e;
+    elementoFilter.appendChild(opt);
+  });
 
-  Object.entries(links).forEach(([k, v]) => { tmp = tmp.replace(k, v); });
+  // Popula filtro de tags
+  tagsSet.forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t;
+    opt.textContent = t;
+    tagFilter.appendChild(opt);
+  });
+}
 
-  return tmp.split(/\n+/).map(p => p.trim() ? `<p class="${className}">${p}</p>` : '').join('');
+
+
+
+
+
+
+// Assuma que creatures está definido em outro arquivo ou é importado
+const select = document.getElementById('creatureSelect');
+const nameEl = document.getElementById('creatureName');
+const imageEl = document.getElementById('creatureImage');
+const descricao = document.getElementById("descricao");
+const abrirPopup = document.getElementById("abrirPopup");
+const popup = document.getElementById("popup");
+const listaCriaturas = document.getElementById("listaCriaturas");
+const creatureStats = document.getElementById("creatureStats");
+const imageContainer = document.getElementById("imageContainer");
+const imageControls = document.getElementById("imageControls");
+let currentImage = 0;
+let images = [];
+let selected = null;
+
+Object.keys(creatures).forEach(creature => {
+  const option = document.createElement('option');
+  option.value = creature;
+  option.textContent = creature;
+  select.appendChild(option);
+});
+
+select.addEventListener('change', () => {
+  const nome = select.value;
+  if (!creatures[nome]) return;
+  selected = creatures[nome];
+  exibirCriatura(nome);
+});
+
+document.getElementById('levelUpButton').addEventListener('click', () => {
+  const levelElement = document.getElementById('creatureLevel');
+  let level = parseInt(levelElement.textContent);
+  if (selected) {
+    level += 1;
+    levelElement.textContent = level;
+    updateStats(selected, level);
+  }
+});
+
+document.getElementById('levelDownButton').addEventListener('click', () => {
+  const levelElement = document.getElementById('creatureLevel');
+  let level = parseInt(levelElement.textContent);
+  if (selected && level > 1) {
+    level -= 1;
+    levelElement.textContent = level;
+    updateStats(selected, level);
+  }
+});
+
+function updateStats(creature, level) {
+  const vida = creature.vida + (creature.vidaPorNivel * (level - 1));
+  const sanidade = creature.sanidade + (creature.sanidadePorNivel * (level - 1));
+  const especial = creature.especial + (creature.especialPorNivel * (level - 1));
+  const armadura = creature.armadura + Math.floor((level - 1) / creature.armaduraPorNivel);
+
+  document.getElementById('vida').textContent = vida;
+  document.getElementById('sanidade').textContent = sanidade;
+  document.getElementById('especial').textContent = especial;
+  document.getElementById('armadura').textContent = armadura;
+  
+}
+// Função genérica: aplica todas as marcações (*, _, ~, -, pigmento, etc.)
+// Função genérica: aplica todas as marcações (*, _, ~, -, pigmento, etc.)
+function formatBonusText(text, type = "default") {
+  let className;
+
+  if (type === "bonus1") className = "bonus1-paragraph";
+  else if (type === "bonus2") className = "bonus2-paragraph";
+  else if (type === "bonus3") className = "bonus3-paragraph";
+  else if (type === "Ataquebásico") className = "ataque-paragraph";
+  else className = "bonus-paragraph";
+
+  return text
+    .split(/\n+/)
+    .map(sentence => {
+      if (sentence.trim()) {
+        // 1. Protege os links temporariamente
+        let links = [];
+        sentence = sentence.replace(/<a[^>]*>.*?<\/a>/g, match => {
+          links.push(match);
+          return `%%LINK${links.length - 1}%%`;
+        });
+
+        // 2. Aplica as formatações
+        let formattedSentence = sentence
+          .replace(/\*(.*?)\*/g, '<strong>$1</strong>')       // *negrito*
+          .replace(/_(.*?)_/g, '<em>$1</em>')                // _itálico_
+          .replace(/~(.*?)~/g, '<u>$1</u>')                  // ~sublinhado~
+          .replace(/-([^-\n]+)-/g, '<s>$1</s>')              // -tachado-
+          .replace(/{pigmento}(.*?){\/pigmento}/g, '<span class="pigmento">$1</span>')
+          .replace(/{subpigmento}(.*?){\/subpigmento}/g, '<span class="subpigmento">$1</span>');
+
+        // 3. Restaura os links no lugar certo
+        formattedSentence = formattedSentence.replace(/%%LINK(\d+)%%/g, (_, i) => links[i]);
+
+        return `<p class="${className}">${formattedSentence}</p>`;
+      } else {
+        return '';
+      }
+    })
+    .join('');
 }
 
 function formatDescriptionText(text) {
-  if (!text) return '';
-  return text.split(/\n+/).map(p => p.trim() ? `<p>${p}</p>` : '').join('');
+  return text
+    .split(/\n+/)
+    .map(paragraph =>
+      paragraph.trim() ? `<p>${paragraph}</p>` : ''
+    )
+    .join('');
 }
 
-// ---------- RENDERIZAÇÃO DE CARDS E LISTA ----------
-function createCreatureCard(key, data) {
-  const card = document.createElement('div');
-  card.className = 'card-criatura';
-  card.dataset.id = safeGet(data, 'id', '');
-  // store the key (nome usado na chave do objeto) para referência
-  card.dataset.nome = key;
-
-  const imgSrc = safeGet(data, 'img2', '') || safeGet(data, 'img', '');
-  if (imgSrc) {
-    const img = document.createElement('img');
-    img.src = imgSrc;
-    img.alt = key;
-    card.appendChild(img);
-  }
-
-  const titulo = document.createElement('div');
-  titulo.textContent = key;
-  card.appendChild(titulo);
-
-  // elemento tags
-  const elementoTagsContainer = document.createElement('div');
-  elementoTagsContainer.className = 'tags-container elemento-tags';
-  const tipoElems = (safeGet(data, 'TipoElementoCriatura', '') || '').split(',').map(s => s.trim()).filter(Boolean);
-  tipoElems.forEach(tag => {
-    const span = document.createElement('span');
-    span.className = `tag elemento ${tag}`;
-    span.textContent = tag;
-    applyTagStyle(span, tag);
-    elementoTagsContainer.appendChild(span);
+function showImage(index) {
+  images.forEach((img, i) => {
+    img.style.display = i === index ? 'block' : 'none';
   });
-  card.appendChild(elementoTagsContainer);
-
-  // tags normais
-  const tagsContainer = document.createElement('div');
-  tagsContainer.className = 'tags-container';
-  const tagsNormais = (safeGet(data, 'TagsCriatura', '') || '').split(',').map(s => s.trim()).filter(Boolean);
-  tagsNormais.forEach(tag => {
-    const span = document.createElement('span');
-    span.className = `tag ${tag}`;
-    span.textContent = tag;
-    applyTagStyle(span, tag);
-    tagsContainer.appendChild(span);
-  });
-  card.appendChild(tagsContainer);
-
-  card.addEventListener('click', () => {
-    exibirCriatura(key);
-    // fecha popups (se existirem)
-    const popup = document.getElementById('popup');
-    if (popup) popup.style.display = 'none';
-  });
-
-  return card;
 }
 
-// ---------- LÓGICA PRINCIPAL (DOMContentLoaded único) ----------
-document.addEventListener('DOMContentLoaded', () => {
-  // validação
-  if (typeof creatures === 'undefined' || !creatures || Object.keys(creatures).length === 0) {
-    console.error('Lista `creatures` não encontrada ou vazia. Defina const creatures = {...} antes deste script.');
-    return;
+function exibirCriatura(nome) {
+  selected = creatures[nome];
+  if (!selected) return;
+
+  creatureStats.style.display = 'block';
+  nameEl.textContent = nome;
+  descricao.innerHTML = formatDescriptionText(selected.Descricao);
+
+  document.getElementById('bru').textContent = selected.bru;
+  document.getElementById('agi').textContent = selected.agi;
+  document.getElementById('det').textContent = selected.det;
+  document.getElementById('pre').textContent = selected.pre;
+  document.getElementById('lib').textContent = selected.lib;
+  document.getElementById('cnx').textContent = selected.cnx;
+  document.getElementById('bruDano').textContent = selected.bruDano;
+  document.getElementById('agiDano').textContent = selected.agiDano;
+  document.getElementById('detDano').textContent = selected.detDano;
+  document.getElementById('preDano').textContent = selected.preDano;
+  document.getElementById('libDano').textContent = selected.libDano;
+  document.getElementById('cnxDano').textContent = selected.cnxDano;
+  document.getElementById('bruTest').textContent = selected.bruTest;
+  document.getElementById('agiTest').textContent = selected.agiTest;
+  document.getElementById('detTest').textContent = selected.detTest;
+  document.getElementById('preTest').textContent = selected.preTest;
+  document.getElementById('libTest').textContent = selected.libTest;
+  document.getElementById('cnxTest').textContent = selected.cnxTest;
+  document.getElementById('movimento').textContent = selected.movimento + "m";
+  document.getElementById('Magias').textContent = selected.Magias;
+  document.getElementById('Passivas').textContent = selected.Passivas;
+  document.getElementById('Talentos').textContent = selected.Talentos;
+  document.getElementById('bonus').innerHTML = formatBonusText(selected.bonus, "bonus1");
+  document.getElementById('bonus2').innerHTML = formatBonusText(selected.bonus2, "bonus2");
+  document.getElementById('bonus3').innerHTML = formatBonusText(selected.bonus3, "bonus3");
+document.getElementById('Ataquebásico').textContent = selected.Ataquebásico;
+
+  images = [];
+  let index = 1;
+  while (selected[`img${index}`] || (index === 1 && selected.img)) {
+    const imgSrc = selected[`img${index}`] || selected.img;
+    const imgElement = document.createElement("img");
+    imgElement.src = imgSrc;
+    imgElement.style.display = "none";
+    images.push(imgElement);
+    index++;
   }
 
-  // elementos do DOM (verifica existência)
-  const select = document.getElementById('creatureSelect');
-  const nameEl = document.getElementById('creatureName');
-  const imageContainer = document.getElementById('imageContainer');
-  const imageControls = document.getElementById('imageControls');
-  const descricao = document.getElementById('descricao');
-  const abrirPopup = document.getElementById('abrirPopup');
-  const popup = document.getElementById('popup');
-  const listaCriaturas = document.getElementById('listaCriaturas');
-  const creatureStats = document.getElementById('creatureStats');
-  const elementoFilter = document.getElementById('elementoFilter');
-  const tagFilter = document.getElementById('tagFilter');
-  const criatureGrid = document.getElementById('criatureGrid');
+  imageContainer.innerHTML = "";
+  images.forEach(img => imageContainer.appendChild(img));
 
-  if (!select || !nameEl || !descricao || !listaCriaturas) {
-    console.error('Alguns elementos obrigatórios do DOM não foram encontrados. Cheque IDs: creatureSelect, creatureName, descricao, listaCriaturas.');
-    return;
-  }
+  currentImage = 0;
+  showImage(currentImage);
+  imageControls.style.display = images.length > 1 ? "block" : "none";
 
-  // popula SELECT
-  select.innerHTML = '';
-  Object.keys(creatures).forEach(key => {
-    const opt = document.createElement('option');
-    opt.value = key;
-    opt.textContent = key;
-    select.appendChild(opt);
-  });
+  document.getElementById('creatureLevel').textContent = 1;
+  updateStats(selected, 1);
+}
 
-  // popula lista de criaturas (grid)
-  if (listaCriaturas) {
-    listaCriaturas.innerHTML = '';
-    Object.entries(creatures).forEach(([key, data]) => {
-      // separador comunitário se existir
-      if (key === 'Comunidade') {
-        const separador = document.createElement('div');
-        separador.className = 'separador-comunidade';
-        separador.innerHTML = '<hr><p>Criaturas da Comunidade</p><hr>';
-        listaCriaturas.appendChild(separador);
-        return;
-      }
-      listaCriaturas.appendChild(createCreatureCard(key, data));
-    });
-  }
+abrirPopup.addEventListener("click", () => {
+  listaCriaturas.innerHTML = "";
 
-  // abrir popup botão
-  if (abrirPopup && popup) {
-    abrirPopup.addEventListener('click', () => { popup.style.display = 'flex'; });
-  }
-
-  // clique nos cards do grid (delegation)
-  if (criatureGrid) {
-    criatureGrid.addEventListener('click', (e) => {
-      const card = e.target.closest('.card-criatura');
-      if (!card) return;
-      const nomeKey = card.dataset.nome;
-      if (!nomeKey) return;
-      // atualiza URL sem reload
-      const id = card.dataset.id || creatures[nomeKey]?.id || '';
-      if (id) window.history.pushState({}, '', `${window.location.pathname}?id=${id}`);
-      exibirCriatura(nomeKey);
-    });
-  }
-
-  // select change
-  select.addEventListener('change', () => {
-    const nomeKey = select.value;
-    if (!creatures[nomeKey]) return;
-    const id = creatures[nomeKey]?.id;
-    if (id) window.history.pushState({}, '', `${window.location.pathname}?id=${id}`);
-    exibirCriatura(nomeKey);
-  });
-
-  // Auto-seleção via ?id= ou ?criatura=
-  const params = new URLSearchParams(window.location.search);
-  const creatureId = params.get('id');
-  const criaturaNomeParam = params.get('criatura');
-  let chaveEncontrada = null;
-
-  if (creatureId) {
-    const encontrada = Object.entries(creatures).find(([, c]) => c && c.id?.toString() === creatureId.toString());
-    if (encontrada) chaveEncontrada = encontrada[0];
-  } else if (criaturaNomeParam && creatures[criaturaNomeParam]) {
-    chaveEncontrada = criaturaNomeParam;
-  }
-
-  if (chaveEncontrada) {
-    // tenta selecionar card, se existir
-    setTimeout(() => {
-      // marca select e exibe
-      select.value = chaveEncontrada;
-      exibirCriatura(chaveEncontrada);
-
-      // se houver um card na lista, destaque
-      const card = document.querySelector(`.card-criatura[data-nome=\"${chaveEncontrada}\"]`);
-      if (card) {
-        card.style.outline = '3px solid yellow';
-        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, 200);
-  }
-
-  // contador
-  const contadorEl = document.getElementById('contador');
-  if (contadorEl) contadorEl.textContent = Math.max(0, Object.keys(creatures).length - 1).toString();
-
-}); // fim DOMContentLoaded
-
-// ---------- FUNÇÃO DE EXIBIÇÃO (pública, usada nos event handlers acima) ----------
-function exibirCriatura(nomeKey) {
-  if (typeof creatures === 'undefined' || !creatures[nomeKey]) {
-    console.warn('Tentativa de exibir criatura inexistente:', nomeKey);
-    return;
-  }
-
-  const selected = creatures[nomeKey];
-
-  const nameEl = document.getElementById('creatureName');
-  const descricao = document.getElementById('descricao');
-  const creatureStats = document.getElementById('creatureStats');
-  const imageContainer = document.getElementById('imageContainer');
-  const imageControls = document.getElementById('imageControls');
-
-  if (creatureStats) creatureStats.style.display = 'block';
-  if (nameEl) nameEl.textContent = nomeKey;
-  if (descricao) descricao.innerHTML = formatDescriptionText(selected.Descricao || selected.descricao || '');
-
-  // atributos rápidos (com fallback)
-  const keysToCopy = ['bru','agi','det','pre','lib','cnx','bruDano','agiDano','detDano','preDano','libDano','cnxDano','bruTest','agiTest','detTest','preTest','libTest','cnxTest','movimento','Magias','Passivas','Talentos','bonus','bonus2','bonus3','Ataquebásico'];
-  keysToCopy.forEach(k => {
-    const el = document.getElementById(k);
-    if (el) {
-      const val = safeGet(selected, k, '');
-      if (['bonus','bonus2','bonus3'].includes(k)) el.innerHTML = formatBonusText(val, k === 'bonus2' ? 'bonus2' : (k === 'bonus3' ? 'bonus3' : 'bonus1'));
-      else el.textContent = (val !== undefined && val !== null) ? val : '';
+  Object.entries(creatures).forEach(([nome, dados]) => {
+    if (nome === "Comunidade") {
+      // Cria o separador visual da comunidade
+      const separador = document.createElement("div");
+      separador.className = "separador-comunidade";
+      separador.innerHTML = `<hr><p>Criaturas da Comunidade</p><hr>`;
+      listaCriaturas.appendChild(separador);
+      return; // pula renderização de criatura
     }
+
+    const card = document.createElement("div");
+    card.className = "card-criatura";
+
+    // Container só para tags de tipo elemento
+    const elementoTagsContainer = document.createElement("div");
+    elementoTagsContainer.className = "tags-container elemento-tags";
+
+    let tagsElemento = [];
+    if (dados.TipoElementoCriatura) {
+      tagsElemento = dados.TipoElementoCriatura.split(',').map(e => e.trim()).filter(e => e);
+    }
+
+    tagsElemento.forEach(tag => {
+      const span = document.createElement("span");
+      span.className = `tag ${tag} elemento`;
+
+      const cor = tagColors[tag];
+      if (cor?.gradient) {
+        span.style.background = cor.gradient;
+      } else if (cor?.background) {
+        span.style.backgroundColor = cor.background;
+        span.style.color = cor.color;
+      }
+
+      span.textContent = tag;
+      elementoTagsContainer.appendChild(span);
+    });
+
+    card.appendChild(elementoTagsContainer);
+
+    if (dados.img2) {
+      const img = document.createElement("img");
+      img.src = dados.img2;
+      img.alt = nome;
+      card.appendChild(img);
+    }
+
+    const titulo = document.createElement("div");
+    titulo.textContent = nome;
+    card.appendChild(titulo);
+
+    const tagsContainer = document.createElement("div");
+    tagsContainer.className = "tags-container";
+
+    let tagsNormais = [];
+    if (dados.TagsCriatura) {
+      tagsNormais = dados.TagsCriatura.split(',').map(t => t.trim()).filter(t => t);
+    }
+
+    tagsNormais.forEach(tag => {
+      const span = document.createElement("span");
+      span.className = `tag ${tag}`;
+
+      const cor = tagColors[tag];
+      if (cor?.gradient) {
+        span.classList.add("elemento");
+        span.style.background = cor.gradient;
+      } else if (cor?.background) {
+        span.style.backgroundColor = cor.background;
+        span.style.color = cor.color;
+      }
+
+      span.textContent = tag;
+      tagsContainer.appendChild(span);
+    });
+
+    card.appendChild(tagsContainer);
+
+    // Adiciona o card à lista
+    listaCriaturas.appendChild(card);
+
+    card.addEventListener("click", () => {
+      exibirCriatura(nome);
+      popup.style.display = "none";
+    });
   });
 
-  // imagens (img, img2, img3...)
-  const imgs = [];
-  let idx = 1;
-  while (selected[`img${idx}`] || (idx === 1 && selected.img)) {
-    const src = selected[`img${idx}`] || selected.img;
-    if (!src) break;
-    imgs.push(src);
-    idx++;
-    // safety to avoid infinite loop
-    if (idx > 20) break;
+  popup.style.display = "flex";
+});
+// ⚠️ Abre o popup automaticamente ao carregar a página
+abrirPopup.click();
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) popup.style.display = "none";
+});
+
+document.getElementById('prevImage').onclick = () => {
+  currentImage = (currentImage - 1 + images.length) % images.length;
+  showImage(currentImage);
+};
+
+document.getElementById('nextImage').onclick = () => {
+  currentImage = (currentImage + 1) % images.length;
+  showImage(currentImage);
+};
+
+document.querySelector('.toggle-button').addEventListener('click', () => {
+  document.querySelector('.toggle-content').classList.toggle('show');
+});
+
+document.getElementById("contador").textContent = Object.keys(creatures).length - 1;
+function menuShow() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.classList.toggle('open');
+}
+
+(function () {
+  const racasDisponiveis = [
+{ id: "elfo", nome: "Lyrithil – Elfo", imagens: [
+    "Elfo1.png", "Elfo2.png", "Elfo3.png", "Elfo4.png", "Elfo5.png",
+    "Elfo6.png", "Elfo7.png", "Elfo8.png", "Elfo9.png"
+  ]},
+  { id: "humano", nome: "Zhilak – Humano", imagens: [
+    "humano1.png", "humano2.png", "humano3.png", "humano4.png", "humano5.png",
+    "humano6.png", "humano7.png", "humano8.png", "humano9.png"
+  ]},
+  { id: "Anão", nome: "Grunthrok – Anão", imagens: [
+    "Anão1.png", "Anão2.png", "Anão3.png", "Anão4.png", "Anão5.png",
+    "Anão6.png", "Anão7.png", "Anão8.png", "Anão9.png"
+  ]},
+  { id: "gigante", nome: "Thudrok – Gigante", imagens: [
+    "gigante1.png", "gigante2.png", "gigante3.png", "gigante4.png", "gigante5.png",
+    "gigante6.png", "gigante7.png", "gigante8.png", "gigante9.png"
+  ]},
+  { id: "krahzhik", nome: "Krahzhik – IgnisAlatus", imagens: [
+    "Ignis1.png", "Ignis2.png", "Ignis3.png", "Ignis4.png", "Ignis5.png",
+    "Ignis6.png", "Ignis7.png", "Ignis8.png", "Ignis9.png"
+  ]},
+  { id: "skywalker", nome: "Skywalkers – Flumplux", imagens: [
+    "skywalkers1.png", "skywalkers2.png", "skywalkers3.png", "skywalkers4.png", "skywalkers5.png",
+    "skywalkers6.png", "skywalkers7.png", "skywalkers8.png", "skywalkers9.png"
+  ]},
+  { id: "umbrowalker", nome: "Umbrowalker – Shlurp", imagens: [
+    "umbrowalker1.png", "umbrowalker2.png", "umbrowalker3.png", "umbrowalker4.png", "umbrowalker5.png",
+    "umbrowalker6.png", "umbrowalker7.png", "umbrowalker8.png", "umbrowalker9.png"
+  ]},
+  { id: "elfo_profundezas", nome: "Glublorp – Elfo da Profundeza", imagens: [
+    "elfo_profundezas1.png", "elfo_profundezas2.png", "elfo_profundezas3.png", "elfo_profundezas4.png", "elfo_profundezas5.png",
+    "elfo_profundezas6.png", "elfo_profundezas7.png", "elfo_profundezas8.png", "elfo_profundezas9.png"
+  ]},
+  { id: "tritao", nome: "Glubrust – Tritão", imagens: [
+    "Tritão1.png", "Tritão2.png", "Tritão3.png", "Tritão4.png", "Tritão5.png",
+    "Tritão6.png", "Tritão7.png", "Tritão8.png", "Tritão9.png"
+  ]},
+  { id: "shrivvel", nome: "Shrivvel – Pele Pálida", imagens: [
+    "Pele-Palida1.png", "Pele-Palida2.png", "Pele-Palida3.png", "Pele-Palida4.png", "Pele-Palida5.png",
+    "Pele-Palida6.png", "Pele-Palida7.png", "Pele-Palida8.png", "Pele-Palida9.png"
+  ]},
+  { id: "gronklech", nome: "Gronklech – Durock", imagens: [
+    "Durock1.png", "Durock2.png", "Durock3.png", "Durock4.png", "Durock5.png",
+    "Durock6.png", "Durock7.png", "Durock8.png", "Durock9.png"
+  ]},
+  ];
+
+  function criarCardRaca(raca) {
+    const card = document.createElement("div");
+    card.className = "card-criatura";
+    card.innerHTML = `
+      <img src="imagens/racas/${raca.imagens[0]}" alt="${raca.nome}">
+      <p>${raca.nome}</p>
+    `;
+    card.onclick = () => abrirPopupImagemRaca(raca);
+    return card;
   }
 
-  if (imageContainer) {
-    imageContainer.innerHTML = '';
-    imgs.forEach((src, i) => {
-      const el = document.createElement('img');
-      el.src = src;
-      el.style.display = i === 0 ? 'block' : 'none';
-      imageContainer.appendChild(el);
+  function abrirPopupRacas() {
+    const content = document.getElementById("racaContent");
+    content.innerHTML = ""; // limpa
+    racasDisponiveis.forEach(raca => content.appendChild(criarCardRaca(raca)));
+    document.getElementById("popupRaca").style.display = "flex";
+  }
+
+  function abrirPopupImagemRaca(raca) {
+    const content = document.getElementById("imagemRacaContent");
+    content.innerHTML = `<h3 style="width: 100%; text-align: center;">Escolha a imagem de ${raca.nome}</h3>`;
+    raca.imagens.forEach(imagem => {
+      const card = document.createElement("div");
+      card.className = "card-criatura";
+      card.innerHTML = `<img src="imagens/racas/${imagem}" alt="${raca.nome}">`;
+      card.onclick = () => {
+        alert(`Você escolheu a imagem: ${imagem} da raça ${raca.nome}`);
+        fecharTodosPopups();
+      };
+      content.appendChild(card);
     });
+    document.getElementById("popupImagemRaca").style.display = "flex";
   }
 
-  if (imageControls) imageControls.style.display = imgs.length > 1 ? 'block' : 'none';
+  function fecharTodosPopups() {
+    document.getElementById("popupRaca").style.display = "none";
+    document.getElementById("popupImagemRaca").style.display = "none";
+  }
 
-  // level / stats
-  document.getElementById('creatureLevel')?.textContent = '1';
-  updateStatsPublic(selected, 1);
-}
+  // Botão inicial
+  document.getElementById("abrirPopupRaca").addEventListener("click", abrirPopupRacas);
 
-function updateStatsPublic(creature, level) {
-  // fallbacks para valores por nivel
-  const vidaBase = Number(safeGet(creature, 'vida', 0));
-  const vidaPorNivel = Number(safeGet(creature, 'vidaPorNivel', 0));
-  const sanidadeBase = Number(safeGet(creature, 'sanidade', 0));
-  const sanidadePorNivel = Number(safeGet(creature, 'sanidadePorNivel', 0));
-  const especialBase = Number(safeGet(creature, 'especial', 0));
-  const especialPorNivel = Number(safeGet(creature, 'especialPorNivel', 0));
-  const armaduraBase = Number(safeGet(creature, 'armadura', 0));
-  const armaduraPorNivel = Number(safeGet(creature, 'armaduraPorNivel', 9999)); // se não informado, não escala
+  // Fecha popups ao clicar fora do conteúdo
+  document.querySelectorAll(".popup-overlay").forEach(popup => {
+    popup.addEventListener("click", e => {
+      if (e.target.classList.contains("popup-overlay")) {
+        fecharTodosPopups();
+      }
+    });
+  });
+})();
 
-  const vida = vidaBase + (vidaPorNivel * (level - 1));
-  const sanidade = sanidadeBase + (sanidadePorNivel * (level - 1));
-  const especial = especialBase + (especialPorNivel * (level - 1));
-  const armadura = armaduraBase + Math.floor((level - 1) / armaduraPorNivel);
+    // 📘 Tutorial Popup
+    const tutorialPopup = document.getElementById("tutorialPopup");
+    const closeTutorial = document.getElementById("closeTutorial");
+    const openTutorialButton = document.getElementById("openTutorialButton");
 
-  document.getElementById('vida') && (document.getElementById('vida').textContent = vida);
-  document.getElementById('sanidade') && (document.getElementById('sanidade').textContent = sanidade);
-  document.getElementById('especial') && (document.getElementById('especial').textContent = especial);
-  document.getElementById('armadura') && (document.getElementById('armadura').textContent = armadura);
-}
+    let timesVisited = localStorage.getItem("calisto_visitas");
+    if (!timesVisited) timesVisited = 0;
+    else timesVisited = parseInt(timesVisited);
 
-// export (opcional) para testes em módulos
-if (typeof module !== 'undefined') module.exports = { tagColors, createCreatureCard, exibirCriatura };
+    if (timesVisited < 5) {
+      tutorialPopup.style.display = "flex";
+      localStorage.setItem("calisto_visitas", timesVisited + 1);
+    }
+
+    closeTutorial.onclick = () => {
+      tutorialPopup.style.display = "none";
+    };
+
+    openTutorialButton.onclick = () => {
+      tutorialPopup.style.display = "flex";
+    };
+
+    // Fecha popup do tutorial se clicar fora
+    window.addEventListener("click", function (event) {
+      if (event.target === tutorialPopup) {
+        tutorialPopup.style.display = "none";
+      }
+    });
+
+ const chessPopup = document.getElementById("chessTutorialPopup");
+  const openChess = document.getElementById("openChessPopup");
+  const closeChess = document.getElementById("closeChessPopup");
+
+  const combatPopup = document.getElementById("combatPopup");
+  const openCombat = document.getElementById("openCombatPopup");
+  const closeCombat = document.getElementById("closeCombatPopup");
+
+  // Abrir e fechar principal
+  openChess.onclick = () => chessPopup.style.display = "flex";
+  closeChess.onclick = () => chessPopup.style.display = "none";
+  window.onclick = (e) => {
+    if (e.target === chessPopup) chessPopup.style.display = "none";
+    if (e.target === combatPopup) combatPopup.style.display = "none";
+  }
+
+  // Abrir e fechar secundário
+  openCombat.onclick = () => combatPopup.style.display = "flex";
+  closeCombat.onclick = () => combatPopup.style.display = "none";
 
 
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+// irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
+
+// 🔎 Seleciona a criatura ao abrir via ?criatura=Nome
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const criatura = params.get("criatura");
+
+  if (criatura) {
+    // Abre automaticamente o popup de raças
+    abrirPopupRacas();
+
+    // Espera um pouquinho para os cards renderizarem
+    setTimeout(() => {
+      const cards = document.querySelectorAll(".card-criatura");
+
+      let encontrado = false;
+      cards.forEach(card => {
+        const nome = card.querySelector("p")?.innerText.trim() || "";
+        if (nome.toLowerCase() === criatura.toLowerCase()) {
+          encontrado = true;
+
+          // Simula o clique no card → abre o popup da raça direto
+          card.click();
+
+          // Destaca o card no grid principal
+          card.style.outline = "3px solid yellow";
+          card.style.borderRadius = "10px";
+          card.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      });
+
+      if (!encontrado) {
+        console.warn("Criatura não encontrada:", criatura);
+      }
+    }, 300); // dá tempo de renderizar os cards
+  }
+});
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
 // irmão tu colocou aquiii o codigo que define a seleção de personagem por hyperlink, não funcionou
