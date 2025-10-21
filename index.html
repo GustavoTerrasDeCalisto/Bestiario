@@ -398,7 +398,7 @@
         
     
     </div>
-    <!-- ============================== -->
+ <!-- ============================== -->
 <!-- POPUP EXCLUSIVO PARA CRIATURA  -->
 <!-- ============================== -->
 <div id="popupCriatura" class="popup-overlay-criatura">
@@ -438,11 +438,11 @@
 
 .fechar-popup {
   position: absolute;
-  right: 12px;
   top: 12px;
+  right: 12px;
   background: #a57b3c;
   border: none;
-  color: white;
+  color: #fff;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 6px;
@@ -453,32 +453,44 @@
   background: #d4aa55;
 }
 
-/* Ajuste para o conteúdo da criatura */
+/* Conteúdo do popup */
 #conteudoCriatura h2 {
   color: #ffce55;
   border-bottom: 2px solid #a57b3c;
   padding-bottom: 5px;
+  text-align: center;
 }
+
 #conteudoCriatura img {
   max-width: 250px;
   border-radius: 8px;
   display: block;
   margin: 10px auto;
 }
+
+.popup-stats p, .popup-stats div {
+  margin: 6px 0;
+}
+
+.popup-stats hr {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 10px 0;
+}
 </style>
 
 <script>
 // ================================================
-// FUNÇÃO: Mostrar popup de criatura por ID ou nome
+// FUNÇÃO: Abrir popup de criatura via parâmetro URL
 // ================================================
 function abrirPopupPorParametro() {
   const params = new URLSearchParams(window.location.search);
   const idOuNome = params.get("criatura");
   if (!idOuNome) return;
 
-  // Busca por ID OU Nome
   let criaturaEncontrada = null;
   let nomeEncontrado = null;
+
   for (const [nome, criatura] of Object.entries(creatures)) {
     if (criatura.id === idOuNome || nome.toLowerCase() === idOuNome.toLowerCase()) {
       criaturaEncontrada = criatura;
@@ -487,26 +499,23 @@ function abrirPopupPorParametro() {
     }
   }
 
-  if (criaturaEncontrada) {
-    mostrarPopupCriatura(nomeEncontrado, criaturaEncontrada);
-  }
+  if (criaturaEncontrada) mostrarPopupCriatura(nomeEncontrado, criaturaEncontrada);
 }
 
-// ===========================================
-// FUNÇÃO: Mostra o popup e exibe os conteúdos
-// ===========================================
+// ================================================
+// FUNÇÃO: Mostrar popup e preencher conteúdo
+// ================================================
 function mostrarPopupCriatura(nome, criatura) {
   const popup = document.getElementById("popupCriatura");
   const conteudo = document.getElementById("conteudoCriatura");
   popup.style.display = "flex";
 
-  // Formatações (reutiliza suas funções)
+  // Formatação de bônus e descrição
   const bonusHTML = formatBonusText(criatura.bonus, "bonus1");
   const bonus2HTML = formatBonusText(criatura.bonus2, "bonus2");
   const bonus3HTML = formatBonusText(criatura.bonus3, "bonus3");
   const descHTML = formatDescriptionText(criatura.Descricao);
 
-  // Gera HTML completo
   conteudo.innerHTML = `
     <h2>${nome}</h2>
     <img src="${criatura.img}" alt="${nome}">
@@ -517,11 +526,11 @@ function mostrarPopupCriatura(nome, criatura) {
       <p><strong>Especial:</strong> ${criatura.especial}</p>
       <p><strong>Movimento:</strong> ${criatura.movimento}m</p>
       <hr>
-      <div><strong>Descrição:</strong>${descHTML}</div>
+      <div><strong>Descrição:</strong> ${descHTML}</div>
       <hr>
-      <div><strong>Bônus:</strong>${bonusHTML}</div>
-      <div><strong>Ataques:</strong>${bonus2HTML}</div>
-      <div><strong>Outros:</strong>${bonus3HTML}</div>
+      <div><strong>Bônus:</strong> ${bonusHTML}</div>
+      <div><strong>Ataques:</strong> ${bonus2HTML}</div>
+      <div><strong>Outros:</strong> ${bonus3HTML}</div>
       <hr>
       <p><strong>Magias:</strong> ${criatura.Magias || "Nenhuma"}</p>
       <p><strong>Passivas:</strong> ${criatura.Passivas || "Nenhuma"}</p>
@@ -529,20 +538,19 @@ function mostrarPopupCriatura(nome, criatura) {
     </div>
   `;
 
-  // Fecha ao clicar no botão ✖
   document.getElementById("fecharPopupCriatura").onclick = () => {
     popup.style.display = "none";
     conteudo.innerHTML = "";
-    // Opcional: remover o parâmetro da URL
+    // Remove parâmetro da URL
     const url = new URL(window.location);
     url.searchParams.delete("criatura");
     window.history.replaceState({}, "", url);
   };
 }
 
-// ===============================================
+// ================================================
 // CHAMA AUTOMATICAMENTE SE URL TIVER O PARÂMETRO
-// ===============================================
+// ================================================
 window.addEventListener("DOMContentLoaded", abrirPopupPorParametro);
 </script>
 
