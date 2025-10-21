@@ -410,169 +410,154 @@
 
 <style>
 /* ==========================================================
-   POPUP DE CRIATURA — VISUAL MELHORADO (WEB + MOBILE)
+   POPUP DE CRIATURA — VERSÃO OTIMIZADA (UX/UI + PERFORMANCE)
    ========================================================== */
 
-/* ====== OVERLAY: FUNDO ESCURO + DESFOQUE ====== */
+/* ===== OVERLAY: FUNDO COM DESFOQUE E TRANSIÇÃO SUAVE ===== */
 .popup-overlay-criatura {
   position: fixed;
   inset: 0;
-  background: rgba(5, 5, 5, 0.85);
-  backdrop-filter: blur(8px);
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   transition: opacity 0.4s ease;
+  animation: fadeIn 0.3s ease forwards;
 }
 
-/* ====== CONTAINER PRINCIPAL ====== */
+/* ===== CONTAINER PRINCIPAL ===== */
 .popup-container-criatura {
-  background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
-  color: #f1f1f1;
   width: 92%;
-  max-width: 860px;
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(200, 200, 200, 0.08);
+  max-width: 880px;
+  background: linear-gradient(180deg, #181818 0%, #101010 100%);
+  color: #eaeaea;
+  border-radius: 14px;
+  padding: 32px 26px;
+  border: 1px solid rgba(255, 215, 100, 0.08);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 24px;
   overflow-y: auto;
-  max-height: 94vh;
-  animation: popupScale 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-  font-family: "Cinzel", serif;
+  max-height: 92vh;
   scrollbar-width: thin;
+  font-family: "Cinzel", serif;
+  animation: popupRise 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* ====== CABEÇALHO (IMAGEM + TÍTULO) ====== */
+/* ===== CABEÇALHO (IMAGEM + TÍTULO) ===== */
 .popup-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-align: center;
 }
 
 .popup-image {
   width: clamp(120px, 22vw, 200px);
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid #666;
   object-fit: contain;
-  box-shadow: 0 0 18px rgba(255, 215, 0, 0.15);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+.popup-image:hover {
+  transform: scale(1.05);
 }
 
 .popup-container-criatura h2 {
   font-size: 1.9rem;
-  font-weight: 600;
   color: #ffd86b;
   letter-spacing: 1px;
-  text-shadow: 0 0 12px rgba(255, 220, 120, 0.2);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.25);
   margin: 0;
 }
 
-/* ====== BLOCO DE STATUS (VIDA, SANIDADE, ETC) ====== */
+/* ===== BLOCO DE STATUS (VIDA / SANIDADE / ETC) ===== */
 .stat-summary {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 10px;
-  background-color: #232323;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  background: #222;
   border: 1px solid #333;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 14px;
 }
 
 .stat-summary p {
-  background: linear-gradient(180deg, #2b2b2b 0%, #1a1a1a 100%);
+  background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
   border-radius: 8px;
-  padding: 10px 6px;
-  border: 1px solid #3b3b3b;
-  margin: 0;
+  border: 1px solid #3c3c3c;
+  padding: 10px;
   text-align: center;
   color: #e0e0e0;
   font-weight: 500;
   font-size: 0.95rem;
-  transition: background 0.3s ease;
+  transition: all 0.25s ease;
 }
-
 .stat-summary p:hover {
-  background: linear-gradient(180deg, #333 0%, #1f1f1f 100%);
+  background: linear-gradient(180deg, #333 0%, #222 100%);
+  transform: translateY(-2px);
 }
 
-.stat-summary span.vida {
-  color: #ff4e4e;
-  font-weight: bold;
-}
-.stat-summary span.sanidade {
-  color: #c17aff;
-  font-weight: bold;
-}
-.stat-summary span.especial {
-  color: #ffb347;
-  font-weight: bold;
-}
-.stat-summary span.armadura {
-  color: #cfd2d4;
-  font-weight: bold;
-}
+/* ===== CORES DAS BARRAS DE STATUS ===== */
+.stat-summary span.vida { color: #ff4e4e; font-weight: 700; }
+.stat-summary span.sanidade { color: #b07aff; font-weight: 700; }
+.stat-summary span.especial { color: #ffb347; font-weight: 700; }
+.stat-summary span.armadura { color: #d0d0d0; font-weight: 700; }
 
-/* ====== ATRIBUTOS (3 COLUNAS FIXAS) ====== */
+/* ===== ATRIBUTOS SECUNDÁRIOS EM 3 COLUNAS ===== */
 .stat-atributos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 14px;
-  margin: 20px 0;
 }
 
 .stat-bloco {
-  background: linear-gradient(180deg, #292929 0%, #1c1c1c 100%);
+  background: linear-gradient(180deg, #262626 0%, #151515 100%);
+  border: 1px solid #3c3c3c;
   border-radius: 10px;
-  border: 1px solid #3b3b3b;
+  padding: 12px 8px;
   text-align: center;
-  padding: 10px 6px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
 }
-
 .stat-bloco:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
 }
 
 .stat-bloco strong {
-  display: block;
   color: #ffd86b;
   font-size: 1.05rem;
-  margin-bottom: 3px;
-  text-shadow: 0 0 8px rgba(255, 215, 0, 0.1);
+  margin-bottom: 4px;
+  display: block;
+  text-shadow: 0 0 6px rgba(255, 215, 0, 0.15);
 }
-
 .stat-bloco .valor {
   color: #ffe57f;
+  font-size: 1.2rem;
   font-weight: bold;
-  font-size: 1.15rem;
-  display: block;
 }
+.stat-bloco .dano { color: #00ff99; font-size: 0.9rem; display: block; }
+.stat-bloco .teste { color: #ff6b6b; font-size: 0.9rem; display: block; }
 
-.stat-bloco .dano {
-  color: #00ff99;
-  font-size: 0.9rem;
-}
-.stat-bloco .teste {
-  color: #ff6b6b;
-  font-size: 0.9rem;
-}
-
-/* ====== SEÇÕES TEXTUAIS (DESCRIÇÃO / ATAQUES / ETC) ====== */
+/* ===== SEÇÕES TEXTUAIS ===== */
 .popup-section {
-  background: linear-gradient(180deg, #232323 0%, #181818 100%);
-  border: 1px solid #333;
+  background: linear-gradient(180deg, #212121 0%, #161616 100%);
   border-radius: 10px;
+  border: 1px solid #2e2e2e;
   padding: 16px 20px;
   width: 100%;
-  text-align: left;
   transition: all 0.3s ease;
+}
+.popup-section:hover {
+  border-color: #444;
+  background: linear-gradient(180deg, #272727 0%, #1a1a1a 100%);
 }
 
 .popup-section h3 {
@@ -583,7 +568,7 @@
   font-size: 1.15rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 .popup-section p {
@@ -591,117 +576,84 @@
   line-height: 1.55;
   margin: 6px 0;
   text-align: justify;
-  font-size: 0.95rem;
+  font-size: 0.96rem;
 }
 
-/* ====== BOTÃO DE FECHAR ====== */
+/* ===== BOTÃO DE FECHAR ===== */
 .fechar-popup {
   position: sticky;
-  top: 10px;
+  top: 8px;
   align-self: flex-end;
   background: #252525;
   color: #ffd86b;
   border: 1px solid #444;
-  padding: 8px 14px;
   border-radius: 50%;
+  width: 34px;
+  height: 34px;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 0 6px rgba(255, 220, 120, 0.15);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.1);
 }
-
 .fechar-popup:hover {
   background: #2e2e2e;
   transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(255, 220, 120, 0.3);
+  box-shadow: 0 0 12px rgba(255, 220, 120, 0.25);
 }
 
-/* ====== SCROLLBAR ====== */
+/* ===== SCROLLBAR PERSONALIZADA ===== */
 .popup-container-criatura::-webkit-scrollbar {
   width: 8px;
 }
 .popup-container-criatura::-webkit-scrollbar-thumb {
-  background: #444;
+  background: #555;
   border-radius: 6px;
 }
 .popup-container-criatura::-webkit-scrollbar-thumb:hover {
-  background: #666;
+  background: #777;
 }
 
-/* ====== ANIMAÇÃO ====== */
-@keyframes popupScale {
-  from {
-    transform: scale(0.9);
-    opacity: 0.7;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+/* ===== ANIMAÇÕES ===== */
+@keyframes popupRise {
+  from { transform: scale(0.9); opacity: 0.6; }
+  to { transform: scale(1); opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-/* ====== RESPONSIVIDADE ====== */
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
   .popup-container-criatura {
-    padding: 20px;
+    padding: 22px;
     gap: 18px;
   }
 
-  .popup-image {
-    width: 140px;
-  }
-
-  .popup-container-criatura h2 {
-    font-size: 1.5rem;
-  }
-
-  .stat-atributos {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-
-  .popup-section {
-    padding: 12px 14px;
-  }
+  .popup-container-criatura h2 { font-size: 1.6rem; }
+  .popup-image { width: 150px; }
+  .stat-atributos { grid-template-columns: repeat(3, 1fr); }
+  .stat-summary { grid-template-columns: repeat(3, 1fr); }
+  .popup-section { padding: 14px; }
 }
 
 @media (max-width: 480px) {
   .popup-container-criatura {
-    padding: 16px;
+    padding: 18px;
+    gap: 16px;
   }
 
-  .popup-image {
-    width: 120px;
-  }
+  .popup-container-criatura h2 { font-size: 1.4rem; }
+  .popup-image { width: 120px; }
+  .stat-atributos { grid-template-columns: repeat(2, 1fr); }
+  .stat-summary { grid-template-columns: repeat(2, 1fr); }
 
-  .popup-container-criatura h2 {
-    font-size: 1.3rem;
-  }
-
-  .stat-atributos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .stat-summary {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .popup-section h3 {
-    font-size: 1rem;
-  }
-
-  .popup-section p {
-    font-size: 0.9rem;
-  }
+  .popup-section h3 { font-size: 1rem; }
+  .popup-section p { font-size: 0.9rem; }
 }
-
-
 </style>
 
 <script>
-// ================================================
-// FUNÇÃO: Abrir popup de criatura via parâmetro URL
-// ================================================
 function abrirPopupPorParametro() {
   const params = new URLSearchParams(window.location.search);
   const idOuNome = params.get("criatura");
@@ -721,21 +673,16 @@ function abrirPopupPorParametro() {
   if (criaturaEncontrada) mostrarPopupCriatura(nomeEncontrado, criaturaEncontrada);
 }
 
-// ================================================
-// FUNÇÃO: Mostrar popup e preencher conteúdo
-// ================================================
 function mostrarPopupCriatura(nome, criatura) {
   const popup = document.getElementById("popupCriatura");
   const conteudo = document.getElementById("conteudoCriatura");
   popup.style.display = "flex";
 
-  // Formatação de bônus e descrição
   const bonusHTML  = formatBonusText(criatura.bonus,  "bonus1");
   const bonus2HTML = formatBonusText(criatura.bonus2, "bonus2");
   const bonus3HTML = formatBonusText(criatura.bonus3, "bonus3");
   const descHTML   = formatDescriptionText(criatura.Descricao);
 
-  // Atributos com dano e teste
   const atributos = ["bru", "agi", "det", "pre", "lib", "cnx"];
   const atributosExtras = atributos.map(attr => {
     const base = criatura[attr] ?? "-";
@@ -751,51 +698,39 @@ function mostrarPopupCriatura(nome, criatura) {
   }).join("");
 
   conteudo.innerHTML = `
-    <div class="popup-left">
+    <div class="popup-header">
+      <img class="popup-image" src="${criatura.img}" alt="${nome}">
       <h2>${nome}</h2>
-      <img src="${criatura.img}" alt="${nome}">
     </div>
-    <div class="popup-right">
-      <div class="popup-stats">
-        <p><strong>LVL:</strong> ${criatura.lvl ?? "?"}</p>
-        <p><strong>Elemento:</strong> ${criatura.TipoElementoCriatura ?? "Desconhecido"}</p>
-        <p><strong>Vida:</strong> ${criatura.vida}</p>
-        <p><strong>Sanidade:</strong> ${criatura.sanidade}</p>
-        <p><strong>Especial:</strong> ${criatura.especial}</p>
-        <p><strong>Movimento:</strong> ${criatura.movimento}m</p>
-        ${atributosExtras}
-      </div>
 
-      <div class="popup-section">
-        <h3>Bônus</h3>
-        <div>${bonusHTML}</div>
-      </div>
+    <div class="stat-summary">
+      <p><strong>LVL:</strong> ${criatura.lvl ?? "?"}</p>
+      <p><strong>Elemento:</strong> ${criatura.TipoElementoCriatura ?? "Desconhecido"}</p>
+      <p><span class="vida">Vida:</span> ${criatura.vida}</p>
+      <p><span class="sanidade">Sanidade:</span> ${criatura.sanidade}</p>
+      <p><span class="especial">Especial:</span> ${criatura.especial}</p>
+      <p><span class="armadura">Movimento:</span> ${criatura.movimento}m</p>
+    </div>
 
-      <div class="popup-section">
-        <h3>Ataques</h3>
-        <div>${bonus2HTML}</div>
-      </div>
+    <div class="stat-atributos">${atributosExtras}</div>
 
-      <div class="popup-section">
-        <h3>Outros</h3>
-        <div>${bonus3HTML}</div>
-      </div>
+    <div class="popup-section"><h3>Bônus</h3>${bonusHTML}</div>
+    <div class="popup-section"><h3>Ataques</h3>${bonus2HTML}</div>
+    <div class="popup-section"><h3>Outros</h3>${bonus3HTML}</div>
 
-      <div class="popup-section">
-        <h3>Habilidades e Poderes</h3>
-        <p><strong>Magias:</strong> ${criatura.Magias ?? "Nenhuma"}</p>
-        <p><strong>Passivas:</strong> ${criatura.Passivas ?? "Nenhuma"}</p>
-        <p><strong>Talentos:</strong> ${criatura.Talentos ?? "Nenhum"}</p>
-      </div>
+    <div class="popup-section">
+      <h3>Habilidades e Poderes</h3>
+      <p><strong>Magias:</strong> ${criatura.Magias ?? "Nenhuma"}</p>
+      <p><strong>Passivas:</strong> ${criatura.Passivas ?? "Nenhuma"}</p>
+      <p><strong>Talentos:</strong> ${criatura.Talentos ?? "Nenhum"}</p>
+    </div>
 
-      <div class="popup-section">
-        <h3>Descrição</h3>
-        <div>${descHTML}</div>
-      </div>
+    <div class="popup-section">
+      <h3>Descrição</h3>
+      <div>${descHTML}</div>
     </div>
   `;
 
-  // Botão de fechar popup
   document.getElementById("fecharPopupCriatura").onclick = () => {
     popup.style.display = "none";
     conteudo.innerHTML = "";
@@ -805,12 +740,8 @@ function mostrarPopupCriatura(nome, criatura) {
   };
 }
 
-// ================================================
-// CHAMA AUTOMATICAMENTE SE URL TIVER O PARÂMETRO
-// ================================================
 window.addEventListener("DOMContentLoaded", abrirPopupPorParametro);
 </script>
-
 
 
 
