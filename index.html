@@ -400,7 +400,6 @@
     </div>
 
 
-
 <!-- ============================== --> 
 <!-- POPUP EXCLUSIVO PARA CRIATURA  -->
 <!-- ============================== -->
@@ -431,7 +430,7 @@
   background: radial-gradient(circle at top, #1d1b1b 0%, #121212 100%);
   color: #e6e0d2;
   width: 90%;
-  max-width: 1050px;
+  max-width: 1000px;
   border-radius: 20px;
   padding: 30px 25px;
   box-shadow: 0 0 35px rgba(255, 215, 130, 0.2);
@@ -505,22 +504,6 @@
   color: #f7d47c;
 }
 
-/* SEÇÃO DE ATRIBUTOS PRINCIPAIS */
-.popup-attributes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.popup-attributes p {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 6px 10px;
-  border-left: 3px solid #d4aa55;
-  border-radius: 4px;
-  margin: 0;
-}
-
 /* DIVISÕES */
 .popup-section {
   margin-top: 20px;
@@ -540,7 +523,9 @@
   line-height: 1.5;
 }
 
-/* SCROLLBAR */
+/* ========================= */
+/* SCROLLBAR PERSONALIZADA   */
+/* ========================= */
 .popup-container-criatura::-webkit-scrollbar {
   width: 10px;
 }
@@ -552,7 +537,9 @@
   background: #1a1a1a;
 }
 
-/* ANIMAÇÕES */
+/* ========================= */
+/* ANIMAÇÕES SUAVES          */
+/* ========================= */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -564,94 +551,82 @@
 </style>
 
 <script>
+// ================================================
+// FUNÇÃO: Abrir popup de criatura via parâmetro URL
+// ================================================
 function abrirPopupPorParametro() {
   const params = new URLSearchParams(window.location.search);
-  const nome = params.get("criatura");
-  if (!nome) return;
+  const idOuNome = params.get("criatura");
+  if (!idOuNome) return;
 
+  let criaturaEncontrada = null;
+  let nomeEncontrado = null;
+
+  for (const [nome, criatura] of Object.entries(creatures)) {
+    if (criatura.id === idOuNome || nome.toLowerCase() === idOuNome.toLowerCase()) {
+      criaturaEncontrada = criatura;
+      nomeEncontrado = nome;
+      break;
+    }
+  }
+
+  if (criaturaEncontrada) mostrarPopupCriatura(nomeEncontrado, criaturaEncontrada);
+}
+
+// ================================================
+// FUNÇÃO: Mostrar popup e preencher conteúdo
+// ================================================
+function mostrarPopupCriatura(nome, criatura) {
   const popup = document.getElementById("popupCriatura");
   const conteudo = document.getElementById("conteudoCriatura");
   popup.style.display = "flex";
 
-  // Captura de informações já exibidas
-  const nomeCriatura = document.getElementById("creatureName")?.innerText || nome;
-  const img = document.querySelector("#imageContainer img")?.src || "";
-  const nivel = document.getElementById("creatureLevel")?.innerText || "1";
-  const vida = document.getElementById("vida")?.innerText || "-";
-  const sanidade = document.getElementById("sanidade")?.innerText || "-";
-  const especial = document.getElementById("especial")?.innerText || "-";
-  const armadura = document.getElementById("armadura")?.innerText || "-";
-  const movimento = document.getElementById("movimento")?.innerText || "-";
-  const descricao = document.getElementById("descricao")?.innerHTML || "";
-  const bonus = document.getElementById("bonus")?.innerHTML || "";
-  const bonus2 = document.getElementById("bonus2")?.innerHTML || "";
-  const bonus3 = document.getElementById("bonus3")?.innerHTML || "";
-  const magias = document.getElementById("Magias")?.innerHTML || "";
-  const passivas = document.getElementById("Passivas")?.innerHTML || "";
-  const talentos = document.getElementById("Talentos")?.innerHTML || "";
-
-  // Atributos principais
-  const bru = document.getElementById("bru")?.innerText || "-";
-  const agi = document.getElementById("agi")?.innerText || "-";
-  const det = document.getElementById("det")?.innerText || "-";
-  const pre = document.getElementById("pre")?.innerText || "-";
-  const lib = document.getElementById("lib")?.innerText || "-";
-  const cnx = document.getElementById("cnx")?.innerText || "-";
+  // Formatação de bônus e descrição
+  const bonusHTML = formatBonusText(criatura.bonus, "bonus1");
+  const bonus2HTML = formatBonusText(criatura.bonus2, "bonus2");
+  const bonus3HTML = formatBonusText(criatura.bonus3, "bonus3");
+  const descHTML = formatDescriptionText(criatura.Descricao);
 
   conteudo.innerHTML = `
-    <h2>${nomeCriatura}</h2>
-    <p style="text-align:center; color:#d4aa55; margin-top:-5px;">Nível ${nivel}</p>
-    <img src="${img}" alt="${nomeCriatura}">
-    
+    <h2>${nome}</h2>
+    <img src="${criatura.img}" alt="${nome}">
     <div class="popup-stats">
-      <p><strong>Vida:</strong> ${vida}</p>
-      <p><strong>Sanidade:</strong> ${sanidade}</p>
-      <p><strong>Especial:</strong> ${especial}</p>
-      <p><strong>Armadura:</strong> ${armadura}</p>
-      <p><strong>Movimento:</strong> ${movimento}</p>
-    </div>
-
-    <div class="popup-section">
-      <h3>Atributos</h3>
-      <div class="popup-attributes">
-        <p><strong>BRU:</strong> ${bru}</p>
-        <p><strong>AGI:</strong> ${agi}</p>
-        <p><strong>DET:</strong> ${det}</p>
-        <p><strong>PRE:</strong> ${pre}</p>
-        <p><strong>LIB:</strong> ${lib}</p>
-        <p><strong>CNX:</strong> ${cnx}</p>
-      </div>
+      <p><strong>Elemento:</strong> ${criatura.TipoElementoCriatura || "Desconhecido"}</p>
+      <p><strong>Vida:</strong> ${criatura.vida}</p>
+      <p><strong>Sanidade:</strong> ${criatura.sanidade}</p>
+      <p><strong>Especial:</strong> ${criatura.especial}</p>
+      <p><strong>Movimento:</strong> ${criatura.movimento}m</p>
     </div>
 
     <div class="popup-section">
       <h3>Descrição</h3>
-      <div>${descricao}</div>
+      <div>${descHTML}</div>
     </div>
 
     <div class="popup-section">
       <h3>Bônus</h3>
-      <div>${bonus}</div>
+      <div>${bonusHTML}</div>
     </div>
 
     <div class="popup-section">
-      <h3>Ataque Básico</h3>
-      <div>${bonus2}</div>
+      <h3>Ataques</h3>
+      <div>${bonus2HTML}</div>
     </div>
 
     <div class="popup-section">
-      <h3>Outros Efeitos</h3>
-      <div>${bonus3}</div>
+      <h3>Outros</h3>
+      <div>${bonus3HTML}</div>
     </div>
 
     <div class="popup-section">
       <h3>Habilidades e Poderes</h3>
-      <p><strong>Magias:</strong> ${magias}</p>
-      <p><strong>Passivas:</strong> ${passivas}</p>
-      <p><strong>Talentos:</strong> ${talentos}</p>
+      <p><strong>Magias:</strong> ${criatura.Magias || "Nenhuma"}</p>
+      <p><strong>Passivas:</strong> ${criatura.Passivas || "Nenhuma"}</p>
+      <p><strong>Talentos:</strong> ${criatura.Talentos || "Nenhum"}</p>
     </div>
   `;
 
-  // Fecha popup e limpa
+  // Botão de fechar popup
   document.getElementById("fecharPopupCriatura").onclick = () => {
     popup.style.display = "none";
     conteudo.innerHTML = "";
@@ -661,6 +636,9 @@ function abrirPopupPorParametro() {
   };
 }
 
+// ================================================
+// CHAMA AUTOMATICAMENTE SE URL TIVER O PARÂMETRO
+// ================================================
 window.addEventListener("DOMContentLoaded", abrirPopupPorParametro);
 </script>
 
