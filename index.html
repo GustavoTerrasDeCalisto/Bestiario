@@ -398,7 +398,10 @@
         
     
     </div>
- <!-- ============================== -->
+
+
+
+<!-- ============================== --> 
 <!-- POPUP EXCLUSIVO PARA CRIATURA  -->
 <!-- ============================== -->
 <div id="popupCriatura" class="popup-overlay-criatura">
@@ -409,73 +412,142 @@
 </div>
 
 <style>
-/* ========================= */
-/* POPUP EXCLUSIVO ESTILO    */
-/* ========================= */
+/* ================================ */
+/* ESTILO GERAL DO POPUP DE CRIATURA */
+/* ================================ */
 .popup-overlay-criatura {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s ease;
 }
 
 .popup-container-criatura {
-  background: #181818;
-  color: #f5f5f5;
-  width: 85%;
+  background: radial-gradient(circle at top, #1d1b1b 0%, #121212 100%);
+  color: #e6e0d2;
+  width: 90%;
   max-width: 1000px;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 0 35px rgba(255, 215, 130, 0.2);
   overflow-y: auto;
   max-height: 95vh;
   position: relative;
   border: 2px solid #a57b3c;
+  font-family: "Cinzel", "Times New Roman", serif;
+  animation: popupScale 0.25s ease-out;
 }
 
+/* Botão de fechar */
 .fechar-popup {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #a57b3c;
+  background: linear-gradient(135deg, #a57b3c, #d4aa55);
   border: none;
   color: #fff;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
+  font-size: 1.1em;
 }
 .fechar-popup:hover {
-  background: #d4aa55;
+  background: linear-gradient(135deg, #d4aa55, #f7d47c);
+  transform: scale(1.05);
 }
 
-/* Conteúdo do popup */
+/* ========================= */
+/* CONTEÚDO DO POPUP         */
+/* ========================= */
 #conteudoCriatura h2 {
   color: #ffce55;
-  border-bottom: 2px solid #a57b3c;
-  padding-bottom: 5px;
   text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 206, 85, 0.4);
+  font-size: 1.8em;
 }
 
 #conteudoCriatura img {
-  max-width: 250px;
-  border-radius: 8px;
+  max-width: 260px;
+  border-radius: 12px;
   display: block;
-  margin: 10px auto;
+  margin: 15px auto;
+  box-shadow: 0 0 15px rgba(255, 215, 130, 0.2);
+  border: 1px solid #a57b3c;
 }
 
-.popup-stats p, .popup-stats div {
+/* GRID DE ATRIBUTOS */
+.popup-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+  font-size: 0.95em;
+}
+
+.popup-stats p {
+  margin: 0;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #a57b3c;
+  border-radius: 4px;
+}
+
+.popup-stats strong {
+  color: #f7d47c;
+}
+
+/* DIVISÕES */
+.popup-section {
+  margin-top: 20px;
+}
+.popup-section h3 {
+  color: #d4aa55;
+  border-bottom: 1px solid #a57b3c;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  font-size: 1.2em;
+  text-shadow: 0 0 5px rgba(164, 123, 60, 0.5);
+}
+
+.popup-section p,
+.popup-section div {
   margin: 6px 0;
+  line-height: 1.5;
 }
 
-.popup-stats hr {
-  border: 0;
-  border-top: 1px solid #444;
-  margin: 10px 0;
+/* ========================= */
+/* SCROLLBAR PERSONALIZADA   */
+/* ========================= */
+.popup-container-criatura::-webkit-scrollbar {
+  width: 10px;
+}
+.popup-container-criatura::-webkit-scrollbar-thumb {
+  background: #a57b3c;
+  border-radius: 10px;
+}
+.popup-container-criatura::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+/* ========================= */
+/* ANIMAÇÕES SUAVES          */
+/* ========================= */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes popupScale {
+  from { transform: scale(0.9); opacity: 0.8; }
+  to { transform: scale(1); opacity: 1; }
 }
 </style>
 
@@ -525,23 +597,40 @@ function mostrarPopupCriatura(nome, criatura) {
       <p><strong>Sanidade:</strong> ${criatura.sanidade}</p>
       <p><strong>Especial:</strong> ${criatura.especial}</p>
       <p><strong>Movimento:</strong> ${criatura.movimento}m</p>
-      <hr>
-      <div><strong>Descrição:</strong> ${descHTML}</div>
-      <hr>
-      <div><strong>Bônus:</strong> ${bonusHTML}</div>
-      <div><strong>Ataques:</strong> ${bonus2HTML}</div>
-      <div><strong>Outros:</strong> ${bonus3HTML}</div>
-      <hr>
+    </div>
+
+    <div class="popup-section">
+      <h3>Descrição</h3>
+      <div>${descHTML}</div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Bônus</h3>
+      <div>${bonusHTML}</div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Ataques</h3>
+      <div>${bonus2HTML}</div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Outros</h3>
+      <div>${bonus3HTML}</div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Habilidades e Poderes</h3>
       <p><strong>Magias:</strong> ${criatura.Magias || "Nenhuma"}</p>
       <p><strong>Passivas:</strong> ${criatura.Passivas || "Nenhuma"}</p>
       <p><strong>Talentos:</strong> ${criatura.Talentos || "Nenhum"}</p>
     </div>
   `;
 
+  // Botão de fechar popup
   document.getElementById("fecharPopupCriatura").onclick = () => {
     popup.style.display = "none";
     conteudo.innerHTML = "";
-    // Remove parâmetro da URL
     const url = new URL(window.location);
     url.searchParams.delete("criatura");
     window.history.replaceState({}, "", url);
@@ -553,6 +642,9 @@ function mostrarPopupCriatura(nome, criatura) {
 // ================================================
 window.addEventListener("DOMContentLoaded", abrirPopupPorParametro);
 </script>
+
+
+    
 
   </div>
   <script src="script.js"></script>
