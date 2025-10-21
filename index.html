@@ -480,8 +480,10 @@
 /* ===== BLOCO DE STATUS (VIDA / SANIDADE / ETC) ===== */
 .criatura-status {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px;
+
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px;
+
   background: #1f1f1f;
   border: 1px solid #2f2f2f;
   border-radius: 10px;
