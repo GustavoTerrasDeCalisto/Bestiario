@@ -401,228 +401,260 @@
 
 
 
-<!-- ============================== -->
-<!-- POPUP EXCLUSIVO PARA CRIATURA -->
+<!-- ============================== --> 
+<!-- POPUP EXCLUSIVO PARA CRIATURA  -->
 <!-- ============================== -->
 <div id="popupCriatura" class="popup-overlay-criatura">
   <div class="popup-container-criatura">
     <button id="fecharPopupCriatura" class="fechar-popup">✖</button>
-
-    <div class="popup-content-split">
-      <!-- COLUNA ESQUERDA -->
-      <div class="popup-left">
-        <h2 id="popupCreatureName"></h2>
-        <div id="popupImageContainer" class="image-container"></div>
-        <div id="popupDescricao" class="popup-descricao"></div>
-      </div>
-
-      <!-- COLUNA DIREITA -->
-      <div class="popup-right">
-        <div class="stat-summary">
-          <h3>Atributos</h3>
-          <div class="level-buttons">
-            <p><strong>Nível:</strong> <span id="popupCreatureLevel">1</span></p>
-            <button id="popupLevelUpButton">Aumentar o nível</button>
-            <button id="popupLevelDownButton">Diminuir o nível</button>
-          </div>
-        </div>
-
-        <div class="stat-summary">
-          <p><strong>Vida:</strong> <span id="popupVida"></span></p>
-          <p><strong>Sanidade:</strong> <span id="popupSanidade"></span></p>
-          <p><strong>Especial:</strong> <span id="popupEspecial"></span></p>
-          <p><strong>Armor:</strong> <span id="popupArmadura"></span></p>
-          <p>Movimento: <span id="popupMovimento"></span></p>
-        </div>
-
-        <div class="stat-details">
-          <div class="stat-container">
-            <p><strong>BRU:</strong> <span id="popupBru"></span> 
-              <span class="secondary">Dano: <span id="popupBruDano"></span> Teste: <span id="popupBruTest"></span></span>
-            </p>
-            <p><strong>AGI:</strong> <span id="popupAgi"></span> 
-              <span class="secondary">Dano: <span id="popupAgiDano"></span> Teste: <span id="popupAgiTest"></span></span>
-            </p>
-          </div>
-          <div class="stat-container">
-            <p><strong>DET:</strong> <span id="popupDet"></span> 
-              <span class="secondary">Dano: <span id="popupDetDano"></span> Teste: <span id="popupDetTest"></span></span>
-            </p>
-            <p><strong>PRE:</strong> <span id="popupPre"></span> 
-              <span class="secondary">Dano: <span id="popupPreDano"></span> Teste: <span id="popupPreTest"></span></span>
-            </p>
-          </div>
-          <div class="stat-container">
-            <p><strong>LIB:</strong> <span id="popupLib"></span> 
-              <span class="secondary">Dano: <span id="popupLibDano"></span> Teste: <span id="popupLibTest"></span></span>
-            </p>
-            <p><strong>CNX:</strong> <span id="popupCnx"></span> 
-              <span class="secondary">Dano: <span id="popupCnxDano"></span> Teste: <span id="popupCnxTest"></span></span>
-            </p>
-          </div>
-        </div>
-
-        <div class="popup-section">
-          <h3>Bônus</h3>
-          <div id="popupBonus"></div>
-        </div>
-
-        <div class="popup-section">
-          <h3>Ataque básico</h3>
-          <div id="popupBonus2"></div>
-        </div>
-
-        <div class="popup-section">
-          <h3>Outros</h3>
-          <div id="popupBonus3"></div>
-        </div>
-
-        <div class="popup-section">
-          <h3>Habilidades e Poderes</h3>
-          <p><strong>Magias:</strong> <span id="popupMagias"></span></p>
-          <p><strong>Passivas:</strong> <span id="popupPassivas"></span></p>
-          <p><strong>Talentos:</strong> <span id="popupTalentos"></span></p>
-        </div>
-      </div>
-    </div>
+    <div id="conteudoCriatura"></div>
   </div>
 </div>
 
 <style>
-/* ========================== */
-/* ESTILO POPUP DE CRIATURA   */
-/* ========================== */
+/* ================================ */
+/* ESTILO GERAL DO POPUP DE CRIATURA */
+/* ================================ */
 .popup-overlay-criatura {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s ease;
 }
 
 .popup-container-criatura {
-  background: #1a1a1a;
-  color: #f5f5f5;
+  background: radial-gradient(circle at top, #1d1b1b 0%, #121212 100%);
+  color: #e6e0d2;
   width: 90%;
-  max-width: 1200px;
-  border-radius: 16px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 30px rgba(255,215,130,0.2);
-  position: relative;
+  max-width: 1050px;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 0 35px rgba(255, 215, 130, 0.2);
   overflow-y: auto;
   max-height: 95vh;
+  position: relative;
+  border: 2px solid #a57b3c;
+  font-family: "Cinzel", "Times New Roman", serif;
+  animation: popupScale 0.25s ease-out;
 }
 
-.popup-content-split {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 25px;
-}
-
-.popup-left {
-  border-right: 1px solid #a57b3c;
-  padding-right: 20px;
-}
-
-.popup-left img {
-  width: 100%;
-  max-width: 300px;
-  display: block;
-  margin: 10px auto;
-  border-radius: 10px;
-  border: 1px solid #a57b3c;
-}
-
-.popup-descricao {
-  margin-top: 10px;
-  font-size: 0.95em;
-  line-height: 1.5;
-  color: #ddd;
-}
-
-.popup-right h3 {
-  color: #d4aa55;
-  border-bottom: 1px solid #a57b3c;
-  margin-bottom: 8px;
-}
-
+/* Botão de fechar */
 .fechar-popup {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #a57b3c;
-  color: #fff;
+  background: linear-gradient(135deg, #a57b3c, #d4aa55);
   border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 12px;
   border-radius: 6px;
-  padding: 5px 10px;
   cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.1em;
+}
+.fechar-popup:hover {
+  background: linear-gradient(135deg, #d4aa55, #f7d47c);
+  transform: scale(1.05);
 }
 
-.stat-summary, .stat-details, .popup-section {
-  margin-bottom: 15px;
+/* ========================= */
+/* CONTEÚDO DO POPUP         */
+/* ========================= */
+#conteudoCriatura h2 {
+  color: #ffce55;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 206, 85, 0.4);
+  font-size: 1.8em;
 }
 
-.stat-container p {
-  margin: 3px 0;
-  font-size: 0.9em;
-}
-
-.secondary {
+#conteudoCriatura img {
+  max-width: 260px;
+  border-radius: 12px;
   display: block;
-  font-size: 0.85em;
-  color: #aaa;
+  margin: 15px auto;
+  box-shadow: 0 0 15px rgba(255, 215, 130, 0.2);
+  border: 1px solid #a57b3c;
+}
+
+/* GRID DE ATRIBUTOS */
+.popup-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+  font-size: 0.95em;
+}
+
+.popup-stats p {
+  margin: 0;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #a57b3c;
+  border-radius: 4px;
+}
+
+.popup-stats strong {
+  color: #f7d47c;
+}
+
+/* SEÇÃO DE ATRIBUTOS PRINCIPAIS */
+.popup-attributes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.popup-attributes p {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 10px;
+  border-left: 3px solid #d4aa55;
+  border-radius: 4px;
+  margin: 0;
+}
+
+/* DIVISÕES */
+.popup-section {
+  margin-top: 20px;
+}
+.popup-section h3 {
+  color: #d4aa55;
+  border-bottom: 1px solid #a57b3c;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  font-size: 1.2em;
+  text-shadow: 0 0 5px rgba(164, 123, 60, 0.5);
+}
+
+.popup-section p,
+.popup-section div {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+/* SCROLLBAR */
+.popup-container-criatura::-webkit-scrollbar {
+  width: 10px;
+}
+.popup-container-criatura::-webkit-scrollbar-thumb {
+  background: #a57b3c;
+  border-radius: 10px;
+}
+.popup-container-criatura::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes popupScale {
+  from { transform: scale(0.9); opacity: 0.8; }
+  to { transform: scale(1); opacity: 1; }
 }
 </style>
 
 <script>
 function abrirPopupPorParametro() {
   const params = new URLSearchParams(window.location.search);
-  const idOuNome = params.get("criatura");
-  if (!idOuNome) return;
+  const nome = params.get("criatura");
+  if (!nome) return;
 
-  for (const [nome, criatura] of Object.entries(creatures)) {
-    if (criatura.id === idOuNome || nome.toLowerCase() === idOuNome.toLowerCase()) {
-      mostrarPopupCriatura(nome, criatura);
-      break;
-    }
-  }
-}
-
-function mostrarPopupCriatura(nome, criatura) {
   const popup = document.getElementById("popupCriatura");
+  const conteudo = document.getElementById("conteudoCriatura");
   popup.style.display = "flex";
 
-  // Puxa diretamente dos elementos já preenchidos
-  document.getElementById("popupCreatureName").textContent = nome;
-  document.getElementById("popupImageContainer").innerHTML = document.getElementById("imageContainer").innerHTML;
-  document.getElementById("popupDescricao").innerHTML = document.getElementById("descricao").innerHTML;
+  // Captura de informações já exibidas
+  const nomeCriatura = document.getElementById("creatureName")?.innerText || nome;
+  const img = document.querySelector("#imageContainer img")?.src || "";
+  const nivel = document.getElementById("creatureLevel")?.innerText || "1";
+  const vida = document.getElementById("vida")?.innerText || "-";
+  const sanidade = document.getElementById("sanidade")?.innerText || "-";
+  const especial = document.getElementById("especial")?.innerText || "-";
+  const armadura = document.getElementById("armadura")?.innerText || "-";
+  const movimento = document.getElementById("movimento")?.innerText || "-";
+  const descricao = document.getElementById("descricao")?.innerHTML || "";
+  const bonus = document.getElementById("bonus")?.innerHTML || "";
+  const bonus2 = document.getElementById("bonus2")?.innerHTML || "";
+  const bonus3 = document.getElementById("bonus3")?.innerHTML || "";
+  const magias = document.getElementById("Magias")?.innerHTML || "";
+  const passivas = document.getElementById("Passivas")?.innerHTML || "";
+  const talentos = document.getElementById("Talentos")?.innerHTML || "";
 
-  // Status e atributos
-  const ids = [
-    "vida","sanidade","especial","armadura","movimento",
-    "bru","bruDano","bruTest","agi","agiDano","agiTest",
-    "det","detDano","detTest","pre","preDano","preTest",
-    "lib","libDano","libTest","cnx","cnxDano","cnxTest",
-    "bonus","bonus2","bonus3","Magias","Passivas","Talentos"
-  ];
-  
-  ids.forEach(id => {
-    const popupEl = document.getElementById("popup" + id.charAt(0).toUpperCase() + id.slice(1));
-    const mainEl = document.getElementById(id);
-    if (popupEl && mainEl) popupEl.innerHTML = mainEl.innerHTML || mainEl.textContent;
-  });
+  // Atributos principais
+  const bru = document.getElementById("bru")?.innerText || "-";
+  const agi = document.getElementById("agi")?.innerText || "-";
+  const det = document.getElementById("det")?.innerText || "-";
+  const pre = document.getElementById("pre")?.innerText || "-";
+  const lib = document.getElementById("lib")?.innerText || "-";
+  const cnx = document.getElementById("cnx")?.innerText || "-";
 
-  // Nível e botões (espelhar o valor atual)
-  document.getElementById("popupCreatureLevel").textContent = document.getElementById("creatureLevel").textContent;
+  conteudo.innerHTML = `
+    <h2>${nomeCriatura}</h2>
+    <p style="text-align:center; color:#d4aa55; margin-top:-5px;">Nível ${nivel}</p>
+    <img src="${img}" alt="${nomeCriatura}">
+    
+    <div class="popup-stats">
+      <p><strong>Vida:</strong> ${vida}</p>
+      <p><strong>Sanidade:</strong> ${sanidade}</p>
+      <p><strong>Especial:</strong> ${especial}</p>
+      <p><strong>Armadura:</strong> ${armadura}</p>
+      <p><strong>Movimento:</strong> ${movimento}</p>
+    </div>
 
-  // Botão fechar
+    <div class="popup-section">
+      <h3>Atributos</h3>
+      <div class="popup-attributes">
+        <p><strong>BRU:</strong> ${bru}</p>
+        <p><strong>AGI:</strong> ${agi}</p>
+        <p><strong>DET:</strong> ${det}</p>
+        <p><strong>PRE:</strong> ${pre}</p>
+        <p><strong>LIB:</strong> ${lib}</p>
+        <p><strong>CNX:</strong> ${cnx}</p>
+      </div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Descrição</h3>
+      <div>${descricao}</div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Bônus</h3>
+      <div>${bonus}</div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Ataque Básico</h3>
+      <div>${bonus2}</div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Outros Efeitos</h3>
+      <div>${bonus3}</div>
+    </div>
+
+    <div class="popup-section">
+      <h3>Habilidades e Poderes</h3>
+      <p><strong>Magias:</strong> ${magias}</p>
+      <p><strong>Passivas:</strong> ${passivas}</p>
+      <p><strong>Talentos:</strong> ${talentos}</p>
+    </div>
+  `;
+
+  // Fecha popup e limpa
   document.getElementById("fecharPopupCriatura").onclick = () => {
     popup.style.display = "none";
+    conteudo.innerHTML = "";
     const url = new URL(window.location);
     url.searchParams.delete("criatura");
     window.history.replaceState({}, "", url);
