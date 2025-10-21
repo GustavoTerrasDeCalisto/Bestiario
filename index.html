@@ -591,11 +591,18 @@ function mostrarPopupCriatura(nome, criatura) {
     <h2>${nome}</h2>
     <img src="${criatura.img}" alt="${nome}">
     <div class="popup-stats">
+      <p><strong>Nível:</strong> ${criatura.lvl || "1"}</p>
       <p><strong>Elemento:</strong> ${criatura.TipoElementoCriatura || "Desconhecido"}</p>
       <p><strong>Vida:</strong> ${criatura.vida}</p>
       <p><strong>Sanidade:</strong> ${criatura.sanidade}</p>
       <p><strong>Especial:</strong> ${criatura.especial}</p>
       <p><strong>Movimento:</strong> ${criatura.movimento}m</p>
+      <p><strong>FOR:</strong> ${criatura.FOR || "-"}</p>
+      <p><strong>AGI:</strong> ${criatura.AGI || "-"}</p>
+      <p><strong>CON:</strong> ${criatura.CON || "-"}</p>
+      <p><strong>BRU:</strong> ${criatura.BRU || "-"}</p>
+      <p><strong>SAB:</strong> ${criatura.SAB || "-"}</p>
+      <p><strong>INT:</strong> ${criatura.INT || "-"}</p>
     </div>
 
     <div class="popup-section">
