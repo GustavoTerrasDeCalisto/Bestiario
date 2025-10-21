@@ -1,6 +1,7 @@
 const creatures = {
   "Glink's": {
-	id: "B1",
+	nome: "Glink's",
+	id: "glinks01",
     vida: 50,
     sanidade: 30,
     especial: 20,
