@@ -478,32 +478,33 @@
 }
 
 /* ===== BLOCO DE STATUS (VIDA / SANIDADE / ETC) ===== */
+/* ===== BLOCO DE STATUS (VIDA / SANIDADE / ETC) ===== */
 .criatura-status {
   display: grid;
-
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 10px;
-
-  background: #1f1f1f;
-  border: 1px solid #2f2f2f;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 10px;
+  background: #1b1b1b;
+  border: 1px solid #2a2a2a;
   border-radius: 10px;
   padding: 14px;
 }
 
 .criatura-status p {
-  background: linear-gradient(180deg, #2a2a2a 0%, #181818 100%);
-  border: 1px solid #3c3c3c;
-  border-radius: 8px;
-  padding: 10px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #2e2e2e;
+  border-radius: 0;
+  padding: 8px 4px;
   text-align: center;
   color: #e0e0e0;
   font-weight: 500;
   font-size: 0.96rem;
-  transition: all 0.25s ease;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
+
 .criatura-status p:hover {
-  background: linear-gradient(180deg, #333 0%, #222 100%);
-  transform: translateY(-2px);
+  color: #ffd86b;
+  transform: translateY(-1px);
 }
 
 /* ===== CORES DOS STATUS ===== */
