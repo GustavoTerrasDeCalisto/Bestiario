@@ -409,43 +409,46 @@
 </div>
 
 <style>
-/* ================================ */
-/* ESTILO GERAL DO POPUP DE CRIATURA */
-/* ================================ */
+/* ========================================= */
+/* POPUP DE CRIATURA — VERSÃO INTELIGENTE ⚔️ */
+/* ========================================= */
 .popup-overlay-criatura {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(10, 8, 6, 0.92);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  backdrop-filter: blur(4px);
-  animation: fadeIn 0.3s ease;
+  backdrop-filter: blur(6px) saturate(120%);
+  animation: fadeIn 0.35s ease;
 }
 
+/* CONTAINER PRINCIPAL */
 .popup-container-criatura {
-  background: radial-gradient(circle at top, #1d1b1b 0%, #121212 100%);
+  background: radial-gradient(circle at top, #1c1813 0%, #0f0d0a 100%);
   color: #e6e0d2;
-  width: 90%;
+  width: 92%;
   max-width: 1000px;
   border-radius: 20px;
-  padding: 25px 30px;
-  box-shadow: 0 0 35px rgba(255, 215, 130, 0.2);
+  padding: 25px 35px;
+  box-shadow: 0 0 45px rgba(255, 214, 130, 0.25),
+              inset 0 0 25px rgba(70, 50, 20, 0.15);
   overflow-y: auto;
   max-height: 95vh;
   position: relative;
-  border: 2px solid #a57b3c;
+  border: 2px solid rgba(165, 123, 60, 0.7);
   font-family: "Cinzel", "Times New Roman", serif;
   animation: popupScale 0.25s ease-out;
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 30px;
+  scroll-behavior: smooth;
 }
 
-/* ========================= */
-/* LADO ESQUERDO (IMAGEM + NOME) */
-/* ========================= */
+/* ===================================== */
+/* LADO ESQUERDO — IMAGEM + NOME DA FERA */
+/* ===================================== */
 .popup-left {
   flex: 0 0 300px;
   text-align: center;
@@ -454,68 +457,85 @@
 .popup-left img {
   width: 100%;
   max-width: 260px;
-  border-radius: 14px;
+  border-radius: 16px;
   margin-top: 10px;
-  box-shadow: 0 0 20px rgba(255, 215, 130, 0.25);
-  border: 1px solid #a57b3c;
+  box-shadow: 0 0 25px rgba(255, 200, 80, 0.25),
+              0 0 5px rgba(255, 200, 80, 0.15);
+  border: 1px solid rgba(165, 123, 60, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.popup-left img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(255, 220, 140, 0.35);
 }
 
 .popup-left h2 {
-  color: #ffce55;
+  color: #ffda74;
   font-size: 1.9em;
   letter-spacing: 1px;
-  margin: 10px 0 15px 0;
-  text-shadow: 0 0 10px rgba(255, 206, 85, 0.4);
+  margin: 12px 0 15px 0;
+  text-shadow: 0 0 15px rgba(255, 206, 85, 0.4);
 }
 
-/* ========================= */
-/* LADO DIREITO (CONTEÚDO)   */
-/* ========================= */
+/* ===================================== */
+/* LADO DIREITO — ATRIBUTOS E CONTEÚDO   */
+/* ===================================== */
 .popup-right {
   flex: 1;
   overflow-y: auto;
+  padding-right: 5px;
 }
 
-/* GRID DE ATRIBUTOS */
+/* ATRIBUTOS EM GRID */
 .popup-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
-  font-size: 0.95em;
+  font-size: 0.96em;
 }
 
 .popup-stats p {
   margin: 0;
-  padding: 6px 10px;
-  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.04);
   border-left: 3px solid #a57b3c;
-  border-radius: 4px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 4px rgba(255, 215, 130, 0.1);
 }
 
 .popup-stats strong {
   color: #f7d47c;
 }
 
-/* SEÇÕES */
+/* ===================================== */
+/* SEÇÕES — BÔNUS, ATAQUES, DESCRIÇÃO... */
+/* ===================================== */
 .popup-section {
-  margin-top: 18px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(165, 123, 60, 0.25);
 }
+
 .popup-section h3 {
   color: #d4aa55;
   border-bottom: 1px solid #a57b3c;
   margin-bottom: 10px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
   font-size: 1.2em;
-  text-shadow: 0 0 5px rgba(164, 123, 60, 0.5);
+  text-shadow: 0 0 6px rgba(164, 123, 60, 0.4);
+  letter-spacing: 0.5px;
 }
 
 .popup-section p,
 .popup-section div {
   margin: 6px 0;
   line-height: 1.5;
+  color: #e6e0d2;
 }
 
-/* BOTÃO FECHAR */
+/* ===================================== */
+/* BOTÃO FECHAR                          */
+/* ===================================== */
 .fechar-popup {
   position: absolute;
   top: 12px;
@@ -524,30 +544,40 @@
   border: none;
   color: #fff;
   font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 7px 14px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   font-size: 1.1em;
+  box-shadow: 0 0 12px rgba(164, 123, 60, 0.25);
 }
 .fechar-popup:hover {
   background: linear-gradient(135deg, #d4aa55, #f7d47c);
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 215, 130, 0.35);
 }
 
-/* SCROLLBAR PERSONALIZADA */
+/* ===================================== */
+/* SCROLLBAR PERSONALIZADA               */
+/* ===================================== */
 .popup-container-criatura::-webkit-scrollbar {
   width: 10px;
 }
 .popup-container-criatura::-webkit-scrollbar-thumb {
-  background: #a57b3c;
+  background: linear-gradient(180deg, #b2853f, #8c682e);
   border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.popup-container-criatura::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d4aa55, #a57b3c);
 }
 .popup-container-criatura::-webkit-scrollbar-track {
   background: #1a1a1a;
 }
 
-/* ANIMAÇÕES */
+/* ===================================== */
+/* ANIMAÇÕES                             */
+/* ===================================== */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -556,6 +586,43 @@
   from { transform: scale(0.9); opacity: 0.8; }
   to { transform: scale(1); opacity: 1; }
 }
+
+/* ===================================== */
+/* RESPONSIVIDADE — MOBILE FIRST         */
+/* ===================================== */
+@media (max-width: 768px) {
+  .popup-container-criatura {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    width: 95%;
+  }
+
+  .popup-left {
+    flex: unset;
+  }
+
+  .popup-left img {
+    max-width: 200px;
+  }
+
+  .popup-section h3 {
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  .popup-stats {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .fechar-popup {
+    top: 8px;
+    right: 8px;
+    font-size: 1em;
+  }
+}
+
 </style>
 
 <script>
