@@ -398,8 +398,6 @@
         
     
     </div>
-
-
 <!-- ============================== -->  
 <!-- POPUP EXCLUSIVO PARA CRIATURA  -->
 <!-- ============================== -->
@@ -432,7 +430,7 @@
   width: 90%;
   max-width: 1000px;
   border-radius: 20px;
-  padding: 30px 25px;
+  padding: 25px 30px;
   box-shadow: 0 0 35px rgba(255, 215, 130, 0.2);
   overflow-y: auto;
   max-height: 95vh;
@@ -440,9 +438,84 @@
   border: 2px solid #a57b3c;
   font-family: "Cinzel", "Times New Roman", serif;
   animation: popupScale 0.25s ease-out;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }
 
-/* Botão de fechar */
+/* ========================= */
+/* LADO ESQUERDO (IMAGEM + NOME) */
+/* ========================= */
+.popup-left {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.popup-left img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 14px;
+  margin-top: 10px;
+  box-shadow: 0 0 20px rgba(255, 215, 130, 0.25);
+  border: 1px solid #a57b3c;
+}
+
+.popup-left h2 {
+  color: #ffce55;
+  font-size: 1.9em;
+  letter-spacing: 1px;
+  margin: 10px 0 15px 0;
+  text-shadow: 0 0 10px rgba(255, 206, 85, 0.4);
+}
+
+/* ========================= */
+/* LADO DIREITO (CONTEÚDO)   */
+/* ========================= */
+.popup-right {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* GRID DE ATRIBUTOS */
+.popup-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  font-size: 0.95em;
+}
+
+.popup-stats p {
+  margin: 0;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #a57b3c;
+  border-radius: 4px;
+}
+
+.popup-stats strong {
+  color: #f7d47c;
+}
+
+/* SEÇÕES */
+.popup-section {
+  margin-top: 18px;
+}
+.popup-section h3 {
+  color: #d4aa55;
+  border-bottom: 1px solid #a57b3c;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  font-size: 1.2em;
+  text-shadow: 0 0 5px rgba(164, 123, 60, 0.5);
+}
+
+.popup-section p,
+.popup-section div {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+/* BOTÃO FECHAR */
 .fechar-popup {
   position: absolute;
   top: 12px;
@@ -462,70 +535,7 @@
   transform: scale(1.05);
 }
 
-/* ========================= */
-/* CONTEÚDO DO POPUP         */
-/* ========================= */
-#conteudoCriatura h2 {
-  color: #ffce55;
-  text-align: center;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(255, 206, 85, 0.4);
-  font-size: 1.8em;
-}
-
-#conteudoCriatura img {
-  max-width: 260px;
-  border-radius: 12px;
-  display: block;
-  margin: 15px auto;
-  box-shadow: 0 0 15px rgba(255, 215, 130, 0.2);
-  border: 1px solid #a57b3c;
-}
-
-/* GRID DE ATRIBUTOS */
-.popup-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 15px;
-  margin-top: 15px;
-  font-size: 0.95em;
-}
-
-.popup-stats p {
-  margin: 0;
-  padding: 6px 10px;
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 3px solid #a57b3c;
-  border-radius: 4px;
-}
-
-.popup-stats strong {
-  color: #f7d47c;
-}
-
-/* DIVISÕES */
-.popup-section {
-  margin-top: 20px;
-}
-.popup-section h3 {
-  color: #d4aa55;
-  border-bottom: 1px solid #a57b3c;
-  margin-bottom: 10px;
-  padding-bottom: 4px;
-  font-size: 1.2em;
-  text-shadow: 0 0 5px rgba(164, 123, 60, 0.5);
-}
-
-.popup-section p,
-.popup-section div {
-  margin: 6px 0;
-  line-height: 1.5;
-}
-
-/* ========================= */
-/* SCROLLBAR PERSONALIZADA   */
-/* ========================= */
+/* SCROLLBAR PERSONALIZADA */
 .popup-container-criatura::-webkit-scrollbar {
   width: 10px;
 }
@@ -537,9 +547,7 @@
   background: #1a1a1a;
 }
 
-/* ========================= */
-/* ANIMAÇÕES SUAVES          */
-/* ========================= */
+/* ANIMAÇÕES */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -582,54 +590,68 @@ function mostrarPopupCriatura(nome, criatura) {
   popup.style.display = "flex";
 
   // Formatação de bônus e descrição
-  const bonusHTML = formatBonusText(criatura.bonus, "bonus1");
+  const bonusHTML  = formatBonusText(criatura.bonus,  "bonus1");
   const bonus2HTML = formatBonusText(criatura.bonus2, "bonus2");
   const bonus3HTML = formatBonusText(criatura.bonus3, "bonus3");
-  const descHTML = formatDescriptionText(criatura.Descricao);
+  const descHTML   = formatDescriptionText(criatura.Descricao);
+
+  // Atributos com dano e teste
+  const atributos = ["bru", "agi", "det", "pre", "lib", "cnx"];
+  const atributosExtras = atributos.map(attr => {
+    const base = criatura[attr] ?? "-";
+    const dano = criatura[`${attr}Dano`] ?? "-";
+    const test = criatura[`${attr}Test`] ?? "-";
+    const nomeMaiusculo = attr.toUpperCase();
+    return `
+      <p>
+        <strong>${nomeMaiusculo}:</strong> ${base}
+        <span style="color:#a57b3c"> | Dano:</span> ${dano}
+        <span style="color:#a57b3c"> | Teste:</span> ${test}
+      </p>`;
+  }).join("");
 
   conteudo.innerHTML = `
-    <h2>${nome}</h2>
-    <img src="${criatura.img}" alt="${nome}">
-    <div class="popup-stats">
-      <p><strong>LVL:</strong> ${criatura.lvl || "?"}</p>
-      <p><strong>Elemento:</strong> ${criatura.TipoElementoCriatura || "Desconhecido"}</p>
-      <p><strong>Vida:</strong> ${criatura.vida}</p>
-      <p><strong>Sanidade:</strong> ${criatura.sanidade}</p>
-      <p><strong>Especial:</strong> ${criatura.especial}</p>
-      <p><strong>Movimento:</strong> ${criatura.movimento}m</p>
-      <p><strong>FOR:</strong> ${criatura.FOR || "-"}</p>
-      <p><strong>AGI:</strong> ${criatura.AGI || "-"}</p>
-      <p><strong>CON:</strong> ${criatura.CON || "-"}</p>
-      <p><strong>BRU:</strong> ${criatura.BRU || "-"}</p>
-      <p><strong>SAB:</strong> ${criatura.SAB || "-"}</p>
-      <p><strong>INT:</strong> ${criatura.INT || "-"}</p>
+    <div class="popup-left">
+      <h2>${nome}</h2>
+      <img src="${criatura.img}" alt="${nome}">
     </div>
+    <div class="popup-right">
+      <div class="popup-stats">
+        <p><strong>LVL:</strong> ${criatura.lvl ?? "?"}</p>
+        <p><strong>Elemento:</strong> ${criatura.TipoElementoCriatura ?? "Desconhecido"}</p>
+        <p><strong>Vida:</strong> ${criatura.vida}</p>
+        <p><strong>Sanidade:</strong> ${criatura.sanidade}</p>
+        <p><strong>Especial:</strong> ${criatura.especial}</p>
+        <p><strong>Movimento:</strong> ${criatura.movimento}m</p>
+        ${atributosExtras}
+      </div>
 
-    <div class="popup-section">
-      <h3>Descrição</h3>
-      <div>${descHTML}</div>
-    </div>
+      <div class="popup-section">
+        <h3>Bônus</h3>
+        <div>${bonusHTML}</div>
+      </div>
 
-    <div class="popup-section">
-      <h3>Bônus</h3>
-      <div>${bonusHTML}</div>
-    </div>
+      <div class="popup-section">
+        <h3>Ataques</h3>
+        <div>${bonus2HTML}</div>
+      </div>
 
-    <div class="popup-section">
-      <h3>Ataques</h3>
-      <div>${bonus2HTML}</div>
-    </div>
+      <div class="popup-section">
+        <h3>Outros</h3>
+        <div>${bonus3HTML}</div>
+      </div>
 
-    <div class="popup-section">
-      <h3>Outros</h3>
-      <div>${bonus3HTML}</div>
-    </div>
+      <div class="popup-section">
+        <h3>Habilidades e Poderes</h3>
+        <p><strong>Magias:</strong> ${criatura.Magias ?? "Nenhuma"}</p>
+        <p><strong>Passivas:</strong> ${criatura.Passivas ?? "Nenhuma"}</p>
+        <p><strong>Talentos:</strong> ${criatura.Talentos ?? "Nenhum"}</p>
+      </div>
 
-    <div class="popup-section">
-      <h3>Habilidades e Poderes</h3>
-      <p><strong>Magias:</strong> ${criatura.Magias || "Nenhuma"}</p>
-      <p><strong>Passivas:</strong> ${criatura.Passivas || "Nenhuma"}</p>
-      <p><strong>Talentos:</strong> ${criatura.Talentos || "Nenhum"}</p>
+      <div class="popup-section">
+        <h3>Descrição</h3>
+        <div>${descHTML}</div>
+      </div>
     </div>
   `;
 
@@ -648,6 +670,7 @@ function mostrarPopupCriatura(nome, criatura) {
 // ================================================
 window.addEventListener("DOMContentLoaded", abrirPopupPorParametro);
 </script>
+
 
 
 
