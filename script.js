@@ -1,5 +1,6 @@
 const creatures = {
   "Glink's": {
+	id: "B1",
     vida: 50,
     sanidade: 30,
     especial: 20,
