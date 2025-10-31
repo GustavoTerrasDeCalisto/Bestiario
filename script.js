@@ -913,49 +913,55 @@ Se você ouvir risadas estridentes ecoando na escuridão, tome cuidado: um Gobli
   }
   
  
-  
-  
   ,"Goblin Corrompido": {
-  vida: 58,
-  sanidade: 40,
-  especial: 18,
-  armadura: 3,
-  movimento: 7,
-  vidaPorNivel: 12,
-  sanidadePorNivel: 4,
-  especialPorNivel: 4,
-  armaduraPorNivel: 3,
-  TagsCriatura: "Agressivo,Caça em Grupo,Corrompido",
-  TipoElementoCriatura: "Poder",
-  bru: 14, agi: 11, det: 18, pre: 12, lib: 16, cnx: 10,
-  bruDano: 1, agiDano: 1, detDano: 2, preDano: 1, libDano: 2, cnxDano: 0,
-  bruTest: 2, agiTest: 1, detTest: 4, preTest: 1, libTest: 3, cnxTest: 0,
-  bonus: `Resistente: Escuridão
-  Vulnerável: Distorção
-  Imune: Tempestade`,
-  bonus2: `{pigmento}Invocar Almas Perdidas - teste de Determinação:{/pigmento} O Goblin Corrompido conjura almas escuras que atormentam um inimigo em um raio de 12m. Se falhar no teste (DT 15), sofre 3d10 de dano de Alma por turno (3 turnos por alvo). O Goblin pode manter até 3 alvos sob esse efeito.
+    vida: 58,
+    sanidade: 40,
+    especial: 18,
+    armadura: 3,
+    movimento: 7,
+    vidaPorNivel: 12,
+    sanidadePorNivel: 4,
+    especialPorNivel: 4,
+    armaduraPorNivel: 3,
+    TagsCriatura: "Agressivo,Caça em Grupo,Corrompido",
+    TipoElementoCriatura: "Poder",
+    bru: 14, agi: 11, det: 18, pre: 12, lib: 16, cnx: 10,
+    bruDano: 1, agiDano: 1, detDano: 2, preDano: 1, libDano: 2, cnxDano: 0,
+    bruTest: 2, agiTest: 1, detTest: 4, preTest: 1, libTest: 3, cnxTest: 0,
+    bonus: `Resistente: Escuridão
+    Vulnerável: Distorção
+    Imune: Tempestade`,
+    bonus2: `{pigmento}*Invocar Almas Perdidas - teste de Determinação:*{/pigmento} O Goblin Corrompido conjura almas escuras que atormentam um inimigo em um raio de _12m_. Se falhar no teste (DT 15), sofre _3d10 de dano de Alma_ por turno (_3 turnos por alvo_). O Goblin pode manter até _3 alvos_ sob esse efeito.
 
-{pigmento}Fortificação Sombria:{/pigmento} Como ação bônus, aumenta sua Armadura em +2 e ganha resistência a dano Físico (Corte, Perfurante, Esmagamento) por 2 turnos.
+{pigmento}*Fortificação Sombria:*{/pigmento} Como ação bônus, aumenta sua _Armadura em +2_ e ganha _resistência a dano Físico_ (Corte, Perfurante, Esmagamento) por _2 turnos_.
 
-{pigmento}Golpe Fantasmal:{/pigmento} Ao atacar, reduz a Armadura do inimigo em 3 e causa +1d10 de dano de Escuridão.
+{pigmento}*Golpe Fantasmal:*{/pigmento} Ao atacar, reduz a _Armadura do inimigo em 3_ e causa _+1d10 de dano de Escuridão_.
 
-{pigmento}Absorção Sombria:{/pigmento} Se um inimigo morrer enquanto sofre de Almas Perdidas, o Goblin recupera 10 de Vida e 5 de Sanidade. Além disso, seu próximo ataque causa +1d10 de dano de Alma.
+{pigmento}*Absorção Sombria:*{/pigmento} Se um inimigo morrer enquanto sofre de *Almas Perdidas*, o Goblin recupera _10 de Vida_ e _5 de Sanidade_. Além disso, seu próximo ataque causa _+1d10 de dano de Alma_.
 
-{pigmento}Magias utilizadas pelo Goblin Corrompido:{/pigmento}
-🔹 Almas Perturbadas  
-🔹 Poltergeist`,
-  bonus3: `Goblin Corrompido - Mestre das Almas Perdidas
-  Elemento – Poder`,
-  Magias: ,
-  Passivas: `Nível 1 – Vingança,
-  Nível 5 – Separar a Alma`,
-  Talentos: "Liderança - Requisito: Conexão",
-  Requisitos: `Conexão e Tática
-  Preservação`,
-  Descricao: "Os Goblins Corrompidos são o resultado de gerações de experimentos com forças espirituais e sombrias. Diferente de seus primos caóticos e trapaceiros, esses goblins evoluíram em meio a energias poderosas, transformando-se em conjuradores temidos e guerreiros sombrios. Sua pele esverdeada adquiriu tons escuros, emana uma energia azulada escura e seus olhos brilham em azul, um reflexo do poder que os acompanha.\n\nEles vivem em clãs ocultos, sempre liderados pelo mais forte entre eles. São estrategistas natos e prezam pela eficiência em batalha, utilizando tanto suas habilidades físicas aprimoradas quanto seu domínio sobre as almas perdidas. Quando atacam um inimigo, pequenas entidades espectrais surgem ao redor, corroendo sua energia vital até que nada reste.\n\nDiferente da maioria dos goblins, os Corrompidos não vivem pelo caos, mas sim pelo poder. Eles enxergam a vida como uma batalha constante e acreditam que apenas os mais fortes podem prosperar. Os aventureiros que ousam enfrentá-los devem estar preparados para lutar não apenas contra seus corpos aprimorados, mas também contra as almas atormentadas que os acompanham.\n\nSe você encontrar um Goblin Corrompido em combate, lembre-se: cada golpe que você der pode apenas fortalecer seu inimigo.",
-  "img": "imagens/Goblin_Corrompido.png",
-  "img2": "imagens/Token-Goblin_Corrompido.png"
+{pigmento}*Magias utilizadas pelo Goblin Corrompido:*{/pigmento}
+🔹 <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m96" target="_blank">Almas Perturbadas (Nível 1)</a>  
+🔹 <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m93" target="_blank">Poltergeist (Nível 2)</a>  
+🔹 <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m116" target="_blank">Abalo Sutil (Nível 1)</a>  
+🔹 <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m111" target="_blank">Mão Fantasma (Nível 2)</a>  
+🔹 <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m112" target="_blank">Pulso de Plasma (Nível 3)</a>  
+🔹 <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m125" target="_blank">Aura de Proteção (Nível 3)</a>`,
+    bonus3: `Goblin Corrompido - Mestre das Almas Perdidas
+    Elemento – Poder`,
+    Magias: `Nível 1 – Aura de Proteção e Mão Fantasma,
+    Nível 3 – Abalo Sutil,
+    Nível 5 – Pulso de Plasma`,
+    Passivas: `Nível 1 – Vingança,
+    Nível 5 – Separar a Alma`,
+    Talentos: `Liderança - Requisito: Conexão`,
+    Requisitos: `Conexão e Tática
+    Preservação`,
+    Descricao: "Os Goblins Corrompidos são o resultado de gerações de experimentos com forças espirituais e sombrias. Diferente de seus primos caóticos e trapaceiros, esses goblins evoluíram em meio a energias poderosas, transformando-se em conjuradores temidos e guerreiros sombrios. Sua pele esverdeada adquiriu tons escuros, emana uma energia azulada escura e seus olhos brilham em azul, um reflexo do poder que os acompanha.\n\nEles vivem em clãs ocultos, sempre liderados pelo mais forte entre eles. São estrategistas natos e prezam pela eficiência em batalha, utilizando tanto suas habilidades físicas aprimoradas quanto seu domínio sobre as almas perdidas. Quando atacam um inimigo, pequenas entidades espectrais surgem ao redor, corroendo sua energia vital até que nada reste.\n\nDiferente da maioria dos goblins, os Corrompidos não vivem pelo caos, mas sim pelo poder. Eles enxergam a vida como uma batalha constante e acreditam que apenas os mais fortes podem prosperar. Os aventureiros que ousam enfrentá-los devem estar preparados para lutar não apenas contra seus corpos aprimorados, mas também contra as almas atormentadas que os acompanham.\n\nSe você encontrar um Goblin Corrompido em combate, lembre-se: cada golpe que você der pode apenas fortalecer seu inimigo.",
+    "img": "imagens/Goblin_Corrompido.png",
+    "img2": "imagens/Token-Goblin_Corrompido.png"
 }
+
+
 
   ,"Carniceiras Noturnas": {
   vida: 67,
