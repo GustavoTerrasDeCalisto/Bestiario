@@ -1557,7 +1557,9 @@ Estudiosos e seguidores de sua existência formaram o **Culto dos Apanhadores de
 Seu propósito é dual: proteger o equilíbrio dos sonhos e testar as mentes dos mortais. Nenhum outro ser possui domínio tão absoluto sobre o sono e seus mistérios quanto essa entidade. Para os fracos de mente, ele é o fim. Para os que ousam entender... um novo começo.`,
  _imgs: [
       "imagens/IncubusDragon1.png",
-      "imagens/IncubusDragon2.png"
+      "imagens/IncubusDragon2.png",
+	  "imagens/IncubusDragon3.png"
+	 
     ],
     
     get img() {
@@ -1566,7 +1568,8 @@ Seu propósito é dual: proteger o equilíbrio dos sonhos e testar as mentes dos
 
     _imgs2: [
       "imagens/Token-IncubusDragon1.png",
-      "imagens/Token-IncubusDragon2.png"
+      "imagens/Token-IncubusDragon2.png",
+	  "imagens/Token-IncubusDragon2.png"
     ],
 
     get img2() {
