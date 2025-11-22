@@ -1509,7 +1509,85 @@ Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar 
     }
 	}
 ,
-	
+	"Namazunaga - O Tremor dos Mortos": {
+  vida: 340,
+  sanidade: 210,
+  especial: 95,
+  armadura: 8,
+  movimento: 9,
+  vidaPorNivel: 20,
+  sanidadePorNivel: 8,
+  especialPorNivel: 5,
+  armaduraPorNivel: 2,
+
+TagsCriatura: "Tremor,Domínio dos Mortos,Entidade,Lendário",
+  TipoElementoCriatura: "Poder",
+  bru: 28, agi: 14, det: 18, pre: 20, lib: 45, cnx: 25,
+  bruDano: 4, agiDano: 1, detDano: 2, preDano: 2, libDano: 7, cnxDano: 3,
+  bruTest: 6, agiTest: 2, detTest: 3, preTest: 4, libTest: 12, cnxTest: 5,
+
+
+  Ataquebásico: `3d12 de dano Esmagante - BRUTALIDADE (Tremor interno)`,
+
+  bonus: `Imune: Tremor
+Resistente: Eclipse, Distorção
+Vulnerável: Cinzas, Luz`,
+
+  bonus2: `{pigmento}*Cauda Sísmica:*{/pigmento} Um golpe massivo com a cauda que causa *3d20 de dano Esmagante*.  
+Alvos atingidos devem realizar um teste de Brutalidade (DT 18) ou são derrubados e ficam _Atordoados_ até o próximo turno.
+
+{pigmento}*Mordida Abissal:*{/pigmento} Uma mordida que vibra com energia do Reino dos Mortos, causando *4d12 de dano Físico*.  
+Se o alvo falhar em um teste de Determinação (DT 18), sofre _Tremor Interno_, recebendo 1d12 adicional por 2 turnos.
+
+{pigmento}*Poltergeist:*{/pigmento} <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m93">Link da magia</a>  
+Namazunaga manifesta espíritos invisíveis que arremessam objetos, ecoam gritos e distorcem o ar. Área de 25m.  
+Todos os inimigos devem passar em um teste de Determinação (DT 17) ou sofrem *2d12 de dano Psíquico* e perdem suas reações no turno.
+
+{pigmento}*Implosão Estelar de Plasma:*{/pigmento}  
+<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m115">Link da magia</a>  
+Namazunaga abre sua boca e dispara um colapso de energia estelar consumida no Reino dos Mortos.  
+Causa *5d20 de dano Plasma*.  
+Após usar, ele _fica imóvel por 1 turno_ e _gasta todas as ações restantes_.
+
+{pigmento}*Voo Abissal:*{/pigmento} Namazunaga voa com quatro asas negras metálicas que vibram como sinos espectrais.  
+Qualquer criatura que tente montar nele sofre imediatamente *3d20 de dano de Tremor* por instabilidade dimensional.
+
+{pigmento}*Poder da União:*{/pigmento}  
+Em um raio de 50m, cria um ponto gravitacional sísmico que _atrai todos_ para o centro.  
+Teste de Determinação (DT 20).  
+Falha: sofre *1d20 de dano de Tremor* e é arrastado por *1, 2 ou 3 turnos* dependendo da distância:
+
+– 10m → 1 turno  
+– 30m → 2 turnos  
+– 50m → 3 turnos`,
+
+
+  bonus3:`Manifestação Suprema do Tremor  
+Elemento – Poder`,
+
+  Magias:`Todas as magias de Tremor.`,
+
+  Passivas:`Nenhuma passiva adicional além de suas habilidades naturais.`,
+
+  Talentos:`-`,
+
+ Descricao:`Namazunaga é uma lenda viva entre os povos antigos e uma ameaça silenciosa nas Terras de Calisto.  
+Chamado de "O Tremor dos Mortos", ele é o único ser vivo conhecido que conseguiu entrar no Reino dos Mortos sem morrer — e lá permaneceu por eras, crescendo, consumindo ecos, memórias, almas desgarradas e a própria estrutura dimensional.
+
+Conta-se que, quando adulto, Namazunaga _rasgou a realidade com o próprio corpo_, vibrando a dimensão como um tambor cósmico, até abrir uma fissura que o devolveu ao mundo dos vivos. Desde então, seu nome sozinho faz o coração tremer e a alma estremecer.
+
+Nas noites calmas, estudiosos e lunáticos afirmam ver dois olhos negros brilhando entre as estrelas — observando, julgando, esperando.
+
+Ele é o _criador original das magias de Tremor_, e aqueles que sentem o tremor da vida ou da morte afirmam ouvir seu chamado.  
+As vibrações são ecos do Reino dos Mortos tentando invadir o mundo dos vivos: sombras que não podem ser vistas, sussurros que não têm boca, movimentos sem origem — talvez fantasmas.
+
+E nas noites de lua cheia... dizem que Namazunaga assume a forma de um enorme bagre negro e nada nos mares, arrastando consigo a vibração do além.`,
+
+
+  img: "imagens/DragaoBlack.png",
+  img2: "imagens/DragaoBlackToken.png"
+}
+,
 	
 	"IncubusDragon - O Horror e o Pesadelo": {
   vida: 334,
