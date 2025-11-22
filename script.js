@@ -1539,15 +1539,16 @@ Alvos atingidos devem realizar um teste de Brutalidade (DT 18) ou são derrubado
 {pigmento}*Mordida Abissal:*{/pigmento} Uma mordida que vibra com energia do Reino dos Mortos, causando *4d12 de dano Físico*.  
 Se o alvo falhar em um teste de Determinação (DT 18), sofre _Tremor Interno_, recebendo 1d12 adicional por 2 turnos.
 
-{pigmento}*Poltergeist:*{/pigmento} <a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m93">Link da magia</a>  
-Namazunaga manifesta espíritos invisíveis que arremessam objetos, ecoam gritos e distorcem o ar. Área de 25m.  
-Todos os inimigos devem passar em um teste de Determinação (DT 17) ou sofrem *2d12 de dano Psíquico* e perdem suas reações no turno.
+{pigmento}*Poltergeist:*{/pigmento}  
+<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m93">Poltergeist</a>  
+Ao usar esta magia, **tem o efeito extra de** forçar todos os inimigos na área de 25m a realizar um teste de Determinação (DT 17).  
+Falha: sofrem *2d12 de dano Psíquico* e perdem suas reações no turno.
 
 {pigmento}*Implosão Estelar de Plasma:*{/pigmento}  
-<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m115">Link da magia</a>  
-Namazunaga abre sua boca e dispara um colapso de energia estelar consumida no Reino dos Mortos.  
+<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m115">Implosão Estelar de Plasma</a>  
 Causa *5d20 de dano Plasma*.  
-Após usar, ele _fica imóvel por 1 turno_ e _gasta todas as ações restantes_.
+Ao usar esta magia, **tem o efeito extra de** deixar Namazunaga _imóvel por 1 turno_ e _gastar todas as ações restantes_.
+
 
 {pigmento}*Voo Abissal:*{/pigmento} Namazunaga voa com quatro asas negras metálicas que vibram como sinos espectrais.  
 Qualquer criatura que tente montar nele sofre imediatamente *3d20 de dano de Tremor* por instabilidade dimensional.
