@@ -1539,13 +1539,13 @@ Alvos atingidos devem realizar um teste de Brutalidade (DT 18) ou são derrubado
 {pigmento}*Mordida Abissal:*{/pigmento} Uma mordida que vibra com energia do Reino dos Mortos, causando *4d12 de dano Físico*.  
 Se o alvo falhar em um teste de Determinação (DT 18), sofre _Tremor Interno_, recebendo 1d12 adicional por 2 turnos.
 
-{pigmento}*Poltergeist:*{/pigmento}  
-<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m93">Poltergeist</a>  
+{pigmento}*
+<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m93">Poltergeist:</a> *{/pigmento} 
 Ao usar esta magia, **tem o efeito extra de** forçar todos os inimigos na área de 25m a realizar um teste de Determinação (DT 17).  
 Falha: sofrem *2d12 de dano Psíquico* e perdem suas reações no turno.
 
-{pigmento}*Implosão Estelar de Plasma:*{/pigmento}  
-<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m115">Implosão Estelar de Plasma</a>  
+{pigmento}*
+<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m115">Implosão Estelar de Plasma:</a>  *{/pigmento}  
 Causa *5d20 de dano Plasma*.  
 Ao usar esta magia, **tem o efeito extra de** deixar Namazunaga _imóvel por 1 turno_ e _gastar todas as ações restantes_.
 
