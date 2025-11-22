@@ -1544,7 +1544,6 @@ Ao usar esta magia, **tem o efeito extra de** forçar todos os inimigos na área
 Falha: sofrem *2d12 de dano Psíquico* e perdem suas reações no turno.
 
 {pigmento}*<a href="https://terras-de-calisto-ficha-rpg.netlify.app/#tc=m115">Implosão Estelar de Plasma:</a>*{/pigmento}  
-Causa *5d20 de dano Plasma*.  
 Ao usar esta magia, **tem o efeito extra de** deixar Namazunaga _imóvel por 1 turno_ e _gastar todas as ações restantes_.
 
 
