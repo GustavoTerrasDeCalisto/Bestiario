@@ -1547,7 +1547,7 @@ Falha: sofrem *2d12 de dano Psíquico* e perdem suas reações no turno.
 Ao usar esta magia, **tem o efeito extra de** deixar Namazunaga _imóvel por 1 turno_ e _gastar todas as ações restantes_.
 
 
-{pigmento}*Voo Abissal:*{/pigmento} Namazunaga voa com quatro asas negras metálicas que vibram como sinos espectrais.  
+{pigmento}*Voo Abissal:*{/pigmento} Namazunaga voa com asas negras escamas metálicas que vibram como sinos espectrais.  
 Qualquer criatura que tente montar nele sofre imediatamente *3d20 de dano de Tremor* por instabilidade dimensional.
 
 {pigmento}*Poder da União:*{/pigmento}  
