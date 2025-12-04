@@ -1653,7 +1653,97 @@ Seu propósito é dual: proteger o equilíbrio dos sonhos e testar as mentes dos
     },
 
     // outros dados como vida, sanidade, etc. aqui...
-  }
+  },"Aberração Onírica – A Ruptura dos Sonhos": {
+  vida: 264,
+  sanidade: 312,
+  especial: 41,
+  armadura: 8,
+  movimento: 8,
+
+  vidaPorNivel: 12,
+  sanidadePorNivel: 16,
+  especialPorNivel: 14,
+  armaduraPorNivel: 1,
+
+  Ataquebásico: `7d6 de dano Psíquico à distância – DT 18 (Conexão)`,
+
+  TagsCriatura: "Psicológico,Domínio do Sobrenatural,Entidade,Lendário",
+  TipoElementoCriatura: "Desconhecido",
+
+  bru: 12, agi: 14, det: 38, pre: 22, lib: 26, cnx: 41,
+
+  bruTest: 1, agiTest: 2, detTest: 10, preTest: 4, libTest: 6, cnxTest: 11,
+  bruDano: 0, agiDano: 1, detDano: 6, preDano: 2, libDano: 3, cnxDano: 6,
+
+  bonus: `Resistente: Poder  
+Vulnerável: Fé  
+Imune: Psicológico`,
+
+  bonus2: `
+{pigmento}*Invadir a Mente:*{/pigmento} Todos em um raio de 20m fazem teste de Libertação (DT 20). Quem falhar sofre *Confusão Onírica* por 1d4 turnos, percebendo aliados como ameaças distorcidas.
+
+{pigmento}*Distorção Temporal:*{/pigmento} A cada 2 turnos, cria um atraso temporal em criaturas a até 15m. O movimento delas é reduzido pela metade (Preservação DT 18).
+
+{pigmento}*Contaminação Onírica:*{/pigmento} Criaturas afetadas realizam teste de Libertação (DT 20) a cada turno. Falha causa *Sonambulismo* e 1d12 de dano Psicológico por colapso mental.
+
+{pigmento}*Propagação:*{/pigmento} Criaturas que falharem 3 vezes consecutivas em testes de Libertação enquanto sonâmbulas começam a se transformar. Após o 3º turno, tornam-se Aberrações Oníricas Menores.
+
+{pigmento}*Rasgo Onírico:*{/pigmento} A cada 5 turnos cria uma fenda de 6m que distorce o espaço. Causa 4d12 Psicológico, revelando versões ilusórias do alvo atacando-o simultaneamente.
+
+{pigmento}*Véu do Pesadelo Vivo:*{/pigmento} Possui três sobreposições de sonho. O primeiro ataque direcionado à criatura a cada turno falha automaticamente.
+
+{pigmento}*Sussurros Noctívagos:*{/pigmento} Implanta memórias falsas em alvos visíveis. Conexão (DT 21). Falha faz o alvo acreditar totalmente na memória implantada por 1d6 turnos.
+
+{pigmento}*Colapso de Identidade:*{/pigmento} Criaturas que chegam a 0 de Sanidade dentro de seu raio caem sob controle emocional. O mestre escolhe medo, raiva ou desespero – o alvo age forçado por 1d4 turnos.
+
+{pigmento}*Chamado ao Abismo Onírico:*{/pigmento} Ao “morrer”, se desfaz em névoa de sonho cobrindo 20m. Todos dentro sofrem 2d10 Psicológico e devem passar Libertação (DT 22) ou dormir por 1d6 turnos. A criatura retorna após 1d4 horas no Mundo dos Sonhos.
+
+<details class="como-curar-detail" style="margin-top:10px; border-top:1px solid #ddd; padding:6px 8px; background:#fafafa; border-radius:0 0 6px 6px;">
+  <summary style="cursor:pointer; font-weight:bold; color:#9b021e; font-size:14px;">
+    Como Curar
+  </summary>
+
+  <div class="curar-text" style="margin-top:8px; font-size:14px; line-height:1.4;">
+    
+    <p><strong>Método Geral:</strong> Leve o alvo ao <em>Mundo dos Sonhos</em> e confronte seu pesadelo interior. É necessário derrotar ou selar o pesadelo com auxílio de um <strong>mago dos sonhos</strong> ou <strong>soberano onírico</strong>.</p>
+
+    <p><strong>Uso de Magia:</strong> Para curar apenas um alvo, utilize a magia <strong>Limpar</strong> enquanto o alvo estiver estabilizado e o pesadelo contido.</p>
+
+    <p><strong>Entrada Guiada:</strong> Ritual de ancoragem para levar o paciente ao Mundo dos Sonhos. Requer 1 mago dos sonhos e um cristal de vítrea onírica.</p>
+
+    <p><strong>Confronto do Pesadelo:</strong> O grupo entra na projeção onírica. O paciente enfrenta o núcleo do trauma; derrotar ou selar o pesadelo remove a raiz da corrupção.</p>
+
+    <p><strong>Purga e Limpeza:</strong> Aplicar <em>Limpar</em> enquanto o pesadelo está selado faz o corpo desperto perder progressivamente os efeitos de Contaminação e Propagação.</p>
+
+    <p><strong>Selo Onírico (Opcional):</strong> Um soberano onírico pode aplicar um selo que impede recontaminação por 1d30 dias.</p>
+
+    <p><em>Nota:</em> Curar sem derrotar o pesadelo apenas suprime sintomas temporariamente — a transformação pode retornar. Rituais incompletos podem deixar resquícios, reduzindo permanentemente a sanidade.</p>
+
+  </div>
+</details>
+
+`,
+
+  bonus3: `Aberração Onírica  
+Subtipo – Psicológico`,
+
+  /* ===== MAGIAS ===== */
+  Magias: `Todas as magias de Psicológico e Mental.`,
+
+  Passivas: `Todas as passivas de Desconhecido com foco em distorção mental e onírica.`,
+
+  Talentos: `Onironauta – Requisito: Conexão`,
+
+  Descricao: `A Aberração Onírica é o destino final daqueles consumidos pelos seus próprios pesadelos. 
+Sua forma é instável, fluindo como sombra líquida e sonho malformado. 
+Olhos que não pertencem ao corpo surgem e se apagam, e cada movimento dela rasga pequenas fendas na realidade, onde fragmentos de pesadelos vazam como luz invertida. 
+Lutar contra ela é lutar contra memórias falsas, ecos temporais e versões distorcidas de si mesmo. 
+Cada segundo próximo a essa criatura empurra os vivos para mais perto do colapso mental. Apenas enfrentando o pesadelo original no Mundo dos Sonhos é possível libertar a alma aprisionada.`,
+
+  img: "imagens/AberracaoOnirica.png",
+  img2: "imagens/Token-AberracaoOnirica.png"
+}
+
   
   ,"Comunidade":{}
   
