@@ -1236,94 +1236,6 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
     img2: "imagens/Token-Paralios.png"
   }
   
-  ,"Emporium - Manifestação do Poder": {
-  vida: 409,
-  sanidade: 81,
-  especial: 13,
-  armadura: 15,
-  movimento:12,
-  vidaPorNivel: 9,
-  sanidadePorNivel: 9,
-  especialPorNivel: 9,
-  armaduraPorNivel: 3,
-  TagsCriatura: "Alma,Domínio dos Mortos,Entidade,Lendário",
-  TipoElementoCriatura: "Poder",
-  bru: 12, agi: 10, det: 22, pre: 16, lib: 99, cnx: 13,
-  bruDano: 2, agiDano: 0, detDano: 2, preDano: 2, libDano: 18, cnxDano: 1,
-  bruTest: 1, agiTest: 0, detTest: 4, preTest: 3, libTest: 30, cnxTest: 2,
-bonus: `Resistente: Desconhecido  
-Vulnerável: Caos, Fé  
-Imune: Poder`,
-  bonus2: `{pigmento}*Corpo Ascendido:*{/pigmento} Transforma-se em energia pura por 2 turnos. Ataques físicos viram dano de Plasma, ignoram resistências. +4 dano, +2 testes de Brutalidade, +4 testes de Libertação. Sofre 1d10 de dano ao final do efeito.
-{pigmento}*Almas Irradiantes:*{/pigmento} Invoca almas que disparam 3d10 de dano de Alma em até 2 inimigos por 3 turnos. Teste de Libertação (DT 16) ou ficam Atordoados. Se o inimigo morrer, recupera 20 Vida e 5 Sanidade.
-{pigmento}*Pulso de Autoridade:*{/pigmento} A cada 3 turnos, explode aura de Plasma em 8m. Teste de Determinação (DT 17) ou sofre 4d10 de dano e é empurrado 6m. Metade do dano em sucesso.
-{pigmento}*Domínio da Força Viva:*{/pigmento} Inimigo que sofre dano recebe **Marcado pela Força**. No 3º acúmulo, faz teste de Libertação (DT 18). Se falhar, explode em 6d10 de dano de Alma e não pode se curar por 2 turnos. Se passar, sofre metade.
-{pigmento}*Reflexo do Vazio Silencioso:*{/pigmento} Uma vez por dia, ao atingir 0 de vida, teleporta para um receptáculo a até 18m. Ressurge com vida cheia, mas nível 0. Pode ser impedido com folhas secas e galhos ao redor da área.`,
-  bonus3: `Entidade do Poder
-Elemento - Poder`,
-  Magias: `Nível 1 – Todas as Magias de Poder.`,
-  Passivas: `Nível 2 – Todas as Passivas de Poder.`,
-  Talentos: `Diplomacia - Requisito: Conexão
-Percepção - Requisito: Libertação
-Vigilância - Requisito: Libertação`,
-  Descricao: `A Entidade do Poder é uma manifestação viva da força que ultrapassa o entendimento mortal. Seu corpo parece estar em constante instabilidade, oscilando entre carne e pura energia pulsante. Cada passo que dá deixa marcas fundidas no solo, e sua presença distorce a realidade ao redor como se o mundo não estivesse preparado para contê-la.
-Ela não fala com palavras, mas com ondas de energia que invadem a mente daqueles que a encaram. Seu olhar é como o plasma vivo de uma estrela prestes a colapsar, e sua voz ressoa como mil gritos ecoando de uma única garganta. A Entidade do Poder não negocia, não hesita, não cede.
-Costuma manifestar objetos ao seu redor como reflexos de sua própria essência — estátuas imponentes que irradiam energia, fragmentos de armaduras colossais ou mesmo figuras de pessoas mais fracas que já destruiu, recriadas apenas para que sejam esmagadas novamente. As manifestações mais comuns são estátuas de gárgulas, brinquedos antigos ou objetos do cotidiano que passam a irradiar um brilho azul cósmico, tornando-se receptáculos temporários de seu poder.
-Essas criações não passam de símbolos: lembranças do que foi vencido e humilhado diante de sua presença. Embora não seja sua verdadeira forma, esses avatares são poderosos o suficiente para devastar cidades. Sua forma real é puramente cósmica, uma entidade de energia e presença tão intensa que sua simples aparição verdadeira destruiria o mundo — por isso, ela só se manifesta por meio de receptáculos.
-Se uma de suas manifestações for destruída, a entidade pode entrar em estado de dormência. Durante esse tempo, todas as magias, habilidades e forças ligadas ao elemento Poder tornam-se mais frágeis ou instáveis, como se o mundo sentisse a ausência de sua presença suprema.
-Todo o sistema sobrenatural voltado para almas e pós-vida provém dessa criatura. Ela é a guardião suprema do Reino dos Mortos, detendo o controle absoluto sobre o fluxo de almas e o destino final de cada espírito que cruza os limites da vida. Seu domínio garante o equilíbrio entre os vivos e os mortos, guiando espíritos perdidos até seu julgamento final — onde repouso ou condenação são decididos por sua vontade incognoscível. Nenhuma alma escapa de sua vigilância.
-Contudo, suas ações muitas vezes causam desequilíbrios que não se sabe ao certo se são intencionais ou se fazem parte de um plano maior para estabilizar outras forças sobrenaturais vindas de fontes externas às Terras de Calisto.
-Essa entidade é extremamente antiga, tendo reinado muito antes do mundo se chamar Terras de Calisto. Na era de Eldoria, sua força era a principal responsável por manter a ordem mundial, alimentada pelo impulso de poder e conquista. Naquele tempo, povos inteiros buscavam seu favor, tornando-a mais poderosa que qualquer outro ser. Hoje, isso já não é mais verdade.
-Seu propósito é um só: testar a força de tudo que vive — e destruir o que for fraco.`,
-  img: "imagens/EntidadePoder.png",
-  img2: "imagens/Token-EntidadePoder.png"
-}
-  
-  ,"Eldoria - A Morte de Calisto": {
-  vida: 365,
-  sanidade: 2,
-  especial: 12,
-  armadura: 11,
-  movimento: 10,
-  vidaPorNivel: 24,
-  sanidadePorNivel: 24,
-  especialPorNivel: 12,
-  armaduraPorNivel: 3,
-  TagsCriatura: "Sangue,Domínio dos Vivos,Entidade,Lendário",
-  TipoElementoCriatura: "Fé",
-  bru: 10, agi: 12, det: 99, pre: 18, lib: 16, cnx: 15,
-  bruDano: 2, agiDano: 0, detDano: 18, preDano: 3, libDano: 2, cnxDano: 1,
-  bruTest: 1, agiTest: 0, detTest: 30, preTest: 4, libTest: 2, cnxTest: 1,
-bonus: `Resistente: Poder  
-Vulnerável: Desconhecido, Caos  
-Imune: Fé`,
-  bonus2: `{pigmento}*Invasão Corpórea:*{/pigmento} Quando estiver em estado de morte, pode tentar invadir o corpo de um inimigo a até 6 metros. O inimigo faz um teste de Determinação com vantagem (DT 30). Se falhar, o corpo explode em sangue (3d10 em área de 3m) e sobra apenas um crânio marcado, de onde a Entidade renasce com vida total. Se a entidade não conseguir, ela é banida.
-{pigmento}*Foice de Sangue:*{/pigmento} Ataque normal causa 20 + 3d12 de dano de Sangue. Ao atingir, pode explodir o golpe causando 2d10 de Sangue em área de 3m.
-{pigmento}*Reanimar com Sangue:*{/pigmento} Faz o sangue dos mortos pulsar e se levantar. Reanima 1d12 cadáveres por vez, cada um com 50 de vida e ataque de 10 + 2d12 de Sangue. Agem em turno próprio como cópias menores da entidade.
-{pigmento}*Forma Inalvejável:*{/pigmento} Uma vez a cada 3 turnos, transforma-se em sangue líquido até o início do próximo turno. Inalvejável por ataques à distância. Pode atravessar aberturas e superfícies líquidas durante esse estado.
-{pigmento}*Explosão Corpórea:*{/pigmento} Similar à Invasão Corpórea, mas usada como ataque. Entra no corpo de um inimigo (sem testes) e o explode de dentro para fora, causando 50 + 2d12 de Sangue. O alvo faz um teste de Determinação (DT 20); se passar, sofre metade.
-{pigmento}*Maré de Calisto:*{/pigmento} A cada 4 turnos, todos os inimigos com menos de metade da vida fazem um teste de Determinação (DT 35). Quem falhar sofre 6d10 de dano de Sangue e fica Caído.
-{pigmento}*Olhar do Crânio Vivo:*{/pigmento} Os que olham diretamente para seu símbolo marcado em crânios fazem teste de Libertação (DT 25) ou ficam Atordoados por 1 turno.`,
-  bonus3: `Entidade da Fé  
-Subtipo - Sangue`,
-  Magias: `Nível 1 – Todas as Magias de Fé (usa prioritariamente Sangue).`,
-  Passivas: `Nível 2 – Todas as Passivas de Fé (usa prioritariamente Sangue).`,
-  Talentos: `Enganação - Requisito: Conexão, Diplomacia  
-Cura - Requisito: Conexão  
-Libertação - Requisito: Determinação  
-`,
-  Descricao: `A Morte de Calisto é a manifestação viva do aspecto mais sombrio e sacrificial da fé: o Sangue. Invocada por cultistas devotos que reverenciam Calisto como entidade superior, sua aparição é sempre precedida por rituais sangrentos e oferendas macabras. Os seguidores esculpem símbolos antigos em crânios de animais ou até de seres vivos, selando ali o pacto.
-Eles acreditam fielmente que Calisto foi a responsável por espurgar a escuridão das Terras de Calisto, outrora conhecidas como a antiga Eldoria. Em seus ritos, buscam desesperadamente trazê-la de volta, acreditando que somente sua presença poderá restaurar a ordem espiritual e purificar novamente o mundo. Por isso, cada sacrifício, cada marca esculpida, não é apenas uma oferenda — mas um chamado.
-Em ocasiões raríssimas, um desses crânios pulsa com vida própria. Do sangue derramado no ritual, uma forma começa a se erguer. Primeiro o crânio, depois o sangue toma forma, criando um corpo translúcido e fluido, envolto em uma longa capa negra feita com os mantos dos cultistas que se sacrificaram para chamá-la. Das veias expostas e das memórias do derramamento, brota sua arma: uma foice feita inteiramente de sangue coagulado que vibra com o peso de mil mortes.
-Ela não fala. Seu silêncio é a própria presença da sentença. Seu olhar escoa como tinta carmesim, e seu corpo pulsa como se ainda estivesse no útero de algo cósmico. Cada passo que dá é uma condenação, cada movimento é uma lembrança de que toda fé tem um preço.
-Ela é brincalhona à sua maneira. Às vezes, finge estar enfraquecida apenas para lançar-se no corpo de um inimigo, fazendo-o explodir num gesto quase teatral. Os crânios deixados para trás tornam-se portais, e sua capa negra sempre encontra o caminho de volta, regenerando sua presença.
-A Morte de Calisto é mais que uma entidade. Ela é um lembrete de que o sangue nunca seca completamente. Que o ciclo da fé, do sacrifício e do renascimento está sempre em movimento. Os reanimados que a seguem são reflexos dela mesma — sombras vermelhas que espalham seu domínio.
-Seu verdadeiro corpo, como o da Entidade do Poder, não está presente. Esta é apenas uma manifestação — um receptáculo temporário. A forma real seria devastadora demais para o mundo. Mesmo assim, sua presença temporária já é o suficiente para gerar catástrofes religiosas, desequilíbrios espirituais e surtos de loucura entre os vivos.
-Se derrotada e banida, seus seguidores choram sangue. Mas sabem que um novo crânio surgirá, e do sangue derramado, ela retornará.
-Pois enquanto houver fé... haverá sacrifício.`,
-  img: "imagens/EntidadeSangue.png",
-  img2: "imagens/Token-EntidadeSangue.png"
-}
 ,"Enkoni - A Voz no Vácuo": {
   vida: 318,
   sanidade: 169,
@@ -1366,7 +1278,148 @@ E se ela for destruída, nada acontece. Pois ela jamais esteve ali, apenas em no
   img: "imagens/EntidadeDesconhecido.png",
   img2: "imagens/Token-EntidadeDesconhecido.png"
 }
+	,"Aberração Onírica – A Ruptura dos Sonhos": {
+  vida: 264,
+  sanidade: 312,
+  especial: 41,
+  armadura: 8,
+  movimento: 8,
+
+  vidaPorNivel: 12,
+  sanidadePorNivel: 16,
+  especialPorNivel: 14,
+  armaduraPorNivel: 1,
+
+  Ataquebásico: `7d6 de dano Psíquico à distância – DT 18 (Conexão)`,
+
+  TagsCriatura: "Psicológico,Domínio do Sobrenatural,Entidade,Lendário",
+  TipoElementoCriatura: "Desconhecido",
+
+  bru: 12, agi: 14, det: 38, pre: 22, lib: 26, cnx: 41,
+
+  bruTest: 1, agiTest: 2, detTest: 10, preTest: 4, libTest: 6, cnxTest: 11,
+  bruDano: 0, agiDano: 1, detDano: 6, preDano: 2, libDano: 3, cnxDano: 6,
+
+  bonus: `Resistente: Poder  
+Vulnerável: Fé  
+Imune: Psicológico`,
+
+  bonus2: `
+{pigmento}*Invadir a Mente:*{/pigmento} Todos em um raio de 20m fazem teste de Libertação (DT 20). Quem falhar sofre *Confusão Onírica* por 1d4 turnos, percebendo aliados como ameaças distorcidas.
+
+{pigmento}*Distorção Temporal:*{/pigmento} A cada 2 turnos, cria um atraso temporal em criaturas a até 15m. O movimento delas é reduzido pela metade (Preservação DT 18).
+
+{pigmento}*Contaminação Onírica:*{/pigmento} Criaturas afetadas realizam teste de Libertação (DT 20) a cada turno. Falha causa *Sonambulismo* e 1d12 de dano Psicológico por colapso mental.
+
+{pigmento}*Propagação:*{/pigmento} Criaturas que falharem 3 vezes consecutivas em testes de Libertação enquanto sonâmbulas começam a se transformar. Após o 3º turno, tornam-se Aberrações Oníricas Menores.
+
+{pigmento}*Rasgo Onírico:*{/pigmento} A cada 5 turnos cria uma fenda de 6m que distorce o espaço. Causa 4d12 Psicológico, revelando versões ilusórias do alvo atacando-o simultaneamente.
+
+{pigmento}*Véu do Pesadelo Vivo:*{/pigmento} Possui três sobreposições de sonho. O primeiro ataque direcionado à criatura a cada turno falha automaticamente.
+
+{pigmento}*Sussurros Noctívagos:*{/pigmento} Implanta memórias falsas em alvos visíveis. Conexão (DT 21). Falha faz o alvo acreditar totalmente na memória implantada por 1d6 turnos.
+
+{pigmento}*Colapso de Identidade:*{/pigmento} Criaturas que chegam a 0 de Sanidade dentro de seu raio caem sob controle emocional. O mestre escolhe medo, raiva ou desespero – o alvo age forçado por 1d4 turnos.
+
+{pigmento}*Chamado ao Abismo Onírico:*{/pigmento} Ao “morrer”, se desfaz em névoa de sonho cobrindo 20m. Todos dentro sofrem 2d10 Psicológico e devem passar Libertação (DT 22) ou dormir por 1d6 turnos. A criatura retorna após 1d4 horas no Mundo dos Sonhos.
+<details><summary>Como Curar</summary>
+<p><strong>Método Geral:</strong> Leve o alvo ao <em>Mundo dos Sonhos</em> e confronte seu pesadelo interior. É necessário derrotar ou selar o pesadelo com auxílio de um <strong>mago dos sonhos</strong> ou <strong>soberano onírico</strong>.</p>
+<p><strong>Uso de Magia:</strong> Para curar apenas um alvo, utilize a magia <strong>Limpar</strong> enquanto o alvo estiver estabilizado e o pesadelo contido.</p>
+<p><strong>Entrada Guiada:</strong> Ritual de ancoragem para levar o paciente ao Mundo dos Sonhos. Requer 1 mago dos sonhos e um cristal de vítrea onírica.</p>
+<p><strong>Confronto do Pesadelo:</strong> O grupo entra na projeção onírica. O paciente enfrenta o núcleo do trauma; derrotar ou selar o pesadelo remove a raiz da corrupção.</p>
+<p><strong>Purga e Limpeza:</strong> Aplicar <em>Limpar</em> enquanto o pesadelo está selado faz o corpo desperto perder progressivamente os efeitos de Contaminação e Propagação.</p>
+<p><strong>Selo Onírico (Opcional):</strong> Um soberano onírico pode aplicar um selo que impede recontaminação por 1d30 dias.</p>
+<p><em>Nota:</em> Curar sem derrotar o pesadelo apenas suprime sintomas temporariamente — a transformação pode retornar. Rituais incompletos podem deixar resquícios, reduzindo permanentemente a sanidade.</p></details>
+
+`,
+
+  bonus3: `Aberração Onírica  
+Subtipo – Psicológico`,
+
+  Magias: `Todas as magias de Psicológico e Mental.`,
+
+  Passivas: `Todas as passivas de Desconhecido com foco em distorção mental e onírica.`,
+
+  Talentos: `-`,
+
+  Descricao: `A Aberração Onírica é o destino final daqueles consumidos pelos seus próprios pesadelos. 
+Sua forma é instável, fluindo como sombra líquida e sonho malformado. 
+Olhos que não pertencem ao corpo surgem e se apagam, e cada movimento dela rasga pequenas fendas na realidade, onde fragmentos de pesadelos vazam como luz invertida. 
+Lutar contra ela é lutar contra memórias falsas, ecos temporais e versões distorcidas de si mesmo. 
+Cada segundo próximo a essa criatura empurra os vivos para mais perto do colapso mental. Apenas enfrentando o pesadelo original no Mundo dos Sonhos é possível libertar a alma aprisionada.`,
+
+  img: "imagens/AberracaoOnirica.png",
+  img2: "imagens/Token-AberracaoOnirica.png"
+}
+,
 	
+	"IncubusDragon - O Horror e o Pesadelo": {
+  vida: 334,
+  sanidade: 45,
+  especial: 14,
+  armadura: 8,
+  movimento: 8,
+  vidaPorNivel: 8,
+  sanidadePorNivel: 5,
+  especialPorNivel: 6,
+  armaduraPorNivel: 4,
+ Ataquebásico: `Dois ataques por Turno-2d20 de dano Cortante - Agilidade`,
+  TagsCriatura: "Sono,Reino dos Sonhos,Entidade,Lendário",
+  TipoElementoCriatura: "Desconhecido",
+  bru: 15, agi: 12, det: 20, pre: 14, lib: 24, cnx: 55,
+  bruDano: 1, agiDano: 0, detDano: 2, preDano: 1, libDano: 3, cnxDano: 10,
+  bruTest: 2, agiTest: 1, detTest: 3, preTest: 2, libTest: 6, cnxTest: 15,
+  bonus: `Resistente: Escuridão, Sono  
+Vulnerável: Fé, Elétrico  
+Imune: Psicológico`,
+  bonus2: `{pigmento}*Puxar Almas:*{/pigmento} Afeta alvos dormindo que já sonharam com ele ao menos 2 vezes. Teste de Libertação (DT 25) ou sofre 4d20+10 de dano de Sono e tem a alma parcialmente aprisionada nos domínios oníricos.
+{pigmento}*Forçar o Sono:*{/pigmento} Em uma área de 6 metros, todos os inimigos devem fazer um teste de Determinação (DT 15) ou adormecem instantaneamente.
+{pigmento}*Sonambulismo Forçado:*{/pigmento} Ativa a condição **Sonambulismo** em um alvo à escolha em até 8 metros. Teste de Determinação (DT 12).
+{pigmento}*Pesadelo Vivo:*{/pigmento} Alvo dormindo a até 3 metros pode ser invadido. O Incubus entra fisicamente no sonho da vítima, que fica em pânico e se debate. Perde 10 de Sanidade ao entrar e mais 2 por turno. Enquanto isso, o corpo do alvo brilha em roxo.
+{pigmento}*Terror Manifesto:*{/pigmento} Todos que veem o IncubusDragon pela primeira vez perdem 1d12 de Sanidade. Em encontros subsequentes, 1d6.
+{pigmento}*Toque do Devaneio:*{/pigmento} Cura instantaneamente o valor total de Sanidade do alvo. A mão do IncubusDragon brilha em rosa e evapora. O alvo não sofre dano e só pode tentar esquivar.
+{pigmento}*Dualidade Onírica:*{/pigmento} Possui duas formas distintas:  
+- {subpigmento}*IncubusDragon:*{/subpigmento} Forma de terror onírico, surgindo em pesadelos e trazendo loucura.  
+- {subpigmento}*Morpheus:*{/subpigmento} Forma de descanso e sabedoria, orientando os que vagueiam no Reino dos Sonhos.`,
+  bonus3: `Entidade dos Sonhos  
+Elemento - Desconhecido`,
+  Magias: `Nível 1 – Todas as Magias de Sono.`,
+  Passivas: `Nível 1 – Todas as Passivas de Sono.`,
+  Talentos: `-`,
+  Descricao: `O IncubusDragon, também conhecido como Morpheus, é uma das entidades mais enigmáticas das Terras de Calisto. Guardião absoluto do Reino dos Sonhos, manifesta-se em formas que oscilam entre o terror mais profundo e a paz mais serena. Aqueles que cruzam seu caminho em pesadelos o conhecem como IncubusDragon – um arauto do pânico onírico que se alimenta do medo e da confusão gerada nas mentes frágeis. Já os sábios e buscadores espirituais que o encontram durante meditações e sonhos lúcidos o chamam de Morpheus – a essência do descanso, o mestre do subconsciente.
+Sua forma física é instável. Às vezes surge como uma criatura dracônica feita de névoa púrpura com olhos brilhando em azul vívido. Outras vezes, é uma figura encapuzada de longas asas sombreadas e um corpo coberto por fragmentos dourados de sonhos antigos. Quando entra nos sonhos de alguém, ele se funde ao cenário, adaptando-se à mente do sonhador. Essa fusão é perigosa e destrutiva – o simples toque do IncubusDragon pode comprometer a alma de seu alvo.
+Há um local sagrado e amaldiçoado no continente do Luar conhecido como *Pico do IncubusDragon*. Dizem que ali sua presença é sentida com mais força, e muitos afirmam vê-lo ao longe durante certas noites do ano. Sonhos que nascem nessa região são sempre mais intensos, caóticos e proféticos.
+Estudiosos e seguidores de sua existência formaram o **Culto dos Apanhadores de Sonhos**, uma ordem secreta que aprende a manipular o mundo onírico. A evolução entre seus membros é gradual e simbólica:
+- Aspirantes dos Sonhos iniciam sua jornada entre véus de devaneios.
+- Tecelões aprendem a moldar sonhos.
+- Guardiões dos Subconscientes vigiam as fronteiras do mundo desperto.
+- Senhores do Sono Eterno caminham ao lado de Morpheus.
+- Profetas das Visões Oníricas decifram os enigmas dos pesadelos.
+- Apanhadores dos Pesadelos são os únicos capazes de tocar a consciência do próprio IncubusDragon.
+Seu propósito é dual: proteger o equilíbrio dos sonhos e testar as mentes dos mortais. Nenhum outro ser possui domínio tão absoluto sobre o sono e seus mistérios quanto essa entidade. Para os fracos de mente, ele é o fim. Para os que ousam entender... um novo começo.`,
+ _imgs: [
+      "imagens/IncubusDragon1.png",
+      "imagens/IncubusDragon2.png",
+	  "imagens/IncubusDragon3.png"
+	 
+    ],
+    
+    get img() {
+      return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+    },
+
+    _imgs2: [
+      "imagens/Token-IncubusDragon1.png",
+      "imagens/Token-IncubusDragon2.png",
+	  "imagens/Token-IncubusDragon2.png"
+    ],
+
+    get img2() {
+      return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+    },
+
+    // outros dados como vida, sanidade, etc. aqui...
+  }
 	,"Torrent - Manifestação do Caos": {
   vida: 340,
   sanidade: 130,
@@ -1508,7 +1561,50 @@ Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar 
       return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
     }
 	}
-,
+
+  ,"Emporium - Manifestação do Poder": {
+  vida: 409,
+  sanidade: 81,
+  especial: 13,
+  armadura: 15,
+  movimento:12,
+  vidaPorNivel: 9,
+  sanidadePorNivel: 9,
+  especialPorNivel: 9,
+  armaduraPorNivel: 3,
+  TagsCriatura: "Alma,Domínio dos Mortos,Entidade,Lendário",
+  TipoElementoCriatura: "Poder",
+  bru: 12, agi: 10, det: 22, pre: 16, lib: 99, cnx: 13,
+  bruDano: 2, agiDano: 0, detDano: 2, preDano: 2, libDano: 18, cnxDano: 1,
+  bruTest: 1, agiTest: 0, detTest: 4, preTest: 3, libTest: 30, cnxTest: 2,
+bonus: `Resistente: Desconhecido  
+Vulnerável: Caos, Fé  
+Imune: Poder`,
+  bonus2: `{pigmento}*Corpo Ascendido:*{/pigmento} Transforma-se em energia pura por 2 turnos. Ataques físicos viram dano de Plasma, ignoram resistências. +4 dano, +2 testes de Brutalidade, +4 testes de Libertação. Sofre 1d10 de dano ao final do efeito.
+{pigmento}*Almas Irradiantes:*{/pigmento} Invoca almas que disparam 3d10 de dano de Alma em até 2 inimigos por 3 turnos. Teste de Libertação (DT 16) ou ficam Atordoados. Se o inimigo morrer, recupera 20 Vida e 5 Sanidade.
+{pigmento}*Pulso de Autoridade:*{/pigmento} A cada 3 turnos, explode aura de Plasma em 8m. Teste de Determinação (DT 17) ou sofre 4d10 de dano e é empurrado 6m. Metade do dano em sucesso.
+{pigmento}*Domínio da Força Viva:*{/pigmento} Inimigo que sofre dano recebe **Marcado pela Força**. No 3º acúmulo, faz teste de Libertação (DT 18). Se falhar, explode em 6d10 de dano de Alma e não pode se curar por 2 turnos. Se passar, sofre metade.
+{pigmento}*Reflexo do Vazio Silencioso:*{/pigmento} Uma vez por dia, ao atingir 0 de vida, teleporta para um receptáculo a até 18m. Ressurge com vida cheia, mas nível 0. Pode ser impedido com folhas secas e galhos ao redor da área.`,
+  bonus3: `Entidade do Poder
+Elemento - Poder`,
+  Magias: `Nível 1 – Todas as Magias de Poder.`,
+  Passivas: `Nível 2 – Todas as Passivas de Poder.`,
+  Talentos: `Diplomacia - Requisito: Conexão
+Percepção - Requisito: Libertação
+Vigilância - Requisito: Libertação`,
+  Descricao: `A Entidade do Poder é uma manifestação viva da força que ultrapassa o entendimento mortal. Seu corpo parece estar em constante instabilidade, oscilando entre carne e pura energia pulsante. Cada passo que dá deixa marcas fundidas no solo, e sua presença distorce a realidade ao redor como se o mundo não estivesse preparado para contê-la.
+Ela não fala com palavras, mas com ondas de energia que invadem a mente daqueles que a encaram. Seu olhar é como o plasma vivo de uma estrela prestes a colapsar, e sua voz ressoa como mil gritos ecoando de uma única garganta. A Entidade do Poder não negocia, não hesita, não cede.
+Costuma manifestar objetos ao seu redor como reflexos de sua própria essência — estátuas imponentes que irradiam energia, fragmentos de armaduras colossais ou mesmo figuras de pessoas mais fracas que já destruiu, recriadas apenas para que sejam esmagadas novamente. As manifestações mais comuns são estátuas de gárgulas, brinquedos antigos ou objetos do cotidiano que passam a irradiar um brilho azul cósmico, tornando-se receptáculos temporários de seu poder.
+Essas criações não passam de símbolos: lembranças do que foi vencido e humilhado diante de sua presença. Embora não seja sua verdadeira forma, esses avatares são poderosos o suficiente para devastar cidades. Sua forma real é puramente cósmica, uma entidade de energia e presença tão intensa que sua simples aparição verdadeira destruiria o mundo — por isso, ela só se manifesta por meio de receptáculos.
+Se uma de suas manifestações for destruída, a entidade pode entrar em estado de dormência. Durante esse tempo, todas as magias, habilidades e forças ligadas ao elemento Poder tornam-se mais frágeis ou instáveis, como se o mundo sentisse a ausência de sua presença suprema.
+Todo o sistema sobrenatural voltado para almas e pós-vida provém dessa criatura. Ela é a guardião suprema do Reino dos Mortos, detendo o controle absoluto sobre o fluxo de almas e o destino final de cada espírito que cruza os limites da vida. Seu domínio garante o equilíbrio entre os vivos e os mortos, guiando espíritos perdidos até seu julgamento final — onde repouso ou condenação são decididos por sua vontade incognoscível. Nenhuma alma escapa de sua vigilância.
+Contudo, suas ações muitas vezes causam desequilíbrios que não se sabe ao certo se são intencionais ou se fazem parte de um plano maior para estabilizar outras forças sobrenaturais vindas de fontes externas às Terras de Calisto.
+Essa entidade é extremamente antiga, tendo reinado muito antes do mundo se chamar Terras de Calisto. Na era de Eldoria, sua força era a principal responsável por manter a ordem mundial, alimentada pelo impulso de poder e conquista. Naquele tempo, povos inteiros buscavam seu favor, tornando-a mais poderosa que qualquer outro ser. Hoje, isso já não é mais verdade.
+Seu propósito é um só: testar a força de tudo que vive — e destruir o que for fraco.`,
+  img: "imagens/EntidadePoder.png",
+  img2: "imagens/Token-EntidadePoder.png"
+}
+ ,
 	"Namazunaga - O Tremor dos Mortos": {
   vida: 340,
   sanidade: 210,
@@ -1584,147 +1680,51 @@ E nas noites de lua cheia... dizem que Namazunaga assume a forma de um enorme ba
 
   img: "imagens/DragaoBlack.png",
   img2: "imagens/DragaoBlackToken.png"
-}
-,
-	
-	"IncubusDragon - O Horror e o Pesadelo": {
-  vida: 334,
-  sanidade: 45,
-  especial: 14,
-  armadura: 8,
-  movimento: 8,
-  vidaPorNivel: 8,
-  sanidadePorNivel: 5,
-  especialPorNivel: 6,
-  armaduraPorNivel: 4,
- Ataquebásico: `Dois ataques por Turno-2d20 de dano Cortante - Agilidade`,
-  TagsCriatura: "Sono,Reino dos Sonhos,Entidade,Lendário",
-  TipoElementoCriatura: "Desconhecido",
-  bru: 15, agi: 12, det: 20, pre: 14, lib: 24, cnx: 55,
-  bruDano: 1, agiDano: 0, detDano: 2, preDano: 1, libDano: 3, cnxDano: 10,
-  bruTest: 2, agiTest: 1, detTest: 3, preTest: 2, libTest: 6, cnxTest: 15,
-  bonus: `Resistente: Escuridão, Sono  
-Vulnerável: Fé, Elétrico  
-Imune: Psicológico`,
-  bonus2: `{pigmento}*Puxar Almas:*{/pigmento} Afeta alvos dormindo que já sonharam com ele ao menos 2 vezes. Teste de Libertação (DT 25) ou sofre 4d20+10 de dano de Sono e tem a alma parcialmente aprisionada nos domínios oníricos.
-{pigmento}*Forçar o Sono:*{/pigmento} Em uma área de 6 metros, todos os inimigos devem fazer um teste de Determinação (DT 15) ou adormecem instantaneamente.
-{pigmento}*Sonambulismo Forçado:*{/pigmento} Ativa a condição **Sonambulismo** em um alvo à escolha em até 8 metros. Teste de Determinação (DT 12).
-{pigmento}*Pesadelo Vivo:*{/pigmento} Alvo dormindo a até 3 metros pode ser invadido. O Incubus entra fisicamente no sonho da vítima, que fica em pânico e se debate. Perde 10 de Sanidade ao entrar e mais 2 por turno. Enquanto isso, o corpo do alvo brilha em roxo.
-{pigmento}*Terror Manifesto:*{/pigmento} Todos que veem o IncubusDragon pela primeira vez perdem 1d12 de Sanidade. Em encontros subsequentes, 1d6.
-{pigmento}*Toque do Devaneio:*{/pigmento} Cura instantaneamente o valor total de Sanidade do alvo. A mão do IncubusDragon brilha em rosa e evapora. O alvo não sofre dano e só pode tentar esquivar.
-{pigmento}*Dualidade Onírica:*{/pigmento} Possui duas formas distintas:  
-- {subpigmento}*IncubusDragon:*{/subpigmento} Forma de terror onírico, surgindo em pesadelos e trazendo loucura.  
-- {subpigmento}*Morpheus:*{/subpigmento} Forma de descanso e sabedoria, orientando os que vagueiam no Reino dos Sonhos.`,
-  bonus3: `Entidade dos Sonhos  
-Elemento - Desconhecido`,
-  Magias: `Nível 1 – Todas as Magias de Sono.`,
-  Passivas: `Nível 1 – Todas as Passivas de Sono.`,
-  Talentos: `-`,
-  Descricao: `O IncubusDragon, também conhecido como Morpheus, é uma das entidades mais enigmáticas das Terras de Calisto. Guardião absoluto do Reino dos Sonhos, manifesta-se em formas que oscilam entre o terror mais profundo e a paz mais serena. Aqueles que cruzam seu caminho em pesadelos o conhecem como IncubusDragon – um arauto do pânico onírico que se alimenta do medo e da confusão gerada nas mentes frágeis. Já os sábios e buscadores espirituais que o encontram durante meditações e sonhos lúcidos o chamam de Morpheus – a essência do descanso, o mestre do subconsciente.
-Sua forma física é instável. Às vezes surge como uma criatura dracônica feita de névoa púrpura com olhos brilhando em azul vívido. Outras vezes, é uma figura encapuzada de longas asas sombreadas e um corpo coberto por fragmentos dourados de sonhos antigos. Quando entra nos sonhos de alguém, ele se funde ao cenário, adaptando-se à mente do sonhador. Essa fusão é perigosa e destrutiva – o simples toque do IncubusDragon pode comprometer a alma de seu alvo.
-Há um local sagrado e amaldiçoado no continente do Luar conhecido como *Pico do IncubusDragon*. Dizem que ali sua presença é sentida com mais força, e muitos afirmam vê-lo ao longe durante certas noites do ano. Sonhos que nascem nessa região são sempre mais intensos, caóticos e proféticos.
-Estudiosos e seguidores de sua existência formaram o **Culto dos Apanhadores de Sonhos**, uma ordem secreta que aprende a manipular o mundo onírico. A evolução entre seus membros é gradual e simbólica:
-- Aspirantes dos Sonhos iniciam sua jornada entre véus de devaneios.
-- Tecelões aprendem a moldar sonhos.
-- Guardiões dos Subconscientes vigiam as fronteiras do mundo desperto.
-- Senhores do Sono Eterno caminham ao lado de Morpheus.
-- Profetas das Visões Oníricas decifram os enigmas dos pesadelos.
-- Apanhadores dos Pesadelos são os únicos capazes de tocar a consciência do próprio IncubusDragon.
-Seu propósito é dual: proteger o equilíbrio dos sonhos e testar as mentes dos mortais. Nenhum outro ser possui domínio tão absoluto sobre o sono e seus mistérios quanto essa entidade. Para os fracos de mente, ele é o fim. Para os que ousam entender... um novo começo.`,
- _imgs: [
-      "imagens/IncubusDragon1.png",
-      "imagens/IncubusDragon2.png",
-	  "imagens/IncubusDragon3.png"
-	 
-    ],
-    
-    get img() {
-      return this._imgs[Math.floor(Math.random() * this._imgs.length)];
-    },
-
-    _imgs2: [
-      "imagens/Token-IncubusDragon1.png",
-      "imagens/Token-IncubusDragon2.png",
-	  "imagens/Token-IncubusDragon2.png"
-    ],
-
-    get img2() {
-      return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
-    },
-
-    // outros dados como vida, sanidade, etc. aqui...
-  },"Aberração Onírica – A Ruptura dos Sonhos": {
-  vida: 264,
-  sanidade: 312,
-  especial: 41,
-  armadura: 8,
-  movimento: 8,
-
-  vidaPorNivel: 12,
-  sanidadePorNivel: 16,
-  especialPorNivel: 14,
-  armaduraPorNivel: 1,
-
-  Ataquebásico: `7d6 de dano Psíquico à distância – DT 18 (Conexão)`,
-
-  TagsCriatura: "Psicológico,Domínio do Sobrenatural,Entidade,Lendário",
-  TipoElementoCriatura: "Desconhecido",
-
-  bru: 12, agi: 14, det: 38, pre: 22, lib: 26, cnx: 41,
-
-  bruTest: 1, agiTest: 2, detTest: 10, preTest: 4, libTest: 6, cnxTest: 11,
-  bruDano: 0, agiDano: 1, detDano: 6, preDano: 2, libDano: 3, cnxDano: 6,
-
-  bonus: `Resistente: Poder  
-Vulnerável: Fé  
-Imune: Psicológico`,
-
-  bonus2: `
-{pigmento}*Invadir a Mente:*{/pigmento} Todos em um raio de 20m fazem teste de Libertação (DT 20). Quem falhar sofre *Confusão Onírica* por 1d4 turnos, percebendo aliados como ameaças distorcidas.
-
-{pigmento}*Distorção Temporal:*{/pigmento} A cada 2 turnos, cria um atraso temporal em criaturas a até 15m. O movimento delas é reduzido pela metade (Preservação DT 18).
-
-{pigmento}*Contaminação Onírica:*{/pigmento} Criaturas afetadas realizam teste de Libertação (DT 20) a cada turno. Falha causa *Sonambulismo* e 1d12 de dano Psicológico por colapso mental.
-
-{pigmento}*Propagação:*{/pigmento} Criaturas que falharem 3 vezes consecutivas em testes de Libertação enquanto sonâmbulas começam a se transformar. Após o 3º turno, tornam-se Aberrações Oníricas Menores.
-
-{pigmento}*Rasgo Onírico:*{/pigmento} A cada 5 turnos cria uma fenda de 6m que distorce o espaço. Causa 4d12 Psicológico, revelando versões ilusórias do alvo atacando-o simultaneamente.
-
-{pigmento}*Véu do Pesadelo Vivo:*{/pigmento} Possui três sobreposições de sonho. O primeiro ataque direcionado à criatura a cada turno falha automaticamente.
-
-{pigmento}*Sussurros Noctívagos:*{/pigmento} Implanta memórias falsas em alvos visíveis. Conexão (DT 21). Falha faz o alvo acreditar totalmente na memória implantada por 1d6 turnos.
-
-{pigmento}*Colapso de Identidade:*{/pigmento} Criaturas que chegam a 0 de Sanidade dentro de seu raio caem sob controle emocional. O mestre escolhe medo, raiva ou desespero – o alvo age forçado por 1d4 turnos.
-
-{pigmento}*Chamado ao Abismo Onírico:*{/pigmento} Ao “morrer”, se desfaz em névoa de sonho cobrindo 20m. Todos dentro sofrem 2d10 Psicológico e devem passar Libertação (DT 22) ou dormir por 1d6 turnos. A criatura retorna após 1d4 horas no Mundo dos Sonhos.
-<details><summary>Como Curar</summary>
-<p><strong>Método Geral:</strong> Leve o alvo ao <em>Mundo dos Sonhos</em> e confronte seu pesadelo interior. É necessário derrotar ou selar o pesadelo com auxílio de um <strong>mago dos sonhos</strong> ou <strong>soberano onírico</strong>.</p>
-<p><strong>Uso de Magia:</strong> Para curar apenas um alvo, utilize a magia <strong>Limpar</strong> enquanto o alvo estiver estabilizado e o pesadelo contido.</p>
-<p><strong>Entrada Guiada:</strong> Ritual de ancoragem para levar o paciente ao Mundo dos Sonhos. Requer 1 mago dos sonhos e um cristal de vítrea onírica.</p>
-<p><strong>Confronto do Pesadelo:</strong> O grupo entra na projeção onírica. O paciente enfrenta o núcleo do trauma; derrotar ou selar o pesadelo remove a raiz da corrupção.</p>
-<p><strong>Purga e Limpeza:</strong> Aplicar <em>Limpar</em> enquanto o pesadelo está selado faz o corpo desperto perder progressivamente os efeitos de Contaminação e Propagação.</p>
-<p><strong>Selo Onírico (Opcional):</strong> Um soberano onírico pode aplicar um selo que impede recontaminação por 1d30 dias.</p>
-<p><em>Nota:</em> Curar sem derrotar o pesadelo apenas suprime sintomas temporariamente — a transformação pode retornar. Rituais incompletos podem deixar resquícios, reduzindo permanentemente a sanidade.</p></details>
-
+} 
+  ,"Eldoria - A Morte de Calisto": {
+  vida: 365,
+  sanidade: 2,
+  especial: 12,
+  armadura: 11,
+  movimento: 10,
+  vidaPorNivel: 24,
+  sanidadePorNivel: 24,
+  especialPorNivel: 12,
+  armaduraPorNivel: 3,
+  TagsCriatura: "Sangue,Domínio dos Vivos,Entidade,Lendário",
+  TipoElementoCriatura: "Fé",
+  bru: 10, agi: 12, det: 99, pre: 18, lib: 16, cnx: 15,
+  bruDano: 2, agiDano: 0, detDano: 18, preDano: 3, libDano: 2, cnxDano: 1,
+  bruTest: 1, agiTest: 0, detTest: 30, preTest: 4, libTest: 2, cnxTest: 1,
+bonus: `Resistente: Poder  
+Vulnerável: Desconhecido, Caos  
+Imune: Fé`,
+  bonus2: `{pigmento}*Invasão Corpórea:*{/pigmento} Quando estiver em estado de morte, pode tentar invadir o corpo de um inimigo a até 6 metros. O inimigo faz um teste de Determinação com vantagem (DT 30). Se falhar, o corpo explode em sangue (3d10 em área de 3m) e sobra apenas um crânio marcado, de onde a Entidade renasce com vida total. Se a entidade não conseguir, ela é banida.
+{pigmento}*Foice de Sangue:*{/pigmento} Ataque normal causa 20 + 3d12 de dano de Sangue. Ao atingir, pode explodir o golpe causando 2d10 de Sangue em área de 3m.
+{pigmento}*Reanimar com Sangue:*{/pigmento} Faz o sangue dos mortos pulsar e se levantar. Reanima 1d12 cadáveres por vez, cada um com 50 de vida e ataque de 10 + 2d12 de Sangue. Agem em turno próprio como cópias menores da entidade.
+{pigmento}*Forma Inalvejável:*{/pigmento} Uma vez a cada 3 turnos, transforma-se em sangue líquido até o início do próximo turno. Inalvejável por ataques à distância. Pode atravessar aberturas e superfícies líquidas durante esse estado.
+{pigmento}*Explosão Corpórea:*{/pigmento} Similar à Invasão Corpórea, mas usada como ataque. Entra no corpo de um inimigo (sem testes) e o explode de dentro para fora, causando 50 + 2d12 de Sangue. O alvo faz um teste de Determinação (DT 20); se passar, sofre metade.
+{pigmento}*Maré de Calisto:*{/pigmento} A cada 4 turnos, todos os inimigos com menos de metade da vida fazem um teste de Determinação (DT 35). Quem falhar sofre 6d10 de dano de Sangue e fica Caído.
+{pigmento}*Olhar do Crânio Vivo:*{/pigmento} Os que olham diretamente para seu símbolo marcado em crânios fazem teste de Libertação (DT 25) ou ficam Atordoados por 1 turno.`,
+  bonus3: `Entidade da Fé  
+Subtipo - Sangue`,
+  Magias: `Nível 1 – Todas as Magias de Fé (usa prioritariamente Sangue).`,
+  Passivas: `Nível 2 – Todas as Passivas de Fé (usa prioritariamente Sangue).`,
+  Talentos: `Enganação - Requisito: Conexão, Diplomacia  
+Cura - Requisito: Conexão  
+Libertação - Requisito: Determinação  
 `,
-
-  bonus3: `Aberração Onírica  
-Subtipo – Psicológico`,
-
-  Magias: `Todas as magias de Psicológico e Mental.`,
-
-  Passivas: `Todas as passivas de Desconhecido com foco em distorção mental e onírica.`,
-
-  Talentos: `-`,
-
-  Descricao: `A Aberração Onírica é o destino final daqueles consumidos pelos seus próprios pesadelos. 
-Sua forma é instável, fluindo como sombra líquida e sonho malformado. 
-Olhos que não pertencem ao corpo surgem e se apagam, e cada movimento dela rasga pequenas fendas na realidade, onde fragmentos de pesadelos vazam como luz invertida. 
-Lutar contra ela é lutar contra memórias falsas, ecos temporais e versões distorcidas de si mesmo. 
-Cada segundo próximo a essa criatura empurra os vivos para mais perto do colapso mental. Apenas enfrentando o pesadelo original no Mundo dos Sonhos é possível libertar a alma aprisionada.`,
-
-  img: "imagens/AberracaoOnirica.png",
-  img2: "imagens/Token-AberracaoOnirica.png"
+  Descricao: `A Morte de Calisto é a manifestação viva do aspecto mais sombrio e sacrificial da fé: o Sangue. Invocada por cultistas devotos que reverenciam Calisto como entidade superior, sua aparição é sempre precedida por rituais sangrentos e oferendas macabras. Os seguidores esculpem símbolos antigos em crânios de animais ou até de seres vivos, selando ali o pacto.
+Eles acreditam fielmente que Calisto foi a responsável por espurgar a escuridão das Terras de Calisto, outrora conhecidas como a antiga Eldoria. Em seus ritos, buscam desesperadamente trazê-la de volta, acreditando que somente sua presença poderá restaurar a ordem espiritual e purificar novamente o mundo. Por isso, cada sacrifício, cada marca esculpida, não é apenas uma oferenda — mas um chamado.
+Em ocasiões raríssimas, um desses crânios pulsa com vida própria. Do sangue derramado no ritual, uma forma começa a se erguer. Primeiro o crânio, depois o sangue toma forma, criando um corpo translúcido e fluido, envolto em uma longa capa negra feita com os mantos dos cultistas que se sacrificaram para chamá-la. Das veias expostas e das memórias do derramamento, brota sua arma: uma foice feita inteiramente de sangue coagulado que vibra com o peso de mil mortes.
+Ela não fala. Seu silêncio é a própria presença da sentença. Seu olhar escoa como tinta carmesim, e seu corpo pulsa como se ainda estivesse no útero de algo cósmico. Cada passo que dá é uma condenação, cada movimento é uma lembrança de que toda fé tem um preço.
+Ela é brincalhona à sua maneira. Às vezes, finge estar enfraquecida apenas para lançar-se no corpo de um inimigo, fazendo-o explodir num gesto quase teatral. Os crânios deixados para trás tornam-se portais, e sua capa negra sempre encontra o caminho de volta, regenerando sua presença.
+A Morte de Calisto é mais que uma entidade. Ela é um lembrete de que o sangue nunca seca completamente. Que o ciclo da fé, do sacrifício e do renascimento está sempre em movimento. Os reanimados que a seguem são reflexos dela mesma — sombras vermelhas que espalham seu domínio.
+Seu verdadeiro corpo, como o da Entidade do Poder, não está presente. Esta é apenas uma manifestação — um receptáculo temporário. A forma real seria devastadora demais para o mundo. Mesmo assim, sua presença temporária já é o suficiente para gerar catástrofes religiosas, desequilíbrios espirituais e surtos de loucura entre os vivos.
+Se derrotada e banida, seus seguidores choram sangue. Mas sabem que um novo crânio surgirá, e do sangue derramado, ela retornará.
+Pois enquanto houver fé... haverá sacrifício.`,
+  img: "imagens/EntidadeSangue.png",
+  img2: "imagens/Token-EntidadeSangue.png"
 }
 
   
