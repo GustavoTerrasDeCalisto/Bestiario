@@ -1698,31 +1698,9 @@ Imune: Psicológico`,
 
 {pigmento}*Chamado ao Abismo Onírico:*{/pigmento} Ao “morrer”, se desfaz em névoa de sonho cobrindo 20m. Todos dentro sofrem 2d10 Psicológico e devem passar Libertação (DT 22) ou dormir por 1d6 turnos. A criatura retorna após 1d4 horas no Mundo dos Sonhos.
 
-<details class="como-curar-detail" style="
-  margin-top:10px;
-  border:1px solid #333;
-  padding:6px 8px;
-  background:#111;
-  border-radius:6px;
-  box-shadow:0 0 8px rgba(0,0,0,0.5);
-">
-  <summary style="
-    cursor:pointer;
-    font-weight:bold;
-    color:#e75d7a;
-    font-size:14px;
-    padding:4px 0;
-  ">
-    Como Curar
-  </summary>
-
-  <div class="curar-text" style="
-    margin-top:10px;
-    font-size:14px;
-    line-height:1.45;
-    color:#ddd;
-  ">
-    
+<details class="det-curar">
+  <summary>Como Curar</summary>
+  <div class="curar-text">
     <p><strong>Método Geral:</strong> Leve o alvo ao <em>Mundo dos Sonhos</em> e confronte seu pesadelo interior. É necessário derrotar ou selar o pesadelo com auxílio de um <strong>mago dos sonhos</strong> ou <strong>soberano onírico</strong>.</p>
 
     <p><strong>Uso de Magia:</strong> Para curar apenas um alvo, utilize a magia <strong>Limpar</strong> enquanto o alvo estiver estabilizado e o pesadelo contido.</p>
@@ -1736,11 +1714,8 @@ Imune: Psicológico`,
     <p><strong>Selo Onírico (Opcional):</strong> Um soberano onírico pode aplicar um selo que impede recontaminação por 1d30 dias.</p>
 
     <p><em>Nota:</em> Curar sem derrotar o pesadelo apenas suprime sintomas temporariamente — a transformação pode retornar. Rituais incompletos podem deixar resquícios, reduzindo permanentemente a sanidade.</p>
-
   </div>
 </details>
-
-
 `,
 
   bonus3: `Aberração Onírica  
