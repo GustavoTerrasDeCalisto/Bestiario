@@ -1698,12 +1698,30 @@ Imune: Psicológico`,
 
 {pigmento}*Chamado ao Abismo Onírico:*{/pigmento} Ao “morrer”, se desfaz em névoa de sonho cobrindo 20m. Todos dentro sofrem 2d10 Psicológico e devem passar Libertação (DT 22) ou dormir por 1d6 turnos. A criatura retorna após 1d4 horas no Mundo dos Sonhos.
 
-<details class="como-curar-detail" style="margin-top:10px; border-top:1px solid #ddd; padding:6px 8px; background:#fafafa; border-radius:0 0 6px 6px;">
-  <summary style="cursor:pointer; font-weight:bold; color:#9b021e; font-size:14px;">
+<details class="como-curar-detail" style="
+  margin-top:10px;
+  border:1px solid #333;
+  padding:6px 8px;
+  background:#111;
+  border-radius:6px;
+  box-shadow:0 0 8px rgba(0,0,0,0.5);
+">
+  <summary style="
+    cursor:pointer;
+    font-weight:bold;
+    color:#e75d7a;
+    font-size:14px;
+    padding:4px 0;
+  ">
     Como Curar
   </summary>
 
-  <div class="curar-text" style="margin-top:8px; font-size:14px; line-height:1.4;">
+  <div class="curar-text" style="
+    margin-top:10px;
+    font-size:14px;
+    line-height:1.45;
+    color:#ddd;
+  ">
     
     <p><strong>Método Geral:</strong> Leve o alvo ao <em>Mundo dos Sonhos</em> e confronte seu pesadelo interior. É necessário derrotar ou selar o pesadelo com auxílio de um <strong>mago dos sonhos</strong> ou <strong>soberano onírico</strong>.</p>
 
@@ -1722,17 +1740,17 @@ Imune: Psicológico`,
   </div>
 </details>
 
+
 `,
 
   bonus3: `Aberração Onírica  
 Subtipo – Psicológico`,
 
-  /* ===== MAGIAS ===== */
   Magias: `Todas as magias de Psicológico e Mental.`,
 
   Passivas: `Todas as passivas de Desconhecido com foco em distorção mental e onírica.`,
 
-  Talentos: `Onironauta – Requisito: Conexão`,
+  Talentos: `-`,
 
   Descricao: `A Aberração Onírica é o destino final daqueles consumidos pelos seus próprios pesadelos. 
 Sua forma é instável, fluindo como sombra líquida e sonho malformado. 
