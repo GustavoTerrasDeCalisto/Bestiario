@@ -1697,25 +1697,24 @@ Imune: Psicológico`,
 {pigmento}*Colapso de Identidade:*{/pigmento} Criaturas que chegam a 0 de Sanidade dentro de seu raio caem sob controle emocional. O mestre escolhe medo, raiva ou desespero – o alvo age forçado por 1d4 turnos.
 
 {pigmento}*Chamado ao Abismo Onírico:*{/pigmento} Ao “morrer”, se desfaz em névoa de sonho cobrindo 20m. Todos dentro sofrem 2d10 Psicológico e devem passar Libertação (DT 22) ou dormir por 1d6 turnos. A criatura retorna após 1d4 horas no Mundo dos Sonhos.
-
-<details class="det-curar">
+<details>
   <summary>Como Curar</summary>
-  <div class="curar-text">
-    <p><strong>Método Geral:</strong> Leve o alvo ao <em>Mundo dos Sonhos</em> e confronte seu pesadelo interior. É necessário derrotar ou selar o pesadelo com auxílio de um <strong>mago dos sonhos</strong> ou <strong>soberano onírico</strong>.</p>
 
-    <p><strong>Uso de Magia:</strong> Para curar apenas um alvo, utilize a magia <strong>Limpar</strong> enquanto o alvo estiver estabilizado e o pesadelo contido.</p>
+  <p><strong>Método Geral:</strong> Leve o alvo ao <em>Mundo dos Sonhos</em> e confronte seu pesadelo interior. É necessário derrotar ou selar o pesadelo com auxílio de um <strong>mago dos sonhos</strong> ou <strong>soberano onírico</strong>.</p>
 
-    <p><strong>Entrada Guiada:</strong> Ritual de ancoragem para levar o paciente ao Mundo dos Sonhos. Requer 1 mago dos sonhos e um cristal de vítrea onírica.</p>
+  <p><strong>Uso de Magia:</strong> Para curar apenas um alvo, utilize a magia <strong>Limpar</strong> enquanto o alvo estiver estabilizado e o pesadelo contido.</p>
 
-    <p><strong>Confronto do Pesadelo:</strong> O grupo entra na projeção onírica. O paciente enfrenta o núcleo do trauma; derrotar ou selar o pesadelo remove a raiz da corrupção.</p>
+  <p><strong>Entrada Guiada:</strong> Ritual de ancoragem para levar o paciente ao Mundo dos Sonhos. Requer 1 mago dos sonhos e um cristal de vítrea onírica.</p>
 
-    <p><strong>Purga e Limpeza:</strong> Aplicar <em>Limpar</em> enquanto o pesadelo está selado faz o corpo desperto perder progressivamente os efeitos de Contaminação e Propagação.</p>
+  <p><strong>Confronto do Pesadelo:</strong> O grupo entra na projeção onírica. O paciente enfrenta o núcleo do trauma; derrotar ou selar o pesadelo remove a raiz da corrupção.</p>
 
-    <p><strong>Selo Onírico (Opcional):</strong> Um soberano onírico pode aplicar um selo que impede recontaminação por 1d30 dias.</p>
+  <p><strong>Purga e Limpeza:</strong> Aplicar <em>Limpar</em> enquanto o pesadelo está selado faz o corpo desperto perder progressivamente os efeitos de Contaminação e Propagação.</p>
 
-    <p><em>Nota:</em> Curar sem derrotar o pesadelo apenas suprime sintomas temporariamente — a transformação pode retornar. Rituais incompletos podem deixar resquícios, reduzindo permanentemente a sanidade.</p>
-  </div>
+  <p><strong>Selo Onírico (Opcional):</strong> Um soberano onírico pode aplicar um selo que impede recontaminação por 1d30 dias.</p>
+
+  <p><em>Nota:</em> Curar sem derrotar o pesadelo apenas suprime sintomas temporariamente — a transformação pode retornar. Rituais incompletos podem deixar resquícios, reduzindo permanentemente a sanidade.</p>
 </details>
+
 `,
 
   bonus3: `Aberração Onírica  
