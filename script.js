@@ -1692,11 +1692,14 @@ E nas noites de lua cheia... dizem que Namazunaga assume a forma de um enorme ba
   sanidadePorNivel: 24,
   especialPorNivel: 12,
   armaduraPorNivel: 3,
+	    Ataquebásico: `3d12 de dano Cortante - BRUTALIDADE (DT15)`,
+
   TagsCriatura: "Sangue,Domínio dos Vivos,Entidade,Lendário",
   TipoElementoCriatura: "Fé",
-  bru: 10, agi: 12, det: 99, pre: 18, lib: 16, cnx: 15,
-  bruDano: 2, agiDano: 0, detDano: 18, preDano: 3, libDano: 2, cnxDano: 1,
-  bruTest: 1, agiTest: 0, detTest: 30, preTest: 4, libTest: 2, cnxTest: 1,
+bru: 10, agi: 12, det: 99, pre: 18, lib: 16, cnx: 15,
+bruTest: 0, agiTest: 1, detTest: 30, preTest: 3, libTest: 2, cnxTest: 2,
+bruDano: 0, agiDano: 0, detDano: 18, preDano: 2, libDano: 1, cnxDano: 1,
+
 bonus: `Resistente: Poder  
 Vulnerável: Desconhecido, Caos  
 Imune: Fé`,
@@ -1726,7 +1729,119 @@ Se derrotada e banida, seus seguidores choram sangue. Mas sabem que um novo crâ
 Pois enquanto houver fé... haverá sacrifício.`,
   img: "imagens/EntidadeSangue.png",
   img2: "imagens/Token-EntidadeSangue.png"
+},"Fenix": {
+  vida: 420,
+  sanidade: 40,
+  especial: 30,
+  armadura: 18,
+  movimento: 14,
+  vidaPorNivel: 30,
+  sanidadePorNivel: 20,
+  especialPorNivel: 12,
+  armaduraPorNivel: 4,
+  Ataquebásico: `2d12 de dano Cortante - BRUTALIDADE (DT10)
+  Se acertar, deixa faíscas ardentes (1d10 de Cinzas por 2 turnos).`,
+
+  TagsCriatura: "Cinzas,Domínio dos Vivos,Entidade,Lendário"",
+  TipoElementoCriatura: "Fé",
+
+  bru: 16, agi: 18, det: 65, pre: 20, lib: 14, cnx: 16,
+bruTest: 2, agiTest: 3, detTest: 19, preTest: 4, libTest: 2, cnxTest: 2,
+bruDano: 1, agiDano: 2, detDano: 11, preDano: 2, libDano: 1, cnxDano: 1,
+
+
+  bonus: `Imune: Fogo, Cinzas  
+Resistente: Caos  
+Vulnerável: Poder, Desconhecido`,
+
+  bonus2: `{pigmento}*Renascimento das Cinzas:*{/pigmento}  
+Quando a Fênix "morre", toda a região em um raio de 10 km entra em erupção de cinzas vivas.  
+Todos os seres vivos são curados ao máximo e recuperam 2d20 de Sanidade.  
+A área é coberta por um mar de cinzas ardentes por 1 minuto.  
+Após isso, a Fênix renasce no centro, com vida total.
+
+{pigmento}*Corpo Etéreo de Cinza:*{/pigmento}  
+Uma vez por turno, todos os ataques físicos atravessam seu corpo, causando 0 de dano.  
+Somente ataques de Água ou Alma podem feri-la durante este estado.  
+Apenas golpes cujo teste para acertar ultrapasse *25* podem atingi-la — ou ataques de Água e Alma, que acertam normalmente.
+
+{pigmento}*Pele Endurecida:*{/pigmento}  
+Até o início do próximo turno da Fênix, ela se torna impenetrável.  
+Bloqueia todos os ataques, sem exceção.  
+Apenas golpes cujo teste para acertar ultrapasse *30* podem penetrar esta defesa.
+
+{pigmento}*Tecer Cinzas – Campo das Antigas Chamas:*{/pigmento}  
+Cria uma área de 20 metros coberta por cinzas antigas.  
+Inimigos na área sofrem 2d20 de dano de Cinzas por turno.  
+Aliados recebem 1d10 de cura por turno.
+
+{pigmento}*Troca de Chamas:*{/pigmento}  
+Escolhe uma criatura no campo.  
+A Fênix troca de posição com ela instantaneamente.  
+O alvo é incendiado e renasce ao lado da Fênix com sua vida atual.  
+Após renascer, sofre 3d10 de Cinzas.  
+A Fênix surge no local original do alvo.
+
+{pigmento}*Pena Milagrosa:*{/pigmento}  
+Penas que caem da Fênix podem ser usadas para:  
+• Curar totalmente um aliado  
+• Remover qualquer condição  
+• Ou salvar alguém prestes a morrer (1 uso por pena)
+
+{pigmento}*Bater de Asas Solar:*{/pigmento}  
+Quando abre as asas gigantescas, causa 2d12 de Fogo em área de 15m.  
+Inimigos são empurrados 5 metros.
+
+{pigmento}*Cuspir Cinzas Vivas:*{/pigmento}  
+Ataque à distância (12m).  
+Causa 3d10 de Cinzas e reduz visão do alvo por 1 turno.
+
+{pigmento}*Majestade Incandescente:*{/pigmento}  
+Criaturas que olham diretamente para ela fazem teste de Libertação (DT 20).  
+Se falharem, ficam Amaldiçoadas pelas Cinzas:  
+–1 em todas as jogadas por 2 turnos.`,
+
+  bonus3: `Entidade das Cinzas  
+Subtipo – Antigas Chamas`,
+
+  Magias: `Pode usar todas as Magias de Cinzas.`,
+
+  Passivas: `Pode usar todas as Passivas de Cinzas.`,
+
+  Talentos: `-`,
+
+  Descricao: `Reza a lenda que, em uma era distante, uma cidade inteira foi consumida por chamas. Nada restou — exceto cinzas silenciosas.  
+Porém, no instante seguinte, dessas cinzas ergueu-se uma criatura colossal, uma Fênix de proporções divinas.  
+Quando ela ascendeu aos céus, algo impossível aconteceu:  
+Todos os habitantes da cidade estavam vivos. Sem um arranhão.  
+Os doentes foram curados.  
+E a própria terra foi restaurada.  
+
+Dizem que a cidade destruída nunca mais foi encontrada.  
+Outros afirmam que ela existe em algum lugar entre o mundo físico e o das cinzas.  
+
+Os Cultos das Antigas Chamas acreditam que a Fênix é uma manifestação pura da cura absoluta, do renascimento e da destruição necessária para que a vida prossiga.  
+Para eles, ela é o fogo original — não aquele que queima, mas o que transforma.  
+
+A Fênix é uma entidade de porte colossal, com asas tão grandes que podem esconder seu próprio corpo.  
+Sua plumagem é feita de cinzas vivas, que se movem como fumaça consciente.  
+Um topete incandescente arde continuamente em sua cabeça, e seu pescoço longo se curva com graça sobrenatural.
+
+Apesar de magnífica, sua presença traz peso.  
+Cada batida de suas asas reverbera como um terremoto silencioso.  
+Cada pena que cai carrega poder de cura ou renascimento.  
+
+E quando ela morre — caso isso seja possível — sua morte é um milagre reverso:  
+Cinzas se espalham ao longo de quilômetros, queimando sem ferir e curando sem explicar.  
+E, do centro desse mar cinzento, ela sempre retorna.  
+
+Pois as Antigas Chamas não se apagam.  
+Elas apenas esperam o momento de renascer.`,
+
+  img: "imagens/FenixCinzas.png",
+  img2: "imagens/Token-FenixCinzas.png"
 }
+
 
   
   ,"Comunidade":{}
