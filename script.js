@@ -1249,9 +1249,10 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
   Ataquebásico: `2d20 de dano Mental DT 15 – teste Conexão`,
   TagsCriatura: "Mental,Domínio do Sobrenatural,Entidade,Lendário",
   TipoElementoCriatura: "Desconhecido",
-  bru: 9, agi: 10, det: 35, pre: 16, lib: 18, cnx: 99,
-  bruDano: 1, agiDano: 0, detDano: 3, preDano: 2, libDano: 3, cnxDano: 5,
-  bruTest: 1, agiTest: 0, detTest: 7, preTest: 3, libTest: 5, cnxTest: 30,
+	bru: 9, agi: 10, det: 35, pre: 16, lib: 18, cnx: 99,
+	bruTest: -1, agiTest: 0, detTest: 9, preTest: 2, libTest: 3, cnxTest: 30,
+	bruDano: 0, agiDano: 0, detDano: 5, preDano: 1, libDano: 2, cnxDano: 18,
+
   bonus: `Resistente: Caos  
 Vulnerável: Fé, Poder  
 Imune: Desconhecido`,
@@ -1264,7 +1265,7 @@ bonus2: `{pigmento}*Leitura Mental:*{/pigmento} Sempre que alguém agir próximo
 {pigmento}*Banimento de Pensamento:*{/pigmento} Caso alguém consiga manter a mente vazia ou sem direção (interpretado como passar um turno sem ações ofensivas), cancela qualquer tentativa da entidade de controle ou leitura mental.
 {pigmento}*Fragmento Imortal:*{/pigmento} Caso sua vida chegue a 0, a entidade se dissolve em uma névoa etérea e desaparece, podendo ainda ouvir sussurros vindos dos céus. Ela não morre, apenas se dispersa para além da compreensão. Pode retornar em outro lugar, em outro tempo, ou no próprio pensamento de quem a enfrentou.`,
   bonus3: `Entidade do Desconhecido  
-Subtipo – Psicológico`,
+Subtipo – Mental`,
   Magias: `Nível 1 – Todas as Magias de Desconhecido.`,
   Passivas: `Nível 2 – Todas as Passivas de Desconhecido.`,
   Talentos: `Enganação – Requisito: Conexão  
