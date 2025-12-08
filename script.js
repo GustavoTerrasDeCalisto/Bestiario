@@ -1730,7 +1730,7 @@ Pois enquanto houver fé... haverá sacrifício.`,
   img: "imagens/EntidadeSangue.png",
   img2: "imagens/Token-EntidadeSangue.png"
 }
-	,"Fenix": {
+	,"Fênix": {
   vida: 420,
   sanidade: 40,
   especial: 30,
