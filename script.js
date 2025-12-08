@@ -1729,7 +1729,8 @@ Se derrotada e banida, seus seguidores choram sangue. Mas sabem que um novo crâ
 Pois enquanto houver fé... haverá sacrifício.`,
   img: "imagens/EntidadeSangue.png",
   img2: "imagens/Token-EntidadeSangue.png"
-},"Fenix": {
+}
+	,"Fenix": {
   vida: 420,
   sanidade: 40,
   especial: 30,
@@ -1740,18 +1741,14 @@ Pois enquanto houver fé... haverá sacrifício.`,
   especialPorNivel: 12,
   armaduraPorNivel: 4,
   Ataquebásico: `2d12 de dano Cortante - BRUTALIDADE (DT10)
-  Se acertar, deixa faíscas ardentes (1d10 de Cinzas por 2 turnos).`,
-
+ Se acertar, deixa faíscas ardentes (1d10 de Cinzas por 2 turnos).`,
   TagsCriatura: "Cinzas,Domínio dos Vivos,Entidade,Lendário"",
   TipoElementoCriatura: "Fé",
-
   bru: 16, agi: 18, det: 65, pre: 20, lib: 14, cnx: 16,
 bruTest: 2, agiTest: 3, detTest: 19, preTest: 4, libTest: 2, cnxTest: 2,
 bruDano: 1, agiDano: 2, detDano: 11, preDano: 2, libDano: 1, cnxDano: 1,
-
-
-  bonus: `Imune: Fogo, Cinzas  
-Resistente: Caos  
+bonus: `Imune: Fogo, Cinzas  
+Resistente: Caos
 Vulnerável: Poder, Desconhecido`,
 
   bonus2: `{pigmento}*Renascimento das Cinzas:*{/pigmento}  
@@ -1759,57 +1756,44 @@ Quando a Fênix "morre", toda a região em um raio de 10 km entra em erupção d
 Todos os seres vivos são curados ao máximo e recuperam 2d20 de Sanidade.  
 A área é coberta por um mar de cinzas ardentes por 1 minuto.  
 Após isso, a Fênix renasce no centro, com vida total.
-
 {pigmento}*Corpo Etéreo de Cinza:*{/pigmento}  
 Uma vez por turno, todos os ataques físicos atravessam seu corpo, causando 0 de dano.  
 Somente ataques de Água ou Alma podem feri-la durante este estado.  
 Apenas golpes cujo teste para acertar ultrapasse *25* podem atingi-la — ou ataques de Água e Alma, que acertam normalmente.
-
 {pigmento}*Pele Endurecida:*{/pigmento}  
 Até o início do próximo turno da Fênix, ela se torna impenetrável.  
 Bloqueia todos os ataques, sem exceção.  
 Apenas golpes cujo teste para acertar ultrapasse *30* podem penetrar esta defesa.
-
 {pigmento}*Tecer Cinzas – Campo das Antigas Chamas:*{/pigmento}  
 Cria uma área de 20 metros coberta por cinzas antigas.  
 Inimigos na área sofrem 2d20 de dano de Cinzas por turno.  
 Aliados recebem 1d10 de cura por turno.
-
 {pigmento}*Troca de Chamas:*{/pigmento}  
 Escolhe uma criatura no campo.  
 A Fênix troca de posição com ela instantaneamente.  
 O alvo é incendiado e renasce ao lado da Fênix com sua vida atual.  
 Após renascer, sofre 3d10 de Cinzas.  
 A Fênix surge no local original do alvo.
-
 {pigmento}*Pena Milagrosa:*{/pigmento}  
 Penas que caem da Fênix podem ser usadas para:  
 • Curar totalmente um aliado  
 • Remover qualquer condição  
 • Ou salvar alguém prestes a morrer (1 uso por pena)
-
 {pigmento}*Bater de Asas Solar:*{/pigmento}  
 Quando abre as asas gigantescas, causa 2d12 de Fogo em área de 15m.  
 Inimigos são empurrados 5 metros.
-
 {pigmento}*Cuspir Cinzas Vivas:*{/pigmento}  
 Ataque à distância (12m).  
 Causa 3d10 de Cinzas e reduz visão do alvo por 1 turno.
-
 {pigmento}*Majestade Incandescente:*{/pigmento}  
 Criaturas que olham diretamente para ela fazem teste de Libertação (DT 20).  
 Se falharem, ficam Amaldiçoadas pelas Cinzas:  
 –1 em todas as jogadas por 2 turnos.`,
-
   bonus3: `Entidade das Cinzas  
 Subtipo – Antigas Chamas`,
-
   Magias: `Pode usar todas as Magias de Cinzas.`,
-
   Passivas: `Pode usar todas as Passivas de Cinzas.`,
-
   Talentos: `-`,
-
   Descricao: `Reza a lenda que, em uma era distante, uma cidade inteira foi consumida por chamas. Nada restou — exceto cinzas silenciosas.  
 Porém, no instante seguinte, dessas cinzas ergueu-se uma criatura colossal, uma Fênix de proporções divinas.  
 Quando ela ascendeu aos céus, algo impossível aconteceu:  
