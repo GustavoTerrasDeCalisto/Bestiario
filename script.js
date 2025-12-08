@@ -1742,7 +1742,7 @@ Pois enquanto houver fé... haverá sacrifício.`,
   armaduraPorNivel: 4,
   Ataquebásico: `2d12 de dano Cortante - BRUTALIDADE (DT10)
  Se acertar, deixa faíscas ardentes (1d10 de Cinzas por 2 turnos).`,
-  TagsCriatura: "Cinzas,Domínio dos Vivos,Entidade,Lendário"",
+  TagsCriatura: "Cinzas,Domínio dos Vivos,Entidade,Lendário",
   TipoElementoCriatura: "Fé",
   bru: 16, agi: 18, det: 65, pre: 20, lib: 14, cnx: 16,
 bruTest: 2, agiTest: 3, detTest: 19, preTest: 4, libTest: 2, cnxTest: 2,
