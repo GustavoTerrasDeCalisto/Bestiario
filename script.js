@@ -2356,7 +2356,7 @@ const tagColors = {
   "Tremor": { background: "#8D6E63", color: "#3E2723" },
   "Aura": { background: "#FFF8E1", color: "#4E342E" },
   "Psicológico": { background: "#F48FB1", color: "#880E4F" },
-  "Mental": { background: "#B0BEC5", color: "#263238" },
+  "Mental": { background: "#281922", color: "#ffdbf1" },
   "Distorção": { background: "#A1887F", color: "#D7CCC8" },
   "Névoa": { background: "#CFD8DC", color: "#455A64" },
   "Sono": { background: "#D1C4E9", color: "#4A148C" },
