@@ -1247,7 +1247,7 @@ Dizem que ele aparece sobre o peito de suas vítimas, imobilizando-as com a para
   especialPorNivel: 13,
   armaduraPorNivel: 1,
   Ataquebásico: `2d20 de dano Mental DT 15 – teste Conexão`,
-  TagsCriatura: "Psicológico,Domínio do Sobrenatural,Entidade,Lendário",
+  TagsCriatura: "Mental,Domínio do Sobrenatural,Entidade,Lendário",
   TipoElementoCriatura: "Desconhecido",
   bru: 9, agi: 10, det: 35, pre: 16, lib: 18, cnx: 99,
   bruDano: 1, agiDano: 0, detDano: 3, preDano: 2, libDano: 3, cnxDano: 5,
