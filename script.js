@@ -1602,8 +1602,23 @@ Todo o sistema sobrenatural voltado para almas e pós-vida provém dessa criatur
 Contudo, suas ações muitas vezes causam desequilíbrios que não se sabe ao certo se são intencionais ou se fazem parte de um plano maior para estabilizar outras forças sobrenaturais vindas de fontes externas às Terras de Calisto.
 Essa entidade é extremamente antiga, tendo reinado muito antes do mundo se chamar Terras de Calisto. Na era de Eldoria, sua força era a principal responsável por manter a ordem mundial, alimentada pelo impulso de poder e conquista. Naquele tempo, povos inteiros buscavam seu favor, tornando-a mais poderosa que qualquer outro ser. Hoje, isso já não é mais verdade.
 Seu propósito é um só: testar a força de tudo que vive — e destruir o que for fraco.`,
-  img: "imagens/EntidadePoder.png",
-  img2: "imagens/Token-EntidadePoder.png"
+ _imgs: [
+      "imagens/EntidadePoder.png",
+      "imagens/EntidadePoder2.png"
+	 
+    ],
+    
+    get img() {
+      return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+    },
+
+    _imgs2: [
+      "imagens/Token-EntidadePoder.png"
+    ],
+
+    get img2() {
+      return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+    },
 }
  ,
 	"Namazunaga - O Tremor dos Mortos": {
