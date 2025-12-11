@@ -1581,6 +1581,8 @@ Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar 
 bonus: `Resistente: Desconhecido  
 Vulnerável: Caos, Fé  
 Imune: Poder`,
+	    Ataquebásico: `3d10+4 de dano Cortante - BRU (DT15)`,
+
   bonus2: `{pigmento}*Corpo Ascendido:*{/pigmento} Transforma-se em energia pura por 2 turnos. Ataques físicos viram dano de Plasma, ignoram resistências. +4 dano, +2 testes de Brutalidade, +4 testes de Libertação. Sofre 1d10 de dano ao final do efeito.
 {pigmento}*Almas Irradiantes:*{/pigmento} Invoca almas que disparam 3d10 de dano de Alma em até 2 inimigos por 3 turnos. Teste de Libertação (DT 16) ou ficam Atordoados. Se o inimigo morrer, recupera 20 Vida e 5 Sanidade.
 {pigmento}*Pulso de Autoridade:*{/pigmento} A cada 3 turnos, explode aura de Plasma em 8m. Teste de Determinação (DT 17) ou sofre 4d10 de dano e é empurrado 6m. Metade do dano em sucesso.
@@ -1620,7 +1622,89 @@ Seu propósito é um só: testar a força de tudo que vive — e destruir o que 
       return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
     },
 }
- ,
+ ,"Mornning - Primórdio da Escuridão": {
+  vida: 312,
+  sanidade: 64,
+  especial: 20,
+  armadura: 12,
+  movimento: 14,
+  vidaPorNivel: 8,
+  sanidadePorNivel: 6,
+  especialPorNivel: 7,
+  armaduraPorNivel: 2,
+
+  TagsCriatura: "Escuridão,Domínio dos Mortos,Entidade,Lendário", 
+  TipoElementoCriatura: "Poder", 
+
+
+  bru: 18, agi: 20, det: 19, pre: 8, lib: 71, cnx: 30,
+  bruDano: 2, agiDano: 2, detDano: 2, preDano: 0, libDano: 12, cnxDano: 4,
+  bruTest: 3, agiTest: 4, detTest: 3, preTest: -2, libTest: 21, cnxTest: 7,
+
+  bonus: `Resistente: Alma, Sangue  
+Vulnerável: Luz  
+Imune: Escuridão`,
+
+  AtaqueBasico: `Penetrar das Sombras — 2d10+5 de dano de Escuridão (Determinação - DT12).   
+Se acertar, o alvo -não consegue enxergar Mornning- até o início do próximo turno dele.`, 
+
+
+  bonus2: `{pigmento}*Breu Primordial:*{/pigmento} Cobre o campo de batalha em **escuridão absoluta** por 2 turnos. Todos (exceto Mornning) fazem Teste de Determinação (DT 18).  
+Falha: Ficam **Cegos**, ataques têm -4, deslocamento é reduzido pela metade.  
+Sucesso: Sofrem apenas -2 nos ataques.
+
+{pigmento}*Passo Entre Sombras:*{/pigmento}  Teleporta para **qualquer sombra** a até 20m como ação bônus.  Se surgir atrás de um alvo, causa **1d12 de dano cortante** extra.
+
+{pigmento}*Manipulação Sombria:*{/pigmento}  Escolhe uma criatura em alcance visual.  Ela faz Teste de Conexão (DT 19).  
+Falha: sofre 2d10 de dano psíquico e fica **Enredada pela Sombra**, perdendo a reação e sofrendo -2 na próxima ação.  
+Sucesso: dano reduzido pela metade.
+
+{pigmento}*Eco do Nada:*{/pigmento}  Explosão silenciosa de trevas.  Todos em 6m fazem Teste de Libertação (DT 20).  
+Falha: 4d10 de dano de Escuridão e ficam **Aterrorizados** por 1 turno.  
+Sucesso: metade do dano, sem o efeito.
+
+{pigmento}*Olhar do Vazio Antigo:*{/pigmento}  O grande olho etéreo em seu abdômen se abre.  Uma criatura faz Teste de Preservação (DT 17).  
+Falha: perde **1 ação** no próximo turno e sofre 3d10 de dano de Escuridão.  
+Sucesso: apenas 1d10 de dano.
+
+{pigmento}*Pacto da Reescrita Sombria (Opcional – somente com autorização do mestre):*{/pigmento}  Se o encontro for **amistoso**, Mornning pode oferecer um acordo.  
+O alvo pode **abandonar todos os poderes** concedidos por outras entidades e **refazer completamente suas habilidades**, alinhando-se ao **Elemento Caos**.  
+Este pacto é **irreversível**.`,
+
+  Magias: `Todas as Magias de Escuridão.`,
+  Passivas: `Todas as Passivas de Escuridão.`,
+
+  bonus3: `Entidade Primordial da Escuridão  
+Elemento - Escuridão`,
+
+  Talentos: `-`,
+
+  Descricao: `Mornning é o Primórdio da Escuridão: a forma ancestral do impulso cósmico que muito tempo depois originaria o fenômeno conhecido como Emporium. Antes das Terras de Calisto existirem, quando o mundo ainda se chamava Eldoria, Mornning reinava sobre sombras vivas, segredos ocultos e a ambição silenciosa que moldava os corações mortais. Ele não representava o Poder, e sim o Vazio original que antecede qualquer força capaz de governar.
+Sua forma colossal é composta por escuridão viva, profunda como um abismo que nunca encontra fim. As bordas do corpo ondulam como fumaça consciente, mantendo uma instabilidade constante. O torso extremamente alongado, os membros elegantes e ameaçadores e a postura rígida criam a presença de um antigo monarca formado por trevas solidificadas e almas aprisionadas. Fragmentos de breu se soltam e retornam ao corpo de forma contínua, revelando rachaduras luminosas que quase o partem ao meio. Um olho etéreo aparece e desaparece entre as fendas, observando o mundo com a paciência de quem existia antes do próprio tempo. No peito brilha o símbolo de uma coroa quebrada, uma marca espiritual que representa sua realeza perdida em Eldoria.
+Durante sua era, Mornning comandou reinos inteiros apenas pela presença. Ele moldava emoções reprimidas, controlava sombras vivas e influenciava o medo primordial que guiava civilizações inteiras. Com o passar de incontáveis eras, sua essência foi drenada e substituída por uma nova manifestação do Poder absoluto, o Emporium. Essa nova entidade não é sua sucessora, mas sim uma evolução violenta da centelha que um dia Mornning representou. O Primórdio da Escuridão é a origem distante do Poder, mas não sua forma atual. Por isso Mornning é e não é o Emporium ao mesmo tempo, sendo o início do impulso que o gerou, sem jamais ter compartilhado sua natureza verdadeira.
+Embora hoje permaneça oculto nas bordas da realidade, Mornning continua observando. Quando o Emporium desperta e sua presença distorce a existência, o mundo inteiro treme. Quando o Emporium entra em dormência e o elemento Poder se torna instável, é Mornning quem desperta nas fendas da existência para manter o equilíbrio mínimo entre sombras e cosmos. Ele não interfere diretamente. Ele preserva o ciclo. Ele observa o herdeiro que ultrapassou sua própria origem.
+Seu domínio absoluto sobre a escuridão permite teleporte entre sombras, indução de cegueira primordial, manipulação emocional profunda e a capacidade de mergulhar o campo de batalha em um breu impossível de dissipar. Apesar de distante e impenetrável, Mornning não é inerentemente maligno. Em momentos raríssimos oferece pactos profundos a indivíduos dispostos a sacrificar tudo o que são para renascer alinhados ao Caos e à escuridão primordial que existia antes da primeira luz.
+Mornning não busca destruir o mundo. Ele aguarda em silêncio o momento em que as sombras ancestrais reclamarão aquilo que um dia pertenceu ao Primórdio.`,
+
+  _imgs: [
+    "imagens/Escuridao.png"
+  ],
+
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-Escuridao.png"
+  ],
+
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+  },
+}
+
+	
+	,
 	"Namazunaga - O Tremor dos Mortos": {
   vida: 340,
   sanidade: 210,
