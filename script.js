@@ -1649,27 +1649,33 @@ Imune: Escuridão`,
 Se acertar, o alvo -não consegue enxergar Mornning- até o início do próximo turno dele.`, 
 
 
-  bonus2: `{pigmento}*Breu Primordial:*{/pigmento} Cobre o campo de batalha em **escuridão absoluta** por 2 turnos. Todos (exceto Mornning) fazem Teste de Determinação (DT 18).  
-Falha: Ficam **Cegos**, ataques têm -4, deslocamento é reduzido pela metade.  
-Sucesso: Sofrem apenas -2 nos ataques.
+bonus2: `{pigmento}*Breu Primordial:*{/pigmento} Cobre o campo de batalha em **escuridão absoluta** por 2 turnos. Todos os alvos (exceto Mornning) fazem Teste de Determinação (DT 18).  
+Falha: ficam **Cegos**, -4 nos testes de ataque e têm seu deslocamento reduzido pela metade.  
+Sucesso: sofrem apenas -2 nos testes de ataque.
 
-{pigmento}*Passo Entre Sombras:*{/pigmento}  Teleporta para **qualquer sombra** a até 20m como ação bônus.  Se surgir atrás de um alvo, causa **1d12 de dano cortante** extra.
+{pigmento}*Passo Entre Sombras:*{/pigmento} Teleporta-se para **qualquer sombra** a até 20m como ação bônus.  
+Se surgir atrás de um alvo, causa **1d12 de dano cortante** adicional.
 
-{pigmento}*Manipulação Sombria:*{/pigmento}  Escolhe uma criatura em alcance visual.  Ela faz Teste de Conexão (DT 19).  
-Falha: sofre 2d10 de dano psíquico e fica **Enredada pela Sombra**, perdendo a reação e sofrendo -2 na próxima ação.  
-Sucesso: dano reduzido pela metade.
+{pigmento}*Manipulação Sombria:*{/pigmento} Escolha um alvo em alcance visual.  
+Ele deve realizar um Teste de Conexão (DT 19).  
+Falha: sofre **2d10 de dano de Escuridão** e fica **Paralisado**, atormentado por vultos distorcidos e sombras que o cercam.  
+Sucesso: sofre apenas metade do dano.
 
-{pigmento}*Eco do Nada:*{/pigmento}  Explosão silenciosa de trevas.  Todos em 6m fazem Teste de Libertação (DT 20).  
-Falha: 4d10 de dano de Escuridão e ficam **Aterrorizados** por 1 turno.  
+{pigmento}*Eco do Nada:*{/pigmento} Explosão silenciosa de trevas.  
+Todos em um raio de 6m fazem Teste de Libertação (DT 20).  
+Falha: sofrem **4d10 de dano de Escuridão** e ficam **Aterrorizados** por 1 turno.  
 Sucesso: metade do dano, sem o efeito.
 
-{pigmento}*Olhar do Vazio Antigo:*{/pigmento}  O grande olho etéreo em seu abdômen se abre.  Uma criatura faz Teste de Preservação (DT 17).  
-Falha: perde **1 ação** no próximo turno e sofre 3d10 de dano de Escuridão.  
-Sucesso: apenas 1d10 de dano.
+{pigmento}*Olhar do Vazio Antigo:*{/pigmento} Um grande olho etéreo em seu abdômen se abre.  
+Um alvo faz Teste de Preservação (DT 17).  
+Falha: perde **1 ação** no próximo turno e sofre **3d10 de dano de Escuridão**.  
+Sucesso: sofre apenas **1d10 de dano**.
 
-{pigmento}*Pacto da Reescrita Sombria (Opcional – somente com autorização do mestre):*{/pigmento}  Se o encontro for **amistoso**, Mornning pode oferecer um acordo.  
-O alvo pode **abandonar todos os poderes** concedidos por outras entidades e **refazer completamente suas habilidades**, alinhando-se ao **Elemento Caos**.  
+{pigmento}*Pacto da Reescrita Sombria (Opcional – somente com autorização do mestre):*{/pigmento}  
+Se o encontro for **amistoso**, Mornning pode oferecer um acordo.  
+O alvo pode **abandonar todos os poderes** concedidos por outras entidades e **refazer completamente suas habilidades**, alinhando-se ao **Elemento Poder**.  
 Este pacto é **irreversível**.`,
+
 
   Magias: `Todas as Magias de Escuridão.`,
   Passivas: `Todas as Passivas de Escuridão.`,
