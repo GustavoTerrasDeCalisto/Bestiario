@@ -2402,12 +2402,9 @@ Enquanto submerso, Aegorym fica Imune a todo e qualquer tipo de ataque.`,
   Magias: `Todas as Magias de Água  
 Todas as Magias de Tempestade`,
 
-  Passivas: `Consciência do Oceano  
-Corpo da Maré Eterna`,
+  Passivas: `-`,
 
-  Talentos: `Resistência Colossal  
-Domínio Aquático  
-Presença Primordial`,
+  Talentos: `-`,
 
   Descricao: `Aegorym é um titã ancestral que habita as regiões mais profundas e inexploradas dos oceanos. Seu corpo colossal move-se como uma maré viva, silenciosa e inevitável, fazendo o próprio mar se curvar à sua presença. Correntes se alteram, criaturas fogem e o oceano parece prender a respiração quando ele desperta.
 Diferente de monstros comuns, Aegorym não caça nem busca destruição gratuita. Ele é a personificação do equilíbrio marinho primordial. Enquanto o ciclo natural permanece intacto, o titã permanece em estado de observação silenciosa.
@@ -2474,9 +2471,7 @@ Todas as magias de Tremor`,
 
   Passivas: "-",
 
-  Talentos: `Resistência Absoluta  
-Presença Colossal  
-Domínio Glacial`,
+  Talentos: -`,
 
   Descricao: `Antes que os reinos tivessem nomes, antes que o fogo ousasse desafiar o frio, o mundo dormia sob um céu de gelo infinito. Nesse silêncio primordial, Kharuun já caminhava — a Criatura Divina do Gelo e da Nevaska, existente muito antes dos próprios deuses aprenderem a moldar a matéria.
 Durante a chamada Era Glacial Primordial, quando o mundo ainda não havia sido plenamente reclamado pelas raças mortais, Kharuun percorreu as terras como uma força tangível. Seu corpo colossal, uma fusão de criatura viva e geologia viva, moldava o relevo conforme avançava. Cadeias montanhosas congeladas e mares de gelo eterno são atribuídos aos longos períodos em que a entidade permaneceu imóvel.
