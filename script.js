@@ -2362,7 +2362,7 @@ img2: "imagens/Token-OctoRedsel Abissal.png"}
 	
 	
 	
-	,"Aegorym - Titã Primordial dos Abismos": {
+	,"Aegorym": {
   vida: 480,
   sanidade: 170,
   especial: 94,
@@ -2390,13 +2390,14 @@ Imune: Caos, Sono`,
 
   bonus2: `{pigmento}*Corpo da Maré Eterna:*{/pigmento} Enquanto Aegorym estiver em área aquática, recebe apenas metade de todo dano físico.
 {pigmento}*Consciência do Oceano:*{/pigmento} Sempre ativa. Aegorym sente qualquer criatura viva em um raio de 100m dentro da água.
-{pigmento}*Neutralidade Primordial:*{/pigmento} Aegorym nunca inicia combate. Se atacado, responde com força total. Caso perceba desequilíbrio ambiental extremo (poluição, massacre marinho, profanação), o mestre pode assumir controle total da criatura.`,
-
-  bonus3: `{pigmento}*Impacto Silencioso:*{/pigmento} Aegorym submerge até as profundezas e então avança em uma investida devastadora em uma área de 30m. Inimigos na área sofrem 8d20 de dano Esmagante. Teste de Agilidade (DT 10).  
+{pigmento}*Neutralidade Primordial:*{/pigmento} Aegorym nunca inicia combate. Se atacado, responde com força total. Caso perceba desequilíbrio ambiental extremo (poluição, massacre marinho, profanação), o mestre pode assumir controle total da criatura.
+{pigmento}*Impacto Silencioso:*{/pigmento} Aegorym submerge até as profundezas e então avança em uma investida devastadora em uma área de 30m. Inimigos na área sofrem 8d20 de dano Esmagante. Teste de Agilidade (DT 10).  
 Esta habilidade ocorre em 2 turnos:  
 Turno 1 – Submergir.  
 Turno 2 – Investida.  
 Enquanto submerso, Aegorym fica Imune a todo e qualquer tipo de ataque.`,
+
+  bonus3: `Titã Primordial dos Abismos`,
 
   Magias: `Todas as Magias de Água  
 Todas as Magias de Tempestade`,
@@ -2430,15 +2431,14 @@ Dizem que aqueles que encaram Aegorym nos olhos sentem a vastidão do oceano inv
   },
 }
 
-,"Kharuun - O Horizonte Branco": {
+,"Kharuun": {
   vida: 420,
   sanidade: 120,
   especial: 64,
   armadura: 22,
   movimento: 8,
 
-    vidaPorNivel: 20,
-  sanidadePorNivel: 15,
+    vidaPorNivel: 20,  sanidadePorNivel: 15,
   especialPorNivel: 10,
   armaduraPorNivel: 2,
 
@@ -2459,14 +2459,15 @@ Golpe com cauda – 7d12 de dano Esmagante + BRU – Agilidade (DT 7)`,
 
   bonus2: `{pigmento}*Arquitetura do Frio Antigo:*{/pigmento} Sempre ativa. Sempre que Kharuun permanece imóvel por 1 turno, o solo em um raio de 28m se transforma lentamente em gelo estrutural ancestral. Reduz a movimentação de todas as criaturas em –5.
 {pigmento}*O Inverno Prolongado:*{/pigmento} Sempre ativa. Kharuun emite uma forte energia fria por toda a área ao seu redor, causando 9 de dano de Gelo por turno continuamente. Caso o dano acumulado alcance 54, um membro da criatura entra em estado de necrose, reduzindo permanentemente sua movimentação em –2.
-{pigmento}*Nevaska de Cristal Vivo:*{/pigmento} Kharuun emite uma baforada de energia fria com estilhaços de gelo por toda uma área em 15 metros, causando 5d10 de dano de Gelo – Agilidade (DT 16). Falha: a criatura fica paralisada por 2 turnos.`,
-
-  bonus3: `{pigmento}*Julgamento da Imobilidade:*{/pigmento} Se uma criatura tentar fugir da presença de Kharuun enquanto ele está consciente, o próprio conceito de movimento se torna hostil. A criatura sente o corpo mais pesado a cada passo. O mestre pode forçar uma escolha: largar itens, cair ou aceitar o frio.
+{pigmento}*Nevaska de Cristal Vivo:*{/pigmento} Kharuun emite uma baforada de energia fria com estilhaços de gelo por toda uma área em 15 metros, causando 5d10 de dano de Gelo – Agilidade (DT 16). Falha: a criatura fica paralisada por 2 turnos.
+{pigmento}*Julgamento da Imobilidade:*{/pigmento} Se uma criatura tentar fugir da presença de Kharuun enquanto ele está consciente, o próprio conceito de movimento se torna hostil. A criatura sente o corpo mais pesado a cada passo. O mestre pode forçar uma escolha: largar itens, cair ou aceitar o frio.
 {pigmento}*Avanço da Nevaska Eterna:*{/pigmento} Uma nevasca absoluta cobre uma área de 60m. Toda visibilidade é reduzida a zero. Criaturas têm desvantagem em ações de esquiva.
 {pigmento}*Trono de Gelo Ancestral:*{/pigmento} Kharuun emite uma onda de frio tão intenso que toda magia que não seja de Gelo é suprimida por 4 turnos em um raio de 40m.
 {pigmento}*O Frio que Mata Deuses:*{/pigmento} Kharuun concentra todo o inverno primordial em um único instante. Todas as criaturas no campo fazem um teste de Determinação (DT 25).  
 Falha: morte imediata por Congelamento Primordial.  
 Sucesso: ficam com 1 PV, permanentemente marcadas pelo Frio.`,
+
+  bonus3: `O Horizonte Branco`,
 
   Magias: `Todas as magias de Gelo  
 Todas as magias de Tremor`,
@@ -2499,6 +2500,7 @@ Lendas dizem que toda grande nevasca é um aviso. Ele está se movendo. E se des
     return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
   },
 }
+
 
 
 
