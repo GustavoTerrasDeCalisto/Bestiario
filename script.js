@@ -2358,7 +2358,11 @@ Assim como os humanos podem ter fé, ele também tem: idolatra a luz como fonte 
 O OctoRedsel é considerado um verdadeiro terror das profundezas — traiçoeiro, manipulador e implacável com suas vítimas, guiado por uma fé distorcida na luz que o torna ainda mais perigoso.`
 ,
 img: "imagens/OctoRedsel Abissal.png",
-img2: "imagens/Token-OctoRedsel Abissal.png"},"Aegorym - Titã Primordial dos Abismos": {
+img2: "imagens/Token-OctoRedsel Abissal.png"}
+	
+	
+	
+	,"Aegorym - Titã Primordial dos Abismos": {
   vida: 480,
   sanidade: 170,
   especial: 94,
@@ -2370,8 +2374,8 @@ img2: "imagens/Token-OctoRedsel Abissal.png"},"Aegorym - Titã Primordial dos Ab
   especialPorNivel: 10,
   armaduraPorNivel: 2,
 
-  TagsCriatura: "Titã,Primordial,Marinho,Lendário",
-  TipoElementoCriatura: "Água,Tempestade",
+  TagsCriatura: "Água,Tempestade,Lendário, Comunidade",
+  TipoElementoCriatura: "Caos",
 
   bru: 45, agi: 28, det: 65, pre: 18, lib: 25, cnx: 25,
 
@@ -2438,8 +2442,8 @@ Dizem que aqueles que encaram Aegorym nos olhos sentem a vastidão do oceano inv
   especialPorNivel: 10,
   armaduraPorNivel: 2,
 
-  TagsCriatura: "Entidade Primordial,Gelo,Nevasca,Lendário",
-  TipoElementoCriatura: "Gelo,Tremor",
+  TagsCriatura: "Gelo,Tremor,Lendário,Comunidade",
+  TipoElementoCriatura: "Caos",
 
   bru: 64, agi: 28, det: 64, pre: 18, lib: 25, cnx: 25,
 
@@ -2467,8 +2471,7 @@ Sucesso: ficam com 1 PV, permanentemente marcadas pelo Frio.`,
   Magias: `Todas as magias de Gelo  
 Todas as magias de Tremor`,
 
-  Passivas: `Arquitetura do Frio Antigo  
-O Inverno Prolongado`,
+  Passivas: "-",
 
   Talentos: `Resistência Absoluta  
 Presença Colossal  
