@@ -2471,7 +2471,7 @@ Todas as magias de Tremor`,
 
   Passivas: "-",
 
-  Talentos: -`,
+  Talentos: "-",
 
   Descricao: `Antes que os reinos tivessem nomes, antes que o fogo ousasse desafiar o frio, o mundo dormia sob um céu de gelo infinito. Nesse silêncio primordial, Kharuun já caminhava — a Criatura Divina do Gelo e da Nevaska, existente muito antes dos próprios deuses aprenderem a moldar a matéria.
 Durante a chamada Era Glacial Primordial, quando o mundo ainda não havia sido plenamente reclamado pelas raças mortais, Kharuun percorreu as terras como uma força tangível. Seu corpo colossal, uma fusão de criatura viva e geologia viva, moldava o relevo conforme avançava. Cadeias montanhosas congeladas e mares de gelo eterno são atribuídos aos longos períodos em que a entidade permaneceu imóvel.
