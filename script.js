@@ -2358,9 +2358,144 @@ Assim como os humanos podem ter fé, ele também tem: idolatra a luz como fonte 
 O OctoRedsel é considerado um verdadeiro terror das profundezas — traiçoeiro, manipulador e implacável com suas vítimas, guiado por uma fé distorcida na luz que o torna ainda mais perigoso.`
 ,
 img: "imagens/OctoRedsel Abissal.png",
-img2: "imagens/Token-OctoRedsel Abissal.png"}
+img2: "imagens/Token-OctoRedsel Abissal.png"},"Aegorym - Titã Primordial dos Abismos": {
+  vida: 480,
+  sanidade: 170,
+  especial: 94,
+  armadura: 19,
+  movimento: 24,
 
+    vidaPorNivel: 20,
+  sanidadePorNivel: 15,
+  especialPorNivel: 10,
+  armaduraPorNivel: 2,
 
+  TagsCriatura: "Titã,Primordial,Marinho,Lendário",
+  TipoElementoCriatura: "Água,Tempestade",
+
+  bru: 45, agi: 28, det: 65, pre: 18, lib: 25, cnx: 25,
+
+  bruDano: 12, agiDano: 6, detDano: 19, preDano: 3, libDano: 5, cnxDano: 5,
+  bruTest: 7, agiTest: 4, detTest: 11, preTest: 2, libTest: 3, cnxTest: 3,
+
+  bonus: `Resistente: Balístico, Esmagante  
+Vulnerável: Plasma, Ácido  
+Imune: Caos, Sono`,
+
+  Ataquebásico: `Golpe com corpo – 5d12 de dano Esmagante - BRU`,
+
+  bonus2: `{pigmento}*Corpo da Maré Eterna:*{/pigmento} Enquanto Aegorym estiver em área aquática, recebe apenas metade de todo dano físico.
+{pigmento}*Consciência do Oceano:*{/pigmento} Sempre ativa. Aegorym sente qualquer criatura viva em um raio de 100m dentro da água.
+{pigmento}*Neutralidade Primordial:*{/pigmento} Aegorym nunca inicia combate. Se atacado, responde com força total. Caso perceba desequilíbrio ambiental extremo (poluição, massacre marinho, profanação), o mestre pode assumir controle total da criatura.`,
+
+  bonus3: `{pigmento}*Impacto Silencioso:*{/pigmento} Aegorym submerge até as profundezas e então avança em uma investida devastadora em uma área de 30m. Inimigos na área sofrem 8d20 de dano Esmagante. Teste de Agilidade (DT 10).  
+Esta habilidade ocorre em 2 turnos:  
+Turno 1 – Submergir.  
+Turno 2 – Investida.  
+Enquanto submerso, Aegorym fica Imune a todo e qualquer tipo de ataque.`,
+
+  Magias: `Todas as Magias de Água  
+Todas as Magias de Tempestade`,
+
+  Passivas: `Consciência do Oceano  
+Corpo da Maré Eterna`,
+
+  Talentos: `Resistência Colossal  
+Domínio Aquático  
+Presença Primordial`,
+
+  Descricao: `Aegorym é um titã ancestral que habita as regiões mais profundas e inexploradas dos oceanos. Seu corpo colossal move-se como uma maré viva, silenciosa e inevitável, fazendo o próprio mar se curvar à sua presença. Correntes se alteram, criaturas fogem e o oceano parece prender a respiração quando ele desperta.
+Diferente de monstros comuns, Aegorym não caça nem busca destruição gratuita. Ele é a personificação do equilíbrio marinho primordial. Enquanto o ciclo natural permanece intacto, o titã permanece em estado de observação silenciosa.
+Quando o oceano é profanado por poluição, massacres indiscriminados ou interferências antinaturais, Aegorym emerge como um julgamento inevitável. Sua investida não é vingança, mas correção. Cidades costeiras podem ser apagadas em instantes, frotas inteiras afundam sem aviso, e o mar reclama aquilo que lhe pertence.
+Dizem que aqueles que encaram Aegorym nos olhos sentem a vastidão do oceano invadir suas mentes, esmagando qualquer senso de importância individual. Para o titã, todas as criaturas são apenas ondas passageiras diante da eternidade das águas.`,
+
+  _imgs: [
+    "imagens/Aegorym.png"
+  ],
+
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-Aegorym.png"
+  ],
+
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+  },
+}
+
+,"Kharuun - O Horizonte Branco": {
+  vida: 420,
+  sanidade: 120,
+  especial: 64,
+  armadura: 22,
+  movimento: 8,
+
+    vidaPorNivel: 20,
+  sanidadePorNivel: 15,
+  especialPorNivel: 10,
+  armaduraPorNivel: 2,
+
+  TagsCriatura: "Entidade Primordial,Gelo,Nevasca,Lendário",
+  TipoElementoCriatura: "Gelo,Tremor",
+
+  bru: 64, agi: 28, det: 64, pre: 18, lib: 25, cnx: 25,
+
+  bruDano: 18, agiDano: 6, detDano: 18, preDano: 3, libDano: 5, cnxDano: 5,
+  bruTest: 11, agiTest: 4, detTest: 11, preTest: 2, libTest: 3, cnxTest: 3,
+
+  bonus: `Resistente: Fogo, Eletricidade, Tremor  
+Vulnerável: Plasma, Laser  
+Imune: Fé, Poder, Gelo, Mental`,
+
+  Ataquebásico: `Golpe com garra – 6d12 de dano Esmagante + BRU – Agilidade (DT 9)
+Golpe com cauda – 7d12 de dano Esmagante + BRU – Agilidade (DT 7)`,
+
+  bonus2: `{pigmento}*Arquitetura do Frio Antigo:*{/pigmento} Sempre ativa. Sempre que Kharuun permanece imóvel por 1 turno, o solo em um raio de 28m se transforma lentamente em gelo estrutural ancestral. Reduz a movimentação de todas as criaturas em –5.
+{pigmento}*O Inverno Prolongado:*{/pigmento} Sempre ativa. Kharuun emite uma forte energia fria por toda a área ao seu redor, causando 9 de dano de Gelo por turno continuamente. Caso o dano acumulado alcance 54, um membro da criatura entra em estado de necrose, reduzindo permanentemente sua movimentação em –2.
+{pigmento}*Nevaska de Cristal Vivo:*{/pigmento} Kharuun emite uma baforada de energia fria com estilhaços de gelo por toda uma área em 15 metros, causando 5d10 de dano de Gelo – Agilidade (DT 16). Falha: a criatura fica paralisada por 2 turnos.`,
+
+  bonus3: `{pigmento}*Julgamento da Imobilidade:*{/pigmento} Se uma criatura tentar fugir da presença de Kharuun enquanto ele está consciente, o próprio conceito de movimento se torna hostil. A criatura sente o corpo mais pesado a cada passo. O mestre pode forçar uma escolha: largar itens, cair ou aceitar o frio.
+{pigmento}*Avanço da Nevaska Eterna:*{/pigmento} Uma nevasca absoluta cobre uma área de 60m. Toda visibilidade é reduzida a zero. Criaturas têm desvantagem em ações de esquiva.
+{pigmento}*Trono de Gelo Ancestral:*{/pigmento} Kharuun emite uma onda de frio tão intenso que toda magia que não seja de Gelo é suprimida por 4 turnos em um raio de 40m.
+{pigmento}*O Frio que Mata Deuses:*{/pigmento} Kharuun concentra todo o inverno primordial em um único instante. Todas as criaturas no campo fazem um teste de Determinação (DT 25).  
+Falha: morte imediata por Congelamento Primordial.  
+Sucesso: ficam com 1 PV, permanentemente marcadas pelo Frio.`,
+
+  Magias: `Todas as magias de Gelo  
+Todas as magias de Tremor`,
+
+  Passivas: `Arquitetura do Frio Antigo  
+O Inverno Prolongado`,
+
+  Talentos: `Resistência Absoluta  
+Presença Colossal  
+Domínio Glacial`,
+
+  Descricao: `Antes que os reinos tivessem nomes, antes que o fogo ousasse desafiar o frio, o mundo dormia sob um céu de gelo infinito. Nesse silêncio primordial, Kharuun já caminhava — a Criatura Divina do Gelo e da Nevaska, existente muito antes dos próprios deuses aprenderem a moldar a matéria.
+Durante a chamada Era Glacial Primordial, quando o mundo ainda não havia sido plenamente reclamado pelas raças mortais, Kharuun percorreu as terras como uma força tangível. Seu corpo colossal, uma fusão de criatura viva e geologia viva, moldava o relevo conforme avançava. Cadeias montanhosas congeladas e mares de gelo eterno são atribuídos aos longos períodos em que a entidade permaneceu imóvel.
+Kharuun não responde a preces nem concede milagres de forma consciente. Seu poder emana de sua existência contínua, afetando o clima, o caos ambiental e o próprio fluxo do tempo em regiões polares.
+Lendas dizem que toda grande nevasca é um aviso. Ele está se movendo. E se despertar por completo, o mundo retornará à Era Glacial Primordial.`,
+
+  _imgs: [
+    
+    "imagens/Kharuun.png"
+  ],
+
+  get img() {
+    return this._imgs[Math.floor(Math.random() * this._imgs.length)];
+  },
+
+  _imgs2: [
+    "imagens/Token-Kharuun.png"
+  ],
+
+  get img2() {
+    return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
+  },
+}
 
 
 
