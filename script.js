@@ -1548,7 +1548,7 @@ Enquanto Thor de Vinfell é a faísca que ilumina o céu noturno com seus raios,
 Alguns dizem ver Thor durante as noites trovoejantes, quando os raios cortam o céu e o trovão ruge, outros juram ter visto Donar caminhando pelas florestas verdejantes ao meio-dia, com faíscas de eletricidade dançando em seus dedos e as plantas se abrindo ao seu toque, como se o próprio ar estivesse vivo. Os cantos e contos são muitos, e alguns não sabem o quão real isso pode ser.
 Donar, dizem que era um elfo de Myritil, mas seus descendentes são incertos, como se a própria terra tivesse absorvido sua linhagem. Já a família de Thor de Vinfell, hoje conhecida como Thorvills, é a fundadora do reino de Thorvilles, que antes era conhecido como Vinfell, um reino gelado e inóspito que se transformou com o tempo para o que é hoje.
 Mas um fato é certo: "_o martelo orbita a Terra desde a última guerra, esperando a hora de pousar. Mas qual deles há de vir ajudar?_" 
-Invocado pelo poder da magia "Retorno de Thorville", sua chegada é anunciada por trovões e uma luz cegante que aterroriza todos ao redor. Pode vir Donar, alegre e radiante, ou Thor, bêbado e furioso. Ele luta ao lado do invocador, reconhecendo-o como parte de sua família, escutando suas sugestões e protegendo-o como um irmão de guerra. Seu estilo de combate é agressivo e carregado de energia divina, oscilando entre a força de um guerreiro lendário e a imprevisibilidade do efeito Bêbado que sempre acompanha Thor. Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar qualquer inimigo, ele é a personificação da fúria dos céus.,
+Invocado pelo poder da magia "Retorno de Thorville", sua chegada é anunciada por trovões e uma luz cegante que aterroriza todos ao redor. Pode vir Donar, alegre e radiante, ou Thor, bêbado e furioso. Ele luta ao lado do invocador, reconhecendo-o como parte de sua família, escutando suas sugestões e protegendo-o como um irmão de guerra. Seu estilo de combate é agressivo e carregado de energia divina, oscilando entre a força de um guerreiro lendário e a imprevisibilidade do efeito Bêbado que sempre acompanha Thor. Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar qualquer inimigo, ele é a personificação da fúria dos céus.`,
   _imgs: [
       "imagens/Donar1.png",
       "imagens/Thor2.png"
@@ -1565,7 +1565,7 @@ Invocado pelo poder da magia "Retorno de Thorville", sua chegada é anunciada po
 
     get img2() {
       return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
-    }
+    },
 	}
 
   
