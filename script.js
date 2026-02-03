@@ -1512,7 +1512,7 @@ Apesar de sua tranquilidade, poucos ousam enfrentá-la. Sua força é assombrosa
   img2: "imagens/Token-Yaruma-Natureza.png"
 },
 	
-"Donar/Thor - O Retorno": {
+"Donar-Thor - O Retorno": {
   vida: 267,
   sanidade: 143,
   especial: 64,
