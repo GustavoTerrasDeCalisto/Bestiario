@@ -1512,7 +1512,7 @@ Apesar de sua tranquilidade, poucos ousam enfrentá-la. Sua força é assombrosa
   img2: "imagens/Token-Yaruma-Natureza.png"
 },
 	
-	"Donar - O Retorno de Thorville": {
+"Donar/Thor - O Retorno": {
   vida: 267,
   sanidade: 143,
   especial: 64,
@@ -1536,17 +1536,22 @@ Imune: Eletricidade`,
 {pigmento}*Trovão Ensurdecedor:*{/pigmento} Ao ser invocado, causa 2d10 de dano Elétrico em inimigos num raio de 30m. Criaturas na área devem passar em um teste de Determinação (DT 15) ou ficam **Cegas** por 1d4 turnos (-10 em testes de reação e ação).  
 {pigmento}*Lealdade de Sangue:*{/pigmento} Donar considera o invocador como parte da família. O mestre decide suas ações, mas o invocador pode sugerir ordens.  
 {pigmento}*Martelo Divino:*{/pigmento} Pode desferir um ataque devastador com 3d12 de dano Elétrico. Teste de BRU (DT 20) do alvo para resistir.`,
-  bonus3: `Entidade Divina de Asgard  
+  bonus3: `A Lenda do Martelo Lendário  
 Elemento - Elétrico`,
   Magias: `Todas as magias de Eletricidade e Tespestade`,
   Passivas: `Ativas durante todo o combate: Armadura Sobrenatural, Bêbado.`,
   Talentos: `-`,
-  Descricao: `Donar, também chamado de Thorville, é uma entidade divina dos 5 Céus Eternos de Asgard. Invocado pelo poder da magia "Retorno de Thorville", sua chegada é anunciada por trovões e uma luz cegante que aterroriza todos ao redor. Ele luta ao lado do invocador por 1d12 turnos ou até o fim da cena.  
-Embora possua vontade própria, Donar reconhece o invocador como parte de sua família, escutando suas sugestões e protegendo-o como um irmão de guerra. Seu estilo de combate é agressivo e carregado de energia divina, oscilando entre a força de um guerreiro lendário e a imprevisibilidade do efeito Bêbado que sempre o acompanha.  
-Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar qualquer inimigo, Donar é a personificação da fúria dos céus.`,
+  Descricao: `
+Thor de Vinfell e Donar, dois personagens que um dia brandiram um martelo lendário, forjado para o único que deteria o poder de um deus. A lenda diz que aquele que empunha o martelo moldaria os céus e domaria os trovões.
+A Natureza, em sua forma mais caótica, é a força por trás do martelo. Enquanto Thor de Vinfell, com seu poder destrutivo, foi mudado pela própria natureza, tornando-se um reflexo do seu caos, Donar, com sua conexão profunda, sempre a protegeu, mantendo o equilíbrio.
+Enquanto Thor de Vinfell é a faísca que ilumina o céu noturno com seus raios, Donar é a corrente silenciosa que flui pelas veias da Terra, alimentando a vida. Um é o trovão que ruge, o outro é a eletricidade que pulsa. Os dois existiram na mesma época, mas suas essências ainda percorrem as vastas terras de Calisto, agora frutos da mesma essência e equilíbrio.
+Alguns dizem ver Thor durante as noites trovoejantes, quando os raios cortam o céu e o trovão ruge, outros juram ter visto Donar caminhando pelas florestas verdejantes ao meio-dia, com faíscas de eletricidade dançando em seus dedos e as plantas se abrindo ao seu toque, como se o próprio ar estivesse vivo. Os cantos e contos são muitos, e alguns não sabem o quão real isso pode ser.
+Donar, dizem que era um elfo de Myritil, mas seus descendentes são incertos, como se a própria terra tivesse absorvido sua linhagem. Já a família de Thor de Vinfell, hoje conhecida como Thorvills, é a fundadora do reino de Thorvilles, que antes era conhecido como Vinfell, um reino gelado e inóspito que se transformou com o tempo para o que é hoje.
+Mas um fato é certo: "_o martelo orbita a Terra desde a última guerra, esperando a hora de pousar. Mas qual deles há de vir ajudar?_" 
+Invocado pelo poder da magia "Retorno de Thorville", sua chegada é anunciada por trovões e uma luz cegante que aterroriza todos ao redor. Pode vir Donar, alegre e radiante, ou Thor, bêbado e furioso. Ele luta ao lado do invocador, reconhecendo-o como parte de sua família, escutando suas sugestões e protegendo-o como um irmão de guerra. Seu estilo de combate é agressivo e carregado de energia divina, oscilando entre a força de um guerreiro lendário e a imprevisibilidade do efeito Bêbado que sempre acompanha Thor. Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar qualquer inimigo, ele é a personificação da fúria dos céus.,
   _imgs: [
       "imagens/Donar1.png",
-      "imagens/Donar1.png"
+      "imagens/Thor2.png"
     ],
     
     get img() {
@@ -1554,7 +1559,7 @@ Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar 
     },
 
     _imgs2: [
-      "imagens/Donar1.png",
+      "imagens/Thor2.png",
       "imagens/Donar1.png"
     ],
 
@@ -1562,6 +1567,8 @@ Portador de uma Armadura Sobrenatural e de um Martelo Divino capaz de obliterar 
       return this._imgs2[Math.floor(Math.random() * this._imgs2.length)];
     }
 	}
+
+  
 
   ,"Emporium - Manifestação do Poder": {
   vida: 409,
