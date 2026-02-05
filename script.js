@@ -91,6 +91,158 @@ Sua presença em florestas e cavernas torna esses locais ainda mais perigosos pa
   }
   
   
+  ,"Musplum": {
+    vida: 30,
+    sanidade: 15,
+    especial: 15,
+    armadura: 1,
+    movimento:8,
+    vidaPorNivel: 8,
+    sanidadePorNivel: 5,
+    especialPorNivel: 2,
+    armaduraPorNivel: 4,
+    TagsCriatura: "Gormandia,Racional,Animal,",
+ TipoElementoCriatura: "Caos",
+    bru: 13, agi: 17, det: 12, pre: 9, lib: 9, cnx: 11,
+    bruDano: 1, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 1,
+    bruTest: 1, agiTest: 3, detTest: 1, preTest: -1, libTest: -1, cnxTest: 1,
+    bonus:`Resistente:Escuridão
+    Vulnerável: Gelo`,
+    bonus2: `{pigmento}*Ataque com bico - teste de Agilidade :*{/pigmento} Prioriza as pernas e causa _1d12 de dano perfurante_.
+{pigmento}*Ataque com garras - teste de Brutalidade:*{/pigmento} Ao acertar causa _3d6 de dano cortante_.
+{pigmento}*Olhar no escuro:*{/pigmento} pode enxergar no escuro.`,
+bonus3:`Rastejadores obscuros
+Elemento - Caos`,
+    Magias: `Nível 3 - Força gélida , nível 10 - Tempestade da natureza.`,
+    Passivas:` Nível 1 - Furtividade sombria.`,
+    Talentos: `-`,
+    Descricao:````html
+<div class="lore">
+
+  <h1>Orvednir, A Entidade da Tempestade</h1>
+
+  <p><strong>Personagem:</strong> Orvednir</p>
+  <p><strong>Cavalo:</strong> Hrasvelg</p>
+
+  <div class="descricao">
+    <h2>Descrição</h2>
+    <p>
+      Muito antes de o mundo assumir sua forma atual, quando todos os continentes ainda formavam uma única massa de terra, existia uma vasta região próxima ao centro do globo. Esse território, hoje conhecido como o Deserto de Karminia, em Sundra Leste, fazia parte das antigas terras de Eldoria, atualmente chamadas de Terras de Calisto.
+    </p>
+
+    <p>
+      Naquele tempo, o mundo inteiro estava mergulhado em trevas eternas. O céu permanecia encoberto por nuvens densas, tempestades de areia varriam continentes inteiros e a escuridão avançava sem resistência.
+    </p>
+
+    <p>
+      Foi nesse mundo condenado que Orvednir nasceu.
+    </p>
+
+    <p>
+      Há mais de 8.989 anos, essas terras pertenciam ao maior reino já registrado. Uma nação rica em ouro, minérios raros e gemas antigas. Seus governantes eram chamados de Grandes Merecedores do Relacionamento, reis que acreditavam que sua vida futura dependia diretamente da riqueza acumulada em vida. Por essa crença distorcida, exploravam seu próprio povo.
+    </p>
+
+    <p>
+      Enquanto cidades próximas ao palácio erguiam monumentos colossais e templos dourados, as vilas distantes sobreviviam na miséria. Seus habitantes recebiam como pagamento apenas pães endurecidos e pregos enferrujados, usados como moeda de troca.
+    </p>
+
+    <p>
+      Foi em uma dessas vilas esquecidas que Orvednir cresceu. Desde criança, conheceu apenas a fome, o abandono e o ódio. Todos os anos, tempestades de areia destruíam o pouco que restava. Casas eram soterradas, plantações dizimadas e famílias inteiras desapareciam sob o avanço do deserto.
+    </p>
+
+    <p>
+      Existia também um ritual ancestral. A cada ano, um representante da vila partia sozinho rumo ao coração da escuridão, com a missão de enfrentar aquilo que mantinha o mundo mergulhado nas trevas. A crença dizia que, se alguém fosse capaz de dominar as tempestades, a escuridão seria dissipada. Ninguém jamais retornava.
+    </p>
+
+    <p>
+      Orvednir cresceu observando esses sacrifícios. Ainda criança, já caçava para alimentar os fracos, cuidava dos doentes e guiava viajantes perdidos. Seu corpo se tornava forte, mas sua mente amadurecia rápido demais.
+    </p>
+
+    <p>
+      Quando se aproximava dos 15 anos, era mais líder do que menino. Sem alternativas, e reconhecendo sua coragem, a vila o nomeou como seu novo representante.
+    </p>
+
+    <p>
+      Na noite mais fria daquele ciclo, Orvednir atravessou os portões da vila e seguiu rumo ao deserto. O vento carregava sua antiga melodia de infância, assobiada baixinho, enquanto ele caminhava para dentro da escuridão.
+    </p>
+
+    <p>
+      Ele nunca mais voltou.
+    </p>
+  </div>
+
+  <div class="impacto">
+    <h2>O Impacto e o Nascimento do Vórtice</h2>
+
+    <p>
+      Séculos se passaram até que a Grande Guerra irrompeu. Um conflito tão devastador que rasgou o próprio tecido do mundo. Armas ancestrais foram ativadas, entidades antigas despertaram e forças além da compreensão colidiram.
+    </p>
+
+    <p>
+      Foi durante esse cataclismo que ocorreu o Grande Impacto. Um corpo colossal atravessou os céus e atingiu o coração da antiga pangeia, provocando uma explosão capaz de separar os continentes, redefinir oceanos e remodelar a própria geografia do planeta.
+    </p>
+
+    <p>
+      Do ponto do impacto nasceu um vórtice gigantesco, uma cicatriz eterna no mundo. Um turbilhão de energia, vento, relâmpagos e caos que jamais cessou, permanecendo ativo até os dias atuais.
+    </p>
+
+    <p>
+      Curiosamente, após esse evento, as trevas que cobriam o mundo desapareceram. O céu se abriu. As tempestades cessaram. O mundo, pela primeira vez em milênios, conheceu a paz.
+    </p>
+  </div>
+
+  <div class="relatos">
+    <h2>Relatos Perdidos</h2>
+
+    <p>
+      Durante a guerra, inúmeros relatos surgiram entre soldados, navegadores e viajantes. Alguns afirmavam ter visto um homem de vestes belas, olhar penetrante e presença divina, cavalgando pelos céus, pelas águas e até sobre o mar, montado em um cavalo feito inteiramente de ossos.
+    </p>
+
+    <p>
+      Outros juravam que essa figura mudava de forma, assumindo uma aparência híbrida entre homem e falcão, abrindo asas gigantescas e cruzando os céus em velocidade impossível. Nesses momentos, o cavalo de ossos se moldava ao seu corpo, transformando-se em uma armadura viva de ossos, envolvendo-o como uma couraça sobrenatural.
+    </p>
+
+    <p>
+      Esses relatos surgiram em campos de batalha separados por oceanos, registrados em pergaminhos, diários de guerra e ruínas antigas. Nenhuma dessas testemunhas jamais se encontrou.
+    </p>
+  </div>
+
+  <div class="lenda">
+    <h2>A Lenda de Orvednir</h2>
+
+    <p>
+      Com o passar das eras, os registros se fragmentaram. Restaram apenas anotações dispersas, lendas incompletas e histórias sussurradas ao vento.
+    </p>
+
+    <p>
+      Mas todas apontam para a mesma figura. Orvednir.
+    </p>
+
+    <p>
+      A criança que caminhou rumo à escuridão teria atravessado o próprio caos do mundo, fundindo-se às forças primordiais da tempestade. Seu vínculo com o cavalo Hrasvelg ultrapassou os limites da carne, transformando-o numa extensão de sua própria essência.
+    </p>
+
+    <p>
+      Hoje, acredita-se que Orvednir não pertence mais ao mundo mortal. Ele é a própria tempestade consciente.
+    </p>
+
+    <p>
+      E quando o céu se fecha, os ventos começam a cantar uma melodia esquecida e o horizonte se rasga em relâmpagos, muitos juram ouvir, ao longe, o eco de cascos galopando no vazio.
+    </p>
+
+    <p>
+      Pois onde há tempestade, Orvednir cavalga.
+    </p>
+  </div>
+
+</div>
+```
+`,
+    img: "imagens/Musplum.png",
+    img2: "imagens/Token-Musplum.png"
+  }
+  
+  
   
   
   ,"Raposa Selvagem": {
