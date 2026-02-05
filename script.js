@@ -116,7 +116,7 @@ Elemento - Caos`,
     Magias: `Nível 3 - Força gélida , nível 10 - Tempestade da natureza.`,
     Passivas:` Nível 1 - Furtividade sombria.`,
     Talentos: `-`,
-    Descricao:````html
+  Descricao: `html
 <div class="lore">
 
   <h1>Orvednir, A Entidade da Tempestade</h1>
@@ -126,6 +126,7 @@ Elemento - Caos`,
 
   <div class="descricao">
     <h2>Descrição</h2>
+
     <p>
       Muito antes de o mundo assumir sua forma atual, quando todos os continentes ainda formavam uma única massa de terra, existia uma vasta região próxima ao centro do globo. Esse território, hoje conhecido como o Deserto de Karminia, em Sundra Leste, fazia parte das antigas terras de Eldoria, atualmente chamadas de Terras de Calisto.
     </p>
@@ -236,8 +237,8 @@ Elemento - Caos`,
   </div>
 
 </div>
-```
-`,
+`
+
     img: "imagens/Musplum.png",
     img2: "imagens/Token-Musplum.png"
   }
