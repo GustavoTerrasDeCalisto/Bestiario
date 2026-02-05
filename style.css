@@ -1485,3 +1485,11 @@ a:hover {
     line-height: 1.4;
     font-size: 15px;
   }
+
+.descricao *:empty {
+  display: none;
+}
+
+.descricao br {
+  display: none;
+}
