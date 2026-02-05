@@ -237,7 +237,7 @@ Elemento - Caos`,
   </div>
 
 </div>
-`
+`,
 
     img: "imagens/Musplum.png",
     img2: "imagens/Token-Musplum.png"
