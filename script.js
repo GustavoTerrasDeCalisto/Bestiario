@@ -3024,12 +3024,24 @@ function formatBonusText(text, type = "default") {
 }
 
 function formatDescriptionText(text) {
+  if (!text) return "";
+
+  text = text
+    .replace(/\r/g, "")
+    .replace(/^\s+|\s+$/g, "")
+    .replace(/\n{3,}/g, "\n\n");
+
+  // Se já contém HTML, não embrulha em <p>
+  if (/<[a-z][\s\S]*>/i.test(text)) {
+    return text;
+  }
+
   return text
-    .split(/\n+/)
-    .map(paragraph =>
-      paragraph.trim() ? `<p>${paragraph}</p>` : ''
-    )
-    .join('');
+    .split(/\n\n+/)
+    .map(p => p.trim())
+    .filter(p => p.length > 0)
+    .map(p => `<p>${p}</p>`)
+    .join("");
 }
 
 function showImage(index) {
