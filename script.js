@@ -1658,7 +1658,7 @@ Imunidade a efeitos de deslocamento forçado causados por vento.
 Impacto da Tempestade – 4d12 de dano de Tempestade.
 `,
 
- Descricao: `html
+ Descricao: `
 <div class="lore">
 
 <h1>História de Orvednir, A Entidade da Tempestade</h1>
