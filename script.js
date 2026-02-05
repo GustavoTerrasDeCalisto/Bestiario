@@ -1671,7 +1671,7 @@ Impacto da Tempestade – 4d12 de dano de Tempestade.
 <p>Naquele tempo, o mundo inteiro estava mergulhado em trevas eternas.</p>
 <p>O céu permanecia encoberto por nuvens densas, tempestades de areia varriam continentes inteiros e a escuridão avançava sem resistência. As estações eram instáveis, e a própria realidade parecia agonizar.</p>
 <p>Foi nesse mundo condenado que Orvednir nasceu.</p>
-<p>Há mais de 8.989 anos, essas terras pertenciam ao maior reino já registrado. Uma nação rica em ouro, minérios raros e gemas antigas. Seus governantes eram chamados de Grandes Merecedores do Relacionamento, reis que acreditavam que sua vida futura dependia diretamente da riqueza acumulada em vida.</p>
+<p>Há mais de 8.989 anos, essas terras pertenciam ao maior reino já registrado. Uma nação rica em ouro, minérios raros e gemas antigas. Seus governantes eram chamados de Grandes Merecedores do Renascimento, reis que acreditavam que sua vida futura dependia diretamente da riqueza acumulada em vida.</p>
 <p>Por essa crença distorcida, exploravam seu próprio povo.</p>
 <p>Enquanto cidades próximas ao palácio erguiam monumentos colossais e templos de ouro, as vilas distantes sobreviviam na miséria. Seus habitantes recebiam como pagamento apenas pães endurecidos e pregos enferrujados, usados como moeda de troca.</p>
 <p>Foi em uma dessas vilas esquecidas que Orvednir cresceu.</p>
