@@ -1486,10 +1486,13 @@ a:hover {
     font-size: 15px;
   }
 
-.descricao *:empty {
+.descricao p:empty,
+.descricao div:empty,
+.descricao span:empty {
   display: none;
 }
 
 .descricao br {
   display: none;
 }
+
