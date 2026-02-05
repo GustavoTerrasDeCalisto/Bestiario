@@ -1613,7 +1613,17 @@ Vulnerável: Fé, Desconhecido, Queda
 Imune: Caos
 `,
 
-  bonus2: `
+   bonus2: `
+{pigmento}*Forma Híbrida Primordial:*{/pigmento}
+Orvednir pode alternar livremente entre forma Humana, Montaria e Híbrida.
+
+{pigmento}*Forma Híbrida:*{/pigmento}
+Os ossos de Hrasvelg se moldam ao corpo de Orvednir, formando uma armadura viva.
+Enquanto nessa forma:
+• +8 Armadura
+• Voo ativo
+• Dano de Tempestade +2d12 em todos os ataques
+
 {pigmento}*Tempestade de Fragmentos – teste de Brutalidade:*{/pigmento}
 Orvednir convoca ventos caóticos que arremessam pedras, areia e detritos num raio de 20m, causando _6d12 de dano de Tempestade_.
 
@@ -1628,15 +1638,7 @@ Montado em Hrasvelg, Orvednir atravessa os céus em alta velocidade, causando _5
 `,
 
   bonus3: `
-Forma Híbrida Primordial:
-Orvednir pode alternar livremente entre forma Humana, Montaria e Híbrida.
-
-Forma Híbrida:
-Os ossos de Hrasvelg se moldam ao corpo de Orvednir, formando uma armadura viva.
-Enquanto nessa forma:
-• +8 Armadura
-• Voo ativo
-• Dano de Tempestade +2d12 em todos os ataques
+Avatar da Tempestade Primordial
 `,
 
   Magias: `
