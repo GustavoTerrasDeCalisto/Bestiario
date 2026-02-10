@@ -2742,6 +2742,60 @@ Lendas dizem que toda grande nevasca é um aviso. Ele está se movendo. E se des
 }
 
 
+	,"Ignifar - O Coração Incandescente": {
+    vida: 370,
+    sanidade: 220,
+    especial: 82,
+    armadura: 17,
+    movimento: 12,
+    vidaPorNivel: 0,
+    sanidadePorNivel: 0,
+    especialPorNivel: 0,
+    armaduraPorNivel: 0,
+    TagsCriatura: "Fogo,Lendário,Comunidade,@Damn",
+    TipoElementoCriatura: "Fogo",
+
+  Ataquebásico: `Soco – 6d12 de dano Esmagante – Agilidade (DT 9)`,
+
+    bru: 90, agi: 20, det: 77, pre: 45, lib: 45, cnx: 18,
+    bruDano: 4, agiDano: 2, detDano: 7, preDano: 7, libDano: 7, cnxDano: 2,
+    bruTest: 6, agiTest: 4, detTest: 12, preTest: 12, libTest: 12, cnxTest: 3,
+
+    bonus:`Resistente: Fogo, Tempestade, Eletricidade, Tremor
+Vulnerável: Água, Gelo
+Imune: Físico`,
+
+    bonus2:`{pigmento}*Apoteose Vulcânica:*{/pigmento} Sempre ativa. Criaturas em um raio de 16m sofrem 2d12 de dano de Fogo por turno. Criaturas de Fogo são curadas em metade desse valor. Equipamentos ou itens inflamáveis entram em combustão automaticamente.
+{pigmento}*Respiração do Vulcão Antigo:*{/pigmento} Ignifar expele cinzas e fogo pressurizado em uma área circular de 25m, causando 3d10 de dano de Cinzas. Teste de Preservação (DT 10). Falha: alvo entra em estado de Cegueira por 2 turnos.
+{pigmento}*O Primeiro Fogo:*{/pigmento} Magias de Água e Gelo possuem custo adicional de +28 de Sanidade.
+{pigmento}*Casca Basáltica:*{/pigmento} Ignifar endurece a crosta de seu corpo, recebendo 40 de Vida Temporária e reduzindo todo dano físico em 50% por 1d6 turnos. Quando a casca é quebrada, explode em estilhaços causando 2d8 de dano de Tremor em uma área de 8m.
+{pigmento}*Olhar da Fornalha Primordial:*{/pigmento} Ignifar encara uma criatura, despertando sua combustão interna. Teste de Libertação (DT 18). Falha: alvo sofre 10d12 de dano de Fogo + modificador de Libertação e entra em Combustão Instantânea. Sucesso: sofre metade do dano, deslocamento reduzido pela metade e todo dano físico sofrido é reduzido pela metade permanentemente.
+{pigmento}*ERUPÇÃO DO FIM DOS TEMPOS:*{/pigmento} Ignifar libera a gravidade do núcleo planetário, rompendo sua contenção titânica. Ação ocorre em 4 turnos.
+1º e 2º turno: Ignifar concentra todo o magma em seu corpo.
+3º turno: O terreno se transforma em um mar de lava incandescente. Criaturas sem Resistência ou Imunidade a Fogo morrem instantaneamente.
+4º turno: Explosão ígnea colossal elimina toda vida em um raio de 120m. Teste de Agilidade + Preservação (DT 35). Sucesso: foge da área. Falha: morre.`,
+
+    bonus3:`Titã Primordial
+Elemento – Fogo`,
+
+    Magias:`Todas as magias de Fogo e Cinzas.`,
+    Passivas:`Nível 4 – Sabedoria Natural
+Nível 6 – Escudo Elemental`,
+    Talentos:`-`,
+
+    Descricao:`No princípio absoluto, quando a Terra era apenas um mar de magma e fúria, o Fogo precisava de vontade para não consumir tudo. Nesse caos ardente que se retorcia entre dor e nascimento, surgiu Ignifar – O Coração Incandescente.
+Seu corpo era rocha em combustão, sua cabeça um vazio ardente — pois o fogo não pensa como os mortais, apenas existe para transformar. Ignifar caminhou sobre o caos, comprimindo a fúria do mundo em seu próprio peito. Cada passo solidificava a crosta; cada golpe de seus punhos criava montanhas.
+Dizem que no princípio a Terra tremia e queimava sem descanso. O fogo ameaçava consumir tudo antes mesmo da criação existir. Foi então que Ignifar assumiu seu propósito: conter o caos para que o mundo pudesse nascer.
+Ele mergulhou nas profundezas do planeta ainda jovem, carregando o fogo em seu próprio corpo, selando-o sob camadas de pedra e tempo. Cada fissura tornou-se um vulcão. Cada cicatriz, uma falha tectônica. Seu sacrifício moldou a Terra estável o bastante para sustentar a vida. Seu sono deu origem aos vulcões, às placas tectônicas e ao núcleo do mundo.
+Ignifar nunca governou — ele foi o primeiro pilar do mundo conhecido.
+Ele nunca morreu. Terremotos são seus movimentos involuntários. Erupções, sua respiração profunda. Quando a ordem natural se rompe, o fogo em seu peito brilha mais forte. Nos raros registros de sua volta à superfície, não veio como destruidor, mas como renovador. Pois assim como moldou o mundo no início, será ele a moldá-lo quantas vezes forem necessárias.`,
+
+    img: "imagens/Ignifar.png",
+    img2: "imagens/Token-Ignifar.png"
+}
+
+
+
 
 
 
