@@ -2847,7 +2847,7 @@ Lendas dizem que toda grande nevasca é um aviso. Ele está se movendo. E se des
   especialPorNivel: 8,
   armaduraPorNivel: 2,
     TagsCriatura: "Fogo,Lendário,Comunidade,@Damn",
-    TipoElementoCriatura: "Fogo",
+    TipoElementoCriatura: "Caos",
 
   Ataquebásico: `Soco – 6d12 de dano Esmagante – Agilidade (DT 9)`,
 
