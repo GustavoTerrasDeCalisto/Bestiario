@@ -432,6 +432,103 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
   img: "imagens/Albitaur.png",
   img2: "imagens/Token-Albitaur.png"
 }
+
+
+,"Ambrelino": {
+    vida: 48,
+    sanidade: 15,
+    especial: 24,
+    armadura: 4,
+    movimento: 40,
+    vidaPorNivel: 6,
+    sanidadePorNivel: 3,
+    especialPorNivel: 5,
+    armaduraPorNivel: 4,
+    TagsCriatura: "Montaria,Campo Aberto,Floresta,Caça em Grupo,Comunidade,@Damn",
+    TipoElementoCriatura: "Desconhecido",
+
+    AtaqueBásico: `Garras – 3d8 de dano Cortante. Causa Hemorragia – Agilidade (DT 8)`,
+
+    bru: 29, agi: 55, det: 20, pre: 13, lib: 13, cnx: 22,
+    bruDano: 4, agiDano: 9, detDano: 2, preDano: 1, libDano: 1, cnxDano: 2,
+    bruTest: 7, agiTest: 15, detTest: 4, preTest: 1, libTest: 1, cnxTest: 4,
+
+    bonus:`Resistente: Esmagante, Tremor, Mental`,
+
+    bonus2:`{pigmento}*Montaria:*{/pigmento} Permite ser montado caso o personagem passe em um teste de Adestrar Animais. Requisito: Conexão (DT 22). Se aceito, o Ambrelino concede +6m de deslocamento adicional ao montador.
+{pigmento}*Ferocidade:*{/pigmento} Executa um bote certeiro no ponto vital da criatura mais fraca presente na cena (menor PV atual), causando 5d8 de dano Cortante e aplicando Hemorragia. Teste: Agilidade (DT 24).
+{pigmento}*Pontos Fracos:*{/pigmento} Sempre ativa. Ao receber 3 ataques consecutivos de um Ambrelino, o alvo entra no estado Caído.
+{pigmento}*Oportunista:*{/pigmento} Sempre ativa. Ambrelinos evitam combate direto, priorizando ataques rápidos, ferimentos debilitantes e recuo imediato sem provocar ataques de oportunidade.
+{pigmento}*Furtividade Natural:*{/pigmento} Sempre ativa. Quando está com menos de metade da Vida, desloca-se pelas sombras ou vegetação sem produzir sons. Recebe +5 em Testes de Furtividade e não pode ser rastreado por meios comuns.`,
+
+    bonus3:`Montaria Mística
+Elemento – Desconhecido`,
+
+    Magias:`Nenhuma.`,
+    Passivas:`-`,
+    Talentos:`-`,
+
+    Descricao:`Poucos já viram grupos de Ambrelinos e continuaram vivos para descrever a experiência. Ainda menos ousaram persegui-los. Essas criaturas felinas, altas como cavalos e leves como predadores ancestrais, não pertencem inteiramente ao mundo material — caminham na fronteira entre a carne e o Desconhecido.
+Seus pelos negros absorvem a luz ao redor, marcados por padrões mais claros nas pernas, como constelações mortas gravadas no corpo. Seus olhos dourados jamais piscam por completo, e sua língua bifurcada revela que há algo profundamente errado em classificá-los como simples animais.
+A língua bifurcada dos Ambrelinos não é apenas física. Diz-se que eles sentem mentiras no ar, percebendo intenções ocultas como sabores amargos. Ordens místicas afirmam que conseguem distinguir culpa de inocência apenas pelo hálito de uma criatura.
+Diferente de bestas comuns, Ambrelinos não atacam por fome. Eles observam. Podem seguir viajantes por dias sem jamais serem percebidos, garantindo que nenhuma ameaça rompa o equilíbrio do território.
+Quando provocados, atacam com precisão cirúrgica, visando pontos vitais antes de desaparecer novamente nas sombras.
+Ambrelinos não podem ser domesticados por métodos convencionais. Contudo, quando um permite ser montado, isso é considerado um sinal místico de que aquela alma está em profundo equilíbrio consigo mesma e com o mundo.` ,
+
+    img: "imagens/Ambrelino.png",
+    img2: "imagens/Token-Ambrelino.png"
+}
+	
+	,"Troteron": {
+    vida: 62,
+    sanidade: 22,
+    especial: 27,
+    armadura: 7,
+    movimento: 28,
+    vidaPorNivel: 8,
+    sanidadePorNivel: 4,
+    especialPorNivel: 5,
+    armaduraPorNivel: 6,
+    TagsCriatura: "Montaria, Campo Aberto,Caça em Grupo,Comunidade,@Damn",
+    TipoElementoCriatura: "Caos",
+
+    AtaqueBásico: `Pisar com Casco – 3d8 de dano Esmagante – Agilidade (DT 7)
+Golpe com Cauda – 3d8 de dano Esmagante – Agilidade (DT 6)`,
+
+    bru: 30, agi: 20, det: 30, pre: 13, lib: 13, cnx: 22,
+    bruDano: 4, agiDano: 2, detDano: 4, preDano: 1, libDano: 1, cnxDano: 2,
+    bruTest: 7, agiTest: 4, detTest: 7, preTest: 1, libTest: 1, cnxTest: 4,
+
+    bonus:`Resistente: Esmagante, Tremor, Mental`,
+
+    bonus2:`{pigmento}*Montaria:*{/pigmento} Permite ser montado caso o personagem passe em três testes consecutivos de Adestrar Animais. Requisito: Conexão (DT 16). Enquanto montado, o cavaleiro recebe +6m de deslocamento e vantagem em testes de Resistência física.
+{pigmento}*Gigante por Natureza:*{/pigmento} Sempre ativa. Enquanto estiver montado, ataques físicos contra o cavaleiro possuem desvantagem.
+{pigmento}*Coice Titânico:*{/pigmento} Sempre ativa. Qualquer criatura que tentar atacar o Troteron por trás sofre automaticamente um coice poderoso, causando 6d8 de dano Esmagante. Teste: Determinação (DT 12) para evitar o dano total.
+{pigmento}*Amigo nos Piores Momentos:*{/pigmento} Sempre ativa. Caso o cavaleiro esteja em estado de Caído, Paralisado ou Morrendo, o Troteron reage automaticamente:
+• *Caído:* Move-se imediatamente, levantando seu cavaleiro sem gastar ação.
+• *Paralisado:* Transporta seu cavaleiro para uma zona segura até o fim da condição.
+• *Morrendo:* Interrompe qualquer ação para resgatar e estabilizar seu cavaleiro.`,
+
+    bonus3:`Montaria Pesada
+Elemento – Caos`,
+
+    Magias:`Nenhuma.`,
+    Passivas:`-`,
+    Talentos:`-`,
+
+    Descricao:`Os Troterons representam o ápice absoluto das raças equinas de tração e montaria pesada. São capazes de puxar carruagens reais, arados de vilas inteiras e até máquinas de guerra nas maiores campanhas militares.
+Em marchas prolongadas, não se cansam. Sob chuva, neve, fogo ou escuridão, seguem adiante com determinação quase sobrenatural. Existem relatos de Troterons que caminharam dias sem repouso para salvar caravanas perdidas ou resgatar cavaleiros feridos, ignorando os próprios ferimentos.
+Apesar da reputação de confiáveis, Troterons não são submissos. São criaturas de inteligência incomum. Aceitam apenas condutores que demonstrem firmeza, respeito e presença. Aqueles que tentam dominá-los pela força aprendem rapidamente que um único giro de corpo pode derrubar um cavaleiro, e que sua cauda é capaz de quebrar ossos e arremessar homens armadurados.
+Cavaleiros que criam vínculo com um Troteron afirmam que a criatura responde a comandos antes mesmo de serem dados, como se compartilhasse a intenção do condutor. Em combate, avançam sem hesitação, ignorando flechas e chamas, protegendo seu cavaleiro como verdadeiros guardiões ancestrais.
+Hoje, são treinados desde filhotes em mosteiros de cavalaria, guildas mercantis e estrebarias nobres. Mestres de sela afirmam: um Troteron não se domina — se conquista.`,
+
+    img: "imagens/Troteron.png",
+    img2: "imagens/Token-Troteron.png"
+}
+
+
+
+	
 ,"DracoGrurafa": {
     vida: 238,
     sanidade: 54,
