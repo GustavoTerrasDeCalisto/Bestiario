@@ -141,7 +141,7 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
     TagsCriatura: "Comum,Solitário,Grande,Comunidade,@Damn",
     TipoElementoCriatura: "Poder",
 
-    AtaqueBasico: `2d10 de dano Cortante - Agilidade`,
+  Ataquebásico: `2d10 de dano Cortante - Agilidade`,
 
     bru: 16, agi: 18, det: 14, pre: 14, lib: 12, cnx: 12,
     bruDano: 1, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 0,
@@ -184,7 +184,7 @@ Extremamente territorialista, esse felino prefere emboscadas rápidas e fatais, 
     TagsCriatura: "Comum,Solitário,Grande,Comunidade,@Damn",
     TipoElementoCriatura: "Caos",
 
-    AtaqueBasico: `2d12 de dano Cortante - Brutalidade`,
+  Ataquebásico: `2d12 de dano Cortante - Brutalidade`,
 
     bru: 20, agi: 16, det: 16, pre: 12, lib: 10, cnx: 12,
     bruDano: 3, agiDano: 1, detDano: 2, preDano: 0, libDano: 0, cnxDano: 0,
