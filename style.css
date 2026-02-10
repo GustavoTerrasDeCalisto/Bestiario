@@ -1496,3 +1496,16 @@ a:hover {
   display: none;
 }
 
+
+.tag-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.tag-link:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+
+
