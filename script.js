@@ -2748,10 +2748,9 @@ Lendas dizem que toda grande nevasca é um aviso. Ele está se movendo. E se des
     especial: 82,
     armadura: 17,
     movimento: 12,
-    vidaPorNivel: 0,
-    sanidadePorNivel: 0,
-    especialPorNivel: 0,
-    armaduraPorNivel: 0,
+    vidaPorNivel: 21,  sanidadePorNivel: 10,
+  especialPorNivel: 8,
+  armaduraPorNivel: 2,
     TagsCriatura: "Fogo,Lendário,Comunidade,@Damn",
     TipoElementoCriatura: "Fogo",
 
