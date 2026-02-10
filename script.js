@@ -3039,7 +3039,7 @@ function createCriatureCard(criatura) {
 const tagLinks = {
   "Damn": "https://seusite.com/wiki/damn",
   "Tio_lipe": "https://seusite.com/mapa/rohan",
-  "H1five": "https://seusite.com/mapa/gra-teach",
+  "H1five": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   // outros
 };
 
