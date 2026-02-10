@@ -3040,7 +3040,7 @@ const tagLinks = {
   "Damn": "https://seusite.com/wiki/damn",
   "Tio_lipe": "https://seusite.com/mapa/rohan",
   "H1five": "https://seusite.com/mapa/gra-teach",
-  // adicione quantos quiser
+  // outros
 };
 
 function preencherFiltrosCriatura() {
