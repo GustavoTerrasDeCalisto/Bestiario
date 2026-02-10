@@ -3036,6 +3036,12 @@ function createCriatureCard(criatura) {
 
   return card;
 }
+const tagLinks = {
+  "Damn": "https://seusite.com/wiki/damn",
+  "Tio_lipe": "https://seusite.com/mapa/rohan",
+  "H1five": "https://seusite.com/mapa/gra-teach",
+  // adicione quantos quiser
+};
 
 function preencherFiltrosCriatura() {
   const elementosSet = new Set();
@@ -3318,22 +3324,37 @@ abrirPopup.addEventListener("click", () => {
       tagsNormais = dados.TagsCriatura.split(',').map(t => t.trim()).filter(t => t);
     }
 
-    tagsNormais.forEach(tag => {
-      const span = document.createElement("span");
-      span.className = `tag ${tag}`;
+tagsNormais.forEach(tag => {
+  let el;
 
-      const cor = tagColors[tag];
-      if (cor?.gradient) {
-        span.classList.add("elemento");
-        span.style.background = cor.gradient;
-      } else if (cor?.background) {
-        span.style.backgroundColor = cor.background;
-        span.style.color = cor.color;
-      }
+  // --- Se for tag especial com @, vira link ---
+  if (tag.startsWith("@")) {
+    const cleanTag = tag.substring(1);
 
-      span.textContent = tag;
-      tagsContainer.appendChild(span);
-    });
+    el = document.createElement("a");
+    el.className = `tag tag-link ${cleanTag}`;
+    el.textContent = `@${cleanTag}`;
+    el.href = tagLinks?.[cleanTag] || "#";
+    el.target = "_blank";
+
+  } else {
+    el = document.createElement("span");
+    el.className = `tag ${tag}`;
+    el.textContent = tag;
+  }
+
+  const cor = tagColors[tag.replace("@","")];
+  if (cor?.gradient) {
+    el.classList.add("elemento");
+    el.style.background = cor.gradient;
+  } else if (cor?.background) {
+    el.style.backgroundColor = cor.background;
+    el.style.color = cor.color;
+  }
+
+  tagsContainer.appendChild(el);
+});
+
 
     card.appendChild(tagsContainer);
 
