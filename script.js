@@ -128,7 +128,94 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
     img: "imagens/RaposaSelvagem.png",
     img2: "imagens/Token-RaposaSelvagem.png"
 }
-  
+,"Nekhram Sombrifelis": {
+    vida: 36,
+    sanidade: 18,
+    especial: 0,
+    armadura: 4,
+    movimento: 10,
+    vidaPorNivel: 6,
+    sanidadePorNivel: 3,
+    especialPorNivel: 0,
+    armaduraPorNivel: 6,
+    TagsCriatura: "Comum,Solitário,Grande,Comunidade,@Damn",
+    TipoElementoCriatura: "Poder",
+
+    AtaqueBasico: `2d10 de dano Cortante - Agilidade`,
+
+    bru: 16, agi: 18, det: 14, pre: 14, lib: 12, cnx: 12,
+    bruDano: 1, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 0,
+    bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: 1, cnxTest: 1,
+
+    bonus:`Resistente: dano de Escuridão
+    Vulnerável: dano de Luz`,
+
+    bonus2:`{pigmento}*Mordida Silenciosa:*{/pigmento} O Nekhram salta das sombras, cravando suas presas com extrema precisão. Dano perfurante: 1d10 +Nível atual. Teste: Agilidade. DT:15.
+{pigmento}*Garras Umbráticas:*{/pigmento} Suas garras parecem absorver a luz ao atingir o alvo. Dano cortante: 1d8 +Nível atual. Teste: Agilidade. DT:13.
+{pigmento}*Passos Fantasmagóricos:*{/pigmento} Enquanto estiver em ambientes de baixa iluminação, o Nekhram recebe +1d10 em testes de furtividade. Teste: Agilidade.
+{pigmento}*Visão Noturna Superior:*{/pigmento} Enxerga perfeitamente na escuridão total até 80 metros. Teste: Preservação.
+{pigmento}*Instinto Predatório:*{/pigmento} Contra alvos surpreendidos, recebe +2 no primeiro ataque. Teste: Determinação.`,
+
+    bonus3:`Animal Comum
+Elemento – Poder`,
+
+    Magias: `Nenhuma.`,
+    Passivas:`Furtividade sombria`,
+    Talentos: `-`,
+
+    Descricao:`O Nekhram Sombrifelis é um felino de grande porte, com pelagem negra profunda que parece absorver a luz ao seu redor. Seus olhos prateados cortam a escuridão como lâminas, denunciando sua natureza predatória e silenciosa.
+Apesar de poder ser encontrado em todos os continentes, sua maior concentração ocorre no Império de Rohan, onde os Povos de Pele Pálida convivem com sua presença quase mística. Nas cidades góticas e becos enevoados, o Nekhram se tornou símbolo de presságios e vigilância silenciosa.
+Extremamente territorialista, esse felino prefere emboscadas rápidas e fatais, raramente sendo visto antes do ataque. Muitos habitantes de Rohan acreditam que cruzar o olhar de um Nekhram é sinal de destino inevitável.`,
+
+    img: "imagens/NekhramSombrifelis.png",
+    img2: "imagens/Token-NekhramSombrifelis.png"
+}
+	
+	,"Tigrath Kharuun": {
+    vida: 48,
+    sanidade: 16,
+    especial: 0,
+    armadura: 6,
+    movimento: 9,
+    vidaPorNivel: 7,
+    sanidadePorNivel: 3,
+    especialPorNivel: 0,
+    armaduraPorNivel: 7,
+    TagsCriatura: "Comum,Solitário,Grande,Comunidade,@Damn",
+    TipoElementoCriatura: "Caos",
+
+    AtaqueBasico: `2d12 de dano Cortante - Brutalidade`,
+
+    bru: 20, agi: 16, det: 16, pre: 12, lib: 10, cnx: 12,
+    bruDano: 3, agiDano: 1, detDano: 2, preDano: 0, libDano: 0, cnxDano: 0,
+    bruTest: 4, agiTest: 2, detTest: 2, preTest: 1, libTest: 0, cnxTest: 1,
+
+    bonus:`Resistente: dano Físico
+    Vulnerável: dano de Gelo`,
+
+    bonus2:`{pigmento}*Mordida Esmagadora:*{/pigmento} O Tigrath avança com força brutal, dilacerando carne e ossos. Dano esmagante: 1d12 +Nível atual. Teste: Brutalidade. DT:16.
+{pigmento}*Rasgo Predatório:*{/pigmento} Um poderoso golpe com as patas dianteiras que pode derrubar o alvo. Dano cortante: 1d10 +Nível atual. Teste: Brutalidade. DT:14.
+{pigmento}*Salto de Caça:*{/pigmento} Pode avançar até 12 metros em linha reta antes de atacar, recebendo +1d8 no ataque. Teste: Agilidade.
+{pigmento}*Rugido Intimidante:*{/pigmento} Inimigos em até 10 metros devem realizar Teste de Intimidação. DT:14.
+{pigmento}*Resistência Brutal:*{/pigmento} Reduz em 2 todo dano físico recebido. Teste: Determinação.`,
+
+    bonus3:`Animal Comum
+Elemento – Caos`,
+
+    Magias: `Nenhuma.`,
+    Passivas:`-`,
+    Talentos: `-`,
+
+    Descricao:`O Tigrath Kharuun é um colossal felino listrado, semelhante a um tigre, com musculatura densa e presas capazes de atravessar armaduras leves. Seu pelo alaranjado com marcas negras o torna uma figura temida nas rotas comerciais.
+Embora possa ser encontrado em diversas regiões, sua maior população reside em Grã Teach, no País das Docas, onde humanos disputam espaço com predadores colossais. Nessas áreas portuárias, o Tigrath se adaptou ao ambiente urbano, emboscando presas entre armazéns, telhados e becos.
+Símbolo de força e brutalidade, o Tigrath raramente recua de uma batalha, atacando com fúria até que apenas um lado permaneça de pé.`,
+
+    img: "imagens/TigrathKharuun.png",
+    img2: "imagens/Token-TigrathKharuun.png"
+}
+
+
+
   
   
   
