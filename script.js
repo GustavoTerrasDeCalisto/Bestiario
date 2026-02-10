@@ -2789,7 +2789,7 @@ Ele mergulhou nas profundezas do planeta ainda jovem, carregando o fogo em seu p
 Ignifar nunca governou — ele foi o primeiro pilar do mundo conhecido.
 Ele nunca morreu. Terremotos são seus movimentos involuntários. Erupções, sua respiração profunda. Quando a ordem natural se rompe, o fogo em seu peito brilha mais forte. Nos raros registros de sua volta à superfície, não veio como destruidor, mas como renovador. Pois assim como moldou o mundo no início, será ele a moldá-lo quantas vezes forem necessárias.`,
 
-    img: "imagens/Ignifar.png",
+    img: "imagens/Token-Ignifar.png",
     img2: "imagens/Token-Ignifar.png"
 }
 
