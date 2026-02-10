@@ -447,7 +447,7 @@ Os Albitaur combinam brutalidade e inteligência com um profundo sentido de pres
     TagsCriatura: "Montaria,Campo Aberto,Floresta,Caça em Grupo,Comunidade,@Damn",
     TipoElementoCriatura: "Desconhecido",
 
-    AtaqueBásico: `Garras – 3d8 de dano Cortante. Causa Hemorragia – Agilidade (DT 8)`,
+Ataquebásico: `Garras – 3d8 de dano Cortante. Causa Hemorragia – Agilidade (DT 8)`,
 
     bru: 29, agi: 55, det: 20, pre: 13, lib: 13, cnx: 22,
     bruDano: 4, agiDano: 9, detDano: 2, preDano: 1, libDano: 1, cnxDano: 2,
@@ -491,10 +491,8 @@ Ambrelinos não podem ser domesticados por métodos convencionais. Contudo, quan
     armaduraPorNivel: 6,
     TagsCriatura: "Montaria, Campo Aberto,Caça em Grupo,Comunidade,@Damn",
     TipoElementoCriatura: "Caos",
-
-    AtaqueBásico: `Pisar com Casco – 3d8 de dano Esmagante – Agilidade (DT 7)
+    Ataquebásico: `Pisar com Casco – 3d8 de dano Esmagante – Agilidade (DT 7)
 Golpe com Cauda – 3d8 de dano Esmagante – Agilidade (DT 6)`,
-
     bru: 30, agi: 20, det: 30, pre: 13, lib: 13, cnx: 22,
     bruDano: 4, agiDano: 2, detDano: 4, preDano: 1, libDano: 1, cnxDano: 2,
     bruTest: 7, agiTest: 4, detTest: 7, preTest: 1, libTest: 1, cnxTest: 4,
