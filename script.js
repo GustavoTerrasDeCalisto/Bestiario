@@ -186,7 +186,7 @@ Diferente de outros predadores, não defende territórios extensos. Prefere áre
     especialPorNivel: 4,
     armaduraPorNivel: 2,
 
-    TagsCriatura: "Animal,Comum,Taiga,Savana,Caça em grupo,Comunidade,@Damn",
+    TagsCriatura: "Animal,Comum,Taiga,Savana,Caça em Grupo,Comunidade,@Damn",
     TipoElementoCriatura: "Caos",
 
     Ataquebásico: `Garras – 3d8 de dano Cortante – Agilidade (DT 7)
