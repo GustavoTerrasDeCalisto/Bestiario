@@ -175,7 +175,7 @@ Diferente de outros predadores, não defende territórios extensos. Prefere áre
 }
 
 	
-,"Panthera arctos": {
+,"Panthera Arctos": {
     vida: 75,
     sanidade: 25,
     especial: 24,
