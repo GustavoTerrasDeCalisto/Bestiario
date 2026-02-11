@@ -128,93 +128,155 @@ Quando acuada, a Raposa Selvagem não hesita em usar sua velocidade e reflexos p
     img: "imagens/RaposaSelvagem.png",
     img2: "imagens/Token-RaposaSelvagem.png"
 }
-,"Nekhram Sombrifelis": {
-    vida: 36,
-    sanidade: 18,
-    especial: 0,
+
+,"Panthera Vulpes": {
+    vida: 55,
+    sanidade: 25,
+    especial: 24,
     armadura: 4,
-    movimento: 10,
+    movimento: 22,
     vidaPorNivel: 6,
     sanidadePorNivel: 3,
-    especialPorNivel: 0,
-    armaduraPorNivel: 6,
-    TagsCriatura: "Comum,Solitário,Grande,Comunidade,@Damn",
-    TipoElementoCriatura: "Poder",
+    especialPorNivel: 4,
+    armaduraPorNivel: 3,
 
-  Ataquebásico: `2d10 de dano Cortante - Agilidade`,
-
-    bru: 16, agi: 18, det: 14, pre: 14, lib: 12, cnx: 12,
-    bruDano: 1, agiDano: 2, detDano: 1, preDano: 0, libDano: 0, cnxDano: 0,
-    bruTest: 2, agiTest: 3, detTest: 1, preTest: 1, libTest: 1, cnxTest: 1,
-
-    bonus:`Resistente: dano de Escuridão
-    Vulnerável: dano de Luz`,
-
-    bonus2:`{pigmento}*Mordida Silenciosa:*{/pigmento} O Nekhram salta das sombras, cravando suas presas com extrema precisão. Dano perfurante: 1d10 +Nível atual. Teste: Agilidade. DT:15.
-{pigmento}*Garras Umbráticas:*{/pigmento} Suas garras parecem absorver a luz ao atingir o alvo. Dano cortante: 1d8 +Nível atual. Teste: Agilidade. DT:13.
-{pigmento}*Passos Fantasmagóricos:*{/pigmento} Enquanto estiver em ambientes de baixa iluminação, o Nekhram recebe +1d10 em testes de furtividade. Teste: Agilidade.
-{pigmento}*Visão Noturna Superior:*{/pigmento} Enxerga perfeitamente na escuridão total até 80 metros. Teste: Preservação.
-{pigmento}*Instinto Predatório:*{/pigmento} Contra alvos surpreendidos, recebe +2 no primeiro ataque. Teste: Determinação.`,
-
-    bonus3:`Animal Comum
-Elemento – Poder`,
-
-    Magias: `Nenhuma.`,
-    Passivas:`Furtividade sombria`,
-    Talentos: `-`,
-
-    Descricao:`O Nekhram Sombrifelis é um felino de grande porte, com pelagem negra profunda que parece absorver a luz ao seu redor. Seus olhos prateados cortam a escuridão como lâminas, denunciando sua natureza predatória e silenciosa.
-Apesar de poder ser encontrado em todos os continentes, sua maior concentração ocorre no Império de Rohan, onde os Povos de Pele Pálida convivem com sua presença quase mística. Nas cidades góticas e becos enevoados, o Nekhram se tornou símbolo de presságios e vigilância silenciosa.
-Extremamente territorialista, esse felino prefere emboscadas rápidas e fatais, raramente sendo visto antes do ataque. Muitos habitantes de Rohan acreditam que cruzar o olhar de um Nekhram é sinal de destino inevitável.`,
-
-    img: "imagens/NekhramSombrifelis.png",
-    img2: "imagens/Token-NekhramSombrifelis.png"
-}
-	
-	,"Tigrath Kharuun": {
-    vida: 48,
-    sanidade: 16,
-    especial: 0,
-    armadura: 6,
-    movimento: 9,
-    vidaPorNivel: 7,
-    sanidadePorNivel: 3,
-    especialPorNivel: 0,
-    armaduraPorNivel: 7,
-    TagsCriatura: "Comum,Solitário,Grande,Comunidade,@Damn",
+    TagsCriatura: "Animal,Deserto,Savana,Solitário,Comunidade,@Damn",
     TipoElementoCriatura: "Caos",
 
-  Ataquebásico: `2d12 de dano Cortante - Brutalidade`,
+    Ataquebásico: `Garras – 4d8 de dano Cortante – Agilidade (DT 7)
+Mordida – 4d10 de dano Perfurante – Agilidade (DT 10)`,
 
-    bru: 20, agi: 16, det: 16, pre: 12, lib: 10, cnx: 12,
-    bruDano: 3, agiDano: 1, detDano: 2, preDano: 0, libDano: 0, cnxDano: 0,
-    bruTest: 4, agiTest: 2, detTest: 2, preTest: 1, libTest: 0, cnxTest: 1,
+    bru: 28, agi: 24, det: 24, pre: 16, lib: 16, cnx: 28,
+    bruDano: 4, agiDano: 3, detDano: 3, preDano: 1, libDano: 1, cnxDano: 4,
+    bruTest: 6, agiTest: 5, detTest: 5, preTest: 2, libTest: 2, cnxTest: 6,
 
-    bonus:`Resistente: dano Físico
-    Vulnerável: dano de Gelo`,
+    bonus: `-`,
 
-    bonus2:`{pigmento}*Mordida Esmagadora:*{/pigmento} O Tigrath avança com força brutal, dilacerando carne e ossos. Dano esmagante: 1d12 +Nível atual. Teste: Brutalidade. DT:16.
-{pigmento}*Rasgo Predatório:*{/pigmento} Um poderoso golpe com as patas dianteiras que pode derrubar o alvo. Dano cortante: 1d10 +Nível atual. Teste: Brutalidade. DT:14.
-{pigmento}*Salto de Caça:*{/pigmento} Pode avançar até 12 metros em linha reta antes de atacar, recebendo +1d8 no ataque. Teste: Agilidade.
-{pigmento}*Rugido Intimidante:*{/pigmento} Inimigos em até 10 metros devem realizar Teste de Intimidação. DT:14.
-{pigmento}*Resistência Brutal:*{/pigmento} Reduz em 2 todo dano físico recebido. Teste: Determinação.`,
+    bonus2: `{pigmento}*Ataque e Recuo:*{/pigmento} Após acertar um ataque com garras, a Panthera Vulpes pode se deslocar até metade de sua movimentação para uma área com cobertura como reação.
+{pigmento}*Bote Explosivo:*{/pigmento} Se atacar a partir de Furtividade ou de uma área de cobertura, o primeiro ataque tem vantagem. O alvo pode realizar um Teste de Percepção (DT 14). Sucesso: evita o bote e anula a vantagem.
+{pigmento}*Camuflagem de Folhas Secas:*{/pigmento} Enquanto estiver em terreno com areia, folhas secas ou vegetação baixa, recebe vantagem em testes de Furtividade. Se permanecer imóvel por um turno completo, torna-se Oculta automaticamente para criaturas a mais de 6m.
+{pigmento}*Rastro Enganoso:*{/pigmento} Testes para rastrear a Panthera Vulpes sofrem desvantagem em terrenos áridos ou cobertos de folhas secas.
+{pigmento}*Olhar Focado:*{/pigmento} Se observar um alvo por um turno completo sem ser detectada, o próximo ataque contra esse alvo recebe vantagem e ignora armadura.`,
 
-    bonus3:`Animal Comum
+    bonus3: `Animal comum
 Elemento – Caos`,
 
     Magias: `Nenhuma.`,
-    Passivas:`-`,
+    Passivas: `-`,
     Talentos: `-`,
 
-    Descricao:`O Tigrath Kharuun é um colossal felino listrado, semelhante a um tigre, com musculatura densa e presas capazes de atravessar armaduras leves. Seu pelo alaranjado com marcas negras o torna uma figura temida nas rotas comerciais.
-Embora possa ser encontrado em diversas regiões, sua maior população reside em Grã Teach, no País das Docas, onde humanos disputam espaço com predadores colossais. Nessas áreas portuárias, o Tigrath se adaptou ao ambiente urbano, emboscando presas entre armazéns, telhados e becos.
-Símbolo de força e brutalidade, o Tigrath raramente recua de uma batalha, atacando com fúria até que apenas um lado permaneça de pé.`,
+    Descricao: `Nas bordas das florestas antigas, savanas e desertos escaldantes, há uma criatura comum, mas jamais ignorada: o Panthera Vulpes. Com corpo poderoso e astúcia inquieta, sua pelagem vermelha com listras negras intimida e camufla.
+Imóvel entre folhas secas, parece apenas um amontoado de sombras e outono. Mas, ao se mover, é como um raio silencioso atravessando o mato.
+Durante a caça, observa por longos minutos, calcula distâncias e avança com saltos explosivos e precisos. Fora da caça, demonstra comportamento curioso e travesso. Existem inúmeros relatos de Raxinos que roubam comida de acampamentos, escondem objetos brilhantes e seguem viajantes por pura curiosidade.
+Diferente de outros predadores, não defende territórios extensos. Prefere áreas menores, ricas em esconderijos naturais. Costuma viver solitário, formando pares temporários apenas durante o período de acasalamento. Nesse tempo, torna-se afetuoso e protetor, permanecendo por algumas luas ao lado da prole.`,
 
-    img: "imagens/TigrathKharuun.png",
-    img2: "imagens/Token-TigrathKharuun.png"
+    img: "imagens/Panthera-Vulpes.png",
+    img2: "imagens/Token-Panthera-Vulpes.png"
 }
 
+	
+,"Panthera arctos": {
+    vida: 75,
+    sanidade: 25,
+    especial: 24,
+    armadura: 5,
+    movimento: 18,
+    vidaPorNivel: 1,
+    sanidadePorNivel: 3,
+    especialPorNivel: 4,
+    armaduraPorNivel: 2,
 
+    TagsCriatura: "Animal,Comum,Taiga,Savana,Caça em grupo,Comunidade,@Damn",
+    TipoElementoCriatura: "Caos",
+
+    Ataquebásico: `Garras – 3d8 de dano Cortante – Agilidade (DT 7)
+Mordida – 4d10 de dano Perfurante – Agilidade (DT 10)`,
+
+    bru: 39, agi: 15, det: 39, pre: 13, lib: 13, cnx: 28,
+    bruDano: 6, agiDano: 1, detDano: 6, preDano: 1, libDano: 1, cnxDano: 4,
+    bruTest: 10, agiTest: 1, detTest: 10, preTest: 2, libTest: 1, cnxTest: 6,
+
+    bonus: `Resistente: Esmagante, Cortante, Perfurante
+Imune: Mental`,
+
+    bonus2: `{pigmento}*Rugido de Convergência:*{/pigmento} Panthera arctos nunca atacam sozinhos. Ao se sentirem ameaçados, emitem um rugido para convocar sua matilha. Teste de Conexão 1d20:
+1–8: +2 membros (DT geral +2)
+9–16: +3 membros (DT geral +3)
+17–20: +4 membros (DT geral +4)
+
+{pigmento}*Pressão de Matilha:*{/pigmento} Se percorrer pelo menos 9m em linha reta antes de atacar, causa 20 de dano Esmagante. Teste de Agilidade (DT 16). Falha: o alvo entra em estado Caído por 2 turnos.
+{pigmento}*Caçadores Revezados:*{/pigmento} Quando um Panthera arctos termina seu turno adjacente ao alvo, outro Panthera arctos a até 9m pode se mover até metade da sua movimentação como reação, sem gastar ação.
+{pigmento}*Mordida de Arrasto:*{/pigmento} Se acertar uma mordida em um alvo Caído ou Paralisado, ele ou outro Panthera arctos da matilha pode arrastar o alvo até 5m sem provocar ataques de oportunidade.
+{pigmento}*Ataque em Corrente:*{/pigmento} Se um Panthera arctos derrubar ou reduzir a Vida de um alvo, outro Panthera arctos a até 6m pode realizar um ataque básico contra o mesmo alvo como reação (1 vez por Panthera arctos).
+{pigmento}*Cercar a Presa:*{/pigmento}
+• 2 Pantheras adjacentes: vantagem nos testes.
+• 3 Pantheras adjacentes: o alvo sofre interferência em esquivas.
+• 4 Pantheras adjacentes: ataque em uníssono. Teste de Agilidade (DT 24). Falha: a criatura é estraçalhada e morta.`,
+
+    bonus3: `Animal comum
+Elemento – Caos`,
+
+    Magias: `Nenhuma.`,
+    Passivas: `-`,
+    Talentos: `-`,
+
+    Descricao: `Entre as barreiras douradas e as savanas quentes do sul, existe uma criatura que muitos viajantes veem à distância, mas poucos enfrentam: os Panthera arctos. Sua pelagem alaranjada marcada por listras escuras e a juba espessa lembram brasas vivas ao pôr do sol.
+Apesar da aparência feroz e das presas capazes de rasgar couro e osso, são criaturas de natureza protetora, que evitam confrontos sempre que possível. Seu comportamento lembra mais o de grandes animais de pasto do que o de monstros sanguinários.
+Vivem em territórios vastos de campos abertos e savanas aquecidas. Cada matilha delimita sua área com marcas visuais e odoríferas, evitando confrontos desnecessários. Atacam apenas quando seu território é invadido repetidamente, filhotes estão em perigo ou quando caçados.
+Diferente de predadores de emboscada, são corredores incansáveis. Perseguem suas presas por longas distâncias, mantendo pressão constante até a exaustão. A coordenação da matilha é perfeita: alguns guiam, outros pressionam, até que o alvo sucumba.
+As matilhas raramente possuem menos de sete membros, formando verdadeiras famílias extensas. Quando um deles morre, os demais permanecem próximos por dias, soltando rugidos longos ao entardecer, um lamento profundo que ecoa pelas planícies.`,
+
+    img: "imagens/Panthera-arctos.png",
+    img2: "imagens/Token-Panthera-arctos.png"
+}
+
+,"Panthera Papio": {
+    vida: 48,
+    sanidade: 20,
+    especial: 32,
+    armadura: 3,
+    movimento: 18,
+    vidaPorNivel: 6,
+    sanidadePorNivel: 3,
+    especialPorNivel: 5,
+    armaduraPorNivel: 2,
+
+    TagsCriatura: "Escuridão,Agressivo,Raro,Selva,Floresta,Comunidade,@Damn",
+    TipoElementoCriatura: "Poder",
+
+    Ataquebásico: `Garras – 5d8 de dano Escuridão – Agilidade (DT 9)
+Mordida – 6d10 de dano Perfurante – Agilidade (DT 15)`,
+
+    bru: 30, agi: 34, det: 28, pre: 28, lib: 28, cnx: 19,
+    bruDano: 4, agiDano: 5, detDano: 4, preDano: 4, libDano: 4, cnxDano: 2,
+    bruTest: 7, agiTest: 8, detTest: 6, preTest: 6, libTest: 6, cnxTest: 3,
+
+    bonus: `Resistente: Mental, Sono, Escuridão
+Vulnerável: Luz`,
+
+    bonus2: `{pigmento}*Dom da Furtividade:*{/pigmento} Sempre ativa. Quando está em áreas sombreadas ou com pouca luminosidade, a Panthera Papio recebe vantagem em testes de Furtividade. Durante a noite, nunca falha nesses testes.
+{pigmento}*Salto das Sombras:*{/pigmento} Sempre ativa. Se iniciar o turno em sombra ou escuridão, pode se deslocar até metade da movimentação como ação livre, desde que termine o movimento ainda em área sombreada.
+{pigmento}*Entre Troncos e Raízes:*{/pigmento} Em florestas ou ambientes naturais, pode usar árvores, raízes e pedras como cobertura total ao final de qualquer movimento, desde que passe em um teste de Agilidade (DT 20) e esteja a até 4m desses elementos.
+{pigmento}*Emboscada Persistente:*{/pigmento} Após realizar um ataque surpresa, pode imediatamente tentar um teste de Furtividade (DT 25). Sucesso: retorna à condição Oculta, podendo realizar nova emboscada no turno ou cena seguinte.`,
+
+    bonus3: `O Caçador Noturno
+Elemento – Escuridão`,
+
+    Magias: `Nenhuma.`,
+    Passivas: `-`,
+    Talentos: `-`,
+
+    Descricao: `Durante séculos, as Panthera Papio foram presenças constantes nas florestas profundas. Povos antigos as temiam e reverenciavam como espíritos da noite encarnados. Onde a escuridão caía, elas reinavam.
+De pelagem negra e espessa, pareciam absorver toda a luz ao redor. Seus olhos brilhavam como brasas sob a lua, e sua movimentação era quase impossível de detectar. Caçavam exclusivamente à noite, quando sua fusão com as sombras lhes concedia domínio absoluto.
+Durante o dia, desapareciam. Escondiam-se em cavernas rasas, sob raízes colossais ou no interior de troncos ocos, permanecendo imóveis, como se fossem parte da própria floresta.
+Tudo mudou quando se descobriu o valor mágico de seu couro. Capas confeccionadas com sua pele permitiam ocultar presenças, confundindo sentidos e desviando olhares. O que começou como ritual tornou-se comércio. O comércio virou massacre.
+Em poucas décadas, seu número caiu de dezenas de milhares para poucos milhares. Quando a caça foi proibida, já era tarde demais.
+Os sobreviventes tornaram-se extremamente agressivos. Cada invasão territorial é tratada como ameaça mortal. Elas não recuam. Não hesitam. E raramente deixam presas escaparem.
+Hoje, restam cerca de três mil indivíduos espalhados por florestas isoladas. Onde antes ecoavam seus rugidos, reina o silêncio — até que a noite caia novamente.`,
+
+    img: "imagens/Panthera-Papio.png",
+    img2: "imagens/Token-Panthera-Papio.png"
+}
 
   
   
