@@ -1816,15 +1816,15 @@ Invocado pelo poder da magia "Retorno de Thorville", sua chegada é anunciada po
 
   
  ,"Orvednir & Hrasvelg": {
-  vida: 520,
-  sanidade: 320,
-  especial: 380,
+  vida: 324,
+  sanidade: 196,
+  especial: 121,
   armadura: 20,
   movimento: 26,
 
-  vidaPorNivel: 60,
-  sanidadePorNivel: 35,
-  especialPorNivel: 45,
+ vidaPorNivel: 13,
+  sanidadePorNivel: 7,
+  especialPorNivel: 11,
   armaduraPorNivel: 3,
 
   TagsCriatura: "Tempestade,Domínio da Natureza,Entidade,Lendário",
